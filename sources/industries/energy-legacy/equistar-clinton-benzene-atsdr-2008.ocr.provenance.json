@@ -1,0 +1,194 @@
+{
+  "schema_version": "1.0",
+  "created_at_utc": "2026-10-22T23:16:22.275028+00:00",
+  "purpose": "Corpus search; no numeric data import or health/legal reinterpretation",
+  "original_file": "sources/industries/energy-legacy/equistar-clinton-benzene-atsdr-2008.pdf",
+  "original_sha256_before": "6593675be531508be957cfecab60dd588cfd7d8243fbd27c9849e53e57aac4a5",
+  "original_sha256_after": "6593675be531508be957cfecab60dd588cfd7d8243fbd27c9849e53e57aac4a5",
+  "original_unchanged": true,
+  "sidecar": "sources/industries/energy-legacy/equistar-clinton-benzene-atsdr-2008.ocr.txt",
+  "sidecar_sha256": "c05662a4cad39d41daaf4bc80def7974159723db424cccb6c04e3c169c7b7d3c",
+  "pdf_pages": 21,
+  "native_text_pages_over_30_chars": 19,
+  "ocr_attempted_physical_pages": [
+    16,
+    18
+  ],
+  "coverage": [
+    {
+      "physical_page": 1,
+      "method": "native_extraction",
+      "native_extracted_characters": 308,
+      "sidecar_characters": 308
+    },
+    {
+      "physical_page": 2,
+      "method": "native_extraction",
+      "native_extracted_characters": 1195,
+      "sidecar_characters": 1195
+    },
+    {
+      "physical_page": 3,
+      "method": "native_extraction",
+      "native_extracted_characters": 244,
+      "sidecar_characters": 244
+    },
+    {
+      "physical_page": 4,
+      "method": "native_extraction",
+      "native_extracted_characters": 3235,
+      "sidecar_characters": 3235
+    },
+    {
+      "physical_page": 5,
+      "method": "native_extraction",
+      "native_extracted_characters": 2690,
+      "sidecar_characters": 2690
+    },
+    {
+      "physical_page": 6,
+      "method": "native_extraction",
+      "native_extracted_characters": 332,
+      "sidecar_characters": 332
+    },
+    {
+      "physical_page": 7,
+      "method": "native_extraction",
+      "native_extracted_characters": 1594,
+      "sidecar_characters": 1594
+    },
+    {
+      "physical_page": 8,
+      "method": "native_extraction",
+      "native_extracted_characters": 3042,
+      "sidecar_characters": 3042
+    },
+    {
+      "physical_page": 9,
+      "method": "native_extraction",
+      "native_extracted_characters": 2709,
+      "sidecar_characters": 2709
+    },
+    {
+      "physical_page": 10,
+      "method": "native_extraction",
+      "native_extracted_characters": 2812,
+      "sidecar_characters": 2812
+    },
+    {
+      "physical_page": 11,
+      "method": "native_extraction",
+      "native_extracted_characters": 2991,
+      "sidecar_characters": 2991
+    },
+    {
+      "physical_page": 12,
+      "method": "native_extraction",
+      "native_extracted_characters": 3258,
+      "sidecar_characters": 3258
+    },
+    {
+      "physical_page": 13,
+      "method": "native_extraction",
+      "native_extracted_characters": 3603,
+      "sidecar_characters": 3603
+    },
+    {
+      "physical_page": 14,
+      "method": "native_extraction",
+      "native_extracted_characters": 2716,
+      "sidecar_characters": 2716
+    },
+    {
+      "physical_page": 15,
+      "method": "native_extraction",
+      "native_extracted_characters": 294,
+      "sidecar_characters": 294
+    },
+    {
+      "physical_page": 16,
+      "method": "ocr",
+      "native_extracted_characters": 22,
+      "sidecar_characters": 163,
+      "characters": 75,
+      "mean_vision_confidence": 1,
+      "minimum_vision_confidence": 1,
+      "recognized_lines": 10,
+      "rendered_image": "page-16.png",
+      "short_native_extraction": "Figure 1: Site Map \n12",
+      "visual_content_type": "site_map",
+      "blank": false
+    },
+    {
+      "physical_page": 17,
+      "method": "native_extraction",
+      "native_extracted_characters": 1100,
+      "sidecar_characters": 1100
+    },
+    {
+      "physical_page": 18,
+      "method": "ocr",
+      "native_extracted_characters": 0,
+      "sidecar_characters": 700,
+      "characters": 701,
+      "mean_vision_confidence": 0.9615384615384616,
+      "minimum_vision_confidence": 0.5,
+      "recognized_lines": 13,
+      "rendered_image": "page-18.png",
+      "visual_content_type": "certification_and_signatures",
+      "blank": false
+    },
+    {
+      "physical_page": 19,
+      "method": "native_extraction",
+      "native_extracted_characters": 38,
+      "sidecar_characters": 38
+    },
+    {
+      "physical_page": 20,
+      "method": "native_extraction",
+      "native_extracted_characters": 1608,
+      "sidecar_characters": 1608
+    },
+    {
+      "physical_page": 21,
+      "method": "native_extraction",
+      "native_extracted_characters": 3270,
+      "sidecar_characters": 3270
+    }
+  ],
+  "method": {
+    "native_extractor": "pypdf PdfReader.extract_text",
+    "ocr_trigger": "native stripped text length <=30",
+    "renderer": "Poppler pdftoppm 26.05.0",
+    "dpi": 180,
+    "format": "PNG",
+    "ocr": "Apple Vision VNRecognizeTextRequest accurate en-US, language correction enabled",
+    "os": "macOS 26.6.2 build 25G83",
+    "manual_text_corrections": false,
+    "pdf_modified": false,
+    "helper": "scripts/ocr_pdf_applevision.swift",
+    "pipeline": "scripts/add_gap_ocr_sidecars.py"
+  },
+  "visual_review": {
+    "thumbnail_reviewed_gap_pages": [
+      16,
+      18
+    ],
+    "detailed_spot_checked_pages": [],
+    "all_text_proofread": false,
+    "pending": false,
+    "note": "All gap renders checked for page/content type; detailed spot checks are not numeric/table transcription validation"
+  },
+  "limitations": [
+    "Search aid, not an authoritative transcription or table import",
+    "Native extraction can have ordering/table errors even on pages over the threshold",
+    "OCR may misread letters, numbers, formulas, symbols, charts and handwriting",
+    "An OCR confidence of 1 is not calibrated accuracy",
+    "All physical pages have markers; this does not establish recognition of every visible mark",
+    "Site-map labels, graph axes and table cells can remain incompletely recognized despite nonempty OCR; exact values require original-page review"
+  ],
+  "sidecar_utf8_bytes": 39720,
+  "blank_physical_pages_identified": [],
+  "skipped_ocr_pages": []
+}

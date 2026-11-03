@@ -1,0 +1,324 @@
+{
+  "retrieved_on": "2026-10-29",
+  "artifacts": [
+    {
+      "url": "https://api.figshare.com/v2/articles/27993248/versions/1",
+      "final_url": "https://api.figshare.com/v2/articles/27993248/versions/1",
+      "local_path": "research/treatment-discovery/sources/preclinical/2026-10-29/figshare-27993248-v1.json",
+      "bytes": 26542,
+      "sha256": "a1e5865cdd4d34e59d2f95614cc485efc6b1b5f5e43df2a842293b72b4bfa17f",
+      "md5": "8e1fafffea26ebda38204b902a955434",
+      "content_type": "application/json"
+    },
+    {
+      "url": "https://ndownloader.figshare.com/files/51063560",
+      "final_url": "https://s3-eu-west-1.amazonaws.com/pstorage-plus-7003492043/51063560/AchillesCommonEssentialControls.csv",
+      "local_path": "research/treatment-discovery/sources/preclinical/2026-10-29/figshare-27993248-v1/AchillesCommonEssentialControls.csv",
+      "bytes": 17015,
+      "sha256": "a1a48ad516011c521b1981769e2f78de84d1410371f8517a7428349be6e6b98a",
+      "md5": "9cc07e7ebc282984d8107341dfde8f26",
+      "content_type": "text/csv",
+      "source_md5": "9cc07e7ebc282984d8107341dfde8f26",
+      "md5_verified": true
+    },
+    {
+      "url": "https://ndownloader.figshare.com/files/51063566",
+      "final_url": "https://s3-eu-west-1.amazonaws.com/pstorage-plus-7003492043/51063566/AchillesNonessentialControls.csv",
+      "local_path": "research/treatment-discovery/sources/preclinical/2026-10-29/figshare-27993248-v1/AchillesNonessentialControls.csv",
+      "bytes": 11490,
+      "sha256": "c7add12af5a37912997fdab0a7aabeef8d811b1ac7ee23dfcffa3a06471ce097",
+      "md5": "ca6a757db1cae49b913423ce73b818cf",
+      "content_type": "text/csv",
+      "source_md5": "ca6a757db1cae49b913423ce73b818cf",
+      "md5_verified": true
+    },
+    {
+      "url": "https://ndownloader.figshare.com/files/51064916",
+      "final_url": "https://s3-eu-west-1.amazonaws.com/pstorage-plus-7003492043/51064916/CRISPRInferredCommonEssentials.csv",
+      "local_path": "research/treatment-discovery/sources/preclinical/2026-10-29/figshare-27993248-v1/CRISPRInferredCommonEssentials.csv",
+      "bytes": 20795,
+      "sha256": "0352de5335ae3bf72250dd136d1b0df87a6b72f653df34c2560cce17c0e7d928",
+      "md5": "545edef0d377f252db6e5e675201bd77",
+      "content_type": "text/csv",
+      "source_md5": "545edef0d377f252db6e5e675201bd77",
+      "md5_verified": true
+    },
+    {
+      "url": "https://ndownloader.figshare.com/files/51065159",
+      "final_url": "https://s3-eu-west-1.amazonaws.com/pstorage-plus-7003492043/51065159/CRISPRScreenMap.csv",
+      "local_path": "research/treatment-discovery/sources/preclinical/2026-10-29/figshare-27993248-v1/CRISPRScreenMap.csv",
+      "bytes": 36443,
+      "sha256": "668347965c7d5283da79ef7b6d315951d0cf6c5313551305971e8eec9503b3be",
+      "md5": "dda4409d030d486e8a66915990731a62",
+      "content_type": "text/csv",
+      "source_md5": "dda4409d030d486e8a66915990731a62",
+      "md5_verified": true
+    },
+    {
+      "url": "https://ndownloader.figshare.com/files/51065297",
+      "final_url": "https://s3-eu-west-1.amazonaws.com/pstorage-plus-7003492043/51065297/Model.csv",
+      "local_path": "research/treatment-discovery/sources/preclinical/2026-10-29/figshare-27993248-v1/Model.csv",
+      "bytes": 645696,
+      "sha256": "b7a0c1385e6cef30132b56aff61f1261d11e3f490490b355c430d32ee0dbdcfa",
+      "md5": "675210d17675f3517b0ce39a3c274f16",
+      "content_type": "text/csv",
+      "source_md5": "675210d17675f3517b0ce39a3c274f16",
+      "md5_verified": true
+    },
+    {
+      "url": "https://ndownloader.figshare.com/files/51065300",
+      "final_url": "https://s3-eu-west-1.amazonaws.com/pstorage-plus-7003492043/51065300/ModelCondition.csv",
+      "local_path": "research/treatment-discovery/sources/preclinical/2026-10-29/figshare-27993248-v1/ModelCondition.csv",
+      "bytes": 219100,
+      "sha256": "b0f22ddb886b241a3ff48674f58edba3e71c021c717aa40924e2cce67bf5200b",
+      "md5": "1f6033eb5b7a843b20cebe5ab63d3feb",
+      "content_type": "text/csv",
+      "source_md5": "1f6033eb5b7a843b20cebe5ab63d3feb",
+      "md5_verified": true
+    },
+    {
+      "url": "https://ndownloader.figshare.com/files/51065336",
+      "final_url": "https://s3-eu-west-1.amazonaws.com/pstorage-plus-7003492043/51065336/OmicsDefaultModelConditionProfiles.csv",
+      "local_path": "research/treatment-discovery/sources/preclinical/2026-10-29/figshare-27993248-v1/OmicsDefaultModelConditionProfiles.csv",
+      "bytes": 120795,
+      "sha256": "972a351ba7caf6059274326a20b2fde19cd9603d75ea3850904a85718bf24876",
+      "md5": "b10103a813975dc204630e70d825c12c",
+      "content_type": "text/csv",
+      "source_md5": "b10103a813975dc204630e70d825c12c",
+      "md5_verified": true
+    },
+    {
+      "url": "https://ndownloader.figshare.com/files/51065339",
+      "final_url": "https://s3-eu-west-1.amazonaws.com/pstorage-plus-7003492043/51065339/OmicsDefaultModelProfiles.csv",
+      "local_path": "research/treatment-discovery/sources/preclinical/2026-10-29/figshare-27993248-v1/OmicsDefaultModelProfiles.csv",
+      "bytes": 90080,
+      "sha256": "096a96c39d88374cb7c37058816e6cde29d6617b820b8a14d33ae9dd821c6dc5",
+      "md5": "4d342a03701c0a4c0742fedb56c1de40",
+      "content_type": "text/csv",
+      "source_md5": "4d342a03701c0a4c0742fedb56c1de40",
+      "md5_verified": true
+    },
+    {
+      "url": "https://ndownloader.figshare.com/files/51065723",
+      "final_url": "https://s3-eu-west-1.amazonaws.com/pstorage-plus-7003492043/51065723/OmicsProfiles.csv",
+      "local_path": "research/treatment-discovery/sources/preclinical/2026-10-29/figshare-27993248-v1/OmicsProfiles.csv",
+      "bytes": 254733,
+      "sha256": "0bb19ee57935d4b213d378a4db9caacaa1db7318a63ae81485d84f91c20a3bf2",
+      "md5": "7195088a5fc41eddb3f896c6e984a992",
+      "content_type": "text/csv",
+      "source_md5": "7195088a5fc41eddb3f896c6e984a992",
+      "md5_verified": true
+    },
+    {
+      "url": "https://ndownloader.figshare.com/files/51065795",
+      "final_url": "https://s3-eu-west-1.amazonaws.com/pstorage-plus-7003492043/51065795/README.txt",
+      "local_path": "research/treatment-discovery/sources/preclinical/2026-10-29/figshare-27993248-v1/README.txt",
+      "bytes": 43103,
+      "sha256": "f744a5cf5c112e01276e772679157aac8e85cdc4a8f6d3b86d808e3bfd332891",
+      "md5": "54628c15a10b9ff6536db245cfed5231",
+      "content_type": "text/plain",
+      "source_md5": "54628c15a10b9ff6536db245cfed5231",
+      "md5_verified": true
+    },
+    {
+      "url": "https://ndownloader.figshare.com/files/51065828",
+      "final_url": "https://s3-eu-west-1.amazonaws.com/pstorage-plus-7003492043/51065828/ScreenSequenceMap.csv",
+      "local_path": "research/treatment-discovery/sources/preclinical/2026-10-29/figshare-27993248-v1/ScreenSequenceMap.csv",
+      "bytes": 346653,
+      "sha256": "ed2cbceee14ed0955420fa87a77a9adeef1214ae08ffdd5dc02a069d4a70be83",
+      "md5": "401ceaf675bfba78942be3c8546ef558",
+      "content_type": "text/csv",
+      "source_md5": "401ceaf675bfba78942be3c8546ef558",
+      "md5_verified": true
+    },
+    {
+      "url": "https://api.figshare.com/v2/articles/9393293/versions/4",
+      "final_url": "https://api.figshare.com/v2/articles/9393293/versions/4",
+      "local_path": "research/treatment-discovery/sources/preclinical/2026-10-29/figshare-9393293-v4.json",
+      "bytes": 9750,
+      "sha256": "f7f2821a37d2534d73b8a6aeaf5adcb37c4941205e28fe192eded76ba8a68ed2",
+      "md5": "343bf13274ca72aaaf6a0cbea4bad15b",
+      "content_type": "application/json"
+    },
+    {
+      "url": "https://ndownloader.figshare.com/files/20237700",
+      "final_url": "https://s3-eu-west-1.amazonaws.com/pfigshare-u-files/20237700/primaryscreenreadme.txt",
+      "local_path": "research/treatment-discovery/sources/preclinical/2026-10-29/figshare-9393293-v4/primary-screen-readme.txt",
+      "bytes": 5919,
+      "sha256": "309310719fd96580d8f211ca12d501f6624c245b268aa29d8a5286b411f0c63f",
+      "md5": "0cb01777a60e7bacee187d85159d279e",
+      "content_type": "text/plain",
+      "source_md5": "0cb01777a60e7bacee187d85159d279e",
+      "md5_verified": true
+    },
+    {
+      "url": "https://ndownloader.figshare.com/files/20237718",
+      "final_url": "https://s3-eu-west-1.amazonaws.com/pfigshare-u-files/20237718/primaryscreencelllineinfo.csv",
+      "local_path": "research/treatment-discovery/sources/preclinical/2026-10-29/figshare-9393293-v4/primary-screen-cell-line-info.csv",
+      "bytes": 46849,
+      "sha256": "c17174f48264fea0adb3eb4b2b1f2daf61b83999b0db6e4965338e3bd6a9fde2",
+      "md5": "580b9f0b5118d44f473ffa4efac7e0c2",
+      "content_type": "text/csv",
+      "source_md5": "580b9f0b5118d44f473ffa4efac7e0c2",
+      "md5_verified": true
+    },
+    {
+      "url": "https://ndownloader.figshare.com/files/20237763",
+      "final_url": "https://s3-eu-west-1.amazonaws.com/pfigshare-u-files/20237763/secondaryscreenreplicatecollapsedtreatmentinfo.csv",
+      "local_path": "research/treatment-discovery/sources/preclinical/2026-10-29/figshare-9393293-v4/secondary-screen-replicate-collapsed-treatment-info.csv",
+      "bytes": 3788355,
+      "sha256": "9d0d1fb4faa87a63cd84965ec5e2b55a9df5680520a41b029abb679cfd4384f7",
+      "md5": "54765b3639f91cede751378d694e3583",
+      "content_type": "text/csv",
+      "source_md5": "54765b3639f91cede751378d694e3583",
+      "md5_verified": true
+    },
+    {
+      "url": "https://ndownloader.figshare.com/files/20237769",
+      "final_url": "https://s3-eu-west-1.amazonaws.com/pfigshare-u-files/20237769/secondaryscreencelllineinfo.csv",
+      "local_path": "research/treatment-discovery/sources/preclinical/2026-10-29/figshare-9393293-v4/secondary-screen-cell-line-info.csv",
+      "bytes": 40979,
+      "sha256": "b93436b5f4bcf5fd14589697be4ca8f99ffd99d639223080380bc514c3718d27",
+      "md5": "6737b4aa9fd85404fd2f0cf825b037e4",
+      "content_type": "text/csv",
+      "source_md5": "6737b4aa9fd85404fd2f0cf825b037e4",
+      "md5_verified": true
+    },
+    {
+      "url": "https://ndownloader.figshare.com/files/20238123",
+      "final_url": "https://s3-eu-west-1.amazonaws.com/pfigshare-u-files/20238123/secondaryscreenreadme.txt",
+      "local_path": "research/treatment-discovery/sources/preclinical/2026-10-29/figshare-9393293-v4/secondary-screen-readme.txt",
+      "bytes": 7647,
+      "sha256": "ed453e2bbaecff26cf923d8a69290f2c18fd7488d5a7d6903821980e6d49c99d",
+      "md5": "421d0bbadec381adc0d7981ee7e16bd7",
+      "content_type": "text/plain",
+      "source_md5": "421d0bbadec381adc0d7981ee7e16bd7",
+      "md5_verified": true
+    },
+    {
+      "url": "https://forum.depmap.org/t/announcing-the-26q3-release/4692.json",
+      "final_url": "https://forum.depmap.org/t/announcing-the-26q3-release/4692.json",
+      "local_path": "research/treatment-discovery/sources/preclinical/2026-10-29/depmap-26q3-release-notes.json",
+      "bytes": 29643,
+      "sha256": "fdfe80a2333fd4ff0ebf146709d92001f78daf88ebfdfdefd9dec349c791ba8c",
+      "md5": "6c28714095fae232e60d5bc59d849b90",
+      "content_type": "application/json; charset=utf-8"
+    },
+    {
+      "url": "https://api.figshare.com/v2/articles/25917643/versions/1",
+      "final_url": "https://api.figshare.com/v2/articles/25917643/versions/1",
+      "local_path": "research/treatment-discovery/sources/preclinical/2026-10-29/figshare-25917643-v1.json",
+      "bytes": 7666,
+      "sha256": "75a5287437213394c2e6fdd849363b80248b4cdbb264d671533826bddec69e79",
+      "md5": "9c19f5bf629141bfe01c5a77efbadcdb",
+      "content_type": "application/json"
+    },
+    {
+      "url": "https://ndownloader.figshare.com/files/46630975",
+      "final_url": "https://s3-eu-west-1.amazonaws.com/pfigshare-u-files/46630975/README.txt",
+      "local_path": "research/treatment-discovery/sources/preclinical/2026-10-29/figshare-25917643-v1/README.txt",
+      "bytes": 9889,
+      "sha256": "1ae0f2cb4e23903593f10d2182214363392498f2185d2520c06962ffb156f340",
+      "md5": "bdc45ca3187df4dcf991ab9e26008558",
+      "content_type": "text/plain",
+      "source_md5": "bdc45ca3187df4dcf991ab9e26008558",
+      "md5_verified": true
+    },
+    {
+      "url": "https://ndownloader.figshare.com/files/46630978",
+      "final_url": "https://s3-eu-west-1.amazonaws.com/pfigshare-u-files/46630978/Repurposing_Public_24Q2_Cell_Line_Meta_Data.csv",
+      "local_path": "research/treatment-discovery/sources/preclinical/2026-10-29/figshare-25917643-v1/Repurposing_Public_24Q2_Cell_Line_Meta_Data.csv",
+      "bytes": 157294,
+      "sha256": "13a85da9e45656c455d3911a4491f3636d7d0975a9d2333dc3d0a3e2cd3b0526",
+      "md5": "da769165afe40ac83888bcc6dac0932a",
+      "content_type": "text/csv",
+      "source_md5": "da769165afe40ac83888bcc6dac0932a",
+      "md5_verified": true
+    },
+    {
+      "url": "https://ndownloader.figshare.com/files/46630981",
+      "final_url": "https://s3-eu-west-1.amazonaws.com/pfigshare-u-files/46630981/Repurposing_Public_24Q2_Extended_Primary_Compound_List.csv",
+      "local_path": "research/treatment-discovery/sources/preclinical/2026-10-29/figshare-25917643-v1/Repurposing_Public_24Q2_Extended_Primary_Compound_List.csv",
+      "bytes": 719567,
+      "sha256": "7e78f5901c1a97d2baab0789ab89832e716388da4eacaa9f094e7d2f2f5a3463",
+      "md5": "cdb450d96507a290defeb455b0d616a4",
+      "content_type": "text/csv",
+      "source_md5": "cdb450d96507a290defeb455b0d616a4",
+      "md5_verified": true
+    },
+    {
+      "url": "https://ndownloader.figshare.com/files/46631143",
+      "final_url": "https://s3-eu-west-1.amazonaws.com/pfigshare-u-files/46631143/Repurposing_Public_24Q2_Readme.txt",
+      "local_path": "research/treatment-discovery/sources/preclinical/2026-10-29/figshare-25917643-v1/Repurposing_Public_24Q2_Readme.txt",
+      "bytes": 12930,
+      "sha256": "008d6d204f033dcb2e9dc558f3b371087370de341e334a456a762bb0768d717b",
+      "md5": "4b630e332a4148e44aec3c1b0f6e4808",
+      "content_type": "text/plain",
+      "source_md5": "4b630e332a4148e44aec3c1b0f6e4808",
+      "md5_verified": true
+    },
+    {
+      "url": "https://ndownloader.figshare.com/files/46631146",
+      "final_url": "https://s3-eu-west-1.amazonaws.com/pfigshare-u-files/46631146/Repurposing_Public_24Q2_Treatment_Meta_Data.csv",
+      "local_path": "research/treatment-discovery/sources/preclinical/2026-10-29/figshare-25917643-v1/Repurposing_Public_24Q2_Treatment_Meta_Data.csv",
+      "bytes": 1510417,
+      "sha256": "6be6422ba804ad0775e78b457677bdf088707b9354746a03e110ae63f5eb2061",
+      "md5": "ab143170aa2134f13485670e26056d23",
+      "content_type": "text/csv",
+      "source_md5": "ab143170aa2134f13485670e26056d23",
+      "md5_verified": true
+    },
+    {
+      "url": "https://depmap.sanger.ac.uk/documentation/datasets/drug-sensitivity/",
+      "final_url": "https://depmap.sanger.ac.uk/documentation/datasets/drug-sensitivity/",
+      "local_path": "research/treatment-discovery/sources/preclinical/2026-10-29/sanger-drug-sensitivity.html",
+      "bytes": 47439,
+      "sha256": "50697164d49b2fbcd9dc56dcd6b42d474799d27084fbd346f4c53510d2845f5c",
+      "md5": "dfea5b4a0c8352a29760b002cf1bc8f0",
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://depmap.sanger.ac.uk/documentation/data-usage-policy/",
+      "final_url": "https://depmap.sanger.ac.uk/documentation/data-usage-policy/",
+      "local_path": "research/treatment-discovery/sources/preclinical/2026-10-29/sanger-data-usage-policy.html",
+      "bytes": 21368,
+      "sha256": "f3589e641b1c2118438a5932c748f772b99dd9157206f6a9157702b84cf83d89",
+      "md5": "7d990cd716f0c809bbba21ce471342ce",
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://depmap.sanger.ac.uk/documentation/frequently-asked-questions/",
+      "final_url": "https://depmap.sanger.ac.uk/documentation/frequently-asked-questions/",
+      "local_path": "research/treatment-discovery/sources/preclinical/2026-10-29/sanger-faq.html",
+      "bytes": 25748,
+      "sha256": "46085d51c04df41643ba573bddc59e19575c665252ea8eef1cab7eab883854f4",
+      "md5": "2ddb271e3024be7ec9b373d3f9b4994d",
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://cog.sanger.ac.uk/cmp/download/model_list_latest.csv.gz",
+      "final_url": "https://cog.sanger.ac.uk/cmp/download/model_list_latest.csv.gz",
+      "local_path": "research/treatment-discovery/sources/preclinical/2026-10-29/sanger-model-list-latest.csv.gz",
+      "bytes": 145029,
+      "sha256": "333affaa690c9f7e517467a6f78b00ffb418cb8449e2eb1cc5d93d85f7b0862e",
+      "md5": "28f53085bf4db7b855bd8b251ca7d841",
+      "content_type": "application/gzip"
+    },
+    {
+      "url": "https://cog.sanger.ac.uk/cancerrxgene/GDSC_release8.5/GDSC_Raw_Data_Description.pdf",
+      "final_url": "https://cog.sanger.ac.uk/cancerrxgene/GDSC_release8.5/GDSC_Raw_Data_Description.pdf",
+      "local_path": "research/treatment-discovery/sources/preclinical/2026-10-29/GDSC_Raw_Data_Description.pdf",
+      "bytes": 198066,
+      "sha256": "9ac8696eca9d51b737bd98337b86abac5c541c432fcd1a9ce84b8f56ae29b68e",
+      "md5": "7d3742b3925a3a27726d6849f28a5237",
+      "content_type": "application/pdf"
+    },
+    {
+      "local_path": "research/treatment-discovery/sources/preclinical/2026-10-29/gdsc2-workbook-availability.json",
+      "artifact_type": "derived HTTP HEAD observation",
+      "bytes": 474,
+      "sha256": "93149a68fe7de10dfc85d47fb53ebf62b0e1e29f7531ed45c36243fa0e083701"
+    }
+  ],
+  "public_copy_note": "Temporary final_url query strings removed for publication. Artifact content hashes and stable source URLs are unchanged."
+}

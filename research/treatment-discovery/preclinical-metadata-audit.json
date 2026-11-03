@@ -1,0 +1,783 @@
+{
+  "analysis_type": "metadata coverage and identifier audit only; no response matrices or mutation calls evaluated; no models fitted",
+  "depmap_release": "24Q4 v1",
+  "prism_release": "24Q2 v1",
+  "all_crispr_models": 1178,
+  "all_prism_metadata_models": 915,
+  "cohorts": [
+    {
+      "cohort": "LUAD",
+      "oncotree_codes": [
+        "LUAD"
+      ],
+      "model_catalogue": 91,
+      "crispr_screenmap": 53,
+      "prism_metadata": 52,
+      "both_metadata": 39
+    },
+    {
+      "cohort": "Selected NSCLC codes",
+      "oncotree_codes": [
+        "GCLC",
+        "LCLC",
+        "LUAD",
+        "LUAS",
+        "LUSC",
+        "NSCLC",
+        "NSCLCPD"
+      ],
+      "model_catalogue": 161,
+      "crispr_screenmap": 96,
+      "prism_metadata": 92,
+      "both_metadata": 70
+    },
+    {
+      "cohort": "Colorectal adenocarcinoma",
+      "oncotree_codes": [
+        "COAD",
+        "COADREAD",
+        "MACR",
+        "READ"
+      ],
+      "model_catalogue": 96,
+      "crispr_screenmap": 63,
+      "prism_metadata": 43,
+      "both_metadata": 35
+    },
+    {
+      "cohort": "PAAD",
+      "oncotree_codes": [
+        "PAAD"
+      ],
+      "model_catalogue": 64,
+      "crispr_screenmap": 45,
+      "prism_metadata": 39,
+      "both_metadata": 36
+    }
+  ],
+  "duplicate_identifier_groups": {
+    "PatientID": {
+      "PT-gj46wT": [
+        "ACH-000001",
+        "ACH-000013"
+      ],
+      "PT-5qa3uk": [
+        "ACH-000002",
+        "ACH-000034"
+      ],
+      "PT-puKIyc": [
+        "ACH-000003",
+        "ACH-000009"
+      ],
+      "PT-q4K2cp": [
+        "ACH-000004",
+        "ACH-000005"
+      ],
+      "PT-ej13Dz": [
+        "ACH-000006",
+        "ACH-001129"
+      ],
+      "PT-fp8PeY": [
+        "ACH-000008",
+        "ACH-000014"
+      ],
+      "PT-AR7W9o": [
+        "ACH-000011",
+        "ACH-000026"
+      ],
+      "PT-NdspH5": [
+        "ACH-000012",
+        "ACH-000029",
+        "ACH-002333"
+      ],
+      "PT-8CE6ah": [
+        "ACH-000017",
+        "ACH-000248"
+      ],
+      "PT-Mi0cKz": [
+        "ACH-000018",
+        "ACH-000127",
+        "ACH-003100"
+      ],
+      "PT-viJKnw": [
+        "ACH-000019",
+        "ACH-000028"
+      ],
+      "PT-9p1WQv": [
+        "ACH-000021",
+        "ACH-000033"
+      ],
+      "PT-lVglGI": [
+        "ACH-000022",
+        "ACH-000023"
+      ],
+      "PT-codP7n": [
+        "ACH-000024",
+        "ACH-000057"
+      ],
+      "PT-llPs5J": [
+        "ACH-000027",
+        "ACH-000036"
+      ],
+      "PT-nDRyc6": [
+        "ACH-000030",
+        "ACH-000779"
+      ],
+      "PT-wGDMGe": [
+        "ACH-000039",
+        "ACH-002160"
+      ],
+      "PT-5XnRfQ": [
+        "ACH-000040",
+        "ACH-001214"
+      ],
+      "PT-IAac7b": [
+        "ACH-000052",
+        "ACH-001007",
+        "ACH-001008",
+        "ACH-001009",
+        "ACH-001010"
+      ],
+      "PT-9JMXWA": [
+        "ACH-000060",
+        "ACH-001171"
+      ],
+      "PT-k1TO7o": [
+        "ACH-000097",
+        "ACH-001249",
+        "ACH-002208",
+        "ACH-002331"
+      ],
+      "PT-BN67ox": [
+        "ACH-000100",
+        "ACH-001765"
+      ],
+      "PT-yKJqsn": [
+        "ACH-000111",
+        "ACH-002373"
+      ],
+      "PT-ombRgU": [
+        "ACH-000149",
+        "ACH-001188"
+      ],
+      "PT-DK2CQc": [
+        "ACH-000152",
+        "ACH-001118"
+      ],
+      "PT-TexA3V": [
+        "ACH-000153",
+        "ACH-002367"
+      ],
+      "PT-llVV5F": [
+        "ACH-000163",
+        "ACH-001023"
+      ],
+      "PT-cHU83i": [
+        "ACH-000164",
+        "ACH-001107"
+      ],
+      "PT-ZerhVq": [
+        "ACH-000196",
+        "ACH-002374"
+      ],
+      "PT-EY60tR": [
+        "ACH-000201",
+        "ACH-001212"
+      ],
+      "PT-UB7otW": [
+        "ACH-000202",
+        "ACH-002219"
+      ],
+      "PT-3FxmoJ": [
+        "ACH-000219",
+        "ACH-002001",
+        "ACH-002002",
+        "ACH-002003"
+      ],
+      "PT-Vntr9y": [
+        "ACH-000223",
+        "ACH-002375"
+      ],
+      "PT-88IC1n": [
+        "ACH-000232",
+        "ACH-001172",
+        "ACH-001198"
+      ],
+      "PT-XQHvQF": [
+        "ACH-000252",
+        "ACH-002376"
+      ],
+      "PT-BLAWlD": [
+        "ACH-000253",
+        "ACH-001039"
+      ],
+      "PT-9jciof": [
+        "ACH-000261",
+        "ACH-002122"
+      ],
+      "PT-htpobI": [
+        "ACH-000270",
+        "ACH-001098"
+      ],
+      "PT-cSAYbR": [
+        "ACH-000272",
+        "ACH-001175"
+      ],
+      "PT-S4bLNM": [
+        "ACH-000276",
+        "ACH-002377"
+      ],
+      "PT-DzY90c": [
+        "ACH-000290",
+        "ACH-002369"
+      ],
+      "PT-JAyPtz": [
+        "ACH-000304",
+        "ACH-001239"
+      ],
+      "PT-rg0sYD": [
+        "ACH-000307",
+        "ACH-001101"
+      ],
+      "PT-2Urqss": [
+        "ACH-000310",
+        "ACH-002248"
+      ],
+      "PT-6IoG5q": [
+        "ACH-000311",
+        "ACH-002370"
+      ],
+      "PT-k4Daz3": [
+        "ACH-000312",
+        "ACH-002217"
+      ],
+      "PT-tXqEg0": [
+        "ACH-000320",
+        "ACH-001072"
+      ],
+      "PT-czDcsE": [
+        "ACH-000322",
+        "ACH-002458",
+        "ACH-002459",
+        "ACH-002460"
+      ],
+      "PT-oKf5lW": [
+        "ACH-000327",
+        "ACH-002363"
+      ],
+      "PT-O6FqYe": [
+        "ACH-000340",
+        "ACH-001712"
+      ],
+      "PT-H3wdRq": [
+        "ACH-000362",
+        "ACH-001574"
+      ],
+      "PT-UPBMOO": [
+        "ACH-000374",
+        "ACH-002378"
+      ],
+      "PT-saZI6H": [
+        "ACH-000393",
+        "ACH-001089"
+      ],
+      "PT-jGS2bl": [
+        "ACH-000396",
+        "ACH-002379"
+      ],
+      "PT-hf4hbl": [
+        "ACH-000401",
+        "ACH-001044",
+        "ACH-001339"
+      ],
+      "PT-2VMIkL": [
+        "ACH-000405",
+        "ACH-001121"
+      ],
+      "PT-ZwaNYv": [
+        "ACH-000406",
+        "ACH-002314"
+      ],
+      "PT-01q6LP": [
+        "ACH-000419",
+        "ACH-001541"
+      ],
+      "PT-Zu8A8i": [
+        "ACH-000425",
+        "ACH-002004"
+      ],
+      "PT-IpPvfc": [
+        "ACH-000444",
+        "ACH-002158"
+      ],
+      "PT-ESM25t": [
+        "ACH-000473",
+        "ACH-001183"
+      ],
+      "PT-hM3DN4": [
+        "ACH-000479",
+        "ACH-002259"
+      ],
+      "PT-Ag8pMW": [
+        "ACH-000490",
+        "ACH-001359"
+      ],
+      "PT-PrSlzw": [
+        "ACH-000509",
+        "ACH-002240"
+      ],
+      "PT-qXF8IT": [
+        "ACH-000519",
+        "ACH-002216"
+      ],
+      "PT-NNs10U": [
+        "ACH-000525",
+        "ACH-002372"
+      ],
+      "PT-AXbbCE": [
+        "ACH-000538",
+        "ACH-001015"
+      ],
+      "PT-0hMOxQ": [
+        "ACH-000542",
+        "ACH-002140"
+      ],
+      "PT-Wg8rkx": [
+        "ACH-000550",
+        "ACH-000650"
+      ],
+      "PT-y8u0p3": [
+        "ACH-000551",
+        "ACH-002061"
+      ],
+      "PT-0a2F5a": [
+        "ACH-000586",
+        "ACH-002490"
+      ],
+      "PT-KKsvGZ": [
+        "ACH-000589",
+        "ACH-002364"
+      ],
+      "PT-v8h3uk": [
+        "ACH-000590",
+        "ACH-001137"
+      ],
+      "PT-XDzUk4": [
+        "ACH-000597",
+        "ACH-001200"
+      ],
+      "PT-JpUzYa": [
+        "ACH-000602",
+        "ACH-002994"
+      ],
+      "PT-epgMPc": [
+        "ACH-000613",
+        "ACH-001001",
+        "ACH-001094"
+      ],
+      "PT-Zy2EsL": [
+        "ACH-000614",
+        "ACH-002461"
+      ],
+      "PT-XYdNvp": [
+        "ACH-000641",
+        "ACH-001036",
+        "ACH-001037"
+      ],
+      "PT-w6ABKA": [
+        "ACH-000644",
+        "ACH-001045",
+        "ACH-002380"
+      ],
+      "PT-IPboWn": [
+        "ACH-000651",
+        "ACH-000842",
+        "ACH-001825"
+      ],
+      "PT-hfsFIb": [
+        "ACH-000659",
+        "ACH-001386"
+      ],
+      "PT-iObwE0": [
+        "ACH-000676",
+        "ACH-002389"
+      ],
+      "PT-cqv92I": [
+        "ACH-000681",
+        "ACH-002337",
+        "ACH-003012"
+      ],
+      "PT-vOaofa": [
+        "ACH-000691",
+        "ACH-002381"
+      ],
+      "PT-8MisfZ": [
+        "ACH-000699",
+        "ACH-002382"
+      ],
+      "PT-ZglKg6": [
+        "ACH-000705",
+        "ACH-001113",
+        "ACH-002156"
+      ],
+      "PT-kbk41J": [
+        "ACH-000707",
+        "ACH-002252"
+      ],
+      "PT-qL6HtY": [
+        "ACH-000739",
+        "ACH-001021"
+      ],
+      "PT-DxHqyx": [
+        "ACH-000755",
+        "ACH-002383"
+      ],
+      "PT-T2KFTw": [
+        "ACH-000758",
+        "ACH-002161"
+      ],
+      "PT-zboiLS": [
+        "ACH-000760",
+        "ACH-002269"
+      ],
+      "PT-IjgcRg": [
+        "ACH-000782",
+        "ACH-001735"
+      ],
+      "PT-AOPcW9": [
+        "ACH-000785",
+        "ACH-002371"
+      ],
+      "PT-pWj35D": [
+        "ACH-000817",
+        "ACH-001043"
+      ],
+      "PT-lbYOig": [
+        "ACH-000833",
+        "ACH-001189"
+      ],
+      "PT-9eMhTl": [
+        "ACH-000837",
+        "ACH-002172"
+      ],
+      "PT-lYuNel": [
+        "ACH-000841",
+        "ACH-002368"
+      ],
+      "PT-603OA3": [
+        "ACH-000859",
+        "ACH-002384"
+      ],
+      "PT-8fO9EH": [
+        "ACH-000864",
+        "ACH-001042"
+      ],
+      "PT-Lz3i3Q": [
+        "ACH-000877",
+        "ACH-001064"
+      ],
+      "PT-3NwoWt": [
+        "ACH-000884",
+        "ACH-002159"
+      ],
+      "PT-bwPYLi": [
+        "ACH-000886",
+        "ACH-002366"
+      ],
+      "PT-ZSsyUS": [
+        "ACH-000897",
+        "ACH-000903"
+      ],
+      "PT-lWWpjR": [
+        "ACH-000904",
+        "ACH-001362",
+        "ACH-002365"
+      ],
+      "PT-rXLMnY": [
+        "ACH-000931",
+        "ACH-001024",
+        "ACH-001041"
+      ],
+      "PT-YZF57N": [
+        "ACH-000941",
+        "ACH-000954",
+        "ACH-001517"
+      ],
+      "PT-3doOpy": [
+        "ACH-000962",
+        "ACH-001145"
+      ],
+      "PT-1559gB": [
+        "ACH-000964",
+        "ACH-001127"
+      ],
+      "PT-GfrL06": [
+        "ACH-000967",
+        "ACH-001199"
+      ],
+      "PT-cgXnS7": [
+        "ACH-000974",
+        "ACH-002026"
+      ],
+      "PT-sGJOXH": [
+        "ACH-000982",
+        "ACH-001345"
+      ],
+      "PT-i0VYNQ": [
+        "ACH-000997",
+        "ACH-001061",
+        "ACH-001084",
+        "ACH-001091"
+      ],
+      "PT-c34xau": [
+        "ACH-001017",
+        "ACH-001071",
+        "ACH-001086"
+      ],
+      "PT-NX1XUV": [
+        "ACH-001029",
+        "ACH-001034"
+      ],
+      "PT-HMzBz8": [
+        "ACH-001053",
+        "ACH-001054"
+      ],
+      "PT-k3C7C0": [
+        "ACH-001227",
+        "ACH-001228"
+      ],
+      "PT-ERAmPK": [
+        "ACH-001334",
+        "ACH-001335"
+      ],
+      "PT-vA9Pcv": [
+        "ACH-001419",
+        "ACH-001705"
+      ],
+      "PT-zwxgMM": [
+        "ACH-001484",
+        "ACH-001485"
+      ],
+      "PT-7caxyS": [
+        "ACH-001571",
+        "ACH-002339"
+      ],
+      "PT-FMp5RI": [
+        "ACH-001630",
+        "ACH-001632"
+      ],
+      "PT-k9PrKk": [
+        "ACH-001636",
+        "ACH-002300"
+      ],
+      "PT-ffpEbF": [
+        "ACH-001669",
+        "ACH-002238"
+      ],
+      "PT-4gdieL": [
+        "ACH-001672",
+        "ACH-002291"
+      ],
+      "PT-qdQICQ": [
+        "ACH-001737",
+        "ACH-002222"
+      ],
+      "PT-PIWzVv": [
+        "ACH-001743",
+        "ACH-002501"
+      ],
+      "PT-jDDO2a": [
+        "ACH-001794",
+        "ACH-001795"
+      ],
+      "PT-EXxLVu": [
+        "ACH-001834",
+        "ACH-001835",
+        "ACH-001836"
+      ],
+      "PT-hoMjwu": [
+        "ACH-001858",
+        "ACH-002237"
+      ],
+      "PT-FeO3BH": [
+        "ACH-001978",
+        "ACH-001981"
+      ],
+      "PT-5vJu3k": [
+        "ACH-002014",
+        "ACH-002018"
+      ],
+      "PT-DWKd8J": [
+        "ACH-002060",
+        "ACH-002276"
+      ],
+      "PT-Qsi22o": [
+        "ACH-002084",
+        "ACH-002162"
+      ],
+      "PT-ySk3os": [
+        "ACH-002090",
+        "ACH-002344"
+      ],
+      "PT-eNOXVI": [
+        "ACH-002096",
+        "ACH-002346"
+      ],
+      "PT-4V4zXY": [
+        "ACH-002097",
+        "ACH-002347"
+      ],
+      "PT-ISixNE": [
+        "ACH-002139",
+        "ACH-002350"
+      ],
+      "PT-fygqZz": [
+        "ACH-002150",
+        "ACH-002352"
+      ],
+      "PT-hcnphT": [
+        "ACH-002151",
+        "ACH-002353"
+      ],
+      "PT-g7qDcx": [
+        "ACH-002152",
+        "ACH-002354"
+      ],
+      "PT-rIlRDz": [
+        "ACH-002153",
+        "ACH-002355"
+      ],
+      "PT-JQF9VX": [
+        "ACH-002154",
+        "ACH-002356"
+      ],
+      "PT-PReW1L": [
+        "ACH-002164",
+        "ACH-002360"
+      ],
+      "PT-XDM0rA": [
+        "ACH-002166",
+        "ACH-002361"
+      ],
+      "PT-ezsoUP": [
+        "ACH-002212",
+        "ACH-002342"
+      ],
+      "PT-2UHafq": [
+        "ACH-002213",
+        "ACH-002343"
+      ],
+      "PT-WBoaow": [
+        "ACH-002230",
+        "ACH-002351"
+      ],
+      "PT-4F46jD": [
+        "ACH-002265",
+        "ACH-002357"
+      ],
+      "PT-Ymhhgy": [
+        "ACH-002266",
+        "ACH-002358"
+      ],
+      "PT-eS45m8": [
+        "ACH-002286",
+        "ACH-002362"
+      ],
+      "PT-iW8GZP": [
+        "ACH-002399",
+        "ACH-002400",
+        "ACH-002401"
+      ],
+      "PT-L7CBMa": [
+        "ACH-002444",
+        "ACH-002445"
+      ],
+      "PT-i9nBPr": [
+        "ACH-002446",
+        "ACH-003437"
+      ],
+      "PT-JWRsco": [
+        "ACH-002462",
+        "ACH-002463",
+        "ACH-002464",
+        "ACH-002465",
+        "ACH-002466",
+        "ACH-002467"
+      ],
+      "PT-qcon1I": [
+        "ACH-002705",
+        "ACH-002706"
+      ],
+      "PT-5JIQX7": [
+        "ACH-002795",
+        "ACH-002796"
+      ],
+      "PT-hmiIEB": [
+        "ACH-002801",
+        "ACH-002802"
+      ],
+      "PT-N65Hvq": [
+        "ACH-002883",
+        "ACH-002884"
+      ],
+      "PT-aKVmiL": [
+        "ACH-003133",
+        "ACH-003136"
+      ],
+      "PT-c83Uwk": [
+        "ACH-003135",
+        "ACH-003137"
+      ],
+      "PT-CL2j3Q": [
+        "ACH-003153",
+        "ACH-003154",
+        "ACH-003155",
+        "ACH-003156"
+      ],
+      "PT-AUxVvV": [
+        "ACH-003159",
+        "ACH-003160"
+      ],
+      "PT-ce6oqw": [
+        "ACH-003475",
+        "ACH-003476"
+      ]
+    },
+    "SangerModelID": {
+      "SIDM00117": [
+        "ACH-000837",
+        "ACH-002172"
+      ]
+    },
+    "RRID": {
+      "CVCL_0041": [
+        "ACH-000833",
+        "ACH-001189"
+      ],
+      "CVCL_1122": [
+        "ACH-001024",
+        "ACH-001041"
+      ],
+      "CVCL_1439": [
+        "ACH-001571",
+        "ACH-002339"
+      ],
+      "CVCL_1150": [
+        "ACH-001737",
+        "ACH-002222"
+      ]
+    }
+  },
+  "important_alias_example": {
+    "SangerModelID": "SIDM00117",
+    "ModelIDs": [
+      "ACH-000837",
+      "ACH-002172"
+    ],
+    "names": [
+      "NCI-H322",
+      "NCI-H322M"
+    ],
+    "interpretation": "same PatientID and SangerModelID in archived metadata; group for leakage audit, do not count as independent biological validation"
+  }
+}

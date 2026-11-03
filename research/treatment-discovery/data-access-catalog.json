@@ -1,0 +1,208 @@
+{
+  "schema_version": 1,
+  "catalog_date": "2026-10-29",
+  "purpose": "Treatment-research data feasibility; local status is not evidence of efficacy or permission for unrelated restricted data",
+  "resources": [
+    {
+      "resource_id": "TD-DATA-01",
+      "name": "MSK NSCLC checkpoint-immunotherapy public clinical cohort",
+      "verified_date": "2026-10-29",
+      "source_urls": [
+        "https://github.com/cBioPortal/datahub/tree/21caf38992efa145ab7b895919cacff2cea700b5/public/nsclc_pd1_msk_2018",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC6075848/"
+      ],
+      "record_grain": "240 patients and 240 molecular samples; one-to-one in this pinned study",
+      "units": "Original mutation rate per Mb; DCB YES/NO/NE; source PFS months/status",
+      "join_keys": [
+        "PATIENT_ID",
+        "SAMPLE_ID",
+        "GENE_PANEL",
+        "repository commit"
+      ],
+      "local_status": "public_deidentified_clinical_tables_downloaded",
+      "local_paths": [
+        "research/treatment-discovery/data/nsclc_pd1_msk_2018/2026-10-29/download-manifest.json",
+        "research/treatment-discovery/clinical-pilot-data.md"
+      ],
+      "access": "Official public cBioPortal Datahub ODbL 1.0 snapshot; source license retained. No restricted or identifying records acquired.",
+      "limitations": "Selected MSK treated cohort, not Iowa. 36 post-treatment specimens reported in paper cannot be filtered from public fields. No randomized treatment comparator. Two TMB field vintages differ. NE excluded explicitly. Keep related MSK cohorts and repeated patients from leaking across validation."
+    },
+    {
+      "resource_id": "TD-DATA-02",
+      "name": "DepMap Public 26Q3 current release documentation",
+      "verified_date": "2026-10-29",
+      "source_urls": [
+        "https://forum.depmap.org/t/announcing-the-26q3-release/4692"
+      ],
+      "record_grain": "Model/condition/screen/profile and gene-level matrices; current manifest access incomplete",
+      "units": "Chronos effects, dependency probabilities, omics units depend on file",
+      "join_keys": [
+        "ModelID",
+        "ModelConditionID",
+        "ScreenID",
+        "ProfileID",
+        "gene identifier",
+        "release"
+      ],
+      "local_status": "release_notes_only_downloads_and_terms_unverified",
+      "local_paths": [
+        "research/treatment-discovery/sources/preclinical/2026-10-29/depmap-26q3-release-notes.json"
+      ],
+      "access": "Official release announcement verified; current downloads and terms returned human verification. Current matrix inventory/license not assumed from older release.",
+      "limitations": "26Q3 changes library effects and removes 96 library-restricted genes from specified files. Do not merge old/current releases as independent experiments or assume older license/schema."
+    },
+    {
+      "resource_id": "TD-DATA-03",
+      "name": "DepMap Public 24Q4 v1 reproducible archive",
+      "verified_date": "2026-10-29",
+      "source_urls": [
+        "https://plus.figshare.com/articles/dataset/DepMap_24Q4_Public/27993248/1"
+      ],
+      "record_grain": "Model, condition, screen and profile metadata; source response/omics matrices separately listed",
+      "units": "Chronos gene effects, dependency probability, log2 TPM+1, source mutation categories",
+      "join_keys": [
+        "ModelID",
+        "ModelConditionID",
+        "ScreenID",
+        "ProfileID",
+        "PatientID",
+        "SangerModelID",
+        "RRID"
+      ],
+      "local_status": "metadata_and_control_lists_downloaded_large_matrices_not_downloaded",
+      "local_paths": [
+        "research/treatment-discovery/sources/preclinical/2026-10-29/figshare-27993248-v1",
+        "research/treatment-discovery/preclinical-metadata-audit.json"
+      ],
+      "access": "Public version-pinned Figshare archive; CC BY 4.0 verified for this release.",
+      "limitations": "Basal cell-model screens do not identify treated residual states or normal-tissue safety. Related models/shared source patients require grouped validation. Processing predates 26Q3 corrections."
+    },
+    {
+      "resource_id": "TD-DATA-04",
+      "name": "PRISM Repurposing Public 24Q2 v1 extended primary screen",
+      "verified_date": "2026-10-29",
+      "source_urls": [
+        "https://api.figshare.com/v2/articles/25917643/versions/1"
+      ],
+      "record_grain": "Treatment by model; lower-level screen/culture/pool/dose and technical replicates",
+      "units": "Log2 barcode viability versus DMSO; new screens five days at 2.5 micromolar",
+      "join_keys": [
+        "depmap_id",
+        "compound full batch identifier",
+        "culture",
+        "screen",
+        "dose",
+        "release"
+      ],
+      "local_status": "cell_compound_treatment_metadata_and_readmes_downloaded_response_matrices_not_downloaded",
+      "local_paths": [
+        "research/treatment-discovery/sources/preclinical/2026-10-29/figshare-25917643-v1"
+      ],
+      "access": "Public Figshare version, CC BY 4.0.",
+      "limitations": "Metadata overlap is not compound-specific evaluability. Negative viability LFC is not automatically cell death. Single-dose response is not an IC50 or combination synergy. Documentation new-compound counts differ (1514/1522)."
+    },
+    {
+      "resource_id": "TD-DATA-05",
+      "name": "PRISM Repurposing 19Q4 v4 dose-response screen",
+      "verified_date": "2026-10-29",
+      "source_urls": [
+        "https://api.figshare.com/v2/articles/9393293/versions/4"
+      ],
+      "record_grain": "Compound batch by model by screen; fitted dose-response parameters",
+      "units": "Source auc, ec50, ic50, convergence and r2; eight fourfold dilutions starting at 10 micromolar",
+      "join_keys": [
+        "broad_id",
+        "depmap_id",
+        "screen",
+        "compound batch",
+        "release"
+      ],
+      "local_status": "selected_metadata_and_readmes_downloaded_response_matrix_not_downloaded",
+      "local_paths": [
+        "research/treatment-discovery/sources/preclinical/2026-10-29/figshare-9393293-v4"
+      ],
+      "access": "Public Figshare version, CC BY 4.0.",
+      "limitations": "Older separate screen; not dose-response for every 24Q2 compound. Technical redo MTS010 is not independent biological validation. Endpoint and dose interval differ from GDSC and single-dose PRISM."
+    },
+    {
+      "resource_id": "TD-DATA-06",
+      "name": "GDSC2 release 8.5 fitted dose-response workbook",
+      "verified_date": "2026-10-29",
+      "source_urls": [
+        "https://cog.sanger.ac.uk/cancerrxgene/GDSC_release8.5/GDSC2_fitted_dose_response_27Oct23.xlsx",
+        "https://depmap.sanger.ac.uk/documentation/datasets/drug-sensitivity/"
+      ],
+      "record_grain": "Model by compound by fitted curve with concentration range and QC",
+      "units": "LN_IC50 is natural log micromolar; normalized AUC depends on tested dose interval",
+      "join_keys": [
+        "SANGER_MODEL_ID",
+        "DRUG_ID",
+        "curve/result ID",
+        "MIN_CONC",
+        "MAX_CONC",
+        "release"
+      ],
+      "local_status": "official_url_head_verified_workbook_not_downloaded",
+      "local_paths": [
+        "research/treatment-discovery/sources/preclinical/2026-10-29/gdsc2-workbook-availability.json"
+      ],
+      "access": "Official 21,330,376-byte workbook URL HEAD 200; old CancerRxGene portal 410. Follow Sanger use terms; latest complete inventory unverified.",
+      "limitations": "Same/related cell models can overlap Broad and GDSC1/GDSC2; different assays are not necessarily independent biological validation. Preserve 72-hour ATP assay, dose bounds and RMSE; cancer model response is not patient efficacy."
+    },
+    {
+      "resource_id": "TD-DATA-07",
+      "name": "Sanger Cell Model Passports model metadata snapshot",
+      "verified_date": "2026-10-29",
+      "source_urls": [
+        "https://depmap.sanger.ac.uk/documentation/data-usage-policy/",
+        "https://depmap.sanger.ac.uk/documentation/datasets/"
+      ],
+      "record_grain": "1984 model rows in mutable latest model-list snapshot",
+      "units": "Categorical model/provenance metadata, not response measurements",
+      "join_keys": [
+        "SangerModelID",
+        "BROAD_ID",
+        "RRID",
+        "patient/source model groups",
+        "snapshot hash"
+      ],
+      "local_status": "model_list_and_official_documentation_downloaded",
+      "local_paths": [
+        "research/treatment-discovery/sources/preclinical/2026-10-29/sanger-model-list-latest.csv.gz",
+        "research/treatment-discovery/preclinical-metadata-audit.json"
+      ],
+      "access": "Sanger custom terms, not assumed CC BY. Source manifest preserves actual download URL and hash.",
+      "limitations": "Aliases and shared source-patient/derived models require review. Literal identifier match does not prove independent biology or matching treated condition."
+    },
+    {
+      "resource_id": "TD-DATA-08",
+      "name": "Maynard targeted-therapy lung adenocarcinoma single-cell study",
+      "verified_date": "2026-10-29",
+      "source_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC7484178/",
+        "https://github.com/czbiohub/scell_lung_adenocarcinoma",
+        "https://www.ncbi.nlm.nih.gov/bioproject/PRJNA591860"
+      ],
+      "record_grain": "Biopsy/sample within patient, then cells; source paper 49 biopsies from 30 patients across drivers/therapies",
+      "units": "Raw counts or processed expression depend on retrieved artifact; regenerative signature scoring must be frozen",
+      "join_keys": [
+        "patient",
+        "sample",
+        "lesion",
+        "driver variant",
+        "actual treatment",
+        "biopsy state/timing",
+        "cell malignant annotation"
+      ],
+      "local_status": "author_code_and_full_main_metadata_downloaded_expression_not_downloaded",
+      "local_paths": [
+        "research/treatment-discovery/egfr-mechanism-feasibility.md",
+        "research/treatment-discovery/egfr-mechanism-feasibility.json",
+        "research/treatment-discovery/sources/maynard-2026-10-29/manifest.json",
+        "research/treatment-discovery/sources/maynard-2026-10-29/egfr-main-metadata-audit.json"
+      ],
+      "access": "Public author repository pinned at de138c79bcfc2fa3a28c8a039a28ab560da78099; small code/metadata files and full 11,084,633-byte main metadata acquired with hashes. Matching 1,547,287,536-byte expression matrix identified but not acquired; independent eligible cohort not verified.",
+      "limitations": "Main metadata includes 27,489 cells, 51 samples and 33 patients before analytic QC, not the final paper cohort. Metadata-defined osimertinib common-EGFR-variant/adenocarcinoma subset has 14 samples/8 patients and 3 naive-to-grouped_pr patient pairs before malignant-cell/assay QC; one pair changes site. Code AT2 differentiation vector has 17 genes but its equivalence to the paper regenerative signature is unverified. Cells are not independent patients. No causal persistence dependency or patient efficacy from expression alone."
+    }
+  ]
+}

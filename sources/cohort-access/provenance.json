@@ -1,0 +1,77 @@
+{
+  "research_cutoff": "2026-10-22",
+  "no_identifying_data_held": true,
+  "no_access_request_submitted": true,
+  "resources": [
+    {
+      "file": "sources/cohort-access/ahs-private-applicator-enrollment-coded-manual.pdf",
+      "source_url": "https://aghealth.nih.gov/collaboration/qx/enrollment.pdf",
+      "retrieved": "2026-10-22",
+      "bytes": 1885328,
+      "sha256": "60bc5a988e900050afe2255a41dc4586c2604e63a0d945079d109928739222f4",
+      "status": "downloaded_public_document",
+      "contains_individual_person_data": false
+    },
+    {
+      "file": "sources/cohort-access/ahs-public-health-outcomes-2026-10-22.html",
+      "source_url": "https://aghealth.nih.gov/collaboration/outcomes.html",
+      "retrieved": "2026-10-22",
+      "bytes": 48902,
+      "sha256": "ca482028a7722c2941aca911da347d2e1e8cbce9ad7bf28bd823ede276ba9897",
+      "status": "downloaded_public_document",
+      "contains_individual_person_data": false
+    },
+    {
+      "file": "sources/cohort-access/ahs-collaboration-policy-2025.pdf",
+      "source_url": "https://aghealth.nih.gov/collaboration/AHS-Policy-2-4-GuidelinesForCollaboration-2025-1.pdf",
+      "retrieved": "2026-10-22",
+      "bytes": 157097,
+      "sha256": "f5d6bb05d20c6281e4b90d54b7a9457f2563c1c2e287696e9d97e99f40f4aa7f",
+      "status": "downloaded_public_document",
+      "contains_individual_person_data": false
+    },
+    {
+      "file": "sources/cohort-access/ahs-public-cancer-summary-through-2021.csv",
+      "source_url": "https://aghealth.nih.gov/collaboration/outcomes.html",
+      "retrieved": "2026-10-22",
+      "bytes": 12667,
+      "sha256": "fa30e18438e565dd0772756b65359b79ff544a52070e96d991296497d5e52325",
+      "status": "derived_public_aggregate_table",
+      "rows": 46,
+      "transformation": "First two HTML tables; all cancer-site rows and All summary retained; text whitespace normalized; role and registry cutoff metadata added",
+      "contains_individual_person_data": false
+    }
+  ],
+  "public_cancer_summary_notes": {
+    "tables": "Official Tables 2a and 2b; site rows plus All summaries",
+    "registry_complete_through": {
+      "Iowa": 2021,
+      "North_Carolina": 2021
+    },
+    "participant_groups": [
+      "applicator",
+      "spouse"
+    ],
+    "sample_subset_denominators": {
+      "applicator": {
+        "completed_phase_2": 36341,
+        "completed_phase_3": 24170,
+        "completed_phase_4": 24145,
+        "completed_phase_5": 18206,
+        "returned_buccal_sample": 20436,
+        "returned_diet_history_questionnaire": 19626
+      },
+      "spouse": {
+        "completed_phase_2": 23796,
+        "completed_phase_3": 19959,
+        "completed_phase_4": 18186,
+        "completed_phase_5": 13973,
+        "returned_buccal_sample": 14391,
+        "returned_diet_history_questionnaire": 15385
+      }
+    },
+    "overlap": "Follow-up/sample columns overlap; All summarizes site rows; do not add overlapping columns or All to site counts. The site table is not an Iowa-only participant file.",
+    "count_encoding": "Original display text retained, including thousands separators; parse count strings after removing commas.",
+    "instrument": "Blank coded manual; 20 PDF pages; cover OMB expiration 1996-08-31 is not cohort follow-up cutoff."
+  }
+}

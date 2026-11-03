@@ -1,0 +1,99 @@
+Death Rate Report by State
+
+"Thyroid, 2020-2024"
+
+"All Races (includes Hispanic), Both Sexes, All Ages"
+
+Sorted by Rate
+
+State,FIPS,Met Healthy People Objective of ***?,"Age-Adjusted Death Rate([rate note]) - deaths per 100,000","Lower CI (Rate)","Upper CI (Rate)","CI*Rank([rank note])","Lower CI (CI*Rank)","Upper CI (CI*Rank)",Average Annual Count,Recent Trend,"Recent 5-Year Trend ([trend note]) in Death Rates","Lower 95% Confidence Interval","Upper 95% Confidence Interval"
+"United States",00000,***,0.5 ,0.5, 0.5,N/A , N/A , N/A,2137,stable,-0.1 ,-1.4, 0.2
+"Wyoming",56000,***,0.7 ,0.5, 1.1,1 , 1 , 49,5,*,*,*,*
+"Utah",49000,***,0.7 ,0.6, 0.9,2 , 1 , 24,20,*,*,*,*
+"Nebraska",31000,***,0.7 ,0.5, 0.8,3 , 1 , 33,16,*,*,*,*
+"Hawaii",15000,***,0.7 ,0.5, 0.8,4 , 1 , 40,15,*,*,*,*
+"Alaska",02900,***,0.6 ,0.4, 1,5 , 1 , 50,5,*,*,*,*
+"North Dakota",38000,***,0.6 ,0.4, 0.9,6 , 1 , 50,6,*,*,*,*
+"Vermont",50000,***,0.6 ,0.4, 0.9,7 , 1 , 50,6,*,*,*,*
+"California",06000,***,0.6 ,0.6, 0.6,8 , 3 , 17,277,stable,-1.5 ,-6.2, 0.3
+"Washington",53000,***,0.6 ,0.5, 0.6,9 , 2 , 33,54,stable,0.8 ,-0.3, 2.1
+"Montana",30000,***,0.6 ,0.4, 0.8,10 , 1 , 50,8,*,*,*,*
+"New Mexico",35000,***,0.6 ,0.4, 0.7,11 , 1 , 48,16,stable,0.1 ,-1.6, 2.1
+"Wisconsin",55000,***,0.6 ,0.5, 0.6,12 , 2 , 35,44,stable,0.6 ,-0.5, 1.8
+"Illinois",17000,***,0.6 ,0.5, 0.6,13 , 4 , 30,90,rising,0.8 ,0.2, 1.5
+"Arkansas",05000,***,0.6 ,0.5, 0.7,14 , 2 , 45,22,stable,0.4 ,-1.5, 2.6
+"Kansas",20000,***,0.5 ,0.4, 0.7,15 , 2 , 46,21,stable,-0.1 ,-1.8, 1.7
+"Arizona",04000,***,0.5 ,0.5, 0.6,16 , 4 , 37,55,stable,0.3 ,-0.8, 1.6
+"Minnesota",27000,***,0.5 ,0.5, 0.6,17 , 3 , 41,39,stable,0.6 ,-0.3, 1.7
+"Oregon",41000,***,0.5 ,0.5, 0.6,18 , 3 , 44,31,stable,1.3 ,-0.1, 3.1
+"Texas",48000,***,0.5 ,0.5, 0.6,19 , 6 , 29,166,stable,0.2 ,-0.4, 0.9
+"Michigan",26000,***,0.5 ,0.5, 0.6,20 , 5 , 37,74,rising,8.3 ,0.6, 14.3
+"Oklahoma",40000,***,0.5 ,0.4, 0.6,21 , 3 , 46,25,stable,1.1 ,-0.1, 2.6
+"Indiana",18000,***,0.5 ,0.5, 0.6,22 , 4 , 44,43,stable,0.4 ,-0.4, 1.2
+"Virginia",51000,***,0.5 ,0.5, 0.6,23 , 6 , 42,55,rising,1.3 ,0.4, 2.2
+"Idaho",16000,***,0.5 ,0.4, 0.7,24 , 2 , 50,12,*,*,*,*
+"Missouri",29000,***,0.5 ,0.4, 0.6,25 , 6 , 47,41,stable,0.2 ,-0.8, 1.3
+"Colorado",08000,***,0.5 ,0.4, 0.6,26 , 6 , 48,33,stable,-0.1 ,-1.4, 1.5
+"Maryland",24000,***,0.5 ,0.4, 0.6,27 , 7 , 47,38,stable,-0.4 ,-11.4, 2.7
+"North Carolina",37000,***,0.5 ,0.4, 0.5,28 , 11 , 45,64,stable,0.9 ,0.0, 2.1
+"Georgia",13000,***,0.5 ,0.4, 0.5,29 , 12 , 47,58,stable,0.8 ,-0.2, 2.0
+"Pennsylvania",42000,***,0.5 ,0.4, 0.5,30 , 15 , 46,87,falling,-6.5 ,-12.7, -0.2
+"Iowa",19000,***,0.5 ,0.4, 0.6,31 , 6 , 50,19,*,*,*,*
+"Ohio",39000,***,0.5 ,0.4, 0.5,32 , 16 , 47,73,stable,-0.9 ,-5.5, 0.0
+"Tennessee",47000,***,0.5 ,0.4, 0.5,33 , 11 , 48,40,stable,-0.1 ,-1.5, 1.5
+"Louisiana",22000,***,0.5 ,0.4, 0.5,34 , 9 , 50,26,stable,0.1 ,-7.0, 7.8
+"Florida",12000,***,0.5 ,0.4, 0.5,35 , 23 , 46,156,stable,0.3 ,-0.3, 0.9
+"New Jersey",34000,***,0.4 ,0.4, 0.5,36 , 18 , 49,55,stable,-0.8 ,-1.9, 0.3
+"Mississippi",28000,***,0.4 ,0.4, 0.6,37 , 8 , 50,17,stable,-0.1 ,-1.5, 1.4
+"Kentucky",21000,***,0.4 ,0.4, 0.5,38 , 12 , 50,26,stable,-1.1 ,-2.2, 0.2
+"New York",36000,***,0.4 ,0.4, 0.5,39 , 23 , 48,116,falling,-2.3 ,-5.6, -1.0
+"South Carolina",45000,***,0.4 ,0.4, 0.5,40 , 14 , 50,31,stable,0.5 ,-0.8, 2.2
+"Nevada",32000,***,0.4 ,0.3, 0.5,41 , 9 , 50,17,stable,-5.0 ,-19.8, 0.6
+"New Hampshire",33000,***,0.4 ,0.3, 0.6,42 , 5 , 50,8,*,*,*,*
+"Alabama",01000,***,0.4 ,0.4, 0.5,43 , 17 , 50,27,stable,0.1 ,-1.0, 1.3
+"West Virginia",54000,***,0.4 ,0.3, 0.6,44 , 7 , 50,11,*,*,*,*
+"Delaware",10000,***,0.4 ,0.3, 0.6,45 , 4 , 50,7,*,*,*,*
+"Connecticut",09000,***,0.4 ,0.3, 0.5,46 , 17 , 50,21,stable,-1.0 ,-2.2, 0.2
+"Massachusetts",25000,***,0.4 ,0.3, 0.5,47 , 25 , 50,38,falling,-2.6 ,-12.4, -0.5
+"Puerto Rico",72001,***,0.4 ,0.3, 0.5,N/A , N/A , N/A,23,stable,-1.1 ,-11.9, 11.1
+"Rhode Island",44000,***,0.4 ,0.3, 0.6,48 , 6 , 50,6,*,*,*,*
+"Maine",23000,***,0.4 ,0.3, 0.5,49 , 15 , 50,8,*,*,*,*
+"South Dakota",46000,***,0.3 ,0.2, 0.5,50 , 7 , 50,4,*,*,*,*
+"District of Columbia",11001,*,* ,*, *,* , * , *,3 or fewer,*,*,*,*
+
+
+Notes:
+
+Created by statecancerprofiles.cancer.gov on 10/22/2026 6:40 pm.
+
+"State Cancer Registries [ https://www.cdc.gov/national-program-cancer-registries/contact/index.html ] may provide more current or more local data."
+
+"
+
+Trend
+   Rising when 95% confidence interval of average annual percent change is above 0.
+   Stable when 95% confidence interval of average annual percent change includes 0.
+   Falling when 95% confidence interval of average annual percent change is below 0.
+"
+
+"[rate note] Death data provided by the National Vital Statistics System public use data file.  Death rates calculated by the National Cancer Institute using SEER*Stat.  Death rates are age-adjusted  to the 2000 US standard population [http://www.seer.cancer.gov/stdpopulations/] (20 age groups: <1, 1-4, 5-9, ... , 80-84, 85-89, 90+)."
+
+"Population counts for denominators are based on Census populations as modified by NCI."
+
+"The US Population Data File [https://seer.cancer.gov/popdata/] is used with mortality data. "
+
+"[trend note] The Average Annual Percent Change (AAPC) is based on the APCs calculated by Joinpoint [ https://surveillance.cancer.gov/joinpoint/ ]. Due to data availability issues, the time period used in the calculation of the joinpoint regression model may differ [ https://statecancerprofiles.cancer.gov/historicaltrend/differences.html ] for selected counties."
+
+"[rank note] Results presented with the CI*Rank statistics help show the usefulness of ranks. For example, ranks for relatively rare diseases or less populated areas may be essentially meaningless because of their large variability, but ranks for more common diseases in densely populated regions can be very useful. More information about methodology can be found on the CI*Rank website [ https://surveillance.cancer.gov/cirank/ ]."
+
+"*** No Healthy People 2030 Objective for this cancer."
+
+"Healthy People 2030 Objectives [ https://www.healthypeople.gov/ ]provided by the Centers for Disease Control and Prevention [ https://www.cdc.gov ]. The Healthy People 2030 goals are based on rates adjusted using different methods but the differences should be minimal."
+
+"* Data has been suppressed to ensure confidentiality and stability of rate estimates.  Counts are suppressed if fewer than 16 records were reported in a specific area-sex-race category."
+
+" If an average count of 3 is shown, the total number of cases for the time period is 16 or more which exceeds suppression threshold (but is rounded to 3)."
+
+"Data for United States does not include Puerto Rico."
+
+"CI*Rank data for Puerto Rico is not available."

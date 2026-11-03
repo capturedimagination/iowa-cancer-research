@@ -1,0 +1,2 @@
+# Preserve exact source bytes for the recorded SHA-256 values on every platform.
+* -text

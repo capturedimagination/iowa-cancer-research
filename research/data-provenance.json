@@ -1,0 +1,48 @@
+[
+  {
+    "file": "research/sources/iowa-county-incidence-nci-original.csv",
+    "source_url": "https://statecancerprofiles.cancer.gov/incidencerates/index.php?stateFIPS=19&areatype=county&cancer=001&race=00&sex=0&age=001&type=incd&year=0&sortVariableName=rate&sortOrder=desc&output=1",
+    "data_period": "2019-2023",
+    "population": "All races (includes Hispanic), both sexes, all ages",
+    "access_date": "2026-10-22",
+    "generated": "Created by statecancerprofiles.cancer.gov on 10/22/2026 6:38 pm.",
+    "rate_standard": "2000 US standard population; incidence displayed SEER 20 age groups, NPCR 19; CI*Rank uniformly 19",
+    "source_submission": "SEER November 2025 and NPCR 2025 submission",
+    "transformation": "Original includes metadata, header, table and footnotes; cleaned CSV retains all 99 counties plus Iowa and US comparison rows."
+  },
+  {
+    "file": "research/sources/iowa-county-mortality-nci-original.csv",
+    "source_url": "https://statecancerprofiles.cancer.gov/deathrates/index.php?stateFIPS=19&areatype=county&cancer=001&race=00&sex=0&age=001&type=death&year=0&sortVariableName=rate&sortOrder=desc&output=1",
+    "data_period": "2020-2024",
+    "population": "All races (includes Hispanic), both sexes, all ages",
+    "access_date": "2026-10-22",
+    "generated": "Created by statecancerprofiles.cancer.gov on 10/22/2026 6:38 pm.",
+    "rate_standard": "Death rates calculated by NCI using SEER*Stat and age-adjusted to the 2000 US standard population (20 age groups: <1, 1-4, 5-9, ..., 80-84, 85-89, 90+).",
+    "source_submission": "National Vital Statistics System public use data file",
+    "transformation": "Original includes metadata, header, table and footnotes; cleaned CSV retains all 99 counties plus Iowa and US comparison rows.",
+    "trend_caution": "Overall Iowa recent trend is source-labeled stable (AAPC -0.5%, 95% CI -1.3 to 0.1), while separate male and female downloads are labeled falling. These are independently fitted Joinpoint trends; the exact reason for the difference has not been independently established. Preserve each source label and do not average subgroup AAPCs or substitute subgroup labels for the combined trend."
+  },
+  {
+    "file": "research/sources/us-state-incidence-nci-original.csv",
+    "source_url": "https://statecancerprofiles.cancer.gov/incidencerates/index.php?stateFIPS=00&areatype=state&cancer=001&race=00&sex=0&age=001&type=incd&year=0&sortVariableName=rate&sortOrder=desc&output=1",
+    "data_period": "2019-2023",
+    "population": "All races (includes Hispanic), both sexes, all ages",
+    "access_date": "2026-10-22",
+    "generated": "Created by statecancerprofiles.cancer.gov on 10/22/2026 6:38 pm.",
+    "rate_standard": "2000 US standard population; incidence displayed SEER 20 age groups, NPCR 19; CI*Rank uniformly 19",
+    "source_submission": "SEER November 2025 and NPCR 2025 submission",
+    "transformation": "Original includes metadata, header, state-level table and footnotes; cleaned CSV retains all 53 original table rows: 50 states, District of Columbia, Puerto Rico, and the US comparison. US aggregate excludes Puerto Rico, per source footnote. No county rows occur in this file."
+  },
+  {
+    "file": "research/sources/us-state-mortality-nci-original.csv",
+    "source_url": "https://statecancerprofiles.cancer.gov/deathrates/index.php?stateFIPS=00&areatype=state&cancer=001&race=00&sex=0&age=001&type=death&year=0&sortVariableName=rate&sortOrder=desc&output=1",
+    "data_period": "2020-2024",
+    "population": "All races (includes Hispanic), both sexes, all ages",
+    "access_date": "2026-10-22",
+    "generated": "Created by statecancerprofiles.cancer.gov on 10/22/2026 6:38 pm.",
+    "rate_standard": "Death rates calculated by NCI using SEER*Stat and age-adjusted to the 2000 US standard population (20 age groups: <1, 1-4, 5-9, ..., 80-84, 85-89, 90+).",
+    "source_submission": "National Vital Statistics System public use data file",
+    "transformation": "Original includes metadata, header, state-level table and footnotes; cleaned CSV retains all 53 original table rows: 50 states, District of Columbia, Puerto Rico, and the US comparison. US aggregate excludes Puerto Rico, per source footnote. No county rows occur in this file.",
+    "trend_caution": "Overall Iowa recent trend is source-labeled stable (AAPC -0.5%, 95% CI -1.3 to 0.1), while separate male and female downloads are labeled falling. These are independently fitted Joinpoint trends; the exact reason for the difference has not been independently established. Preserve each source label and do not average subgroup AAPCs or substitute subgroup labels for the combined trend."
+  }
+]

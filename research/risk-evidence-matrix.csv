@@ -1,0 +1,15 @@
+factor,evidence,main_limit,iowa_implication,report_source_ids
+Tobacco,Established cause of multiple cancers,Current prevalence misses past smoking exposure,Iowa cessation/smoke-free measures; no individual attribution,13
+Alcohol,Established cause at multiple cancer sites,Site totals are not alcohol-attributable counts,Reduce exposure; share Iowa-specific education,14
+Excess body fat,Established risk for multiple cancer sites,National attributable fractions do not explain Iowa excess,Support activity and sustainable healthy weight,12;15
+Ultraviolet radiation,Established skin-cancer cause,Melanoma diagnosis also reflects detection and susceptibility,UV protection and avoid tanning,18
+HPV/HBV/HCV,Established infection-related cancer pathways,Vaccination does not treat established HPV infection,Indicated vaccination; HCV detection and treatment,19;71;74
+Radon,Established lung carcinogen with Iowa individual-level evidence,Historical 71.6% home survey is not a current census,Test; mitigate at EPA action levels; retest,22;23;24
+Drinking-water nitrate,Mixed cancer-specific observational evidence,"Different contrasts, exposure models and null findings; no statewide causal fraction",Measure actual water; address exceedances; investigate long-term exposure,26;27;28;29;30;31;35
+Glyphosate,IARC probable hazard; divergent EPA assessment; AHS mixed findings,Main AHS overall/NHL null; AML imprecise/lagged signals,Ingredient-specific controls and updated assessment,37;38;73
+Atrazine/alachlor,IARC Group 2A since November 2025,Classification is not an Iowa attributable fraction,Reduce avoidable exposure; evaluate specific cancer evidence,36;39
+Dicamba,AHS liver/bile-duct association,Limited exposed cases; other earlier signals not persistent,Specific controls; replication and historical exposure assessment,40
+PFOA/PFOS,PFOA IARC Group 1; PFOS Group 2B,Targeted water sample not statewide random prevalence; no statewide attribution,Review monitoring; certified treatment where appropriate,43;44;45;46;47
+Animal feeding operations,Exploratory ecological and proxy-based cohort associations,No fixed personal risk from distance; nonmonotonic findings,Better individual exposure studies and source controls,41;42
+Arsenic/workplace carcinogens,Known hazards relevant to specific exposures,Do not presume source or dose from county residence,Well testing and occupational controls,31;33;48
+Firefighting,Established carcinogenic occupational circumstance,Not a general-population statewide risk estimate,Workplace exposure reduction and surveillance,49

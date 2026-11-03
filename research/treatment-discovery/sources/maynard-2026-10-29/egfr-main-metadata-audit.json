@@ -1,0 +1,360 @@
+{
+  "source": "research/treatment-discovery/sources/maynard-2026-10-29/S01_metacells.csv",
+  "source_sha256": "b4f3f169516001e89bc8b3d8052e207331ff662ca6d236e1c2cf68eccffdf2a6",
+  "source_bytes": 11084633,
+  "columns": [
+    "",
+    "well",
+    "plate",
+    "cell_id",
+    "sample_name",
+    "patient_id",
+    "gender",
+    "race",
+    "smokingHx",
+    "histolgy",
+    "driver_gene",
+    "driver_mutation",
+    "secondary_mutation",
+    "Notes",
+    "stage.at.dx",
+    "pathlogy_review",
+    "biopsy_date",
+    "sort_date",
+    "biopsy_type",
+    "biopsy_site",
+    "primary_or_metastaic",
+    "biopsy_time_status",
+    "early_treatment_status",
+    "best_response_status",
+    "biopsy_timing",
+    "analysis",
+    "treatment_history",
+    "treatment_history_detail",
+    "line_of_therapy",
+    "treatment_type",
+    "treatment",
+    "percent_PFS_ref_values",
+    "percent.PFS.reference.values",
+    "infections",
+    "early_bx_day",
+    "treatment_start_date",
+    "pfs_over_under",
+    "pfs_day",
+    "pfs_month",
+    "date_of_death",
+    "stageIII.IV_ca_dx_date",
+    "ca_dx_OS"
+  ],
+  "cell_rows": 27489,
+  "unique_cell_ids": 27489,
+  "sample_ids": 51,
+  "patient_ids": 33,
+  "scope": "Main metadata only, before analytic/malignant-cell QC; neo-osi subset not merged.",
+  "filter_logic": {
+    "EGFR_adenocarcinoma_any_variant": "driver_gene == 'EGFR' and histolgy == 'Adenocarcinoma'",
+    "EGFR_adenocarcinoma_del19_or_L858R": "Previous filter and driver_mutation in ['del19', 'L858R']",
+    "EGFR_adenocarcinoma_del19_or_L858R_treatment_exact_osimertinib": "Previous filter and treatment == 'osimertinib'",
+    "pair": "Same patient_id has >=1 analysis == 'naive' and >=1 analysis == 'grouped_pr'; source labels preserved"
+  },
+  "metadata_defined_populations": {
+    "EGFR_adenocarcinoma_any_variant": {
+      "samples": 24,
+      "patient_ids": 14,
+      "state_samples": {
+        "grouped_pd": 7,
+        "grouped_pr": 9,
+        "naive": 8
+      },
+      "state_patient_ids": {
+        "grouped_pd": 5,
+        "grouped_pr": 6,
+        "naive": 7
+      },
+      "naive_residual_paired_patient_ids": 3,
+      "naive_residual_pair_records": [
+        {
+          "patient_id": "TH205",
+          "naive_samples": [
+            "LT_S34"
+          ],
+          "residual_group_samples": [
+            "LT_S46"
+          ],
+          "progression_group_samples": [],
+          "naive_biopsy_sites": [
+            "Pleura"
+          ],
+          "residual_biopsy_sites": [
+            "Lung"
+          ],
+          "same_source_site_sets": false,
+          "naive_biopsy_dates": [
+            "2017-11-13"
+          ],
+          "residual_biopsy_dates": [
+            "2018-01-22"
+          ],
+          "treatment_start_dates": [
+            "2018-01-04"
+          ]
+        },
+        {
+          "patient_id": "TH218",
+          "naive_samples": [
+            "LT_S45"
+          ],
+          "residual_group_samples": [
+            "LT_S55"
+          ],
+          "progression_group_samples": [],
+          "naive_biopsy_sites": [
+            "Adrenal"
+          ],
+          "residual_biopsy_sites": [
+            "Adrenal"
+          ],
+          "same_source_site_sets": true,
+          "naive_biopsy_dates": [
+            "2018-01-18"
+          ],
+          "residual_biopsy_dates": [
+            "2018-02-23"
+          ],
+          "treatment_start_dates": [
+            "2018-01-31"
+          ]
+        },
+        {
+          "patient_id": "TH226",
+          "naive_samples": [
+            "LT_S52"
+          ],
+          "residual_group_samples": [
+            "LT_S57"
+          ],
+          "progression_group_samples": [
+            "LT_S82"
+          ],
+          "naive_biopsy_sites": [
+            "Lung"
+          ],
+          "residual_biopsy_sites": [
+            "Lung"
+          ],
+          "same_source_site_sets": true,
+          "naive_biopsy_dates": [
+            "2018-02-14"
+          ],
+          "residual_biopsy_dates": [
+            "2018-03-07"
+          ],
+          "treatment_start_dates": [
+            "2018-02-19"
+          ]
+        }
+      ]
+    },
+    "EGFR_adenocarcinoma_del19_or_L858R": {
+      "samples": 23,
+      "patient_ids": 13,
+      "state_samples": {
+        "grouped_pd": 7,
+        "grouped_pr": 9,
+        "naive": 7
+      },
+      "state_patient_ids": {
+        "grouped_pd": 5,
+        "grouped_pr": 6,
+        "naive": 6
+      },
+      "naive_residual_paired_patient_ids": 3,
+      "naive_residual_pair_records": [
+        {
+          "patient_id": "TH205",
+          "naive_samples": [
+            "LT_S34"
+          ],
+          "residual_group_samples": [
+            "LT_S46"
+          ],
+          "progression_group_samples": [],
+          "naive_biopsy_sites": [
+            "Pleura"
+          ],
+          "residual_biopsy_sites": [
+            "Lung"
+          ],
+          "same_source_site_sets": false,
+          "naive_biopsy_dates": [
+            "2017-11-13"
+          ],
+          "residual_biopsy_dates": [
+            "2018-01-22"
+          ],
+          "treatment_start_dates": [
+            "2018-01-04"
+          ]
+        },
+        {
+          "patient_id": "TH218",
+          "naive_samples": [
+            "LT_S45"
+          ],
+          "residual_group_samples": [
+            "LT_S55"
+          ],
+          "progression_group_samples": [],
+          "naive_biopsy_sites": [
+            "Adrenal"
+          ],
+          "residual_biopsy_sites": [
+            "Adrenal"
+          ],
+          "same_source_site_sets": true,
+          "naive_biopsy_dates": [
+            "2018-01-18"
+          ],
+          "residual_biopsy_dates": [
+            "2018-02-23"
+          ],
+          "treatment_start_dates": [
+            "2018-01-31"
+          ]
+        },
+        {
+          "patient_id": "TH226",
+          "naive_samples": [
+            "LT_S52"
+          ],
+          "residual_group_samples": [
+            "LT_S57"
+          ],
+          "progression_group_samples": [
+            "LT_S82"
+          ],
+          "naive_biopsy_sites": [
+            "Lung"
+          ],
+          "residual_biopsy_sites": [
+            "Lung"
+          ],
+          "same_source_site_sets": true,
+          "naive_biopsy_dates": [
+            "2018-02-14"
+          ],
+          "residual_biopsy_dates": [
+            "2018-03-07"
+          ],
+          "treatment_start_dates": [
+            "2018-02-19"
+          ]
+        }
+      ]
+    },
+    "EGFR_adenocarcinoma_del19_or_L858R_treatment_exact_osimertinib": {
+      "samples": 14,
+      "patient_ids": 8,
+      "state_samples": {
+        "grouped_pd": 2,
+        "grouped_pr": 6,
+        "naive": 6
+      },
+      "state_patient_ids": {
+        "grouped_pd": 2,
+        "grouped_pr": 5,
+        "naive": 5
+      },
+      "naive_residual_paired_patient_ids": 3,
+      "naive_residual_pair_records": [
+        {
+          "patient_id": "TH205",
+          "naive_samples": [
+            "LT_S34"
+          ],
+          "residual_group_samples": [
+            "LT_S46"
+          ],
+          "progression_group_samples": [],
+          "naive_biopsy_sites": [
+            "Pleura"
+          ],
+          "residual_biopsy_sites": [
+            "Lung"
+          ],
+          "same_source_site_sets": false,
+          "naive_biopsy_dates": [
+            "2017-11-13"
+          ],
+          "residual_biopsy_dates": [
+            "2018-01-22"
+          ],
+          "treatment_start_dates": [
+            "2018-01-04"
+          ]
+        },
+        {
+          "patient_id": "TH218",
+          "naive_samples": [
+            "LT_S45"
+          ],
+          "residual_group_samples": [
+            "LT_S55"
+          ],
+          "progression_group_samples": [],
+          "naive_biopsy_sites": [
+            "Adrenal"
+          ],
+          "residual_biopsy_sites": [
+            "Adrenal"
+          ],
+          "same_source_site_sets": true,
+          "naive_biopsy_dates": [
+            "2018-01-18"
+          ],
+          "residual_biopsy_dates": [
+            "2018-02-23"
+          ],
+          "treatment_start_dates": [
+            "2018-01-31"
+          ]
+        },
+        {
+          "patient_id": "TH226",
+          "naive_samples": [
+            "LT_S52"
+          ],
+          "residual_group_samples": [
+            "LT_S57"
+          ],
+          "progression_group_samples": [
+            "LT_S82"
+          ],
+          "naive_biopsy_sites": [
+            "Lung"
+          ],
+          "residual_biopsy_sites": [
+            "Lung"
+          ],
+          "same_source_site_sets": true,
+          "naive_biopsy_dates": [
+            "2018-02-14"
+          ],
+          "residual_biopsy_dates": [
+            "2018-03-07"
+          ],
+          "treatment_start_dates": [
+            "2018-02-19"
+          ]
+        }
+      ]
+    }
+  },
+  "limits": [
+    "No mutation status inferred from RNA dropout; explicit metadata only.",
+    "Repeated samples/cells are not independent patients.",
+    "Source treatment_history == naive can describe first-line on-treatment samples; it is not a pretreatment filter.",
+    "Source grouped_pr pools Early and PR; grouped_pd can include early primary nonresponse.",
+    "No expression, signature, outcome score, model or final analytic eligibility was calculated."
+  ]
+}

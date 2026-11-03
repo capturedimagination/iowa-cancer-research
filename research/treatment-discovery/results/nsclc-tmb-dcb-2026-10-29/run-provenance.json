@@ -1,0 +1,8 @@
+{
+  "script": "scripts/run_nsclc_benchmark.py",
+  "script_sha256": "debac42b7d8a2e9c99ec081d97216ed9287525c2ce56ecd217cc82d5597c4e79",
+  "results_sha256": "ae8a823e30e6c6255b2669fec7a4219938a0c5c5cb805aaf109726e89f722202",
+  "source_snapshot": "research/treatment-discovery/data/nsclc_pd1_msk_2018/2026-10-29",
+  "protocol_sha256": "4bca018fb1c712c859a519d8a3c30eabb7e4fa9182c760a1bf97a45e64d373e0",
+  "purpose": "Reproducible known-association benchmark; not new efficacy evidence"
+}

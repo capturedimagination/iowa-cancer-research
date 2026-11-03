@@ -1,0 +1,72 @@
+[
+  {
+    "file": "atlantic-pce-atsdr-2026.pdf",
+    "url": "https://www.atsdr.cdc.gov/HAC/pha/PCECleaner/PCE-Former-Drycleaner-final-508.pdf",
+    "valid_pdf": true,
+    "bytes": 1641320
+  },
+  {
+    "file": "iaap-atsdr-2013.pdf",
+    "url": "https://www.atsdr.cdc.gov/HAC/pha/IowaArmyAmmunitionPlant/IowaArmyAmmunitionPlantLHC09192013_508.pdf",
+    "valid_pdf": true,
+    "bytes": 2661734
+  },
+  {
+    "file": "mason-city-coal-gas-atsdr-2008.pdf",
+    "url": "https://www.atsdr.cdc.gov/HAC/pha/MasonCityCoalGasificationPlant/MasonCityCoalGasification%20LHC%206-13-2008.pdf",
+    "valid_pdf": true,
+    "bytes": 1016468
+  },
+  {
+    "file": "perry-rail-yard-atsdr-2007.pdf",
+    "url": "https://www.atsdr.cdc.gov/HAC/pha/ChicagoMilwaukeeandStPaulRailYard/ChicagoMilwaukeeStPaulRailYardHC053107.pdf",
+    "valid_pdf": true,
+    "bytes": 1826703
+  },
+  {
+    "file": "oskaloosa-bulk-oil-atsdr-2006.pdf",
+    "url": "https://www.atsdr.cdc.gov/HAC/pha/BuchananBulkOilMaPa/BuchananBulkOilHC093006.pdf",
+    "valid_pdf": true,
+    "bytes": 446073
+  },
+  {
+    "file": "iowa-city-coal-gas-atsdr-2006.pdf",
+    "url": "https://www.atsdr.cdc.gov/HAC/pha/IowaCityFMGP/IowaCityFMGP-HC091406.pdf",
+    "valid_pdf": true,
+    "bytes": 1704165
+  },
+  {
+    "file": "doty-landfill-atsdr-2008.pdf",
+    "url": "https://www.atsdr.cdc.gov/HAC/pha/DotyLandfillSite/DotyLandfillSite%20LHC%206-23-2008.pdf",
+    "valid_pdf": true,
+    "bytes": 1029440
+  },
+  {
+    "file": "iaap-quella-dissertation-2010.pdf",
+    "url": "https://citeseerx.ist.psu.edu/document?doi=abd70e20a0d14188151a8fb9cfef0eba81a0b01b&repid=rep1&type=pdf",
+    "error": "HTTP Error 404: NOT FOUND"
+  },
+  {
+    "file": "gasoline-iarc-qa-2025.pdf",
+    "url": "https://www.iarc.who.int/wp-content/uploads/2025/03/QA-Mono-Vol138.pdf",
+    "valid_pdf": true,
+    "bytes": 352772
+  },
+  {
+    "file": "equistar-clinton-benzene-atsdr-2008.pdf",
+    "url": "https://www.atsdr.cdc.gov/HAC/pha/EquistarPyrolysis/EquistarPyrolysisHC062708.pdf",
+    "valid_pdf": true,
+    "bytes": 1108691
+  },
+  {
+    "file": "ames-municipal-power-niosh-1988.pdf",
+    "url": "https://stacks.cdc.gov/view/cdc/171905/cdc_171905_DS1.pdf",
+    "valid_pdf": true,
+    "bytes": 631866
+  },
+  {
+    "file": "ottumwa-midland-water-quality-2025.pdf",
+    "url": "https://programs.iowadnr.gov/solidwaste/OpenText/DownloadDocument/114848",
+    "error": "HTTP Error 403: Forbidden"
+  }
+]

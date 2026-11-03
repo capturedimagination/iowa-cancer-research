@@ -1,0 +1,520 @@
+[
+  {
+    "id": 1,
+    "title": "NCI State Cancer Profiles: all-site incidence by state, live 2019-2023 download",
+    "url": "https://statecancerprofiles.cancer.gov/incidencerates/index.php?stateFIPS=00&areatype=state&cancer=001&race=00&sex=0&age=001&type=incd&year=0&sortVariableName=rate&sortOrder=desc&output=1",
+    "evidence_type": "Federal surveillance",
+    "access_date": "2026-10-22"
+  },
+  {
+    "id": 2,
+    "title": "NCI State Cancer Profiles: all-site mortality by state, live 2020-2024 download",
+    "url": "https://statecancerprofiles.cancer.gov/deathrates/index.php?stateFIPS=00&areatype=state&cancer=001&race=00&sex=0&age=001&type=death&year=0&sortVariableName=rate&sortOrder=desc&output=1",
+    "evidence_type": "Federal surveillance",
+    "access_date": "2026-10-22"
+  },
+  {
+    "id": 3,
+    "title": "Iowa Cancer Registry: Cancer in Iowa 2026, especially pages 3-6",
+    "url": "https://shri.public-health.uiowa.edu/wp-content/uploads/2026/03/2026-Cancer-in-Iowa.pdf",
+    "evidence_type": "Registry report; indexed content, direct download blocked",
+    "access_date": "2026-10-22"
+  },
+  {
+    "id": 4,
+    "title": "University of Iowa: 2026 report and Agricultural Health Study farming findings",
+    "url": "https://www.public-health.uiowa.edu/news-items/2026-cancer-in-iowa-report-highlights-cancer-incidence-among-iowas-farming-population/",
+    "evidence_type": "University research release",
+    "access_date": "2026-10-22"
+  },
+  {
+    "id": 5,
+    "title": "NCI: all-site Iowa county incidence, 2019-2023",
+    "url": "https://statecancerprofiles.cancer.gov/incidencerates/index.php?stateFIPS=19&areatype=county&cancer=001&race=00&sex=0&age=001&type=incd&year=0&sortVariableName=rate&sortOrder=desc&output=1",
+    "evidence_type": "Federal surveillance",
+    "access_date": "2026-10-22"
+  },
+  {
+    "id": 6,
+    "title": "NCI: all-site Iowa county mortality, 2020-2024",
+    "url": "https://statecancerprofiles.cancer.gov/deathrates/index.php?stateFIPS=19&areatype=county&cancer=001&race=00&sex=0&age=001&type=death&year=0&sortVariableName=rate&sortOrder=desc&output=1",
+    "evidence_type": "Federal surveillance",
+    "access_date": "2026-10-22"
+  },
+  {
+    "id": 7,
+    "title": "NCI query collection: cancer types, demographics and rural/urban filters; exact query URLs in project data",
+    "url": "https://statecancerprofiles.cancer.gov/",
+    "evidence_type": "Federal surveillance; archived queries in research/sources and CSVs",
+    "access_date": "2026-10-22"
+  },
+  {
+    "id": 8,
+    "title": "Iowa HHS: Cancer Data definitions and limitations",
+    "url": "https://hhs.iowa.gov/about/data-reports/cancer-data",
+    "evidence_type": "Official surveillance documentation",
+    "access_date": "2026-10-22"
+  },
+  {
+    "id": 9,
+    "title": "Iowa Medical Society: Year One Cancer Drivers clinical summary",
+    "url": "https://www.iowamedical.org/cancer-resources/",
+    "evidence_type": "Clinical summary of research; not original full methods",
+    "access_date": "2026-10-22"
+  },
+  {
+    "id": 10,
+    "title": "Iowa HHS: cancer study landing page and Year 1 report link",
+    "url": "https://hhs.iowa.gov/health-prevention/cancer",
+    "evidence_type": "Official project landing page",
+    "access_date": "2026-10-22"
+  },
+  {
+    "id": 11,
+    "title": "University of Iowa: Key Drivers interim report, February 2026",
+    "url": "https://iphprp.org/wp-content/uploads/2026/02/Interim-Progress-Report-Cancer-Driver-Project-Feb-2026-final-.pdf",
+    "evidence_type": "Interim research report; indexed content",
+    "access_date": "2026-10-22"
+  },
+  {
+    "id": 12,
+    "title": "Islami et al. 2024: modifiable risk factors and U.S. cancer burden, original model",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/38990124/",
+    "evidence_type": "Original research; U.S. adults 30+, 2019",
+    "access_date": "2026-10-22"
+  },
+  {
+    "id": 13,
+    "title": "NCI: tobacco and cancer",
+    "url": "https://www.cancer.gov/about-cancer/causes-prevention/risk/tobacco/cessation-fact-sheet",
+    "evidence_type": "Official cancer-risk and cessation guidance",
+    "access_date": "2026-10-22"
+  },
+  {
+    "id": 14,
+    "title": "U.S. Surgeon General: Alcohol and Cancer Risk advisory, 2025",
+    "url": "https://www.hhs.gov/sites/default/files/oash-alcohol-cancer-risk.pdf",
+    "evidence_type": "Official evidence assessment",
+    "access_date": "2026-10-22"
+  },
+  {
+    "id": 15,
+    "title": "NCI: obesity and cancer",
+    "url": "https://www.cancer.gov/about-cancer/causes-prevention/risk/obesity/obesity-fact-sheet",
+    "evidence_type": "Official cancer-risk guidance",
+    "access_date": "2026-10-22"
+  },
+  {
+    "id": 16,
+    "title": "Iowa HHS: 2025 BRFSS findings brief, October 2026",
+    "url": "https://hhs.iowa.gov/media/19634/download?inline=",
+    "evidence_type": "Primary survey report; 2025 crude weighted estimates",
+    "access_date": "2026-10-22"
+  },
+  {
+    "id": 17,
+    "title": "Iowa HHS: 2024 BRFSS findings brief, October 2025",
+    "url": "https://publications.iowa.gov/54375/1/2024%20BRFSS%20Survey%20Findings%20Brief_Final.pdf",
+    "evidence_type": "Primary survey report; 2024 screening measures",
+    "access_date": "2026-10-22"
+  },
+  {
+    "id": 18,
+    "title": "Iowa HHS: melanoma data and UV risk",
+    "url": "https://hhs.iowa.gov/about/data-reports/cancer/melanoma-skin-data",
+    "evidence_type": "Official cancer-risk guidance",
+    "access_date": "2026-10-22"
+  },
+  {
+    "id": 19,
+    "title": "CDC: HPV vaccination considerations",
+    "url": "https://www.cdc.gov/hpv/hcp/vaccination-considerations/",
+    "evidence_type": "Current official guidance",
+    "access_date": "2026-10-22"
+  },
+  {
+    "id": 20,
+    "title": "CDC MMWR: 2025 adolescent vaccination coverage, September 3, 2026, Table 3",
+    "url": "https://www.cdc.gov/mmwr/volumes/75/wr/mm7534a1.htm",
+    "evidence_type": "Primary survey analysis",
+    "access_date": "2026-10-22"
+  },
+  {
+    "id": 21,
+    "title": "NCI: Genetic Testing for Inherited Cancer Risk",
+    "url": "https://www.cancer.gov/about-cancer/causes-prevention/genetics/genetic-testing-fact-sheet",
+    "evidence_type": "Official clinical information",
+    "access_date": "2026-10-22"
+  },
+  {
+    "id": 22,
+    "title": "Iowa HHS: Radon Resources, household survey and residential rules",
+    "url": "https://hhs.iowa.gov/health-prevention/providers-professionals/radiological-health/radon/radon-resources",
+    "evidence_type": "Official state guidance; historical survey",
+    "access_date": "2026-10-22"
+  },
+  {
+    "id": 23,
+    "title": "Field et al. 2000: Iowa residential radon and lung cancer study",
+    "url": "https://academic.oup.com/aje/article-abstract/151/11/1091/87328",
+    "evidence_type": "Original case-control study; doi:10.1093/oxfordjournals.aje.a010153",
+    "access_date": "2026-10-22"
+  },
+  {
+    "id": 24,
+    "title": "EPA: radon action level and its meaning",
+    "url": "https://www.epa.gov/radon/what-epas-action-level-radon-and-what-does-it-mean",
+    "evidence_type": "Official action guidance",
+    "access_date": "2026-10-22"
+  },
+  {
+    "id": 25,
+    "title": "Iowa HHS: radon in K-12 schools",
+    "url": "https://hhs.iowa.gov/health-prevention/providers-professionals/radiological-health/radon/radon-k-12-schools",
+    "evidence_type": "Official state requirements",
+    "access_date": "2026-10-22"
+  },
+  {
+    "id": 26,
+    "title": "Iowa HHS: public-water nitrate results and units",
+    "url": "https://hhs.iowa.gov/about/data-reports/environment/drinking-water/nitrate",
+    "evidence_type": "Official water guidance",
+    "access_date": "2026-10-22"
+  },
+  {
+    "id": 27,
+    "title": "Inoue-Choi et al. 2015: nitrate and ovarian cancer, Iowa Women's Health Study",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/25430487/",
+    "evidence_type": "Original cohort study; doi:10.1002/ijc.29365",
+    "access_date": "2026-10-22"
+  },
+  {
+    "id": 28,
+    "title": "Jones et al. 2016: nitrate and bladder cancer, Iowa Women's Health Study",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/27258851/",
+    "evidence_type": "Original cohort study; doi:10.1289/EHP191",
+    "access_date": "2026-10-22"
+  },
+  {
+    "id": 29,
+    "title": "Ammons et al. 2025: water contaminants and ovarian cancer, Agricultural Health Study",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/40370528/",
+    "evidence_type": "Original cohort study; doi:10.1097/EE9.0000000000000382",
+    "access_date": "2026-10-22"
+  },
+  {
+    "id": 30,
+    "title": "Spaur et al. 2026: drinking-water nitrate and prostate cancer, Agricultural Health Study",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/41423865/",
+    "evidence_type": "Original cohort study; doi:10.1093/jnci/djaf350",
+    "access_date": "2026-10-22"
+  },
+  {
+    "id": 31,
+    "title": "NCI DCEG: drinking-water contaminant research, including positive and null Iowa findings",
+    "url": "https://dceg.cancer.gov/research/what-we-study/drinking-water-contaminants",
+    "evidence_type": "Official research synthesis",
+    "access_date": "2026-10-22"
+  },
+  {
+    "id": 32,
+    "title": "Iowa DNR: 2025 public-water compliance report, June 2026, printed pages 1 and 21",
+    "url": "https://www.iowadnr.gov/media/9746/download?inline=",
+    "evidence_type": "Primary monitoring report",
+    "access_date": "2026-10-22"
+  },
+  {
+    "id": 33,
+    "title": "Iowa DNR: private-well testing and grants",
+    "url": "https://www.iowadnr.gov/environmental-protection/water-quality/private-well-program/well-testing",
+    "evidence_type": "Official testing guidance",
+    "access_date": "2026-10-22"
+  },
+  {
+    "id": 34,
+    "title": "EPA: nitrate drinking-water FAQs and response to an exceedance",
+    "url": "https://www.epa.gov/mn/what-should-i-do-if-my-water-has-elevated-nitrates-andor-exceeds-mcl",
+    "evidence_type": "Official health/treatment guidance",
+    "access_date": "2026-10-22"
+  },
+  {
+    "id": 35,
+    "title": "Jones et al. 2017: nitrate and kidney cancer, Iowa Women's Health Study",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5538922/",
+    "evidence_type": "Original cohort study; doi:10.1097/EDE.0000000000000647",
+    "access_date": "2026-10-22"
+  },
+  {
+    "id": 36,
+    "title": "IARC: atrazine, alachlor and vinclozolin evaluation, November 21, 2025",
+    "url": "https://www.iarc.who.int/news-events/iarc-monographs-evaluation-of-the-carcinogenicity-of-atrazine-alachlor-and-vinclozolin/",
+    "evidence_type": "Primary hazard evaluation",
+    "access_date": "2026-10-22"
+  },
+  {
+    "id": 37,
+    "title": "Andreotti et al. 2018: glyphosate and cancer incidence, Agricultural Health Study",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6279255/",
+    "evidence_type": "Original cohort study; doi:10.1093/jnci/djx233",
+    "access_date": "2026-10-22"
+  },
+  {
+    "id": 38,
+    "title": "EPA: glyphosate assessment and registration-review status",
+    "url": "https://www.epa.gov/ingredients-used-pesticide-products/glyphosate",
+    "evidence_type": "Official regulatory/scientific status",
+    "access_date": "2026-10-22"
+  },
+  {
+    "id": 39,
+    "title": "Remigio et al. 2024: atrazine and cancer incidence, Agricultural Health Study",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/38381478/",
+    "evidence_type": "Original cohort study; doi:10.1289/EHP13684",
+    "access_date": "2026-10-22"
+  },
+  {
+    "id": 40,
+    "title": "Lerro et al. 2020: dicamba and cancer incidence, Agricultural Health Study",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/32357211/",
+    "evidence_type": "Original cohort study; doi:10.1093/ije/dyaa066",
+    "access_date": "2026-10-22"
+  },
+  {
+    "id": 41,
+    "title": "Son et al. 2026: animal feeding operation density and county cancer incidence",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/41856233/",
+    "evidence_type": "Original ecological study; doi:10.1016/j.envres.2026.124298",
+    "access_date": "2026-10-22"
+  },
+  {
+    "id": 42,
+    "title": "Jones et al. 2020: proximity to animal feeding operations and cancer in Iowa AHS",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7889404/",
+    "evidence_type": "Original cohort analysis; exposure proxies and nonmonotonic findings",
+    "access_date": "2026-10-22"
+  },
+  {
+    "id": 43,
+    "title": "IARC: PFOA and PFOS carcinogenicity evaluation, 2023",
+    "url": "https://www.iarc.who.int/news-events/iarc-monographs-evaluate-the-carcinogenicity-of-perfluorooctanoic-acid-pfoa-and-perfluorooctanesulfonic-acid-pfos.",
+    "evidence_type": "Primary hazard evaluation",
+    "access_date": "2026-10-22"
+  },
+  {
+    "id": 44,
+    "title": "Iowa DNR: targeted PFAS public-water sampling, March 2023 report",
+    "url": "https://www.iowadnr.gov/media/7038/download?inline=",
+    "evidence_type": "Primary monitoring report; 2021-2022 sampling",
+    "access_date": "2026-10-22"
+  },
+  {
+    "id": 45,
+    "title": "EPA: proposed PFOA/PFOS compliance extension, May 2026",
+    "url": "https://www.epa.gov/sdwa/proposed-pfoa-and-pfos-compliance-extension-rule",
+    "evidence_type": "Official proposal; distinguish from final rule",
+    "access_date": "2026-10-22"
+  },
+  {
+    "id": 46,
+    "title": "Iowa DNR: PFAS and private wells",
+    "url": "https://www.iowadnr.gov/media/4619/download?inline=",
+    "evidence_type": "Official testing information",
+    "access_date": "2026-10-22"
+  },
+  {
+    "id": 47,
+    "title": "EPA: filters certified to reduce PFAS",
+    "url": "https://www.epa.gov/water-research/identifying-drinking-water-filters-certified-reduce-pfas",
+    "evidence_type": "Official treatment guidance",
+    "access_date": "2026-10-22"
+  },
+  {
+    "id": 48,
+    "title": "NCI: cancer-causing substances in the environment",
+    "url": "https://www.cancer.gov/about-cancer/causes-prevention/risk/substances",
+    "evidence_type": "Official hazard information",
+    "access_date": "2026-10-22"
+  },
+  {
+    "id": 49,
+    "title": "IARC: occupational firefighting carcinogenicity evaluation, July 2022",
+    "url": "https://www.iarc.who.int/wp-content/uploads/2022/07/pr317_E.pdf",
+    "evidence_type": "Primary hazard evaluation",
+    "access_date": "2026-10-22"
+  },
+  {
+    "id": 50,
+    "title": "USPSTF: final breast screening recommendation, April 2024",
+    "url": "https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/breast-cancer-screening",
+    "evidence_type": "Final clinical recommendation",
+    "access_date": "2026-10-22"
+  },
+  {
+    "id": 51,
+    "title": "USPSTF: final colorectal screening recommendation, May 2021",
+    "url": "https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/colorectal-cancer-screening",
+    "evidence_type": "Final clinical recommendation",
+    "access_date": "2026-10-22"
+  },
+  {
+    "id": 52,
+    "title": "USPSTF: final lung screening recommendation, March 2021",
+    "url": "https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/lung-cancer-screening",
+    "evidence_type": "Final clinical recommendation",
+    "access_date": "2026-10-22"
+  },
+  {
+    "id": 53,
+    "title": "USPSTF: final cervical screening recommendation, August 2018",
+    "url": "https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/cervical-cancer-screening",
+    "evidence_type": "Final recommendation; update in progress",
+    "access_date": "2026-10-22"
+  },
+  {
+    "id": 54,
+    "title": "USPSTF: final prostate screening recommendation, May 2018",
+    "url": "https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/prostate-cancer-screening",
+    "evidence_type": "Final recommendation; update in progress",
+    "access_date": "2026-10-22"
+  },
+  {
+    "id": 55,
+    "title": "Iowa HHS: cancer screening participant eligibility, July 2026-June 2027",
+    "url": "https://hhs.iowa.gov/health-prevention/cancer/cancer-services-participant-eligibility",
+    "evidence_type": "Current program eligibility; confirm with coordinator",
+    "access_date": "2026-10-22"
+  },
+  {
+    "id": 56,
+    "title": "Quitline Iowa",
+    "url": "https://www.quitlineiowa.org/",
+    "evidence_type": "Direct service resource",
+    "access_date": "2026-10-22"
+  },
+  {
+    "id": 57,
+    "title": "NCI: Holden Comprehensive Cancer Center designation",
+    "url": "https://www.cancer.gov/research/infrastructure/cancer-centers/find/iowaholden",
+    "evidence_type": "Official cancer-center profile",
+    "access_date": "2026-10-22"
+  },
+  {
+    "id": 58,
+    "title": "UI Health Care: cancer clinical trials",
+    "url": "https://uihc.org/cancer/cancer-clinical-trials",
+    "evidence_type": "Direct treatment/research resource",
+    "access_date": "2026-10-22"
+  },
+  {
+    "id": 59,
+    "title": "UI Health Care: cancer financial and billing assistance",
+    "url": "https://uihc.org/cancer/financial-and-billing-assistance",
+    "evidence_type": "Direct financial-assistance resource",
+    "access_date": "2026-10-22"
+  },
+  {
+    "id": 60,
+    "title": "American Cancer Society: Hope Lodge",
+    "url": "https://www.cancer.org/support-programs-and-services/patient-lodging/hope-lodge.html",
+    "evidence_type": "Direct lodging resource; eligibility/availability apply",
+    "access_date": "2026-10-22"
+  },
+  {
+    "id": 61,
+    "title": "Iowa Cancer Consortium: 2023-2027 Iowa Cancer Plan",
+    "url": "https://canceriowa.org/iowa-cancer-plan/",
+    "evidence_type": "Statewide collaborative plan",
+    "access_date": "2026-10-22"
+  },
+  {
+    "id": 62,
+    "title": "IDALS: Farm to Faucet bill signing and funding, June 1, 2026",
+    "url": "https://iowaagriculture.gov/news/farm-faucet-water-quality-bill-sign",
+    "evidence_type": "Official enacted-program announcement",
+    "access_date": "2026-10-22"
+  },
+  {
+    "id": 63,
+    "title": "University of Iowa: Cancer Assessment appropriation narrative",
+    "url": "https://budget.fo.uiowa.edu/special-purpose-appropriations-budget-narratives/cancer-assessment-narrative",
+    "evidence_type": "Official project scope/budget",
+    "access_date": "2026-10-22"
+  },
+  {
+    "id": 64,
+    "title": "CDC: cancer patterns, cluster definition and investigation limits, May 2026",
+    "url": "https://www.cdc.gov/cancer-environment/php/guidelines/characteristics.html",
+    "evidence_type": "Official investigation guidance",
+    "access_date": "2026-10-22"
+  },
+  {
+    "id": 65,
+    "title": "Iowa Cancer Registry: Cancer in Iowa 99 Counties Project",
+    "url": "https://shri.public-health.uiowa.edu/cancer-data/cancer-in-iowa-99-counties-project/",
+    "evidence_type": "Direct public-education resource",
+    "access_date": "2026-10-22"
+  },
+  {
+    "id": 66,
+    "title": "Iowa Acts 2026 chapter 1087, HF2635, sections 7-11, pages 4-7",
+    "url": "https://www.legis.iowa.gov/docs/publications/iactc/91.2/CH1087.pdf",
+    "evidence_type": "Enacted law; January 2027 applicability",
+    "access_date": "2026-10-22"
+  },
+  {
+    "id": 67,
+    "title": "IEC/Harkin: Environmental Risk Factors and Iowa's Cancer Crisis, March 2026",
+    "url": "https://www.iaenvironment.org/webres/File/Environmental%20Risk%20Factors%20and%20Iowa%27s%20Cancer%20Crisis%20-%20Report.pdf",
+    "evidence_type": "Secondary literature/policy synthesis; original studies prioritized",
+    "access_date": "2026-10-22"
+  },
+  {
+    "id": 68,
+    "title": "NCI: questions and answers about multicancer detection tests",
+    "url": "https://prevention.cancer.gov/research-areas/networks-consortia-programs/csrn/q-a-about-mcd-tests",
+    "evidence_type": "Official screening evidence guidance",
+    "access_date": "2026-10-22"
+  },
+  {
+    "id": 69,
+    "title": "Nash et al. 2026: rural Iowa cancer burden and stakeholder care-access study",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13079507/",
+    "evidence_type": "Original mixed-methods study; doi:10.1007/s10552-026-02166-9",
+    "access_date": "2026-10-22"
+  },
+  {
+    "id": 70,
+    "title": "UI Health Care: Mission Cancer + Blood network acquisition, January 2025",
+    "url": "https://uihealthcare.org/press-release/mission-cancer-blood-now-officially-part-university-iowa-health-care",
+    "evidence_type": "Direct health-system announcement",
+    "access_date": "2026-10-22"
+  },
+  {
+    "id": 71,
+    "title": "CDC: hepatitis B prevention",
+    "url": "https://www.cdc.gov/hepatitis-b/prevention/index.html",
+    "evidence_type": "Official infection-prevention guidance",
+    "access_date": "2026-10-22"
+  },
+  {
+    "id": 72,
+    "title": "American Cancer Society: lung cancer screening guideline",
+    "url": "https://www.cancer.org/cancer/types/lung-cancer/detection-diagnosis-staging/detection.html",
+    "evidence_type": "Clinical guideline; differs from USPSTF",
+    "access_date": "2026-10-22"
+  },
+  {
+    "id": 73,
+    "title": "IARC: glyphosate classification and questions, 2015",
+    "url": "https://www.iarc.who.int/featured--news/media-centre-iarc-news-glyphosate",
+    "evidence_type": "Primary hazard evaluation",
+    "access_date": "2026-10-22"
+  },
+  {
+    "id": 74,
+    "title": "CDC: hepatitis C treatment and liver-cancer prevention",
+    "url": "https://www.cdc.gov/hepatitis-c/treatment/index.html",
+    "evidence_type": "Official clinical guidance",
+    "access_date": "2026-10-22"
+  }
+]

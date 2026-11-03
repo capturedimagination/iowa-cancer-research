@@ -1,0 +1,26 @@
+{
+  "genes": [
+    "SFTPC",
+    "SFTPB",
+    "SFTPD",
+    "PGC",
+    "CLDN18",
+    "AQP4",
+    "SCGB3A1",
+    "ABCA3",
+    "GATA6",
+    "NKX2-1",
+    "SFTA3",
+    "IGFBP2",
+    "HOPX",
+    "NAPSA",
+    "FOXA2",
+    "AGER",
+    "LAMP1"
+  ],
+  "gene_count": 17,
+  "extraction": "Verbatim gene symbols from pinned repository NI16 Rmd AT2_genes vector; not independently validated against Table S2",
+  "scoring_code": "ScaleData on EGFR/ALK subset; FetchData then rowMeans across gene vector with na.rm=TRUE; preserve exact assay/slot/version before reuse",
+  "source_repository_path": "scripts/NI16_cancercell_EGFR_ALK.Rmd",
+  "source_commit": "de138c79bcfc2fa3a28c8a039a28ab560da78099"
+}

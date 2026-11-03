@@ -1,0 +1,143 @@
+Incidence Rate Report for Iowa by County
+
+"All Cancer Sites (All Stages^), 2019-2023"
+
+"All Races (includes Hispanic), Both Sexes, All Ages"
+
+Sorted by Rate
+
+County,FIPS,2023 Rural-Urban Continuum Codes([rural urban note]),"Age-Adjusted Incidence Rate([rate note]) - cases per 100,000","Lower 95% Confidence Interval","Upper 95% Confidence Interval","CI*Rank([rank note])","Lower CI (CI*Rank)","Upper CI (CI*Rank)",Average Annual Count,Recent Trend,"Recent 5-Year Trend ([trend note]) in Incidence Rates","Lower 95% Confidence Interval","Upper 95% Confidence Interval"
+"Iowa(7)",19000,N/A,504.1 ,500.9, 507.3,N/A , N/A , N/A,20505,rising,0.7 ,0.5, 1.0
+"US (SEER+NPCR)(1)",00000,N/A,453.4 ,453.1, 453.7,N/A , N/A , N/A,1872272,falling,-0.6 ,-1.0, -0.2
+"Cass County(7)",19029,Rural,601.4 ,550.6, 656.1,1 , 1 , 35,120,rising,1.0 ,0.4, 1.6
+"Pocahontas County(7)",19151,Rural,591 ,522.2, 667.1,2 , 1 , 75,65,stable,0.3 ,-0.2, 0.9
+"Palo Alto County(7)",19147,Rural,563.1 ,502.4, 629.6,3 , 1 , 85,72,stable,0.4 ,-0.3, 1.1
+"Grundy County(7)",19075,Urban,553.5 ,503.3, 607.8,4 , 1 , 79,98,stable,0.4 ,-0.2, 1.1
+"Clinton County(7)",19045,Rural,553.3 ,527.1, 580.6,5 , 1 , 45,365,rising,0.4 ,0.1, 0.7
+"Butler County(7)",19023,Rural,548.7 ,502.5, 598.2,6 , 1 , 80,118,rising,1.6 ,1.0, 2.9
+"Jackson County(7)",19097,Rural,545.8 ,505.4, 588.9,7 , 1 , 75,155,stable,0.4 ,0.0, 0.9
+"Monona County(7)",19133,Rural,543.8 ,486, 607.3,8 , 1 , 93,75,stable,0.5 ,0.0, 1.1
+"Tama County(7)",19171,Rural,543.5 ,500.1, 589.9,9 , 1 , 82,129,rising,0.5 ,0.1, 0.9
+"Howard County(7)",19089,Rural,541.7 ,484.2, 604.6,11 , 1 , 93,73,stable,0.6 ,-0.1, 1.5
+"Buchanan County(7)",19019,Rural,541.5 ,501.7, 583.8,10 , 1 , 79,147,stable,0.2 ,-0.3, 0.6
+"Iowa County(7)",19095,Rural,537.5 ,494, 584,12 , 1 , 85,126,stable,0.3 ,-0.3, 0.9
+"Page County(7)",19145,Rural,537.2 ,494, 583.7,13 , 1 , 83,128,rising,0.7 ,0.1, 1.4
+"Madison County(7)",19121,Urban,536.4 ,492, 583.9,14 , 1 , 90,114,stable,0.4 ,-0.2, 1.2
+"Osceola County(7)",19143,Rural,534.4 ,465.9, 611,15 , 1 , 97,50,stable,0.6 ,-0.3, 1.5
+"Floyd County(7)",19067,Rural,532.3 ,488, 579.9,16 , 1 , 88,122,stable,0.5 ,0.0, 1.1
+"Marion County(7)",19125,Rural,532.3 ,501.6, 564.4,18 , 2 , 74,243,rising,0.7 ,0.4, 1.0
+"Clay County(7)",19041,Rural,532.1 ,489.7, 577.6,17 , 1 , 88,130,stable,0.1 ,-0.3, 0.6
+"Sac County(7)",19161,Rural,527.9 ,472.7, 588.4,19 , 1 , 96,80,stable,0.3 ,-0.3, 0.8
+"Appanoose County(7)",19007,Rural,526.9 ,479.4, 578.4,21 , 1 , 92,103,stable,0.4 ,-0.2, 1.1
+"Des Moines County(7)",19057,Rural,526.6 ,498.8, 555.6,20 , 4 , 76,295,rising,0.5 ,0.1, 0.8
+"Franklin County(7)",19069,Rural,526.5 ,473.4, 584.4,23 , 1 , 95,80,rising,0.9 ,0.4, 1.4
+"Chickasaw County(7)",19037,Rural,526 ,476.1, 580.2,22 , 1 , 95,93,stable,0.7 ,0.0, 1.3
+"Crawford County(7)",19047,Rural,524.8 ,480.8, 571.9,24 , 2 , 92,112,stable,0.4 ,-0.3, 1.1
+"Plymouth County(7)",19149,Rural,523.5 ,488.3, 560.6,25 , 2 , 84,180,stable,0.1 ,-0.3, 0.5
+"Cedar County(7)",19031,Rural,522.5 ,481.9, 565.8,26 , 2 , 91,137,stable,-0.2 ,-4.7, 0.5
+"Humboldt County(7)",19091,Rural,522.3 ,467.5, 582.3,28 , 1 , 96,75,stable,0.3 ,-0.2, 0.8
+"Wapello County(7)",19179,Rural,521.8 ,492, 553.1,27 , 3 , 82,244,stable,0.3 ,0.0, 0.6
+"Black Hawk County(7)",19013,Urban,521.6 ,505.3, 538.4,31 , 10 , 64,829,stable,0.2 ,-0.5, 1.0
+"Montgomery County(7)",19137,Rural,521.3 ,467.7, 579.9,30 , 1 , 97,79,rising,0.6 ,0.1, 1.2
+"Adams County(7)",19003,Rural,521.3 ,431.5, 625.8,29 , 1 , 99,29,rising,1.2 ,0.3, 2.1
+"Woodbury County(7)",19193,Urban,520.7 ,502.3, 539.6,32 , 9 , 68,634,stable,0.3 ,-1.6, 2.0
+"Cherokee County(7)",19035,Rural,518.9 ,469.6, 572.5,33 , 1 , 95,96,stable,0.2 ,-0.4, 0.9
+"Van Buren County(7)",19177,Rural,518.7 ,455.9, 588.4,34 , 1 , 98,56,stable,0.5 ,-0.1, 1.1
+"Decatur County(7)",19053,Rural,517.8 ,454.9, 587.5,37 , 1 , 99,56,stable,-8.7 ,-16.7, 0.6
+"Louisa County(7)",19115,Rural,517.5 ,465.6, 574.2,36 , 1 , 96,79,stable,0.2 ,-0.6, 1.0
+"Dickinson County(7)",19059,Rural,517.5 ,478.9, 558.9,35 , 3 , 90,162,stable,0.3 ,-0.1, 0.7
+"Linn County(7)",19113,Urban,517.3 ,505.2, 529.6,38 , 16 , 62,1462,stable,0.4 ,-0.5, 0.9
+"O'Brien County(7)",19141,Rural,517.2 ,469.3, 568.9,39 , 1 , 96,99,stable,0.0 ,-0.5, 0.5
+"Keokuk County(7)",19107,Rural,514.1 ,460.2, 573.1,42 , 1 , 97,76,stable,0.2 ,-0.4, 0.9
+"Lyon County(7)",19119,Rural,514 ,461.9, 570.6,40 , 1 , 97,78,stable,0.4 ,-0.1, 1.0
+"Harrison County(7)",19085,Urban,513 ,468.1, 561.5,44 , 2 , 96,105,stable,0.3 ,-0.2, 0.8
+"Greene County(7)",19073,Rural,512.6 ,456.3, 574.6,41 , 1 , 98,70,rising,1.0 ,0.1, 1.8
+"Mitchell County(7)",19131,Rural,512.1 ,459.5, 569.5,45 , 2 , 98,79,stable,0.3 ,-0.3, 0.9
+"Union County(7)",19175,Rural,511.5 ,462.6, 564.7,43 , 2 , 97,88,rising,2.2 ,0.4, 7.8
+"Boone County(7)",19015,Urban,511.5 ,478, 546.8,46 , 5 , 90,190,rising,1.6 ,0.5, 6.0
+"Lee County(7)",19111,Rural,510.4 ,481, 541.4,47 , 7 , 87,251,stable,0.4 ,0.0, 0.8
+"Muscatine County(7)",19139,Rural,509.9 ,482.7, 538.3,48 , 8 , 87,281,stable,0.2 ,-0.1, 0.6
+"Monroe County(7)",19135,Rural,508.9 ,446.9, 577.8,50 , 1 , 99,53,stable,0.4 ,-0.1, 0.9
+"Scott County(7)",19163,Urban,507.8 ,494.2, 521.8,49 , 23 , 75,1112,stable,0.0 ,-0.2, 0.3
+"Bremer County(7)",19017,Urban,506.9 ,471.9, 544,51 , 5 , 92,169,rising,1.8 ,0.3, 6.5
+"Mahaska County(7)",19123,Rural,506.3 ,468.9, 546.1,52 , 5 , 93,147,stable,0.1 ,-0.3, 0.6
+"Dubuque County(7)",19061,Urban,505.7 ,487.7, 524.2,53 , 17 , 80,652,stable,0.1 ,-0.1, 0.5
+"Davis County(7)",19051,Rural,504.8 ,445.4, 570.1,54 , 1 , 99,58,stable,0.3 ,-0.4, 1.1
+"Jasper County(7)",19099,Urban,504.3 ,476.4, 533.4,55 , 11 , 89,264,stable,0.1 ,-0.3, 0.5
+"Warren County(7)",19181,Urban,502.3 ,477.8, 527.8,56 , 13 , 87,330,rising,0.4 ,0.1, 0.8
+"Polk County(7)",19153,Urban,501.4 ,492.8, 510.2,57 , 36 , 73,2675,stable,0.1 ,-0.1, 0.3
+"Benton County(7)",19011,Urban,500.3 ,466.4, 536.3,58 , 8 , 94,178,stable,0.1 ,-0.3, 0.6
+"Worth County(7)",19195,Rural,500.3 ,440.4, 566.9,59 , 2 , 99,55,stable,0.5 ,-0.3, 1.3
+"Delaware County(7)",19055,Rural,498.3 ,457.9, 541.6,60 , 6 , 96,128,stable,0.6 ,0.0, 1.2
+"Winnebago County(7)",19189,Rural,497.4 ,444.7, 555.1,61 , 2 , 99,75,rising,0.8 ,0.1, 1.4
+"Marshall County(7)",19127,Rural,496.2 ,468.7, 524.9,62 , 14 , 93,261,stable,0.0 ,-0.2, 0.3
+"Cerro Gordo County(7)",19033,Rural,495.6 ,470.1, 522.3,64 , 16 , 92,327,stable,-2.3 ,-6.7, 0.2
+"Washington County(7)",19183,Urban,495.6 ,459.6, 533.8,63 , 7 , 97,155,rising,0.6 ,0.2, 1.0
+"Lucas County(7)",19117,Rural,494.9 ,437.7, 558.1,66 , 2 , 99,62,stable,0.0 ,-0.6, 0.6
+"Johnson County(7)",19103,Urban,494.8 ,478.6, 511.4,65 , 31 , 85,742,stable,0.1 ,0.0, 0.4
+"Fayette County(7)",19065,Rural,494.5 ,456.9, 534.7,67 , 7 , 97,147,stable,0.3 ,-3.6, 2.4
+"Wright County(7)",19197,Rural,494.4 ,447.6, 545.1,69 , 4 , 98,93,stable,-0.1 ,-0.9, 0.6
+"Ringgold County(7)",19159,Rural,494.2 ,421, 578.2,71 , 1 , 99,37,stable,0.5 ,-0.4, 1.4
+"Sioux County(7)",19167,Rural,493.9 ,462.9, 526.3,68 , 15 , 95,204,stable,0.1 ,-0.3, 0.6
+"Pottawattamie County(7)",19155,Urban,492.6 ,474.5, 511.2,70 , 31 , 88,606,stable,0.0 ,-0.3, 0.3
+"Taylor County(7)",19173,Rural,490.6 ,424.8, 564.7,72 , 1 , 99,45,stable,0.5 ,-0.1, 1.3
+"Poweshiek County(7)",19157,Rural,488.5 ,449.5, 530.3,73 , 9 , 98,130,stable,0.2 ,-0.3, 0.8
+"Allamakee County(7)",19005,Rural,487.4 ,443.4, 534.9,74 , 6 , 99,105,stable,0.1 ,-0.7, 0.8
+"Webster County(7)",19187,Rural,484.4 ,456.1, 514.1,76 , 19 , 96,243,stable,-0.2 ,-0.6, 0.1
+"Jones County(7)",19105,Urban,484.3 ,448.9, 522.1,75 , 16 , 98,150,stable,-0.1 ,-0.4, 0.3
+"Clayton County(7)",19043,Rural,482.9 ,444, 524.7,77 , 13 , 98,135,stable,-0.1 ,-0.4, 0.3
+"Guthrie County(7)",19077,Urban,481.5 ,431.8, 536,78 , 5 , 99,79,stable,0.0 ,-0.5, 0.4
+"Henry County(7)",19087,Rural,479.6 ,442.7, 519.1,79 , 15 , 99,134,stable,0.2 ,-0.2, 0.7
+"Ida County(7)",19093,Rural,479.6 ,418.8, 547.6,80 , 3 , 99,51,stable,0.6 ,-0.1, 1.3
+"Fremont County(7)",19071,Rural,478.5 ,415.4, 549.3,81 , 2 , 99,48,stable,0.3 ,-0.3, 1.0
+"Carroll County(7)",19027,Rural,478.2 ,441.3, 517.6,82 , 12 , 99,141,stable,0.0 ,-0.4, 0.5
+"Mills County(7)",19129,Urban,474.8 ,431.4, 521.7,83 , 14 , 99,97,stable,0.1 ,-0.5, 0.6
+"Calhoun County(7)",19025,Rural,474.5 ,423.2, 530.8,85 , 7 , 99,72,stable,0.5 ,-0.2, 1.1
+"Hancock County(7)",19081,Rural,474.2 ,424.2, 529,84 , 7 , 99,77,stable,-0.4 ,-2.4, 0.3
+"Audubon County(7)",19009,Rural,469.5 ,405.5, 542.1,87 , 4 , 99,45,stable,-0.1 ,-0.8, 0.5
+"Hamilton County(7)",19079,Rural,468.9 ,426.2, 514.8,86 , 12 , 99,99,stable,0.1 ,-0.3, 0.6
+"Shelby County(7)",19165,Rural,468.2 ,421.7, 519,88 , 12 , 99,86,rising,0.6 ,0.2, 1.1
+"Clarke County(7)",19039,Rural,466.2 ,412.7, 525,89 , 8 , 99,60,stable,0.4 ,-0.4, 1.2
+"Emmet County(7)",19063,Rural,462.6 ,411.4, 519.2,93 , 10 , 99,67,falling,-10.1 ,-17.5, -0.2
+"Dallas County(7)",19049,Urban,461.3 ,442.8, 480.3,90 , 62 , 98,482,stable,-0.3 ,-0.5, 0.1
+"Winneshiek County(7)",19191,Rural,460.6 ,424.4, 499.3,91 , 29 , 99,140,stable,0.1 ,-0.4, 0.6
+"Hardin County(7)",19083,Rural,460.1 ,421, 502.2,92 , 23 , 99,119,stable,0.2 ,-0.3, 0.8
+"Story County(7)",19169,Urban,457.8 ,438, 478.4,94 , 65 , 98,425,stable,0.0 ,-0.2, 0.3
+"Wayne County(7)",19185,Rural,453.9 ,391.9, 523.7,95 , 6 , 99,44,stable,-0.5 ,-1.4, 0.4
+"Jefferson County(7)",19101,Rural,452.3 ,411.9, 496.1,96 , 32 , 99,112,stable,0.1 ,-0.4, 0.7
+"Kossuth County(7)",19109,Rural,447 ,406.5, 490.9,97 , 39 , 99,106,stable,0.1 ,-0.4, 0.6
+"Adair County(7)",19001,Rural,438.1 ,381.8, 501.1,98 , 14 , 99,51,stable,0.4 ,-0.2, 1.1
+"Buena Vista County(7)",19021,Rural,416.9 ,380.2, 456.3,99 , 77 , 99,103,falling,-0.8 ,-1.3, -0.3
+
+
+Notes:
+
+Created by statecancerprofiles.cancer.gov on 10/22/2026 6:38 pm.
+
+"State Cancer Registries [ https://www.cdc.gov/national-program-cancer-registries/contact/index.html ] may provide more current or more local data."
+
+"
+
+Trend
+   Rising when 95% confidence interval of average annual percent change is above 0.
+   Stable when 95% confidence interval of average annual percent change includes 0.
+   Falling when 95% confidence interval of average annual percent change is below 0.
+"
+
+"[rate note] Incidence rates (cases per 100,000 population per year) are age-adjusted to the 2000 US standard population [ http://www.seer.cancer.gov/stdpopulations/ ] (SEER areas use 20 age groups and NPCR areas use 19 age groups). Rates are for invasive cancer only (except for bladder cancer which is invasive and in situ) or unless otherwise specified. Rates calculated using SEER*Stat [ https://seer.cancer.gov/seerstat/ ]. Population counts for denominators are based on Census populations as modified [https://seer.cancer.gov/popdata/] by NCI. The US Population Data File [https://seer.cancer.gov/popdata/] is used for SEER and NPCR incidence rates."
+
+"[recent trend note] Incidence data come from different sources. The Average Annual Percent Change (AAPC) is based on the APCs calculated by Joinpoint [ https://surveillance.cancer.gov/joinpoint/ ]. Due to data availability issues, the time period used in the calculation of the joinpoint regression model may differ [ https://statecancerprofiles.cancer.gov/historicaltrend/differences.html ] for selected counties."
+
+"Rates and trends are computed using different standards for malignancy. For more information see malignant.html."
+
+"[stage note] All Stages refers to any stage. Due to changes in stage coding, Combined Summary Stage with Expanded Regional Codes (2004+) is used for data from Surveillance, Epidemiology, and End Results (SEER) databases and Merged Summary Stage is used for data from National Program of Cancer Registries [ https://www.cdc.gov/cancer/npcr/index.htm ] databases. Due to the increased complexity with staging, other staging variables maybe used if necessary."
+
+"[rank note] Results presented with the CI*Rank statistics help show the usefulness of ranks. For example, ranks for relatively rare diseases or less populated areas may be essentially meaningless because of their large variability, but ranks for more common diseases in densely populated regions can be very useful. The rates used in CI*Rank are all age-adjusted to the 2000 US standard population using 19 age groups for SEER and NPCR areas. More information about methodology can be found on the CI*Rank website [ https://surveillance.cancer.gov/cirank/ ]."
+
+"[rural urban note] Rural–urban county classifications are based on the 2023 USDA Rural–Urban Continuum Codes [ https://www.ers.usda.gov/data-products/rural-urban-continuum-codes/ ] (except for Connecticut Counties which use 2013 codes). State-level cancer rates for rural areas are calculated using cancer cases registered exclusively in rural counties, while state-level cancer rates for urban areas are calculated using cases registered exclusively in urban counties."
+
+"(1) Source: National Program of Cancer Registries [ https://www.cdc.gov/cancer/npcr/index.htm ] and Surveillance, Epidemiology, and End Results [ http://seer.cancer.gov ] SEER*Stat Database - United States Department of Health and Human Services, Centers for Disease Control and Prevention and National Cancer Institute. Based on the 2025 submission."
+
+"(7) Source: SEER [ http://seer.cancer.gov ] November 2025 submission."
+
+"Data for United States does not include Puerto Rico."

@@ -1,0 +1,29 @@
+{
+  "checked_date": "2026-10-22",
+  "pdf_pages": 19,
+  "core_sources": 74,
+  "county_rows": 99,
+  "unique_county_fips": 99,
+  "state_rows_each": 53,
+  "rate_confidence_interval_order": "passed",
+  "period_labels": "passed",
+  "numbered_references": "passed",
+  "key_pdf_text": "passed",
+  "clickable_pdf_annotations": 230,
+  "pdf_header_validation": "passed",
+  "archived_primary_and_review_pdfs": [
+    "sources/HF2635-Signed-2026.pdf",
+    "sources/iowa-environmental-risk-report-2026.pdf",
+    "sources/Iowa-BRFSS-2024.pdf",
+    "sources/iowa-cancer-screening-law-ch1087-2026.pdf",
+    "sources/environment/iowa-dnr-pfas-private-wells.pdf",
+    "sources/environment/iarc-firefighter-evaluation-2022.pdf",
+    "sources/environment/iowa-dnr-pfas-testing-tiers1-3-march2023.pdf",
+    "sources/environment/iowa-dnr-drinking-water-compliance-2025-june2026.pdf"
+  ],
+  "pediatric_anomaly": "flagged in original/derived table; excluded from interpretation",
+  "visual_review": "All 19 pages rendered and inspected; detailed checks of source list, nitrate table and screening table",
+  "pdf_sha256": "6019900da230ba69322aea6bf537fb879a1403b09cfe7acf0f8c71df27f9eeec",
+  "data_provenance": "research/data-provenance.json",
+  "note": "Checks validate compilation integrity, not the truth of every underlying scientific claim."
+}

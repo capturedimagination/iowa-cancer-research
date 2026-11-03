@@ -1,0 +1,100 @@
+{
+  "analysis_id": "NSCLC-TMB-DCB-2026-10-29",
+  "analysis_type": "retrospective within-cohort association replication",
+  "computed_at_utc": "2026-10-29T15:47:56.960047+00:00",
+  "cohort": "nsclc_pd1_msk_2018",
+  "repository_commit": "21caf38992efa145ab7b895919cacff2cea700b5",
+  "source_license": "ODbL 1.0",
+  "analysis_spec": "research/treatment-discovery/clinical-pilot-analysis-spec.md",
+  "analysis_spec_sha256": "4bca018fb1c712c859a519d8a3c30eabb7e4fa9182c760a1bf97a45e64d373e0",
+  "inputs": {
+    "LICENSE": "aa607179437132751f7c8fcd9f2b4ed97677ded9812ad97b99abd380ae77aec2",
+    "Readme.txt": "0f414b40c6da118c75900177552010582d81a4d6b00c5639396983c40716ce91",
+    "meta_study.txt": "d00425a566884e805e89dc16a3d60bb4f757d1e481604cc5ee20487a6382f9cd",
+    "meta_clinical_patient.txt": "123187e542006ef67c5ccb1491a479c8928ab5af688745a7ac88ddfa11e4d1e2",
+    "meta_clinical_sample.txt": "ce72feea0c4562541e6122ff328b9a4fa25951f5b8f83be8e5f53611f3ea1dbf",
+    "data_clinical_patient.txt": "f9f48755fbf394c0add6b097d45070940216d2e67ed7632c5fd83a8303cc0c4b",
+    "data_clinical_sample.txt": "5b4b2ba4b297c8bd82760ac2f7194daaf231543ce537fac6d166793920139275",
+    "data_clinical_sample-original-2018-04-23.txt": "d5efc93019438e577743cc3d91598816a73d0d0bbbd9eaf9f04547aba0ec3c97",
+    "clinical-sample-commit-history.json": "92c5fc08414ebc08992c8c51bac3489d4044bad54b81eee8f95209d641fe37fd"
+  },
+  "cohort_flow": {
+    "source_patients": 240,
+    "source_samples": 240,
+    "one_to_one_patient_sample": true,
+    "included": 227,
+    "dcb_yes": 69,
+    "dcb_no": 158,
+    "excluded_ne": 13,
+    "missing_primary_biomarker": 0
+  },
+  "dcb_yes_biomarker": {
+    "n": 69,
+    "q25": 4.098360656,
+    "median": 8.490566038,
+    "q75": 16.03773585,
+    "units": "original MUTATION_RATE, mutations/Mb"
+  },
+  "dcb_no_biomarker": {
+    "n": 158,
+    "q25": 3.773584906,
+    "median": 6.603773585,
+    "q75": 10.5861428975,
+    "units": "original MUTATION_RATE, mutations/Mb"
+  },
+  "primary_auc": {
+    "estimate": 0.6137405980554027,
+    "conditional_95_percentile_bootstrap_interval": [
+      0.5312786644652358,
+      0.6948725004586315
+    ],
+    "positive_class": "recorded DCB YES",
+    "score": "original continuous MUTATION_RATE; higher ranks toward YES",
+    "ties": "half credit",
+    "bootstrap_unit": "patient",
+    "resampling": "stratified by observed DCB; fixed class sizes",
+    "bootstrap_replicates": 10000,
+    "rng": "numpy.default_rng/PCG64",
+    "seed": 20261029,
+    "quantile_method": "linear"
+  },
+  "source_panel_counts_all": {
+    "IMPACT341": 56,
+    "IMPACT468": 20,
+    "IMPACT410": 164
+  },
+  "source_panel_counts_included": {
+    "IMPACT341": 56,
+    "IMPACT410": 156,
+    "IMPACT468": 15
+  },
+  "source_treatment_counts_all": {
+    "Combination": 34,
+    "Monotherapy": 206
+  },
+  "source_treatment_counts_included": {
+    "Combination": 32,
+    "Monotherapy": 195
+  },
+  "checks": {
+    "source_hashes_match": true,
+    "original_tmb_unchanged_since_2018": true,
+    "rank_and_pairwise_auc_agree": true,
+    "auc_direction_and_ties_checked": true,
+    "no_pfs_or_outcome_derived_predictors": true,
+    "no_model_or_cutoff_fitted": true
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "interpretation_limits": [
+    "Known published association, not independent discovery or external validation.",
+    "Paper reports 36/240 post-immunotherapy tumor specimens; public tables cannot identify them.",
+    "Retrospective discrimination is not a deployable pretreatment predictor, causal treatment benefit, overall survival or cure.",
+    "No randomized untreated/alternative-treatment comparison; treatment classes, panels and patient selection differ.",
+    "Bootstrap uncertainty is conditional on this cohort and class sizes; excludes confounding, selection, timing and measurement error.",
+    "No claim of normal-tissue safety, drug efficacy, Iowa generalizability or clinical utility.",
+    "Source DCB labels retained. NE excluded explicitly; PD-L1 analysis omitted because source-subset discrepancy remains unresolved."
+  ]
+}

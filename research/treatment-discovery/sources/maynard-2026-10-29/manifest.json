@@ -1,0 +1,175 @@
+{
+  "retrieved_date": "2026-10-29",
+  "repository_commit": "de138c79bcfc2fa3a28c8a039a28ab560da78099",
+  "repository_url": "https://github.com/czbiohub-sf/scell_lung_adenocarcinoma",
+  "files": [
+    {
+      "path": "repository-tree.json",
+      "url": "https://api.github.com/repos/czbiohub-sf/scell_lung_adenocarcinoma/git/trees/master?recursive=1",
+      "size": 96957,
+      "sha256": "43c8e21a9cecd9f2b0907189dbfb8c41619bcaf48c92caa7e3d8175557dddcb4",
+      "status": "archived"
+    },
+    {
+      "path": "research/treatment-discovery/sources/maynard-2026-10-29/README.md",
+      "repository_path": "README.md",
+      "url": "https://raw.githubusercontent.com/czbiohub-sf/scell_lung_adenocarcinoma/de138c79bcfc2fa3a28c8a039a28ab560da78099/README.md",
+      "size": 7574,
+      "sha256": "8cfc4aab37b9964e7bbcdd5eb72d890aceba141dc3a8de0fe3ccc6e21e412acb",
+      "git_blob_sha": "e00bd39ec1d3583b176d5201c87b4b9a0986acdc",
+      "status": "archived"
+    },
+    {
+      "path": "research/treatment-discovery/sources/maynard-2026-10-29/scripts/01_Import_data_and_metadata.Rmd",
+      "repository_path": "scripts/01_Import_data_and_metadata.Rmd",
+      "url": "https://raw.githubusercontent.com/czbiohub-sf/scell_lung_adenocarcinoma/de138c79bcfc2fa3a28c8a039a28ab560da78099/scripts/01_Import_data_and_metadata.Rmd",
+      "size": 935,
+      "sha256": "71614c3a611a642bce7858ba38b2751bc20c45283613125aeb2b2f3bdb6fc742",
+      "git_blob_sha": "9f913c70b881b294bd7c6b4f7f8de3bfa3e73511",
+      "status": "archived"
+    },
+    {
+      "path": "research/treatment-discovery/sources/maynard-2026-10-29/scripts/NI08_Gene_expression_plotting.Rmd",
+      "repository_path": "scripts/NI08_Gene_expression_plotting.Rmd",
+      "url": "https://raw.githubusercontent.com/czbiohub-sf/scell_lung_adenocarcinoma/de138c79bcfc2fa3a28c8a039a28ab560da78099/scripts/NI08_Gene_expression_plotting.Rmd",
+      "size": 18705,
+      "sha256": "6e5b0b9ea7e01542b1da0f7e61a1f126c0d458a69650c4590775a1349f617976",
+      "git_blob_sha": "240c814663be0824b715dc7a693e8e9e0369b011",
+      "status": "archived"
+    },
+    {
+      "path": "research/treatment-discovery/sources/maynard-2026-10-29/scripts/NI16_cancercell_EGFR_ALK.Rmd",
+      "repository_path": "scripts/NI16_cancercell_EGFR_ALK.Rmd",
+      "url": "https://raw.githubusercontent.com/czbiohub-sf/scell_lung_adenocarcinoma/de138c79bcfc2fa3a28c8a039a28ab560da78099/scripts/NI16_cancercell_EGFR_ALK.Rmd",
+      "size": 18414,
+      "sha256": "dc074e6c3a03c2460d4cbb00ce0f9fdd7d2caa451d730cdd1e5efc01f0823739",
+      "git_blob_sha": "951606887270c9fbb749a323c9006415cb80c237",
+      "status": "archived"
+    },
+    {
+      "path": "research/treatment-discovery/sources/maynard-2026-10-29/scripts/NI07_TH226_cancercell_analysis.Rmd",
+      "repository_path": "scripts/NI07_TH226_cancercell_analysis.Rmd",
+      "url": "https://raw.githubusercontent.com/czbiohub-sf/scell_lung_adenocarcinoma/de138c79bcfc2fa3a28c8a039a28ab560da78099/scripts/NI07_TH226_cancercell_analysis.Rmd",
+      "size": 11111,
+      "sha256": "f91e209f7609a277fedade4b98a7965d0d5b62f0ac461f437de4b050667670f4",
+      "git_blob_sha": "250282896a85853e951a9660dbaccbf83f5a8eb6",
+      "status": "archived"
+    },
+    {
+      "path": "research/treatment-discovery/sources/maynard-2026-10-29/data_out/NI17/sample_geneandsigscore.csv",
+      "repository_path": "data_out/NI17/sample_geneandsigscore.csv",
+      "url": "https://raw.githubusercontent.com/czbiohub-sf/scell_lung_adenocarcinoma/de138c79bcfc2fa3a28c8a039a28ab560da78099/data_out/NI17/sample_geneandsigscore.csv",
+      "size": 6593,
+      "sha256": "17091292caf7b695d688fb3c9ea9e7010a92b7ce8ecaf23d99f0ae80525e4b74",
+      "git_blob_sha": "47e3602c002e1e2bcbfe5ac06145d54ee7588bdf",
+      "status": "archived"
+    },
+    {
+      "path": "research/treatment-discovery/sources/maynard-2026-10-29/data_out/IM06/Table_of_ALL_cell_types_by_sample_plus_immune_info.csv",
+      "repository_path": "data_out/IM06/Table_of_ALL_cell_types_by_sample_plus_immune_info.csv",
+      "url": "https://raw.githubusercontent.com/czbiohub-sf/scell_lung_adenocarcinoma/de138c79bcfc2fa3a28c8a039a28ab560da78099/data_out/IM06/Table_of_ALL_cell_types_by_sample_plus_immune_info.csv",
+      "size": 4566,
+      "sha256": "59d59732c069f3e33f878b756b79a27ca5c4748ec04711cffbcec9a6e3152116",
+      "git_blob_sha": "818c4b98e01b2b198b0bfcb361ec92c3fabd3281",
+      "status": "archived"
+    },
+    {
+      "path": "research/treatment-discovery/sources/maynard-2026-10-29/data_out/S03/nonimmune_cells.csv",
+      "repository_path": "data_out/S03/nonimmune_cells.csv",
+      "url": "https://raw.githubusercontent.com/czbiohub-sf/scell_lung_adenocarcinoma/de138c79bcfc2fa3a28c8a039a28ab560da78099/data_out/S03/nonimmune_cells.csv",
+      "size": 188810,
+      "sha256": "99bcd0065237d53044e637a9fc304a630003f5612f5c703c9eed78514511e6b7",
+      "git_blob_sha": "42454996e4121840ba98c4be6c93b3e2564245a1",
+      "status": "archived"
+    },
+    {
+      "path": "research/treatment-discovery/sources/maynard-2026-10-29/scripts/NI16_cancercell_EGFR_ALK.nb.html",
+      "repository_path": "scripts/NI16_cancercell_EGFR_ALK.nb.html",
+      "url": "https://raw.githubusercontent.com/czbiohub-sf/scell_lung_adenocarcinoma/de138c79bcfc2fa3a28c8a039a28ab560da78099/scripts/NI16_cancercell_EGFR_ALK.nb.html",
+      "size": 1250304,
+      "sha256": "31c02be2f53c94b16cf0073239a377084613b612c858f8b35f850c227582c131",
+      "status": "archived"
+    },
+    {
+      "path": "research/treatment-discovery/sources/maynard-2026-10-29/scripts/01_Import_data_and_metadata.nb.html",
+      "repository_path": "scripts/01_Import_data_and_metadata.nb.html",
+      "url": "https://raw.githubusercontent.com/czbiohub-sf/scell_lung_adenocarcinoma/de138c79bcfc2fa3a28c8a039a28ab560da78099/scripts/01_Import_data_and_metadata.nb.html",
+      "size": 1641783,
+      "sha256": "345a189ae1fe798931fdaeff48ee764e1a716c4c7f1b7d5cddbb1bab5a2b2245",
+      "status": "archived"
+    },
+    {
+      "path": "research/treatment-discovery/sources/maynard-2026-10-29/drive-folder-listing.html",
+      "url": "https://drive.google.com/drive/folders/1sDzO0WOD4rnGC7QfTKwdcQTx3L36PFwX?usp=sharing",
+      "size": 375676,
+      "sha256": "8f0b2096807f6fc4409e2e17c6031b7de1a49fff06f63b64fe2187e53d0668dd",
+      "status": "archived_public_folder_html"
+    },
+    {
+      "path": "research/treatment-discovery/sources/maynard-2026-10-29/drive-csv-folder.html",
+      "url": "https://drive.google.com/drive/folders/1VmPan5V19Hq--fMnFHOta67TIpO60srE",
+      "size": 382403,
+      "sha256": "d065e55d0d2ab33a3b328907a1d146d47f931a9f8d7378e008b23376aa979aa8",
+      "status": "archived_public_folder_html"
+    },
+    {
+      "path": "research/treatment-discovery/sources/maynard-2026-10-29/neo-osi_metadata.csv",
+      "url": "https://drive.google.com/uc?export=download&id=1iw89l70ufpuvWbfuMkbHYOEhvBYCFcX1",
+      "size": 3374,
+      "sha256": "0517f6e845384b45f4521d8235dfd7b6b60da30a31bfd961797f5f2275155a76",
+      "status": "archived"
+    },
+    {
+      "path": "research/treatment-discovery/sources/maynard-2026-10-29/derived-published-AT2-signature.json",
+      "size": 686,
+      "sha256": "251d3029a75935d3a533aac7afe3cc3af75ae5f3f152b5ee4ca922c69c08e375",
+      "status": "derived_from_archived_code",
+      "source_file": "scripts/NI16_cancercell_EGFR_ALK.Rmd"
+    },
+    {
+      "path": "research/treatment-discovery/sources/maynard-2026-10-29/S01_metacells.csv",
+      "url": "https://drive.google.com/uc?export=download&id=12g84ooMTsWV58JWbp2ql8TMfgS4ct8as",
+      "public_folder_url": "https://drive.google.com/drive/folders/1VmPan5V19Hq--fMnFHOta67TIpO60srE",
+      "size": 11084633,
+      "sha256": "b4f3f169516001e89bc8b3d8052e207331ff662ca6d236e1c2cf68eccffdf2a6",
+      "status": "archived_immutable_original",
+      "cap_exception": "Root explicitly lifted practical 5 MB cap for this exact main metadata file only; 2026-10-29"
+    },
+    {
+      "path": "research/treatment-discovery/sources/maynard-2026-10-29/egfr-main-sample-audit.csv",
+      "size": 3379,
+      "sha256": "a35440b2f104a4bff64b5dfaebf933a1a998689d06120ad0ec63945e67e2b9e3",
+      "status": "derived_sample_audit",
+      "method": "Collapse exact identical listed metadata fields by sample_name; select driver_gene EGFR and histolgy Adenocarcinoma; preserve raw labels and source dates",
+      "source_file": "research/treatment-discovery/sources/maynard-2026-10-29/S01_metacells.csv"
+    },
+    {
+      "path": "scripts/audit_maynard_metadata.py",
+      "size": 6771,
+      "sha256": "edee0fb70b549e3db98df63bc2e02eecc94ce9a537ccabb763a9428fda97e0c6",
+      "status": "reproducible_audit_script",
+      "source_file": "research/treatment-discovery/sources/maynard-2026-10-29/S01_metacells.csv",
+      "method": "python3 scripts/audit_maynard_metadata.py; exact source labels and explicit filters; no expression scoring",
+      "public_copy": {
+        "sha256": "b974461f3fe2179b66789b8c3b7f443e149d9c3e2c36739b1663050eaa92f134",
+        "bytes": 6863,
+        "change": "Portable source-path output for publication; historical original sha256/size retained above"
+      }
+    },
+    {
+      "path": "research/treatment-discovery/sources/maynard-2026-10-29/egfr-main-metadata-audit.json",
+      "size": 9293,
+      "sha256": "62721fe82efbcba1e24311be797bc4b7747e38fd4717551ac68a0498eccd62a4",
+      "status": "derived_metadata_counts",
+      "source_file": "research/treatment-discovery/sources/maynard-2026-10-29/S01_metacells.csv",
+      "method": "python3 scripts/audit_maynard_metadata.py; exact source labels and explicit filters; no expression scoring",
+      "public_copy": {
+        "sha256": "1c0ec54a73402db263dd8a2535be27f254bb215f0f112b0b6f982d93c49141a7",
+        "bytes": 9251,
+        "change": "Portable source-path output for publication; historical original sha256/size retained above"
+      }
+    }
+  ],
+  "cap_policy": "Initial small-file preflight capped files at 5 MB; later explicitly authorized exception for S01_metacells.csv only. Main expression matrix remains undownloaded.",
+  "public_copy_note": "Original archive sha256/size fields retain their historical meaning. Where publication portability/redaction changes a derived file, public_copy identifies the published bytes. Original source datasets were not edited."
+}

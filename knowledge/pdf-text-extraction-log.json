@@ -1,0 +1,280 @@
+[
+  {
+    "file": "sources/HF2635-Signed-2026.pdf",
+    "pages": 22,
+    "pages_with_text": 0,
+    "status": "ocr_sidecar_requires_page_verification",
+    "sha256": "627f753362a69bc79b195185ee85aa8e491e60b0bf02ff51da00b77bf611dfc4",
+    "ocr_file": "sources/HF2635-Signed-2026.ocr.txt",
+    "ocr_sha256": "c11d2212ce0c1b3048b6d7168a7933cd90388ac07cfac4f9a4309230edaaefbf",
+    "ocr_provenance": "sources/HF2635-Signed-2026.ocr.provenance.json"
+  },
+  {
+    "file": "sources/Iowa-BRFSS-2024.pdf",
+    "pages": 82,
+    "pages_with_text": 82,
+    "status": "text_extracted",
+    "sha256": "b3c5220b0d23e562e6731681e70922c7758481721ebba81652c9a4f29e02a137"
+  },
+  {
+    "file": "sources/cohort-access/ahs-collaboration-policy-2025.pdf",
+    "pages": 3,
+    "pages_with_text": 3,
+    "status": "text_extracted",
+    "sha256": "f5d6bb05d20c6281e4b90d54b7a9457f2563c1c2e287696e9d97e99f40f4aa7f"
+  },
+  {
+    "file": "sources/cohort-access/ahs-private-applicator-enrollment-coded-manual.pdf",
+    "pages": 20,
+    "pages_with_text": 19,
+    "status": "partial_text_requires_page_review",
+    "sha256": "60bc5a988e900050afe2255a41dc4586c2604e63a0d945079d109928739222f4"
+  },
+  {
+    "file": "sources/environment/iarc-firefighter-evaluation-2022.pdf",
+    "pages": 2,
+    "pages_with_text": 2,
+    "status": "text_extracted",
+    "sha256": "4e5b85e22f5e7b35f4e9cdeec2e4c9d6296ae152b7c37390227ff30e63526e21"
+  },
+  {
+    "file": "sources/environment/iowa-dnr-drinking-water-compliance-2025-june2026.pdf",
+    "pages": 87,
+    "pages_with_text": 87,
+    "status": "text_extracted",
+    "sha256": "a5ef33ca015ae0e2edf14ccd3b50483c497913b01ba6f607aa048566a8b0d2dc"
+  },
+  {
+    "file": "sources/environment/iowa-dnr-pfas-private-wells.pdf",
+    "pages": 2,
+    "pages_with_text": 2,
+    "status": "text_extracted",
+    "sha256": "ee3299580d13b8366624db428db144255d22db4cf9de1aa3a5a3609ff0bdc30a"
+  },
+  {
+    "file": "sources/environment/iowa-dnr-pfas-testing-tiers1-3-march2023.pdf",
+    "pages": 13,
+    "pages_with_text": 13,
+    "status": "text_extracted",
+    "sha256": "6f39aae9688b93b36a876c269d316ba027253b49fdca4b2f367b144fdd5826f9"
+  },
+  {
+    "file": "sources/industries/energy-legacy/ames-municipal-power-niosh-1988.pdf",
+    "pages": 42,
+    "pages_with_text": 24,
+    "status": "ocr_sidecar_requires_page_verification",
+    "sha256": "7aac7591f0faa2833c6d4730fa1ff546a57b686a5d265813994671ecc9b6273d",
+    "ocr_file": "sources/industries/energy-legacy/ames-municipal-power-niosh-1988.ocr.txt",
+    "ocr_sha256": "326635c55ad5e8ff6451672a6f4f521114bc18866a4a92feddd4186bd1b7e6e5",
+    "ocr_provenance": "sources/industries/energy-legacy/ames-municipal-power-niosh-1988.ocr.provenance.json"
+  },
+  {
+    "file": "sources/industries/energy-legacy/atlantic-pce-atsdr-2026.pdf",
+    "pages": 48,
+    "pages_with_text": 46,
+    "status": "ocr_sidecar_requires_page_verification",
+    "sha256": "74a2fe396e1ef01142d5dbb97d9e9e476aadce1ea4b35685602aa1aab4f9230e",
+    "ocr_file": "sources/industries/energy-legacy/atlantic-pce-atsdr-2026.ocr.txt",
+    "ocr_sha256": "d98cc3380108abc71125d8a859ad62148bd74053ebfc2158b126b499bfb74862",
+    "ocr_provenance": "sources/industries/energy-legacy/atlantic-pce-atsdr-2026.ocr.provenance.json"
+  },
+  {
+    "file": "sources/industries/energy-legacy/doty-landfill-atsdr-2008.pdf",
+    "pages": 7,
+    "pages_with_text": 6,
+    "status": "ocr_sidecar_requires_page_verification",
+    "sha256": "8f107a86a75b276374aaeec76dbaf69de0325a05f4b020d34bff2604829228b1",
+    "ocr_file": "sources/industries/energy-legacy/doty-landfill-atsdr-2008.ocr.txt",
+    "ocr_sha256": "6e1e89c964f96faad979e5cc95f63c1d4261e988237090606bf1f7e50d253cec",
+    "ocr_provenance": "sources/industries/energy-legacy/doty-landfill-atsdr-2008.ocr.provenance.json"
+  },
+  {
+    "file": "sources/industries/energy-legacy/equistar-clinton-benzene-atsdr-2008.pdf",
+    "pages": 21,
+    "pages_with_text": 19,
+    "status": "ocr_sidecar_requires_page_verification",
+    "sha256": "6593675be531508be957cfecab60dd588cfd7d8243fbd27c9849e53e57aac4a5",
+    "ocr_file": "sources/industries/energy-legacy/equistar-clinton-benzene-atsdr-2008.ocr.txt",
+    "ocr_sha256": "c05662a4cad39d41daaf4bc80def7974159723db424cccb6c04e3c169c7b7d3c",
+    "ocr_provenance": "sources/industries/energy-legacy/equistar-clinton-benzene-atsdr-2008.ocr.provenance.json"
+  },
+  {
+    "file": "sources/industries/energy-legacy/gasoline-iarc-qa-2025.pdf",
+    "pages": 8,
+    "pages_with_text": 8,
+    "status": "text_extracted",
+    "sha256": "4b67d2cbbf37e90081232d0f49f9ecd65e4728abfafb5b62cf8e170453cde66f"
+  },
+  {
+    "file": "sources/industries/energy-legacy/iaap-atsdr-2013.pdf",
+    "pages": 9,
+    "pages_with_text": 9,
+    "status": "text_extracted",
+    "sha256": "b88028ec2ffa82a833c84268fbc81750db8e3832338dd60b97ceabc59ea7ca74"
+  },
+  {
+    "file": "sources/industries/energy-legacy/iowa-city-coal-gas-atsdr-2006.pdf",
+    "pages": 54,
+    "pages_with_text": 53,
+    "status": "ocr_sidecar_requires_page_verification",
+    "sha256": "1c55446c0b80c5eaf6dc01577cfdc30e88f63c1631d410349e28c6ef3dbad06b",
+    "ocr_file": "sources/industries/energy-legacy/iowa-city-coal-gas-atsdr-2006.ocr.txt",
+    "ocr_sha256": "5c6cc5fce6e875800e8c9976cb10e96e9ae08b20e0d007ca2e98da6659947ab2",
+    "ocr_provenance": "sources/industries/energy-legacy/iowa-city-coal-gas-atsdr-2006.ocr.provenance.json"
+  },
+  {
+    "file": "sources/industries/energy-legacy/mason-city-coal-gas-atsdr-2008.pdf",
+    "pages": 7,
+    "pages_with_text": 6,
+    "status": "ocr_sidecar_requires_page_verification",
+    "sha256": "6dbf1c2a79c68317802ef2a833a5f73c2a07e16688874eaa56dd0798c4d621b0",
+    "ocr_file": "sources/industries/energy-legacy/mason-city-coal-gas-atsdr-2008.ocr.txt",
+    "ocr_sha256": "dfee4e3080dd026ff94b6304006567d62383d28622e7458879259faad731a000",
+    "ocr_provenance": "sources/industries/energy-legacy/mason-city-coal-gas-atsdr-2008.ocr.provenance.json"
+  },
+  {
+    "file": "sources/industries/energy-legacy/oskaloosa-bulk-oil-atsdr-2006.pdf",
+    "pages": 20,
+    "pages_with_text": 19,
+    "status": "ocr_sidecar_requires_page_verification",
+    "sha256": "e5d0f947fed88ed7800821f9c37a81ad001c19e43dd2f5f87f7e8fc261fe8d2e",
+    "ocr_file": "sources/industries/energy-legacy/oskaloosa-bulk-oil-atsdr-2006.ocr.txt",
+    "ocr_sha256": "b46870a3faab83731e20bb94f9405ad8946fc35140b0c66802ecf3d49aaa9a34",
+    "ocr_provenance": "sources/industries/energy-legacy/oskaloosa-bulk-oil-atsdr-2006.ocr.provenance.json"
+  },
+  {
+    "file": "sources/industries/energy-legacy/perry-rail-yard-atsdr-2007.pdf",
+    "pages": 22,
+    "pages_with_text": 20,
+    "status": "ocr_sidecar_requires_page_verification",
+    "sha256": "fb650df6e952fab514090d74a255ed75531f4fad6e85cde651d1c650d88efff3",
+    "ocr_file": "sources/industries/energy-legacy/perry-rail-yard-atsdr-2007.ocr.txt",
+    "ocr_sha256": "d0d1a27c5bb39080b318abad80a96504cce39a7a0ddcb81986840093477a80c1",
+    "ocr_provenance": "sources/industries/energy-legacy/perry-rail-yard-atsdr-2007.ocr.provenance.json"
+  },
+  {
+    "file": "sources/industries/food-agprocessing/iowa-point-source-emissions-2024-feb2026.pdf",
+    "pages": 34,
+    "pages_with_text": 34,
+    "status": "text_extracted",
+    "sha256": "e2577c2c4985adff4b380f75577df71e111830a416113158c5019e17e9e0781f"
+  },
+  {
+    "file": "sources/industries/food-agprocessing/niosh-bil-mar-storm-lake-2003.pdf",
+    "pages": 33,
+    "pages_with_text": 33,
+    "status": "text_extracted",
+    "sha256": "949661e150158ac9cf0d79f2eecf8d5391ff036f5c46dec21dc2ff825aac35aa"
+  },
+  {
+    "file": "sources/industries/food-agprocessing/niosh-sara-lee-storm-lake-2006.pdf",
+    "pages": 19,
+    "pages_with_text": 19,
+    "status": "text_extracted",
+    "sha256": "81dab5dc5d5f1cdd75a305a9ca9810ba5c5f2fdb535676dedc84a300850485c7"
+  },
+  {
+    "file": "sources/industries/food-agprocessing/niosh-upper-midwest-glioma-occupation-2012.pdf",
+    "pages": 9,
+    "pages_with_text": 9,
+    "status": "text_extracted",
+    "sha256": "aeef0aa8f010885e11773feddfacd5c835b6a5a254bd8d0db44a631cb14fc24b"
+  },
+  {
+    "file": "sources/industries/manufacturing/atsdr-alcoa-vapor-2005.pdf",
+    "pages": 15,
+    "pages_with_text": 15,
+    "status": "text_extracted",
+    "sha256": "db30e2eead3fad4c74674061f85b870d325f2f6be85c2b7938f3124e7594854e"
+  },
+  {
+    "file": "sources/industries/manufacturing/atsdr-allied-equipment-2011.pdf",
+    "pages": 13,
+    "pages_with_text": 13,
+    "status": "text_extracted",
+    "sha256": "7dc6ca25f29614ead103ccd7b80a27238ec739738ecc837177a2435bf47b128c"
+  },
+  {
+    "file": "sources/industries/manufacturing/atsdr-american-packaging-2009.pdf",
+    "pages": 9,
+    "pages_with_text": 8,
+    "status": "ocr_sidecar_requires_page_verification",
+    "sha256": "05d49c1b6cea60de70516f5de364afeeb6399e9c0138f4396aaa7320955f8c27",
+    "ocr_file": "sources/industries/manufacturing/atsdr-american-packaging-2009.ocr.txt",
+    "ocr_sha256": "dad1786e734dfd7319994e8592272dacc3efdbc64e8431985dae321d0ed8c468",
+    "ocr_provenance": "sources/industries/manufacturing/atsdr-american-packaging-2009.ocr.provenance.json"
+  },
+  {
+    "file": "sources/industries/manufacturing/atsdr-midamerica-tanning-2005.pdf",
+    "pages": 12,
+    "pages_with_text": 11,
+    "status": "ocr_sidecar_requires_page_verification",
+    "sha256": "738555e2ef269cad7cf623319bfc0c13d532dd959cba8830d7c48fd4280cccdc",
+    "ocr_file": "sources/industries/manufacturing/atsdr-midamerica-tanning-2005.ocr.txt",
+    "ocr_sha256": "95ae60756841bae8510ae513363a2623a5c2613f5d9aaba4875dc9d9ec644522",
+    "ocr_provenance": "sources/industries/manufacturing/atsdr-midamerica-tanning-2005.ocr.provenance.json"
+  },
+  {
+    "file": "sources/industries/manufacturing/epa-airtoxscreen-eto-controls-update-2022.pdf",
+    "pages": 5,
+    "pages_with_text": 5,
+    "status": "text_extracted",
+    "sha256": "dae7547768f6db4e8ee9b3973c4d9bc01f1db3d1356fd8951c4623708276330c"
+  },
+  {
+    "file": "sources/industries/manufacturing/niosh-john-deere-dubuque-1988.pdf",
+    "pages": 22,
+    "pages_with_text": 22,
+    "status": "text_extracted",
+    "sha256": "655b12e8ff14847b2423d81b43587ff3c618322bc20f6c2c9b0dde2b85804e01"
+  },
+  {
+    "file": "sources/industries/manufacturing/niosh-keokuk-steel-castings-1982.pdf",
+    "pages": 31,
+    "pages_with_text": 31,
+    "status": "text_extracted",
+    "sha256": "2749762c00f2544de5a22505a1a1848b2471ab23671d5000a647be0885ec6839"
+  },
+  {
+    "file": "sources/industries/manufacturing/niosh-sheller-globe-keokuk-1982.pdf",
+    "pages": 11,
+    "pages_with_text": 11,
+    "status": "text_extracted",
+    "sha256": "0cb1bc3980b542ddf817f8356380e7f536fc4fd8afe512d5ee2287c1a61f1727"
+  },
+  {
+    "file": "sources/industries/manufacturing/niosh-winnebago-wood-dust-2001.pdf",
+    "pages": 16,
+    "pages_with_text": 16,
+    "status": "text_extracted",
+    "sha256": "1e3f229b01fdaae57e5545e507e2e299e92e4fc8f3f5c3dc99680e4f77fa9c72"
+  },
+  {
+    "file": "sources/industries/statewide/tri-chemical-list-changes-2026-10-13.pdf",
+    "pages": 22,
+    "pages_with_text": 22,
+    "status": "text_extracted",
+    "sha256": "144ecd73f93e7f9c43346f37d301f73bd5a9c758ba636e0f1a64d485c05cc5a4"
+  },
+  {
+    "file": "sources/industries/statewide/tri-factors-to-consider-2025.pdf",
+    "pages": 5,
+    "pages_with_text": 5,
+    "status": "text_extracted",
+    "sha256": "01113691ac85f62a57ce61a8637dc1e6a28db6b1443d7586dca75fcbc851d982"
+  },
+  {
+    "file": "sources/iowa-cancer-screening-law-ch1087-2026.pdf",
+    "pages": 11,
+    "pages_with_text": 11,
+    "status": "text_extracted",
+    "sha256": "710ab566d7504d272c9257074b8e3212d53f7a2251e3ef51fa950594a90429db"
+  },
+  {
+    "file": "sources/iowa-environmental-risk-report-2026.pdf",
+    "pages": 89,
+    "pages_with_text": 89,
+    "status": "text_extracted",
+    "sha256": "b0db81dc60a94e8f62bd8016f533119f5fdef540837a0b70593f91695506d358"
+  }
+]

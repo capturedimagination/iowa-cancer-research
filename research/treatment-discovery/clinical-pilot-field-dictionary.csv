@@ -1,0 +1,22 @@
+table,field,source_display_name,source_description,source_datatype,missing_rows,interpretation_and_caution
+patient,PATIENT_ID,Patient Identifier,Identifier to uniquely specify a patient.,STRING,0,Public pseudonymous participant key; retain as text. Repeated MSK cohorts may share patients.
+patient,SEX,Sex,Sex,STRING,0,Recorded source category; no additional categories or missingness inferred.
+patient,AGE,Diagnosis Age,Age at which a condition or disease was first diagnosed.,NUMBER,0,Source metadata labels diagnosis age; exact age reference date is not supplied. Do not relabel as age at ICI start.
+patient,SMOKER,Smoker,Indicates if person is a smoker.,STRING,0,Ever/Never only; no pack-years or smoking chronology.
+patient,LINES_OF_TX,Lines of treatment,Lines of treatment,STRING,0,Source stores as STRING; values 1-7. Treatment-line label does not identify prior regimens.
+patient,IRB,IRB,IRB,STRING,0,"Clinical trial/Commercial context, not randomized allocation or IRB protocol ID."
+patient,TREATMENT_TYPE,Treatment Type,Treatment Type,STRING,0,"Monotherapy/Combination ICI context; no drug names, doses or randomized control supplied."
+patient,PFS_MONTHS,Progress Free Survival (Months),Progress Free Survival (Months),NUMBER,0,Study-specific time from ICI start to progression or censoring at last scan. Do not assume standard progression-or-death endpoint; death handling cannot be resolved from this table.
+patient,PFS_STATUS,Progression Free Status,Progression Free Status,STRING,0,0:Not Progressed is censored; 1:Progressed is the recorded event. Death is not separately identified.
+patient,DURABLE_CLINICAL_BENEFIT,Durable Clinical Benefit,Durable Clinical Benefit,STRING,0,"YES/NO/NE study adjudication. NE patients censored before six months; retain separately, never convert to NO. This is not a cure label."
+sample,PATIENT_ID,Patient Identifier,Identifier to uniquely specify a patient.,STRING,0,Public pseudonymous participant key; retain as text. Repeated MSK cohorts may share patients.
+sample,SAMPLE_ID,Sample Identifier,A unique sample identifier.,STRING,0,Public specimen key; do not infer timing relative to treatment from suffixes.
+sample,GENE_PANEL,Gene Panel,Gene panel.,STRING,0,IMPACT341/410/468; different gene coverage and coding-region denominators. Panel is not a treatment.
+sample,ONCOTREE_CODE,Oncotree Code,Oncotree Code,STRING,0,LUAD/LUSC/LUNE/NSCLC; do not silently drop neuroendocrine or unspecified source cases.
+sample,MUTATION_RATE,Mutation Rate,Mutation Rate,NUMBER,0,Original published rate; study reports somatic nonsynonymous mutation count divided by panel coding Mb (0.98/1.06/1.22). Exact original values retained; primary replication biomarker.
+sample,FGA,FGA,FGA,NUMBER,0,Study fraction of genome with log2 copy-number gain >0.2 or loss <-0.2 relative to profiled genome; dimensionless. Not a mutational count.
+sample,PDL1_SCORE,PD-L1 Score (%),PD-L1 Score in percent,NUMBER,154,"Tumor PD-L1 percent, 0-100 when present; blank is missing, zero is measured zero. Current count differs from paper's stated analysis subset."
+sample,CANCER_TYPE,Cancer Type,Cancer Type,STRING,0,Source umbrella cancer category.
+sample,CANCER_TYPE_DETAILED,Cancer Type Detailed,Cancer Type Detailed,STRING,0,Source histologic label; preserve all four observed categories.
+sample,SOMATIC_STATUS,Somatic Status,Somatic Status,STRING,0,Matched for all samples; study used patient-matched blood normal. Not a diagnosis or outcome.
+sample,TMB_NONSYNONYMOUS,TMB (nonsynonymous),TMB (nonsynonymous),NUMBER,0,"Later cBioPortal TMB field, absent from original 2018 clinical sample file and different from MUTATION_RATE in all rows. Do not mix, overwrite or treat as original published biomarker."

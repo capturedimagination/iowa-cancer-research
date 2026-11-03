@@ -1,0 +1,963 @@
+{
+  "schema_version": "1.0",
+  "catalog_cutoff": "2026-10-22",
+  "purpose": "Primary-source discovery and future Iowa cancer modeling; not a prejoined causal dataset",
+  "verification_scope": "Documentation/links and local archived headers inspected. Not every remote dataset downloaded or all file dictionaries exhaustively validated. Unverified endyears/access are explicitly marked.",
+  "local_status_definition": {
+    "downloaded": "Dataset/source file archived",
+    "downloaded_query_extracts": "Selected queries archived, not every possible table",
+    "downloaded_2020_summary_outputs": "2020 summary risk outputs archived, not full block/concentration database",
+    "report_only": "Related report archived; full listed dataset not downloaded",
+    "metadata_only": "Documentation/index inspected; data not downloaded",
+    "not_downloaded": "Resource identified/verified, no data archive created",
+    "report_indexed_download_blocked": "Report indexed content available; download failed and HTML error retained"
+  },
+  "join_and_model_rules": [
+    "Freeze each source's release date, data years, query, dictionary and original hash. Publication year, exposure year, diagnosis year and death year are separate fields.",
+    "Define cancer site, age, sex/race, stage, rate type, population and latency before joining. Incidence, mortality, survival, prevalence and projected counts are different endpoints.",
+    "Keep geography and residence time explicit. Diagnosis residence, death residence, workplace, water-service area, county farm production, ZIP, ZCTA, tract and custom zone are not interchangeable.",
+    "Use source IDs as text with leading zeros. Require a reviewed FRS/TRI/DNR crosswalk; do not infer shared identity from similar names or numeric-looking IDs.",
+    "Keep suppressed, unmeasured, not reported, below detection and zero separate. Preserve reporting limits, qualifiers, confidence intervals and unstable-rate flags.",
+    "Use chemical-specific units and matrices. Nitrate-as-N versus nitrate-as-NO3 differs by 62/14; do not convert without basis. TRI pounds/grams, DNR tons, air ug/m3 and water ng/L are not one common exposure score.",
+    "Do not add overlapping pollutant components or combine measured concentration, emitted mass and modeled risk as equal quantities. HAP is a regulatory list, not a uniform carcinogen category.",
+    "Use lagged exposure windows and sensitivity analyses chosen from biology/history. Current facility status cannot reconstruct 1980-2000 exposure, and county residence cannot reconstruct a worker's job history.",
+    "Age-adjusted rates are for comparison, not simple additive quantities. For modeling, obtain valid counts, age-specific denominators and uncertainty; avoid regressions on unstable rounded rates alone.",
+    "PLACES and CAMSA are modeled products. Their predictors/smoothing can induce associations and shared measurement structure. Do not treat predictions as independent validation or direct local trends.",
+    "TRI history is not yet a harmonized exposure panel. Sector/list/threshold changes, revisions, ownership, missingness and spatial relocation require explicit treatment before trend or health models.",
+    "An ecological association cannot identify an individual's cause or a facility's attributable cancer count. Negative or absent data are evidence gaps, not proof of zero risk."
+  ],
+  "resource_count": 31,
+  "resources": [
+    {
+      "resource_id": "OUT-01",
+      "group": "Cancer outcomes",
+      "name": "State Cancer Profiles",
+      "publisher": "NCI/CDC",
+      "source_urls": [
+        "https://statecancerprofiles.cancer.gov/",
+        "https://statecancerprofiles.cancer.gov/incidencerates/index.php?stateFIPS=19&areatype=county&cancer=001&race=00&sex=0&age=001&type=incd&year=0&sortVariableName=rate&sortOrder=desc&output=1"
+      ],
+      "geographic_coverage": "US states and counties; Iowa 99 counties",
+      "time_coverage": "Archived live incidence 2019-2023; mortality 2020-2024. Trend intervals are distinct and query-specific.",
+      "record_grain": "Geography x cancer site x sex/race/age/stage filter x rate/trend window",
+      "join_keys": [
+        "5-digit state/county FIPS as text",
+        "Cancer/site recode",
+        "Exact demographic filters and window"
+      ],
+      "units": "Cases/deaths per 100,000, average annual counts, AAPC percent, CIs/rank intervals",
+      "access": "Public CSV through output=1; preserve preamble/footnotes and exact query URL",
+      "limitations": "Suppression and unstable small-area rates; rank uncertainty; age adjustment. Search caches still display older 2018-2022. Incidence and mortality are different outcomes.",
+      "intended_use": "Primary comparable county/state summaries, subgroups, trends",
+      "local_status": "downloaded_query_extracts",
+      "local_paths": [
+        "research/source-index.json",
+        "research/sources/iowa-county-incidence-nci-original.csv",
+        "research/sources/iowa-county-mortality-nci-original.csv",
+        "research/iowa-county-incidence-2019-2023.csv"
+      ],
+      "verification": "Archived original query headers/footnotes inspected locally; source URLs retained in source-index.json",
+      "verified_date": "2026-10-22",
+      "id": "OUT-01"
+    },
+    {
+      "resource_id": "OUT-02",
+      "group": "Cancer outcomes",
+      "name": "USCS Data Visualizations downloadable tables",
+      "publisher": "CDC/NCI",
+      "source_urls": [
+        "https://www.cdc.gov/united-states-cancer-statistics/dataviz/data-tables.html",
+        "https://www.cdc.gov/united-states-cancer-statistics/technical-notes/pdf/uscs-data-visualizations-tool-technical-notes-2023-june-508-final.pdf"
+      ],
+      "geographic_coverage": "United States/state and available county outputs",
+      "time_coverage": "June 2026 release; diagnosis years 1999-2023. CDC reports latest incidence 2023 and mortality 2024; inspect endpoint-specific file.",
+      "record_grain": "Preanalyzed geographic/demographic/site/year or pooled-period cell",
+      "join_keys": [
+        "Geographic code",
+        "Site",
+        "Sex/race/age",
+        "Year/window"
+      ],
+      "units": "Counts; crude and age-adjusted rates per 100,000; intervals",
+      "access": "Public delimited ASCII/Excel packages; no case-level linkage to identify people",
+      "limitations": "Suppression/publication rules and registry coverage vary by year. Projected estimates are separate from observed registry cases. A release year is not diagnosis year.",
+      "intended_use": "Reproducible federal tabulations and cross-source comparison",
+      "local_status": "not_downloaded",
+      "local_paths": [],
+      "verification": "Official documentation verified online 2026-10-22",
+      "verified_date": "2026-10-22",
+      "id": "OUT-02"
+    },
+    {
+      "resource_id": "OUT-03",
+      "group": "Cancer outcomes",
+      "name": "USCS public-use and restricted-access incidence databases",
+      "publisher": "CDC NPCR/NCI SEER",
+      "source_urls": [
+        "https://www.cdc.gov/united-states-cancer-statistics/public-use/",
+        "https://www.cdc.gov/united-states-cancer-statistics/public-use/pdf/uscs-public-use-database-technical-documentation-2001-2023-final-508.pdf",
+        "https://www.cdc.gov/cancer/data/"
+      ],
+      "geographic_coverage": "Qualifying US registries; public-use does not provide county at diagnosis",
+      "time_coverage": "Current technical documentation 2001-2023",
+      "record_grain": "Cancer case record with permitted clinical/demographic variables",
+      "join_keys": [
+        "Registry/geography allowed by product",
+        "Diagnosis year",
+        "Site/morphology/stage variables"
+      ],
+      "units": "Case-level coded variables; population denominators for rates",
+      "access": "SEER*Stat access/account/data agreement; restricted-access adds county and other fields through approved process",
+      "limitations": "Not an unrestricted patient download. Cases are tumors, not necessarily unique people. County cannot be assumed available in public-use data. No residential history or direct exposure variables.",
+      "intended_use": "Subtype/stage/demographic analysis after permitted access",
+      "local_status": "not_downloaded",
+      "local_paths": [],
+      "verification": "Official documentation verified online 2026-10-22",
+      "verified_date": "2026-10-22",
+      "id": "OUT-03"
+    },
+    {
+      "resource_id": "OUT-04",
+      "group": "Cancer outcomes",
+      "name": "SEER Research and Research Plus",
+      "publisher": "National Cancer Institute",
+      "source_urls": [
+        "https://seer.cancer.gov/data-software/",
+        "https://seer.cancer.gov/data/access.html",
+        "https://seer.cancer.gov/data-software/documentation/seerstat/nov2025/TextData.FileDescription-nov2025.pdf",
+        "https://seer.cancer.gov/registries/iowa.html"
+      ],
+      "geographic_coverage": "SEER registry areas, including Iowa; not all US",
+      "time_coverage": "Nov 2025 submission/April 2026 documentation: 1975-2023; coverage depends on registry/database",
+      "record_grain": "Tumor/case record with registry, diagnosis, clinical and follow-up variables",
+      "join_keys": [
+        "Registry",
+        "Allowed county variable",
+        "Diagnosis year",
+        "Site recode",
+        "Patient/tumor IDs only within approved product"
+      ],
+      "units": "Coded cases; survival; counts/rates using compatible populations",
+      "access": "Personal registration and data agreement. Research Plus requires eRA Commons/HHS authentication and additional eligibility. SEER*Stat is Windows software.",
+      "limitations": "Changing registry coverage; Research versus Plus variables differ; Iowa registry began 1973 but current standard research series says 1975 onward. No unauthorized cross-dataset identification.",
+      "intended_use": "Iowa longitudinal subtype/survival analyses with correct product and denominator",
+      "local_status": "not_downloaded",
+      "local_paths": [],
+      "verification": "Official documentation verified online 2026-10-22",
+      "verified_date": "2026-10-22",
+      "id": "OUT-04"
+    },
+    {
+      "resource_id": "OUT-05",
+      "group": "Cancer outcomes",
+      "name": "Iowa Cancer Registry research/data request route",
+      "publisher": "University of Iowa/Iowa Cancer Registry",
+      "source_urls": [
+        "https://shri.public-health.uiowa.edu/research/",
+        "https://shri.public-health.uiowa.edu/cancer-data/reports/iowa-cancer-reports/",
+        "https://hhs.iowa.gov/about/data-reports/cancer-data"
+      ],
+      "geographic_coverage": "Iowa residents at diagnosis; statewide registry since 1973",
+      "time_coverage": "Registry historical series since 1973; custom approved release determines end year; annual 2026 report includes 2026 projections",
+      "record_grain": "Registry cancer case and approved aggregate tables",
+      "join_keys": [
+        "Approved registry keys",
+        "Diagnosis date/site",
+        "Residence geography under approved agreement"
+      ],
+      "units": "Cases, rates, clinical characteristics; annual projections separately labeled",
+      "access": "Public summaries; more detailed data require registry review/application and applicable privacy/research approvals",
+      "limitations": "Public reports do not substitute for case-level research data. Preserve observed versus projected. No direct download of identifying cases or implicit approval for linkage.",
+      "intended_use": "Best route for specific historical Iowa subtype/geographic questions",
+      "local_status": "report_indexed_download_blocked",
+      "local_paths": [
+        "research/sources/2026-Cancer-in-Iowa-download-403.html",
+        "research/source-index.json"
+      ],
+      "verification": "Official indexed report/research pages and Iowa HHS documentation verified; direct report download produced 403, not a valid archived PDF",
+      "verified_date": "2026-10-22",
+      "id": "OUT-05"
+    },
+    {
+      "resource_id": "OUT-06",
+      "group": "Cancer outcomes",
+      "name": "CAMSA and Iowa Cancer Zones",
+      "publisher": "Iowa Cancer Registry",
+      "source_urls": [
+        "https://shri.public-health.uiowa.edu/cancer-data/interactive-iowa-data-tools/",
+        "https://shri.public-health.uiowa.edu/camsa/",
+        "https://shri.public-health.uiowa.edu/camsa/assets/FAQ.pdf",
+        "https://shri.public-health.uiowa.edu/cancer-zones/"
+      ],
+      "geographic_coverage": "Iowa county/ZIP-level CAMSA; Cancer Zones are purpose-built larger small-area aggregations",
+      "time_coverage": "CAMSA uses selected five-year case windows and annual updates; exact current window must be extracted from displayed/export metadata. Zones use fixed historical inputs, including 2015-2019 ACS on documented map.",
+      "record_grain": "Cancer site x geographic area x selected window; modeled/smoothed rates and uncertainty",
+      "join_keys": [
+        "Tool-specific ZIP/zone ID",
+        "County FIPS",
+        "Boundary vintage",
+        "Cancer/site/window"
+      ],
+      "units": "Age-adjusted estimated incidence per 100,000, risk probability, uncertainty",
+      "access": "Public interactive tools; indexed documentation accessible, direct UIowa requests intermittently 403",
+      "limitations": "ZIP is not automatically ZCTA. Smoothed estimates are not raw cases or independently observed rates. Uncertainty classes are ranked standard-deviation groups, not a uniform CI. Do not assume zone/year equivalence.",
+      "intended_use": "Generate small-area hypotheses with uncertainty and retrieve exact methods before modeling",
+      "local_status": "metadata_only",
+      "local_paths": [],
+      "verification": "Official documentation verified online 2026-10-22",
+      "verified_date": "2026-10-22",
+      "id": "OUT-06"
+    },
+    {
+      "resource_id": "OUT-07",
+      "group": "Cancer outcomes",
+      "name": "Iowa Public Health Tracking cancer data",
+      "publisher": "Iowa HHS/ICR",
+      "source_urls": [
+        "https://hhs.iowa.gov/about/data-reports/cancer-data"
+      ],
+      "geographic_coverage": "Iowa state and available local/demographic groups",
+      "time_coverage": "Portal documents 2000 through latest available; usually 3-4 year lag. Current end year must be read from actual export, not guessed.",
+      "record_grain": "Cancer site x residence geography x demographic group x year/window",
+      "join_keys": [
+        "Geography/FIPS",
+        "Cancer site",
+        "Age/sex/race",
+        "Year"
+      ],
+      "units": "Case counts and rates per 100,000; small-count stability flags",
+      "access": "Public portal/linked site-specific pages; February 2023 source change to direct ICR",
+      "limitations": "Address at diagnosis only; no prior residence, smoking/diet or latency. Counts represent cancers, not unique people. 2000-2016 measures may differ after source change.",
+      "intended_use": "Iowa-specific official context and portal-defined comparisons",
+      "local_status": "not_downloaded",
+      "local_paths": [],
+      "verification": "Official documentation verified online 2026-10-22",
+      "verified_date": "2026-10-22",
+      "id": "OUT-07"
+    },
+    {
+      "resource_id": "OUT-08",
+      "group": "Cancer outcomes",
+      "name": "CDC WONDER underlying-cause mortality",
+      "publisher": "CDC NCHS",
+      "source_urls": [
+        "https://wonder.cdc.gov/ucd-icd10-expanded.html",
+        "https://wonder.cdc.gov/wonder/help/mcd-expanded.html"
+      ],
+      "geographic_coverage": "US/state/county residence at death",
+      "time_coverage": "Current final Single Race series 2018-2024; older bridged-race series separate",
+      "record_grain": "Death count/rate cell by year, geography, cause and permitted demographic filters",
+      "join_keys": [
+        "County FIPS",
+        "ICD-10 cause group",
+        "Year",
+        "Age/sex/race/Hispanic category"
+      ],
+      "units": "Deaths, crude/age-adjusted rates per 100,000, CI/SE where available",
+      "access": "Public query/export with data-use restrictions and suppression; preserve actual query",
+      "limitations": "Death certificates differ from incidence. 1-9 counts suppressed; current reliability/age-adjustment limits must follow current help, not older rules. Race-series/denominator comparability changes.",
+      "intended_use": "Cancer mortality and competing-cause context; verify county-rate availability",
+      "local_status": "not_downloaded",
+      "local_paths": [],
+      "verification": "Official documentation verified online 2026-10-22",
+      "verified_date": "2026-10-22",
+      "id": "OUT-08"
+    },
+    {
+      "resource_id": "EXP-01",
+      "group": "Exposure/environment",
+      "name": "USGS county agricultural pesticide-use estimates",
+      "publisher": "USGS National Water Quality Program",
+      "source_urls": [
+        "https://water.usgs.gov/nawqa/pnsp/usage/maps/county-level/",
+        "https://water.usgs.gov/nawqa/pnsp/usage/maps/",
+        "https://doi.org/10.5066/P9EDTHQL"
+      ],
+      "geographic_coverage": "Conterminous US county estimates including Iowa",
+      "time_coverage": "Available 1992-2017 final plus 2018-2019 preliminary. Updated Aug 19, 2026 page plans final 2018-2022 inDec 2026, after this cutoff.",
+      "record_grain": "County x year x pesticide active ingredient x EPest-high/low",
+      "join_keys": [
+        "State/county FIPS",
+        "Year",
+        "Ingredient/compound name",
+        "Estimate type"
+      ],
+      "units": "Kilograms active ingredient/year in data releases; inspect each file dictionary",
+      "access": "Public release links/DOIs and tables; do not use superseded archived preliminary files as current",
+      "limitations": "Seed-treatment estimates discontinued beginning 2015. Agricultural use excludes many nonagricultural uses. High/low are estimation alternatives, not personal dose or guaranteed confidence bounds. USGS cautions against detailed specific-county comparisons.",
+      "intended_use": "Historical broad exposure hypotheses and latency-aligned sensitivity analyses",
+      "local_status": "not_downloaded",
+      "local_paths": [],
+      "verification": "Official documentation verified online 2026-10-22",
+      "verified_date": "2026-10-22",
+      "id": "EXP-01"
+    },
+    {
+      "resource_id": "EXP-02",
+      "group": "Exposure/environment",
+      "name": "USDA Census of Agriculture and NASS Quick Stats",
+      "publisher": "USDA NASS",
+      "source_urls": [
+        "https://www.nass.usda.gov/AgCensus/",
+        "https://data.nass.usda.gov/Publications/AgCensus/2022/",
+        "https://data.nass.usda.gov/Quick_Stats/"
+      ],
+      "geographic_coverage": "US/state/county; commodity-specific publication coverage",
+      "time_coverage": "2022 most recent agricultural census; five-year censuses; annual survey series vary by commodity",
+      "record_grain": "County x year x commodity/practice/item/statistic/source",
+      "join_keys": [
+        "State/county ANSI or FIPS",
+        "Year",
+        "Commodity",
+        "Statistic/unit",
+        "CENSUS versus SURVEY source"
+      ],
+      "units": "Acres, farms, animals, production quantities, dollars and other explicit units",
+      "access": "Public tables/CSV/bulk; Quick Stats API requires key and query limits",
+      "limitations": "Disclosure suppressions such as D are missing, not zero. Animals/inventory/sales and capacity are different. County farm production is not personal pesticide exposure or residence-based employment.",
+      "intended_use": "Crop/livestock/practice context; acreage denominators and historical land-use covariates",
+      "local_status": "not_downloaded",
+      "local_paths": [],
+      "verification": "Official documentation verified online 2026-10-22",
+      "verified_date": "2026-10-22",
+      "id": "EXP-02"
+    },
+    {
+      "resource_id": "EXP-03",
+      "group": "Exposure/environment",
+      "name": "EPA TRI Basic Data Iowa history",
+      "publisher": "US EPA",
+      "source_urls": [
+        "https://www.epa.gov/toxics-release-inventory-tri-program/tri-basic-data-files-calendar-years-1987-present",
+        "https://data.epa.gov/efservice/downloads/tri/mv_tri_basic_download/2024_IA/csv"
+      ],
+      "geographic_coverage": "Iowa reporting facilities; selected sectors/chemical/reporting thresholds",
+      "time_coverage": "Downloaded 1987-2024, 38 annual files, 60,040 source records",
+      "record_grain": "Facility x chemical x reporting year/form; revisions and Form A/R matter",
+      "join_keys": [
+        "TRI facility ID",
+        "FRS ID where populated",
+        "CAS/chemical category",
+        "Year/form",
+        "NAICS and location"
+      ],
+      "units": "Pounds for most chemicals; grams for dioxin-type entries; media-specific releases and waste management separate",
+      "access": "Public CSV; archived source manifests/hashes",
+      "limitations": "Nonreporting is not zero. Lists/thresholds/sectors/ownership change. Offsite transfers differ from onsite releases. Form A is unquantified certification. OSHA carcinogen flag is not IARC classification or potency.",
+      "intended_use": "Historical facility/agent/media inventory after harmonization",
+      "local_status": "downloaded",
+      "local_paths": [
+        "sources/industries/tri-history/",
+        "research/industries/tri-history-manifest.json",
+        "research/industries/tri-2024-iowa-facilities.csv",
+        "research/industries/tri-2024-iowa-chemicals.csv"
+      ],
+      "verification": "Official documentation verified online 2026-10-22",
+      "verified_date": "2026-10-22",
+      "id": "EXP-03"
+    },
+    {
+      "resource_id": "EXP-04",
+      "group": "Exposure/environment",
+      "name": "EPA AirToxScreen",
+      "publisher": "US EPA",
+      "source_urls": [
+        "https://www.epa.gov/AirToxScreen",
+        "https://www.epa.gov/AirToxScreen/2020-airtoxscreen-assessment-results",
+        "https://www.epa.gov/AirToxScreen/airtoxscreen-frequent-questions"
+      ],
+      "geographic_coverage": "National model; 2020 block outputs and population-weighted county/state summaries",
+      "time_coverage": "Archived 2020 cancer-risk results. Current landing page separately offers 2021 emissions/concentrations; do not assume 2021 risk release.",
+      "record_grain": "Geography x pollutant or source group x modeled assessment year",
+      "join_keys": [
+        "FIPS/GEOID and boundary vintage",
+        "Pollutant name/code",
+        "Source group",
+        "Assessment year"
+      ],
+      "units": "Modeled lifetime cancer risk per 1 million; concentration units in specific files; hazard index separate",
+      "access": "Public downloads; local national workbooks and complete 99 Iowa county extracts",
+      "limitations": "Screening snapshot, not observed cases or annual incidence. Model/method changes prevent simple year-over-year trend. No quantified diesel-PM cancer contribution; no radon/most indoor/occupational pathways. Secondary chemistry is not facility attribution. Rounded totals need not equal displayed components.",
+      "intended_use": "Prioritize chemical/source/geographic follow-up with model limitations",
+      "local_status": "downloaded_2020_summary_outputs",
+      "local_paths": [
+        "sources/industries/statewide/national_cancerrisk_by_county_poll.xlsx",
+        "sources/industries/statewide/national_cancerrisk_by_county_srcgrp.xlsx",
+        "research/industries/airtoxscreen-2020-iowa-county-poll.csv",
+        "research/industries/airtoxscreen-2020-iowa-county-srcgrp.csv",
+        "research/industries/statewide-industry-data-provenance.json"
+      ],
+      "verification": "Official documentation verified online 2026-10-22",
+      "verified_date": "2026-10-22",
+      "id": "EXP-04"
+    },
+    {
+      "resource_id": "EXP-05",
+      "group": "Exposure/environment",
+      "name": "Iowa DNR Title V point-source inventory",
+      "publisher": "Iowa DNR",
+      "source_urls": [
+        "https://www.iowadnr.gov/media/2277/download?inline="
+      ],
+      "geographic_coverage": "283 Iowa Title V facility IDs",
+      "time_coverage": "2024 emissions; actual PDF dated 2026-02-25 despite 2021 search metadata",
+      "record_grain": "Facility x emissions year; 9 pollutant-total columns",
+      "join_keys": [
+        "DNR inventory facility ID",
+        "Reviewed crosswalk to FRS/TRI/DNR site IDs",
+        "Facility names/locations with historical aliases"
+      ],
+      "units": "Report labels tons/year without explicit short/metric definition; no conversion applied",
+      "access": "Archived PDF, complete 283 row CSV, reproduction script and provenance",
+      "limitations": "Not every Iowa source; excludes mobile, biogenic, nonpoint. HAPs include noncarcinogens and overlap VOC/PM. PM2.5 is a subset of PM10. Mass is not dose/risk. Do not add to TRI.",
+      "intended_use": "Facility coverage/process context and source-specific annual mass",
+      "local_status": "downloaded",
+      "local_paths": [
+        "sources/industries/food-agprocessing/iowa-point-source-emissions-2024-feb2026.pdf",
+        "research/iowa-title-v-facilities-emissions-2024.csv",
+        "research/iowa-title-v-2024-provenance.json",
+        "scripts/extract_iowa_title_v_2024.py"
+      ],
+      "verification": "Official documentation verified online 2026-10-22",
+      "verified_date": "2026-10-22",
+      "id": "EXP-05"
+    },
+    {
+      "resource_id": "EXP-06",
+      "group": "Exposure/environment",
+      "name": "EPA AQS/AirData measured ambient pollution",
+      "publisher": "US EPA/state and local monitoring agencies",
+      "source_urls": [
+        "https://www.epa.gov/aqs/obtaining-aqs-data",
+        "https://aqs.epa.gov/aqsweb/airdata/download_files.html",
+        "https://aqs.epa.gov/aqsweb/documents/data_api.html"
+      ],
+      "geographic_coverage": "Monitor sites, not continuous coverage; Iowa network varies by pollutant/year",
+      "time_coverage": "Historical/current hourly, daily, annual records; actual completeness/site periods vary; current year provisional",
+      "record_grain": "Site x parameter x POC x duration/method x time/standard/event treatment",
+      "join_keys": [
+        "State 2+county 3+site 4 AQS site ID",
+        "Parameter",
+        "POC",
+        "Sample date/time",
+        "Method/duration/standard"
+      ],
+      "units": "Parameter-specific units; preserve units, detection limits, qualifiers and completeness",
+      "access": "Public pregenerated files; AQS API key/email registration and query limits",
+      "limitations": "Sparse monitors and changed sites. Multiple standards, event rules, durations can produce multiple summary rows. AQI is not a cancer metric. 2021 Iowa carbonyl report/current 2026 network differ.",
+      "intended_use": "Measured ambient concentration series with QA and siting context",
+      "local_status": "not_downloaded",
+      "local_paths": [],
+      "verification": "Official documentation verified online 2026-10-22",
+      "verified_date": "2026-10-22",
+      "id": "EXP-06"
+    },
+    {
+      "resource_id": "EXP-07",
+      "group": "Exposure/environment",
+      "name": "UCMR occurrence data, especially UCMR 5 PFAS/lithium",
+      "publisher": "US EPA",
+      "source_urls": [
+        "https://www.epa.gov/dwucmr/occurrence-data-unregulated-contaminant-monitoring-rule"
+      ],
+      "geographic_coverage": "Sampled public water systems; UCMR 5 large/all mid-size and selected small systems; not private wells",
+      "time_coverage": "UCMR 5 scheduled 2023-2025 sampling; final dataset released Aug 2026. Older cycles 2001-2005, 2008-2010, 2013-2015, 2018-2020.",
+      "record_grain": "PWS x sampling location x sample event x analyte x analytical result",
+      "join_keys": [
+        "PWSID",
+        "Facility/sampling point IDs",
+        "Sample ID/date",
+        "Contaminant/method",
+        "Result/unit/MRL"
+      ],
+      "units": "Analyte-specific concentration units; preserve unit field. 1 ng/L = 1 ppt in water; 1 ug/L = 1000 ng/L.",
+      "access": "Public ZIP text, state ZIPs and Data Finder. Finder Excel limit 1 million records; whole All file exceeds Excel rows.",
+      "limitations": "Nondetect below MRL is not zero. Sampled detection is not household personal intake or a regulatory compliance determination. System address/county is not a service area boundary. Rounds differ in list/sensitivity.",
+      "intended_use": "Finished-water occurrence by chemical/system with sampling design",
+      "local_status": "report_only",
+      "local_paths": [
+        "sources/environment/iowa-dnr-pfas-testing-tiers1-3-march2023.pdf",
+        "sources/environment/iowa-dnr-pfas-private-wells.pdf"
+      ],
+      "verification": "EPA final release/status verified; local Iowa PFAS reports are different datasets, not a downloaded UCMR 5 database",
+      "verified_date": "2026-10-22",
+      "id": "EXP-07"
+    },
+    {
+      "resource_id": "EXP-08",
+      "group": "Exposure/environment",
+      "name": "SDWIS/Fed and ECHO drinking-water data",
+      "publisher": "US EPA/state primacy agencies",
+      "source_urls": [
+        "https://www.epa.gov/DWdata/sdwis-federal-reporting-services-data-dictionary",
+        "https://echo.epa.gov/help/drinking-water-qlik-dashboard-help"
+      ],
+      "geographic_coverage": "Regulated public water systems and reported service areas; no private well census",
+      "time_coverage": "Quarterly/current federal snapshots; violation/date histories vary by system/product",
+      "record_grain": "PWS/facility inventory; violation/enforcement records; selected sample tables",
+      "join_keys": [
+        "PWSID",
+        "Facility ID",
+        "Contaminant/rule",
+        "Violation ID/start/end/status",
+        "Snapshot quarter"
+      ],
+      "units": "Population served, connections, categorical violations; concentration only where available",
+      "access": "Public reports/downloads; record extract/snapshot date",
+      "limitations": "EPA acknowledges underreporting/inaccuracies. Federal data do not contain all routine sample values. Monitoring violation is not chemical exceedance. System address is not complete exposure geography.",
+      "intended_use": "Public water identity, compliance history and crosswalk to UCMR/state actual samples",
+      "local_status": "report_only",
+      "local_paths": [
+        "sources/environment/iowa-dnr-drinking-water-compliance-2025-june2026.pdf"
+      ],
+      "verification": "Official documentation verified online 2026-10-22",
+      "verified_date": "2026-10-22",
+      "id": "EXP-08"
+    },
+    {
+      "resource_id": "EXP-09",
+      "group": "Exposure/environment",
+      "name": "Iowa Wells Information System",
+      "publisher": "Iowa DNR",
+      "source_urls": [
+        "https://programs.iowadnr.gov/iowawellinformationsystem",
+        "https://www.iowadnr.gov/environmental-protection/water-quality/private-well-program"
+      ],
+      "geographic_coverage": "Recorded Iowa private wells; location/depth/geology/water quality",
+      "time_coverage": "Historical records differ by well; active application current as of access",
+      "record_grain": "Well construction/location and associated sample/result records",
+      "join_keys": [
+        "IWIS/well ID",
+        "Coordinates/CRS",
+        "Sample date/analyte",
+        "Well depth/aquifer"
+      ],
+      "units": "Well depth and analyte-specific concentration units; nitrate-as-N versus nitrate-as-NO3 must be identified",
+      "access": "Public map/query; public bulk/export capability not independently verified here",
+      "limitations": "Not a census of all wells or users; voluntary/targeted sampling and treatment status. Coordinates and repeated samples need QA. Raw well water versus drinking water tap are different.",
+      "intended_use": "Groundwater exposure hypotheses with geology/depth and sample dates",
+      "local_status": "not_downloaded",
+      "local_paths": [],
+      "verification": "Official documentation verified online 2026-10-22",
+      "verified_date": "2026-10-22",
+      "id": "EXP-09"
+    },
+    {
+      "resource_id": "EXP-10",
+      "group": "Exposure/environment",
+      "name": "Iowa HHS private well tracking summaries",
+      "publisher": "Iowa HHS/DNR PWTS",
+      "source_urls": [
+        "https://hhs.iowa.gov/about/data-reports/environment/well-water"
+      ],
+      "geographic_coverage": "Iowa tested private wells; summarized state/county/local coverage as per portal",
+      "time_coverage": "2000 through latest available according to docs; extract end year from actual export",
+      "record_grain": "Geography x year x analyte/test measure; underlying tested well records",
+      "join_keys": [
+        "County FIPS",
+        "Year",
+        "Analyte",
+        "Measure/threshold"
+      ],
+      "units": "Tests, wells, percent above threshold; nitrate/arsenic concentration units depend on measure",
+      "access": "Public tracking portal; underlying PWTS microdata may need request",
+      "limitations": "Selection bias; repeated tests do not mean independent wells; tested wells are not all homes. Arsenic, nitrate, coliform measure different hazards; do not use bacteria as a cancer measure.",
+      "intended_use": "Document observed testing coverage and contamination indicators",
+      "local_status": "not_downloaded",
+      "local_paths": [],
+      "verification": "Official documentation verified online 2026-10-22",
+      "verified_date": "2026-10-22",
+      "id": "EXP-10"
+    },
+    {
+      "resource_id": "EXP-11",
+      "group": "Exposure/environment",
+      "name": "Radon zone maps and Iowa testing data route",
+      "publisher": "US EPA/Iowa HHS",
+      "source_urls": [
+        "https://www.epa.gov/radon/epa-map-radon-zones-and-supplemental-information",
+        "https://www.epa.gov/sites/production/files/2014-08/documents/iowa.pdf",
+        "https://hhs.iowa.gov/health-prevention/providers-professionals/radiological-health/radon",
+        "https://www.cdc.gov/environmental-health-tracking/php/data-research/radon-testing.html"
+      ],
+      "geographic_coverage": "EPA county zone potential; lab/home tests where available through tracking/state program",
+      "time_coverage": "EPA zones developed 1993; home test date coverage varies; modern state testing microdata not downloaded",
+      "record_grain": "County zone or individual/aggregated building test; these are different data products",
+      "join_keys": [
+        "County FIPS or proper geographic ID",
+        "Test date/type",
+        "Building/floor/mitigation status if available"
+      ],
+      "units": "pCi/L or Bq/m3; 1 pCi/L = 37 Bq/m3; category zone is not measured concentration",
+      "access": "Public zone map; state/CDC aggregated test coverage; detailed Iowa testing export/access not verified",
+      "limitations": "All Iowa counties Zone 1 cannot explain between-county variation. Zone predicts potential, not individual home level. Tested homes not random sample; duplicates, short/long tests, season, mitigation matter.",
+      "intended_use": "Keep geologic potential separate from measured building exposure; identify data access gap",
+      "local_status": "not_downloaded",
+      "local_paths": [],
+      "verification": "Official documentation verified online 2026-10-22",
+      "verified_date": "2026-10-22",
+      "id": "EXP-11"
+    },
+    {
+      "resource_id": "EXP-12",
+      "group": "Exposure/environment",
+      "name": "USGS Water Data time-series and discrete Samples API",
+      "publisher": "USGS",
+      "source_urls": [
+        "https://www.usgs.gov/tools/usgs-water-data-apis",
+        "https://water.code-pages.usgs.gov/dataretrieval/articles/Status.html"
+      ],
+      "geographic_coverage": "USGS sites including Iowa surface/groundwater; location-dependent",
+      "time_coverage": "Historical to current measurements; NWIS discrete water quality froze March 2024; new/updated data use Samples API or new WQP",
+      "record_grain": "Site x time x parameter x method/qualifier; discrete sample versus continuous sensor",
+      "join_keys": [
+        "USGS monitoring location/site ID",
+        "Parameter code",
+        "Datetime/time zone",
+        "Sample/result identifier"
+      ],
+      "units": "Parameter-specific concentrations, streamflow and related units; preserve qualifiers and reporting limits",
+      "access": "Public modern APIs; migrate legacy waterservices/readNWIS code; current API limits docs",
+      "limitations": "Surface water/raw intake concentrations are not finished tap water. Frozen legacy endpoint can look current while missing new records. Different measurement media/methods/times must not be pooled blindly.",
+      "intended_use": "Historical water-pathway context and measured timelines with API provenance",
+      "local_status": "not_downloaded",
+      "local_paths": [],
+      "verification": "Official documentation verified online 2026-10-22",
+      "verified_date": "2026-10-22",
+      "id": "EXP-12"
+    },
+    {
+      "resource_id": "EXP-13",
+      "group": "Exposure/environment",
+      "name": "Iowa DNR animal feeding operations inventory/GIS",
+      "publisher": "Iowa DNR",
+      "source_urls": [
+        "https://www.iowadnr.gov/environmental-protection/animal-feeding-operations/afo-online-services",
+        "https://programs.iowadnr.gov/afoemmp/Home/PublicSearch",
+        "https://geodata.iowa.gov/datasets/iowadnr%3A%3Aanimal-feeding-operations-download"
+      ],
+      "geographic_coverage": "Reported regulated Iowa livestock/poultry facilities; download metadata says active>= 300 animal units",
+      "time_coverage": "Live inventory snapshot; historical statuses/animal counts must be obtained separately",
+      "record_grain": "Facility/location x status/capacity/animal type; permit/construction records",
+      "join_keys": [
+        "AFO Facility ID",
+        "Coordinates",
+        "Snapshot date",
+        "Animal type/unit basis"
+      ],
+      "units": "Head counts and animal units/capacity, not interchangeable; facility counts",
+      "access": "Public query/inventory reports and GIS downloads",
+      "limitations": "Small/unreported operations and historical closures may be missing. AFO, confinement, feedlot and EPA-CAFO definitions differ. Current capacity is not actual annual animal number, manure mass or personal exposure.",
+      "intended_use": "Exposure inventory with explicit definition/date; refine ecological livestock-density hypotheses",
+      "local_status": "not_downloaded",
+      "local_paths": [],
+      "verification": "Official documentation verified online 2026-10-22",
+      "verified_date": "2026-10-22",
+      "id": "EXP-13"
+    },
+    {
+      "resource_id": "EXP-14",
+      "group": "Exposure/environment",
+      "name": "EPA ECHO/FRS facility crosswalk/compliance",
+      "publisher": "US EPA",
+      "source_urls": [
+        "https://echo.epa.gov/tools/data-downloads",
+        "https://www.epa.gov/frs"
+      ],
+      "geographic_coverage": "Regulated facilities program-dependent, nationwide including Iowa",
+      "time_coverage": "Snapshot and program-specific history; keep data refresh date",
+      "record_grain": "FRS facility and program identifier; inspections/violations/enforcement events",
+      "join_keys": [
+        "FRS registry ID",
+        "TRI ID",
+        "NPDES ID",
+        "ICIS-Air ID",
+        "State program IDs and coordinates"
+      ],
+      "units": "Categorical compliance, event dates, penalties; some emissions/discharge measures in separate tables",
+      "access": "Public download/web services; dataset-specific coverage",
+      "limitations": "One physical campus can have multiple program IDs or subfacilities. Fine amount and violation count are not cancer risk. No automatic name-only join; inspect aliases/location/period.",
+      "intended_use": "Join reviewed facility records across air/water/waste and dated enforcement",
+      "local_status": "not_downloaded",
+      "local_paths": [],
+      "verification": "Official documentation verified online 2026-10-22",
+      "verified_date": "2026-10-22",
+      "id": "EXP-14"
+    },
+    {
+      "resource_id": "EXP-15",
+      "id": "EXP-15",
+      "group": "Exposure/environment",
+      "name": "EPA Risk-Screening Environmental Indicators (RSEI) and Geographic Microdata",
+      "publisher": "US EPA",
+      "source_urls": [
+        "https://www.epa.gov/rsei/ways-get-rsei-results",
+        "https://www.epa.gov/rsei/rsei-data-dictionary",
+        "https://www.epa.gov/rsei/rsei-data-dictionary-disaggregated-grid-cell-geographic-microdata",
+        "https://www.epa.gov/rsei/rsei-geographic-microdata-rsei-gm",
+        "https://www.epa.gov/rsei/understanding-rsei-results",
+        "https://www.epa.gov/rsei/how-rsei-should-be-used",
+        "https://gaftp.epa.gov/rsei/Current_Version/V2312_RY2022/"
+      ],
+      "geographic_coverage": "United States and territories, including Iowa. Air microdata use 810 m by 810 m receptor grid cells, with block-group, tract and ZIP aggregates; water microdata use downstream NHD flowlines. Receptors may be affected by sources outside their own county or state.",
+      "time_coverage": "Current verified data dictionary: version 2.3.12, TRI reporting years 1988-2022, released March 2024; TRI input snapshot frozen fall 2023. Do not infer RSEI coverage through 2024 from this project's newer raw TRI files. EPA download page offers 2020-2022 grid microdata; expanded 1988-2022 datasets can be requested.",
+      "record_grain": "Air disaggregated microdata: submission year x modeled chemical release/media x receptor grid cell, with concentration, toxicity-weighted concentration, score and population. Aggregated products sum releases over a receptor area. Facility, industry and release summaries are separate products.",
+      "join_keys": [
+        "Model version plus SubmissionYear",
+        "GridCode + X + Y for air receptor cells",
+        "ReleaseNumber, ChemicalNumber and FacilityNumber within the same version",
+        "TRI facility identifier through the corresponding Facility table",
+        "NHD flowline keys for water; documented geographic crosswalk and boundary vintage"
+      ],
+      "units": "RSEI Score is unitless and relative; it incorporates surrogate dose, toxicity and population. Air Conc is modeled ug/m3. ToxConc is toxicity-weighted concentration; CTConc and NCTConc isolate cancer and noncancer weights. These are distinct metrics, not observed cancer cases or absolute lifetime probabilities.",
+      "access": "Public EasyRSEI browser dashboards, all-years dashboard, table CSVs and data dictionary. Geographic Microdata and crosswalk/shapefile directories are public; very large disaggregated national files can exceed 100 GB/year. Some expanded geographies/years require an EPA request. No request or large download performed here.",
+      "limitations": "Scores support screening and prioritization, not facility-specific causal findings, actual personal exposure or individual risk. Overall scores can combine cancer and noncancer effects. Verify stack parameters, location and chemical speciation; category toxicity may use conservative assumptions. TRI reporting limits and omitted sources remain. Do not combine RSEI model versions: internal keys and model results change; a consistent version recalculates historical years. Separate score changes caused by population, toxicity, modeling or input revisions from release changes.",
+      "intended_use": "Compare chemical-specific toxicity-weighted screening indicators and receptor areas within one model version; investigate high scores with refined exposure data. Avoid ranking cancer burden by raw TRI mass alone.",
+      "local_status": "not_downloaded",
+      "local_paths": [],
+      "verification": "Official current-version page, dictionary, microdata documentation and public directory verified online 2026-10-22. Only documentation and directory listings read; no RSEI dataset downloaded.",
+      "verified_date": "2026-10-22"
+    },
+    {
+      "resource_id": "EXP-16",
+      "id": "EXP-16",
+      "group": "Exposure/environment",
+      "name": "EPA National Emissions Inventory (NEI), including 2023 inventory",
+      "publisher": "US EPA with state, local and Tribal air agencies",
+      "source_urls": [
+        "https://www.epa.gov/air-emissions-inventories/get-air-emissions-data-0",
+        "https://www.epa.gov/air-emissions-inventories/2023-national-emissions-inventory-nei",
+        "https://www.epa.gov/air-emissions-inventories/2023-nei-supporting-data-and-summaries",
+        "https://www.epa.gov/air-emissions-inventories/what-are-units-nei-emissions-data",
+        "https://gaftp.epa.gov/Air/nei/2023/doc/TSD/where-can-i-obtain-the-2023-nei-data.html",
+        "https://gaftp.epa.gov/Air/nei/2023/doc/TSD/how-is-the-nei-constructed.html"
+      ],
+      "geographic_coverage": "Nationwide including Iowa: point facilities, nonpoint county/tribal totals, onroad and nonroad mobile sources. Facility summaries and national/state/county sector summaries are separate aggregations; biogenics and fire supporting products require their own scope definitions.",
+      "time_coverage": "2023 triennial inventory is publicly available at the October 22, 2026 cutoff; supporting-data page updated October 15, 2026 lists October 2026 data summaries. Full NEI releases every three years; intervening-year modeling platforms and facility summaries are different products. Freeze the exact release/revision and inventory year.",
+      "record_grain": "Annual emissions by source category and pollutant. Detailed point data may identify facility, unit, process/SCC and release point; nonpoint/mobile products aggregate by county/tribe, source category and pollutant. Facility-by-pollutant and sector/tier summaries must not be counted as additional emissions.",
+      "join_keys": [
+        "Inventory year plus release/revision",
+        "EIS facility/site identifier and agency identifiers for point data",
+        "Unit/process/release-point keys where supplied",
+        "County FIPS or Tribal geographic code",
+        "Pollutant code/CAS plus unit field",
+        "Source Classification Code (SCC), EIS sector or tier definition",
+        "Reviewed crosswalk to FRS, TRI and DNR program IDs"
+      ],
+      "units": "EPA units documentation specifies annual CAP/precursor emissions in short tons/year and HAP emissions in pounds/year. Preserve the actual product's pollutant and unit columns: summaries, modeling inputs and supplemental files can use different formats. Do not assume every column labeled emissions has the same unit.",
+      "access": "Public 2023 retrieval tool, facility mapping, custom county/sector/tier queries, zipped CSV summaries, SMOKE modeling inputs and technical documentation. National CSV packages are large and may exceed Excel capacity; select Iowa or a smaller summary. EIS Gateway has restricted agency/EPA access and differs from public downloads. No large download performed here.",
+      "limitations": "Estimated emissions inventory, not ambient concentration, personal dose or health risk. It blends reported data, factors, models and EPA augmentation; HAP completeness and method uncertainty vary. NEI uses TRI and other programs as inputs, so adding NEI to TRI or DNR totals can double count. CAPs, HAPs and particulate/speciation categories overlap. Historic comparisons need consistent methods, coverage and units. Current EIS facility names/IDs can differ from the frozen public inventory attributes; TSD notes public point reports generated April 15, 2026.",
+      "intended_use": "Broaden chemical/source coverage beyond TRI and Iowa Title V facilities, including mobile and nonpoint emissions; build a dated, pollutant-specific source inventory before exposure modeling.",
+      "local_status": "not_downloaded",
+      "local_paths": [],
+      "verification": "Official 2023 landing page, October 2026 supporting-download page, units FAQ and 2023 technical documentation verified online 2026-10-22. No national or Iowa NEI data downloaded.",
+      "verified_date": "2026-10-22"
+    },
+    {
+      "resource_id": "COV-01",
+      "group": "Covariates/denominators",
+      "name": "BRFSS annual survey data",
+      "publisher": "CDC/Iowa HHS",
+      "source_urls": [
+        "https://www.cdc.gov/brfss/annual_data/annual_data.htm",
+        "https://www.cdc.gov/brfss/annual_data/annual_2025.html"
+      ],
+      "geographic_coverage": "State-representative adult telephone survey; Iowa included; local direct estimates limited",
+      "time_coverage": "Annual since 1984; current 2025 dataset released Aug 2026; question/module availability varies",
+      "record_grain": "Survey respondent x year with weights/strata/PSU and behavior/screening responses",
+      "join_keys": [
+        "State code",
+        "Year",
+        "Question/calculated variable",
+        "Survey weights/design variables"
+      ],
+      "units": "Weighted prevalence percent and survey responses; correct eligible population denominator",
+      "access": "Public ASCII/SAS XPT plus codebooks; national latest 356,158 records 284 variables",
+      "limitations": "Self report/nonresponse; cellphone/raking break 2011; module rotations/question changes; not county representative simply by assigning state values. 2025 excludes CA, MS, NV from national aggregate. Confirm actual included states from the selected data file/codebook; the annual webpage and Overview describe national participation differently.",
+      "intended_use": "Smoking, alcohol, obesity, screening and health access covariates with survey design",
+      "local_status": "report_only",
+      "local_paths": [
+        "sources/Iowa-BRFSS-2024.pdf"
+      ],
+      "verification": "Official documentation verified online 2026-10-22",
+      "verified_date": "2026-10-22",
+      "id": "COV-01"
+    },
+    {
+      "resource_id": "COV-02",
+      "group": "Covariates/denominators",
+      "name": "PLACES small-area estimates",
+      "publisher": "CDC",
+      "source_urls": [
+        "https://www.cdc.gov/places/current-release-notes/",
+        "https://www.cdc.gov/places/methodology/index.html",
+        "https://www.cdc.gov/places/faqs/index.html"
+      ],
+      "geographic_coverage": "County, place, tract, ZCTA adult small areas",
+      "time_coverage": "Current Dec 2025 release: 35 measures from 2023 BRFSS, 5 from 2022; ACS 2019-2023; county 2023 population",
+      "record_grain": "Geography x modeled measure x release/data-year/type",
+      "join_keys": [
+        "LocationID/GEOID",
+        "MeasureID",
+        "DataValueType",
+        "Release/data-year",
+        "Boundary vintage"
+      ],
+      "units": "Modeled crude/age-adjusted prevalence percent and 95% intervals; tract/ZCTA no age-adjusted estimates",
+      "access": "Public data.cdc.gov CSV/API/GIS-friendly files",
+      "limitations": "MRP modeled prevalence, not direct local observation or cancer incidence. Cannot reliably track local trend/evaluate local interventions using release changes. No individual inference. ACS may already be a model input: avoid circular covariate validation.",
+      "intended_use": "Cross-sectional context/prioritization, with model uncertainty and measure-specific vintage",
+      "local_status": "not_downloaded",
+      "local_paths": [],
+      "verification": "Official documentation verified online 2026-10-22",
+      "verified_date": "2026-10-22",
+      "id": "COV-02"
+    },
+    {
+      "resource_id": "COV-03",
+      "group": "Covariates/denominators",
+      "name": "American Community Survey",
+      "publisher": "US Census Bureau",
+      "source_urls": [
+        "https://www.census.gov/programs-surveys/acs/news/data-releases/2024/release-schedule.html",
+        "https://www.census.gov/programs-surveys/acs/news/data-releases/2025/release-schedule.html",
+        "https://www.census.gov/data/developers/data-sets/acs-5year.html"
+      ],
+      "geographic_coverage": "1-year eligible large areas; 5-year all counties/tracts/block groups where tabulated",
+      "time_coverage": "Latest available 1 year 2024; 5 year 2020-2024 released Jan 29, 2026. 2025 one year estimates scheduled Oct 29, 2026, after cutoff; remaining 2025 products TBD.",
+      "record_grain": "Geography x table variable x 1 year or 5 year period; estimates and MOEs",
+      "join_keys": [
+        "GEOID/state+county+tract as text",
+        "Table/variable ID",
+        "Period",
+        "Geographic vintage"
+      ],
+      "units": "Counts, percent, dollars, various medians; MOEs usually 90%",
+      "access": "Public API/summary files/data.census.gov; variable metadata and annotations needed",
+      "limitations": "5 year is a period estimate, not a single annual observation. Overlapping windows correlated. 1 year not all 99 Iowa counties. CPI/reference-year for income and boundary/variable changes matter. Special 2020 one year estimates not standard comparable.",
+      "intended_use": "Age/race/ethnicity, education, poverty, income, housing, insurance, rurality context",
+      "local_status": "not_downloaded",
+      "local_paths": [],
+      "verification": "Official documentation verified online 2026-10-22",
+      "verified_date": "2026-10-22",
+      "id": "COV-03"
+    },
+    {
+      "resource_id": "COV-04",
+      "group": "Covariates/denominators",
+      "name": "QCEW employment/wages",
+      "publisher": "US Bureau of Labor Statistics",
+      "source_urls": [
+        "https://www.bls.gov/cew/overview.htm",
+        "https://www.bls.gov/cew/downloadable-data-files.htm",
+        "https://www.bls.gov/news.release/cewqtr.nr0.htm"
+      ],
+      "geographic_coverage": "County/state industry employment where publishable; covers > 95% US jobs",
+      "time_coverage": "Quarterly/annual history; current release 2026 Q1 on Aug 28, 2026; historical NAICS/SIC and versions vary",
+      "record_grain": "Area x ownership x industry x quarter/year; monthly employment within quarter",
+      "join_keys": [
+        "Area FIPS code",
+        "Ownership",
+        "NAICS code/version",
+        "Quarter/year",
+        "Aggregation level"
+      ],
+      "units": "Covered jobs/establishments, wages/payroll in explicit dollars",
+      "access": "Public CSV/ZIP/Open Data; suppression and disclosure flags",
+      "limitations": "Place of work establishments, not resident workers or people ever exposed. Multiple jobholders count in jobs. Some farm/self employment excluded; commuting, industry recodes, coverage/revisions matter.",
+      "intended_use": "Industry size/history and workplace labor context, not resident cancer denominator",
+      "local_status": "not_downloaded",
+      "local_paths": [],
+      "verification": "Official documentation verified online 2026-10-22",
+      "verified_date": "2026-10-22",
+      "id": "COV-04"
+    },
+    {
+      "resource_id": "COV-05",
+      "group": "Covariates/denominators",
+      "name": "County Business Patterns",
+      "publisher": "US Census Bureau",
+      "source_urls": [
+        "https://www.census.gov/programs-surveys/cbp/data/datasets.html",
+        "https://www.census.gov/programs-surveys/cbp/about.html"
+      ],
+      "geographic_coverage": "US/state/county/ZIP and other business geographies",
+      "time_coverage": "Public dataset index verified 1986-2023; latest listed 2023 released June 26, 2025. 2024 expected Sep 2026 in training docs, but availability not verified and not assumed.",
+      "record_grain": "Geography x NAICS x establishment size x year",
+      "join_keys": [
+        "State/county FIPS or ZIP",
+        "NAICS/version",
+        "Year",
+        "Employment size/LFO where applicable"
+      ],
+      "units": "Establishments, March 12 reference-week employment, first quarter/annual payroll",
+      "access": "Public CSV/API; data index and dictionary per year",
+      "limitations": "Employer business coverage excludes most government, self employed and many agricultural workers. Workplace geography, not residence. Suppression/noise flags and NAICS versions; not a historical person exposure cohort.",
+      "intended_use": "Industry presence/establishments and employment context complementary to QCEW",
+      "local_status": "not_downloaded",
+      "local_paths": [],
+      "verification": "Official documentation verified online 2026-10-22",
+      "verified_date": "2026-10-22",
+      "id": "COV-05"
+    },
+    {
+      "resource_id": "COV-06",
+      "group": "Covariates/denominators",
+      "name": "SEER county populations and standard populations",
+      "publisher": "NCI/US Census Bureau",
+      "source_urls": [
+        "https://seer.cancer.gov/popdata/",
+        "https://seer.cancer.gov/popdata/download.html",
+        "https://seer.cancer.gov/stdpopulations/"
+      ],
+      "geographic_coverage": "US counties including Iowa; age/sex/race/Hispanic strata",
+      "time_coverage": "Current download 1969-2024; vintage and bridged/single-race series must be selected",
+      "record_grain": "County x year x demographic stratum; standard age weights in separate files",
+      "join_keys": [
+        "County FIPS",
+        "Year",
+        "Age group",
+        "Sex",
+        "Race/Hispanic category",
+        "Population vintage"
+      ],
+      "units": "Resident population/person-year approximation; standard age weights",
+      "access": "Public ASCII/downloads; SEER Prep if needed for SEER Stat",
+      "limitations": "Use population series compatible with outcomes/race groups. Revisions alter historical rates. Do not average age-adjusted county rates weighted by total population to obtain state rate.",
+      "intended_use": "Compatible expected case counts, rates/standardization and latency-population context",
+      "local_status": "not_downloaded",
+      "local_paths": [],
+      "verification": "Official documentation verified online 2026-10-22",
+      "verified_date": "2026-10-22",
+      "id": "COV-06"
+    },
+    {
+      "resource_id": "COV-07",
+      "group": "Covariates/denominators",
+      "name": "Census TIGER/Line and geographic relationship files",
+      "publisher": "US Census Bureau",
+      "source_urls": [
+        "https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html",
+        "https://www.census.gov/geographies/reference-files/time-series/geo/relationship-files.2020.html"
+      ],
+      "geographic_coverage": "State/county/tract/block/ZCTA and other published geographies",
+      "time_coverage": "Year-specific boundary releases; 2010-2020 relationship files; statistical geographies retain census vintage",
+      "record_grain": "Geographic polygon/relationship row with identifiers and intersection areas",
+      "join_keys": [
+        "GEOID",
+        "State/county/tract/block components",
+        "ZCTA code",
+        "Boundary vintage"
+      ],
+      "units": "Geometry/land-water area; not demographic counts",
+      "access": "Public shapefiles/geodatabases/relationship files",
+      "limitations": "ZIP postal routes are not ZCTAs; zones not counties. No automatic one-to-one crosswalk. Area-weighted allocation of people/exposure can mislead; use population and geographic vintage appropriate weights. Centroid distance is not dose.",
+      "intended_use": "Safe geographic joins/crosswalks and explicit spatial exposure definitions",
+      "local_status": "not_downloaded",
+      "local_paths": [],
+      "verification": "Official documentation verified online 2026-10-22",
+      "verified_date": "2026-10-22",
+      "id": "COV-07"
+    }
+  ]
+}

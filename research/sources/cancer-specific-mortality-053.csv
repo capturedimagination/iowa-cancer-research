@@ -1,0 +1,99 @@
+Death Rate Report by State
+
+"Melanoma of the Skin, 2020-2024"
+
+"All Races (includes Hispanic), Both Sexes, All Ages"
+
+Sorted by Rate
+
+State,FIPS,Met Healthy People Objective of ***?,"Age-Adjusted Death Rate([rate note]) - deaths per 100,000","Lower CI (Rate)","Upper CI (Rate)","CI*Rank([rank note])","Lower CI (CI*Rank)","Upper CI (CI*Rank)",Average Annual Count,Recent Trend,"Recent 5-Year Trend ([trend note]) in Death Rates","Lower 95% Confidence Interval","Upper 95% Confidence Interval"
+"United States",00000,***,2 ,2, 2,N/A , N/A , N/A,8340,falling,-1.0 ,-1.7, -0.1
+"Utah",49000,***,2.8 ,2.6, 3.1,1 , 1 , 11,85,stable,1.2 ,-1.9, 5.9
+"Idaho",16000,***,2.8 ,2.5, 3.2,2 , 1 , 15,65,falling,-2.4 ,-7.3, -1.1
+"Kentucky",21000,***,2.7 ,2.5, 2.9,3 , 1 , 14,148,falling,-1.2 ,-2.1, -0.4
+"Oklahoma",40000,***,2.6 ,2.3, 2.8,4 , 1 , 21,121,falling,-1.6 ,-2.1, -1.1
+"West Virginia",54000,***,2.5 ,2.2, 2.8,5 , 1 , 29,64,falling,-3.4 ,-10.9, -1.4
+"Iowa",19000,***,2.5 ,2.3, 2.7,6 , 1 , 24,104,falling,-1.1 ,-3.6, -0.1
+"Kansas",20000,***,2.5 ,2.2, 2.7,7 , 1 , 26,88,falling,-2.1 ,-8.9, -0.9
+"Tennessee",47000,***,2.5 ,2.3, 2.6,8 , 2 , 21,209,stable,3.2 ,-2.9, 8.1
+"Wyoming",56000,***,2.4 ,2, 3,9 , 1 , 44,18,stable,-1.0 ,-2.3, 0.4
+"Colorado",08000,***,2.4 ,2.3, 2.6,10 , 3 , 25,160,falling,-2.7 ,-7.0, -1.6
+"Montana",30000,***,2.4 ,2.1, 2.8,11 , 1 , 38,36,falling,-1.2 ,-2.1, -0.2
+"Ohio",39000,***,2.4 ,2.3, 2.5,12 , 4 , 22,365,falling,-1.9 ,-3.2, -1.2
+"Indiana",18000,***,2.4 ,2.2, 2.5,13 , 4 , 26,194,falling,-2.3 ,-6.6, -1.4
+"Wisconsin",55000,***,2.4 ,2.2, 2.5,14 , 3 , 26,184,stable,-0.5 ,-1.1, 0.1
+"Oregon",41000,***,2.4 ,2.2, 2.6,15 , 3 , 29,132,stable,-0.4 ,-3.7, 5.4
+"South Dakota",46000,***,2.4 ,2, 2.8,16 , 1 , 41,27,stable,-0.5 ,-2.4, 1.5
+"New Hampshire",33000,***,2.3 ,2, 2.6,17 , 2 , 37,46,falling,-1.4 ,-2.6, -0.1
+"Nebraska",31000,***,2.3 ,2, 2.6,18 , 3 , 37,56,falling,-1.1 ,-2.0, -0.1
+"Missouri",29000,***,2.3 ,2.1, 2.4,19 , 6 , 31,178,falling,-2.7 ,-4.9, -1.8
+"Washington",53000,***,2.3 ,2.1, 2.4,20 , 8 , 32,211,falling,-2.2 ,-5.3, -1.4
+"Arizona",04000,***,2.3 ,2.1, 2.4,21 , 7 , 32,222,stable,-0.2 ,-2.7, 3.7
+"Delaware",10000,***,2.2 ,1.9, 2.7,22 , 2 , 43,31,falling,-1.5 ,-2.3, -0.7
+"Pennsylvania",42000,***,2.2 ,2.1, 2.3,23 , 16 , 35,386,falling,-2.7 ,-3.7, -2.1
+"Alabama",01000,***,2.2 ,2, 2.3,24 , 11 , 37,137,falling,-2.5 ,-4.6, -1.7
+"Virginia",51000,***,2.2 ,2, 2.3,25 , 14 , 36,227,stable,0.5 ,-1.3, 4.1
+"North Carolina",37000,***,2.1 ,2, 2.3,26 , 16 , 36,282,falling,-2.6 ,-7.0, -1.7
+"Florida",12000,***,2.1 ,2, 2.2,27 , 20 , 35,714,stable,-0.5 ,-2.0, 2.7
+"Minnesota",27000,***,2.1 ,2, 2.3,28 , 13 , 38,151,stable,-0.5 ,-1.2, 0.3
+"South Carolina",45000,***,2.1 ,1.9, 2.2,29 , 16 , 39,142,stable,0.6 ,-1.9, 5.1
+"Massachusetts",25000,***,2.1 ,1.9, 2.2,30 , 18 , 38,191,falling,-3.1 ,-6.2, -2.3
+"Maine",23000,***,2.1 ,1.8, 2.4,31 , 7 , 45,44,falling,-4.2 ,-10.5, -2.3
+"Rhode Island",44000,***,2 ,1.7, 2.4,32 , 5 , 47,31,falling,-2.1 ,-3.5, -0.7
+"Nevada",32000,***,2 ,1.8, 2.2,33 , 14 , 42,77,falling,-3.8 ,-14.4, -2.0
+"Michigan",26000,***,2 ,1.9, 2.1,34 , 23 , 39,261,falling,-1.8 ,-5.6, -0.9
+"Arkansas",05000,***,2 ,1.8, 2.2,35 , 18 , 45,73,stable,0.7 ,-3.8, 7.8
+"Vermont",50000,***,2 ,1.6, 2.4,36 , 4 , 50,18,falling,-2.5 ,-3.9, -1.1
+"North Dakota",38000,***,1.9 ,1.5, 2.4,37 , 6 , 50,18,*,*,*,*
+"Illinois",17000,***,1.8 ,1.7, 1.9,38 , 32 , 44,290,stable,-0.3 ,-4.4, 5.6
+"Alaska",02900,***,1.8 ,1.3, 2.3,39 , 7 , 51,13,*,*,*,*
+"New Mexico",35000,***,1.8 ,1.6, 2,40 , 26 , 49,51,falling,-3.0 ,-6.1, -1.9
+"California",06000,***,1.8 ,1.7, 1.8,41 , 36 , 45,807,stable,-1.1 ,-3.1, 2.6
+"Georgia",13000,***,1.8 ,1.7, 1.9,42 , 35 , 47,214,stable,1.8 ,-3.1, 5.4
+"Maryland",24000,***,1.7 ,1.6, 1.9,43 , 34 , 48,131,stable,-1.5 ,-4.1, 3.8
+"New Jersey",34000,***,1.7 ,1.6, 1.8,44 , 37 , 48,203,falling,-3.4 ,-9.3, -2.6
+"Texas",48000,***,1.6 ,1.6, 1.7,45 , 40 , 48,500,falling,-3.5 ,-4.9, -2.8
+"Mississippi",28000,***,1.6 ,1.4, 1.8,46 , 35 , 50,58,falling,-5.3 ,-8.9, -3.4
+"Connecticut",09000,***,1.6 ,1.4, 1.8,47 , 37 , 50,78,falling,-3.2 ,-15.6, -0.8
+"Louisiana",22000,***,1.5 ,1.3, 1.6,48 , 42 , 51,82,falling,-4.3 ,-8.3, -2.9
+"New York",36000,***,1.5 ,1.4, 1.5,49 , 45 , 51,381,stable,-2.1 ,-3.7, 1.1
+"Hawaii",15000,***,1.3 ,1.1, 1.6,50 , 44 , 51,28,falling,-1.5 ,-2.7, -0.2
+"District of Columbia",11001,***,1.1 ,0.8, 1.6,51 , 42 , 51,8,*,*,*,*
+"Puerto Rico",72001,***,0.6 ,0.5, 0.7,N/A , N/A , N/A,29,stable,13.3 ,-16.4, 53.6
+
+
+Notes:
+
+Created by statecancerprofiles.cancer.gov on 10/22/2026 6:40 pm.
+
+"State Cancer Registries [ https://www.cdc.gov/national-program-cancer-registries/contact/index.html ] may provide more current or more local data."
+
+"
+
+Trend
+   Rising when 95% confidence interval of average annual percent change is above 0.
+   Stable when 95% confidence interval of average annual percent change includes 0.
+   Falling when 95% confidence interval of average annual percent change is below 0.
+"
+
+"[rate note] Death data provided by the National Vital Statistics System public use data file.  Death rates calculated by the National Cancer Institute using SEER*Stat.  Death rates are age-adjusted  to the 2000 US standard population [http://www.seer.cancer.gov/stdpopulations/] (20 age groups: <1, 1-4, 5-9, ... , 80-84, 85-89, 90+)."
+
+"Population counts for denominators are based on Census populations as modified by NCI."
+
+"The US Population Data File [https://seer.cancer.gov/popdata/] is used with mortality data. "
+
+"[trend note] The Average Annual Percent Change (AAPC) is based on the APCs calculated by Joinpoint [ https://surveillance.cancer.gov/joinpoint/ ]. Due to data availability issues, the time period used in the calculation of the joinpoint regression model may differ [ https://statecancerprofiles.cancer.gov/historicaltrend/differences.html ] for selected counties."
+
+"[rank note] Results presented with the CI*Rank statistics help show the usefulness of ranks. For example, ranks for relatively rare diseases or less populated areas may be essentially meaningless because of their large variability, but ranks for more common diseases in densely populated regions can be very useful. More information about methodology can be found on the CI*Rank website [ https://surveillance.cancer.gov/cirank/ ]."
+
+"*** No Healthy People 2030 Objective for this cancer."
+
+"Healthy People 2030 Objectives [ https://www.healthypeople.gov/ ]provided by the Centers for Disease Control and Prevention [ https://www.cdc.gov ]. The Healthy People 2030 goals are based on rates adjusted using different methods but the differences should be minimal."
+
+"* Data has been suppressed to ensure confidentiality and stability of rate estimates.  Counts are suppressed if fewer than 16 records were reported in a specific area-sex-race category."
+
+" If an average count of 3 is shown, the total number of cases for the time period is 16 or more which exceeds suppression threshold (but is rounded to 3)."
+
+"Data for United States does not include Puerto Rico."
+
+"CI*Rank data for Puerto Rico is not available."

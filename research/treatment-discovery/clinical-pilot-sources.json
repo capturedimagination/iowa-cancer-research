@@ -1,0 +1,186 @@
+{
+  "schema_version": 1,
+  "created_date": "2026-10-29",
+  "purpose": "Reproducible public clinical biomarker-association pilot; no treatment-effect or cure model",
+  "snapshot_root": "research/treatment-discovery/data/nsclc_pd1_msk_2018/2026-10-29",
+  "sources": [
+    {
+      "source_id": "TD-CLIN-001",
+      "kind": "original_peer_reviewed_study",
+      "citation": "Rizvi H et al. J Clin Oncol. 2018;36(7):633-641.",
+      "title": "Molecular Determinants of Response to Anti-Programmed Cell Death (PD)-1 and Anti-Programmed Death-Ligand 1 (PD-L1) Blockade in Patients With Non-Small-Cell Lung Cancer Profiled With Targeted Next-Generation Sequencing",
+      "doi": "10.1200/JCO.2017.75.3384",
+      "pmid": "29337640",
+      "pmcid": "PMC6075848",
+      "urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC6075848/",
+        "https://doi.org/10.1200/JCO.2017.75.3384",
+        "https://pubmed.ncbi.nlm.nih.gov/29337640/"
+      ],
+      "verified_date": "2026-10-29",
+      "observation_period": "ICI start April 2011-January 2017; database lock May 2017",
+      "review_scope": "Original article HTML methods, main results and relevant appendix captions read; not all supplemental tables or figure images reviewed. HTTP retrieval intermittently returned bot checks; successful original PMC HTML retrieval was available with ?report=xml.",
+      "local_archive": null,
+      "supports": [
+        "cohort design",
+        "study-specific DCB and progression endpoint definitions",
+        "assay and tissue timing",
+        "reference cohort scope"
+      ],
+      "boundaries": [
+        "Retrospective single-institution treated cohort",
+        "204/240 pretreatment samples; public clinical tables lack timing flag",
+        "No inference of current therapy guidance or cure"
+      ]
+    },
+    {
+      "source_id": "TD-CLIN-002",
+      "kind": "official_public_repository",
+      "publisher": "cBioPortal for Cancer Genomics",
+      "study_id": "nsclc_pd1_msk_2018",
+      "title": "Non-Small Cell Lung Cancer (MSK, J Clin Oncol 2018)",
+      "url": "https://github.com/cBioPortal/datahub/tree/21caf38992efa145ab7b895919cacff2cea700b5/public/nsclc_pd1_msk_2018",
+      "portal_url": "https://www.cbioportal.org/study/summary?id=nsclc_pd1_msk_2018",
+      "repository_commit": "21caf38992efa145ab7b895919cacff2cea700b5",
+      "verified_date": "2026-10-29",
+      "local_archive": "research/treatment-discovery/data/nsclc_pd1_msk_2018/2026-10-29",
+      "access": "Public unauthenticated official GitHub endpoints; PUBLIC in meta_study.txt",
+      "license": "Study-specific ODbL 1.0; retain attribution and applicable share-alike conditions for shared/adapted datasets",
+      "license_url": "https://raw.githubusercontent.com/cBioPortal/datahub/21caf38992efa145ab7b895919cacff2cea700b5/public/nsclc_pd1_msk_2018/LICENSE",
+      "review_scope": "Actual clinical TSV bytes, field metadata, ID cardinality, missingness, study metadata and LICENSE read. Portal is JavaScript-only to text browser; counts derive from actual repository files.",
+      "data_scope": "240 public pseudonymous patients and one tumor sample each; clinical and assay summaries only",
+      "files": [
+        {
+          "filename": "LICENSE",
+          "source_url": "https://raw.githubusercontent.com/cBioPortal/datahub/21caf38992efa145ab7b895919cacff2cea700b5/public/nsclc_pd1_msk_2018/LICENSE",
+          "bytes": 455,
+          "sha256": "aa607179437132751f7c8fcd9f2b4ed97677ded9812ad97b99abd380ae77aec2",
+          "retrieved_at_utc": "2026-10-29T15:43:48.145593+00:00",
+          "http_last_modified": null,
+          "http_etag": "\"ef396bae509cf0d73f65754b1ae3d9943687444aa6ef7e684bb92f4360bf8850\""
+        },
+        {
+          "filename": "Readme.txt",
+          "source_url": "https://raw.githubusercontent.com/cBioPortal/datahub/21caf38992efa145ab7b895919cacff2cea700b5/public/nsclc_pd1_msk_2018/Readme.txt",
+          "bytes": 122,
+          "sha256": "0f414b40c6da118c75900177552010582d81a4d6b00c5639396983c40716ce91",
+          "retrieved_at_utc": "2026-10-29T15:43:48.373501+00:00",
+          "http_last_modified": null,
+          "http_etag": "\"75c8b8cb7aabf58973db3da473fe3b85814d4ca00bbb2eb5a22c0cb0b065e7db\""
+        },
+        {
+          "filename": "meta_study.txt",
+          "source_url": "https://raw.githubusercontent.com/cBioPortal/datahub/21caf38992efa145ab7b895919cacff2cea700b5/public/nsclc_pd1_msk_2018/meta_study.txt",
+          "bytes": 335,
+          "sha256": "d00425a566884e805e89dc16a3d60bb4f757d1e481604cc5ee20487a6382f9cd",
+          "retrieved_at_utc": "2026-10-29T15:43:49.339571+00:00",
+          "http_last_modified": null,
+          "http_etag": "\"3864d5a6abe47e97211af646b61dabd7c810e93deed0527a035b598f256060ca\""
+        },
+        {
+          "filename": "meta_clinical_patient.txt",
+          "source_url": "https://raw.githubusercontent.com/cBioPortal/datahub/21caf38992efa145ab7b895919cacff2cea700b5/public/nsclc_pd1_msk_2018/meta_clinical_patient.txt",
+          "bytes": 147,
+          "sha256": "123187e542006ef67c5ccb1491a479c8928ab5af688745a7ac88ddfa11e4d1e2",
+          "retrieved_at_utc": "2026-10-29T15:43:49.641912+00:00",
+          "http_last_modified": null,
+          "http_etag": "\"41df673bca4554fd6e8a8bb7683fa8956ede74aecdde5d36a7b65c69d953a718\""
+        },
+        {
+          "filename": "meta_clinical_sample.txt",
+          "source_url": "https://raw.githubusercontent.com/cBioPortal/datahub/21caf38992efa145ab7b895919cacff2cea700b5/public/nsclc_pd1_msk_2018/meta_clinical_sample.txt",
+          "bytes": 145,
+          "sha256": "ce72feea0c4562541e6122ff328b9a4fa25951f5b8f83be8e5f53611f3ea1dbf",
+          "retrieved_at_utc": "2026-10-29T15:43:49.823691+00:00",
+          "http_last_modified": null,
+          "http_etag": "\"c3e6d246538e108d2d50e2c9f6500c9b4568be25efb644587cfc21ad4c70ceed\""
+        },
+        {
+          "filename": "data_clinical_patient.txt",
+          "source_url": "https://media.githubusercontent.com/media/cBioPortal/datahub/21caf38992efa145ab7b895919cacff2cea700b5/public/nsclc_pd1_msk_2018/data_clinical_patient.txt",
+          "bytes": 17878,
+          "sha256": "f9f48755fbf394c0add6b097d45070940216d2e67ed7632c5fd83a8303cc0c4b",
+          "retrieved_at_utc": "2026-10-29T15:43:50.201155+00:00",
+          "http_last_modified": "Thu, 29 Oct 2026 15:43:50 GMT",
+          "http_etag": "\"f9f48755fbf394c0add6b097d45070940216d2e67ed7632c5fd83a8303cc0c4b\""
+        },
+        {
+          "filename": "data_clinical_sample.txt",
+          "source_url": "https://media.githubusercontent.com/media/cBioPortal/datahub/21caf38992efa145ab7b895919cacff2cea700b5/public/nsclc_pd1_msk_2018/data_clinical_sample.txt",
+          "bytes": 31832,
+          "sha256": "5b4b2ba4b297c8bd82760ac2f7194daaf231543ce537fac6d166793920139275",
+          "retrieved_at_utc": "2026-10-29T15:43:50.510812+00:00",
+          "http_last_modified": "Thu, 29 Oct 2026 15:43:50 GMT",
+          "http_etag": "\"5b4b2ba4b297c8bd82760ac2f7194daaf231543ce537fac6d166793920139275\""
+        },
+        {
+          "filename": "data_clinical_sample-original-2018-04-23.txt",
+          "original_filename": "data_clinical_sample.txt",
+          "source_url": "https://media.githubusercontent.com/media/cBioPortal/datahub/632487fcf657eed6e25e81ad41d0499eb9296894/public/nsclc_pd1_msk_2018/data_clinical_sample.txt",
+          "source_commit": "632487fcf657eed6e25e81ad41d0499eb9296894",
+          "bytes": 26932,
+          "sha256": "d5efc93019438e577743cc3d91598816a73d0d0bbbd9eaf9f04547aba0ec3c97",
+          "retrieved_at_utc": "2026-10-29T15:44:54.598483+00:00",
+          "http_last_modified": "Thu, 29 Oct 2026 15:44:54 GMT",
+          "http_etag": "\"d5efc93019438e577743cc3d91598816a73d0d0bbbd9eaf9f04547aba0ec3c97\""
+        },
+        {
+          "filename": "clinical-sample-commit-history.json",
+          "source_url": "https://api.github.com/repos/cBioPortal/datahub/commits?path=public/nsclc_pd1_msk_2018/data_clinical_sample.txt&per_page=10",
+          "bytes": 21097,
+          "sha256": "92c5fc08414ebc08992c8c51bac3489d4044bad54b81eee8f95209d641fe37fd",
+          "retrieved_at_utc": "2026-10-29T15:47:10.167126+00:00",
+          "http_last_modified": "Tue, 10 Jan 2023 21:04:35 GMT",
+          "http_etag": "W/\"92c5fc08414ebc08992c8c51bac3489d4044bad54b81eee8f95209d641fe37fd\""
+        }
+      ],
+      "boundaries": [
+        "All archived patients are ICI-treated",
+        "No raw reads, identifying contact data, controlled resources or restricted-access requests",
+        "MUTATION_RATE and later TMB_NONSYNONYMOUS are different fields"
+      ]
+    },
+    {
+      "source_id": "TD-CLIN-003",
+      "kind": "official_historical_repository_file",
+      "publisher": "cBioPortal",
+      "url": "https://media.githubusercontent.com/media/cBioPortal/datahub/632487fcf657eed6e25e81ad41d0499eb9296894/public/nsclc_pd1_msk_2018/data_clinical_sample.txt",
+      "repository_commit": "632487fcf657eed6e25e81ad41d0499eb9296894",
+      "repository_date": "2018-04-23",
+      "verified_date": "2026-10-29",
+      "local_archive": "research/treatment-discovery/data/nsclc_pd1_msk_2018/2026-10-29/data_clinical_sample-original-2018-04-23.txt",
+      "review_scope": "All240 sample IDs aligned with current clinical sample table; original MUTATION_RATE strings match for every sample; TMB_NONSYNONYMOUS not present",
+      "supports": [
+        "publication-era mutation-rate provenance",
+        "PD-L1 nonmissing count discrepancy retained"
+      ]
+    },
+    {
+      "source_id": "TD-CLIN-004",
+      "kind": "official_repository_history",
+      "publisher": "cBioPortal",
+      "url": "https://api.github.com/repos/cBioPortal/datahub/commits?path=public/nsclc_pd1_msk_2018/data_clinical_sample.txt&per_page=10",
+      "change_url": "https://github.com/cBioPortal/datahub/commit/f7b301613baeecb8b3897fcbdd57669e8f8b248a",
+      "change_commit": "f7b301613baeecb8b3897fcbdd57669e8f8b248a",
+      "change_date": "2021-08-04",
+      "change_title": "Add TMB for all targeted sequenced studies (#1463)",
+      "verified_date": "2026-10-29",
+      "local_archive": "research/treatment-discovery/data/nsclc_pd1_msk_2018/2026-10-29/clinical-sample-commit-history.json",
+      "review_scope": "Official commit history inspected; historical-vs-current field comparison independently verifies later-column difference. Full study-specific later TMB calculation has not been reconstructed.",
+      "supports": [
+        "different TMB measurement vintage"
+      ],
+      "boundaries": [
+        "No assertion that later TMB is invalid; only that it is not interchangeable with publication-era MUTATION_RATE"
+      ]
+    }
+  ],
+  "derived_artifacts": [
+    "clinical-pilot-data.md",
+    "clinical-pilot-analysis-spec.md",
+    "clinical-pilot-field-dictionary.csv",
+    "clinical-pilot-qc.json",
+    "audit_clinical_snapshot.py"
+  ],
+  "permission_boundary": "Only public pseudonymous clinical summaries and official metadata acquired. Restricted data, direct identifiers and reidentification are outside scope."
+}

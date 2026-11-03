@@ -1,0 +1,52 @@
+{
+  "retrieved": "2026-10-22",
+  "tri_reporting_year": 2024,
+  "tri_page_processed_as_of": "2025-11-05",
+  "tri_rows": 1695,
+  "tri_facilities": 463,
+  "tri_sectors": 22,
+  "tri_osha_carc_flag_rows": 496,
+  "tri_form_a_certifications": 285,
+  "tri_units": {
+    "Pounds": 1679,
+    "Grams": 16
+  },
+  "tri_all_chemicals_reported_total_pounds": "34770066.221",
+  "tri_all_chemicals_reported_air_pounds": "18433017.385",
+  "tri_carc_flag_total_pounds": "1980871.369",
+  "tri_carc_flag_air_pounds": "1687465.981",
+  "airtoxscreen_assessment_year": 2020,
+  "airtoxscreen_iowa_counties": 99,
+  "airtoxscreen_iowa_total_lifetime_risk_per_million_rounded": 20,
+  "airtoxscreen_cautions": [
+    "Not an annual incidence rate or number of observed cases.",
+    "Totals rounded by EPA to one significant figure; components retain numerical model precision, not scientific precision.",
+    "Does not quantify diesel particulate cancer risk; diesel-related other pollutants may contribute.",
+    "Does not include every workplace exposure, indoor source, radon or contaminant pathway.",
+    "Secondary chemistry is not a simple facility or industry attribution.",
+    "2020 conditions, including pandemic effects; not proof of current conditions."
+  ],
+  "sources": [
+    "https://data.epa.gov/efservice/downloads/tri/mv_tri_basic_download/2024_IA/csv",
+    "https://www.epa.gov/system/files/documents/2025-01/national_cancerrisk_by_state_srcgrp.xlsx",
+    "https://www.epa.gov/system/files/documents/2025-01/national_cancerrisk_by_state_poll.xlsx",
+    "https://www.epa.gov/system/files/documents/2025-01/national_cancerrisk_by_county_srcgrp.xlsx",
+    "https://www.epa.gov/system/files/documents/2025-01/national_cancerrisk_by_county_poll.xlsx"
+  ],
+  "original_sha256": {
+    "tri-2024-iowa-original.csv": "120f4401bffbf822eb599dd8f9c6b7ec1b0a57eda971fd2c1a7da5499a6553fe",
+    "national_cancerrisk_by_state_srcgrp.xlsx": "74faddac451fe00e9548fa251e7a6d4322949016f5252a418ac6509e7f091d34",
+    "national_cancerrisk_by_county_srcgrp.xlsx": "9ff6dc7ae2dd31dba4501b34c504b86b4a246b0c16a4761b008b2dd99934386f",
+    "national_cancerrisk_by_state_poll.xlsx": "b58e12059dfab2ecfb47ea8c4fb13bf900be4e4b3c1c18bd7c3cdebea555475d",
+    "national_cancerrisk_by_county_poll.xlsx": "efbed957b9f5c77c9a8d274fd05e74b7036e43b7d288793dc0cf6b4aacc3cbb3"
+  },
+  "transformations": [
+    "Raw files retained without modification.",
+    "All 1695 TRI forms retained in original; groupings sum reported numeric Form R quantities, with Form A counted separately as unquantified.",
+    "Pounds and grams always kept separate; absent numeric Form R records in a unit yield blank summary quantities, not inferred zero releases.",
+    "OSHA carcinogen flag is the source category; it is not a uniform potency or IARC Group 1 classification.",
+    "Iowa rows extracted from national AirToxScreen workbooks; all 99 counties retained; source columns preserved.",
+    "Four facilities report more than one primary NAICS across chemical forms; all values retained as semicolon lists in facility summary.",
+    "No release-risk or release-cancer correlations calculated."
+  ]
+}

@@ -1,0 +1,200 @@
+{
+  "schema_version": "1.0",
+  "created_at_utc": "2026-10-22T23:16:23.903427+00:00",
+  "purpose": "Corpus search; no numeric data import or health/legal reinterpretation",
+  "original_file": "sources/industries/energy-legacy/perry-rail-yard-atsdr-2007.pdf",
+  "original_sha256_before": "fb650df6e952fab514090d74a255ed75531f4fad6e85cde651d1c650d88efff3",
+  "original_sha256_after": "fb650df6e952fab514090d74a255ed75531f4fad6e85cde651d1c650d88efff3",
+  "original_unchanged": true,
+  "sidecar": "sources/industries/energy-legacy/perry-rail-yard-atsdr-2007.ocr.txt",
+  "sidecar_sha256": "d0d1a27c5bb39080b318abad80a96504cce39a7a0ddcb81986840093477a80c1",
+  "pdf_pages": 22,
+  "native_text_pages_over_30_chars": 20,
+  "ocr_attempted_physical_pages": [
+    14,
+    17
+  ],
+  "coverage": [
+    {
+      "physical_page": 1,
+      "method": "native_extraction",
+      "native_extracted_characters": 353,
+      "sidecar_characters": 353
+    },
+    {
+      "physical_page": 2,
+      "method": "native_extraction",
+      "native_extracted_characters": 1188,
+      "sidecar_characters": 1188
+    },
+    {
+      "physical_page": 3,
+      "method": "native_extraction",
+      "native_extracted_characters": 284,
+      "sidecar_characters": 284
+    },
+    {
+      "physical_page": 4,
+      "method": "native_extraction",
+      "native_extracted_characters": 2708,
+      "sidecar_characters": 2708
+    },
+    {
+      "physical_page": 5,
+      "method": "native_extraction",
+      "native_extracted_characters": 3320,
+      "sidecar_characters": 3320
+    },
+    {
+      "physical_page": 6,
+      "method": "native_extraction",
+      "native_extracted_characters": 2504,
+      "sidecar_characters": 2504
+    },
+    {
+      "physical_page": 7,
+      "method": "native_extraction",
+      "native_extracted_characters": 2713,
+      "sidecar_characters": 2713
+    },
+    {
+      "physical_page": 8,
+      "method": "native_extraction",
+      "native_extracted_characters": 3348,
+      "sidecar_characters": 3348
+    },
+    {
+      "physical_page": 9,
+      "method": "native_extraction",
+      "native_extracted_characters": 2671,
+      "sidecar_characters": 2671
+    },
+    {
+      "physical_page": 10,
+      "method": "native_extraction",
+      "native_extracted_characters": 2900,
+      "sidecar_characters": 2900
+    },
+    {
+      "physical_page": 11,
+      "method": "native_extraction",
+      "native_extracted_characters": 3133,
+      "sidecar_characters": 3133
+    },
+    {
+      "physical_page": 12,
+      "method": "native_extraction",
+      "native_extracted_characters": 2719,
+      "sidecar_characters": 2719
+    },
+    {
+      "physical_page": 13,
+      "method": "native_extraction",
+      "native_extracted_characters": 2292,
+      "sidecar_characters": 2292
+    },
+    {
+      "physical_page": 14,
+      "method": "ocr",
+      "native_extracted_characters": 12,
+      "sidecar_characters": 343,
+      "characters": 265,
+      "mean_vision_confidence": 0.95,
+      "minimum_vision_confidence": 0.5,
+      "recognized_lines": 20,
+      "rendered_image": "page-14.png",
+      "short_native_extraction": "Figure 1 \n10",
+      "visual_content_type": "site_map",
+      "blank": false
+    },
+    {
+      "physical_page": 15,
+      "method": "native_extraction",
+      "native_extracted_characters": 2014,
+      "sidecar_characters": 2014
+    },
+    {
+      "physical_page": 16,
+      "method": "native_extraction",
+      "native_extracted_characters": 159,
+      "sidecar_characters": 159
+    },
+    {
+      "physical_page": 17,
+      "method": "ocr",
+      "native_extracted_characters": 0,
+      "sidecar_characters": 784,
+      "characters": 785,
+      "mean_vision_confidence": 1,
+      "minimum_vision_confidence": 1,
+      "recognized_lines": 14,
+      "rendered_image": "page-17.png",
+      "visual_content_type": "certification_and_signatures",
+      "blank": false
+    },
+    {
+      "physical_page": 18,
+      "method": "native_extraction",
+      "native_extracted_characters": 1479,
+      "sidecar_characters": 1479
+    },
+    {
+      "physical_page": 19,
+      "method": "native_extraction",
+      "native_extracted_characters": 1459,
+      "sidecar_characters": 1459
+    },
+    {
+      "physical_page": 20,
+      "method": "native_extraction",
+      "native_extracted_characters": 1453,
+      "sidecar_characters": 1453
+    },
+    {
+      "physical_page": 21,
+      "method": "native_extraction",
+      "native_extracted_characters": 1474,
+      "sidecar_characters": 1474
+    },
+    {
+      "physical_page": 22,
+      "method": "native_extraction",
+      "native_extracted_characters": 1046,
+      "sidecar_characters": 1046
+    }
+  ],
+  "method": {
+    "native_extractor": "pypdf PdfReader.extract_text",
+    "ocr_trigger": "native stripped text length <=30",
+    "renderer": "Poppler pdftoppm 26.05.0",
+    "dpi": 180,
+    "format": "PNG",
+    "ocr": "Apple Vision VNRecognizeTextRequest accurate en-US, language correction enabled",
+    "os": "macOS 26.6.2 build 25G83",
+    "manual_text_corrections": false,
+    "pdf_modified": false,
+    "helper": "scripts/ocr_pdf_applevision.swift",
+    "pipeline": "scripts/add_gap_ocr_sidecars.py"
+  },
+  "visual_review": {
+    "thumbnail_reviewed_gap_pages": [
+      14,
+      17
+    ],
+    "detailed_spot_checked_pages": [],
+    "all_text_proofread": false,
+    "pending": false,
+    "note": "All gap renders checked for page/content type; detailed spot checks are not numeric/table transcription validation"
+  },
+  "limitations": [
+    "Search aid, not an authoritative transcription or table import",
+    "Native extraction can have ordering/table errors even on pages over the threshold",
+    "OCR may misread letters, numbers, formulas, symbols, charts and handwriting",
+    "An OCR confidence of 1 is not calibrated accuracy",
+    "All physical pages have markers; this does not establish recognition of every visible mark",
+    "Site-map labels, graph axes and table cells can remain incompletely recognized despite nonempty OCR; exact values require original-page review"
+  ],
+  "sidecar_utf8_bytes": 42192,
+  "blank_physical_pages_identified": [],
+  "skipped_ocr_pages": []
+}

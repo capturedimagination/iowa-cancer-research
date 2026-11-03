@@ -1,0 +1,62 @@
+[
+  {
+    "file": "atsdr-alcoa-vapor-2005.pdf",
+    "bytes": 254310,
+    "sha256": "db30e2eead3fad4c74674061f85b870d325f2f6be85c2b7938f3124e7594854e",
+    "retrieval_date": "2026-10-22"
+  },
+  {
+    "file": "atsdr-allied-equipment-2011.pdf",
+    "bytes": 279619,
+    "sha256": "7dc6ca25f29614ead103ccd7b80a27238ec739738ecc837177a2435bf47b128c",
+    "retrieval_date": "2026-10-22"
+  },
+  {
+    "file": "atsdr-american-packaging-2009.pdf",
+    "bytes": 232876,
+    "sha256": "05d49c1b6cea60de70516f5de364afeeb6399e9c0138f4396aaa7320955f8c27",
+    "retrieval_date": "2026-10-22"
+  },
+  {
+    "file": "atsdr-midamerica-tanning-2005.pdf",
+    "bytes": 566124,
+    "sha256": "738555e2ef269cad7cf623319bfc0c13d532dd959cba8830d7c48fd4280cccdc",
+    "retrieval_date": "2026-10-22"
+  },
+  {
+    "file": "epa-airtoxscreen-eto-controls-update-2022.pdf",
+    "bytes": 189949,
+    "sha256": "dae7547768f6db4e8ee9b3973c4d9bc01f1db3d1356fd8951c4623708276330c",
+    "retrieval_date": "2026-10-22"
+  },
+  {
+    "file": "iowa-occupational-cancer-pubmed-abstracts.xml",
+    "bytes": 12559,
+    "sha256": "3d2a938259bed931e726df1469fff65d2960b19b0e08bc4d8b1a2e7a7da8dbc5",
+    "retrieval_date": "2026-10-22"
+  },
+  {
+    "file": "niosh-john-deere-dubuque-1988.pdf",
+    "bytes": 3751498,
+    "sha256": "655b12e8ff14847b2423d81b43587ff3c618322bc20f6c2c9b0dde2b85804e01",
+    "retrieval_date": "2026-10-22"
+  },
+  {
+    "file": "niosh-keokuk-steel-castings-1982.pdf",
+    "bytes": 1531682,
+    "sha256": "2749762c00f2544de5a22505a1a1848b2471ab23671d5000a647be0885ec6839",
+    "retrieval_date": "2026-10-22"
+  },
+  {
+    "file": "niosh-sheller-globe-keokuk-1982.pdf",
+    "bytes": 2869055,
+    "sha256": "0cb1bc3980b542ddf817f8356380e7f536fc4fd8afe512d5ee2287c1a61f1727",
+    "retrieval_date": "2026-10-22"
+  },
+  {
+    "file": "niosh-winnebago-wood-dust-2001.pdf",
+    "bytes": 350691,
+    "sha256": "1e3f229b01fdaae57e5545e507e2e299e92e4fc8f3f5c3dc99680e4f77fa9c72",
+    "retrieval_date": "2026-10-22"
+  }
+]

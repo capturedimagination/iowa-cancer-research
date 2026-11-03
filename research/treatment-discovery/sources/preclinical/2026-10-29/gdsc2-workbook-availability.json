@@ -1,0 +1,11 @@
+{
+  "url": "https://cog.sanger.ac.uk/cancerrxgene/GDSC_release8.5/GDSC2_fitted_dose_response_27Oct23.xlsx",
+  "retrieved_on": "2026-10-29",
+  "method": "HEAD",
+  "status": 200,
+  "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+  "content_length": "21330376",
+  "last_modified": "Mon, 30 Oct 2023 15:18:24 GMT",
+  "etag": "\"a57b46470f325ae5800dca24c72c19f5\"",
+  "archive_status": "Not downloaded; exceeds 5 MB per-file archive limit"
+}

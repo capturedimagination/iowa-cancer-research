@@ -1,0 +1,392 @@
+{
+  "schema_version": "1.0",
+  "retrieved_date": "2026-10-29",
+  "scope": "Targeted comparison: 10 original research articles, one FDA notice and one grouped NCI terminology reference; not a systematic review",
+  "verification_limits": [
+    "Null cutoff dates are unknown in inspected primary material, not publication dates.",
+    "Abstract verification does not claim complete source review.",
+    "No secondary news report supplies an efficacy estimate."
+  ],
+  "sources": [
+    {
+      "id": "NSCLC-ADAURA-OS",
+      "source_type": "original research article",
+      "pmid": "37272535",
+      "doi": "10.1056/NEJMoa2304594",
+      "publication_date": "2023-06-04",
+      "publication_date_basis": "Online publication unless date caveat states otherwise",
+      "url": "https://doi.org/10.1056/NEJMoa2304594",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/37272535/",
+      "verified_date": "2026-10-29",
+      "setting": "Resected stage IB-IIIA EGFR-mutant NSCLC; randomized phase 3",
+      "endpoints": [
+        "OS",
+        "DFS"
+      ],
+      "claims": [
+        "Five-year OS 88% versus 78%; HR 0.49 (95.03% CI 0.34-0.70)."
+      ],
+      "data_dates": {
+        "observation_period_or_follow_up": "Five-year OS landmark; cutoff calendar date not verified.",
+        "cutoff_verified_date": null
+      },
+      "inference_limits": [
+        "Finite postoperative follow-up is not individual cure or evidence for metastatic disease."
+      ],
+      "access_depth": "Original abstract verified via Europe PMC; not a complete protocol/supplement review",
+      "title": "Overall Survival with Osimertinib in Resected EGFR-Mutated NSCLC.",
+      "metadata_api_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A37272535&format=json&resultType=core",
+      "metadata_response_sha256": "b72dcf9e03378a3a987d5990bf29977bfeb5831e12da5c5b0c28b4a3e105166a",
+      "metadata_first_publication_date": "2023-06-04",
+      "pmcid": null
+    },
+    {
+      "id": "NSCLC-FLAURA2-OS",
+      "source_type": "original research article",
+      "pmid": "41104938",
+      "doi": "10.1056/NEJMoa2510308",
+      "publication_date": "2025-10-17",
+      "publication_date_basis": "Online publication unless date caveat states otherwise",
+      "url": "https://doi.org/10.1056/NEJMoa2510308",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41104938/",
+      "verified_date": "2026-10-29",
+      "setting": "Untreated advanced EGFR exon 19 deletion/L858R NSCLC; randomized phase 3",
+      "endpoints": [
+        "OS",
+        "PFS",
+        "safety"
+      ],
+      "claims": [
+        "Median OS 47.5 versus 37.6 months; HR 0.77 (95% CI 0.61-0.96). Grade >=3 any-cause adverse events 70% versus 34%."
+      ],
+      "data_dates": {
+        "observation_period_or_follow_up": "Cutoff calendar date not verified in accessed abstract; print issue is January 1, 2026.",
+        "cutoff_verified_date": null
+      },
+      "inference_limits": [
+        "OS benefit is not a cure fraction; cross-trial comparisons are not randomized comparisons."
+      ],
+      "access_depth": "Original abstract verified via Europe PMC; not a complete protocol/supplement review",
+      "publisher_access_note": "Direct publisher full-text opening returned 403; original abstract was available.",
+      "title": "Survival with Osimertinib plus Chemotherapy in <i>EGFR</i>-Mutated Advanced NSCLC.",
+      "metadata_api_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A41104938&format=json&resultType=core",
+      "metadata_response_sha256": "9af415ffada0ff20035f0addae88d46e71d01c237f11449ffb72ea94edc16a9e",
+      "metadata_first_publication_date": "2025-10-17",
+      "pmcid": null
+    },
+    {
+      "id": "NSCLC-MARIPOSA-OS",
+      "source_type": "original research article",
+      "pmid": "40923797",
+      "doi": "10.1056/NEJMoa2503001",
+      "publication_date": "2025-09-07",
+      "publication_date_basis": "Online publication unless date caveat states otherwise",
+      "url": "https://doi.org/10.1056/NEJMoa2503001",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40923797/",
+      "verified_date": "2026-10-29",
+      "setting": "Untreated advanced EGFR exon 19 deletion/L858R NSCLC; randomized phase 3",
+      "endpoints": [
+        "OS",
+        "safety"
+      ],
+      "claims": [
+        "OS HR 0.75 (95% CI 0.61-0.92); three-year OS 60% versus 51%. Grade >=3 adverse events 80% versus 52%."
+      ],
+      "data_dates": {
+        "observation_period_or_follow_up": "Median follow-up 37.8 months; cutoff calendar date not verified.",
+        "cutoff_verified_date": null
+      },
+      "inference_limits": [
+        "Some participants remained on treatment; three-year survival is not treatment-free cure. Publisher header displays September 6; article note and Europe PMC say September 7."
+      ],
+      "access_depth": "Original abstract verified via Europe PMC; not a complete protocol/supplement review",
+      "publisher_access_note": "Direct publisher full-text opening returned 403; original abstract was available.",
+      "title": "Overall Survival with Amivantamab-Lazertinib in <i>EGFR</i>-Mutated Advanced NSCLC.",
+      "metadata_api_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A40923797&format=json&resultType=core",
+      "metadata_response_sha256": "1c04fc0a7515fe62cf16c483ac219cf056d2c0011f5794a243a3d3ea4e261a2c",
+      "metadata_first_publication_date": "2025-09-07",
+      "pmcid": null
+    },
+    {
+      "id": "NSCLC-MAYNARD-STATE",
+      "source_type": "original research article",
+      "pmid": "32822576",
+      "doi": "10.1016/j.cell.2020.07.017",
+      "publication_date": "2020-08-20",
+      "publication_date_basis": "Online publication unless date caveat states otherwise",
+      "url": "https://doi.org/10.1016/j.cell.2020.07.017",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/32822576/",
+      "verified_date": "2026-10-29",
+      "setting": "49 biopsies from 30 metastatic lung cancer patients; mixed drivers/targeted therapies",
+      "endpoints": [
+        "cell-state expression",
+        "exploratory outcome association"
+      ],
+      "claims": [
+        "Residual malignant cells expressed an alveolar-regenerative program. Resource pointers include PRJNA591860 and czbiohub/scell_lung_adenocarcinoma."
+      ],
+      "data_dates": {
+        "observation_period_or_follow_up": "Pretreatment, residual and progressive disease; calendar sampling dates not established in inspected sections.",
+        "cutoff_verified_date": null
+      },
+      "inference_limits": [
+        "Cells/biopsies are nested in donors. Published signature was partly derived from the same comparison; within-source separation is not independent validation."
+      ],
+      "access_depth": "Original abstract verified via Europe PMC; not a complete protocol/supplement review; selected relevant full-text methods/results sections inspected via Europe PMC XML",
+      "full_text_xml_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7484178/fullTextXML",
+      "title": "Therapy-Induced Evolution of Human Lung Cancer Revealed by Single-Cell RNA Sequencing.",
+      "metadata_api_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A32822576&format=json&resultType=core",
+      "metadata_response_sha256": "c7c429fcf9f19a9e1774f758704c303e2d163efb2de86be841d8543a3159f033",
+      "metadata_first_publication_date": "2020-08-20",
+      "pmcid": "PMC7484178"
+    },
+    {
+      "id": "CRC-CHECKMATE8HW",
+      "source_type": "original research article",
+      "pmid": "39874977",
+      "doi": "10.1016/S0140-6736(24)02848-4",
+      "publication_date": "2025-01-25",
+      "publication_date_basis": "Online publication unless date caveat states otherwise",
+      "url": "https://doi.org/10.1016/S0140-6736(24)02848-4",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/39874977/",
+      "verified_date": "2026-10-29",
+      "setting": "MSI-H/dMMR metastatic CRC; nivolumab-ipilimumab versus nivolumab across lines; randomized phase 3",
+      "endpoints": [
+        "PFS",
+        "safety"
+      ],
+      "claims": [
+        "PFS HR 0.62 (95% CI 0.48-0.81); median not reached versus 39.3 months. Grade 3-4 treatment-related adverse events 22% versus 14%."
+      ],
+      "data_dates": {
+        "observation_period_or_follow_up": "Enrollment August 16, 2019-April 10, 2023; cutoff August 28, 2024; median follow-up 47.0 months.",
+        "cutoff_verified_date": "2024-08-28"
+      },
+      "inference_limits": [
+        "This analysis does not establish OS or cure; do not extrapolate to pMMR/MSS CRC."
+      ],
+      "access_depth": "Original abstract verified via Europe PMC; not a complete protocol/supplement review",
+      "title": "Nivolumab plus ipilimumab versus nivolumab in microsatellite instability-high metastatic colorectal cancer (CheckMate 8HW): a randomised, open-label, phase 3 trial.",
+      "metadata_api_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A39874977&format=json&resultType=core",
+      "metadata_response_sha256": "3d0a8dffe84c9683e50d49f6ccf41b256427f128970250deedfa6714412c62c0",
+      "metadata_first_publication_date": "2025-01-25",
+      "pmcid": null
+    },
+    {
+      "id": "CRC-DMMR-NONOPERATIVE",
+      "source_type": "original research article",
+      "pmid": "40293177",
+      "doi": "10.1056/NEJMoa2404512",
+      "publication_date": "2025-04-27",
+      "publication_date_basis": "Online publication unless date caveat states otherwise",
+      "url": "https://doi.org/10.1056/NEJMoa2404512",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40293177/",
+      "verified_date": "2026-10-29",
+      "setting": "Single-arm phase 2; early-stage dMMR rectal and nonrectal tumors amenable to curative-intent surgery",
+      "endpoints": [
+        "clinical complete response",
+        "sustained response at 12 months",
+        "RFS",
+        "organ preservation"
+      ],
+      "claims": [
+        "All 49 rectal treatment completers had clinical complete response; 37 sustained it at least 12 months. Two-year RFS 92% (95% CI 86-99) refers to all 117 rectal and nonrectal patients."
+      ],
+      "data_dates": {
+        "observation_period_or_follow_up": "Analysis data December 2019-April 2025; median recurrence follow-up 20.0 months across full cohort.",
+        "cutoff_verified_date": null
+      },
+      "inference_limits": [
+        "Completer and enrollment denominators differ; single-arm selected cohort. The 92% is not a rectal-only cure rate or evidence in pMMR disease."
+      ],
+      "access_depth": "Original abstract verified via Europe PMC; not a complete protocol/supplement review; selected relevant full-text methods/results sections inspected via Europe PMC XML",
+      "full_text_xml_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12661660/fullTextXML",
+      "title": "Nonoperative Management of Mismatch Repair-Deficient Tumors.",
+      "metadata_api_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A40293177&format=json&resultType=core",
+      "metadata_response_sha256": "717dcfcf478d84504c78c9d54c0b94663529cf405428cf6946e3df7c3a73aaeb",
+      "metadata_first_publication_date": "2025-04-27",
+      "pmcid": "PMC12661660"
+    },
+    {
+      "id": "CRC-BREAKWATER-SURVIVAL",
+      "source_type": "original research article",
+      "pmid": "40444708",
+      "doi": "10.1056/NEJMoa2501912",
+      "publication_date": "2025-05-30",
+      "publication_date_basis": "Online publication unless date caveat states otherwise",
+      "url": "https://doi.org/10.1056/NEJMoa2501912",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40444708/",
+      "verified_date": "2026-10-29",
+      "setting": "Untreated BRAF V600E metastatic CRC; randomized phase 3",
+      "endpoints": [
+        "PFS",
+        "interim OS",
+        "ORR",
+        "safety"
+      ],
+      "claims": [
+        "EC+mFOLFOX6 versus standard care median PFS 12.8 versus 7.1 months (HR 0.53; 95% CI 0.41-0.68); interim OS 30.3 versus 15.1 months (HR 0.49; 95% CI 0.38-0.63)."
+      ],
+      "data_dates": {
+        "observation_period_or_follow_up": "Median OS follow-up 21.8 versus 22.2 months; updated survival cutoff calendar date not established in inspected sections.",
+        "cutoff_verified_date": null
+      },
+      "inference_limits": [
+        "December 22, 2023 in the text refers to earlier ORR analysis, not necessarily updated survival. Subtype-specific combination result does not isolate a component or establish resistance mechanism."
+      ],
+      "access_depth": "Original abstract verified via Europe PMC; not a complete protocol/supplement review; selected relevant full-text methods/results sections inspected via Europe PMC XML",
+      "full_text_xml_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12197837/fullTextXML",
+      "title": "Encorafenib, Cetuximab, and mFOLFOX6 in BRAF-Mutated Colorectal Cancer.",
+      "metadata_api_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A40444708&format=json&resultType=core",
+      "metadata_response_sha256": "a626f38b948f2709cb600b060456927c31778d3de05d4dd70b9977973dd1fac7",
+      "metadata_first_publication_date": "2025-05-30",
+      "pmcid": "PMC12197837"
+    },
+    {
+      "id": "PDAC-PRODIGE24-5Y",
+      "source_type": "original research article",
+      "pmid": "36048453",
+      "doi": "10.1001/jamaoncol.2022.3829",
+      "publication_date": "2022-09-01",
+      "publication_date_basis": "Online publication unless date caveat states otherwise",
+      "url": "https://doi.org/10.1001/jamaoncol.2022.3829",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/36048453/",
+      "verified_date": "2026-10-29",
+      "setting": "493 selected postoperative R0/R1 PDAC patients; randomized phase 3",
+      "endpoints": [
+        "DFS",
+        "OS",
+        "metastasis-free survival",
+        "cancer-specific survival"
+      ],
+      "claims": [
+        "Modified FOLFIRINOX versus gemcitabine five-year OS 43.2% versus 31.4%; five-year DFS 26.1% versus 19.0%."
+      ],
+      "data_dates": {
+        "observation_period_or_follow_up": "Enrollment April 16, 2012-October 3, 2016; cutoff June 28, 2021; median follow-up 69.7 months.",
+        "cutoff_verified_date": "2021-06-28"
+      },
+      "inference_limits": [
+        "Postoperative selected population differs from metastatic PDAC. Publisher online date September 1 differs from Europe PMC print-based first-publication date November 1, 2022."
+      ],
+      "access_depth": "Original abstract verified via Europe PMC; not a complete protocol/supplement review",
+      "title": "Five-Year Outcomes of FOLFIRINOX vs Gemcitabine as Adjuvant Therapy for Pancreatic Cancer: A Randomized Clinical Trial.",
+      "metadata_api_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A36048453&format=json&resultType=core",
+      "metadata_response_sha256": "29a3611069ef33ee7794c4d2df5790f297e4087de3a689f97399b3d80095b994",
+      "metadata_first_publication_date": "2022-11-01",
+      "pmcid": "PMC9437831"
+    },
+    {
+      "id": "PDAC-RASOLUTE302",
+      "source_type": "original research article",
+      "pmid": "42223072",
+      "doi": "10.1056/NEJMoa2605555",
+      "publication_date": "2026-05-31",
+      "publication_date_basis": "Online publication unless date caveat states otherwise",
+      "url": "https://doi.org/10.1056/NEJMoa2605555",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42223072/",
+      "verified_date": "2026-10-29",
+      "setting": "500 previously treated metastatic PDAC patients; randomized phase 3",
+      "endpoints": [
+        "OS",
+        "PFS",
+        "ORR",
+        "patient-reported quality of life",
+        "safety"
+      ],
+      "claims": [
+        "Overall-population median OS 13.2 versus 6.7 months (HR 0.40); PFS 7.2 versus 3.6 months (HR 0.49). Dual primary endpoints were in RAS G12 population; overall-population endpoints were key secondary endpoints."
+      ],
+      "data_dates": {
+        "observation_period_or_follow_up": "Cutoff calendar date not verified in original abstract; print issue July 23, 2026.",
+        "cutoff_verified_date": null
+      },
+      "inference_limits": [
+        "Survival/control benefit is not cure. Do not interchange overall-population and RAS G12-subgroup estimates."
+      ],
+      "access_depth": "Original abstract verified via Europe PMC; not a complete protocol/supplement review",
+      "publisher_access_note": "Direct publisher full-text opening returned 403; original abstract was available.",
+      "title": "Daraxonrasib or Chemotherapy in Previously Treated Metastatic Pancreatic Cancer.",
+      "metadata_api_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A42223072&format=json&resultType=core",
+      "metadata_response_sha256": "1134acdd8e2f653b05ab133e91447593e08181d2f3e34552305b75d9d36ab299",
+      "metadata_first_publication_date": "2026-05-31",
+      "pmcid": null
+    },
+    {
+      "id": "PDAC-DARAXON-RESISTANCE",
+      "source_type": "original research article",
+      "pmid": "42581230",
+      "doi": "10.1038/s41591-026-04537-w",
+      "publication_date": "2026-08-11",
+      "publication_date_basis": "Online publication unless date caveat states otherwise",
+      "url": "https://doi.org/10.1038/s41591-026-04537-w",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42581230/",
+      "verified_date": "2026-10-29",
+      "setting": "44 selected phase 1/2 PDAC patients with paired ctDNA plus preclinical models",
+      "endpoints": [
+        "acquired genomic alterations",
+        "preclinical response/resistance"
+      ],
+      "claims": [
+        "26/44 had acquired RAS-pathway alterations; mutant KRAS amplification occurred in 16/44. Combination results were preclinical."
+      ],
+      "data_dates": {
+        "observation_period_or_follow_up": "Paired pretreatment and end-of-treatment/progression samples; selected initial disease control with PFS >3 months; calendar cutoff not established in inspected sections.",
+        "cutoff_verified_date": null
+      },
+      "inference_limits": [
+        "Selected progressor sample does not estimate frequency in all treated patients. Alterations overlap; ctDNA assay sensitivity/shedding limits negative findings; combinations lack established human efficacy here."
+      ],
+      "access_depth": "Original abstract verified via Europe PMC; not a complete protocol/supplement review; selected relevant full-text methods/results sections inspected via Europe PMC XML",
+      "full_text_xml_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13472880/fullTextXML",
+      "title": "Acquired resistance to the RAS(ON) multi-selective inhibitor daraxonrasib guides rational combination therapy strategies in pancreatic cancer.",
+      "metadata_api_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A42581230&format=json&resultType=core",
+      "metadata_response_sha256": "d9e61624a8284cfa9711bf1301faa936c092ed14ea71dd348b0bd38e2e911123",
+      "metadata_first_publication_date": "2026-08-11",
+      "pmcid": "PMC13472880"
+    },
+    {
+      "id": "FDA-DARAXON-APPROVAL",
+      "title": "FDA approves daraxonrasib for metastatic pancreatic adenocarcinoma",
+      "source_type": "official regulatory notice",
+      "publication_date": "2026-08-26",
+      "data_dates": {
+        "regulatory_action": "2026-08-26"
+      },
+      "verified_date": "2026-10-29",
+      "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-daraxonrasib-metastatic-pancreatic-adenocarcinoma",
+      "access_depth": "Live official notice read",
+      "claims": [
+        "U.S. approval for adults with metastatic pancreatic adenocarcinoma after at least one prior systemic therapy or not candidates for multiagent systemic therapy."
+      ],
+      "inference_limits": [
+        "Used for U.S. regulatory status; original trial article supplies efficacy claims."
+      ]
+    },
+    {
+      "id": "NCI-ENDPOINTS",
+      "title": "NCI endpoint and cure terminology",
+      "source_type": "official terminology reference set",
+      "publication_date": null,
+      "reviewed_date": "2024-05-29",
+      "data_dates": {
+        "note": "No clinical dataset. Review date applies to prognosis page; dictionary pages display no publication date."
+      },
+      "verified_date": "2026-10-29",
+      "url": "https://www.cancer.gov/about-cancer/diagnosis-staging/prognosis",
+      "additional_verified_urls": [
+        "https://www.cancer.gov/publications/dictionaries/cancer-terms/def/complete-response",
+        "https://www.cancer.gov/publications/dictionaries/cancer-terms/def/overall-survival",
+        "https://www.cancer.gov/publications/dictionaries/cancer-terms/def/progression-free-survival",
+        "https://www.cancer.gov/publications/dictionaries/cancer-terms/def/disease-free-survival"
+      ],
+      "access_depth": "Live official definition pages and prognosis cure/remission section read",
+      "claims": [
+        "Complete response does not always mean cancer is cured. Survival, recurrence/progression endpoints and cure require distinct interpretation."
+      ],
+      "inference_limits": [
+        "Dictionary descriptions do not replace trial-specific endpoint/censoring definitions."
+      ]
+    }
+  ]
+}

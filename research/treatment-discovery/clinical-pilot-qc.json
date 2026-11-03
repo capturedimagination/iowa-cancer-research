@@ -1,0 +1,126 @@
+{
+  "study_id": "nsclc_pd1_msk_2018",
+  "snapshot_date": "2026-10-29",
+  "operation": "Schema, provenance, identifier and missingness audit only; no model fitted",
+  "hash_checks": [
+    {
+      "filename": "LICENSE",
+      "sha256_verified": true,
+      "bytes": 455
+    },
+    {
+      "filename": "Readme.txt",
+      "sha256_verified": true,
+      "bytes": 122
+    },
+    {
+      "filename": "meta_study.txt",
+      "sha256_verified": true,
+      "bytes": 335
+    },
+    {
+      "filename": "meta_clinical_patient.txt",
+      "sha256_verified": true,
+      "bytes": 147
+    },
+    {
+      "filename": "meta_clinical_sample.txt",
+      "sha256_verified": true,
+      "bytes": 145
+    },
+    {
+      "filename": "data_clinical_patient.txt",
+      "sha256_verified": true,
+      "bytes": 17878
+    },
+    {
+      "filename": "data_clinical_sample.txt",
+      "sha256_verified": true,
+      "bytes": 31832
+    },
+    {
+      "filename": "data_clinical_sample-original-2018-04-23.txt",
+      "sha256_verified": true,
+      "bytes": 26932
+    },
+    {
+      "filename": "clinical-sample-commit-history.json",
+      "sha256_verified": true,
+      "bytes": 21097
+    }
+  ],
+  "total_source_bytes": 98943,
+  "patient_rows": 240,
+  "sample_rows": 240,
+  "unique_patients": 240,
+  "unique_samples": 240,
+  "patient_sample_join": "one_to_one",
+  "unmatched_patients": [],
+  "duplicate_patient_ids": [],
+  "duplicate_sample_ids": [],
+  "dcb_counts": {
+    "YES": 69,
+    "NO": 158,
+    "NE": 13
+  },
+  "pfs_status_counts": {
+    "0:Not Progressed": 42,
+    "1:Progressed": 198
+  },
+  "gene_panel_counts": {
+    "IMPACT341": 56,
+    "IMPACT468": 20,
+    "IMPACT410": 164
+  },
+  "histology_counts": {
+    "LUAD": 186,
+    "LUSC": 34,
+    "LUNE": 7,
+    "NSCLC": 13
+  },
+  "treatment_counts": {
+    "Combination": 34,
+    "Monotherapy": 206
+  },
+  "trial_commercial_counts": {
+    "Clinical trial": 54,
+    "Commercial": 186
+  },
+  "missing_counts": {
+    "patient": {
+      "PATIENT_ID": 0,
+      "SEX": 0,
+      "AGE": 0,
+      "SMOKER": 0,
+      "LINES_OF_TX": 0,
+      "IRB": 0,
+      "TREATMENT_TYPE": 0,
+      "PFS_MONTHS": 0,
+      "PFS_STATUS": 0,
+      "DURABLE_CLINICAL_BENEFIT": 0
+    },
+    "sample": {
+      "PATIENT_ID": 0,
+      "SAMPLE_ID": 0,
+      "GENE_PANEL": 0,
+      "ONCOTREE_CODE": 0,
+      "MUTATION_RATE": 0,
+      "FGA": 0,
+      "PDL1_SCORE": 154,
+      "CANCER_TYPE": 0,
+      "CANCER_TYPE_DETAILED": 0,
+      "SOMATIC_STATUS": 0,
+      "TMB_NONSYNONYMOUS": 0
+    }
+  },
+  "pdl1_nonmissing": 86,
+  "pdl1_nonmissing_dcb_counts": {
+    "YES": 24,
+    "NO": 55,
+    "NE": 7
+  },
+  "original_2018_mutation_rate_changed_values": 0,
+  "original_2018_has_tmb_nonsynonymous": false,
+  "current_tmb_columns_differ_rows": 240,
+  "ne_all_censored_under_six_months": true
+}

@@ -1,0 +1,25 @@
+sample_name,metadata_cell_rows,patient_id,driver_gene,driver_mutation,histolgy,biopsy_date,biopsy_site,biopsy_time_status,analysis,treatment_history,treatment_history_detail,line_of_therapy,treatment_type,treatment,treatment_start_date,early_bx_day
+LT_S01,44,TH158,EGFR,del19,Adenocarcinoma,2016-10-12,Lung,PR,grouped_pr,naive,on firstline TKI,1st,TKI,erlotinib,2016-10-12,NA
+LT_S11,216,TH169,EGFR,del19,Adenocarcinoma,2017-03-21,Lung,Early,grouped_pr,naive,on firstline TKI,1st,TKI,erlotinib,2017-03-06,15
+LT_S13,615,TH169,EGFR,del19,Adenocarcinoma,2017-05-26,Lung,PR,grouped_pr,naive,on firstline TKI,1st,TKI,erlotinib,2017-03-06,NA
+LT_S14,291,TH153,EGFR,del19,Adenocarcinoma,2017-06-05,Liver,PD,grouped_pd,prior,prior TKI,2nd,TKI,osimertinib,2016-08-17,NA
+LT_S21,1796,TH185,EGFR,L858R,Adenocarcinoma,2017-07-18,Pleura,Early,grouped_pd,naive,on firsline TKI,1st,TKI,erlotinib,2017-07-15,2
+LT_S22,67,TH158,EGFR,del19,Adenocarcinoma,2017-07-25,Lung,PR,grouped_pr,prior,prior TKI,2nd,TKI,osimertinib,2017-06-14,NA
+LT_S23,497,TH185,EGFR,L858R,Adenocarcinoma,2017-07-25,Pleura,Early,grouped_pd,naive,on firsline TKI,1st,TKI,erlotinib,2017-07-15,15
+LT_S28,440,TH185,EGFR,L858R,Adenocarcinoma,2017-09-21,Pleura,PD,grouped_pd,naive,on firsline TKI,1st,TKI,erlotinib,2017-07-15,68
+LT_S34,616,TH205,EGFR,L858R,Adenocarcinoma,2017-11-13,Pleura,off treatment,naive,naive,tx naive,1st,TKI,osimertinib,2018-01-04,NA
+LT_S35,2,TH208,EGFR,L861Q,Adenocarcinoma,2017-11-29,LN,off treatment,naive,naive,tx naive,1st,TKI,osimertinib,2017-12-05,NA
+LT_S42,96,TH158,EGFR,del19,Adenocarcinoma,2018-01-11,Lung,PR,grouped_pr,prior,prior TKI,2nd,TKI,osimertinib,2017-06-14,NA
+LT_S43,37,TH217,EGFR,del19,Adenocarcinoma,2018-01-16,LN,off treatment,naive,naive,tx naive,1st,TKI,osimertinib,2018-02-07,NA
+LT_S45,135,TH218,EGFR,L858R,Adenocarcinoma,2018-01-18,Adrenal,off treatment,naive,naive,tx naive,1st,TKI,osimertinib,2018-01-31,NA
+LT_S46,388,TH205,EGFR,L858R,Adenocarcinoma,2018-01-22,Lung,Early,grouped_pr,naive,on firsline TKI,1st,TKI,osimertinib,2018-01-04,18
+LT_S48,85,TH155,EGFR,del19,Adenocarcinoma,2018-02-05,Brain,PD,grouped_pd,naive,on firstline TKI,1st,TKI,erlotinib,2016-09-13,NA
+LT_S49,735,TH223,EGFR,del19,Adenocarcinoma,2018-02-08,LN,off treatment,naive,naive,tx naive,NA,followed elsewhere,followed elsewhere,NA,NA
+LT_S52,272,TH226,EGFR,del19,Adenocarcinoma,2018-02-14,Lung,off treatment,naive,naive,tx naive,1st,TKI,osimertinib,2018-02-19,NA
+LT_S53,563,TH067,EGFR,del19,Adenocarcinoma,2018-02-15,Liver,PD,grouped_pd,prior,Prior chemo/ TKI/IO,5th,TKI,erlotinib/gemcitabine,2017-05-16,NA
+LT_S55,639,TH218,EGFR,L858R,Adenocarcinoma,2018-02-23,Adrenal,Early,grouped_pr,naive,on firsline TKI,1st,TKI,osimertinib,2018-01-31,24
+LT_S57,1535,TH226,EGFR,del19,Adenocarcinoma,2018-03-07,Lung,Early,grouped_pr,naive,on treatment,1st,TKI,osimertinib,2018-02-19,16
+LT_S69,742,TH248,EGFR,del19,Adenocarcinoma,2018-05-18,LN,off treatment,naive,naive,tx naive,1st,TKI,osimertinib,2018-07-03,NA
+LT_S71,1293,TH236,EGFR,del19,Adenocarcinoma,2018-05-21,Lung,PR,grouped_pr,prior,on treatment,1st,TKI,osimertinib,2018-02-21,NA
+LT_S74,748,TH248,EGFR,del19,Adenocarcinoma,2018-06-27,Lung,off treatment,naive,naive,tx naive,1st,TKI,osimertinib,2018-07-03,NA
+LT_S82,1392,TH226,EGFR,del19,Adenocarcinoma,2018-11-14,Lung,PD,grouped_pd,naive,on firstline TKI,1st,TKI,osimertinib,2018-02-19,NA

@@ -1,0 +1,382 @@
+{
+  "schema_version": "1.0",
+  "created_at_utc": "2026-10-22T23:16:22.630325+00:00",
+  "purpose": "Corpus search; no numeric data import or health/legal reinterpretation",
+  "original_file": "sources/industries/energy-legacy/iowa-city-coal-gas-atsdr-2006.pdf",
+  "original_sha256_before": "1c55446c0b80c5eaf6dc01577cfdc30e88f63c1631d410349e28c6ef3dbad06b",
+  "original_sha256_after": "1c55446c0b80c5eaf6dc01577cfdc30e88f63c1631d410349e28c6ef3dbad06b",
+  "original_unchanged": true,
+  "sidecar": "sources/industries/energy-legacy/iowa-city-coal-gas-atsdr-2006.ocr.txt",
+  "sidecar_sha256": "5c6cc5fce6e875800e8c9976cb10e96e9ae08b20e0d007ca2e98da6659947ab2",
+  "pdf_pages": 54,
+  "native_text_pages_over_30_chars": 53,
+  "ocr_attempted_physical_pages": [
+    19
+  ],
+  "coverage": [
+    {
+      "physical_page": 1,
+      "method": "native_extraction",
+      "native_extracted_characters": 366,
+      "sidecar_characters": 366
+    },
+    {
+      "physical_page": 2,
+      "method": "native_extraction",
+      "native_extracted_characters": 1188,
+      "sidecar_characters": 1188
+    },
+    {
+      "physical_page": 3,
+      "method": "native_extraction",
+      "native_extracted_characters": 291,
+      "sidecar_characters": 291
+    },
+    {
+      "physical_page": 4,
+      "method": "native_extraction",
+      "native_extracted_characters": 3131,
+      "sidecar_characters": 3131
+    },
+    {
+      "physical_page": 5,
+      "method": "native_extraction",
+      "native_extracted_characters": 3221,
+      "sidecar_characters": 3221
+    },
+    {
+      "physical_page": 6,
+      "method": "native_extraction",
+      "native_extracted_characters": 2027,
+      "sidecar_characters": 2027
+    },
+    {
+      "physical_page": 7,
+      "method": "native_extraction",
+      "native_extracted_characters": 2383,
+      "sidecar_characters": 2383
+    },
+    {
+      "physical_page": 8,
+      "method": "native_extraction",
+      "native_extracted_characters": 3215,
+      "sidecar_characters": 3215
+    },
+    {
+      "physical_page": 9,
+      "method": "native_extraction",
+      "native_extracted_characters": 2695,
+      "sidecar_characters": 2695
+    },
+    {
+      "physical_page": 10,
+      "method": "native_extraction",
+      "native_extracted_characters": 2623,
+      "sidecar_characters": 2623
+    },
+    {
+      "physical_page": 11,
+      "method": "native_extraction",
+      "native_extracted_characters": 2927,
+      "sidecar_characters": 2927
+    },
+    {
+      "physical_page": 12,
+      "method": "native_extraction",
+      "native_extracted_characters": 2873,
+      "sidecar_characters": 2873
+    },
+    {
+      "physical_page": 13,
+      "method": "native_extraction",
+      "native_extracted_characters": 2882,
+      "sidecar_characters": 2882
+    },
+    {
+      "physical_page": 14,
+      "method": "native_extraction",
+      "native_extracted_characters": 2632,
+      "sidecar_characters": 2632
+    },
+    {
+      "physical_page": 15,
+      "method": "native_extraction",
+      "native_extracted_characters": 1689,
+      "sidecar_characters": 1689
+    },
+    {
+      "physical_page": 16,
+      "method": "native_extraction",
+      "native_extracted_characters": 122,
+      "sidecar_characters": 122
+    },
+    {
+      "physical_page": 17,
+      "method": "native_extraction",
+      "native_extracted_characters": 1423,
+      "sidecar_characters": 1423
+    },
+    {
+      "physical_page": 18,
+      "method": "native_extraction",
+      "native_extracted_characters": 248,
+      "sidecar_characters": 248
+    },
+    {
+      "physical_page": 19,
+      "method": "ocr",
+      "native_extracted_characters": 0,
+      "sidecar_characters": 911,
+      "characters": 912,
+      "mean_vision_confidence": 1,
+      "minimum_vision_confidence": 1,
+      "recognized_lines": 15,
+      "rendered_image": "page-19.png",
+      "visual_content_type": "certification_and_signatures",
+      "blank": false
+    },
+    {
+      "physical_page": 20,
+      "method": "native_extraction",
+      "native_extracted_characters": 103,
+      "sidecar_characters": 103
+    },
+    {
+      "physical_page": 21,
+      "method": "native_extraction",
+      "native_extracted_characters": 2041,
+      "sidecar_characters": 2041
+    },
+    {
+      "physical_page": 22,
+      "method": "native_extraction",
+      "native_extracted_characters": 2136,
+      "sidecar_characters": 2136
+    },
+    {
+      "physical_page": 23,
+      "method": "native_extraction",
+      "native_extracted_characters": 2430,
+      "sidecar_characters": 2430
+    },
+    {
+      "physical_page": 24,
+      "method": "native_extraction",
+      "native_extracted_characters": 2251,
+      "sidecar_characters": 2251
+    },
+    {
+      "physical_page": 25,
+      "method": "native_extraction",
+      "native_extracted_characters": 2506,
+      "sidecar_characters": 2506
+    },
+    {
+      "physical_page": 26,
+      "method": "native_extraction",
+      "native_extracted_characters": 2330,
+      "sidecar_characters": 2330
+    },
+    {
+      "physical_page": 27,
+      "method": "native_extraction",
+      "native_extracted_characters": 2291,
+      "sidecar_characters": 2291
+    },
+    {
+      "physical_page": 28,
+      "method": "native_extraction",
+      "native_extracted_characters": 2062,
+      "sidecar_characters": 2062
+    },
+    {
+      "physical_page": 29,
+      "method": "native_extraction",
+      "native_extracted_characters": 2190,
+      "sidecar_characters": 2190
+    },
+    {
+      "physical_page": 30,
+      "method": "native_extraction",
+      "native_extracted_characters": 2387,
+      "sidecar_characters": 2387
+    },
+    {
+      "physical_page": 31,
+      "method": "native_extraction",
+      "native_extracted_characters": 1933,
+      "sidecar_characters": 1933
+    },
+    {
+      "physical_page": 32,
+      "method": "native_extraction",
+      "native_extracted_characters": 2326,
+      "sidecar_characters": 2326
+    },
+    {
+      "physical_page": 33,
+      "method": "native_extraction",
+      "native_extracted_characters": 1644,
+      "sidecar_characters": 1644
+    },
+    {
+      "physical_page": 34,
+      "method": "native_extraction",
+      "native_extracted_characters": 1697,
+      "sidecar_characters": 1697
+    },
+    {
+      "physical_page": 35,
+      "method": "native_extraction",
+      "native_extracted_characters": 1898,
+      "sidecar_characters": 1898
+    },
+    {
+      "physical_page": 36,
+      "method": "native_extraction",
+      "native_extracted_characters": 1788,
+      "sidecar_characters": 1788
+    },
+    {
+      "physical_page": 37,
+      "method": "native_extraction",
+      "native_extracted_characters": 1868,
+      "sidecar_characters": 1868
+    },
+    {
+      "physical_page": 38,
+      "method": "native_extraction",
+      "native_extracted_characters": 1972,
+      "sidecar_characters": 1972
+    },
+    {
+      "physical_page": 39,
+      "method": "native_extraction",
+      "native_extracted_characters": 1858,
+      "sidecar_characters": 1858
+    },
+    {
+      "physical_page": 40,
+      "method": "native_extraction",
+      "native_extracted_characters": 1576,
+      "sidecar_characters": 1576
+    },
+    {
+      "physical_page": 41,
+      "method": "native_extraction",
+      "native_extracted_characters": 1928,
+      "sidecar_characters": 1928
+    },
+    {
+      "physical_page": 42,
+      "method": "native_extraction",
+      "native_extracted_characters": 1774,
+      "sidecar_characters": 1774
+    },
+    {
+      "physical_page": 43,
+      "method": "native_extraction",
+      "native_extracted_characters": 1896,
+      "sidecar_characters": 1896
+    },
+    {
+      "physical_page": 44,
+      "method": "native_extraction",
+      "native_extracted_characters": 1778,
+      "sidecar_characters": 1778
+    },
+    {
+      "physical_page": 45,
+      "method": "native_extraction",
+      "native_extracted_characters": 1706,
+      "sidecar_characters": 1706
+    },
+    {
+      "physical_page": 46,
+      "method": "native_extraction",
+      "native_extracted_characters": 2036,
+      "sidecar_characters": 2036
+    },
+    {
+      "physical_page": 47,
+      "method": "native_extraction",
+      "native_extracted_characters": 791,
+      "sidecar_characters": 791
+    },
+    {
+      "physical_page": 48,
+      "method": "native_extraction",
+      "native_extracted_characters": 127,
+      "sidecar_characters": 127
+    },
+    {
+      "physical_page": 49,
+      "method": "native_extraction",
+      "native_extracted_characters": 1547,
+      "sidecar_characters": 1547
+    },
+    {
+      "physical_page": 50,
+      "method": "native_extraction",
+      "native_extracted_characters": 1999,
+      "sidecar_characters": 1999
+    },
+    {
+      "physical_page": 51,
+      "method": "native_extraction",
+      "native_extracted_characters": 584,
+      "sidecar_characters": 584
+    },
+    {
+      "physical_page": 52,
+      "method": "native_extraction",
+      "native_extracted_characters": 1553,
+      "sidecar_characters": 1553
+    },
+    {
+      "physical_page": 53,
+      "method": "native_extraction",
+      "native_extracted_characters": 1997,
+      "sidecar_characters": 1997
+    },
+    {
+      "physical_page": 54,
+      "method": "native_extraction",
+      "native_extracted_characters": 588,
+      "sidecar_characters": 588
+    }
+  ],
+  "method": {
+    "native_extractor": "pypdf PdfReader.extract_text",
+    "ocr_trigger": "native stripped text length <=30",
+    "renderer": "Poppler pdftoppm 26.05.0",
+    "dpi": 180,
+    "format": "PNG",
+    "ocr": "Apple Vision VNRecognizeTextRequest accurate en-US, language correction enabled",
+    "os": "macOS 26.6.2 build 25G83",
+    "manual_text_corrections": false,
+    "pdf_modified": false,
+    "helper": "scripts/ocr_pdf_applevision.swift",
+    "pipeline": "scripts/add_gap_ocr_sidecars.py"
+  },
+  "visual_review": {
+    "thumbnail_reviewed_gap_pages": [
+      19
+    ],
+    "detailed_spot_checked_pages": [],
+    "all_text_proofread": false,
+    "pending": false,
+    "note": "All gap renders checked for page/content type; detailed spot checks are not numeric/table transcription validation"
+  },
+  "limitations": [
+    "Search aid, not an authoritative transcription or table import",
+    "Native extraction can have ordering/table errors even on pages over the threshold",
+    "OCR may misread letters, numbers, formulas, symbols, charts and handwriting",
+    "An OCR confidence of 1 is not calibrated accuracy",
+    "All physical pages have markers; this does not establish recognition of every visible mark",
+    "Site-map labels, graph axes and table cells can remain incompletely recognized despite nonempty OCR; exact values require original-page review"
+  ],
+  "sidecar_utf8_bytes": 102598,
+  "blank_physical_pages_identified": [],
+  "skipped_ocr_pages": []
+}

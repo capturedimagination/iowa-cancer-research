@@ -1,0 +1,33 @@
+[
+  {
+    "file": "niosh-bil-mar-storm-lake-2003.pdf",
+    "url": "https://www.cdc.gov/niosh/hhe/reports/pdfs/2002-0257-2916.pdf",
+    "valid_pdf": true,
+    "bytes": 414907,
+    "retrieved": "2026-10-22"
+  },
+  {
+    "file": "niosh-sara-lee-storm-lake-2006.pdf",
+    "url": "https://www.cdc.gov/niosh/hhe/reports/pdfs/2006-0153-3022.pdf",
+    "valid_pdf": true,
+    "bytes": 894481,
+    "retrieved": "2026-10-22"
+  },
+  {
+    "file": null,
+    "url": "https://www.iowadnr.gov/media/2587/download?inline=",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "file": null,
+    "url": "https://www.iowadnr.gov/media/9624/download?inline=",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "file": "niosh-upper-midwest-glioma-occupation-2012.pdf",
+    "url": "https://stacks.cdc.gov/view/cdc/193696/cdc_193696_DS1.pdf",
+    "valid_pdf": true,
+    "bytes": 114224,
+    "retrieved": "2026-10-22"
+  }
+]

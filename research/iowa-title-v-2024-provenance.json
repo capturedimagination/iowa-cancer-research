@@ -1,0 +1,74 @@
+{
+  "schema_version": "1.0",
+  "dataset": "Iowa DNR 2024 Title V point-source Appendix A",
+  "research_cutoff": "2026-10-22",
+  "source": {
+    "publisher": "Iowa Department of Natural Resources",
+    "actual_document_title": "2024 Iowa Point Source Emissions Summary",
+    "publication_date": "2026-02-25",
+    "author": "Nick Page",
+    "url": "https://www.iowadnr.gov/media/2277/download?inline=",
+    "local_pdf": "sources/industries/food-agprocessing/iowa-point-source-emissions-2024-feb2026.pdf",
+    "sha256": "e2577c2c4985adff4b380f75577df71e111830a416113158c5019e17e9e0781f",
+    "download_date": "2026-10-22",
+    "pdf_pages": 34,
+    "metadata_conflict": "Search metadata says 2021; the actual PDF cover says 2024 and February 25, 2026. Use the archived PDF's period."
+  },
+  "output": "research/iowa-title-v-facilities-emissions-2024.csv",
+  "record_grain": "One DNR Appendix A facility inventory ID, not one parent company, person, stack, chemical or census tract",
+  "identifier": {
+    "field": "facility_id",
+    "system": "DNR point-source inventory facility ID as printed",
+    "unique_rows": 283,
+    "not_equivalent_to": ["EPA FRS registry ID", "EPA TRI facility ID", "DNR Facility Explorer site ID"],
+    "crosswalk_rule": "Verify location, identifiers, program-specific IDs and dated aliases. Do not join by a similar facility name alone. No county mapping is inferred from ID digits."
+  },
+  "time": {
+    "emissions_year": 2024,
+    "publication_year": 2026,
+    "not_current_year": "This is not a 2026 emissions inventory. Facility names are retained as printed for the 2024 inventory."
+  },
+  "units": {
+    "report_wording": "tons",
+    "csv_wording": "tons/year (report wording; ton definition not specified in PDF)",
+    "conversion_status": "The PDF does not explicitly define a short ton vs metric tonne. No pounds or metric conversion is applied in the CSV. Confirm the source system definition before conversion or comparison with TRI pounds."
+  },
+  "fields": {
+    "facility_id": "DNR inventory ID, kept as text",
+    "facility_name": "Name as printed, joining wrapped continuation lines with one space",
+    "pdf_page": "One-based physical PDF page containing the facility row",
+    "pm25_primary_tons": "Primary particulate matter <=2.5 microns, report column PM25-PRI",
+    "pm10_primary_tons": "Primary particulate matter <=10 microns, report column PM10-PRI",
+    "so2_tons": "Sulfur dioxide",
+    "nox_tons": "Nitrogen oxides",
+    "voc_tons": "Volatile organic compounds",
+    "co_tons": "Carbon monoxide",
+    "lead_tons": "Lead, report column Pb",
+    "ammonia_tons": "Ammonia, report column NH3",
+    "total_haps_tons": "Total hazardous air pollutants, not total carcinogens",
+    "data_year": "2024",
+    "source_url": "Original source URL",
+    "limits": "Record-level interpretation limits"
+  },
+  "coverage": {
+    "included": "All 283 reported Title V facilities in Appendix A, physical PDF pages 20-30",
+    "excluded_source_classes": ["mobile", "biogenic", "nonpoint"],
+    "extraction_exclusions": "None; no row deduplication or threshold exclusions",
+    "all_industries": true,
+    "coverage_limit": "Title V is a regulatory inventory subset; it is not every Iowa employer or emissions source."
+  },
+  "reproduction": {
+    "script": "scripts/extract_iowa_title_v_2024.py",
+    "dependency": "pypdf",
+    "method": "Layout text extraction; identify facility ID + nine two-decimal numeric fields; append long facility-name continuation lines; retain reported numeric strings.",
+    "validation": ["283 rows", "283 unique IDs", "No unparsed data rows", "Sum total_haps_tons = 5483.81", "Rounded source total = 5484"],
+    "precision": "Two decimals as printed; summed rounded detail can differ from unpublished underlying values."
+  },
+  "interpretation": {
+    "overlap": "PM2.5 is contained in PM10. HAPs may also occur in VOC or particulate totals. Do not sum all pollutant columns as independent mass or health burden.",
+    "not_tri": "DNR Title V point-source estimates and EPA TRI releases have different facility coverage, chemicals, media, thresholds and units. Do not add or equate their totals.",
+    "not_dose": "Emitted mass is not ambient concentration, personal dose, modeled cancer risk or observed cancer count.",
+    "not_risk_rank": "HAP mass includes agents with different potencies and noncancer hazards. Speciation, transport, exposure duration and dose-response are necessary for cancer assessment.",
+    "change_over_time": "Inventory differences can reflect revised factors, testing, reporting corrections, coverage or operation changes."
+  }
+}

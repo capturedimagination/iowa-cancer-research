@@ -1,0 +1,26 @@
+[
+  {
+    "url": "https://hhs.iowa.gov/media/19634/download?inline=",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "file": "sources/iowa-cancer-screening-law-ch1087-2026.pdf",
+    "url": "https://www.legis.iowa.gov/docs/publications/iactc/91.2/CH1087.pdf",
+    "http_status": 200,
+    "valid_pdf": true,
+    "bytes": 253401,
+    "access_date": "2026-10-22"
+  },
+  {
+    "url": "https://ehsrc.public-health.uiowa.edu/wp-content/uploads/2025/10/Environmental-Health-and-Cancer-Fact-Sheets-Full-Packet-Sept-2025.pdf",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "file": "sources/iowa-environmental-risk-report-2026.pdf",
+    "url": "https://www.iaenvironment.org/webres/File/Environmental%20Risk%20Factors%20and%20Iowa%27s%20Cancer%20Crisis%20-%20Report.pdf",
+    "http_status": 200,
+    "valid_pdf": true,
+    "bytes": 7183279,
+    "access_date": "2026-10-22"
+  }
+]

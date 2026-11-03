@@ -1,0 +1,359 @@
+{
+  "schema_version": "1.0",
+  "created_at_utc": "2026-10-22T23:16:21.482756+00:00",
+  "purpose": "Corpus search; no numeric data import or health/legal reinterpretation",
+  "original_file": "sources/industries/energy-legacy/atlantic-pce-atsdr-2026.pdf",
+  "original_sha256_before": "74a2fe396e1ef01142d5dbb97d9e9e476aadce1ea4b35685602aa1aab4f9230e",
+  "original_sha256_after": "74a2fe396e1ef01142d5dbb97d9e9e476aadce1ea4b35685602aa1aab4f9230e",
+  "original_unchanged": true,
+  "sidecar": "sources/industries/energy-legacy/atlantic-pce-atsdr-2026.ocr.txt",
+  "sidecar_sha256": "d98cc3380108abc71125d8a859ad62148bd74053ebfc2158b126b499bfb74862",
+  "pdf_pages": 48,
+  "native_text_pages_over_30_chars": 46,
+  "ocr_attempted_physical_pages": [
+    29,
+    30
+  ],
+  "coverage": [
+    {
+      "physical_page": 1,
+      "method": "native_extraction",
+      "native_extracted_characters": 236,
+      "sidecar_characters": 236
+    },
+    {
+      "physical_page": 2,
+      "method": "native_extraction",
+      "native_extracted_characters": 1648,
+      "sidecar_characters": 1648
+    },
+    {
+      "physical_page": 3,
+      "method": "native_extraction",
+      "native_extracted_characters": 633,
+      "sidecar_characters": 633
+    },
+    {
+      "physical_page": 4,
+      "method": "native_extraction",
+      "native_extracted_characters": 3819,
+      "sidecar_characters": 3819
+    },
+    {
+      "physical_page": 5,
+      "method": "native_extraction",
+      "native_extracted_characters": 759,
+      "sidecar_characters": 759
+    },
+    {
+      "physical_page": 6,
+      "method": "native_extraction",
+      "native_extracted_characters": 2936,
+      "sidecar_characters": 2936
+    },
+    {
+      "physical_page": 7,
+      "method": "native_extraction",
+      "native_extracted_characters": 2166,
+      "sidecar_characters": 2166
+    },
+    {
+      "physical_page": 8,
+      "method": "native_extraction",
+      "native_extracted_characters": 2639,
+      "sidecar_characters": 2639
+    },
+    {
+      "physical_page": 9,
+      "method": "native_extraction",
+      "native_extracted_characters": 2083,
+      "sidecar_characters": 2083
+    },
+    {
+      "physical_page": 10,
+      "method": "native_extraction",
+      "native_extracted_characters": 2124,
+      "sidecar_characters": 2124
+    },
+    {
+      "physical_page": 11,
+      "method": "native_extraction",
+      "native_extracted_characters": 3540,
+      "sidecar_characters": 3540
+    },
+    {
+      "physical_page": 12,
+      "method": "native_extraction",
+      "native_extracted_characters": 3384,
+      "sidecar_characters": 3384
+    },
+    {
+      "physical_page": 13,
+      "method": "native_extraction",
+      "native_extracted_characters": 3344,
+      "sidecar_characters": 3344
+    },
+    {
+      "physical_page": 14,
+      "method": "native_extraction",
+      "native_extracted_characters": 133,
+      "sidecar_characters": 133
+    },
+    {
+      "physical_page": 15,
+      "method": "native_extraction",
+      "native_extracted_characters": 2357,
+      "sidecar_characters": 2357
+    },
+    {
+      "physical_page": 16,
+      "method": "native_extraction",
+      "native_extracted_characters": 399,
+      "sidecar_characters": 399
+    },
+    {
+      "physical_page": 17,
+      "method": "native_extraction",
+      "native_extracted_characters": 2664,
+      "sidecar_characters": 2664
+    },
+    {
+      "physical_page": 18,
+      "method": "native_extraction",
+      "native_extracted_characters": 2296,
+      "sidecar_characters": 2296
+    },
+    {
+      "physical_page": 19,
+      "method": "native_extraction",
+      "native_extracted_characters": 2556,
+      "sidecar_characters": 2556
+    },
+    {
+      "physical_page": 20,
+      "method": "native_extraction",
+      "native_extracted_characters": 2793,
+      "sidecar_characters": 2793
+    },
+    {
+      "physical_page": 21,
+      "method": "native_extraction",
+      "native_extracted_characters": 2682,
+      "sidecar_characters": 2682
+    },
+    {
+      "physical_page": 22,
+      "method": "native_extraction",
+      "native_extracted_characters": 2370,
+      "sidecar_characters": 2370
+    },
+    {
+      "physical_page": 23,
+      "method": "native_extraction",
+      "native_extracted_characters": 1755,
+      "sidecar_characters": 1755
+    },
+    {
+      "physical_page": 24,
+      "method": "native_extraction",
+      "native_extracted_characters": 2252,
+      "sidecar_characters": 2252
+    },
+    {
+      "physical_page": 25,
+      "method": "native_extraction",
+      "native_extracted_characters": 2622,
+      "sidecar_characters": 2622
+    },
+    {
+      "physical_page": 26,
+      "method": "native_extraction",
+      "native_extracted_characters": 1182,
+      "sidecar_characters": 1182
+    },
+    {
+      "physical_page": 27,
+      "method": "native_extraction",
+      "native_extracted_characters": 2420,
+      "sidecar_characters": 2420
+    },
+    {
+      "physical_page": 28,
+      "method": "native_extraction",
+      "native_extracted_characters": 1374,
+      "sidecar_characters": 1374
+    },
+    {
+      "physical_page": 29,
+      "method": "ocr",
+      "native_extracted_characters": 14,
+      "sidecar_characters": 94,
+      "characters": 14,
+      "mean_vision_confidence": 1,
+      "minimum_vision_confidence": 1,
+      "recognized_lines": 2,
+      "rendered_image": "page-29.png",
+      "short_native_extraction": "24 \nAppendices",
+      "visual_content_type": "section_divider",
+      "blank": false
+    },
+    {
+      "physical_page": 30,
+      "method": "ocr",
+      "native_extracted_characters": 20,
+      "sidecar_characters": 1143,
+      "characters": 1057,
+      "mean_vision_confidence": 0.9779220780768951,
+      "minimum_vision_confidence": 0.30000001192092896,
+      "recognized_lines": 77,
+      "rendered_image": "page-30.png",
+      "short_native_extraction": "25 \nAppendix A: Maps",
+      "visual_content_type": "map_and_table",
+      "blank": false
+    },
+    {
+      "physical_page": 31,
+      "method": "native_extraction",
+      "native_extracted_characters": 2819,
+      "sidecar_characters": 2819
+    },
+    {
+      "physical_page": 32,
+      "method": "native_extraction",
+      "native_extracted_characters": 1052,
+      "sidecar_characters": 1052
+    },
+    {
+      "physical_page": 33,
+      "method": "native_extraction",
+      "native_extracted_characters": 654,
+      "sidecar_characters": 654
+    },
+    {
+      "physical_page": 34,
+      "method": "native_extraction",
+      "native_extracted_characters": 359,
+      "sidecar_characters": 359
+    },
+    {
+      "physical_page": 35,
+      "method": "native_extraction",
+      "native_extracted_characters": 1227,
+      "sidecar_characters": 1227
+    },
+    {
+      "physical_page": 36,
+      "method": "native_extraction",
+      "native_extracted_characters": 1924,
+      "sidecar_characters": 1924
+    },
+    {
+      "physical_page": 37,
+      "method": "native_extraction",
+      "native_extracted_characters": 918,
+      "sidecar_characters": 918
+    },
+    {
+      "physical_page": 38,
+      "method": "native_extraction",
+      "native_extracted_characters": 941,
+      "sidecar_characters": 941
+    },
+    {
+      "physical_page": 39,
+      "method": "native_extraction",
+      "native_extracted_characters": 913,
+      "sidecar_characters": 913
+    },
+    {
+      "physical_page": 40,
+      "method": "native_extraction",
+      "native_extracted_characters": 910,
+      "sidecar_characters": 910
+    },
+    {
+      "physical_page": 41,
+      "method": "native_extraction",
+      "native_extracted_characters": 738,
+      "sidecar_characters": 738
+    },
+    {
+      "physical_page": 42,
+      "method": "native_extraction",
+      "native_extracted_characters": 1034,
+      "sidecar_characters": 1034
+    },
+    {
+      "physical_page": 43,
+      "method": "native_extraction",
+      "native_extracted_characters": 719,
+      "sidecar_characters": 719
+    },
+    {
+      "physical_page": 44,
+      "method": "native_extraction",
+      "native_extracted_characters": 528,
+      "sidecar_characters": 528
+    },
+    {
+      "physical_page": 45,
+      "method": "native_extraction",
+      "native_extracted_characters": 321,
+      "sidecar_characters": 321
+    },
+    {
+      "physical_page": 46,
+      "method": "native_extraction",
+      "native_extracted_characters": 1556,
+      "sidecar_characters": 1556
+    },
+    {
+      "physical_page": 47,
+      "method": "native_extraction",
+      "native_extracted_characters": 1551,
+      "sidecar_characters": 1551
+    },
+    {
+      "physical_page": 48,
+      "method": "native_extraction",
+      "native_extracted_characters": 506,
+      "sidecar_characters": 506
+    }
+  ],
+  "method": {
+    "native_extractor": "pypdf PdfReader.extract_text",
+    "ocr_trigger": "native stripped text length <=30",
+    "renderer": "Poppler pdftoppm 26.05.0",
+    "dpi": 180,
+    "format": "PNG",
+    "ocr": "Apple Vision VNRecognizeTextRequest accurate en-US, language correction enabled",
+    "os": "macOS 26.6.2 build 25G83",
+    "manual_text_corrections": false,
+    "pdf_modified": false,
+    "helper": "scripts/ocr_pdf_applevision.swift",
+    "pipeline": "scripts/add_gap_ocr_sidecars.py"
+  },
+  "visual_review": {
+    "thumbnail_reviewed_gap_pages": [
+      29,
+      30
+    ],
+    "detailed_spot_checked_pages": [
+      29
+    ],
+    "all_text_proofread": false,
+    "pending": false,
+    "note": "All gap renders checked for page/content type; detailed spot checks are not numeric/table transcription validation"
+  },
+  "limitations": [
+    "Search aid, not an authoritative transcription or table import",
+    "Native extraction can have ordering/table errors even on pages over the threshold",
+    "OCR may misread letters, numbers, formulas, symbols, charts and handwriting",
+    "An OCR confidence of 1 is not calibrated accuracy",
+    "All physical pages have markers; this does not establish recognition of every visible mark",
+    "Site-map labels, graph axes and table cells can remain incompletely recognized despite nonempty OCR; exact values require original-page review"
+  ],
+  "sidecar_utf8_bytes": 83190,
+  "blank_physical_pages_identified": [],
+  "skipped_ocr_pages": []
+}

@@ -1,0 +1,112 @@
+{
+  "schema_version": "1.0",
+  "created_at_utc": "2026-10-22T23:16:24.281070+00:00",
+  "purpose": "Corpus search; no numeric data import or health/legal reinterpretation",
+  "original_file": "sources/industries/manufacturing/atsdr-american-packaging-2009.pdf",
+  "original_sha256_before": "05d49c1b6cea60de70516f5de364afeeb6399e9c0138f4396aaa7320955f8c27",
+  "original_sha256_after": "05d49c1b6cea60de70516f5de364afeeb6399e9c0138f4396aaa7320955f8c27",
+  "original_unchanged": true,
+  "sidecar": "sources/industries/manufacturing/atsdr-american-packaging-2009.ocr.txt",
+  "sidecar_sha256": "dad1786e734dfd7319994e8592272dacc3efdbc64e8431985dae321d0ed8c468",
+  "pdf_pages": 9,
+  "native_text_pages_over_30_chars": 8,
+  "ocr_attempted_physical_pages": [
+    9
+  ],
+  "coverage": [
+    {
+      "physical_page": 1,
+      "method": "native_extraction",
+      "native_extracted_characters": 386,
+      "sidecar_characters": 386
+    },
+    {
+      "physical_page": 2,
+      "method": "native_extraction",
+      "native_extracted_characters": 1263,
+      "sidecar_characters": 1263
+    },
+    {
+      "physical_page": 3,
+      "method": "native_extraction",
+      "native_extracted_characters": 281,
+      "sidecar_characters": 281
+    },
+    {
+      "physical_page": 4,
+      "method": "native_extraction",
+      "native_extracted_characters": 2537,
+      "sidecar_characters": 2537
+    },
+    {
+      "physical_page": 5,
+      "method": "native_extraction",
+      "native_extracted_characters": 2043,
+      "sidecar_characters": 2043
+    },
+    {
+      "physical_page": 6,
+      "method": "native_extraction",
+      "native_extracted_characters": 1832,
+      "sidecar_characters": 1832
+    },
+    {
+      "physical_page": 7,
+      "method": "native_extraction",
+      "native_extracted_characters": 1925,
+      "sidecar_characters": 1925
+    },
+    {
+      "physical_page": 8,
+      "method": "native_extraction",
+      "native_extracted_characters": 1875,
+      "sidecar_characters": 1875
+    },
+    {
+      "physical_page": 9,
+      "method": "ocr",
+      "native_extracted_characters": 0,
+      "sidecar_characters": 845,
+      "characters": 846,
+      "mean_vision_confidence": 1,
+      "minimum_vision_confidence": 1,
+      "recognized_lines": 15,
+      "rendered_image": "page-9.png",
+      "visual_content_type": "certification_and_signatures",
+      "blank": false
+    }
+  ],
+  "method": {
+    "native_extractor": "pypdf PdfReader.extract_text",
+    "ocr_trigger": "native stripped text length <=30",
+    "renderer": "Poppler pdftoppm 26.05.0",
+    "dpi": 180,
+    "format": "PNG",
+    "ocr": "Apple Vision VNRecognizeTextRequest accurate en-US, language correction enabled",
+    "os": "macOS 26.6.2 build 25G83",
+    "manual_text_corrections": false,
+    "pdf_modified": false,
+    "helper": "scripts/ocr_pdf_applevision.swift",
+    "pipeline": "scripts/add_gap_ocr_sidecars.py"
+  },
+  "visual_review": {
+    "thumbnail_reviewed_gap_pages": [
+      9
+    ],
+    "detailed_spot_checked_pages": [],
+    "all_text_proofread": false,
+    "pending": false,
+    "note": "All gap renders checked for page/content type; detailed spot checks are not numeric/table transcription validation"
+  },
+  "limitations": [
+    "Search aid, not an authoritative transcription or table import",
+    "Native extraction can have ordering/table errors even on pages over the threshold",
+    "OCR may misread letters, numbers, formulas, symbols, charts and handwriting",
+    "An OCR confidence of 1 is not calibrated accuracy",
+    "All physical pages have markers; this does not establish recognition of every visible mark",
+    "Site-map labels, graph axes and table cells can remain incompletely recognized despite nonempty OCR; exact values require original-page review"
+  ],
+  "sidecar_utf8_bytes": 14471,
+  "blank_physical_pages_identified": [],
+  "skipped_ocr_pages": []
+}

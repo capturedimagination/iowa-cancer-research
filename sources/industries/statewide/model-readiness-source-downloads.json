@@ -1,0 +1,16 @@
+[
+  {
+    "file": "tri-chemical-list-changes-2026-10-13.pdf",
+    "source_url": "https://www.epa.gov/system/files/documents/2026-10/tri-chemical-list-changes-10-13-2026.pdf",
+    "bytes": 329016,
+    "sha256": "144ecd73f93e7f9c43346f37d301f73bd5a9c758ba636e0f1a64d485c05cc5a4",
+    "retrieved": "2026-10-22"
+  },
+  {
+    "file": "tri-factors-to-consider-2025.pdf",
+    "source_url": "https://www.epa.gov/system/files/documents/2025-09/factors-to-consider_fall-2025.pdf",
+    "bytes": 3222367,
+    "sha256": "01113691ac85f62a57ce61a8637dc1e6a28db6b1443d7586dca75fcbc851d982",
+    "retrieved": "2026-10-22"
+  }
+]

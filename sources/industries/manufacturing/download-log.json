@@ -1,0 +1,70 @@
+[
+  {
+    "file": "sources/industries/manufacturing/niosh-john-deere-dubuque-1988.pdf",
+    "url": "https://www.cdc.gov/niosh/hhe/reports/pdfs/85-510-1937.pdf",
+    "valid_pdf": true,
+    "bytes": 3751498,
+    "access_date": "2026-10-22"
+  },
+  {
+    "file": "sources/industries/manufacturing/niosh-sheller-globe-keokuk-1982.pdf",
+    "url": "https://stacks.cdc.gov/view/cdc/173078/cdc_173078_DS1.pdf",
+    "valid_pdf": true,
+    "bytes": 2869055,
+    "access_date": "2026-10-22"
+  },
+  {
+    "file": "sources/industries/manufacturing/niosh-keokuk-steel-castings-1982.pdf",
+    "url": "https://www.cdc.gov/niosh/hhe/reports/pdfs/80-81-1173.pdf",
+    "valid_pdf": true,
+    "bytes": 1531682,
+    "access_date": "2026-10-22"
+  },
+  {
+    "file": "sources/industries/manufacturing/niosh-winnebago-wood-dust-2001.pdf",
+    "url": "https://www.cdc.gov/niosh/hhe/reports/pdfs/2000-0250-2837.pdf",
+    "valid_pdf": true,
+    "bytes": 350691,
+    "access_date": "2026-10-22"
+  },
+  {
+    "file": "sources/industries/manufacturing/atsdr-alcoa-vapor-2005.pdf",
+    "url": "https://www.atsdr.cdc.gov/HAC/pha/Sub-SlabGasandAirSamplingData08/SubSlabGasAirSamplingAlcoaHCFinal052005.pdf",
+    "valid_pdf": true,
+    "bytes": 254310,
+    "access_date": "2026-10-22"
+  },
+  {
+    "file": "sources/industries/manufacturing/atsdr-american-packaging-2009.pdf",
+    "url": "https://www.atsdr.cdc.gov/HAC/pha/AmericanPackagingCorp9-30/AirEmissionsfromAmericanPackagingCorp9-30-2009.pdf",
+    "valid_pdf": true,
+    "bytes": 232876,
+    "access_date": "2026-10-22"
+  },
+  {
+    "file": "sources/industries/manufacturing/atsdr-allied-equipment-2011.pdf",
+    "url": "https://www.atsdr.cdc.gov/HAC/pha/AlliedEquipmentInc/AlliedEquipmentLHC03142011.pdf",
+    "valid_pdf": true,
+    "bytes": 279619,
+    "access_date": "2026-10-22"
+  },
+  {
+    "file": "sources/industries/manufacturing/atsdr-midamerica-tanning-2005.pdf",
+    "url": "https://www.atsdr.cdc.gov/HAC/pha/MidAmericaTan021705-IA/MidAmericaTan021705-IA.pdf",
+    "valid_pdf": true,
+    "bytes": 566124,
+    "access_date": "2026-10-22"
+  },
+  {
+    "file": "sources/industries/manufacturing/epa-airtoxscreen-eto-controls-update-2022.pdf",
+    "url": "https://www.epa.gov/system/files/documents/2022-03/2017airtoxscreen-emissions-updates.pdf",
+    "valid_pdf": true,
+    "bytes": 189949,
+    "access_date": "2026-10-22"
+  },
+  {
+    "url": "https://workforce.iowa.gov/media/1189/download?inline=",
+    "error": "HTTP Error 403: Forbidden",
+    "access_date": "2026-10-22"
+  }
+]

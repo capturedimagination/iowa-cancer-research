@@ -1,0 +1,95 @@
+Incidence Rate Report by State
+
+"Non-Hodgkin Lymphoma (All Stages^), 2019-2023"
+
+"All Races (includes Hispanic), Both Sexes, All Ages"
+
+Sorted by Rate
+
+State,FIPS,"Age-Adjusted Incidence Rate([rate note]) - cases per 100,000","Lower 95% Confidence Interval","Upper 95% Confidence Interval","CI*Rank([rank note])","Lower CI (CI*Rank)","Upper CI (CI*Rank)",Average Annual Count,Recent Trend,"Recent 5-Year Trend ([trend note]) in Incidence Rates","Lower 95% Confidence Interval","Upper 95% Confidence Interval"
+"US (SEER+NPCR)(1)",00000,18.5 ,18.4, 18.5,N/A , N/A , N/A,75145,falling,-2.2 ,-2.5, -1.6
+"Minnesota(2)",27000,22.6 ,22.1, 23.1,1 , 1 , 2,1589,stable,0.2 ,-0.2, 0.6
+"Florida(2)",12000,21.5 ,21.3, 21.8,2 , 2 , 4,6742,falling,-2.2 ,-3.2, -1.5
+"Iowa(7)",19000,21.4 ,20.8, 22.1,3 , 1 , 7,869,stable,-0.5 ,-1.2, 0.0
+"Connecticut(7)",09000,21 ,20.4, 21.6,4 , 2 , 9,989,stable,-0.3 ,-1.8, 0.0
+"Wisconsin(2)",55000,20.8 ,20.4, 21.3,5 , 2 , 9,1584,stable,-0.1 ,-1.8, 0.2
+"New Jersey(7)",34000,20.7 ,20.3, 21.1,6 , 3 , 9,2391,falling,-1.1 ,-2.4, -0.2
+"New Hampshire(2)",33000,20.3 ,19.4, 21.3,7 , 2 , 16,391,stable,-0.3 ,-0.8, 0.3
+"New York(7)",36000,20.3 ,20.1, 20.6,8 , 5 , 10,5078,falling,-0.7 ,-0.9, -0.5
+"Vermont(2)",50000,19.5 ,18.2, 20.9,9 , 2 , 34,183,falling,-2.0 ,-8.3, -0.4
+"Kentucky(7)",21000,19.4 ,18.9, 20,10 , 8 , 22,1085,falling,-0.7 ,-2.2, -0.3
+"South Dakota(2)",46000,19.4 ,18.2, 20.6,11 , 4 , 34,216,stable,-0.1 ,-0.6, 0.5
+"Kansas(2)",20000,19.2 ,18.5, 19.9,12 , 8 , 29,674,stable,-0.5 ,-0.9, 0.0
+"Massachusetts(2)",25000,19.2 ,18.8, 19.6,13 , 9 , 24,1710,falling,-2.9 ,-4.7, -0.6
+"Maine(2)",23000,19.1 ,18.2, 20,14 , 7 , 33,391,falling,-2.4 ,-6.6, -0.5
+"West Virginia(2)",54000,19 ,18.3, 19.8,15 , 8 , 31,483,stable,-0.2 ,-0.7, 0.2
+"Missouri(2)",29000,18.9 ,18.4, 19.3,16 , 9 , 29,1477,falling,-2.4 ,-4.4, -0.4
+"Ohio(2)",39000,18.8 ,18.5, 19.1,17 , 11 , 28,2817,falling,-2.5 ,-5.1, -0.4
+"Washington(1)",53000,18.7 ,18.3, 19.1,18 , 10 , 30,1714,falling,-1.0 ,-1.2, -0.8
+"Utah(7)",49000,18.7 ,18, 19.4,19 , 9 , 34,565,stable,-0.4 ,-1.5, 0.0
+"Louisiana(7)",22000,18.7 ,18.2, 19.2,20 , 10 , 32,1020,falling,-0.8 ,-2.8, -0.3
+"Illinois(7)",17000,18.7 ,18.4, 19,21 , 12 , 29,2890,falling,-2.8 ,-4.5, -0.9
+"Idaho(7)",16000,18.6 ,17.8, 19.4,22 , 9 , 36,418,falling,-3.7 ,-6.7, -0.2
+"Pennsylvania(2)",42000,18.6 ,18.3, 18.9,23 , 14 , 30,3249,falling,-2.5 ,-3.5, -1.9
+"Michigan(2)",26000,18.5 ,18.1, 18.8,24 , 14 , 32,2396,falling,-0.8 ,-1.1, -0.4
+"North Dakota(2)",38000,18.4 ,17.1, 19.7,25 , 8 , 41,168,stable,-0.6 ,-1.4, 0.2
+"Indiana(2)",18000,18.4 ,18, 18.8,26 , 14 , 33,1500,falling,-2.3 ,-5.1, -0.7
+"California(7)",06000,18.3 ,18.1, 18.5,27 , 20 , 32,8231,falling,-0.2 ,-0.3, -0.1
+"Rhode Island(2)",44000,18.2 ,17.2, 19.3,28 , 9 , 40,265,falling,-7.2 ,-11.5, -1.5
+"Nebraska(2)",31000,18.2 ,17.4, 19.1,29 , 10 , 39,423,falling,-4.1 ,-6.3, -1.2
+"Alaska(2)",02900,18.2 ,16.8, 19.7,30 , 7 , 43,134,stable,-0.9 ,-1.8, 0.0
+"North Carolina(2)",37000,17.9 ,17.6, 18.3,31 , 24 , 36,2313,stable,-0.3 ,-0.8, 0.2
+"Oklahoma(2)",40000,17.9 ,17.3, 18.4,32 , 19 , 39,841,falling,-0.7 ,-1.1, -0.3
+"Arkansas(2)",05000,17.8 ,17.2, 18.5,33 , 18 , 40,676,falling,-2.9 ,-5.3, -0.3
+"Delaware(2)",10000,17.7 ,16.7, 18.8,34 , 12 , 42,244,falling,-2.4 ,-6.7, -1.0
+"Texas(7)",48000,17.6 ,17.4, 17.8,35 , 30 , 38,5346,falling,-1.9 ,-2.5, -1.2
+"Maryland(2)",24000,17.5 ,17, 17.9,36 , 28 , 40,1302,stable,-0.1 ,-0.5, 0.4
+"Oregon(2)",41000,17.3 ,16.8, 17.8,37 , 29 , 41,952,falling,-3.7 ,-6.8, -0.9
+"Montana(2)",30000,17.2 ,16.2, 18.2,38 , 21 , 44,254,falling,-1.9 ,-7.6, -0.7
+"Georgia(7)",13000,17.1 ,16.8, 17.5,39 , 33 , 41,2054,stable,-1.3 ,-3.0, 0.1
+"Tennessee(2)",47000,17 ,16.6, 17.4,40 , 33 , 41,1446,falling,-1.0 ,-1.5, -0.7
+"Colorado(2)",08000,16.2 ,15.8, 16.7,41 , 39 , 45,1064,falling,-1.0 ,-1.3, -0.7
+"Virginia(2)",51000,16 ,15.7, 16.4,42 , 40 , 45,1668,falling,-2.8 ,-4.0, -1.4
+"District of Columbia(2)",11001,15.9 ,14.5, 17.3,43 , 31 , 51,109,falling,-1.1 ,-1.8, -0.3
+"Mississippi(2)",28000,15.8 ,15.2, 16.4,44 , 40 , 47,564,falling,-3.7 ,-6.6, -0.8
+"South Carolina(2)",45000,15.6 ,15.1, 16,45 , 41 , 47,1043,falling,-2.1 ,-5.1, -0.7
+"Arizona(2)",04000,14.9 ,14.5, 15.2,46 , 44 , 50,1397,falling,-3.8 ,-6.2, -1.0
+"Wyoming(2)",56000,14.8 ,13.5, 16.1,47 , 40 , 51,107,falling,-6.4 ,-10.6, -1.6
+"Hawaii(7)",15000,14.7 ,14, 15.5,48 , 43 , 51,293,falling,-1.8 ,-4.7, -0.8
+"Alabama(2)",01000,14.5 ,14.1, 15,49 , 45 , 51,910,falling,-0.8 ,-1.3, -0.3
+"Nevada(2)",32000,14.4 ,13.9, 15,50 , 45 , 51,543,falling,-1.8 ,-2.2, -1.4
+"New Mexico(7)",35000,13.8 ,13.2, 14.5,51 , 47 , 51,380,falling,-1.3 ,-2.7, -0.6
+"Puerto Rico(2)",72001,13.2 ,12.7, 13.7,N/A , N/A , N/A,623,stable,-0.8 ,-2.9, 0.3
+
+
+Notes:
+
+Created by statecancerprofiles.cancer.gov on 10/22/2026 6:40 pm.
+
+"State Cancer Registries [ https://www.cdc.gov/national-program-cancer-registries/contact/index.html ] may provide more current or more local data."
+
+"
+
+Trend
+   Rising when 95% confidence interval of average annual percent change is above 0.
+   Stable when 95% confidence interval of average annual percent change includes 0.
+   Falling when 95% confidence interval of average annual percent change is below 0.
+"
+
+"[rate note] Incidence rates (cases per 100,000 population per year) are age-adjusted to the 2000 US standard population [ http://www.seer.cancer.gov/stdpopulations/ ] (SEER areas use 20 age groups and NPCR areas use 19 age groups). Rates are for invasive cancer only (except for bladder cancer which is invasive and in situ) or unless otherwise specified. Rates calculated using SEER*Stat [ https://seer.cancer.gov/seerstat/ ]. Population counts for denominators are based on Census populations as modified [https://seer.cancer.gov/popdata/] by NCI. The US Population Data File [https://seer.cancer.gov/popdata/] is used for SEER and NPCR incidence rates."
+
+"[recent trend note] Incidence data come from different sources. The Average Annual Percent Change (AAPC) is based on the APCs calculated by Joinpoint [ https://surveillance.cancer.gov/joinpoint/ ]. Due to data availability issues, the time period used in the calculation of the joinpoint regression model may differ [ https://statecancerprofiles.cancer.gov/historicaltrend/differences.html ] for selected counties."
+
+"Rates and trends are computed using different standards for malignancy. For more information see malignant.html."
+
+"[stage note] All Stages refers to any stage. Due to changes in stage coding, Combined Summary Stage with Expanded Regional Codes (2004+) is used for data from Surveillance, Epidemiology, and End Results (SEER) databases and Merged Summary Stage is used for data from National Program of Cancer Registries [ https://www.cdc.gov/cancer/npcr/index.htm ] databases. Due to the increased complexity with staging, other staging variables maybe used if necessary."
+
+"[rank note] Results presented with the CI*Rank statistics help show the usefulness of ranks. For example, ranks for relatively rare diseases or less populated areas may be essentially meaningless because of their large variability, but ranks for more common diseases in densely populated regions can be very useful. The rates used in CI*Rank are all age-adjusted to the 2000 US standard population using 19 age groups for SEER and NPCR areas. More information about methodology can be found on the CI*Rank website [ https://surveillance.cancer.gov/cirank/ ]."
+
+"(1) Source: National Program of Cancer Registries [ https://www.cdc.gov/cancer/npcr/index.htm ] and Surveillance, Epidemiology, and End Results [ http://seer.cancer.gov ] SEER*Stat Database - United States Department of Health and Human Services, Centers for Disease Control and Prevention and National Cancer Institute. Based on the 2025 submission."
+
+"(2) Source: National Program of Cancer Registries SEER*Stat Database - United States Department of Health and Human Services, Centers for Disease Control and Prevention (based on the 2025 submission).  [ https://www.cdc.gov/cancer/npcr/index.htm ]"
+
+"(7) Source: SEER [ http://seer.cancer.gov ] November 2025 submission."
+
+"Data for United States does not include Puerto Rico."

@@ -1,0 +1,100 @@
+{
+  "schema_version": "1.0",
+  "created_at_utc": "2026-10-22T23:16:22.984630+00:00",
+  "purpose": "Corpus search; no numeric data import or health/legal reinterpretation",
+  "original_file": "sources/industries/energy-legacy/mason-city-coal-gas-atsdr-2008.pdf",
+  "original_sha256_before": "6dbf1c2a79c68317802ef2a833a5f73c2a07e16688874eaa56dd0798c4d621b0",
+  "original_sha256_after": "6dbf1c2a79c68317802ef2a833a5f73c2a07e16688874eaa56dd0798c4d621b0",
+  "original_unchanged": true,
+  "sidecar": "sources/industries/energy-legacy/mason-city-coal-gas-atsdr-2008.ocr.txt",
+  "sidecar_sha256": "dfee4e3080dd026ff94b6304006567d62383d28622e7458879259faad731a000",
+  "pdf_pages": 7,
+  "native_text_pages_over_30_chars": 6,
+  "ocr_attempted_physical_pages": [
+    7
+  ],
+  "coverage": [
+    {
+      "physical_page": 1,
+      "method": "native_extraction",
+      "native_extracted_characters": 331,
+      "sidecar_characters": 331
+    },
+    {
+      "physical_page": 2,
+      "method": "native_extraction",
+      "native_extracted_characters": 1195,
+      "sidecar_characters": 1195
+    },
+    {
+      "physical_page": 3,
+      "method": "native_extraction",
+      "native_extracted_characters": 315,
+      "sidecar_characters": 315
+    },
+    {
+      "physical_page": 4,
+      "method": "native_extraction",
+      "native_extracted_characters": 2322,
+      "sidecar_characters": 2322
+    },
+    {
+      "physical_page": 5,
+      "method": "native_extraction",
+      "native_extracted_characters": 3490,
+      "sidecar_characters": 3490
+    },
+    {
+      "physical_page": 6,
+      "method": "native_extraction",
+      "native_extracted_characters": 1758,
+      "sidecar_characters": 1758
+    },
+    {
+      "physical_page": 7,
+      "method": "ocr",
+      "native_extracted_characters": 0,
+      "sidecar_characters": 703,
+      "characters": 704,
+      "mean_vision_confidence": 0.9642857142857143,
+      "minimum_vision_confidence": 0.5,
+      "recognized_lines": 14,
+      "rendered_image": "page-7.png",
+      "visual_content_type": "certification_and_signatures",
+      "blank": false
+    }
+  ],
+  "method": {
+    "native_extractor": "pypdf PdfReader.extract_text",
+    "ocr_trigger": "native stripped text length <=30",
+    "renderer": "Poppler pdftoppm 26.05.0",
+    "dpi": 180,
+    "format": "PNG",
+    "ocr": "Apple Vision VNRecognizeTextRequest accurate en-US, language correction enabled",
+    "os": "macOS 26.6.2 build 25G83",
+    "manual_text_corrections": false,
+    "pdf_modified": false,
+    "helper": "scripts/ocr_pdf_applevision.swift",
+    "pipeline": "scripts/add_gap_ocr_sidecars.py"
+  },
+  "visual_review": {
+    "thumbnail_reviewed_gap_pages": [
+      7
+    ],
+    "detailed_spot_checked_pages": [],
+    "all_text_proofread": false,
+    "pending": false,
+    "note": "All gap renders checked for page/content type; detailed spot checks are not numeric/table transcription validation"
+  },
+  "limitations": [
+    "Search aid, not an authoritative transcription or table import",
+    "Native extraction can have ordering/table errors even on pages over the threshold",
+    "OCR may misread letters, numbers, formulas, symbols, charts and handwriting",
+    "An OCR confidence of 1 is not calibrated accuracy",
+    "All physical pages have markers; this does not establish recognition of every visible mark",
+    "Site-map labels, graph axes and table cells can remain incompletely recognized despite nonempty OCR; exact values require original-page review"
+  ],
+  "sidecar_utf8_bytes": 10930,
+  "blank_physical_pages_identified": [],
+  "skipped_ocr_pages": []
+}

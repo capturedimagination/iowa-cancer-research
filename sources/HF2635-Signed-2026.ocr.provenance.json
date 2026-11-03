@@ -1,0 +1,267 @@
+{
+  "schema_version": "1.0",
+  "created_at_utc": "2026-10-22T23:14:11.822448+00:00",
+  "purpose": "Corpus retrieval/search only; no legal reanalysis",
+  "original_file": "sources/HF2635-Signed-2026.pdf",
+  "original_sha256_before": "627f753362a69bc79b195185ee85aa8e491e60b0bf02ff51da00b77bf611dfc4",
+  "original_sha256_after": "627f753362a69bc79b195185ee85aa8e491e60b0bf02ff51da00b77bf611dfc4",
+  "original_unchanged": true,
+  "native_text_pages": 0,
+  "pdf_pages": 22,
+  "ocr_file": "sources/HF2635-Signed-2026.ocr.txt",
+  "ocr_sha256": "c11d2212ce0c1b3048b6d7168a7933cd90388ac07cfac4f9a4309230edaaefbf",
+  "ocr_utf8_bytes": 41490,
+  "ocr_text_characters_including_page_markers": 41470,
+  "method": {
+    "renderer": "Poppler pdftoppm 26.05.0",
+    "render_dpi": 180,
+    "render_format": "PNG",
+    "engine": "Apple Vision VNRecognizeTextRequest",
+    "macos_version": "26.6.2",
+    "macos_build": "25G83",
+    "recognition_level": "accurate",
+    "languages": [
+      "en-US"
+    ],
+    "language_correction": true,
+    "reading_order": "recognized lines sorted top-to-bottom, near-equal vertical centers left-to-right",
+    "manual_text_corrections": false,
+    "pdf_modified_or_text_layer_added": false,
+    "helper_script": "scripts/ocr_pdf_applevision.swift",
+    "reproduction": [
+      "Render original with pdftoppm -r 180 -png INPUT.pdf WORK/page",
+      "Compile helper with swiftc scripts/ocr_pdf_applevision.swift -o WORK/ocr",
+      "Run WORK/ocr WORK WORK after all page PNGs are complete",
+      "Concatenate page-NN.txt in physical-page order with explicit page markers"
+    ]
+  },
+  "coverage": {
+    "pages_attempted": 22,
+    "pages_with_nonempty_ocr": 22,
+    "empty_pages": [],
+    "failed_pages": [],
+    "physical_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22
+    ],
+    "per_page": [
+      {
+        "characters": 609,
+        "mean_vision_confidence": 0.9772727272727273,
+        "minimum_vision_confidence": 0.5,
+        "physical_page": 1,
+        "recognized_lines": 22,
+        "rendered_image": "page-01.png"
+      },
+      {
+        "characters": 920,
+        "mean_vision_confidence": 1,
+        "minimum_vision_confidence": 1,
+        "physical_page": 2,
+        "recognized_lines": 26,
+        "rendered_image": "page-02.png"
+      },
+      {
+        "characters": 2005,
+        "mean_vision_confidence": 1,
+        "minimum_vision_confidence": 1,
+        "physical_page": 3,
+        "recognized_lines": 41,
+        "rendered_image": "page-03.png"
+      },
+      {
+        "characters": 2050,
+        "mean_vision_confidence": 1,
+        "minimum_vision_confidence": 1,
+        "physical_page": 4,
+        "recognized_lines": 41,
+        "rendered_image": "page-04.png"
+      },
+      {
+        "characters": 1824,
+        "mean_vision_confidence": 1,
+        "minimum_vision_confidence": 1,
+        "physical_page": 5,
+        "recognized_lines": 41,
+        "rendered_image": "page-05.png"
+      },
+      {
+        "characters": 1767,
+        "mean_vision_confidence": 1,
+        "minimum_vision_confidence": 1,
+        "physical_page": 6,
+        "recognized_lines": 41,
+        "rendered_image": "page-06.png"
+      },
+      {
+        "characters": 1949,
+        "mean_vision_confidence": 1,
+        "minimum_vision_confidence": 1,
+        "physical_page": 7,
+        "recognized_lines": 41,
+        "rendered_image": "page-07.png"
+      },
+      {
+        "characters": 2181,
+        "mean_vision_confidence": 1,
+        "minimum_vision_confidence": 1,
+        "physical_page": 8,
+        "recognized_lines": 40,
+        "rendered_image": "page-08.png"
+      },
+      {
+        "characters": 2112,
+        "mean_vision_confidence": 1,
+        "minimum_vision_confidence": 1,
+        "physical_page": 9,
+        "recognized_lines": 40,
+        "rendered_image": "page-09.png"
+      },
+      {
+        "characters": 1868,
+        "mean_vision_confidence": 1,
+        "minimum_vision_confidence": 1,
+        "physical_page": 10,
+        "recognized_lines": 40,
+        "rendered_image": "page-10.png"
+      },
+      {
+        "characters": 2128,
+        "mean_vision_confidence": 1,
+        "minimum_vision_confidence": 1,
+        "physical_page": 11,
+        "recognized_lines": 41,
+        "rendered_image": "page-11.png"
+      },
+      {
+        "characters": 1966,
+        "mean_vision_confidence": 1,
+        "minimum_vision_confidence": 1,
+        "physical_page": 12,
+        "recognized_lines": 42,
+        "rendered_image": "page-12.png"
+      },
+      {
+        "characters": 1907,
+        "mean_vision_confidence": 1,
+        "minimum_vision_confidence": 1,
+        "physical_page": 13,
+        "recognized_lines": 41,
+        "rendered_image": "page-13.png"
+      },
+      {
+        "characters": 2014,
+        "mean_vision_confidence": 1,
+        "minimum_vision_confidence": 1,
+        "physical_page": 14,
+        "recognized_lines": 40,
+        "rendered_image": "page-14.png"
+      },
+      {
+        "characters": 2075,
+        "mean_vision_confidence": 1,
+        "minimum_vision_confidence": 1,
+        "physical_page": 15,
+        "recognized_lines": 40,
+        "rendered_image": "page-15.png"
+      },
+      {
+        "characters": 2011,
+        "mean_vision_confidence": 1,
+        "minimum_vision_confidence": 1,
+        "physical_page": 16,
+        "recognized_lines": 40,
+        "rendered_image": "page-16.png"
+      },
+      {
+        "characters": 2042,
+        "mean_vision_confidence": 1,
+        "minimum_vision_confidence": 1,
+        "physical_page": 17,
+        "recognized_lines": 40,
+        "rendered_image": "page-17.png"
+      },
+      {
+        "characters": 2241,
+        "mean_vision_confidence": 1,
+        "minimum_vision_confidence": 1,
+        "physical_page": 18,
+        "recognized_lines": 40,
+        "rendered_image": "page-18.png"
+      },
+      {
+        "characters": 2090,
+        "mean_vision_confidence": 1,
+        "minimum_vision_confidence": 1,
+        "physical_page": 19,
+        "recognized_lines": 40,
+        "rendered_image": "page-19.png"
+      },
+      {
+        "characters": 2047,
+        "mean_vision_confidence": 1,
+        "minimum_vision_confidence": 1,
+        "physical_page": 20,
+        "recognized_lines": 41,
+        "rendered_image": "page-20.png"
+      },
+      {
+        "characters": 1902,
+        "mean_vision_confidence": 0.9878048780487805,
+        "minimum_vision_confidence": 0.5,
+        "physical_page": 21,
+        "recognized_lines": 41,
+        "rendered_image": "page-21.png"
+      },
+      {
+        "characters": 429,
+        "mean_vision_confidence": 0.9545454545454546,
+        "minimum_vision_confidence": 0.5,
+        "physical_page": 22,
+        "recognized_lines": 22,
+        "rendered_image": "page-22.png"
+      }
+    ]
+  },
+  "quality_checks": {
+    "visual_spot_checked_physical_pages": [
+      1,
+      10,
+      22
+    ],
+    "all_pages_proofread": false,
+    "known_spot_check_errors": [
+      "Section sign recognized as dollar sign on physical page 10",
+      "Lowercase subsection f recognized as uppercase E on physical page 10",
+      "Handwritten signatures/date and overlapping printed names misrecognized or omitted on physical pages 1 and 22"
+    ],
+    "confidence_interpretation": "Apple Vision line confidence is engine output, not calibrated transcription accuracy; even confidence 1 can contain errors"
+  },
+  "limitations": [
+    "Automatic OCR may substitute letters, numerals, punctuation and section/subsection labels",
+    "Legal underlining, italics, strikeouts, layout and signatures are not faithfully represented in plain text",
+    "All-page OCR coverage does not mean every printed mark was recognized",
+    "Exact quotations, deadlines, cross-references and legal interpretation require the original page or an authoritative text edition",
+    "Other partial/image-only PDFs in the corpus are not resolved by this sidecar"
+  ]
+}

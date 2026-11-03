@@ -1,0 +1,3768 @@
+{
+  "publication_date": "2026-11-03",
+  "scope": "All original project findings/reports/analyses/code plus redistributable source data; linked-source-only archives remain local",
+  "notes": [
+    "Original source acquisition dates and data periods remain in the original provenance files.",
+    "A path in this inventory does not mean its source body is redistributed; read publication_status.",
+    "Hashes identify the local/public snapshot where present, not a promise that a mutable upstream URL still returns identical bytes.",
+    "The generated search database is excluded and can be rebuilt from the published subset; its hash/search counts differ from the full local archive."
+  ],
+  "counts": {
+    "included": 279,
+    "local_generated": 50,
+    "linked_source_only": 71
+  },
+  "expected_public_files": [
+    ".gitattributes",
+    ".gitignore",
+    "AGENTS.md",
+    "Iowa-Cancer-Research.md",
+    "LICENSES/CC-BY-4.0.txt",
+    "LICENSES/ODbL-1.0.txt",
+    "PUBLICATION.md",
+    "README.md",
+    "THIRD_PARTY_NOTICES.md",
+    "knowledge/INDEX.md",
+    "knowledge/build-manifest.json",
+    "knowledge/pdf-text-extraction-log.json",
+    "output/pdf/Iowa-Cancer-Research-2026-10-22.pdf",
+    "publication/included-files.txt",
+    "publication/sanitization-log.json",
+    "publication/source-manifest.json",
+    "publication/verification.json",
+    "requirements.txt",
+    "research/additional-source-links.csv",
+    "research/cancer-specific-summary.json",
+    "research/cohort-data-access.json",
+    "research/cohort-data-access.md",
+    "research/data-dictionary.md",
+    "research/data-provenance.json",
+    "research/data-source-catalog.json",
+    "research/data-source-catalog.md",
+    "research/environment.md",
+    "research/epidemiology.md",
+    "research/industries-energy-legacy.md",
+    "research/industries-food-agprocessing.md",
+    "research/industries-manufacturing.md",
+    "research/industries-services.md",
+    "research/industries-statewide-data.md",
+    "research/industries/airtoxscreen-2020-iowa-county-poll.csv",
+    "research/industries/airtoxscreen-2020-iowa-county-srcgrp.csv",
+    "research/industries/airtoxscreen-2020-iowa-state-poll.csv",
+    "research/industries/airtoxscreen-2020-iowa-state-srcgrp.csv",
+    "research/industries/statewide-industry-data-provenance.json",
+    "research/industries/tri-2024-iowa-carcinogen-flagged-records.csv",
+    "research/industries/tri-2024-iowa-chemicals.csv",
+    "research/industries/tri-2024-iowa-facilities.csv",
+    "research/industries/tri-2024-iowa-sectors.csv",
+    "research/industries/tri-history-manifest.json",
+    "research/industry-energy-legacy-evidence.csv",
+    "research/industry-food-agprocessing-evidence.csv",
+    "research/industry-food-agprocessing-evidence.json",
+    "research/industry-manufacturing-evidence.csv",
+    "research/industry-services-evidence.csv",
+    "research/iowa-99-counties-comparison.csv",
+    "research/iowa-cancer-types-comparison.csv",
+    "research/iowa-county-incidence-2019-2023.csv",
+    "research/iowa-county-mortality-2020-2024.csv",
+    "research/iowa-demographic-comparison.csv",
+    "research/iowa-title-v-2024-provenance.json",
+    "research/iowa-title-v-facilities-emissions-2024.csv",
+    "research/manufacturing-exposure-measurements.csv",
+    "research/manufacturing-input-datasets.csv",
+    "research/model-methods-sources.json",
+    "research/model-readiness-checklist.md",
+    "research/modeling-methods.md",
+    "research/prevention-care.md",
+    "research/quality-checks.json",
+    "research/risk-evidence-matrix.csv",
+    "research/source-index.csv",
+    "research/source-index.json",
+    "research/sources/cancer-specific-incidence-003.csv",
+    "research/sources/cancer-specific-incidence-017.csv",
+    "research/sources/cancer-specific-incidence-018.csv",
+    "research/sources/cancer-specific-incidence-020.csv",
+    "research/sources/cancer-specific-incidence-035.csv",
+    "research/sources/cancer-specific-incidence-040.csv",
+    "research/sources/cancer-specific-incidence-047.csv",
+    "research/sources/cancer-specific-incidence-053.csv",
+    "research/sources/cancer-specific-incidence-055.csv",
+    "research/sources/cancer-specific-incidence-057.csv",
+    "research/sources/cancer-specific-incidence-058.csv",
+    "research/sources/cancer-specific-incidence-061.csv",
+    "research/sources/cancer-specific-incidence-066.csv",
+    "research/sources/cancer-specific-incidence-071.csv",
+    "research/sources/cancer-specific-incidence-072.csv",
+    "research/sources/cancer-specific-incidence-076.csv",
+    "research/sources/cancer-specific-incidence-080.csv",
+    "research/sources/cancer-specific-incidence-086.csv",
+    "research/sources/cancer-specific-incidence-090.csv",
+    "research/sources/cancer-specific-incidence-515.csv",
+    "research/sources/cancer-specific-incidence-516.csv",
+    "research/sources/cancer-specific-mortality-003.csv",
+    "research/sources/cancer-specific-mortality-017.csv",
+    "research/sources/cancer-specific-mortality-018.csv",
+    "research/sources/cancer-specific-mortality-020.csv",
+    "research/sources/cancer-specific-mortality-035.csv",
+    "research/sources/cancer-specific-mortality-040.csv",
+    "research/sources/cancer-specific-mortality-047.csv",
+    "research/sources/cancer-specific-mortality-053.csv",
+    "research/sources/cancer-specific-mortality-055.csv",
+    "research/sources/cancer-specific-mortality-057.csv",
+    "research/sources/cancer-specific-mortality-058.csv",
+    "research/sources/cancer-specific-mortality-061.csv",
+    "research/sources/cancer-specific-mortality-066.csv",
+    "research/sources/cancer-specific-mortality-071.csv",
+    "research/sources/cancer-specific-mortality-072.csv",
+    "research/sources/cancer-specific-mortality-076.csv",
+    "research/sources/cancer-specific-mortality-080.csv",
+    "research/sources/cancer-specific-mortality-086.csv",
+    "research/sources/cancer-specific-mortality-090.csv",
+    "research/sources/cancer-specific-mortality-515.csv",
+    "research/sources/cancer-specific-mortality-516.csv",
+    "research/sources/iowa-county-incidence-nci-original.csv",
+    "research/sources/iowa-county-mortality-nci-original.csv",
+    "research/sources/iowa-incidence-ruralurban1.csv",
+    "research/sources/iowa-incidence-ruralurban2.csv",
+    "research/sources/iowa-mortality-ruralurban1.csv",
+    "research/sources/iowa-mortality-ruralurban2.csv",
+    "research/sources/iowa-subgroup-incidence-race00-sex0-age009.csv",
+    "research/sources/iowa-subgroup-incidence-race00-sex0-age136.csv",
+    "research/sources/iowa-subgroup-incidence-race00-sex1-age001.csv",
+    "research/sources/iowa-subgroup-incidence-race00-sex2-age001.csv",
+    "research/sources/iowa-subgroup-incidence-race05-sex0-age001.csv",
+    "research/sources/iowa-subgroup-incidence-race07-sex0-age001.csv",
+    "research/sources/iowa-subgroup-incidence-race28-sex0-age001.csv",
+    "research/sources/iowa-subgroup-incidence-race38-sex0-age001.csv",
+    "research/sources/iowa-subgroup-incidence-race48-sex0-age001.csv",
+    "research/sources/iowa-subgroup-mortality-race00-sex0-age009.csv",
+    "research/sources/iowa-subgroup-mortality-race00-sex0-age136.csv",
+    "research/sources/iowa-subgroup-mortality-race00-sex1-age001.csv",
+    "research/sources/iowa-subgroup-mortality-race00-sex2-age001.csv",
+    "research/sources/iowa-subgroup-mortality-race05-sex0-age001.csv",
+    "research/sources/iowa-subgroup-mortality-race07-sex0-age001.csv",
+    "research/sources/iowa-subgroup-mortality-race28-sex0-age001.csv",
+    "research/sources/iowa-subgroup-mortality-race38-sex0-age001.csv",
+    "research/sources/iowa-subgroup-mortality-race48-sex0-age001.csv",
+    "research/sources/us-state-incidence-nci-original.csv",
+    "research/sources/us-state-mortality-nci-original.csv",
+    "research/subgroup-summary.json",
+    "research/synthesis-methods.md",
+    "research/treatment-discovery/AGENTS.md",
+    "research/treatment-discovery/README.md",
+    "research/treatment-discovery/audit_clinical_snapshot.py",
+    "research/treatment-discovery/clinical-pilot-analysis-spec.md",
+    "research/treatment-discovery/clinical-pilot-data.md",
+    "research/treatment-discovery/clinical-pilot-field-dictionary.csv",
+    "research/treatment-discovery/clinical-pilot-qc.json",
+    "research/treatment-discovery/clinical-pilot-sources.json",
+    "research/treatment-discovery/data-access-catalog.json",
+    "research/treatment-discovery/data/nsclc_pd1_msk_2018/2026-10-29/LICENSE",
+    "research/treatment-discovery/data/nsclc_pd1_msk_2018/2026-10-29/Readme.txt",
+    "research/treatment-discovery/data/nsclc_pd1_msk_2018/2026-10-29/clinical-sample-commit-history.json",
+    "research/treatment-discovery/data/nsclc_pd1_msk_2018/2026-10-29/data_clinical_patient.txt",
+    "research/treatment-discovery/data/nsclc_pd1_msk_2018/2026-10-29/data_clinical_sample-original-2018-04-23.txt",
+    "research/treatment-discovery/data/nsclc_pd1_msk_2018/2026-10-29/data_clinical_sample.txt",
+    "research/treatment-discovery/data/nsclc_pd1_msk_2018/2026-10-29/download-manifest.json",
+    "research/treatment-discovery/data/nsclc_pd1_msk_2018/2026-10-29/meta_clinical_patient.txt",
+    "research/treatment-discovery/data/nsclc_pd1_msk_2018/2026-10-29/meta_clinical_sample.txt",
+    "research/treatment-discovery/data/nsclc_pd1_msk_2018/2026-10-29/meta_study.txt",
+    "research/treatment-discovery/egfr-mechanism-feasibility.json",
+    "research/treatment-discovery/egfr-mechanism-feasibility.md",
+    "research/treatment-discovery/preclinical-data-sources.json",
+    "research/treatment-discovery/preclinical-data.md",
+    "research/treatment-discovery/preclinical-metadata-audit.json",
+    "research/treatment-discovery/results/nsclc-tmb-dcb-2026-10-29/RESULTS.md",
+    "research/treatment-discovery/results/nsclc-tmb-dcb-2026-10-29/bootstrap_auc.npy",
+    "research/treatment-discovery/results/nsclc-tmb-dcb-2026-10-29/cohort-flow.jsonl",
+    "research/treatment-discovery/results/nsclc-tmb-dcb-2026-10-29/independent-review.md",
+    "research/treatment-discovery/results/nsclc-tmb-dcb-2026-10-29/results.json",
+    "research/treatment-discovery/results/nsclc-tmb-dcb-2026-10-29/run-provenance.json",
+    "research/treatment-discovery/sources.json",
+    "research/treatment-discovery/sources/maynard-2026-10-29/derived-published-AT2-signature.json",
+    "research/treatment-discovery/sources/maynard-2026-10-29/egfr-main-metadata-audit.json",
+    "research/treatment-discovery/sources/maynard-2026-10-29/egfr-main-sample-audit.csv",
+    "research/treatment-discovery/sources/maynard-2026-10-29/manifest.json",
+    "research/treatment-discovery/sources/maynard-2026-10-29/repository-tree.json",
+    "research/treatment-discovery/sources/preclinical/2026-10-29/archive-manifest.json",
+    "research/treatment-discovery/sources/preclinical/2026-10-29/figshare-25917643-v1.json",
+    "research/treatment-discovery/sources/preclinical/2026-10-29/figshare-25917643-v1/README.txt",
+    "research/treatment-discovery/sources/preclinical/2026-10-29/figshare-25917643-v1/Repurposing_Public_24Q2_Cell_Line_Meta_Data.csv",
+    "research/treatment-discovery/sources/preclinical/2026-10-29/figshare-25917643-v1/Repurposing_Public_24Q2_Extended_Primary_Compound_List.csv",
+    "research/treatment-discovery/sources/preclinical/2026-10-29/figshare-25917643-v1/Repurposing_Public_24Q2_Readme.txt",
+    "research/treatment-discovery/sources/preclinical/2026-10-29/figshare-25917643-v1/Repurposing_Public_24Q2_Treatment_Meta_Data.csv",
+    "research/treatment-discovery/sources/preclinical/2026-10-29/figshare-27993248-v1.json",
+    "research/treatment-discovery/sources/preclinical/2026-10-29/figshare-27993248-v1/AchillesCommonEssentialControls.csv",
+    "research/treatment-discovery/sources/preclinical/2026-10-29/figshare-27993248-v1/AchillesNonessentialControls.csv",
+    "research/treatment-discovery/sources/preclinical/2026-10-29/figshare-27993248-v1/CRISPRInferredCommonEssentials.csv",
+    "research/treatment-discovery/sources/preclinical/2026-10-29/figshare-27993248-v1/CRISPRScreenMap.csv",
+    "research/treatment-discovery/sources/preclinical/2026-10-29/figshare-27993248-v1/Model.csv",
+    "research/treatment-discovery/sources/preclinical/2026-10-29/figshare-27993248-v1/ModelCondition.csv",
+    "research/treatment-discovery/sources/preclinical/2026-10-29/figshare-27993248-v1/OmicsDefaultModelConditionProfiles.csv",
+    "research/treatment-discovery/sources/preclinical/2026-10-29/figshare-27993248-v1/OmicsDefaultModelProfiles.csv",
+    "research/treatment-discovery/sources/preclinical/2026-10-29/figshare-27993248-v1/OmicsProfiles.csv",
+    "research/treatment-discovery/sources/preclinical/2026-10-29/figshare-27993248-v1/README.txt",
+    "research/treatment-discovery/sources/preclinical/2026-10-29/figshare-27993248-v1/ScreenSequenceMap.csv",
+    "research/treatment-discovery/sources/preclinical/2026-10-29/figshare-9393293-v4.json",
+    "research/treatment-discovery/sources/preclinical/2026-10-29/figshare-9393293-v4/primary-screen-cell-line-info.csv",
+    "research/treatment-discovery/sources/preclinical/2026-10-29/figshare-9393293-v4/primary-screen-readme.txt",
+    "research/treatment-discovery/sources/preclinical/2026-10-29/figshare-9393293-v4/secondary-screen-cell-line-info.csv",
+    "research/treatment-discovery/sources/preclinical/2026-10-29/figshare-9393293-v4/secondary-screen-readme.txt",
+    "research/treatment-discovery/sources/preclinical/2026-10-29/figshare-9393293-v4/secondary-screen-replicate-collapsed-treatment-info.csv",
+    "research/treatment-discovery/sources/preclinical/2026-10-29/gdsc2-workbook-availability.json",
+    "research/treatment-discovery/therapeutic-questions.md",
+    "research/us-state-incidence-2019-2023.csv",
+    "research/us-state-mortality-2020-2024.csv",
+    "research/winnebago-2000-personal-wood-dust.csv",
+    "scripts/add_gap_ocr_sidecars.py",
+    "scripts/analyze_industry_records.py",
+    "scripts/audit_maynard_metadata.py",
+    "scripts/build_data_source_catalog.py",
+    "scripts/build_food_industry_evidence.py",
+    "scripts/build_knowledge_base.py",
+    "scripts/build_report.py",
+    "scripts/build_services_evidence.py",
+    "scripts/check_compilation.py",
+    "scripts/check_publication.py",
+    "scripts/extract_iowa_title_v_2024.py",
+    "scripts/fetch_iowa_tri_history.py",
+    "scripts/ocr_pdf_applevision.swift",
+    "scripts/prepare_compilation.py",
+    "scripts/prepare_publication.py",
+    "scripts/query_research.py",
+    "scripts/run_nsclc_benchmark.py",
+    "sources/HF2635-Signed-2026.ocr.provenance.json",
+    "sources/cohort-access/ahs-public-cancer-summary-through-2021.csv",
+    "sources/cohort-access/provenance.json",
+    "sources/download-log.json",
+    "sources/industries/energy-legacy/ames-municipal-power-niosh-1988.ocr.provenance.json",
+    "sources/industries/energy-legacy/atlantic-pce-atsdr-2026.ocr.provenance.json",
+    "sources/industries/energy-legacy/doty-landfill-atsdr-2008.ocr.provenance.json",
+    "sources/industries/energy-legacy/download-log.json",
+    "sources/industries/energy-legacy/equistar-clinton-benzene-atsdr-2008.ocr.provenance.json",
+    "sources/industries/energy-legacy/iowa-city-coal-gas-atsdr-2006.ocr.provenance.json",
+    "sources/industries/energy-legacy/mason-city-coal-gas-atsdr-2008.ocr.provenance.json",
+    "sources/industries/energy-legacy/oskaloosa-bulk-oil-atsdr-2006.ocr.provenance.json",
+    "sources/industries/energy-legacy/perry-rail-yard-atsdr-2007.ocr.provenance.json",
+    "sources/industries/food-agprocessing/archive-manifest.json",
+    "sources/industries/food-agprocessing/download-log.json",
+    "sources/industries/manufacturing/atsdr-american-packaging-2009.ocr.provenance.json",
+    "sources/industries/manufacturing/atsdr-midamerica-tanning-2005.ocr.provenance.json",
+    "sources/industries/manufacturing/download-log.json",
+    "sources/industries/manufacturing/sha256-manifest.json",
+    "sources/industries/statewide/model-readiness-source-downloads.json",
+    "sources/industries/statewide/national_cancerrisk_by_county_poll.xlsx",
+    "sources/industries/statewide/national_cancerrisk_by_county_srcgrp.xlsx",
+    "sources/industries/statewide/national_cancerrisk_by_state_poll.xlsx",
+    "sources/industries/statewide/national_cancerrisk_by_state_srcgrp.xlsx",
+    "sources/industries/statewide/tri-2024-iowa-original.csv",
+    "sources/industries/tri-history/tri-1987-iowa-original.csv",
+    "sources/industries/tri-history/tri-1988-iowa-original.csv",
+    "sources/industries/tri-history/tri-1989-iowa-original.csv",
+    "sources/industries/tri-history/tri-1990-iowa-original.csv",
+    "sources/industries/tri-history/tri-1991-iowa-original.csv",
+    "sources/industries/tri-history/tri-1992-iowa-original.csv",
+    "sources/industries/tri-history/tri-1993-iowa-original.csv",
+    "sources/industries/tri-history/tri-1994-iowa-original.csv",
+    "sources/industries/tri-history/tri-1995-iowa-original.csv",
+    "sources/industries/tri-history/tri-1996-iowa-original.csv",
+    "sources/industries/tri-history/tri-1997-iowa-original.csv",
+    "sources/industries/tri-history/tri-1998-iowa-original.csv",
+    "sources/industries/tri-history/tri-1999-iowa-original.csv",
+    "sources/industries/tri-history/tri-2000-iowa-original.csv",
+    "sources/industries/tri-history/tri-2001-iowa-original.csv",
+    "sources/industries/tri-history/tri-2002-iowa-original.csv",
+    "sources/industries/tri-history/tri-2003-iowa-original.csv",
+    "sources/industries/tri-history/tri-2004-iowa-original.csv",
+    "sources/industries/tri-history/tri-2005-iowa-original.csv",
+    "sources/industries/tri-history/tri-2006-iowa-original.csv",
+    "sources/industries/tri-history/tri-2007-iowa-original.csv",
+    "sources/industries/tri-history/tri-2008-iowa-original.csv",
+    "sources/industries/tri-history/tri-2009-iowa-original.csv",
+    "sources/industries/tri-history/tri-2010-iowa-original.csv",
+    "sources/industries/tri-history/tri-2011-iowa-original.csv",
+    "sources/industries/tri-history/tri-2012-iowa-original.csv",
+    "sources/industries/tri-history/tri-2013-iowa-original.csv",
+    "sources/industries/tri-history/tri-2014-iowa-original.csv",
+    "sources/industries/tri-history/tri-2015-iowa-original.csv",
+    "sources/industries/tri-history/tri-2016-iowa-original.csv",
+    "sources/industries/tri-history/tri-2017-iowa-original.csv",
+    "sources/industries/tri-history/tri-2018-iowa-original.csv",
+    "sources/industries/tri-history/tri-2019-iowa-original.csv",
+    "sources/industries/tri-history/tri-2020-iowa-original.csv",
+    "sources/industries/tri-history/tri-2021-iowa-original.csv",
+    "sources/industries/tri-history/tri-2022-iowa-original.csv",
+    "sources/industries/tri-history/tri-2023-iowa-original.csv",
+    "sources/industries/tri-history/tri-2024-iowa-original.csv"
+  ],
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 89,
+      "sha256": "261f21ad2effcd9db43d6ab25c1f0e630bc53fb0538c70d4f1202868e55764a0",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 5385,
+      "sha256": "5a7936afd2024de8a4a2ecfcbe288803a15d8f80a8d57ad2dd872b04d113ba5b",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": [
+        "https://api.github.com/repos/czbiohub-sf/scell_lung_adenocarcinoma/git/blobs/eb3865b480d84c5e7cb65e08ef00da865d2babcc"
+      ]
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 1883,
+      "sha256": "3b67ec01b13d0ea610fef6d9b959f4ca489612986a26319977ceb575ba4d8577",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "Iowa-Cancer-Research.md",
+      "bytes": 59233,
+      "sha256": "956ea93d8442a11ffc87880cb9528862fd7c1e75d6d6cc3ece5a540ebbfb7b37",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "LICENSES/CC-BY-4.0.txt",
+      "bytes": 18657,
+      "sha256": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "LICENSES/ODbL-1.0.txt",
+      "bytes": 25278,
+      "sha256": "607680718977f6f6c9607972afd98f208573f19251315ed1362a8589b51beaf5",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "PUBLICATION.md",
+      "bytes": 6286,
+      "sha256": "873744a480b4e6defc0bc964592e2c7f609dc4e1ae25043cbf5de8dd3ec29bcc",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "README.md",
+      "bytes": 5083,
+      "sha256": "dd779c0752f39965ffef5181471804cdc8db33d298ff0504914500b91b9d19a4",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": [
+        "https://api.github.com/repos/czbiohub-sf/scell_lung_adenocarcinoma/git/blobs/e00bd39ec1d3583b176d5201c87b4b9a0986acdc"
+      ]
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "bytes": 11814,
+      "sha256": "649efa8814b985a26b5d1db04666a659f8a3e43f8058ad897217e056fea93111",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "knowledge/INDEX.md",
+      "bytes": 12332,
+      "sha256": "72a88d313a871a6d8690d357d32480ba9ffef83f9a6afe764baec53acf7a3b0b",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "knowledge/build-manifest.json",
+      "bytes": 1870,
+      "sha256": "c7cf63db9ea4e6f4a1dba81d1c3a14555c7b406fa14abc18ceccffcb2dae5d5c",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "knowledge/pdf-text-extraction-log.json",
+      "bytes": 11868,
+      "sha256": "651de14b417336ea47750a7f13574874cd9d88435c626cccec414b25d85f15ee",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "knowledge/research.sqlite",
+      "bytes": 293842944,
+      "sha256": "e839281285162794fc732a29010dff32c9afd4631b110a44939c442db5cd21a2",
+      "publication_status": "local_generated",
+      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
+      "upstream_urls": []
+    },
+    {
+      "path": "output/pdf/Iowa-Cancer-Research-2026-10-22.pdf",
+      "bytes": 226036,
+      "sha256": "6019900da230ba69322aea6bf537fb879a1403b09cfe7acf0f8c71df27f9eeec",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "publication/sanitization-log.json",
+      "bytes": 1739,
+      "sha256": "54e72a75cbf253b7d8f41aefc5abad736e8169d34c0da322ec2444ed8f2c3ae0",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "publication/verification.json",
+      "bytes": 1257,
+      "sha256": "633e0690c2b4f0e1df9f1cc4108b24855ef5638b272ae2b1c8aa454059be82e6",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 60,
+      "sha256": "028f7fbe7b13000f0a410f48f307b7b993024471dd4d45f2100797116f4aa038",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/additional-source-links.csv",
+      "bytes": 10147,
+      "sha256": "8a63651f4c1d211adfa0b5b71978aa3679a620815146c987de771dfb5c031c10",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/cancer-specific-summary.json",
+      "bytes": 34981,
+      "sha256": "2bf1b6721a18474d3dd9f04f52aaa6c00bba912cf9fb6f4b1e8303279eb96917",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/cohort-data-access.json",
+      "bytes": 11540,
+      "sha256": "0fa7794444990af48ebd1623ab20a01aaf70dd0d7b7dbf10c26c5b5c6300095a",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/cohort-data-access.md",
+      "bytes": 10786,
+      "sha256": "62e2babd53f4679eb9434283b1dbe11722a2bb4894c8874bdc76a63ef5877ed8",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/data-dictionary.md",
+      "bytes": 4451,
+      "sha256": "6904771901686cd03f7a5824bdcc60a2e432497540e3e6f6b28e81b53504a318",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/data-provenance.json",
+      "bytes": 4675,
+      "sha256": "86bda27a924bbb6ae4065c24d055e7ee56df4c0effd2ae512918ba7d3a0a6060",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/data-source-catalog.json",
+      "bytes": 59666,
+      "sha256": "12c26f9235bd4f3a833f5efeb95f77e51e465f347bea78b9496a3242c31ca1e1",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/data-source-catalog.md",
+      "bytes": 48376,
+      "sha256": "f219d52fc7c2bb2104699a81789c3829717ccb77fed29d90ea13e978d728a6bd",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/environment.md",
+      "bytes": 25765,
+      "sha256": "4bb752c2c4c2617c2827374239e8795ee1b4f0c9bf06cb0becf421e7575db83f",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/epidemiology.md",
+      "bytes": 18316,
+      "sha256": "2a667a66a372571fdb4b3cd5ee026effcb2ea83a08bf545e891aa70745242724",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/industries/airtoxscreen-2020-iowa-county-poll.csv",
+      "bytes": 111423,
+      "sha256": "e9389786732c52905442f3ba61d02142772ef211f35be0f30af5ec5c847a09a1",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/industries/airtoxscreen-2020-iowa-county-srcgrp.csv",
+      "bytes": 81557,
+      "sha256": "71f61f8377ad128fc805cc49e0a82766d9fe37abbbe79b04d950bf2bab428750",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/industries/airtoxscreen-2020-iowa-state-poll.csv",
+      "bytes": 2805,
+      "sha256": "d5ee51b5dcdee13d83be5aa71efda61b25a788a4118597a5aa654cb909066e64",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/industries/airtoxscreen-2020-iowa-state-srcgrp.csv",
+      "bytes": 2801,
+      "sha256": "de982fce22c07397455d202f81daf220265f73ebd3ae5bec607f431d01a50ca7",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/industries/statewide-industry-data-provenance.json",
+      "bytes": 3134,
+      "sha256": "b1de0e0dda4085b795bbdc097396c804f9b3aba625ae8fd66f82284853c1df17",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/industries/tri-2024-iowa-carcinogen-flagged-records.csv",
+      "bytes": 425158,
+      "sha256": "0863fb6dc673c37a340ae1f03c5a278bf22c17c61068d214d1c543832bd9eb06",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/industries/tri-2024-iowa-chemicals.csv",
+      "bytes": 55541,
+      "sha256": "09b7f382d12484d7da0158e20355fe309fbe270ae7b182f9244872b063d2af98",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/industries/tri-2024-iowa-facilities.csv",
+      "bytes": 197260,
+      "sha256": "29edaf07925ad4cf6db54de30d1502d50960133dea09a76dc1ccf9674d76c1a6",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/industries/tri-2024-iowa-sectors.csv",
+      "bytes": 8796,
+      "sha256": "8c7033f4a9cb58018329e0315b728e83b9879cfb12a96a37364a6b3345fdb3a3",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/industries/tri-history-manifest.json",
+      "bytes": 16155,
+      "sha256": "aa61cb12cc9f940b143659f714b16f38f09fe8e9c3b47239e6ac3358f323c823",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/industries-energy-legacy.md",
+      "bytes": 20211,
+      "sha256": "d02afd0a3aaeb5c1e29b41e45f114a016c1b7c897a409131376f240e82e35a35",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/industries-food-agprocessing.md",
+      "bytes": 19533,
+      "sha256": "d38f807c26843207c31c5fa26ae1ba7d51583e5dbc211f93d41a502fbdbcdc5c",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/industries-manufacturing.md",
+      "bytes": 23737,
+      "sha256": "1da44683bbf75dd104f8da01932d6d04a55cda1afc724a1c95b74b9f3af02d07",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/industries-services.md",
+      "bytes": 8031,
+      "sha256": "2cafc9a3e9b62fa774d842bd6bf057bc1a71983ad6592fb43c8f902476d23e94",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/industries-statewide-data.md",
+      "bytes": 7652,
+      "sha256": "2b267438ef291910026789a0dd29dc60e9cfccd7e0d2a6465f52073f2e58b764",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/industry-energy-legacy-evidence.csv",
+      "bytes": 16753,
+      "sha256": "54a102f300044d8e20cf1347e3d6bc09e09ed96456ad978410d84a8651ac518e",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/industry-food-agprocessing-evidence.csv",
+      "bytes": 24210,
+      "sha256": "a3bd739323a6b81eab5dd67cdca564e6a8115ff0cf6af484f5e816888f3e0645",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/industry-food-agprocessing-evidence.json",
+      "bytes": 41076,
+      "sha256": "4d86b163bff843d37da62d62a2679c95789e9fb6776e677677dc6dee434411d1",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/industry-manufacturing-evidence.csv",
+      "bytes": 15582,
+      "sha256": "a08377493756d7ddb34ee1363a48e4300ec7a6c0934b4a2b24f47e088814c0cc",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/industry-services-evidence.csv",
+      "bytes": 6077,
+      "sha256": "912f486a7d0c67a839a499247d214220330093dc2e0883d6b2e1cce2ce2a2a6c",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/iowa-99-counties-comparison.csv",
+      "bytes": 15161,
+      "sha256": "29819239ebc0bd47ebdf5484c5eb674535b35863e11c6f7d8e2122057351ad1e",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/iowa-cancer-types-comparison.csv",
+      "bytes": 23389,
+      "sha256": "0a5a1f521c8e0665e03b1dfd07d539b7d295c8f7a2cdaed28fa2fe26c1037165",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/iowa-county-incidence-2019-2023.csv",
+      "bytes": 8497,
+      "sha256": "5dbf1201a34683b5a294d1760c4844f5adf8608383bbe45eae5c38801cdfa6b5",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/iowa-county-mortality-2020-2024.csv",
+      "bytes": 8642,
+      "sha256": "7a0bfb6dda12a6502b48af48baa1c3ec353bd4e917e3d3c96ce0459f5927d0d8",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/iowa-demographic-comparison.csv",
+      "bytes": 4282,
+      "sha256": "0dc49d76fb31e1c98387d1ffc86e35f90d6aa0608a4115dd260838b33f0108c8",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/iowa-title-v-2024-provenance.json",
+      "bytes": 4623,
+      "sha256": "fead2c9adec6c5e61ca84db8a7b3923440e1b1fcaa6a3d90c55a129cd3a55bf0",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/iowa-title-v-facilities-emissions-2024.csv",
+      "bytes": 95012,
+      "sha256": "1984b933e7d8f37576379bda32c3c5650fe7012753ae8d6482b85a211bd1ef92",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/manufacturing-exposure-measurements.csv",
+      "bytes": 7120,
+      "sha256": "204b1a8ea845b53d5d1949117b3320f13f1ca60303471b79d2e29038b8985a71",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/manufacturing-input-datasets.csv",
+      "bytes": 4253,
+      "sha256": "0917bbf411d2bc17499e0adcff514d9716ace7822c362cec7d50f80c0f70bf11",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/model-methods-sources.json",
+      "bytes": 11067,
+      "sha256": "131c1f0efe59c2011a5565e9d13fa96f9fd923fd242a2b97390da6480f465af4",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/model-readiness-checklist.md",
+      "bytes": 9646,
+      "sha256": "deb00cf23d7cdff9d073c6ed00b060db52141a9748456625d2dc4faa915f8177",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/modeling-methods.md",
+      "bytes": 14986,
+      "sha256": "45b8ab972e4faaf291e902dacf02a3eb455513e34df9a39cd40bf7f8860662ab",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/prevention-care.md",
+      "bytes": 18050,
+      "sha256": "5ae86588e1deea02832691f33bea406ab3bb15396d198c40cb9195e9d01c81f8",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/quality-checks.json",
+      "bytes": 1321,
+      "sha256": "234233a560b7277d62864b3acb55cfcc0796b1608059c2aad28abb377aa98fcf",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/risk-evidence-matrix.csv",
+      "bytes": 2576,
+      "sha256": "1ee0284895f4b8e92046b6c3f759ee979d721f71414c9e9c787a250e7fc81263",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/source-index.csv",
+      "bytes": 14314,
+      "sha256": "6302a89fffeb5e5b0a737e221082aaef236a335099e36e77bb4f3b686c54b1a2",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/source-index.json",
+      "bytes": 21148,
+      "sha256": "2a5454be1ebc88d1ce52a0d39cbb9911bf807576b90f1035d1a6eac6d4e86880",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/sources/2026-Cancer-in-Iowa-download-403.html",
+      "bytes": 919,
+      "sha256": "2a175a2c7c4e6ca8b31ce406217a1294fd5f7af2665a2426d9223391d586a8af",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Cached access/error response; not substantive source evidence",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/sources/cancer-specific-incidence-003.csv",
+      "bytes": 7976,
+      "sha256": "8218fe6dc1d7d8dc6ae87c7451f054ec99d9e2102c678b8e4f30d21931201b12",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/sources/cancer-specific-incidence-017.csv",
+      "bytes": 7867,
+      "sha256": "0d9605fb1790e9473fcb903d8721111cbfed40202746f02fe9318b9422586242",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/sources/cancer-specific-incidence-018.csv",
+      "bytes": 7807,
+      "sha256": "8b76be85b14b4d89324fcb918b2bdcc66ff3309f52c223813c5c17c523ab0527",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/sources/cancer-specific-incidence-020.csv",
+      "bytes": 8074,
+      "sha256": "3695b4ae4d2bd97d2e04273d59558e78e96d0a570bf7ae2038b73e97e7707a94",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/sources/cancer-specific-incidence-035.csv",
+      "bytes": 7882,
+      "sha256": "f80c3f79efb11964dfff044b9986de78d520246c6d9a8e0ee981a6269a41bdfe",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/sources/cancer-specific-incidence-040.csv",
+      "bytes": 7956,
+      "sha256": "9e91d16b7b3f63190ea622690bf8766472c99740ec2fe0aad2ca9686a66c0926",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/sources/cancer-specific-incidence-047.csv",
+      "bytes": 8171,
+      "sha256": "ce0bae6523aeb01ae40110005ac68c60353779eac3088e24c285f821bae7f04f",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/sources/cancer-specific-incidence-053.csv",
+      "bytes": 7997,
+      "sha256": "26dcfd8eca6562048d068ee5e334deb308d10859aca51b176c14f21440aace6f",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/sources/cancer-specific-incidence-055.csv",
+      "bytes": 8131,
+      "sha256": "d0897ab30ced8b06a78310bb4af1be4cb2ab972c5042dc134406a59da4d725a7",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/sources/cancer-specific-incidence-057.csv",
+      "bytes": 7851,
+      "sha256": "479687f73f7389c88e9f73cfe1dc7fda2df5e11a6c69474df7a9a5653e3c1816",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/sources/cancer-specific-incidence-058.csv",
+      "bytes": 7991,
+      "sha256": "3c761ef0d907123ce1efaf5e75e6ffa75d60026fc410170cc2a4f3dcaf7339d9",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/sources/cancer-specific-incidence-061.csv",
+      "bytes": 7979,
+      "sha256": "bf66779eab6c935bd6a7d37cde13c8872147c632407ab7a1880b0e05d82f00cf",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/sources/cancer-specific-incidence-066.csv",
+      "bytes": 8141,
+      "sha256": "5238f2e0c7793d08e8e60869fc9428e76cc1bb5e1ff3570169e265078ad98f55",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/sources/cancer-specific-incidence-071.csv",
+      "bytes": 8122,
+      "sha256": "f77908e5a4c3e565cf065555b128cfcb345808bc792fe3d7b72e8d58c211a388",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/sources/cancer-specific-incidence-072.csv",
+      "bytes": 8003,
+      "sha256": "8ccf2074bc2d82171080556e6c1877ef1fbdb5abb0be85d1509735f3fc957099",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/sources/cancer-specific-incidence-076.csv",
+      "bytes": 7897,
+      "sha256": "272839f571f2b96c65c44e51e296bd1f84cd6caed043ec9358b31b94e28d113b",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/sources/cancer-specific-incidence-080.csv",
+      "bytes": 8025,
+      "sha256": "c339f581ee9c8670b91d10dd365922d1fa93dc52d44fd397effe1e373048d3a5",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/sources/cancer-specific-incidence-086.csv",
+      "bytes": 8118,
+      "sha256": "1d6b1e2bec4110c1362d15bfe6f3d4e3e771d461b71bcaaebd5f150e965e986c",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/sources/cancer-specific-incidence-090.csv",
+      "bytes": 8050,
+      "sha256": "5f91cdd9084abde6e6b88e8c8fc412176382720b8dce1def8303ed0d71313a1c",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/sources/cancer-specific-incidence-515.csv",
+      "bytes": 7975,
+      "sha256": "976d6acc520a2601f0f9af4684383f88a2bc0e312724f48b5f25583587206142",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/sources/cancer-specific-incidence-516.csv",
+      "bytes": 8157,
+      "sha256": "4f21cc16aa506bb329c16003e5fc4ea914e1a6fba972d9d79fa581e9ecd7f19c",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/sources/cancer-specific-mortality-003.csv",
+      "bytes": 6957,
+      "sha256": "a580a419f9fc83970c74605e3a13f77312905ee8f938149e31ca60d5b48d0d76",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/sources/cancer-specific-mortality-017.csv",
+      "bytes": 6732,
+      "sha256": "c705659537e66566041223ea3da5fdae4d1887ae26e98a7e165fff176876c24f",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/sources/cancer-specific-mortality-018.csv",
+      "bytes": 7079,
+      "sha256": "dffe19cabc73816014c3506d96cec999cf73c659bc8b398fc9d407c9947cc65d",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/sources/cancer-specific-mortality-020.csv",
+      "bytes": 6818,
+      "sha256": "835dba2c224399676b0c3e631451b5ca67a95d7c901fdd8aa9afda3815648de1",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/sources/cancer-specific-mortality-035.csv",
+      "bytes": 6686,
+      "sha256": "8ae7211dafa8b9c93c9b34ec4b548b03ede6d1885537f657720be5556972f1df",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/sources/cancer-specific-mortality-040.csv",
+      "bytes": 6774,
+      "sha256": "f171fae911fba77bb5dc09a6117777b866366d9cffcc2f1c49a17565102b355b",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/sources/cancer-specific-mortality-047.csv",
+      "bytes": 6911,
+      "sha256": "72f0a7d8e5b53a0700611cefb13a166e4ae4eaef0435727333361f72316b2521",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/sources/cancer-specific-mortality-053.csv",
+      "bytes": 7036,
+      "sha256": "6cfb14994329d61181cfa55f4f656e66b5fdbfb0542351d1819d3bf23f128330",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/sources/cancer-specific-mortality-055.csv",
+      "bytes": 6811,
+      "sha256": "b65408e0cedf76b5dabe13b7bc0f8421c69a2c13a23fa25964326096fe3d210f",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/sources/cancer-specific-mortality-057.csv",
+      "bytes": 6861,
+      "sha256": "af94f83aea3eda416d7fd01d227b0863550733c218086ba63a849f0c7e0cefff",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/sources/cancer-specific-mortality-058.csv",
+      "bytes": 6601,
+      "sha256": "01a854119e2ddc0afed6112edbe48bebd1704718f7fd54d5b17479643389455f",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/sources/cancer-specific-mortality-061.csv",
+      "bytes": 7102,
+      "sha256": "dedbf109b8282573a6d9aa62cc9134835f5134f10ddd4bdfcbe4cdc746b92f20",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/sources/cancer-specific-mortality-066.csv",
+      "bytes": 6770,
+      "sha256": "e97312f7f49269fd8d471259db562a96dbab91e62396c54dc50769b388d3748a",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/sources/cancer-specific-mortality-071.csv",
+      "bytes": 6702,
+      "sha256": "499b678c95ab46dac58b2b2f70f012e0e3e4e246cb4033db0b428f5f6705958e",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/sources/cancer-specific-mortality-072.csv",
+      "bytes": 6773,
+      "sha256": "c24a3aec4cd3d51bce611154b2307543434a291d2a26b32cee835c310616f05a",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/sources/cancer-specific-mortality-076.csv",
+      "bytes": 7004,
+      "sha256": "879f4bb0fc34013ce17ccc43997ddd0082981823c6f4d30a9d6ffe3bfc64d7e3",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/sources/cancer-specific-mortality-080.csv",
+      "bytes": 6729,
+      "sha256": "0ddf4fe69cd0cfa61deb017c1b1148c0c7bcbcb6a4b35c9828ed96b60e384ffc",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/sources/cancer-specific-mortality-086.csv",
+      "bytes": 6793,
+      "sha256": "73c2230d6d358a7d8124e744e603c47a95dc1384f7884e74c1e3b034756b8611",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/sources/cancer-specific-mortality-090.csv",
+      "bytes": 6774,
+      "sha256": "77e584d03efa8047a200fa42dc4ca1020a0fd6ffad0f39e39506cb7ddf128b28",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/sources/cancer-specific-mortality-515.csv",
+      "bytes": 6724,
+      "sha256": "c593be89773469eaba7201912191efdf9b58ff9e8c12f5b36202b6379f798c36",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/sources/cancer-specific-mortality-516.csv",
+      "bytes": 6575,
+      "sha256": "14ec6de8b0c5c54f326753ffe7d5435672b5417cc59b3995c89507fe0dbcc33a",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/sources/iowa-county-incidence-nci-original.csv",
+      "bytes": 13228,
+      "sha256": "6b1200f249640fc96c2a6f6c7c6967d28618d206d633a0040aa9200c239e114c",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": [
+        "https://statecancerprofiles.cancer.gov/incidencerates/index.php?stateFIPS=19&areatype=county&cancer=001&race=00&sex=0&age=001&type=incd&year=0&sortVariableName=rate&sortOrder=desc&output=1"
+      ]
+    },
+    {
+      "path": "research/sources/iowa-county-mortality-nci-original.csv",
+      "bytes": 12513,
+      "sha256": "80b9191d88d6150582bd5f22e61a0d438d8aff4cc969806d7089c298a50994c3",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": [
+        "https://statecancerprofiles.cancer.gov/deathrates/index.php?stateFIPS=19&areatype=county&cancer=001&race=00&sex=0&age=001&type=death&year=0&sortVariableName=rate&sortOrder=desc&output=1"
+      ]
+    },
+    {
+      "path": "research/sources/iowa-incidence-ruralurban1.csv",
+      "bytes": 12801,
+      "sha256": "fad968de7b82793654679da3c22e58f516066c6effaf1aa432b935b61a111cb7",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/sources/iowa-incidence-ruralurban2.csv",
+      "bytes": 11203,
+      "sha256": "1ba930bb7c50a079a26f1b6b90662e74ec8e6bddcc2e39f46e21dd4ee270067b",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/sources/iowa-mortality-ruralurban1.csv",
+      "bytes": 12016,
+      "sha256": "7f00178fa33f1b5afc7fb5d038e131466bfbc70a5614138572d6a4f61fb8dfd7",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/sources/iowa-mortality-ruralurban2.csv",
+      "bytes": 10301,
+      "sha256": "de195f639ba5e273a7ad56906731b98168e7b3b3dba9b3ea900bb09195464576",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/sources/iowa-subgroup-incidence-race00-sex0-age009.csv",
+      "bytes": 8144,
+      "sha256": "ab6b2d478597ad9c98bf5ce5c00fe6b0cd985855064f7c3ee4a828f5de19fdba",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/sources/iowa-subgroup-incidence-race00-sex0-age136.csv",
+      "bytes": 8465,
+      "sha256": "96932ef90a0a2f49d4215e6fb1861d897bb1e5c824c955d0e5ca8171a76c8eef",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/sources/iowa-subgroup-incidence-race00-sex1-age001.csv",
+      "bytes": 8294,
+      "sha256": "5ad0bf5f0b30cb11d3734fbb694b813cf34eb6188f18a2f6cd75a2c753e02598",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/sources/iowa-subgroup-incidence-race00-sex2-age001.csv",
+      "bytes": 8243,
+      "sha256": "c4f7930f77678b457b4a1df694f050c57297a568ebd2bc93f850df1a8ee6b87f",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/sources/iowa-subgroup-incidence-race05-sex0-age001.csv",
+      "bytes": 9126,
+      "sha256": "e83426a0389381856007db9319ee10ab234cd5a6f720172cb1d018e47f881baa",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/sources/iowa-subgroup-incidence-race07-sex0-age001.csv",
+      "bytes": 9180,
+      "sha256": "359e7d7b314979f78053ef53aac866268e523e43b17522613cdcc8a591f1dfa0",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/sources/iowa-subgroup-incidence-race28-sex0-age001.csv",
+      "bytes": 8447,
+      "sha256": "4cffd2086917230f9fa9853e38c1094334d5dbe1c673b3ea8c71b9f61150f4b0",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/sources/iowa-subgroup-incidence-race38-sex0-age001.csv",
+      "bytes": 9259,
+      "sha256": "ef8f3d941f7e1f041c6f782c062f5eae10b7f825203687503682f44438bf6d33",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/sources/iowa-subgroup-incidence-race48-sex0-age001.csv",
+      "bytes": 8607,
+      "sha256": "72f7ea3a3a97aa079d47aea1f8cae89ffc5919446d87762b4af9a1d93fbccbca",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/sources/iowa-subgroup-mortality-race00-sex0-age009.csv",
+      "bytes": 6873,
+      "sha256": "0982f93e4272fb1710fa3c3d862a2d7340a7cd1373bc71bbce0835c4a3c4da5d",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/sources/iowa-subgroup-mortality-race00-sex0-age136.csv",
+      "bytes": 7090,
+      "sha256": "9130b8b001e8ce4d5d15c0333f67b4a51133495274285a8f7dc9fa90467e7b73",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/sources/iowa-subgroup-mortality-race00-sex1-age001.csv",
+      "bytes": 7059,
+      "sha256": "0bb4c0acb00a637d98009e03bc68e7026896031857632f8abeae348eb6d11313",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/sources/iowa-subgroup-mortality-race00-sex2-age001.csv",
+      "bytes": 7077,
+      "sha256": "d36cbfef9a5bbe36a3c7e29133c0d40f6f286f75bcd76ad956154049d0463a9f",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/sources/iowa-subgroup-mortality-race05-sex0-age001.csv",
+      "bytes": 7562,
+      "sha256": "a9bfc67a27458e464f989fbbb66e058e58524ae94c68d2bdda7c5cb37041f51c",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/sources/iowa-subgroup-mortality-race07-sex0-age001.csv",
+      "bytes": 7273,
+      "sha256": "c36c292ab0baa723944837369738502c789faefee1223b259de2c322c13a615a",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/sources/iowa-subgroup-mortality-race28-sex0-age001.csv",
+      "bytes": 7416,
+      "sha256": "0d5c3b2cbc4358ea8656349854f403c3029d1ff235ac273ed82283130994f1a4",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/sources/iowa-subgroup-mortality-race38-sex0-age001.csv",
+      "bytes": 7158,
+      "sha256": "56a3c0e97443c1ba83f2049c3801ee4aafaa1e7f4c8e8deafa65669b5acf9c12",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/sources/iowa-subgroup-mortality-race48-sex0-age001.csv",
+      "bytes": 7306,
+      "sha256": "e57eb8f30a8d1495aa43ea8086548ffdc05935b89f33b2016fd2eefd8dac7d38",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/sources/us-state-incidence-nci-original.csv",
+      "bytes": 8306,
+      "sha256": "39f991690a9dd1e3fca3ad8cbb521e073921f5719fcd83b69b5464302ebb7bfe",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": [
+        "https://statecancerprofiles.cancer.gov/incidencerates/index.php?stateFIPS=00&areatype=state&cancer=001&race=00&sex=0&age=001&type=incd&year=0&sortVariableName=rate&sortOrder=desc&output=1"
+      ]
+    },
+    {
+      "path": "research/sources/us-state-mortality-nci-original.csv",
+      "bytes": 7093,
+      "sha256": "20728fe68c6385e9d32b88315febc51c5a228b60608c4906df084c4b19d160e2",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": [
+        "https://statecancerprofiles.cancer.gov/deathrates/index.php?stateFIPS=00&areatype=state&cancer=001&race=00&sex=0&age=001&type=death&year=0&sortVariableName=rate&sortOrder=desc&output=1"
+      ]
+    },
+    {
+      "path": "research/subgroup-summary.json",
+      "bytes": 10410,
+      "sha256": "2256598e7cfc645e0917ed5a1f067054c2e80f0ea5c56be26b9bddf1d227e34d",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/synthesis-methods.md",
+      "bytes": 5353,
+      "sha256": "a23ac3af6f167d9f89969b07c4202a5f50cda8bff6fee62709a6a097ffee03dc",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/AGENTS.md",
+      "bytes": 1823,
+      "sha256": "4814c5f3a532bb73ea0479471440ad4c964e8b3a299c47f870e6948cadc769a4",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/README.md",
+      "bytes": 8247,
+      "sha256": "84b820fd331ad1f785d321886c2e2089a8ab7083fdc4b38ff769c3ddcc662130",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/audit_clinical_snapshot.py",
+      "bytes": 8367,
+      "sha256": "e97248e5caf5e3abe1c5434c9122149003a79e760b800b669c25f0e811bebad2",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/clinical-pilot-analysis-spec.md",
+      "bytes": 5197,
+      "sha256": "4bca018fb1c712c859a519d8a3c30eabb7e4fa9182c760a1bf97a45e64d373e0",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/clinical-pilot-data.md",
+      "bytes": 11200,
+      "sha256": "9ecff736a70784d00e52c2145c827073285524143eeee708f7ad5964ddbf47fb",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/clinical-pilot-field-dictionary.csv",
+      "bytes": 3742,
+      "sha256": "6c1e34af1e518c7eb3bd3cc67fc29ee48be3b82ed281105f07d9521c65a057e1",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/clinical-pilot-qc.json",
+      "bytes": 2777,
+      "sha256": "2e819c4b7c3fef83bf41eb87114567797cceaf99a120ae8db23854c620a3b5fa",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/clinical-pilot-sources.json",
+      "bytes": 11077,
+      "sha256": "df382a84ee073207a0a6e36239b0a8cfc9ea534004764a5042f460e395b0ffe5",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/data/nsclc_pd1_msk_2018/2026-10-29/LICENSE",
+      "bytes": 455,
+      "sha256": "aa607179437132751f7c8fcd9f2b4ed97677ded9812ad97b99abd380ae77aec2",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Official public pseudonymous cBioPortal study snapshot, ODbL 1.0; attribution and source license retained",
+      "upstream_urls": [
+        "https://raw.githubusercontent.com/cBioPortal/datahub/21caf38992efa145ab7b895919cacff2cea700b5/public/nsclc_pd1_msk_2018/LICENSE"
+      ]
+    },
+    {
+      "path": "research/treatment-discovery/data/nsclc_pd1_msk_2018/2026-10-29/Readme.txt",
+      "bytes": 122,
+      "sha256": "0f414b40c6da118c75900177552010582d81a4d6b00c5639396983c40716ce91",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Official public pseudonymous cBioPortal study snapshot, ODbL 1.0; attribution and source license retained",
+      "upstream_urls": [
+        "https://raw.githubusercontent.com/cBioPortal/datahub/21caf38992efa145ab7b895919cacff2cea700b5/public/nsclc_pd1_msk_2018/Readme.txt"
+      ]
+    },
+    {
+      "path": "research/treatment-discovery/data/nsclc_pd1_msk_2018/2026-10-29/clinical-sample-commit-history.json",
+      "bytes": 21097,
+      "sha256": "92c5fc08414ebc08992c8c51bac3489d4044bad54b81eee8f95209d641fe37fd",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Official public pseudonymous cBioPortal study snapshot, ODbL 1.0; attribution and source license retained",
+      "upstream_urls": [
+        "https://api.github.com/repos/cBioPortal/datahub/commits?path=public/nsclc_pd1_msk_2018/data_clinical_sample.txt&per_page=10"
+      ]
+    },
+    {
+      "path": "research/treatment-discovery/data/nsclc_pd1_msk_2018/2026-10-29/data_clinical_patient.txt",
+      "bytes": 17878,
+      "sha256": "f9f48755fbf394c0add6b097d45070940216d2e67ed7632c5fd83a8303cc0c4b",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Official public pseudonymous cBioPortal study snapshot, ODbL 1.0; attribution and source license retained",
+      "upstream_urls": [
+        "https://media.githubusercontent.com/media/cBioPortal/datahub/21caf38992efa145ab7b895919cacff2cea700b5/public/nsclc_pd1_msk_2018/data_clinical_patient.txt"
+      ]
+    },
+    {
+      "path": "research/treatment-discovery/data/nsclc_pd1_msk_2018/2026-10-29/data_clinical_sample-original-2018-04-23.txt",
+      "bytes": 26932,
+      "sha256": "d5efc93019438e577743cc3d91598816a73d0d0bbbd9eaf9f04547aba0ec3c97",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Official public pseudonymous cBioPortal study snapshot, ODbL 1.0; attribution and source license retained",
+      "upstream_urls": [
+        "https://media.githubusercontent.com/media/cBioPortal/datahub/632487fcf657eed6e25e81ad41d0499eb9296894/public/nsclc_pd1_msk_2018/data_clinical_sample.txt"
+      ]
+    },
+    {
+      "path": "research/treatment-discovery/data/nsclc_pd1_msk_2018/2026-10-29/data_clinical_sample.txt",
+      "bytes": 31832,
+      "sha256": "5b4b2ba4b297c8bd82760ac2f7194daaf231543ce537fac6d166793920139275",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Official public pseudonymous cBioPortal study snapshot, ODbL 1.0; attribution and source license retained",
+      "upstream_urls": [
+        "https://media.githubusercontent.com/media/cBioPortal/datahub/21caf38992efa145ab7b895919cacff2cea700b5/public/nsclc_pd1_msk_2018/data_clinical_sample.txt"
+      ]
+    },
+    {
+      "path": "research/treatment-discovery/data/nsclc_pd1_msk_2018/2026-10-29/download-manifest.json",
+      "bytes": 5206,
+      "sha256": "9b7376db6a114fdda7572c1e6d7acb8a4f8a54d28a62a3ced9eb55185edc9297",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Official public pseudonymous cBioPortal study snapshot, ODbL 1.0; attribution and source license retained",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/data/nsclc_pd1_msk_2018/2026-10-29/meta_clinical_patient.txt",
+      "bytes": 147,
+      "sha256": "123187e542006ef67c5ccb1491a479c8928ab5af688745a7ac88ddfa11e4d1e2",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Official public pseudonymous cBioPortal study snapshot, ODbL 1.0; attribution and source license retained",
+      "upstream_urls": [
+        "https://raw.githubusercontent.com/cBioPortal/datahub/21caf38992efa145ab7b895919cacff2cea700b5/public/nsclc_pd1_msk_2018/meta_clinical_patient.txt"
+      ]
+    },
+    {
+      "path": "research/treatment-discovery/data/nsclc_pd1_msk_2018/2026-10-29/meta_clinical_sample.txt",
+      "bytes": 145,
+      "sha256": "ce72feea0c4562541e6122ff328b9a4fa25951f5b8f83be8e5f53611f3ea1dbf",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Official public pseudonymous cBioPortal study snapshot, ODbL 1.0; attribution and source license retained",
+      "upstream_urls": [
+        "https://raw.githubusercontent.com/cBioPortal/datahub/21caf38992efa145ab7b895919cacff2cea700b5/public/nsclc_pd1_msk_2018/meta_clinical_sample.txt"
+      ]
+    },
+    {
+      "path": "research/treatment-discovery/data/nsclc_pd1_msk_2018/2026-10-29/meta_study.txt",
+      "bytes": 335,
+      "sha256": "d00425a566884e805e89dc16a3d60bb4f757d1e481604cc5ee20487a6382f9cd",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Official public pseudonymous cBioPortal study snapshot, ODbL 1.0; attribution and source license retained",
+      "upstream_urls": [
+        "https://raw.githubusercontent.com/cBioPortal/datahub/21caf38992efa145ab7b895919cacff2cea700b5/public/nsclc_pd1_msk_2018/meta_study.txt"
+      ]
+    },
+    {
+      "path": "research/treatment-discovery/data-access-catalog.json",
+      "bytes": 11054,
+      "sha256": "ea321791f883a1910bf586ec7f5113f00a498ae8f81b1910d8d2f27b8eb0495f",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/egfr-mechanism-feasibility.json",
+      "bytes": 24174,
+      "sha256": "f16e3b34a9acb1925ade44ab758d04377c3b03daa87608af35c86c93f6663f26",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/egfr-mechanism-feasibility.md",
+      "bytes": 6263,
+      "sha256": "5f38d6972b06ee8604039d06cbe22bba4125e9e04b0a39c4931fc620e9556f6b",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/preclinical-data-sources.json",
+      "bytes": 40110,
+      "sha256": "bcef83d8d4fba641c7fc7cc71ace70958e40cecd80f899c7a18cbf5b9e5db446",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/preclinical-data.md",
+      "bytes": 12673,
+      "sha256": "22f36d8f5f9eeeeec54ecabf0fe1c58f79ed3b7ebd92fdbec3f8d50fbdddc47d",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/preclinical-metadata-audit.json",
+      "bytes": 14721,
+      "sha256": "4f46f9b0edd60d7a997bf0148e6b7421bded89479154b067bf50603bcc8c4e01",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/results/nsclc-tmb-dcb-2026-10-29/RESULTS.md",
+      "bytes": 2398,
+      "sha256": "e88117a683c0563493711c17fd6ee391a47bdd4fd24b95197b3f83f9281251b7",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/results/nsclc-tmb-dcb-2026-10-29/bootstrap_auc.npy",
+      "bytes": 80128,
+      "sha256": "c5696a57c0c0cbc264f9e399bed984216628fdbaa872753638664ba22e79f720",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/results/nsclc-tmb-dcb-2026-10-29/cohort-flow.jsonl",
+      "bytes": 135635,
+      "sha256": "17dffed53e1bcdaa2ef2c3421a7683f25034793d1d904da2a630b46fb4b04e9b",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Derived cBioPortal database under ODbL 1.0; attribution and transformation code retained",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/results/nsclc-tmb-dcb-2026-10-29/independent-review.md",
+      "bytes": 1952,
+      "sha256": "67dc5ae11dbc749292376aa6a00e31f010a3e5f77fea1d7e1129397157b25c2a",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/results/nsclc-tmb-dcb-2026-10-29/results.json",
+      "bytes": 4082,
+      "sha256": "ae8a823e30e6c6255b2669fec7a4219938a0c5c5cb805aaf109726e89f722202",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/results/nsclc-tmb-dcb-2026-10-29/run-provenance.json",
+      "bytes": 484,
+      "sha256": "dfb408d8542e6a0fac4f07650ae05ce369ca5a698445b6d087c6073fac0dd244",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/sources/maynard-2026-10-29/README.md",
+      "bytes": 7574,
+      "sha256": "8cfc4aab37b9964e7bbcdd5eb72d890aceba141dc3a8de0fe3ccc6e21e412acb",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Copied upstream code/data/HTML has no verified redistribution license; findings and source pointers are published",
+      "upstream_urls": [
+        "https://api.github.com/repos/czbiohub-sf/scell_lung_adenocarcinoma/git/blobs/e00bd39ec1d3583b176d5201c87b4b9a0986acdc",
+        "https://raw.githubusercontent.com/czbiohub-sf/scell_lung_adenocarcinoma/de138c79bcfc2fa3a28c8a039a28ab560da78099/README.md"
+      ]
+    },
+    {
+      "path": "research/treatment-discovery/sources/maynard-2026-10-29/S01_metacells.csv",
+      "bytes": 11084633,
+      "sha256": "b4f3f169516001e89bc8b3d8052e207331ff662ca6d236e1c2cf68eccffdf2a6",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Copied upstream code/data/HTML has no verified redistribution license; findings and source pointers are published",
+      "upstream_urls": [
+        "https://drive.google.com/uc?export=download&id=12g84ooMTsWV58JWbp2ql8TMfgS4ct8as"
+      ]
+    },
+    {
+      "path": "research/treatment-discovery/sources/maynard-2026-10-29/data_out/IM06/Table_of_ALL_cell_types_by_sample_plus_immune_info.csv",
+      "bytes": 4566,
+      "sha256": "59d59732c069f3e33f878b756b79a27ca5c4748ec04711cffbcec9a6e3152116",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Copied upstream code/data/HTML has no verified redistribution license; findings and source pointers are published",
+      "upstream_urls": [
+        "https://api.github.com/repos/czbiohub-sf/scell_lung_adenocarcinoma/git/blobs/818c4b98e01b2b198b0bfcb361ec92c3fabd3281",
+        "https://raw.githubusercontent.com/czbiohub-sf/scell_lung_adenocarcinoma/de138c79bcfc2fa3a28c8a039a28ab560da78099/data_out/IM06/Table_of_ALL_cell_types_by_sample_plus_immune_info.csv"
+      ]
+    },
+    {
+      "path": "research/treatment-discovery/sources/maynard-2026-10-29/data_out/NI17/sample_geneandsigscore.csv",
+      "bytes": 6593,
+      "sha256": "17091292caf7b695d688fb3c9ea9e7010a92b7ce8ecaf23d99f0ae80525e4b74",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Copied upstream code/data/HTML has no verified redistribution license; findings and source pointers are published",
+      "upstream_urls": [
+        "https://api.github.com/repos/czbiohub-sf/scell_lung_adenocarcinoma/git/blobs/47e3602c002e1e2bcbfe5ac06145d54ee7588bdf",
+        "https://raw.githubusercontent.com/czbiohub-sf/scell_lung_adenocarcinoma/de138c79bcfc2fa3a28c8a039a28ab560da78099/data_out/NI17/sample_geneandsigscore.csv"
+      ]
+    },
+    {
+      "path": "research/treatment-discovery/sources/maynard-2026-10-29/data_out/S03/nonimmune_cells.csv",
+      "bytes": 188810,
+      "sha256": "99bcd0065237d53044e637a9fc304a630003f5612f5c703c9eed78514511e6b7",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Copied upstream code/data/HTML has no verified redistribution license; findings and source pointers are published",
+      "upstream_urls": [
+        "https://api.github.com/repos/czbiohub-sf/scell_lung_adenocarcinoma/git/blobs/42454996e4121840ba98c4be6c93b3e2564245a1",
+        "https://raw.githubusercontent.com/czbiohub-sf/scell_lung_adenocarcinoma/de138c79bcfc2fa3a28c8a039a28ab560da78099/data_out/S03/nonimmune_cells.csv"
+      ]
+    },
+    {
+      "path": "research/treatment-discovery/sources/maynard-2026-10-29/derived-published-AT2-signature.json",
+      "bytes": 686,
+      "sha256": "251d3029a75935d3a533aac7afe3cc3af75ae5f3f152b5ee4ca922c69c08e375",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Authored factual audit/derived gene list or public source path/hash inventory; upstream attribution retained",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/sources/maynard-2026-10-29/drive-csv-folder.html",
+      "bytes": 382403,
+      "sha256": "d065e55d0d2ab33a3b328907a1d146d47f931a9f8d7378e008b23376aa979aa8",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Copied upstream code/data/HTML has no verified redistribution license; findings and source pointers are published",
+      "upstream_urls": [
+        "https://drive.google.com/drive/folders/1VmPan5V19Hq--fMnFHOta67TIpO60srE"
+      ]
+    },
+    {
+      "path": "research/treatment-discovery/sources/maynard-2026-10-29/drive-folder-listing.html",
+      "bytes": 375676,
+      "sha256": "8f0b2096807f6fc4409e2e17c6031b7de1a49fff06f63b64fe2187e53d0668dd",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Copied upstream code/data/HTML has no verified redistribution license; findings and source pointers are published",
+      "upstream_urls": [
+        "https://drive.google.com/drive/folders/1sDzO0WOD4rnGC7QfTKwdcQTx3L36PFwX?usp=sharing"
+      ]
+    },
+    {
+      "path": "research/treatment-discovery/sources/maynard-2026-10-29/egfr-main-metadata-audit.json",
+      "bytes": 9251,
+      "sha256": "1c0ec54a73402db263dd8a2535be27f254bb215f0f112b0b6f982d93c49141a7",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Authored factual audit/derived gene list or public source path/hash inventory; upstream attribution retained",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/sources/maynard-2026-10-29/egfr-main-sample-audit.csv",
+      "bytes": 3379,
+      "sha256": "a35440b2f104a4bff64b5dfaebf933a1a998689d06120ad0ec63945e67e2b9e3",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Authored factual audit/derived gene list or public source path/hash inventory; upstream attribution retained",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/sources/maynard-2026-10-29/manifest.json",
+      "bytes": 10312,
+      "sha256": "5dd9d9f4ad7be4cd63dc6a62d23ab9ebd8423236f8dffd6940217123ba8684b2",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Authored factual audit/derived gene list or public source path/hash inventory; upstream attribution retained",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/sources/maynard-2026-10-29/neo-osi_metadata.csv",
+      "bytes": 3374,
+      "sha256": "0517f6e845384b45f4521d8235dfd7b6b60da30a31bfd961797f5f2275155a76",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Copied upstream code/data/HTML has no verified redistribution license; findings and source pointers are published",
+      "upstream_urls": [
+        "https://drive.google.com/uc?export=download&id=1iw89l70ufpuvWbfuMkbHYOEhvBYCFcX1"
+      ]
+    },
+    {
+      "path": "research/treatment-discovery/sources/maynard-2026-10-29/repository-tree.json",
+      "bytes": 96957,
+      "sha256": "43c8e21a9cecd9f2b0907189dbfb8c41619bcaf48c92caa7e3d8175557dddcb4",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Authored factual audit/derived gene list or public source path/hash inventory; upstream attribution retained",
+      "upstream_urls": [
+        "https://api.github.com/repos/czbiohub-sf/scell_lung_adenocarcinoma/git/trees/master?recursive=1"
+      ]
+    },
+    {
+      "path": "research/treatment-discovery/sources/maynard-2026-10-29/scripts/01_Import_data_and_metadata.Rmd",
+      "bytes": 935,
+      "sha256": "71614c3a611a642bce7858ba38b2751bc20c45283613125aeb2b2f3bdb6fc742",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Copied upstream code/data/HTML has no verified redistribution license; findings and source pointers are published",
+      "upstream_urls": [
+        "https://api.github.com/repos/czbiohub-sf/scell_lung_adenocarcinoma/git/blobs/9f913c70b881b294bd7c6b4f7f8de3bfa3e73511",
+        "https://raw.githubusercontent.com/czbiohub-sf/scell_lung_adenocarcinoma/de138c79bcfc2fa3a28c8a039a28ab560da78099/scripts/01_Import_data_and_metadata.Rmd"
+      ]
+    },
+    {
+      "path": "research/treatment-discovery/sources/maynard-2026-10-29/scripts/01_Import_data_and_metadata.nb.html",
+      "bytes": 1641783,
+      "sha256": "345a189ae1fe798931fdaeff48ee764e1a716c4c7f1b7d5cddbb1bab5a2b2245",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Copied upstream code/data/HTML has no verified redistribution license; findings and source pointers are published",
+      "upstream_urls": [
+        "https://api.github.com/repos/czbiohub-sf/scell_lung_adenocarcinoma/git/blobs/f920c0c1c14a2c41f7d045ffd068ec671fd5a56c",
+        "https://raw.githubusercontent.com/czbiohub-sf/scell_lung_adenocarcinoma/de138c79bcfc2fa3a28c8a039a28ab560da78099/scripts/01_Import_data_and_metadata.nb.html"
+      ]
+    },
+    {
+      "path": "research/treatment-discovery/sources/maynard-2026-10-29/scripts/NI07_TH226_cancercell_analysis.Rmd",
+      "bytes": 11111,
+      "sha256": "f91e209f7609a277fedade4b98a7965d0d5b62f0ac461f437de4b050667670f4",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Copied upstream code/data/HTML has no verified redistribution license; findings and source pointers are published",
+      "upstream_urls": [
+        "https://api.github.com/repos/czbiohub-sf/scell_lung_adenocarcinoma/git/blobs/250282896a85853e951a9660dbaccbf83f5a8eb6",
+        "https://raw.githubusercontent.com/czbiohub-sf/scell_lung_adenocarcinoma/de138c79bcfc2fa3a28c8a039a28ab560da78099/scripts/NI07_TH226_cancercell_analysis.Rmd"
+      ]
+    },
+    {
+      "path": "research/treatment-discovery/sources/maynard-2026-10-29/scripts/NI08_Gene_expression_plotting.Rmd",
+      "bytes": 18705,
+      "sha256": "6e5b0b9ea7e01542b1da0f7e61a1f126c0d458a69650c4590775a1349f617976",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Copied upstream code/data/HTML has no verified redistribution license; findings and source pointers are published",
+      "upstream_urls": [
+        "https://api.github.com/repos/czbiohub-sf/scell_lung_adenocarcinoma/git/blobs/240c814663be0824b715dc7a693e8e9e0369b011",
+        "https://raw.githubusercontent.com/czbiohub-sf/scell_lung_adenocarcinoma/de138c79bcfc2fa3a28c8a039a28ab560da78099/scripts/NI08_Gene_expression_plotting.Rmd"
+      ]
+    },
+    {
+      "path": "research/treatment-discovery/sources/maynard-2026-10-29/scripts/NI16_cancercell_EGFR_ALK.Rmd",
+      "bytes": 18414,
+      "sha256": "dc074e6c3a03c2460d4cbb00ce0f9fdd7d2caa451d730cdd1e5efc01f0823739",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Copied upstream code/data/HTML has no verified redistribution license; findings and source pointers are published",
+      "upstream_urls": [
+        "https://api.github.com/repos/czbiohub-sf/scell_lung_adenocarcinoma/git/blobs/951606887270c9fbb749a323c9006415cb80c237",
+        "https://raw.githubusercontent.com/czbiohub-sf/scell_lung_adenocarcinoma/de138c79bcfc2fa3a28c8a039a28ab560da78099/scripts/NI16_cancercell_EGFR_ALK.Rmd"
+      ]
+    },
+    {
+      "path": "research/treatment-discovery/sources/maynard-2026-10-29/scripts/NI16_cancercell_EGFR_ALK.nb.html",
+      "bytes": 1250304,
+      "sha256": "31c02be2f53c94b16cf0073239a377084613b612c858f8b35f850c227582c131",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Copied upstream code/data/HTML has no verified redistribution license; findings and source pointers are published",
+      "upstream_urls": [
+        "https://api.github.com/repos/czbiohub-sf/scell_lung_adenocarcinoma/git/blobs/08ed0285430eb92afb8a2a918c0e1f9cbba4e53e",
+        "https://raw.githubusercontent.com/czbiohub-sf/scell_lung_adenocarcinoma/de138c79bcfc2fa3a28c8a039a28ab560da78099/scripts/NI16_cancercell_EGFR_ALK.nb.html"
+      ]
+    },
+    {
+      "path": "research/treatment-discovery/sources/preclinical/2026-10-29/GDSC_Raw_Data_Description.pdf",
+      "bytes": 198066,
+      "sha256": "9ac8696eca9d51b737bd98337b86abac5c541c432fcd1a9ce84b8f56ae29b68e",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Sanger source terms or copied forum/browser/PDF body are not cleared for public redistribution",
+      "upstream_urls": [
+        "https://cog.sanger.ac.uk/cancerrxgene/GDSC_release8.5/GDSC_Raw_Data_Description.pdf"
+      ]
+    },
+    {
+      "path": "research/treatment-discovery/sources/preclinical/2026-10-29/archive-manifest.json",
+      "bytes": 17565,
+      "sha256": "981e427404c2953843c0851ab6cf9211653d1033f2efbb18ba074f9efb6c0f30",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Authored source provenance or HTTP availability result; temporary signing queries removed",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/sources/preclinical/2026-10-29/depmap-26q3-release-notes.json",
+      "bytes": 29643,
+      "sha256": "fdfe80a2333fd4ff0ebf146709d92001f78daf88ebfdfdefd9dec349c791ba8c",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Sanger source terms or copied forum/browser/PDF body are not cleared for public redistribution",
+      "upstream_urls": [
+        "https://forum.depmap.org/t/announcing-the-26q3-release/4692.json"
+      ]
+    },
+    {
+      "path": "research/treatment-discovery/sources/preclinical/2026-10-29/figshare-25917643-v1/README.txt",
+      "bytes": 9889,
+      "sha256": "1ae0f2cb4e23903593f10d2182214363392498f2185d2520c06962ffb156f340",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Exact archived DepMap/PRISM Figshare versions licensed CC BY 4.0; see THIRD_PARTY_NOTICES.md",
+      "upstream_urls": [
+        "https://ndownloader.figshare.com/files/46630975"
+      ]
+    },
+    {
+      "path": "research/treatment-discovery/sources/preclinical/2026-10-29/figshare-25917643-v1/Repurposing_Public_24Q2_Cell_Line_Meta_Data.csv",
+      "bytes": 157294,
+      "sha256": "13a85da9e45656c455d3911a4491f3636d7d0975a9d2333dc3d0a3e2cd3b0526",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Exact archived DepMap/PRISM Figshare versions licensed CC BY 4.0; see THIRD_PARTY_NOTICES.md",
+      "upstream_urls": [
+        "https://ndownloader.figshare.com/files/46630978"
+      ]
+    },
+    {
+      "path": "research/treatment-discovery/sources/preclinical/2026-10-29/figshare-25917643-v1/Repurposing_Public_24Q2_Extended_Primary_Compound_List.csv",
+      "bytes": 719567,
+      "sha256": "7e78f5901c1a97d2baab0789ab89832e716388da4eacaa9f094e7d2f2f5a3463",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Exact archived DepMap/PRISM Figshare versions licensed CC BY 4.0; see THIRD_PARTY_NOTICES.md",
+      "upstream_urls": [
+        "https://ndownloader.figshare.com/files/46630981"
+      ]
+    },
+    {
+      "path": "research/treatment-discovery/sources/preclinical/2026-10-29/figshare-25917643-v1/Repurposing_Public_24Q2_Readme.txt",
+      "bytes": 12930,
+      "sha256": "008d6d204f033dcb2e9dc558f3b371087370de341e334a456a762bb0768d717b",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Exact archived DepMap/PRISM Figshare versions licensed CC BY 4.0; see THIRD_PARTY_NOTICES.md",
+      "upstream_urls": [
+        "https://ndownloader.figshare.com/files/46631143"
+      ]
+    },
+    {
+      "path": "research/treatment-discovery/sources/preclinical/2026-10-29/figshare-25917643-v1/Repurposing_Public_24Q2_Treatment_Meta_Data.csv",
+      "bytes": 1510417,
+      "sha256": "6be6422ba804ad0775e78b457677bdf088707b9354746a03e110ae63f5eb2061",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Exact archived DepMap/PRISM Figshare versions licensed CC BY 4.0; see THIRD_PARTY_NOTICES.md",
+      "upstream_urls": [
+        "https://ndownloader.figshare.com/files/46631146"
+      ]
+    },
+    {
+      "path": "research/treatment-discovery/sources/preclinical/2026-10-29/figshare-25917643-v1.json",
+      "bytes": 7666,
+      "sha256": "75a5287437213394c2e6fdd849363b80248b4cdbb264d671533826bddec69e79",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Exact archived DepMap/PRISM Figshare versions licensed CC BY 4.0; see THIRD_PARTY_NOTICES.md",
+      "upstream_urls": [
+        "https://api.figshare.com/v2/articles/25917643/versions/1"
+      ]
+    },
+    {
+      "path": "research/treatment-discovery/sources/preclinical/2026-10-29/figshare-27993248-v1/AchillesCommonEssentialControls.csv",
+      "bytes": 17015,
+      "sha256": "a1a48ad516011c521b1981769e2f78de84d1410371f8517a7428349be6e6b98a",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Exact archived DepMap/PRISM Figshare versions licensed CC BY 4.0; see THIRD_PARTY_NOTICES.md",
+      "upstream_urls": [
+        "https://ndownloader.figshare.com/files/51063560"
+      ]
+    },
+    {
+      "path": "research/treatment-discovery/sources/preclinical/2026-10-29/figshare-27993248-v1/AchillesNonessentialControls.csv",
+      "bytes": 11490,
+      "sha256": "c7add12af5a37912997fdab0a7aabeef8d811b1ac7ee23dfcffa3a06471ce097",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Exact archived DepMap/PRISM Figshare versions licensed CC BY 4.0; see THIRD_PARTY_NOTICES.md",
+      "upstream_urls": [
+        "https://ndownloader.figshare.com/files/51063566"
+      ]
+    },
+    {
+      "path": "research/treatment-discovery/sources/preclinical/2026-10-29/figshare-27993248-v1/CRISPRInferredCommonEssentials.csv",
+      "bytes": 20795,
+      "sha256": "0352de5335ae3bf72250dd136d1b0df87a6b72f653df34c2560cce17c0e7d928",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Exact archived DepMap/PRISM Figshare versions licensed CC BY 4.0; see THIRD_PARTY_NOTICES.md",
+      "upstream_urls": [
+        "https://ndownloader.figshare.com/files/51064916"
+      ]
+    },
+    {
+      "path": "research/treatment-discovery/sources/preclinical/2026-10-29/figshare-27993248-v1/CRISPRScreenMap.csv",
+      "bytes": 36443,
+      "sha256": "668347965c7d5283da79ef7b6d315951d0cf6c5313551305971e8eec9503b3be",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Exact archived DepMap/PRISM Figshare versions licensed CC BY 4.0; see THIRD_PARTY_NOTICES.md",
+      "upstream_urls": [
+        "https://ndownloader.figshare.com/files/51065159"
+      ]
+    },
+    {
+      "path": "research/treatment-discovery/sources/preclinical/2026-10-29/figshare-27993248-v1/Model.csv",
+      "bytes": 645696,
+      "sha256": "b7a0c1385e6cef30132b56aff61f1261d11e3f490490b355c430d32ee0dbdcfa",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Exact archived DepMap/PRISM Figshare versions licensed CC BY 4.0; see THIRD_PARTY_NOTICES.md",
+      "upstream_urls": [
+        "https://ndownloader.figshare.com/files/51065297"
+      ]
+    },
+    {
+      "path": "research/treatment-discovery/sources/preclinical/2026-10-29/figshare-27993248-v1/ModelCondition.csv",
+      "bytes": 219100,
+      "sha256": "b0f22ddb886b241a3ff48674f58edba3e71c021c717aa40924e2cce67bf5200b",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Exact archived DepMap/PRISM Figshare versions licensed CC BY 4.0; see THIRD_PARTY_NOTICES.md",
+      "upstream_urls": [
+        "https://ndownloader.figshare.com/files/51065300"
+      ]
+    },
+    {
+      "path": "research/treatment-discovery/sources/preclinical/2026-10-29/figshare-27993248-v1/OmicsDefaultModelConditionProfiles.csv",
+      "bytes": 120795,
+      "sha256": "972a351ba7caf6059274326a20b2fde19cd9603d75ea3850904a85718bf24876",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Exact archived DepMap/PRISM Figshare versions licensed CC BY 4.0; see THIRD_PARTY_NOTICES.md",
+      "upstream_urls": [
+        "https://ndownloader.figshare.com/files/51065336"
+      ]
+    },
+    {
+      "path": "research/treatment-discovery/sources/preclinical/2026-10-29/figshare-27993248-v1/OmicsDefaultModelProfiles.csv",
+      "bytes": 90080,
+      "sha256": "096a96c39d88374cb7c37058816e6cde29d6617b820b8a14d33ae9dd821c6dc5",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Exact archived DepMap/PRISM Figshare versions licensed CC BY 4.0; see THIRD_PARTY_NOTICES.md",
+      "upstream_urls": [
+        "https://ndownloader.figshare.com/files/51065339"
+      ]
+    },
+    {
+      "path": "research/treatment-discovery/sources/preclinical/2026-10-29/figshare-27993248-v1/OmicsProfiles.csv",
+      "bytes": 254733,
+      "sha256": "0bb19ee57935d4b213d378a4db9caacaa1db7318a63ae81485d84f91c20a3bf2",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Exact archived DepMap/PRISM Figshare versions licensed CC BY 4.0; see THIRD_PARTY_NOTICES.md",
+      "upstream_urls": [
+        "https://ndownloader.figshare.com/files/51065723"
+      ]
+    },
+    {
+      "path": "research/treatment-discovery/sources/preclinical/2026-10-29/figshare-27993248-v1/README.txt",
+      "bytes": 43103,
+      "sha256": "f744a5cf5c112e01276e772679157aac8e85cdc4a8f6d3b86d808e3bfd332891",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Exact archived DepMap/PRISM Figshare versions licensed CC BY 4.0; see THIRD_PARTY_NOTICES.md",
+      "upstream_urls": [
+        "https://ndownloader.figshare.com/files/51065795"
+      ]
+    },
+    {
+      "path": "research/treatment-discovery/sources/preclinical/2026-10-29/figshare-27993248-v1/ScreenSequenceMap.csv",
+      "bytes": 346653,
+      "sha256": "ed2cbceee14ed0955420fa87a77a9adeef1214ae08ffdd5dc02a069d4a70be83",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Exact archived DepMap/PRISM Figshare versions licensed CC BY 4.0; see THIRD_PARTY_NOTICES.md",
+      "upstream_urls": [
+        "https://ndownloader.figshare.com/files/51065828"
+      ]
+    },
+    {
+      "path": "research/treatment-discovery/sources/preclinical/2026-10-29/figshare-27993248-v1.json",
+      "bytes": 26542,
+      "sha256": "a1e5865cdd4d34e59d2f95614cc485efc6b1b5f5e43df2a842293b72b4bfa17f",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Exact archived DepMap/PRISM Figshare versions licensed CC BY 4.0; see THIRD_PARTY_NOTICES.md",
+      "upstream_urls": [
+        "https://api.figshare.com/v2/articles/27993248/versions/1"
+      ]
+    },
+    {
+      "path": "research/treatment-discovery/sources/preclinical/2026-10-29/figshare-9393293-v4/primary-screen-cell-line-info.csv",
+      "bytes": 46849,
+      "sha256": "c17174f48264fea0adb3eb4b2b1f2daf61b83999b0db6e4965338e3bd6a9fde2",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Exact archived DepMap/PRISM Figshare versions licensed CC BY 4.0; see THIRD_PARTY_NOTICES.md",
+      "upstream_urls": [
+        "https://ndownloader.figshare.com/files/20237718"
+      ]
+    },
+    {
+      "path": "research/treatment-discovery/sources/preclinical/2026-10-29/figshare-9393293-v4/primary-screen-readme.txt",
+      "bytes": 5919,
+      "sha256": "309310719fd96580d8f211ca12d501f6624c245b268aa29d8a5286b411f0c63f",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Exact archived DepMap/PRISM Figshare versions licensed CC BY 4.0; see THIRD_PARTY_NOTICES.md",
+      "upstream_urls": [
+        "https://ndownloader.figshare.com/files/20237700"
+      ]
+    },
+    {
+      "path": "research/treatment-discovery/sources/preclinical/2026-10-29/figshare-9393293-v4/secondary-screen-cell-line-info.csv",
+      "bytes": 40979,
+      "sha256": "b93436b5f4bcf5fd14589697be4ca8f99ffd99d639223080380bc514c3718d27",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Exact archived DepMap/PRISM Figshare versions licensed CC BY 4.0; see THIRD_PARTY_NOTICES.md",
+      "upstream_urls": [
+        "https://ndownloader.figshare.com/files/20237769"
+      ]
+    },
+    {
+      "path": "research/treatment-discovery/sources/preclinical/2026-10-29/figshare-9393293-v4/secondary-screen-readme.txt",
+      "bytes": 7647,
+      "sha256": "ed453e2bbaecff26cf923d8a69290f2c18fd7488d5a7d6903821980e6d49c99d",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Exact archived DepMap/PRISM Figshare versions licensed CC BY 4.0; see THIRD_PARTY_NOTICES.md",
+      "upstream_urls": [
+        "https://ndownloader.figshare.com/files/20238123"
+      ]
+    },
+    {
+      "path": "research/treatment-discovery/sources/preclinical/2026-10-29/figshare-9393293-v4/secondary-screen-replicate-collapsed-treatment-info.csv",
+      "bytes": 3788355,
+      "sha256": "9d0d1fb4faa87a63cd84965ec5e2b55a9df5680520a41b029abb679cfd4384f7",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Exact archived DepMap/PRISM Figshare versions licensed CC BY 4.0; see THIRD_PARTY_NOTICES.md",
+      "upstream_urls": [
+        "https://ndownloader.figshare.com/files/20237763"
+      ]
+    },
+    {
+      "path": "research/treatment-discovery/sources/preclinical/2026-10-29/figshare-9393293-v4.json",
+      "bytes": 9750,
+      "sha256": "f7f2821a37d2534d73b8a6aeaf5adcb37c4941205e28fe192eded76ba8a68ed2",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Exact archived DepMap/PRISM Figshare versions licensed CC BY 4.0; see THIRD_PARTY_NOTICES.md",
+      "upstream_urls": [
+        "https://api.figshare.com/v2/articles/9393293/versions/4"
+      ]
+    },
+    {
+      "path": "research/treatment-discovery/sources/preclinical/2026-10-29/gdsc2-workbook-availability.json",
+      "bytes": 474,
+      "sha256": "93149a68fe7de10dfc85d47fb53ebf62b0e1e29f7531ed45c36243fa0e083701",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Authored source provenance or HTTP availability result; temporary signing queries removed",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/sources/preclinical/2026-10-29/sanger-data-usage-policy.html",
+      "bytes": 21368,
+      "sha256": "f3589e641b1c2118438a5932c748f772b99dd9157206f6a9157702b84cf83d89",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Sanger source terms or copied forum/browser/PDF body are not cleared for public redistribution",
+      "upstream_urls": [
+        "https://depmap.sanger.ac.uk/documentation/data-usage-policy/"
+      ]
+    },
+    {
+      "path": "research/treatment-discovery/sources/preclinical/2026-10-29/sanger-drug-sensitivity.html",
+      "bytes": 47439,
+      "sha256": "50697164d49b2fbcd9dc56dcd6b42d474799d27084fbd346f4c53510d2845f5c",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Sanger source terms or copied forum/browser/PDF body are not cleared for public redistribution",
+      "upstream_urls": [
+        "https://depmap.sanger.ac.uk/documentation/datasets/drug-sensitivity/"
+      ]
+    },
+    {
+      "path": "research/treatment-discovery/sources/preclinical/2026-10-29/sanger-faq.html",
+      "bytes": 25748,
+      "sha256": "46085d51c04df41643ba573bddc59e19575c665252ea8eef1cab7eab883854f4",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Sanger source terms or copied forum/browser/PDF body are not cleared for public redistribution",
+      "upstream_urls": [
+        "https://depmap.sanger.ac.uk/documentation/frequently-asked-questions/"
+      ]
+    },
+    {
+      "path": "research/treatment-discovery/sources/preclinical/2026-10-29/sanger-model-list-latest.csv.gz",
+      "bytes": 145029,
+      "sha256": "333affaa690c9f7e517467a6f78b00ffb418cb8449e2eb1cc5d93d85f7b0862e",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Sanger source terms or copied forum/browser/PDF body are not cleared for public redistribution",
+      "upstream_urls": [
+        "https://cog.sanger.ac.uk/cmp/download/model_list_latest.csv.gz"
+      ]
+    },
+    {
+      "path": "research/treatment-discovery/sources.json",
+      "bytes": 21415,
+      "sha256": "92e897a8ab684f15eb4a55a87a1a1919d767db25bed468846666b9f8ffdb610e",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/therapeutic-questions.md",
+      "bytes": 12033,
+      "sha256": "7621edc7ed78a7a97a896efe31b2df0ab7242e20ef497e8c70ba579d0504bd46",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/us-state-incidence-2019-2023.csv",
+      "bytes": 4243,
+      "sha256": "997ea5206ba451dd2ec75c8499ec042be4f36abd77e55bbfce1c2b02d41d3348",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/us-state-mortality-2020-2024.csv",
+      "bytes": 4276,
+      "sha256": "1488ed527cdf8844630bc7f84ae805b478c94f29f289e0e468e5521fdeebe084",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/winnebago-2000-personal-wood-dust.csv",
+      "bytes": 5128,
+      "sha256": "6c954fd754e84ed681fdd44ec18a2441699cb97fc92b3c29283cb4d1765b36ce",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "scripts/add_gap_ocr_sidecars.py",
+      "bytes": 6623,
+      "sha256": "194b6fff1baff322083c456727babe49ca39bfb5a4e7f5c03681379a6405c940",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "scripts/analyze_industry_records.py",
+      "bytes": 7224,
+      "sha256": "add9a158f117ca9cf0bde5f2054fbe9a5c579cf76b3a7b8b0510ae03c4bee921",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "scripts/audit_maynard_metadata.py",
+      "bytes": 6863,
+      "sha256": "b974461f3fe2179b66789b8c3b7f443e149d9c3e2c36739b1663050eaa92f134",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "scripts/build_data_source_catalog.py",
+      "bytes": 6536,
+      "sha256": "f0278154544b1ebbe324dc973e3e80ce86112644ffb40e3c265d22446e96ce77",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "scripts/build_food_industry_evidence.py",
+      "bytes": 27465,
+      "sha256": "9890a12ef1c98e0fceacaeaa7a74a04297dd4084855caba1213d4666788cb379",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "scripts/build_knowledge_base.py",
+      "bytes": 27033,
+      "sha256": "6b93a4e97a8b7fafe57698b41c6ea0ecf60df9bcd635d0b440bc7370db87caf9",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "scripts/build_report.py",
+      "bytes": 8719,
+      "sha256": "346d6e0ead05854df3868f3515623d863049047f345d42a4ef425b5a1215b049",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "scripts/build_services_evidence.py",
+      "bytes": 6692,
+      "sha256": "57e4c546356217e8ea8709a60e6e3bb0aa4f11d655b661ebb5c6ed4422c832f8",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "scripts/check_compilation.py",
+      "bytes": 5675,
+      "sha256": "c17db94b21fb5c01d8b9e74cc362cd1739e59c10cebc9519040b7d91dc04075b",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "scripts/check_publication.py",
+      "bytes": 13449,
+      "sha256": "62df8a54ed8bc8ffcf64f527cb4e4e2ab7aef161967868ceb6586a360f7892f4",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "scripts/extract_iowa_title_v_2024.py",
+      "bytes": 3441,
+      "sha256": "f13fa022b05764443f6e5e0e56b337b039fad40dc3c5aa8c8fc4d3038350d4d2",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "scripts/fetch_iowa_tri_history.py",
+      "bytes": 2043,
+      "sha256": "21a6253987358e2cdb9faca4731971668a1e00dd749d5fb0d18861df84a07dc3",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "scripts/ocr_pdf_applevision.swift",
+      "bytes": 2313,
+      "sha256": "5756a8b33867164afb60f2c5a87abb6ce1c2bd3d803cfadd99b4d867b2f23721",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "scripts/prepare_compilation.py",
+      "bytes": 15146,
+      "sha256": "d84d049379c0a26970ea5640530322f2b94bee2a2b04831a45f77a10d991d9d9",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "scripts/prepare_publication.py",
+      "bytes": 6994,
+      "sha256": "722a9710781e50fbe66378c37f23116a46342c2c56e74830a6212efc0db7cb11",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "scripts/query_research.py",
+      "bytes": 1578,
+      "sha256": "45185e834e1cd42f95f9c1b99ba5c38c91f4860555e72ba7c2a6e6d130575f56",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "scripts/run_nsclc_benchmark.py",
+      "bytes": 11067,
+      "sha256": "debac42b7d8a2e9c99ec081d97216ed9287525c2ce56ecd217cc82d5597c4e79",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "sources/HF2635-Signed-2026.ocr.provenance.json",
+      "bytes": 8080,
+      "sha256": "3dc7336b2172f41b654dd06d8ceecd763097b70c3c1921828a98679496071ea8",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Authored download, extraction or provenance metadata",
+      "upstream_urls": []
+    },
+    {
+      "path": "sources/HF2635-Signed-2026.ocr.txt",
+      "bytes": 41490,
+      "sha256": "c11d2212ce0c1b3048b6d7168a7933cd90388ac07cfac4f9a4309230edaaefbf",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Cached source body/OCR not mirrored; consult original publisher and source terms",
+      "upstream_urls": []
+    },
+    {
+      "path": "sources/HF2635-Signed-2026.pdf",
+      "bytes": 8225586,
+      "sha256": "627f753362a69bc79b195185ee85aa8e491e60b0bf02ff51da00b77bf611dfc4",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Cached source body/OCR not mirrored; consult original publisher and source terms",
+      "upstream_urls": []
+    },
+    {
+      "path": "sources/Iowa-BRFSS-2024.pdf",
+      "bytes": 1778713,
+      "sha256": "b3c5220b0d23e562e6731681e70922c7758481721ebba81652c9a4f29e02a137",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Cached source body/OCR not mirrored; consult original publisher and source terms",
+      "upstream_urls": []
+    },
+    {
+      "path": "sources/cohort-access/ahs-collaboration-policy-2025.pdf",
+      "bytes": 157097,
+      "sha256": "f5d6bb05d20c6281e4b90d54b7a9457f2563c1c2e287696e9d97e99f40f4aa7f",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Cached source body/OCR not mirrored; consult original publisher and source terms",
+      "upstream_urls": [
+        "https://aghealth.nih.gov/collaboration/AHS-Policy-2-4-GuidelinesForCollaboration-2025-1.pdf"
+      ]
+    },
+    {
+      "path": "sources/cohort-access/ahs-private-applicator-enrollment-coded-manual.pdf",
+      "bytes": 1885328,
+      "sha256": "60bc5a988e900050afe2255a41dc4586c2604e63a0d945079d109928739222f4",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Cached source body/OCR not mirrored; consult original publisher and source terms",
+      "upstream_urls": [
+        "https://aghealth.nih.gov/collaboration/qx/enrollment.pdf"
+      ]
+    },
+    {
+      "path": "sources/cohort-access/ahs-public-cancer-summary-through-2021.csv",
+      "bytes": 12667,
+      "sha256": "fa30e18438e565dd0772756b65359b79ff544a52070e96d991296497d5e52325",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Federal EPA/NCI/AHS factual public data; agency/source attribution retained",
+      "upstream_urls": [
+        "https://aghealth.nih.gov/collaboration/outcomes.html"
+      ]
+    },
+    {
+      "path": "sources/cohort-access/ahs-public-health-outcomes-2026-10-22.html",
+      "bytes": 48902,
+      "sha256": "ca482028a7722c2941aca911da347d2e1e8cbce9ad7bf28bd823ede276ba9897",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Cached source body/OCR not mirrored; consult original publisher and source terms",
+      "upstream_urls": [
+        "https://aghealth.nih.gov/collaboration/outcomes.html"
+      ]
+    },
+    {
+      "path": "sources/cohort-access/provenance.json",
+      "bytes": 3263,
+      "sha256": "b974d05be3909160e8f5a7755b47760d368a5f199c2de0963bdf5c5912972b4c",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Authored download, extraction or provenance metadata",
+      "upstream_urls": []
+    },
+    {
+      "path": "sources/download-log.json",
+      "bytes": 882,
+      "sha256": "6c6d5e745f90ae18de226f559eb7ded454c5734fc5f0e3b8733c3b9c7e2a33b4",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Authored download, extraction or provenance metadata",
+      "upstream_urls": []
+    },
+    {
+      "path": "sources/environment/iarc-firefighter-evaluation-2022.pdf",
+      "bytes": 223351,
+      "sha256": "4e5b85e22f5e7b35f4e9cdeec2e4c9d6296ae152b7c37390227ff30e63526e21",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Cached source body/OCR not mirrored; consult original publisher and source terms",
+      "upstream_urls": []
+    },
+    {
+      "path": "sources/environment/iowa-dnr-drinking-water-compliance-2025-june2026.pdf",
+      "bytes": 5690426,
+      "sha256": "a5ef33ca015ae0e2edf14ccd3b50483c497913b01ba6f607aa048566a8b0d2dc",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Cached source body/OCR not mirrored; consult original publisher and source terms",
+      "upstream_urls": []
+    },
+    {
+      "path": "sources/environment/iowa-dnr-pfas-private-wells.pdf",
+      "bytes": 185662,
+      "sha256": "ee3299580d13b8366624db428db144255d22db4cf9de1aa3a5a3609ff0bdc30a",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Cached source body/OCR not mirrored; consult original publisher and source terms",
+      "upstream_urls": []
+    },
+    {
+      "path": "sources/environment/iowa-dnr-pfas-testing-tiers1-3-march2023.pdf",
+      "bytes": 2260464,
+      "sha256": "6f39aae9688b93b36a876c269d316ba027253b49fdca4b2f367b144fdd5826f9",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Cached source body/OCR not mirrored; consult original publisher and source terms",
+      "upstream_urls": []
+    },
+    {
+      "path": "sources/industries/energy-legacy/ames-municipal-power-niosh-1988.ocr.provenance.json",
+      "bytes": 13428,
+      "sha256": "239004149c78a927be4a4fcf359d58a3a5287f943eb89f7327e4aeef05ee0da4",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Authored download, extraction or provenance metadata",
+      "upstream_urls": []
+    },
+    {
+      "path": "sources/industries/energy-legacy/ames-municipal-power-niosh-1988.ocr.txt",
+      "bytes": 118719,
+      "sha256": "326635c55ad5e8ff6451672a6f4f521114bc18866a4a92feddd4186bd1b7e6e5",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Cached source body/OCR not mirrored; consult original publisher and source terms",
+      "upstream_urls": []
+    },
+    {
+      "path": "sources/industries/energy-legacy/ames-municipal-power-niosh-1988.pdf",
+      "bytes": 631866,
+      "sha256": "7aac7591f0faa2833c6d4730fa1ff546a57b686a5d265813994671ecc9b6273d",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Cached source body/OCR not mirrored; consult original publisher and source terms",
+      "upstream_urls": [
+        "https://stacks.cdc.gov/view/cdc/171905/cdc_171905_DS1.pdf"
+      ]
+    },
+    {
+      "path": "sources/industries/energy-legacy/atlantic-pce-atsdr-2026.ocr.provenance.json",
+      "bytes": 10172,
+      "sha256": "081a31ea0e2ac0775dfde9d776902a3eb45ac029c3a17ade796360cb872ecfc7",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Authored download, extraction or provenance metadata",
+      "upstream_urls": []
+    },
+    {
+      "path": "sources/industries/energy-legacy/atlantic-pce-atsdr-2026.ocr.txt",
+      "bytes": 83190,
+      "sha256": "d98cc3380108abc71125d8a859ad62148bd74053ebfc2158b126b499bfb74862",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Cached source body/OCR not mirrored; consult original publisher and source terms",
+      "upstream_urls": []
+    },
+    {
+      "path": "sources/industries/energy-legacy/atlantic-pce-atsdr-2026.pdf",
+      "bytes": 1641320,
+      "sha256": "74a2fe396e1ef01142d5dbb97d9e9e476aadce1ea4b35685602aa1aab4f9230e",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Cached source body/OCR not mirrored; consult original publisher and source terms",
+      "upstream_urls": [
+        "https://www.atsdr.cdc.gov/HAC/pha/PCECleaner/PCE-Former-Drycleaner-final-508.pdf"
+      ]
+    },
+    {
+      "path": "sources/industries/energy-legacy/doty-landfill-atsdr-2008.ocr.provenance.json",
+      "bytes": 3579,
+      "sha256": "4923cec2208b7661e9ed0c5de19b88132c378349233284b18f07695b3908de9e",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Authored download, extraction or provenance metadata",
+      "upstream_urls": []
+    },
+    {
+      "path": "sources/industries/energy-legacy/doty-landfill-atsdr-2008.ocr.txt",
+      "bytes": 10359,
+      "sha256": "6e1e89c964f96faad979e5cc95f63c1d4261e988237090606bf1f7e50d253cec",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Cached source body/OCR not mirrored; consult original publisher and source terms",
+      "upstream_urls": []
+    },
+    {
+      "path": "sources/industries/energy-legacy/doty-landfill-atsdr-2008.pdf",
+      "bytes": 1029440,
+      "sha256": "8f107a86a75b276374aaeec76dbaf69de0325a05f4b020d34bff2604829228b1",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Cached source body/OCR not mirrored; consult original publisher and source terms",
+      "upstream_urls": [
+        "https://www.atsdr.cdc.gov/HAC/pha/DotyLandfillSite/DotyLandfillSite%20LHC%206-23-2008.pdf"
+      ]
+    },
+    {
+      "path": "sources/industries/energy-legacy/download-log.json",
+      "bytes": 2402,
+      "sha256": "a7b3fe267dce877b9350a2db214e2dd928b189fedacd144c13cbfb88e3fe9df1",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Authored download, extraction or provenance metadata",
+      "upstream_urls": []
+    },
+    {
+      "path": "sources/industries/energy-legacy/equistar-clinton-benzene-atsdr-2008.ocr.provenance.json",
+      "bytes": 6012,
+      "sha256": "0dc68cb73763745962f6cd40100dd41bdad7abfa3d2705ba45c48ffc0fd4b43e",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Authored download, extraction or provenance metadata",
+      "upstream_urls": []
+    },
+    {
+      "path": "sources/industries/energy-legacy/equistar-clinton-benzene-atsdr-2008.ocr.txt",
+      "bytes": 39720,
+      "sha256": "c05662a4cad39d41daaf4bc80def7974159723db424cccb6c04e3c169c7b7d3c",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Cached source body/OCR not mirrored; consult original publisher and source terms",
+      "upstream_urls": []
+    },
+    {
+      "path": "sources/industries/energy-legacy/equistar-clinton-benzene-atsdr-2008.pdf",
+      "bytes": 1108691,
+      "sha256": "6593675be531508be957cfecab60dd588cfd7d8243fbd27c9849e53e57aac4a5",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Cached source body/OCR not mirrored; consult original publisher and source terms",
+      "upstream_urls": [
+        "https://www.atsdr.cdc.gov/HAC/pha/EquistarPyrolysis/EquistarPyrolysisHC062708.pdf"
+      ]
+    },
+    {
+      "path": "sources/industries/energy-legacy/gasoline-iarc-qa-2025.pdf",
+      "bytes": 352772,
+      "sha256": "4b67d2cbbf37e90081232d0f49f9ecd65e4728abfafb5b62cf8e170453cde66f",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Cached source body/OCR not mirrored; consult original publisher and source terms",
+      "upstream_urls": [
+        "https://www.iarc.who.int/wp-content/uploads/2025/03/QA-Mono-Vol138.pdf"
+      ]
+    },
+    {
+      "path": "sources/industries/energy-legacy/iaap-atsdr-2013.pdf",
+      "bytes": 2661734,
+      "sha256": "b88028ec2ffa82a833c84268fbc81750db8e3832338dd60b97ceabc59ea7ca74",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Cached source body/OCR not mirrored; consult original publisher and source terms",
+      "upstream_urls": [
+        "https://www.atsdr.cdc.gov/HAC/pha/IowaArmyAmmunitionPlant/IowaArmyAmmunitionPlantLHC09192013_508.pdf"
+      ]
+    },
+    {
+      "path": "sources/industries/energy-legacy/iowa-city-coal-gas-atsdr-2006.ocr.provenance.json",
+      "bytes": 10735,
+      "sha256": "23c931d2edbb98b3d97118dbfba3e0f09a5bf15006c2460bfc8fb406c7784e19",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Authored download, extraction or provenance metadata",
+      "upstream_urls": []
+    },
+    {
+      "path": "sources/industries/energy-legacy/iowa-city-coal-gas-atsdr-2006.ocr.txt",
+      "bytes": 102598,
+      "sha256": "5c6cc5fce6e875800e8c9976cb10e96e9ae08b20e0d007ca2e98da6659947ab2",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Cached source body/OCR not mirrored; consult original publisher and source terms",
+      "upstream_urls": []
+    },
+    {
+      "path": "sources/industries/energy-legacy/iowa-city-coal-gas-atsdr-2006.pdf",
+      "bytes": 1704165,
+      "sha256": "1c55446c0b80c5eaf6dc01577cfdc30e88f63c1631d410349e28c6ef3dbad06b",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Cached source body/OCR not mirrored; consult original publisher and source terms",
+      "upstream_urls": [
+        "https://www.atsdr.cdc.gov/HAC/pha/IowaCityFMGP/IowaCityFMGP-HC091406.pdf"
+      ]
+    },
+    {
+      "path": "sources/industries/energy-legacy/mason-city-coal-gas-atsdr-2008.ocr.provenance.json",
+      "bytes": 3575,
+      "sha256": "df0decd4d414411025a7dcbed6520ac87fbc77a640fb5fe3901c39392d356eb4",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Authored download, extraction or provenance metadata",
+      "upstream_urls": []
+    },
+    {
+      "path": "sources/industries/energy-legacy/mason-city-coal-gas-atsdr-2008.ocr.txt",
+      "bytes": 10930,
+      "sha256": "dfee4e3080dd026ff94b6304006567d62383d28622e7458879259faad731a000",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Cached source body/OCR not mirrored; consult original publisher and source terms",
+      "upstream_urls": []
+    },
+    {
+      "path": "sources/industries/energy-legacy/mason-city-coal-gas-atsdr-2008.pdf",
+      "bytes": 1016468,
+      "sha256": "6dbf1c2a79c68317802ef2a833a5f73c2a07e16688874eaa56dd0798c4d621b0",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Cached source body/OCR not mirrored; consult original publisher and source terms",
+      "upstream_urls": [
+        "https://www.atsdr.cdc.gov/HAC/pha/MasonCityCoalGasificationPlant/MasonCityCoalGasification%20LHC%206-13-2008.pdf"
+      ]
+    },
+    {
+      "path": "sources/industries/energy-legacy/oskaloosa-bulk-oil-atsdr-2006.ocr.provenance.json",
+      "bytes": 5541,
+      "sha256": "1121567d61655eb8f2fb6545ebbd564331310d03e93311eddfd4cf57912d1eb0",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Authored download, extraction or provenance metadata",
+      "upstream_urls": []
+    },
+    {
+      "path": "sources/industries/energy-legacy/oskaloosa-bulk-oil-atsdr-2006.ocr.txt",
+      "bytes": 35566,
+      "sha256": "b46870a3faab83731e20bb94f9405ad8946fc35140b0c66802ecf3d49aaa9a34",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Cached source body/OCR not mirrored; consult original publisher and source terms",
+      "upstream_urls": []
+    },
+    {
+      "path": "sources/industries/energy-legacy/oskaloosa-bulk-oil-atsdr-2006.pdf",
+      "bytes": 446073,
+      "sha256": "e5d0f947fed88ed7800821f9c37a81ad001c19e43dd2f5f87f7e8fc261fe8d2e",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Cached source body/OCR not mirrored; consult original publisher and source terms",
+      "upstream_urls": [
+        "https://www.atsdr.cdc.gov/HAC/pha/BuchananBulkOilMaPa/BuchananBulkOilHC093006.pdf"
+      ]
+    },
+    {
+      "path": "sources/industries/energy-legacy/perry-rail-yard-atsdr-2007.ocr.provenance.json",
+      "bytes": 6130,
+      "sha256": "905fd46aaa941afb74d12b0aff6cc04856b9796eb8ce9775937cb744957400a3",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Authored download, extraction or provenance metadata",
+      "upstream_urls": []
+    },
+    {
+      "path": "sources/industries/energy-legacy/perry-rail-yard-atsdr-2007.ocr.txt",
+      "bytes": 42192,
+      "sha256": "d0d1a27c5bb39080b318abad80a96504cce39a7a0ddcb81986840093477a80c1",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Cached source body/OCR not mirrored; consult original publisher and source terms",
+      "upstream_urls": []
+    },
+    {
+      "path": "sources/industries/energy-legacy/perry-rail-yard-atsdr-2007.pdf",
+      "bytes": 1826703,
+      "sha256": "fb650df6e952fab514090d74a255ed75531f4fad6e85cde651d1c650d88efff3",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Cached source body/OCR not mirrored; consult original publisher and source terms",
+      "upstream_urls": [
+        "https://www.atsdr.cdc.gov/HAC/pha/ChicagoMilwaukeeandStPaulRailYard/ChicagoMilwaukeeStPaulRailYardHC053107.pdf"
+      ]
+    },
+    {
+      "path": "sources/industries/food-agprocessing/archive-manifest.json",
+      "bytes": 1339,
+      "sha256": "76a487866f898292e0fadc84bbada74b039ccc0dc9d8edae8838bfa9aa268025",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Authored download, extraction or provenance metadata",
+      "upstream_urls": []
+    },
+    {
+      "path": "sources/industries/food-agprocessing/download-log.json",
+      "bytes": 904,
+      "sha256": "ddab70ed33943e97c6edcd2164e7e82badcd02059bc46769a50c1669e5f13b34",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Authored download, extraction or provenance metadata",
+      "upstream_urls": []
+    },
+    {
+      "path": "sources/industries/food-agprocessing/iowa-point-source-emissions-2024-feb2026.pdf",
+      "bytes": 1125415,
+      "sha256": "e2577c2c4985adff4b380f75577df71e111830a416113158c5019e17e9e0781f",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Cached source body/OCR not mirrored; consult original publisher and source terms",
+      "upstream_urls": [
+        "https://www.iowadnr.gov/media/2277/download?inline="
+      ]
+    },
+    {
+      "path": "sources/industries/food-agprocessing/iowa-point-source-emissions-2024-feb2026.txt",
+      "bytes": 219278,
+      "sha256": "c289d4df5094b2182109024edabacbd2c0f2c7cdd7aff8c42092e6f7581126d6",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Cached source body/OCR not mirrored; consult original publisher and source terms",
+      "upstream_urls": []
+    },
+    {
+      "path": "sources/industries/food-agprocessing/niosh-bil-mar-storm-lake-2003.pdf",
+      "bytes": 414907,
+      "sha256": "949661e150158ac9cf0d79f2eecf8d5391ff036f5c46dec21dc2ff825aac35aa",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Cached source body/OCR not mirrored; consult original publisher and source terms",
+      "upstream_urls": [
+        "https://www.cdc.gov/niosh/hhe/reports/pdfs/2002-0257-2916.pdf"
+      ]
+    },
+    {
+      "path": "sources/industries/food-agprocessing/niosh-sara-lee-storm-lake-2006.pdf",
+      "bytes": 894481,
+      "sha256": "81dab5dc5d5f1cdd75a305a9ca9810ba5c5f2fdb535676dedc84a300850485c7",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Cached source body/OCR not mirrored; consult original publisher and source terms",
+      "upstream_urls": [
+        "https://www.cdc.gov/niosh/hhe/reports/pdfs/2006-0153-3022.pdf"
+      ]
+    },
+    {
+      "path": "sources/industries/food-agprocessing/niosh-upper-midwest-glioma-occupation-2012.pdf",
+      "bytes": 114224,
+      "sha256": "aeef0aa8f010885e11773feddfacd5c835b6a5a254bd8d0db44a631cb14fc24b",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Cached source body/OCR not mirrored; consult original publisher and source terms",
+      "upstream_urls": [
+        "https://stacks.cdc.gov/view/cdc/193696/cdc_193696_DS1.pdf"
+      ]
+    },
+    {
+      "path": "sources/industries/manufacturing/atsdr-alcoa-vapor-2005.pdf",
+      "bytes": 254310,
+      "sha256": "db30e2eead3fad4c74674061f85b870d325f2f6be85c2b7938f3124e7594854e",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Cached source body/OCR not mirrored; consult original publisher and source terms",
+      "upstream_urls": [
+        "https://www.atsdr.cdc.gov/HAC/pha/Sub-SlabGasandAirSamplingData08/SubSlabGasAirSamplingAlcoaHCFinal052005.pdf"
+      ]
+    },
+    {
+      "path": "sources/industries/manufacturing/atsdr-allied-equipment-2011.pdf",
+      "bytes": 279619,
+      "sha256": "7dc6ca25f29614ead103ccd7b80a27238ec739738ecc837177a2435bf47b128c",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Cached source body/OCR not mirrored; consult original publisher and source terms",
+      "upstream_urls": [
+        "https://www.atsdr.cdc.gov/HAC/pha/AlliedEquipmentInc/AlliedEquipmentLHC03142011.pdf"
+      ]
+    },
+    {
+      "path": "sources/industries/manufacturing/atsdr-american-packaging-2009.ocr.provenance.json",
+      "bytes": 3858,
+      "sha256": "020b8d342a366a8b645feb9393156d9bec3a4c3b13cfcce0d1a31ae01e5572a4",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Authored download, extraction or provenance metadata",
+      "upstream_urls": []
+    },
+    {
+      "path": "sources/industries/manufacturing/atsdr-american-packaging-2009.ocr.txt",
+      "bytes": 14471,
+      "sha256": "dad1786e734dfd7319994e8592272dacc3efdbc64e8431985dae321d0ed8c468",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Cached source body/OCR not mirrored; consult original publisher and source terms",
+      "upstream_urls": []
+    },
+    {
+      "path": "sources/industries/manufacturing/atsdr-american-packaging-2009.pdf",
+      "bytes": 232876,
+      "sha256": "05d49c1b6cea60de70516f5de364afeeb6399e9c0138f4396aaa7320955f8c27",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Cached source body/OCR not mirrored; consult original publisher and source terms",
+      "upstream_urls": [
+        "https://www.atsdr.cdc.gov/HAC/pha/AmericanPackagingCorp9-30/AirEmissionsfromAmericanPackagingCorp9-30-2009.pdf"
+      ]
+    },
+    {
+      "path": "sources/industries/manufacturing/atsdr-midamerica-tanning-2005.ocr.provenance.json",
+      "bytes": 4408,
+      "sha256": "145ba997c6543d350e4b92da171289f4a20151e68546876122477d0f6af6b1a3",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Authored download, extraction or provenance metadata",
+      "upstream_urls": []
+    },
+    {
+      "path": "sources/industries/manufacturing/atsdr-midamerica-tanning-2005.ocr.txt",
+      "bytes": 16287,
+      "sha256": "95ae60756841bae8510ae513363a2623a5c2613f5d9aaba4875dc9d9ec644522",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Cached source body/OCR not mirrored; consult original publisher and source terms",
+      "upstream_urls": []
+    },
+    {
+      "path": "sources/industries/manufacturing/atsdr-midamerica-tanning-2005.pdf",
+      "bytes": 566124,
+      "sha256": "738555e2ef269cad7cf623319bfc0c13d532dd959cba8830d7c48fd4280cccdc",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Cached source body/OCR not mirrored; consult original publisher and source terms",
+      "upstream_urls": [
+        "https://www.atsdr.cdc.gov/HAC/pha/MidAmericaTan021705-IA/MidAmericaTan021705-IA.pdf"
+      ]
+    },
+    {
+      "path": "sources/industries/manufacturing/download-log.json",
+      "bytes": 2511,
+      "sha256": "799c07fd9e4c1ffc31b02f140a20d300bb69e9767d149117805d07a2d063e57b",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Authored download, extraction or provenance metadata",
+      "upstream_urls": []
+    },
+    {
+      "path": "sources/industries/manufacturing/epa-airtoxscreen-eto-controls-update-2022.pdf",
+      "bytes": 189949,
+      "sha256": "dae7547768f6db4e8ee9b3973c4d9bc01f1db3d1356fd8951c4623708276330c",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Cached source body/OCR not mirrored; consult original publisher and source terms",
+      "upstream_urls": [
+        "https://www.epa.gov/system/files/documents/2022-03/2017airtoxscreen-emissions-updates.pdf"
+      ]
+    },
+    {
+      "path": "sources/industries/manufacturing/iowa-occupational-cancer-pubmed-abstracts.xml",
+      "bytes": 12559,
+      "sha256": "3d2a938259bed931e726df1469fff65d2960b19b0e08bc4d8b1a2e7a7da8dbc5",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Cached source body/OCR not mirrored; consult original publisher and source terms",
+      "upstream_urls": []
+    },
+    {
+      "path": "sources/industries/manufacturing/niosh-john-deere-dubuque-1988.pdf",
+      "bytes": 3751498,
+      "sha256": "655b12e8ff14847b2423d81b43587ff3c618322bc20f6c2c9b0dde2b85804e01",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Cached source body/OCR not mirrored; consult original publisher and source terms",
+      "upstream_urls": [
+        "https://www.cdc.gov/niosh/hhe/reports/pdfs/85-510-1937.pdf"
+      ]
+    },
+    {
+      "path": "sources/industries/manufacturing/niosh-keokuk-steel-castings-1982.pdf",
+      "bytes": 1531682,
+      "sha256": "2749762c00f2544de5a22505a1a1848b2471ab23671d5000a647be0885ec6839",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Cached source body/OCR not mirrored; consult original publisher and source terms",
+      "upstream_urls": [
+        "https://www.cdc.gov/niosh/hhe/reports/pdfs/80-81-1173.pdf"
+      ]
+    },
+    {
+      "path": "sources/industries/manufacturing/niosh-sheller-globe-keokuk-1982.pdf",
+      "bytes": 2869055,
+      "sha256": "0cb1bc3980b542ddf817f8356380e7f536fc4fd8afe512d5ee2287c1a61f1727",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Cached source body/OCR not mirrored; consult original publisher and source terms",
+      "upstream_urls": [
+        "https://stacks.cdc.gov/view/cdc/173078/cdc_173078_DS1.pdf"
+      ]
+    },
+    {
+      "path": "sources/industries/manufacturing/niosh-winnebago-wood-dust-2001.pdf",
+      "bytes": 350691,
+      "sha256": "1e3f229b01fdaae57e5545e507e2e299e92e4fc8f3f5c3dc99680e4f77fa9c72",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Cached source body/OCR not mirrored; consult original publisher and source terms",
+      "upstream_urls": [
+        "https://www.cdc.gov/niosh/hhe/reports/pdfs/2000-0250-2837.pdf"
+      ]
+    },
+    {
+      "path": "sources/industries/manufacturing/sha256-manifest.json",
+      "bytes": 1986,
+      "sha256": "c3f4d392a445991a0546a857908f5cd103ca7b605a78251acabb69b0b33eb6f7",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Authored download, extraction or provenance metadata",
+      "upstream_urls": []
+    },
+    {
+      "path": "sources/industries/statewide/model-readiness-source-downloads.json",
+      "bytes": 610,
+      "sha256": "a1da48702195bb4c5f7f781d96a880eb547845954519988000d1bf63a1c193ca",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Authored download, extraction or provenance metadata",
+      "upstream_urls": []
+    },
+    {
+      "path": "sources/industries/statewide/national_cancerrisk_by_county_poll.xlsx",
+      "bytes": 2753247,
+      "sha256": "efbed957b9f5c77c9a8d274fd05e74b7036e43b7d288793dc0cf6b4aacc3cbb3",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Federal EPA/NCI/AHS factual public data; agency/source attribution retained",
+      "upstream_urls": []
+    },
+    {
+      "path": "sources/industries/statewide/national_cancerrisk_by_county_srcgrp.xlsx",
+      "bytes": 1858146,
+      "sha256": "9ff6dc7ae2dd31dba4501b34c504b86b4a246b0c16a4761b008b2dd99934386f",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Federal EPA/NCI/AHS factual public data; agency/source attribution retained",
+      "upstream_urls": []
+    },
+    {
+      "path": "sources/industries/statewide/national_cancerrisk_by_state_poll.xlsx",
+      "bytes": 59206,
+      "sha256": "b58e12059dfab2ecfb47ea8c4fb13bf900be4e4b3c1c18bd7c3cdebea555475d",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Federal EPA/NCI/AHS factual public data; agency/source attribution retained",
+      "upstream_urls": []
+    },
+    {
+      "path": "sources/industries/statewide/national_cancerrisk_by_state_srcgrp.xlsx",
+      "bytes": 41261,
+      "sha256": "74faddac451fe00e9548fa251e7a6d4322949016f5252a418ac6509e7f091d34",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Federal EPA/NCI/AHS factual public data; agency/source attribution retained",
+      "upstream_urls": []
+    },
+    {
+      "path": "sources/industries/statewide/tri-2024-iowa-original.csv",
+      "bytes": 1309131,
+      "sha256": "120f4401bffbf822eb599dd8f9c6b7ec1b0a57eda971fd2c1a7da5499a6553fe",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Federal EPA/NCI/AHS factual public data; agency/source attribution retained",
+      "upstream_urls": []
+    },
+    {
+      "path": "sources/industries/statewide/tri-chemical-list-changes-2026-10-13.pdf",
+      "bytes": 329016,
+      "sha256": "144ecd73f93e7f9c43346f37d301f73bd5a9c758ba636e0f1a64d485c05cc5a4",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Cached source body/OCR not mirrored; consult original publisher and source terms",
+      "upstream_urls": [
+        "https://www.epa.gov/system/files/documents/2026-10/tri-chemical-list-changes-10-13-2026.pdf"
+      ]
+    },
+    {
+      "path": "sources/industries/statewide/tri-download-page.html",
+      "bytes": 66702,
+      "sha256": "c6ec7be9bee795c2a9aedb4418c0d9586edde003fafab7c38f311f42d0d4e0d9",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Cached source body/OCR not mirrored; consult original publisher and source terms",
+      "upstream_urls": []
+    },
+    {
+      "path": "sources/industries/statewide/tri-factors-to-consider-2025.pdf",
+      "bytes": 3222367,
+      "sha256": "01113691ac85f62a57ce61a8637dc1e6a28db6b1443d7586dca75fcbc851d982",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Cached source body/OCR not mirrored; consult original publisher and source terms",
+      "upstream_urls": [
+        "https://www.epa.gov/system/files/documents/2025-09/factors-to-consider_fall-2025.pdf"
+      ]
+    },
+    {
+      "path": "sources/industries/tri-history/tri-1987-iowa-original.csv",
+      "bytes": 904171,
+      "sha256": "fbc6ee5e85214be43bcc6f1061e691302aedd743561d8b2e7cd4a59b98793082",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Federal EPA/NCI/AHS factual public data; agency/source attribution retained",
+      "upstream_urls": [
+        "https://data.epa.gov/efservice/downloads/tri/mv_tri_basic_download/1987_IA/csv"
+      ]
+    },
+    {
+      "path": "sources/industries/tri-history/tri-1988-iowa-original.csv",
+      "bytes": 1006756,
+      "sha256": "71a57435d536730012ea9eb8150552ad8356b9586721f1b123dc4644c2f5e24c",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Federal EPA/NCI/AHS factual public data; agency/source attribution retained",
+      "upstream_urls": [
+        "https://data.epa.gov/efservice/downloads/tri/mv_tri_basic_download/1988_IA/csv"
+      ]
+    },
+    {
+      "path": "sources/industries/tri-history/tri-1989-iowa-original.csv",
+      "bytes": 1004158,
+      "sha256": "27251a80812372db9c53317d5896cd02be2f3caeb21c91c847d8f8dfeed30705",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Federal EPA/NCI/AHS factual public data; agency/source attribution retained",
+      "upstream_urls": [
+        "https://data.epa.gov/efservice/downloads/tri/mv_tri_basic_download/1989_IA/csv"
+      ]
+    },
+    {
+      "path": "sources/industries/tri-history/tri-1990-iowa-original.csv",
+      "bytes": 1018455,
+      "sha256": "8bea797845870796b1e439f1bcc5290ef536fdf99f89df3e722176ff06187ba4",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Federal EPA/NCI/AHS factual public data; agency/source attribution retained",
+      "upstream_urls": [
+        "https://data.epa.gov/efservice/downloads/tri/mv_tri_basic_download/1990_IA/csv"
+      ]
+    },
+    {
+      "path": "sources/industries/tri-history/tri-1991-iowa-original.csv",
+      "bytes": 1082724,
+      "sha256": "3bf7cdd8448e93e94b44627356b722080d014625e2165474fe5592bc77c841eb",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Federal EPA/NCI/AHS factual public data; agency/source attribution retained",
+      "upstream_urls": [
+        "https://data.epa.gov/efservice/downloads/tri/mv_tri_basic_download/1991_IA/csv"
+      ]
+    },
+    {
+      "path": "sources/industries/tri-history/tri-1992-iowa-original.csv",
+      "bytes": 1056574,
+      "sha256": "c550cc8f2885ac8dff41906954a8161eba1f79a5c17acff58cd1d7c2faf12a11",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Federal EPA/NCI/AHS factual public data; agency/source attribution retained",
+      "upstream_urls": [
+        "https://data.epa.gov/efservice/downloads/tri/mv_tri_basic_download/1992_IA/csv"
+      ]
+    },
+    {
+      "path": "sources/industries/tri-history/tri-1993-iowa-original.csv",
+      "bytes": 1028368,
+      "sha256": "71c4d2a461b4902aa9f7a51ee0a32fdf027474d55db884336f3d12361c6b960b",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Federal EPA/NCI/AHS factual public data; agency/source attribution retained",
+      "upstream_urls": [
+        "https://data.epa.gov/efservice/downloads/tri/mv_tri_basic_download/1993_IA/csv"
+      ]
+    },
+    {
+      "path": "sources/industries/tri-history/tri-1994-iowa-original.csv",
+      "bytes": 981402,
+      "sha256": "d7f35b013ad6c1a324d7799655bbd6ac35ac098aba304751a494ea9a0b34bfc3",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Federal EPA/NCI/AHS factual public data; agency/source attribution retained",
+      "upstream_urls": [
+        "https://data.epa.gov/efservice/downloads/tri/mv_tri_basic_download/1994_IA/csv"
+      ]
+    },
+    {
+      "path": "sources/industries/tri-history/tri-1995-iowa-original.csv",
+      "bytes": 981599,
+      "sha256": "5286999c1f62fbe4cfeb2823aa14dd4bb93f63505e15bdf2cce688455ee03b45",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Federal EPA/NCI/AHS factual public data; agency/source attribution retained",
+      "upstream_urls": [
+        "https://data.epa.gov/efservice/downloads/tri/mv_tri_basic_download/1995_IA/csv"
+      ]
+    },
+    {
+      "path": "sources/industries/tri-history/tri-1996-iowa-original.csv",
+      "bytes": 967964,
+      "sha256": "cb36342da0548e5f4b28b75961de104fa9b5f2c2c216fb2d2d9c0d385f6877b8",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Federal EPA/NCI/AHS factual public data; agency/source attribution retained",
+      "upstream_urls": [
+        "https://data.epa.gov/efservice/downloads/tri/mv_tri_basic_download/1996_IA/csv"
+      ]
+    },
+    {
+      "path": "sources/industries/tri-history/tri-1997-iowa-original.csv",
+      "bytes": 946183,
+      "sha256": "c32823c8d9787f00784f07fa7fdea833dfa69dbe8185a3c2ae1b2406cc438553",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Federal EPA/NCI/AHS factual public data; agency/source attribution retained",
+      "upstream_urls": [
+        "https://data.epa.gov/efservice/downloads/tri/mv_tri_basic_download/1997_IA/csv"
+      ]
+    },
+    {
+      "path": "sources/industries/tri-history/tri-1998-iowa-original.csv",
+      "bytes": 1157102,
+      "sha256": "6ed5eb14a2c0197a25e6163bad5d7af2f04467e65f416a28693420650d274029",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Federal EPA/NCI/AHS factual public data; agency/source attribution retained",
+      "upstream_urls": [
+        "https://data.epa.gov/efservice/downloads/tri/mv_tri_basic_download/1998_IA/csv"
+      ]
+    },
+    {
+      "path": "sources/industries/tri-history/tri-1999-iowa-original.csv",
+      "bytes": 1074848,
+      "sha256": "aa96785dcb90b95466560524e80d2a5053822ea40b1dcbcfce5d743a47ce5d17",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Federal EPA/NCI/AHS factual public data; agency/source attribution retained",
+      "upstream_urls": [
+        "https://data.epa.gov/efservice/downloads/tri/mv_tri_basic_download/1999_IA/csv"
+      ]
+    },
+    {
+      "path": "sources/industries/tri-history/tri-2000-iowa-original.csv",
+      "bytes": 1185188,
+      "sha256": "96aa9cfd9fabb5bde12a462f56917dfd997da84c925c35dc7e1d091761338b9d",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Federal EPA/NCI/AHS factual public data; agency/source attribution retained",
+      "upstream_urls": [
+        "https://data.epa.gov/efservice/downloads/tri/mv_tri_basic_download/2000_IA/csv"
+      ]
+    },
+    {
+      "path": "sources/industries/tri-history/tri-2001-iowa-original.csv",
+      "bytes": 1244084,
+      "sha256": "a8339ea283a59f527a09b742d76b92c9b88b343bca5aa29b80e89b9aa1053922",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Federal EPA/NCI/AHS factual public data; agency/source attribution retained",
+      "upstream_urls": [
+        "https://data.epa.gov/efservice/downloads/tri/mv_tri_basic_download/2001_IA/csv"
+      ]
+    },
+    {
+      "path": "sources/industries/tri-history/tri-2002-iowa-original.csv",
+      "bytes": 1277158,
+      "sha256": "2188a98f125a054fe2b654f7de9bbde515af62e6221515e455bce15d6e26fbf7",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Federal EPA/NCI/AHS factual public data; agency/source attribution retained",
+      "upstream_urls": [
+        "https://data.epa.gov/efservice/downloads/tri/mv_tri_basic_download/2002_IA/csv"
+      ]
+    },
+    {
+      "path": "sources/industries/tri-history/tri-2003-iowa-original.csv",
+      "bytes": 1237323,
+      "sha256": "13c3442d39af7d4a9b488e864d4f1854e908afae2e4999323970eee0e2c08f33",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Federal EPA/NCI/AHS factual public data; agency/source attribution retained",
+      "upstream_urls": [
+        "https://data.epa.gov/efservice/downloads/tri/mv_tri_basic_download/2003_IA/csv"
+      ]
+    },
+    {
+      "path": "sources/industries/tri-history/tri-2004-iowa-original.csv",
+      "bytes": 1255734,
+      "sha256": "812346fb7b8c85b7579e4e716c89f3b84ebd2b912dafbfef714a175608f0f343",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Federal EPA/NCI/AHS factual public data; agency/source attribution retained",
+      "upstream_urls": [
+        "https://data.epa.gov/efservice/downloads/tri/mv_tri_basic_download/2004_IA/csv"
+      ]
+    },
+    {
+      "path": "sources/industries/tri-history/tri-2005-iowa-original.csv",
+      "bytes": 1275360,
+      "sha256": "07bc9d64c46741e1a11e710127ddc9eb92d5f6deee56c0a0fd15cd16d2b5b4cd",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Federal EPA/NCI/AHS factual public data; agency/source attribution retained",
+      "upstream_urls": [
+        "https://data.epa.gov/efservice/downloads/tri/mv_tri_basic_download/2005_IA/csv"
+      ]
+    },
+    {
+      "path": "sources/industries/tri-history/tri-2006-iowa-original.csv",
+      "bytes": 1315552,
+      "sha256": "4b01e8452a2da81af51949825e0af6017ec266c5cc41b0525ca84419762486a5",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Federal EPA/NCI/AHS factual public data; agency/source attribution retained",
+      "upstream_urls": [
+        "https://data.epa.gov/efservice/downloads/tri/mv_tri_basic_download/2006_IA/csv"
+      ]
+    },
+    {
+      "path": "sources/industries/tri-history/tri-2007-iowa-original.csv",
+      "bytes": 1306383,
+      "sha256": "904febb5664bfeff4988c0f5c98d405704bc24f03b9eacf737f2d23cbd32c5ad",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Federal EPA/NCI/AHS factual public data; agency/source attribution retained",
+      "upstream_urls": [
+        "https://data.epa.gov/efservice/downloads/tri/mv_tri_basic_download/2007_IA/csv"
+      ]
+    },
+    {
+      "path": "sources/industries/tri-history/tri-2008-iowa-original.csv",
+      "bytes": 1299392,
+      "sha256": "aa9d7a92990ac488bfbf7bdc49ff9de68c2ec557d5bf7b585c76a9a014dd5407",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Federal EPA/NCI/AHS factual public data; agency/source attribution retained",
+      "upstream_urls": [
+        "https://data.epa.gov/efservice/downloads/tri/mv_tri_basic_download/2008_IA/csv"
+      ]
+    },
+    {
+      "path": "sources/industries/tri-history/tri-2009-iowa-original.csv",
+      "bytes": 1262459,
+      "sha256": "cb08f1c66cb00ccc6b9744c8893da0353322a35a3e3f39d6cf1de427b85e3687",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Federal EPA/NCI/AHS factual public data; agency/source attribution retained",
+      "upstream_urls": [
+        "https://data.epa.gov/efservice/downloads/tri/mv_tri_basic_download/2009_IA/csv"
+      ]
+    },
+    {
+      "path": "sources/industries/tri-history/tri-2010-iowa-original.csv",
+      "bytes": 1291445,
+      "sha256": "8d234c8888dd6f0461badaccc0f77e129cb9ca4752254ac39ce02acf7e7203c4",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Federal EPA/NCI/AHS factual public data; agency/source attribution retained",
+      "upstream_urls": [
+        "https://data.epa.gov/efservice/downloads/tri/mv_tri_basic_download/2010_IA/csv"
+      ]
+    },
+    {
+      "path": "sources/industries/tri-history/tri-2011-iowa-original.csv",
+      "bytes": 1282784,
+      "sha256": "f0e6adddc71759fcad05819e2577241773a642fc84a1700c87395bdb0a873efe",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Federal EPA/NCI/AHS factual public data; agency/source attribution retained",
+      "upstream_urls": [
+        "https://data.epa.gov/efservice/downloads/tri/mv_tri_basic_download/2011_IA/csv"
+      ]
+    },
+    {
+      "path": "sources/industries/tri-history/tri-2012-iowa-original.csv",
+      "bytes": 1271993,
+      "sha256": "53ce7d3d726d41fbdfe25c63212f108dcb4ce09124f0b409262dc3406e06bf31",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Federal EPA/NCI/AHS factual public data; agency/source attribution retained",
+      "upstream_urls": [
+        "https://data.epa.gov/efservice/downloads/tri/mv_tri_basic_download/2012_IA/csv"
+      ]
+    },
+    {
+      "path": "sources/industries/tri-history/tri-2013-iowa-original.csv",
+      "bytes": 1289622,
+      "sha256": "9ea9a116c1ca77a7b0ba6ac91325de249615855a30efcdf40bb3fc5cc95c2f70",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Federal EPA/NCI/AHS factual public data; agency/source attribution retained",
+      "upstream_urls": [
+        "https://data.epa.gov/efservice/downloads/tri/mv_tri_basic_download/2013_IA/csv"
+      ]
+    },
+    {
+      "path": "sources/industries/tri-history/tri-2014-iowa-original.csv",
+      "bytes": 1384630,
+      "sha256": "5dc93e0019ae7d5ed78b06f5e68302936c3167e3342988c7de45822cca954f12",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Federal EPA/NCI/AHS factual public data; agency/source attribution retained",
+      "upstream_urls": [
+        "https://data.epa.gov/efservice/downloads/tri/mv_tri_basic_download/2014_IA/csv"
+      ]
+    },
+    {
+      "path": "sources/industries/tri-history/tri-2015-iowa-original.csv",
+      "bytes": 1370811,
+      "sha256": "df7784b07d328ca73090cd56a57baa0b6bc8468dbaa82f9349e0dc39d59c9096",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Federal EPA/NCI/AHS factual public data; agency/source attribution retained",
+      "upstream_urls": [
+        "https://data.epa.gov/efservice/downloads/tri/mv_tri_basic_download/2015_IA/csv"
+      ]
+    },
+    {
+      "path": "sources/industries/tri-history/tri-2016-iowa-original.csv",
+      "bytes": 1369974,
+      "sha256": "aeb0b75bba96c290e2ad79a68bff74869add7f1ce279ab4b852b5cb4642db7fa",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Federal EPA/NCI/AHS factual public data; agency/source attribution retained",
+      "upstream_urls": [
+        "https://data.epa.gov/efservice/downloads/tri/mv_tri_basic_download/2016_IA/csv"
+      ]
+    },
+    {
+      "path": "sources/industries/tri-history/tri-2017-iowa-original.csv",
+      "bytes": 1420270,
+      "sha256": "541752c3650c286cd86316450394a9ae7808d67c1ead1f7eb40168c7a2f99f20",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Federal EPA/NCI/AHS factual public data; agency/source attribution retained",
+      "upstream_urls": [
+        "https://data.epa.gov/efservice/downloads/tri/mv_tri_basic_download/2017_IA/csv"
+      ]
+    },
+    {
+      "path": "sources/industries/tri-history/tri-2018-iowa-original.csv",
+      "bytes": 1446374,
+      "sha256": "f1c09cf5fc7d3032daa662b15b42d80610b1b953faf65b1fc53a8ebdcf0120f5",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Federal EPA/NCI/AHS factual public data; agency/source attribution retained",
+      "upstream_urls": [
+        "https://data.epa.gov/efservice/downloads/tri/mv_tri_basic_download/2018_IA/csv"
+      ]
+    },
+    {
+      "path": "sources/industries/tri-history/tri-2019-iowa-original.csv",
+      "bytes": 1397271,
+      "sha256": "f5c67bf76d9c2e3b5eea89823e3f58a556c534b80572f4a482adb89a3735890d",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Federal EPA/NCI/AHS factual public data; agency/source attribution retained",
+      "upstream_urls": [
+        "https://data.epa.gov/efservice/downloads/tri/mv_tri_basic_download/2019_IA/csv"
+      ]
+    },
+    {
+      "path": "sources/industries/tri-history/tri-2020-iowa-original.csv",
+      "bytes": 1405911,
+      "sha256": "b2396d0f3299c3f90be0d65519cdc5d5ee0c186a6cdfa850a4d7a121662b6ee9",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Federal EPA/NCI/AHS factual public data; agency/source attribution retained",
+      "upstream_urls": [
+        "https://data.epa.gov/efservice/downloads/tri/mv_tri_basic_download/2020_IA/csv"
+      ]
+    },
+    {
+      "path": "sources/industries/tri-history/tri-2021-iowa-original.csv",
+      "bytes": 1395187,
+      "sha256": "0b3a5d25adfb67515ea9aeca0faa9318e559b83c2fc92fa1cb02654e558da158",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Federal EPA/NCI/AHS factual public data; agency/source attribution retained",
+      "upstream_urls": [
+        "https://data.epa.gov/efservice/downloads/tri/mv_tri_basic_download/2021_IA/csv"
+      ]
+    },
+    {
+      "path": "sources/industries/tri-history/tri-2022-iowa-original.csv",
+      "bytes": 1356186,
+      "sha256": "e49acb88620bceabf552c3023d7d7f9a119d140dc56c80ed55e1a20990423de0",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Federal EPA/NCI/AHS factual public data; agency/source attribution retained",
+      "upstream_urls": [
+        "https://data.epa.gov/efservice/downloads/tri/mv_tri_basic_download/2022_IA/csv"
+      ]
+    },
+    {
+      "path": "sources/industries/tri-history/tri-2023-iowa-original.csv",
+      "bytes": 1331448,
+      "sha256": "843281a49414a56578166a94c1ed22b8cc3aa364d4f7d9fc6f4bc1c00cc2968c",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Federal EPA/NCI/AHS factual public data; agency/source attribution retained",
+      "upstream_urls": [
+        "https://data.epa.gov/efservice/downloads/tri/mv_tri_basic_download/2023_IA/csv"
+      ]
+    },
+    {
+      "path": "sources/industries/tri-history/tri-2024-iowa-original.csv",
+      "bytes": 1309131,
+      "sha256": "120f4401bffbf822eb599dd8f9c6b7ec1b0a57eda971fd2c1a7da5499a6553fe",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Federal EPA/NCI/AHS factual public data; agency/source attribution retained",
+      "upstream_urls": [
+        "https://data.epa.gov/efservice/downloads/tri/mv_tri_basic_download/2024_IA/csv"
+      ]
+    },
+    {
+      "path": "sources/iowa-cancer-screening-law-ch1087-2026.pdf",
+      "bytes": 253401,
+      "sha256": "710ab566d7504d272c9257074b8e3212d53f7a2251e3ef51fa950594a90429db",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Cached source body/OCR not mirrored; consult original publisher and source terms",
+      "upstream_urls": [
+        "https://www.legis.iowa.gov/docs/publications/iactc/91.2/CH1087.pdf"
+      ]
+    },
+    {
+      "path": "sources/iowa-environmental-risk-report-2026.pdf",
+      "bytes": 7183279,
+      "sha256": "b0db81dc60a94e8f62bd8016f533119f5fdef540837a0b70593f91695506d358",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Cached source body/OCR not mirrored; consult original publisher and source terms",
+      "upstream_urls": [
+        "https://www.iaenvironment.org/webres/File/Environmental%20Risk%20Factors%20and%20Iowa%27s%20Cancer%20Crisis%20-%20Report.pdf"
+      ]
+    },
+    {
+      "path": "tmp/pdfs/annual-2026-test.pdf",
+      "bytes": 919,
+      "sha256": "e1bf7ba193a5a1ccb7785371b9a9e8ece893907bcf2d81a119a9b6c6563dbe3a",
+      "publication_status": "local_generated",
+      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
+      "upstream_urls": []
+    },
+    {
+      "path": "tmp/pdfs/contact-1.png",
+      "bytes": 472783,
+      "sha256": "2971cd45fc96b667bb8f233ba0502aff1f1bb220b48674a301067b593e7438c7",
+      "publication_status": "local_generated",
+      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
+      "upstream_urls": []
+    },
+    {
+      "path": "tmp/pdfs/contact-2.png",
+      "bytes": 487309,
+      "sha256": "8be8934e7829bb9a13a1dd2109877f837c8af7fce7fbab3275ef0560856883bf",
+      "publication_status": "local_generated",
+      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
+      "upstream_urls": []
+    },
+    {
+      "path": "tmp/pdfs/contact-3.png",
+      "bytes": 518286,
+      "sha256": "da811075a66f8a671661735399690f6210ea02f983683005ade7e2906db092d1",
+      "publication_status": "local_generated",
+      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
+      "upstream_urls": []
+    },
+    {
+      "path": "tmp/pdfs/contact-4.png",
+      "bytes": 44802,
+      "sha256": "39802dcaa743ea183e36d2c8f134cff30506a4bb9fa3adb8b802248606e64228",
+      "publication_status": "local_generated",
+      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
+      "upstream_urls": []
+    },
+    {
+      "path": "tmp/pdfs/drivers-www.pdf",
+      "bytes": 919,
+      "sha256": "d85e2e128f06995baec5fabb10f3025fe5131d738079490710cbcb1f8ad1bde0",
+      "publication_status": "local_generated",
+      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
+      "upstream_urls": []
+    },
+    {
+      "path": "tmp/pdfs/final-contact-1.png",
+      "bytes": 458732,
+      "sha256": "f0f0032e023b6ef6cc314a553c9ed2d627b0817c4cd09aae776c443886db87ab",
+      "publication_status": "local_generated",
+      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
+      "upstream_urls": []
+    },
+    {
+      "path": "tmp/pdfs/final-contact-2.png",
+      "bytes": 471507,
+      "sha256": "97b5c6398aff13175ce82afba457cf1baf9497cd7c3a80ecbb4b8d66f2cb3946",
+      "publication_status": "local_generated",
+      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
+      "upstream_urls": []
+    },
+    {
+      "path": "tmp/pdfs/final-contact-3.png",
+      "bytes": 503895,
+      "sha256": "38bfbe9265188fb87fa16d9707db9439c80a7dea4f822bbd5cc87ed3c28ba726",
+      "publication_status": "local_generated",
+      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
+      "upstream_urls": []
+    },
+    {
+      "path": "tmp/pdfs/final-contact-4.png",
+      "bytes": 45708,
+      "sha256": "664d4c51a51455502f39e81b2601d357012103487a34d2a011f4789e59f36a7b",
+      "publication_status": "local_generated",
+      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
+      "upstream_urls": []
+    },
+    {
+      "path": "tmp/pdfs/final-page-01.png",
+      "bytes": 184367,
+      "sha256": "13fb758bf2e135d17192bf55889195cb30d3a1543916eff44917ede84370deff",
+      "publication_status": "local_generated",
+      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
+      "upstream_urls": []
+    },
+    {
+      "path": "tmp/pdfs/final-page-02.png",
+      "bytes": 164700,
+      "sha256": "6043e143b654f7e46eeaad63ee782567205b04a9b9b45de9a6de3601118b0af7",
+      "publication_status": "local_generated",
+      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
+      "upstream_urls": []
+    },
+    {
+      "path": "tmp/pdfs/final-page-03.png",
+      "bytes": 143210,
+      "sha256": "050f78dcbbf6253f6329d46f8e23382203c513b8dc88b508366edf15b9a6a976",
+      "publication_status": "local_generated",
+      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
+      "upstream_urls": []
+    },
+    {
+      "path": "tmp/pdfs/final-page-04.png",
+      "bytes": 173732,
+      "sha256": "94899aa749cdd1dad6b0d4f3d13c0193617a4ca81843a12f17f8f2da71a07bc2",
+      "publication_status": "local_generated",
+      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
+      "upstream_urls": []
+    },
+    {
+      "path": "tmp/pdfs/final-page-05.png",
+      "bytes": 146321,
+      "sha256": "18c7143c77c52718089eacdfb5e6ce254fa557e147ea5829f88fa74a22aed7a0",
+      "publication_status": "local_generated",
+      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
+      "upstream_urls": []
+    },
+    {
+      "path": "tmp/pdfs/final-page-06.png",
+      "bytes": 175826,
+      "sha256": "093bf836506f7726d7af2512e100e9da2457c62e7a09258885894768c4bb3bf8",
+      "publication_status": "local_generated",
+      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
+      "upstream_urls": []
+    },
+    {
+      "path": "tmp/pdfs/final-page-07.png",
+      "bytes": 157451,
+      "sha256": "76764337c7361a1ccbfd2ece0aa2936befb8cb6897e84c04c6259a7fdfcb32c7",
+      "publication_status": "local_generated",
+      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
+      "upstream_urls": []
+    },
+    {
+      "path": "tmp/pdfs/final-page-08.png",
+      "bytes": 156272,
+      "sha256": "a347803169156cf5c49993813ac376dce975495ada527045f00a47b9036438a0",
+      "publication_status": "local_generated",
+      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
+      "upstream_urls": []
+    },
+    {
+      "path": "tmp/pdfs/final-page-09.png",
+      "bytes": 173742,
+      "sha256": "dc5c25acbe7aeb98e9ab30cc5026d99b8be017c70b5e77b288f3b0c2bfdb7db9",
+      "publication_status": "local_generated",
+      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
+      "upstream_urls": []
+    },
+    {
+      "path": "tmp/pdfs/final-page-10.png",
+      "bytes": 197253,
+      "sha256": "281c1f1f906bb092feee71226f65a7271194ada54874a5cedebb55b42bb733c1",
+      "publication_status": "local_generated",
+      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
+      "upstream_urls": []
+    },
+    {
+      "path": "tmp/pdfs/final-page-11.png",
+      "bytes": 177372,
+      "sha256": "5ce0783175ad42272cf07483cdbe6c305828a04fcd5fa8275afdad9541304b77",
+      "publication_status": "local_generated",
+      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
+      "upstream_urls": []
+    },
+    {
+      "path": "tmp/pdfs/final-page-12.png",
+      "bytes": 169764,
+      "sha256": "32abd354fca98434c2687e336efb7d81f6ff48c18140267bc05f61975418b0cd",
+      "publication_status": "local_generated",
+      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
+      "upstream_urls": []
+    },
+    {
+      "path": "tmp/pdfs/final-page-13.png",
+      "bytes": 175624,
+      "sha256": "962682558ebbcda572e02b6dab9389c8e586411ed230c74fd9e342521b69cd8e",
+      "publication_status": "local_generated",
+      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
+      "upstream_urls": []
+    },
+    {
+      "path": "tmp/pdfs/final-page-14.png",
+      "bytes": 187248,
+      "sha256": "6f0f5e636ad2c4ba31a8b2120dac3a0ba3b20dc8ec89e5df55123444223452d1",
+      "publication_status": "local_generated",
+      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
+      "upstream_urls": []
+    },
+    {
+      "path": "tmp/pdfs/final-page-15.png",
+      "bytes": 178336,
+      "sha256": "a560cb3d1ae566d3feeed3e3f18396a2f8fa9ebee3a06d62e9a1828c4d1c35d9",
+      "publication_status": "local_generated",
+      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
+      "upstream_urls": []
+    },
+    {
+      "path": "tmp/pdfs/final-page-16.png",
+      "bytes": 193535,
+      "sha256": "35664a0296be501d46132ebc5724086251709475ebeaf54edc78c5d62315ccd7",
+      "publication_status": "local_generated",
+      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
+      "upstream_urls": []
+    },
+    {
+      "path": "tmp/pdfs/final-page-17.png",
+      "bytes": 230557,
+      "sha256": "edbdba0a19b3d706281b877114826235d19fbbe20e0a236babf77042b3a6e7aa",
+      "publication_status": "local_generated",
+      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
+      "upstream_urls": []
+    },
+    {
+      "path": "tmp/pdfs/final-page-18.png",
+      "bytes": 240433,
+      "sha256": "0bb15338386df5c7cd8a1e14ee90b7c6706665aea4b2e5dff5abd0c5eff64421",
+      "publication_status": "local_generated",
+      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
+      "upstream_urls": []
+    },
+    {
+      "path": "tmp/pdfs/final-page-19.png",
+      "bytes": 106438,
+      "sha256": "75b85763bf7477e2a0dff2a2cc5ac23950a500fe066ee85cfb920f92fff29db2",
+      "publication_status": "local_generated",
+      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
+      "upstream_urls": []
+    },
+    {
+      "path": "tmp/pdfs/key-drivers-access-error.html",
+      "bytes": 919,
+      "sha256": "df2d2072bec2ffa9737c7ad4c36b6d572cb36487b0671be28f2700e79a08c34b",
+      "publication_status": "local_generated",
+      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
+      "upstream_urls": []
+    },
+    {
+      "path": "tmp/pdfs/page-01.png",
+      "bytes": 184367,
+      "sha256": "13fb758bf2e135d17192bf55889195cb30d3a1543916eff44917ede84370deff",
+      "publication_status": "local_generated",
+      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
+      "upstream_urls": []
+    },
+    {
+      "path": "tmp/pdfs/page-02.png",
+      "bytes": 164700,
+      "sha256": "6043e143b654f7e46eeaad63ee782567205b04a9b9b45de9a6de3601118b0af7",
+      "publication_status": "local_generated",
+      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
+      "upstream_urls": []
+    },
+    {
+      "path": "tmp/pdfs/page-03.png",
+      "bytes": 143210,
+      "sha256": "050f78dcbbf6253f6329d46f8e23382203c513b8dc88b508366edf15b9a6a976",
+      "publication_status": "local_generated",
+      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
+      "upstream_urls": []
+    },
+    {
+      "path": "tmp/pdfs/page-04.png",
+      "bytes": 173732,
+      "sha256": "94899aa749cdd1dad6b0d4f3d13c0193617a4ca81843a12f17f8f2da71a07bc2",
+      "publication_status": "local_generated",
+      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
+      "upstream_urls": []
+    },
+    {
+      "path": "tmp/pdfs/page-05.png",
+      "bytes": 146321,
+      "sha256": "18c7143c77c52718089eacdfb5e6ce254fa557e147ea5829f88fa74a22aed7a0",
+      "publication_status": "local_generated",
+      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
+      "upstream_urls": []
+    },
+    {
+      "path": "tmp/pdfs/page-06.png",
+      "bytes": 175826,
+      "sha256": "093bf836506f7726d7af2512e100e9da2457c62e7a09258885894768c4bb3bf8",
+      "publication_status": "local_generated",
+      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
+      "upstream_urls": []
+    },
+    {
+      "path": "tmp/pdfs/page-07.png",
+      "bytes": 157451,
+      "sha256": "76764337c7361a1ccbfd2ece0aa2936befb8cb6897e84c04c6259a7fdfcb32c7",
+      "publication_status": "local_generated",
+      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
+      "upstream_urls": []
+    },
+    {
+      "path": "tmp/pdfs/page-08.png",
+      "bytes": 156272,
+      "sha256": "a347803169156cf5c49993813ac376dce975495ada527045f00a47b9036438a0",
+      "publication_status": "local_generated",
+      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
+      "upstream_urls": []
+    },
+    {
+      "path": "tmp/pdfs/page-09.png",
+      "bytes": 173742,
+      "sha256": "dc5c25acbe7aeb98e9ab30cc5026d99b8be017c70b5e77b288f3b0c2bfdb7db9",
+      "publication_status": "local_generated",
+      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
+      "upstream_urls": []
+    },
+    {
+      "path": "tmp/pdfs/page-10.png",
+      "bytes": 197253,
+      "sha256": "281c1f1f906bb092feee71226f65a7271194ada54874a5cedebb55b42bb733c1",
+      "publication_status": "local_generated",
+      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
+      "upstream_urls": []
+    },
+    {
+      "path": "tmp/pdfs/page-11.png",
+      "bytes": 177372,
+      "sha256": "5ce0783175ad42272cf07483cdbe6c305828a04fcd5fa8275afdad9541304b77",
+      "publication_status": "local_generated",
+      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
+      "upstream_urls": []
+    },
+    {
+      "path": "tmp/pdfs/page-12.png",
+      "bytes": 169557,
+      "sha256": "8777aee0736e3e3f831b1f2d7a6b6dd9a0ff50df261dcb16b8fe5a768b88aef0",
+      "publication_status": "local_generated",
+      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
+      "upstream_urls": []
+    },
+    {
+      "path": "tmp/pdfs/page-13.png",
+      "bytes": 175624,
+      "sha256": "962682558ebbcda572e02b6dab9389c8e586411ed230c74fd9e342521b69cd8e",
+      "publication_status": "local_generated",
+      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
+      "upstream_urls": []
+    },
+    {
+      "path": "tmp/pdfs/page-14.png",
+      "bytes": 187248,
+      "sha256": "6f0f5e636ad2c4ba31a8b2120dac3a0ba3b20dc8ec89e5df55123444223452d1",
+      "publication_status": "local_generated",
+      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
+      "upstream_urls": []
+    },
+    {
+      "path": "tmp/pdfs/page-15.png",
+      "bytes": 178336,
+      "sha256": "a560cb3d1ae566d3feeed3e3f18396a2f8fa9ebee3a06d62e9a1828c4d1c35d9",
+      "publication_status": "local_generated",
+      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
+      "upstream_urls": []
+    },
+    {
+      "path": "tmp/pdfs/page-16.png",
+      "bytes": 193535,
+      "sha256": "35664a0296be501d46132ebc5724086251709475ebeaf54edc78c5d62315ccd7",
+      "publication_status": "local_generated",
+      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
+      "upstream_urls": []
+    },
+    {
+      "path": "tmp/pdfs/page-17.png",
+      "bytes": 229900,
+      "sha256": "4b8fca86f5902f7a7b5c78d0bb6deb0b3f35a4679651ea839a68d59529c899ce",
+      "publication_status": "local_generated",
+      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
+      "upstream_urls": []
+    },
+    {
+      "path": "tmp/pdfs/page-18.png",
+      "bytes": 240433,
+      "sha256": "0bb15338386df5c7cd8a1e14ee90b7c6706665aea4b2e5dff5abd0c5eff64421",
+      "publication_status": "local_generated",
+      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
+      "upstream_urls": []
+    },
+    {
+      "path": "tmp/pdfs/page-19.png",
+      "bytes": 100585,
+      "sha256": "8ba74922377ca110ee803f45fce52cadfd2915fd8ad507ff55497ea3b9d2c4ed",
+      "publication_status": "local_generated",
+      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
+      "upstream_urls": []
+    }
+  ]
+}

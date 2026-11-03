@@ -1,0 +1,38 @@
+{
+  "publication_date": "2026-11-03",
+  "purpose": "Remove transport signing material and local account paths; source artifact values/hashes are unchanged",
+  "files": [
+    {
+      "path": "research/treatment-discovery/sources/preclinical/2026-10-29/archive-manifest.json",
+      "original_sha256": "19acbd50b8b2f9712d173e4e750b501c3eddeccb09bf4f006859ec2fb8f74861",
+      "public_sha256": "981e427404c2953843c0851ab6cf9211653d1033f2efbb18ba074f9efb6c0f30",
+      "changes": [
+        "Removed temporary signed query/fragment from final_url; stable url unchanged"
+      ]
+    },
+    {
+      "path": "research/treatment-discovery/sources/maynard-2026-10-29/egfr-main-metadata-audit.json",
+      "original_sha256": "62721fe82efbcba1e24311be797bc4b7747e38fd4717551ac68a0498eccd62a4",
+      "public_sha256": "1c0ec54a73402db263dd8a2535be27f254bb215f0f112b0b6f982d93c49141a7",
+      "changes": [
+        "Replaced local absolute source path with project-relative path"
+      ]
+    },
+    {
+      "path": "research/treatment-discovery/sources/maynard-2026-10-29/manifest.json",
+      "original_sha256": "1a1d705841bb40391926bcd95b9d59a74bea629bbe9c246728f0be11b366430f",
+      "public_sha256": "5dd9d9f4ad7be4cd63dc6a62d23ab9ebd8423236f8dffd6940217123ba8684b2",
+      "changes": [
+        "Annotated published metadata/code hashes while retaining historical archive hashes"
+      ]
+    },
+    {
+      "path": "scripts/audit_maynard_metadata.py",
+      "original_sha256": "edee0fb70b549e3db98df63bc2e02eecc94ce9a537ccabb763a9428fda97e0c6",
+      "public_sha256": "b974461f3fe2179b66789b8c3b7f443e149d9c3e2c36739b1663050eaa92f134",
+      "changes": [
+        "Use project-relative source labels instead of local account path"
+      ]
+    }
+  ]
+}

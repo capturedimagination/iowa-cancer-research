@@ -1,0 +1,465 @@
+{
+  "schema_version": "1.0",
+  "created_at_utc": "2026-10-22T23:16:20.920280+00:00",
+  "purpose": "Corpus search; no numeric data import or health/legal reinterpretation",
+  "original_file": "sources/industries/energy-legacy/ames-municipal-power-niosh-1988.pdf",
+  "original_sha256_before": "7aac7591f0faa2833c6d4730fa1ff546a57b686a5d265813994671ecc9b6273d",
+  "original_sha256_after": "7aac7591f0faa2833c6d4730fa1ff546a57b686a5d265813994671ecc9b6273d",
+  "original_unchanged": true,
+  "sidecar": "sources/industries/energy-legacy/ames-municipal-power-niosh-1988.ocr.txt",
+  "sidecar_sha256": "326635c55ad5e8ff6451672a6f4f521114bc18866a4a92feddd4186bd1b7e6e5",
+  "pdf_pages": 42,
+  "native_text_pages_over_30_chars": 24,
+  "ocr_attempted_physical_pages": [
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42
+  ],
+  "coverage": [
+    {
+      "physical_page": 1,
+      "method": "native_extraction",
+      "native_extracted_characters": 5025,
+      "sidecar_characters": 5025
+    },
+    {
+      "physical_page": 2,
+      "method": "native_extraction",
+      "native_extracted_characters": 4206,
+      "sidecar_characters": 4206
+    },
+    {
+      "physical_page": 3,
+      "method": "native_extraction",
+      "native_extracted_characters": 4346,
+      "sidecar_characters": 4346
+    },
+    {
+      "physical_page": 4,
+      "method": "native_extraction",
+      "native_extracted_characters": 3565,
+      "sidecar_characters": 3565
+    },
+    {
+      "physical_page": 5,
+      "method": "native_extraction",
+      "native_extracted_characters": 2920,
+      "sidecar_characters": 2920
+    },
+    {
+      "physical_page": 6,
+      "method": "native_extraction",
+      "native_extracted_characters": 3581,
+      "sidecar_characters": 3581
+    },
+    {
+      "physical_page": 7,
+      "method": "native_extraction",
+      "native_extracted_characters": 3693,
+      "sidecar_characters": 3693
+    },
+    {
+      "physical_page": 8,
+      "method": "native_extraction",
+      "native_extracted_characters": 3383,
+      "sidecar_characters": 3383
+    },
+    {
+      "physical_page": 9,
+      "method": "native_extraction",
+      "native_extracted_characters": 2310,
+      "sidecar_characters": 2310
+    },
+    {
+      "physical_page": 10,
+      "method": "native_extraction",
+      "native_extracted_characters": 3802,
+      "sidecar_characters": 3802
+    },
+    {
+      "physical_page": 11,
+      "method": "native_extraction",
+      "native_extracted_characters": 4015,
+      "sidecar_characters": 4015
+    },
+    {
+      "physical_page": 12,
+      "method": "native_extraction",
+      "native_extracted_characters": 3827,
+      "sidecar_characters": 3827
+    },
+    {
+      "physical_page": 13,
+      "method": "native_extraction",
+      "native_extracted_characters": 3503,
+      "sidecar_characters": 3503
+    },
+    {
+      "physical_page": 14,
+      "method": "native_extraction",
+      "native_extracted_characters": 4045,
+      "sidecar_characters": 4045
+    },
+    {
+      "physical_page": 15,
+      "method": "native_extraction",
+      "native_extracted_characters": 4925,
+      "sidecar_characters": 4925
+    },
+    {
+      "physical_page": 16,
+      "method": "native_extraction",
+      "native_extracted_characters": 5046,
+      "sidecar_characters": 5046
+    },
+    {
+      "physical_page": 17,
+      "method": "native_extraction",
+      "native_extracted_characters": 4245,
+      "sidecar_characters": 4245
+    },
+    {
+      "physical_page": 18,
+      "method": "native_extraction",
+      "native_extracted_characters": 3259,
+      "sidecar_characters": 3259
+    },
+    {
+      "physical_page": 19,
+      "method": "native_extraction",
+      "native_extracted_characters": 4143,
+      "sidecar_characters": 4143
+    },
+    {
+      "physical_page": 20,
+      "method": "native_extraction",
+      "native_extracted_characters": 4478,
+      "sidecar_characters": 4478
+    },
+    {
+      "physical_page": 21,
+      "method": "native_extraction",
+      "native_extracted_characters": 4433,
+      "sidecar_characters": 4433
+    },
+    {
+      "physical_page": 22,
+      "method": "native_extraction",
+      "native_extracted_characters": 3318,
+      "sidecar_characters": 3318
+    },
+    {
+      "physical_page": 23,
+      "method": "native_extraction",
+      "native_extracted_characters": 2531,
+      "sidecar_characters": 2531
+    },
+    {
+      "physical_page": 24,
+      "method": "native_extraction",
+      "native_extracted_characters": 1768,
+      "sidecar_characters": 1768
+    },
+    {
+      "physical_page": 25,
+      "method": "ocr",
+      "native_extracted_characters": 0,
+      "sidecar_characters": 2747,
+      "characters": 2748,
+      "mean_vision_confidence": 0.9879310346882919,
+      "minimum_vision_confidence": 0.30000001192092896,
+      "recognized_lines": 58,
+      "rendered_image": "page-25.png",
+      "visual_content_type": "job_description_table",
+      "blank": false
+    },
+    {
+      "physical_page": 26,
+      "method": "ocr",
+      "native_extracted_characters": 0,
+      "sidecar_characters": 331,
+      "characters": 332,
+      "mean_vision_confidence": 0.9027777777777778,
+      "minimum_vision_confidence": 0.5,
+      "recognized_lines": 36,
+      "rendered_image": "page-26.png",
+      "visual_content_type": "exposure_table",
+      "blank": false
+    },
+    {
+      "physical_page": 27,
+      "method": "ocr",
+      "native_extracted_characters": 0,
+      "sidecar_characters": 1196,
+      "characters": 1197,
+      "mean_vision_confidence": 0.934545455195687,
+      "minimum_vision_confidence": 0.30000001192092896,
+      "recognized_lines": 55,
+      "rendered_image": "page-27.png",
+      "visual_content_type": "exposure_table",
+      "blank": false
+    },
+    {
+      "physical_page": 28,
+      "method": "ocr",
+      "native_extracted_characters": 0,
+      "sidecar_characters": 3074,
+      "characters": 3075,
+      "mean_vision_confidence": 0.9412844038884575,
+      "minimum_vision_confidence": 0.30000001192092896,
+      "recognized_lines": 109,
+      "rendered_image": "page-28.png",
+      "visual_content_type": "exposure_table",
+      "blank": false
+    },
+    {
+      "physical_page": 29,
+      "method": "ocr",
+      "native_extracted_characters": 0,
+      "sidecar_characters": 1954,
+      "characters": 1955,
+      "mean_vision_confidence": 1,
+      "minimum_vision_confidence": 1,
+      "recognized_lines": 42,
+      "rendered_image": "page-29.png",
+      "visual_content_type": "exposure_table",
+      "blank": false
+    },
+    {
+      "physical_page": 30,
+      "method": "ocr",
+      "native_extracted_characters": 0,
+      "sidecar_characters": 820,
+      "characters": 821,
+      "mean_vision_confidence": 0.8947368421052632,
+      "minimum_vision_confidence": 0.5,
+      "recognized_lines": 38,
+      "rendered_image": "page-30.png",
+      "visual_content_type": "exposure_table",
+      "blank": false
+    },
+    {
+      "physical_page": 31,
+      "method": "ocr",
+      "native_extracted_characters": 0,
+      "sidecar_characters": 2165,
+      "characters": 2166,
+      "mean_vision_confidence": 0.9356783921994156,
+      "minimum_vision_confidence": 0.30000001192092896,
+      "recognized_lines": 199,
+      "rendered_image": "page-31.png",
+      "visual_content_type": "exposure_table",
+      "blank": false
+    },
+    {
+      "physical_page": 32,
+      "method": "ocr",
+      "native_extracted_characters": 0,
+      "sidecar_characters": 902,
+      "characters": 903,
+      "mean_vision_confidence": 0.990476190570801,
+      "minimum_vision_confidence": 0.30000001192092896,
+      "recognized_lines": 126,
+      "rendered_image": "page-32.png",
+      "visual_content_type": "exposure_table",
+      "blank": false
+    },
+    {
+      "physical_page": 33,
+      "method": "ocr",
+      "native_extracted_characters": 0,
+      "sidecar_characters": 844,
+      "characters": 845,
+      "mean_vision_confidence": 0.9853846155680143,
+      "minimum_vision_confidence": 0.30000001192092896,
+      "recognized_lines": 130,
+      "rendered_image": "page-33.png",
+      "visual_content_type": "exposure_table",
+      "blank": false
+    },
+    {
+      "physical_page": 34,
+      "method": "ocr",
+      "native_extracted_characters": 0,
+      "sidecar_characters": 806,
+      "characters": 807,
+      "mean_vision_confidence": 0.97473684235623,
+      "minimum_vision_confidence": 0.30000001192092896,
+      "recognized_lines": 95,
+      "rendered_image": "page-34.png",
+      "visual_content_type": "exposure_table",
+      "blank": false
+    },
+    {
+      "physical_page": 35,
+      "method": "ocr",
+      "native_extracted_characters": 0,
+      "sidecar_characters": 1492,
+      "characters": 1493,
+      "mean_vision_confidence": 0.9868421052631579,
+      "minimum_vision_confidence": 0.5,
+      "recognized_lines": 76,
+      "rendered_image": "page-35.png",
+      "visual_content_type": "exposure_table",
+      "blank": false
+    },
+    {
+      "physical_page": 36,
+      "method": "ocr",
+      "native_extracted_characters": 0,
+      "sidecar_characters": 2064,
+      "characters": 2065,
+      "mean_vision_confidence": 0.9414201184842713,
+      "minimum_vision_confidence": 0.30000001192092896,
+      "recognized_lines": 169,
+      "rendered_image": "page-36.png",
+      "visual_content_type": "exposure_table",
+      "blank": false
+    },
+    {
+      "physical_page": 37,
+      "method": "ocr",
+      "native_extracted_characters": 0,
+      "sidecar_characters": 1114,
+      "characters": 1115,
+      "mean_vision_confidence": 0.8809523809523809,
+      "minimum_vision_confidence": 0.5,
+      "recognized_lines": 84,
+      "rendered_image": "page-37.png",
+      "visual_content_type": "exposure_table",
+      "blank": false
+    },
+    {
+      "physical_page": 38,
+      "method": "ocr",
+      "native_extracted_characters": 0,
+      "sidecar_characters": 1104,
+      "characters": 1105,
+      "mean_vision_confidence": 0.9838709677419355,
+      "minimum_vision_confidence": 0.5,
+      "recognized_lines": 124,
+      "rendered_image": "page-38.png",
+      "visual_content_type": "exposure_table",
+      "blank": false
+    },
+    {
+      "physical_page": 39,
+      "method": "ocr",
+      "native_extracted_characters": 0,
+      "sidecar_characters": 2729,
+      "characters": 2730,
+      "mean_vision_confidence": 0.9585106385515091,
+      "minimum_vision_confidence": 0.30000001192092896,
+      "recognized_lines": 94,
+      "rendered_image": "page-39.png",
+      "visual_content_type": "schematic_or_process_graphic",
+      "blank": false
+    },
+    {
+      "physical_page": 40,
+      "method": "ocr",
+      "native_extracted_characters": 0,
+      "sidecar_characters": 1285,
+      "characters": 1286,
+      "mean_vision_confidence": 0.9324324324324325,
+      "minimum_vision_confidence": 0.5,
+      "recognized_lines": 37,
+      "rendered_image": "page-40.png",
+      "visual_content_type": "schematic_or_process_graphic",
+      "blank": false
+    },
+    {
+      "physical_page": 41,
+      "method": "ocr",
+      "native_extracted_characters": 0,
+      "sidecar_characters": 427,
+      "characters": 428,
+      "mean_vision_confidence": 0.9875,
+      "minimum_vision_confidence": 0.5,
+      "recognized_lines": 40,
+      "rendered_image": "page-41.png",
+      "visual_content_type": "graph",
+      "blank": false
+    },
+    {
+      "physical_page": 42,
+      "method": "ocr",
+      "native_extracted_characters": 0,
+      "sidecar_characters": 404,
+      "characters": 405,
+      "mean_vision_confidence": 0.967741935483871,
+      "minimum_vision_confidence": 0.5,
+      "recognized_lines": 31,
+      "rendered_image": "page-42.png",
+      "visual_content_type": "graph",
+      "blank": false
+    }
+  ],
+  "method": {
+    "native_extractor": "pypdf PdfReader.extract_text",
+    "ocr_trigger": "native stripped text length <=30",
+    "renderer": "Poppler pdftoppm 26.05.0",
+    "dpi": 180,
+    "format": "PNG",
+    "ocr": "Apple Vision VNRecognizeTextRequest accurate en-US, language correction enabled",
+    "os": "macOS 26.6.2 build 25G83",
+    "manual_text_corrections": false,
+    "pdf_modified": false,
+    "helper": "scripts/ocr_pdf_applevision.swift",
+    "pipeline": "scripts/add_gap_ocr_sidecars.py"
+  },
+  "visual_review": {
+    "thumbnail_reviewed_gap_pages": [
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42
+    ],
+    "detailed_spot_checked_pages": [
+      25
+    ],
+    "all_text_proofread": false,
+    "pending": false,
+    "note": "All gap renders checked for page/content type; detailed spot checks are not numeric/table transcription validation"
+  },
+  "limitations": [
+    "Search aid, not an authoritative transcription or table import",
+    "Native extraction can have ordering/table errors even on pages over the threshold",
+    "OCR may misread letters, numbers, formulas, symbols, charts and handwriting",
+    "An OCR confidence of 1 is not calibrated accuracy",
+    "All physical pages have markers; this does not establish recognition of every visible mark",
+    "Site-map labels, graph axes and table cells can remain incompletely recognized despite nonempty OCR; exact values require original-page review"
+  ],
+  "sidecar_utf8_bytes": 118719,
+  "blank_physical_pages_identified": [],
+  "skipped_ocr_pages": []
+}

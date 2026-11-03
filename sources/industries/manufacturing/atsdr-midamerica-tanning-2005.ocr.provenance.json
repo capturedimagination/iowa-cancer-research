@@ -1,0 +1,133 @@
+{
+  "schema_version": "1.0",
+  "created_at_utc": "2026-10-22T23:16:24.606833+00:00",
+  "purpose": "Corpus search; no numeric data import or health/legal reinterpretation",
+  "original_file": "sources/industries/manufacturing/atsdr-midamerica-tanning-2005.pdf",
+  "original_sha256_before": "738555e2ef269cad7cf623319bfc0c13d532dd959cba8830d7c48fd4280cccdc",
+  "original_sha256_after": "738555e2ef269cad7cf623319bfc0c13d532dd959cba8830d7c48fd4280cccdc",
+  "original_unchanged": true,
+  "sidecar": "sources/industries/manufacturing/atsdr-midamerica-tanning-2005.ocr.txt",
+  "sidecar_sha256": "95ae60756841bae8510ae513363a2623a5c2613f5d9aaba4875dc9d9ec644522",
+  "pdf_pages": 12,
+  "native_text_pages_over_30_chars": 11,
+  "ocr_attempted_physical_pages": [
+    9
+  ],
+  "coverage": [
+    {
+      "physical_page": 1,
+      "method": "native_extraction",
+      "native_extracted_characters": 329,
+      "sidecar_characters": 329
+    },
+    {
+      "physical_page": 2,
+      "method": "native_extraction",
+      "native_extracted_characters": 1184,
+      "sidecar_characters": 1184
+    },
+    {
+      "physical_page": 3,
+      "method": "native_extraction",
+      "native_extracted_characters": 308,
+      "sidecar_characters": 308
+    },
+    {
+      "physical_page": 4,
+      "method": "native_extraction",
+      "native_extracted_characters": 1717,
+      "sidecar_characters": 1717
+    },
+    {
+      "physical_page": 5,
+      "method": "native_extraction",
+      "native_extracted_characters": 3177,
+      "sidecar_characters": 3177
+    },
+    {
+      "physical_page": 6,
+      "method": "native_extraction",
+      "native_extracted_characters": 2745,
+      "sidecar_characters": 2745
+    },
+    {
+      "physical_page": 7,
+      "method": "native_extraction",
+      "native_extracted_characters": 1983,
+      "sidecar_characters": 1983
+    },
+    {
+      "physical_page": 8,
+      "method": "native_extraction",
+      "native_extracted_characters": 304,
+      "sidecar_characters": 304
+    },
+    {
+      "physical_page": 9,
+      "method": "ocr",
+      "native_extracted_characters": 27,
+      "sidecar_characters": 140,
+      "characters": 47,
+      "mean_vision_confidence": 0.7000000029802322,
+      "minimum_vision_confidence": 0.30000001192092896,
+      "recognized_lines": 4,
+      "rendered_image": "page-09.png",
+      "short_native_extraction": "Figure 1:  Site Map \n \n \n 5",
+      "visual_content_type": "site_map",
+      "blank": false
+    },
+    {
+      "physical_page": 10,
+      "method": "native_extraction",
+      "native_extracted_characters": 447,
+      "sidecar_characters": 447
+    },
+    {
+      "physical_page": 11,
+      "method": "native_extraction",
+      "native_extracted_characters": 653,
+      "sidecar_characters": 653
+    },
+    {
+      "physical_page": 12,
+      "method": "native_extraction",
+      "native_extracted_characters": 2146,
+      "sidecar_characters": 2146
+    }
+  ],
+  "method": {
+    "native_extractor": "pypdf PdfReader.extract_text",
+    "ocr_trigger": "native stripped text length <=30",
+    "renderer": "Poppler pdftoppm 26.05.0",
+    "dpi": 180,
+    "format": "PNG",
+    "ocr": "Apple Vision VNRecognizeTextRequest accurate en-US, language correction enabled",
+    "os": "macOS 26.6.2 build 25G83",
+    "manual_text_corrections": false,
+    "pdf_modified": false,
+    "helper": "scripts/ocr_pdf_applevision.swift",
+    "pipeline": "scripts/add_gap_ocr_sidecars.py"
+  },
+  "visual_review": {
+    "thumbnail_reviewed_gap_pages": [
+      9
+    ],
+    "detailed_spot_checked_pages": [
+      9
+    ],
+    "all_text_proofread": false,
+    "pending": false,
+    "note": "All gap renders checked for page/content type; detailed spot checks are not numeric/table transcription validation"
+  },
+  "limitations": [
+    "Search aid, not an authoritative transcription or table import",
+    "Native extraction can have ordering/table errors even on pages over the threshold",
+    "OCR may misread letters, numbers, formulas, symbols, charts and handwriting",
+    "An OCR confidence of 1 is not calibrated accuracy",
+    "All physical pages have markers; this does not establish recognition of every visible mark",
+    "Site-map labels, graph axes and table cells can remain incompletely recognized despite nonempty OCR; exact values require original-page review"
+  ],
+  "sidecar_utf8_bytes": 16287,
+  "blank_physical_pages_identified": [],
+  "skipped_ocr_pages": []
+}

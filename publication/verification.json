@@ -1,0 +1,32 @@
+{
+  "publication_date": "2026-11-03",
+  "python": "3.12.14",
+  "scope": "Isolated export of selected Git index; no excluded raw archives copied",
+  "checks": {
+    "research/treatment-discovery/audit_clinical_snapshot.py": "passed",
+    "scripts/run_nsclc_benchmark.py": "passed",
+    "scripts/build_data_source_catalog.py": "passed",
+    "scripts/build_knowledge_base.py": "passed",
+    "benchmark_results_equal_published": "point estimate, fixed-seed interval and cohort flow exact",
+    "public_search_rebuild": "passed without excluded cached source bodies"
+  },
+  "public_build_checks": {
+    "integrity_check": "ok",
+    "tri_forms": 60040,
+    "tri_years": 38,
+    "tri_2024_facilities": 463,
+    "tri_historical_facility_ids": 1107,
+    "form_a_with_nonnull_quantities": 0,
+    "county_cancer_rows": 99,
+    "title_v_rows": 283,
+    "ahs_public_summary_rows": 46,
+    "industry_evidence_records": 93,
+    "datasets": 51,
+    "search_records": 1396,
+    "search_smoke_matches": 79,
+    "pdfs": {},
+    "tri_2024_total_pounds_matches_curated_summary": true
+  },
+  "clinical_source_attribution": "Rizvi et al. JCO 2018 / cBioPortal Datahub, ODbL 1.0",
+  "limitation": "Reproduction/integrity checks do not validate a treatment, cure or causal claim"
+}
