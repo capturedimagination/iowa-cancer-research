@@ -88,6 +88,6 @@ No causal environmental model or clinical treatment-selection model has been fit
 
 ## Rebuild
 
-`scripts/build_knowledge_base.py` imports saved inputs, checks hashes and counts, indexes PDF text, validates SQLite integrity and replaces the derived database only after those checks pass. Use the bundled Python with `pypdf`; ordinary Python 3 can run the read-only query tool. The build does not download updates, alter originals, fit a model or publish anything.
+`scripts/build_knowledge_base.py` imports saved inputs, checks hashes and counts, indexes available research text, validates SQLite integrity and replaces the derived database only after those checks pass. Use the Python setup in [PUBLICATION.md](../PUBLICATION.md); ordinary Python 3 can run the read-only query tool. Original-PDF indexing applies only when those files are available locally. The build does not download updates, alter originals, fit a model or publish anything.
 
 For data updates, retain a dated source snapshot, record the query, retrieval date, original units and hash, rerun the relevant extraction script, update the catalog and methodological notes, then rebuild. The original PDF report remains a dated overview rather than an automatically updated representation of this entire corpus.

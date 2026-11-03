@@ -38,11 +38,11 @@ No causal environmental or clinical treatment-selection model has been fitted. T
 
 Current federal incidence covers **2019-2023**; mortality covers **2020-2024**. The annual registry's **2026 projections** are separate. County tables include every county, with no deduplication or removal of unusual records. The combined county comparison has exactly 99 rows; the individual county tables also retain Iowa and U.S. reference rows.
 
-Original federal downloads, including their source footnotes, are in `research/sources/`. Download/query provenance is in [data-provenance.json](research/data-provenance.json). Selected original public-health and policy PDFs are in `sources/` and `sources/environment/`. Some university-hosted reports blocked direct downloads; the report identifies where only indexed material or an attributed clinical summary was available. An anomalous pediatric export is flagged in the cancer-type CSV and excluded from interpretation.
+Original federal tabular downloads, including their source footnotes, are in `research/sources/`. Download/query provenance is in [data-provenance.json](research/data-provenance.json). Cached source PDFs remain in the original local archive; the public copy provides the project's findings, source citations and hashes under the [publication scope](PUBLICATION.md). Some university-hosted reports blocked direct downloads; the report identifies where only indexed material or an attributed clinical summary was available. An anomalous pediatric export is flagged in the cancer-type CSV and excluded from interpretation.
 
 ## Rebuild and verification
 
-The scripts use the bundled Codex Python/ReportLab runtime and local fonts. `scripts/build_report.py` regenerates the PDF from the editable report. `scripts/prepare_compilation.py` regenerates the source index/register. They do not refresh live cancer data.
+See [PUBLICATION.md](PUBLICATION.md) and `requirements.txt` for the portable Python setup. The original PDF used the bundled research runtime and local fonts. `scripts/build_report.py` regenerates it with configurable fonts or a portable fallback; layout can differ. `scripts/prepare_compilation.py` regenerates the source index/register. Neither script refreshes live cancer data.
 
 `scripts/build_knowledge_base.py` rebuilds the searchable library from saved CSV, JSON, Markdown and source PDFs, with source hashes and integrity checks. `scripts/query_research.py` provides read-only search/SQL retrieval. See the [library guide](knowledge/INDEX.md) for table definitions, examples and modeling limits.
 
