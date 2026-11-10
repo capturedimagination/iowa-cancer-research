@@ -1,0 +1,101 @@
+{
+  "status": "EXACT_REPRODUCTION",
+  "created_utc": "2026-11-10T21:25:09.996299+00:00",
+  "checker_code_sha256": "3fa87b53905c8f0dd22be2612c67353081bafff1fef03d449ffc6b3b8b5441e0",
+  "producer_code_sha256": "be80f025ba7137b27cda1c6a755763eef0d9f938243e49be3f943f06881708c6",
+  "protocol_sha256": "6e0c73303c34a970d5fc17f6ffd7d0dfe478c0854435b7be20f085a8288bceae",
+  "first_public_report_sha256": "c0df90daf0058f717f984ff981bab8d9f4bc31b795d35193c8753682316d1fc8",
+  "second_public_report_sha256": "1ddc2414f49addc6981eec3bf70aa9369369b40135bf116e5f099466a1c5038e",
+  "public_canonical_payload_sha256": "dc8494ecb98524abfe4891b7c32468a6dcac4f7fccacd11065374c7965f246b1",
+  "public_exclusions": [
+    "top-level created_utc",
+    "private_artifacts hashes (each independently verified and payload compared)"
+  ],
+  "private_exclusions": [
+    "top-level created_utc"
+  ],
+  "comparison": "Exact canonical UTF-8 JSON bytes, including scalar number types and raw source tokens.",
+  "sheets": 7,
+  "observations": 9356,
+  "private_graphs": [
+    {
+      "file": "kuchen-control.xlsx",
+      "sheet": "rep1",
+      "first_artifact_sha256": "8b0f9f334dafdc10ad5e63a85729590e0139de08fbb9398d9315896dfb586f1b",
+      "second_artifact_sha256": "3e6b7612180e0c20425a893d8217d42bdbf5febe10c3c4e664520afcd1347d11",
+      "canonical_payload_sha256": "f8838bf01ee2e721a8078d1f834c0a27eba236655e634972c49ea99cddf99024",
+      "all_graph_and_provenance_fields_identical": true,
+      "observation_count": 1846
+    },
+    {
+      "file": "kuchen-control.xlsx",
+      "sheet": "rep2",
+      "first_artifact_sha256": "ed1fd20f1302c26dbea581333e4334a92af17bc0575d9383f13989448ad6bef0",
+      "second_artifact_sha256": "4600e82aee334c4775928ba7c7794455b2e8b2c38a698191ee906ab404a8e5c7",
+      "canonical_payload_sha256": "fcdee0417facf68596d4b12db043ec3acdc9a8cd0baa196d60e3bdb7c7772e8f",
+      "all_graph_and_provenance_fields_identical": true,
+      "observation_count": 1616
+    },
+    {
+      "file": "kuchen-control.xlsx",
+      "sheet": "rep3",
+      "first_artifact_sha256": "684ec1df0d3e7759f26a9cbcb86418ba3e07d7b4636ab4c62a781af23f42e3ce",
+      "second_artifact_sha256": "96d48c2eb5b28777f4d052043bce2e8c60172dd5a2005204598b6c336c039440",
+      "canonical_payload_sha256": "8de5b45bb13c2efc110e7fb6441a7ca53c37a778617adb2e75a81e549b7ae253",
+      "all_graph_and_provenance_fields_identical": true,
+      "observation_count": 1742
+    },
+    {
+      "file": "kuchen-perturbation.xlsx",
+      "sheet": "-myc1",
+      "first_artifact_sha256": "5145a9934703b0bbb7efcb64fd1ffe33f6b1ff06f38367ec77789ed8c2eea82f",
+      "second_artifact_sha256": "01f9012826b2d10a52ed7819b055ab02ee3afa3ad8dedfe846fb265b02a56dd4",
+      "canonical_payload_sha256": "023c5149d96b91375ed94649ab2f8e0da8e1ff666c28a3d5e8016df770a7814d",
+      "all_graph_and_provenance_fields_identical": true,
+      "observation_count": 984
+    },
+    {
+      "file": "kuchen-perturbation.xlsx",
+      "sheet": "-myc2",
+      "first_artifact_sha256": "05112ba076533747dfc61016ec4e5064d07d13c3c431efccb08634d58782e4fc",
+      "second_artifact_sha256": "da9bec1a75fce61590f19baaabbdc2e6e6dfbc76822e65468f04fc1a904e5349",
+      "canonical_payload_sha256": "fd360695bfeee99f89ee50fa778ab894e7f6322de4bbc821fe0cf870ba0536e7",
+      "all_graph_and_provenance_fields_identical": true,
+      "observation_count": 1200
+    },
+    {
+      "file": "kuchen-perturbation.xlsx",
+      "sheet": "rap1",
+      "first_artifact_sha256": "36ba84dd8f96f843ed007cb49efbcf5c83737ae08155a3cd775d9650ec9d1683",
+      "second_artifact_sha256": "0bf9eea769423c27f59da25695aae898556445cf5faf5e3bc1f9c7e33872d8c8",
+      "canonical_payload_sha256": "f8f1617ddfa81c5d8f8963f09829821813f6f96bf79ae13466d59aa37efe631a",
+      "all_graph_and_provenance_fields_identical": true,
+      "observation_count": 964
+    },
+    {
+      "file": "kuchen-perturbation.xlsx",
+      "sheet": "rap2",
+      "first_artifact_sha256": "a06a40cd9f76e978f99a88f452e0aa8239ae836fb73a42fad079994abf34f1f7",
+      "second_artifact_sha256": "587100168d7914dc44828c5da71b11d1186ee9d785e000ecfe92dbe36773364f",
+      "canonical_payload_sha256": "9e879109bbf0ea320d5d69738425909cb71aa5a163b764cec3667bc2e9cc2b8b",
+      "all_graph_and_provenance_fields_identical": true,
+      "observation_count": 1004
+    }
+  ],
+  "exact_unique_frozen_artifact_roster": true,
+  "per_sheet_source_row_and_observation_counts_reconciled": true,
+  "original_workbooks": [
+    {
+      "file": "kuchen-control.xlsx",
+      "sha256": "8ecdd5c66a466b71b5ee4790c79c2b9ce38fd1ec6daf59f88347d67e4fa1b86e",
+      "unchanged": true
+    },
+    {
+      "file": "kuchen-perturbation.xlsx",
+      "sha256": "0065797f9d1cb12dc695bf9baa516f68afea1d6c6077b75c2a9830389806a6f3",
+      "unchanged": true
+    }
+  ],
+  "original_schema_and_evidence_hashes_unchanged": true,
+  "new_outcome_calculations": false
+}

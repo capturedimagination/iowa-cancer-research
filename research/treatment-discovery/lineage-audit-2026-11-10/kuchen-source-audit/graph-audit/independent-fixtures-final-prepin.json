@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "fixture_count": 22,
+  "fixtures": [
+    "clean_chain_and_external_parent",
+    "invalid_child_fate_keeps_birth_edge",
+    "invalid_competing_parent_fate_garbage",
+    "invalid_competing_parent_fate_Infinity",
+    "invalid_competing_parent_fate_('NaN', '=bad()')",
+    "duplicate_identity_does_not_split_related_group",
+    "duplicate_successor_blocks_all_birth_edges",
+    "conflict_Lineage ID",
+    "conflict_Generation",
+    "conflict_Grandmother ID",
+    "conflict_Birth time",
+    "repeated_duration_does_not_block_birth_edges",
+    "unavailable_annotations_are_not_matches",
+    "cycle_basis_precedes_timing_filter",
+    "clean_component_beside_affected",
+    "self_cycle_keeps_downstream",
+    "exact_decimal_tolerance_boundary",
+    "namespace_separation",
+    "numeric_alias_does_not_join",
+    "explicit_missing_formula_nonfinite_rules",
+    "independent_xml_package_provenance",
+    "no_overwrite_and_no_nonfinite_output"
+  ],
+  "created_utc": "2026-11-10T21:25:11.651515+00:00",
+  "code_sha256": "305ca3f41422f15d0166721964bcef69548d58dd61b06bde8dc658dc5f076e5c",
+  "scope": "synthetic_only_no_original_workbook_access"
+}

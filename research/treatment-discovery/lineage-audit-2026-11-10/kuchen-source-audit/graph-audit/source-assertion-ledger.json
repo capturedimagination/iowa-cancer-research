@@ -1,0 +1,536 @@
+{
+  "status": "SOURCE_DICTIONARY_PARTIAL_WITH_NEW_REPLICATE_LABEL_EVIDENCE",
+  "audit_date": "2026-11-10",
+  "created_utc": "2026-11-10T21:10:58.456214+00:00",
+  "scope": "Source interpretation only. No new Q, covariance, hazard, graph-derived survival, model fit, author contact or raw-video acquisition. Existing anomalies and older files preserved.",
+  "evidence_tiers": {
+    "SOURCE_ASSERTED": "Direct author statement at stated scope; not independent experimental validation.",
+    "EXPORT_OBSERVED": "Pinned workbook metadata or earlier structural observation.",
+    "UNRESOLVED": "Inspected sources do not settle requested mapping; no absence-of-evidence proof.",
+    "CONFLICTING": "Both source accounts retained without repair."
+  },
+  "sources": [
+    {
+      "id": "PAPER",
+      "url": "https://cdn.elifesciences.org/articles/51002/elife-51002-v2.pdf",
+      "local_path": "research/treatment-discovery/sources/lineage-2026-11-10/kuchen-graph-2026-11-10/article-v2.pdf",
+      "access": "Full PDF text searched; page3 visually inspected. Methods/App1 and relevant captions checked; not every figure was re-reviewed.",
+      "sha256": "25af00085cf54507ec19bf867b3cbabb7287263d3f78c63ab1236b3f2b5d9167"
+    },
+    {
+      "id": "REPORT",
+      "url": "https://cdn.elifesciences.org/articles/51002/elife-51002-transrepform-v2.pdf",
+      "local_path": "research/treatment-discovery/sources/lineage-2026-11-10/kuchen-graph-2026-11-10/transparent-reporting.pdf",
+      "access": "Reporting form text read, Replicates page2 visually inspected.",
+      "sha256": "bd7c4eaeed745b4d5d02e76ebca881b57d28d54d87bc751a508e6472eb92a719"
+    },
+    {
+      "id": "OVERVIEW",
+      "url": "https://cdn.elifesciences.org/articles/51002/elife-51002-fig1-data1-v2.pdf",
+      "local_path": "research/treatment-discovery/sources/lineage-2026-11-10/alternative-lineage-2026-11-10/kuchen-overview.pdf",
+      "access": "Entire single-page table visually inspected; earlier source bytes preserved.",
+      "sha256": "6642b200997dd3212897c65e8bcf0b8e0ec6b87c91f0acf87e6817ff48f9bb7b"
+    },
+    {
+      "id": "CONTROL",
+      "url": "https://cdn.elifesciences.org/articles/51002/elife-51002-fig1-data2-v2.xlsx",
+      "local_path": "research/treatment-discovery/sources/lineage-2026-11-10/alternative-lineage-2026-11-10/kuchen-control.xlsx",
+      "access": "Prior pinned schema/structural findings read; workbook package metadata checked only in this pass. No event/association outcome calculation.",
+      "sha256": "8ecdd5c66a466b71b5ee4790c79c2b9ce38fd1ec6daf59f88347d67e4fa1b86e"
+    },
+    {
+      "id": "PERTURB",
+      "url": "https://cdn.elifesciences.org/articles/51002/elife-51002-fig4-data1-v2.xlsx",
+      "local_path": "research/treatment-discovery/sources/lineage-2026-11-10/alternative-lineage-2026-11-10/kuchen-perturbation.xlsx",
+      "access": "Prior pinned schema/structural findings read; workbook package metadata checked only in this pass. No event/association outcome calculation.",
+      "sha256": "0065797f9d1cb12dc695bf9baa516f68afea1d6c6077b75c2a9830389806a6f3"
+    },
+    {
+      "id": "RESOURCES",
+      "url": "https://cdn.elifesciences.org/articles/51002/elife-51002-supp1-v2.doc",
+      "local_path": "research/treatment-discovery/sources/lineage-2026-11-10/kuchen-graph-2026-11-10/key-resources.doc",
+      "access": "Author-supplied key-resources DOC downloaded and text extracted with macOS textutil; reagent/software inventory, not a tracking dictionary.",
+      "sha256": "6364bbab1b7198171dc924040a68bd88185c13b9e032d3e41f56e02ee8071b71"
+    },
+    {
+      "id": "PMC",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7018508/",
+      "access": "Primary article HTML, supplement captions and Author response to Reviewer3 point1 read; HTML not separately archived."
+    }
+  ],
+  "assertions": [
+    {
+      "id": "K01",
+      "topic": "Time units",
+      "status": "STUDY_LEVEL_SUPPORT_EXPORT_MAPPING_NOT_EXPLICIT",
+      "assertion": "Figure1 labels birth time, cycle length and observation time in hours; workbook headers have no unit suffix.",
+      "source_locators": [
+        {
+          "source": "PAPER",
+          "locator": "p3, Figure1 panelsB/C/D"
+        },
+        {
+          "source": "CONTROL",
+          "locator": "All sheets, row1 B:H"
+        },
+        {
+          "source": "PERTURB",
+          "locator": "All sheets, row1 B:H"
+        }
+      ],
+      "permitted_graph_use_or_limit": "Preserve raw numeric times. Hours are a source-supported interpretation, not an explicit per-column codebook or frame conversion."
+    },
+    {
+      "id": "K02",
+      "topic": "Time origin",
+      "status": "UNRESOLVED",
+      "assertion": "No inspected source defines workbook H=0 relative to first image, plating, treatment or media change.",
+      "source_locators": [
+        {
+          "source": "PAPER",
+          "locator": "p3 Figure1; p16 Appendix1 Live-cell microscopy"
+        },
+        {
+          "source": "CONTROL",
+          "locator": "All sheets H1"
+        },
+        {
+          "source": "PERTURB",
+          "locator": "All sheets H1"
+        }
+      ],
+      "permitted_graph_use_or_limit": "Do not align sheets to treatment time or infer exact recording support from H. Same-clock arithmetic remains a derived assertion with origin unresolved."
+    },
+    {
+      "id": "K03",
+      "topic": "Image cadence",
+      "status": "SOURCE_ASSERTED_GENERAL_METHOD",
+      "assertion": "The study reports images every 6–15 min for up to 7 days.",
+      "source_locators": [
+        {
+          "source": "PAPER",
+          "locator": "p11 Experimental methods; p16 Appendix1 Live-cell microscopy"
+        }
+      ],
+      "permitted_graph_use_or_limit": "No sheet-specific cadence, frame-to-time lookup, skipped-frame history or event-time error bound follows."
+    },
+    {
+      "id": "K04",
+      "topic": "Illustrative movie",
+      "status": "SOURCE_ASSERTED_LIMITED_CLIP",
+      "assertion": "The rep3 video caption specifies 75 h and 6 min per frame.",
+      "source_locators": [
+        {
+          "source": "PMC",
+          "locator": "Figure1—video1 caption"
+        }
+      ],
+      "permitted_graph_use_or_limit": "This clip does not establish the full rep3 export duration or the other sheets’ sampling cadence."
+    },
+    {
+      "id": "K05",
+      "topic": "Event landmarks and ties",
+      "status": "UNRESOLVED",
+      "assertion": "No inspected source gives the visual division/death criterion, timestamp rounding, first/last-frame convention or exact event/query tie rule.",
+      "source_locators": [
+        {
+          "source": "PAPER",
+          "locator": "p16 Appendix1 Live-cell microscopy"
+        },
+        {
+          "source": "RESOURCES",
+          "locator": "Fiji/MATLAB rows"
+        }
+      ],
+      "permitted_graph_use_or_limit": "Do not borrow synthetic-simulator boundaries or infer precision from decimal places or mother-child numerical agreement."
+    },
+    {
+      "id": "K06",
+      "topic": "Continuous observation",
+      "status": "STUDY_DESCRIPTION_NOT_RECORD_CERTIFICATION",
+      "assertion": "Figure1A describes continuous microscopy; the methods identify manual tracking.",
+      "source_locators": [
+        {
+          "source": "PAPER",
+          "locator": "p3 Figure1A; p16 Appendix1 Live-cell microscopy"
+        }
+      ],
+      "permitted_graph_use_or_limit": "No per-cell gap/re-entry handling or uninterrupted birth-to-terminal annotation certificate is provided. Keep event assertions separate from certified interval masks."
+    },
+    {
+      "id": "K07",
+      "topic": "Tracking software",
+      "status": "SOURCE_ASSERTED",
+      "assertion": "Tracking used Fiji 1.48d with MTrackJ; analysis used MATLAB R2016b.",
+      "source_locators": [
+        {
+          "source": "PAPER",
+          "locator": "p11 Experimental methods/Data analysis; p16 Appendix1"
+        }
+      ],
+      "permitted_graph_use_or_limit": "Generic software behavior is not proof of which annotation/export settings the authors used."
+    },
+    {
+      "id": "K08",
+      "topic": "Binary daughter relation",
+      "status": "RECORDED_PAIR_SCHEMA_SUPPORTED",
+      "assertion": "Each workbook row labels two siblings and one mother; the paper models bifurcating lineages.",
+      "source_locators": [
+        {
+          "source": "CONTROL",
+          "locator": "All sheets I1:K1"
+        },
+        {
+          "source": "PERTURB",
+          "locator": "All sheets I1:K1"
+        },
+        {
+          "source": "PAPER",
+          "locator": "p3 Figure1D; Appendix2 model definition"
+        }
+      ],
+      "permitted_graph_use_or_limit": "Use the recorded pair relation. Two unobserved daughters at an absent successor require an explicit normal-binary assumption; the model alone does not certify every observed division."
+    },
+    {
+      "id": "K09",
+      "topic": "Fate-duration fields",
+      "status": "SOURCE_HEADERS_WITH_DERIVED_END_TIME",
+      "assertion": "B/E label cycle length, C/F time to death, D/G time to cell loss, with shared birth H.",
+      "source_locators": [
+        {
+          "source": "CONTROL",
+          "locator": "All sheets B1:H1"
+        },
+        {
+          "source": "PERTURB",
+          "locator": "All sheets B1:H1"
+        }
+      ],
+      "permitted_graph_use_or_limit": "Birth+duration is derived endpoint arithmetic. A division duration is an observed cycle annotation, not an uncensored potential division timer."
+    },
+    {
+      "id": "K10",
+      "topic": "Loss versus death",
+      "status": "DISTINCT_SOURCE_FATES_UNRESOLVED_LOSS_MECHANISM",
+      "assertion": "Figure1 distinguishes loss and death; Appendix1 discusses migration separately from finite experiment duration.",
+      "source_locators": [
+        {
+          "source": "PAPER",
+          "locator": "p3 Figure1 caption; pp17–18 Appendix1 Censoring"
+        },
+        {
+          "source": "CONTROL",
+          "locator": "D1/G1 versus C1/F1"
+        },
+        {
+          "source": "PERTURB",
+          "locator": "D1/G1 versus C1/F1"
+        }
+      ],
+      "permitted_graph_use_or_limit": "No workbook reason code separates migration, tracking failure and administrative end. Loss cannot be recoded as death or assumed independent censoring."
+    },
+    {
+      "id": "K11",
+      "topic": "Administrative observation end",
+      "status": "APPROXIMATE_SOURCE_SUMMARY_NOT_EXACT_MASK",
+      "assertion": "The overview reports whole-hour observation durations by sheet.",
+      "source_locators": [
+        {
+          "source": "OVERVIEW",
+          "locator": "p1, Obs. time column"
+        }
+      ],
+      "permitted_graph_use_or_limit": "These are not explicit last-usable-frame timestamps. Do not replace them by exported maximum endpoints or infer a common administrative boundary."
+    },
+    {
+      "id": "K12",
+      "topic": "Known malformed/missing records",
+      "status": "PRESERVED_PREVIOUS_STRUCTURAL_FINDINGS",
+      "assertion": "Four negative loss durations and one division lacking a successor pair remain as originally recorded.",
+      "source_locators": [
+        {
+          "source": "CONTROL",
+          "locator": "rep2 G548/G647; rep3 E170"
+        },
+        {
+          "source": "PERTURB",
+          "locator": "-myc1 D423; -myc2 G218"
+        }
+      ],
+      "permitted_graph_use_or_limit": "Keep invalid timing and missing branches unknown. This pass neither repairs fields nor recomputes biological outcomes."
+    },
+    {
+      "id": "K13",
+      "topic": "Early-leaver exclusion",
+      "status": "SOURCE_ASSERTED_ANALYSIS_SELECTION",
+      "assertion": "The reporting form excludes early departures that yielded trees too short for correlation analysis.",
+      "source_locators": [
+        {
+          "source": "REPORT",
+          "locator": "p1 Sample-size estimation item3; p2 Replicates final paragraph"
+        },
+        {
+          "source": "PMC",
+          "locator": "Figure1—figure supplement1D caption"
+        }
+      ],
+      "permitted_graph_use_or_limit": "This is a future-dependent analysis rule. Its presence in, or removal before, the deposited export remains unresolved."
+    },
+    {
+      "id": "K14",
+      "topic": "Export scope",
+      "status": "RAW_CAPTION_AND_UNTRUNCATED_DEPTH_NOT_DENOMINATOR",
+      "assertion": "Source captions call the files raw cycle data; the previous audit finds generations beyond the published analysis cutoffs.",
+      "source_locators": [
+        {
+          "source": "PMC",
+          "locator": "Figure1—source data2; Figure4—source data1"
+        },
+        {
+          "source": "OVERVIEW",
+          "locator": "p1 Total generations and Corrected columns"
+        }
+      ],
+      "permitted_graph_use_or_limit": "The workbook is not merely the final truncated correlation table. This does not prove inclusion of excluded early-leavers or all initially tracked founders."
+    },
+    {
+      "id": "K15",
+      "topic": "Published censoring correction",
+      "status": "SOURCE_ASSERTED_ANALYSIS_METHOD",
+      "assertion": "Appendix1 chooses the generation cutoff using endpoint-alive counts and a 5% rule, treating migration loss as unrelated to cycle length.",
+      "source_locators": [
+        {
+          "source": "PAPER",
+          "locator": "pp17–18 Appendix1 Censoring, equation1"
+        }
+      ],
+      "permitted_graph_use_or_limit": "The migration premise is an assumption, not an export-level empirical certificate. Do not apply this future-informed cutoff to a prospective birth roster."
+    },
+    {
+      "id": "K16",
+      "topic": "Corrected-generation assignment",
+      "status": "UNRESOLVED_SOURCE_ORDERING_DISCREPANCY",
+      "assertion": "The overview explicitly assigns rep1/rep2/rep3 corrected generations 6/7/5; prose lists 7/6/5 for the three controls without naming each sheet in that sentence.",
+      "source_locators": [
+        {
+          "source": "OVERVIEW",
+          "locator": "p1 rep1–3 rows, Corrected column"
+        },
+        {
+          "source": "PAPER",
+          "locator": "p11 Data analysis; pp17–18 Appendix1 Censoring"
+        }
+      ],
+      "permitted_graph_use_or_limit": "Retain the named table mapping and differently ordered prose. The intended correspondence is not certified; no relabeling or automatic raw-record cutoff follows."
+    },
+    {
+      "id": "K17",
+      "topic": "Named biological replicates",
+      "status": "NEW_SOURCE_DECLARED_MAPPING",
+      "assertion": "The reporting form names rep1–3 and -myc1/2 and rap1/2 as biological replicates; main methods use broader biological-and-technical wording.",
+      "source_locators": [
+        {
+          "source": "REPORT",
+          "locator": "p2 Replicates, first two author paragraphs"
+        },
+        {
+          "source": "PAPER",
+          "locator": "p11 Experimental methods; p16 Appendix1 Live-cell microscopy"
+        }
+      ],
+      "permitted_graph_use_or_limit": "Upgrade the named-sheet metadata to source-declared biological replicate. Culture dates, wells, batches, cross-sheet shared preparations and exact independence structure remain unreported here."
+    },
+    {
+      "id": "K18",
+      "topic": "Tracked lineage count",
+      "status": "SOURCE_ASSERTED_RETAINED_LINEAGES",
+      "assertion": "The reporting form states 68 tracked/analyzed control lineages.",
+      "source_locators": [
+        {
+          "source": "REPORT",
+          "locator": "p2 Replicates first author paragraph"
+        }
+      ],
+      "permitted_graph_use_or_limit": "Do not reinterpret this as all originally present founders. The reported exclusions still apply."
+    },
+    {
+      "id": "K19",
+      "topic": "Rapamycin dose mapping",
+      "status": "UNRESOLVED_OVERVIEW_EXPORT_DISCREPANCY",
+      "assertion": "Overview rap1 is 40 nM/117 h/8 generations and rap2 is 20 nM/115 h/7 generations; prior export audit has the opposite duration/generation pairing.",
+      "source_locators": [
+        {
+          "source": "OVERVIEW",
+          "locator": "p1 rap1/rap2 rows"
+        },
+        {
+          "source": "PERTURB",
+          "locator": "rap1/rap2 sheet names and previous structural maxima"
+        }
+      ],
+      "permitted_graph_use_or_limit": "Do not swap labels. Source-declared biological repeats also differ in overview dose, so they are not certified identical-dose replicates."
+    },
+    {
+      "id": "K20",
+      "topic": "Common culture context",
+      "status": "SOURCE_ASSERTED_NOT_EVENT_LOG",
+      "assertion": "The methods report media replacement every 2–3 days; the reporting form describes stopping before overcrowding compromised conditions.",
+      "source_locators": [
+        {
+          "source": "PAPER",
+          "locator": "p16 Appendix1 Live-cell microscopy"
+        },
+        {
+          "source": "REPORT",
+          "locator": "p1 Sample-size estimation item1"
+        }
+      ],
+      "permitted_graph_use_or_limit": "No exact intervention/gap log is supplied. Do not impute change times or assume a measured calendar-effect covariate."
+    },
+    {
+      "id": "K21",
+      "topic": "Initial seeded population",
+      "status": "NOT_TRACKED_DENOMINATOR",
+      "assertion": "The microscopy methods describe seeding 10^3 cells.",
+      "source_locators": [
+        {
+          "source": "PAPER",
+          "locator": "p16 Appendix1 Live-cell microscopy"
+        }
+      ],
+      "permitted_graph_use_or_limit": "Plated cells are not the tracked or exported founder roster; no denominator is inferred."
+    },
+    {
+      "id": "K22",
+      "topic": "Additional dictionary/code",
+      "status": "BOUNDED_SEARCH_NO_CERTIFICATION_FOUND",
+      "assertion": "Data availability points to supporting files. The key-resources file is a reagent/software inventory; no export dictionary or author-linked export script was identified in this audit.",
+      "source_locators": [
+        {
+          "source": "PMC",
+          "locator": "Data availability and Additional files; Author response Reviewer3 point1"
+        },
+        {
+          "source": "RESOURCES",
+          "locator": "Entire key-resources table"
+        }
+      ],
+      "permitted_graph_use_or_limit": "Absence is limited to inspected materials and focused searches. Other authors’ reanalyses do not certify original acquisition settings."
+    },
+    {
+      "id": "K23",
+      "topic": "Workbook auxiliary metadata",
+      "status": "READ_ONLY_PACKAGE_OBSERVATION",
+      "assertion": "The pinned XLSX packages contain only the named data sheets and no comments, external links, custom-data or drawing parts detected by the recorded package check.",
+      "source_locators": [
+        {
+          "source": "CONTROL",
+          "locator": "xl/workbook.xml and ZIP part inventory"
+        },
+        {
+          "source": "PERTURB",
+          "locator": "xl/workbook.xml and ZIP part inventory"
+        }
+      ],
+      "permitted_graph_use_or_limit": "No extra unit/selection dictionary was found in those metadata locations; this is not a claim about unavailable raw tracking projects."
+    }
+  ],
+  "source_declared_replicates": {
+    "rep1": {
+      "label": "biological replicate",
+      "evidence": "REPORT p2 Replicates",
+      "details_not_certified": [
+        "batch/date/well structure",
+        "export future-independent eligibility",
+        "identical dose for rap1 and rap2"
+      ]
+    },
+    "rep2": {
+      "label": "biological replicate",
+      "evidence": "REPORT p2 Replicates",
+      "details_not_certified": [
+        "batch/date/well structure",
+        "export future-independent eligibility",
+        "identical dose for rap1 and rap2"
+      ]
+    },
+    "rep3": {
+      "label": "biological replicate",
+      "evidence": "REPORT p2 Replicates",
+      "details_not_certified": [
+        "batch/date/well structure",
+        "export future-independent eligibility",
+        "identical dose for rap1 and rap2"
+      ]
+    },
+    "-myc1": {
+      "label": "biological replicate",
+      "evidence": "REPORT p2 Replicates",
+      "details_not_certified": [
+        "batch/date/well structure",
+        "export future-independent eligibility",
+        "identical dose for rap1 and rap2"
+      ]
+    },
+    "-myc2": {
+      "label": "biological replicate",
+      "evidence": "REPORT p2 Replicates",
+      "details_not_certified": [
+        "batch/date/well structure",
+        "export future-independent eligibility",
+        "identical dose for rap1 and rap2"
+      ]
+    },
+    "rap1": {
+      "label": "biological replicate",
+      "evidence": "REPORT p2 Replicates",
+      "details_not_certified": [
+        "batch/date/well structure",
+        "export future-independent eligibility",
+        "identical dose for rap1 and rap2"
+      ]
+    },
+    "rap2": {
+      "label": "biological replicate",
+      "evidence": "REPORT p2 Replicates",
+      "details_not_certified": [
+        "batch/date/well structure",
+        "export future-independent eligibility",
+        "identical dose for rap1 and rap2"
+      ]
+    }
+  },
+  "search_ledger": [
+    {
+      "date": "2026-11-10",
+      "queries": [
+        "Kuchen Becker Claudino Höfer 51002 github lineage data",
+        "\"51002\" \"time\" \"MTrackJ\" data",
+        "\"kuchen\" \"rap1\" \"rap2\"",
+        "\"Kuchen\" \"51002\" \"division\" \"annotation\"",
+        "\"elife-51002\" \"birth\" \"hours\"",
+        "\"Hidden long-range memories\" \"code\" github"
+      ],
+      "scope": "Bounded primary-source check; publisher/PubMed/PMC and source files prioritized. No author-account scraping, contact or exhaustive search.",
+      "outcome": "Reporting form adds named biological-replicate evidence. No original export script or exact acquisition dictionary found. Unrelated/citing papers were not used as acquisition certification."
+    }
+  ],
+  "access_limits": [
+    "Direct eLife article HTML returned a client challenge; no bypass attempted. PMC full text and publisher CDN PDF/supplements were accessible.",
+    "Web screenshot responses did not expose images to this runtime; local Poppler rendering and image inspection verified report p2, overview p1 and paper p3."
+  ],
+  "input_hashes": {
+    "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/README.md": "d6b9c0b08ca9b56cbb731cb7e50557395dc17c0f84960eb1955810f8bf1bb351",
+    "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-plan-draft.md": "8349cbd05c25705131bd7989376cc30b132f4bcf775c3ad2fd9fe2ae507cee0a",
+    "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/kuchen-schema.json": "c0b676bd16c3a1eeac12dadf061498e7f7830fdfeded69f6d7d042396768f3db",
+    "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/kuchen-structural-audit.json": "ef487ac682e7a55529dade7ee176c343b2162e9eaa8c924841932f921a746a03",
+    "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/kuchen-anomaly-locators.json": "ab57d2e013a0c0dfc43cae68a9f27d6f8e4faf1252b04069cba6442c10935a20",
+    "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/acquisition.json": "0a4f7cf4b87ecf993b9a718025c282821db2f88b7a27e6172aac89a586099288"
+  },
+  "supporting_checks": {
+    "package_metadata_path": "tmp/kuchen-graph-2026-11-10/source-evidence/workbook-package-metadata.json",
+    "package_metadata_sha256": "85c3fedcaeab8b7c4499e3d3415fff4ac6fc980cf45e335606f905d49e77128e",
+    "source_acquisition_sha256": "09bee63f5d4cc4c35c1225c6702b19dde7eb74171608d90ed951fe2fcffbb0ff"
+  },
+  "conclusion": "Freeze a conservative assertion graph in raw source time coordinates. Study-level hours and biological-sheet labels are supported; exact timing, observation support and source inclusion remain unresolved. No prospective-population or dose-specific outcome inference is authorized by this evidence alone."
+}

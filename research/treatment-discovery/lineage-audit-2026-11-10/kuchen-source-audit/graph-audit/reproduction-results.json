@@ -1,0 +1,1421 @@
+{
+  "status": "STRUCTURAL_GRAPH_ONLY_NOT_ANALYSIS_READY",
+  "created_utc": "2026-11-10T21:20:59.634713+00:00",
+  "protocol_sha256": "6e0c73303c34a970d5fc17f6ffd7d0dfe478c0854435b7be20f085a8288bceae",
+  "code_sha256": "be80f025ba7137b27cda1c6a755763eef0d9f938243e49be3f943f06881708c6",
+  "schema_sha256": "c0b676bd16c3a1eeac12dadf061498e7f7830fdfeded69f6d7d042396768f3db",
+  "input_workbook_sha256": {
+    "kuchen-control.xlsx": "8ecdd5c66a466b71b5ee4790c79c2b9ce38fd1ec6daf59f88347d67e4fa1b86e",
+    "kuchen-perturbation.xlsx": "0065797f9d1cb12dc695bf9baa516f68afea1d6c6077b75c2a9830389806a6f3"
+  },
+  "implementation_contract": {
+    "version": "kuchen-graph-v1",
+    "schema_sha256": "c0b676bd16c3a1eeac12dadf061498e7f7830fdfeded69f6d7d042396768f3db",
+    "workbook_sha256": {
+      "kuchen-control.xlsx": "8ecdd5c66a466b71b5ee4790c79c2b9ce38fd1ec6daf59f88347d67e4fa1b86e",
+      "kuchen-perturbation.xlsx": "0065797f9d1cb12dc695bf9baa516f68afea1d6c6077b75c2a9830389806a6f3"
+    },
+    "identity": "exact_resolved_text_no_numeric_merge_namespaced_workbook_sha_sheet",
+    "duplicates": "retain_each_row_side_observation_ambiguous_entity_no_preferred_record",
+    "time_residual_tolerance": 1e-06,
+    "time_tolerance_role": "arithmetic_consistency_not_imaging_precision",
+    "component_vertices": "all_recorded_row_side_observations_external_references_separate",
+    "component_edges": [
+      "unique_recorded_identity_joins",
+      "consistent_recorded_parent_edges"
+    ],
+    "consistent_edge_requirements": [
+      "unique_parent_and_child_identity",
+      "unique_successor_pair_assertion_for_parent",
+      "not_self_or_inside_directed_cycle",
+      "one_finite_nonnegative_parent_division_other_fates_recognized_source_missing_no_invalid_or_formula_fate",
+      "finite_child_birth_and_time_residual_within_tolerance",
+      "no_present_lineage_generation_grandmother_reference_conflict"
+    ],
+    "missing_annotations": "retain_unavailable_check_status_not_a_positive_match",
+    "repeat_cycle_annotation_mismatch": "retain_residual_and_issue_do_not_replace_or_block_edge_alone",
+    "cycle_quarantine": "only_edges_inside_cyclic_scc_no_blanket_descendant_exclusion",
+    "missing_successor_cardinality": null,
+    "recording_end": null,
+    "continuous_tracking_support": "unresolved",
+    "event_boundary_convention": "unresolved",
+    "outcome_grid": null,
+    "source_ascertainment": "unresolved_export_selection",
+    "source_condition_labels": "preserve_no_reassignment",
+    "related_groups": "shared_nonmissing_recorded_or_ancestor_identity_assertions_including_ambiguous_identities_plus_same_nonmissing_source_lineage_label_within_namespace",
+    "formula_cells": "preserve_formula_and_cached_token_unverified_no_execution",
+    "scc_basis": "raw_unique_recorded_identity_directed_graph_before_other_edge_filtering"
+  },
+  "source_preservation": "All pinned source/schema/evidence hashes verified before and after; originals unchanged.",
+  "sheets": 7,
+  "pair_rows": 4678,
+  "observations": 9356,
+  "summaries": [
+    {
+      "file": "kuchen-control.xlsx",
+      "sheet": "rep1",
+      "workbook_sha256": "8ecdd5c66a466b71b5ee4790c79c2b9ce38fd1ec6daf59f88347d67e4fa1b86e",
+      "pair_rows": 923,
+      "observations": 1846,
+      "unique_nonmissing_cell_tokens": 1846,
+      "uniquely_recorded_entities": 1846,
+      "duplicate_identity_entities": 0,
+      "observations_missing_usable_identity": 0,
+      "lexical_numeric_alias_groups": 0,
+      "source_lineage_label_groups": 16,
+      "mother_assertions": 1846,
+      "raw_unique_recorded_edges": 1814,
+      "consistent_recorded_edges": 1814,
+      "cyclic_raw_edges": 0,
+      "self_raw_edges": 0,
+      "cyclic_raw_scc_count": 0,
+      "cyclic_scc_size_histogram": {},
+      "external_reference_entities": 32,
+      "external_mother_assertions": 32,
+      "edge_parent_reference_kinds": {
+        "external_reference": 32,
+        "unique_recorded_reference": 1814
+      },
+      "consistent_edge_blocking_reasons": {
+        "parent_without_usable_division": 32,
+        "unresolved_or_conflicting_parent_child_time": 32,
+        "nonunique_or_external_identity": 32
+      },
+      "edge_check_status_counts": {
+        "identity": {
+          "external_reference_or_ambiguous_child": 32,
+          "unique": 1814
+        },
+        "successor_pair_uniqueness": {
+          "unique": 1846
+        },
+        "cycle": {
+          "not_in_raw_directed_cycle": 1846
+        },
+        "parent_division": {
+          "unavailable": 32,
+          "usable_division": 1814
+        },
+        "parent_child_time": {
+          "unavailable": 32,
+          "consistent": 1814
+        },
+        "lineage": {
+          "unavailable": 32,
+          "consistent": 1814
+        },
+        "generation": {
+          "unavailable": 32,
+          "consistent": 1814
+        },
+        "grandmother_reference": {
+          "unavailable": 32,
+          "consistent": 1814
+        }
+      },
+      "maximum_absolute_parent_child_residual_source_units": 7.105427357601002e-13,
+      "fate_annotation_states": {
+        "candidate_death": 31,
+        "candidate_division": 907,
+        "candidate_loss": 908
+      },
+      "usable_fate_labels": {
+        "death": 31,
+        "division": 907,
+        "loss": 908
+      },
+      "successor_states": {
+        "not_one_usable_division": 939,
+        "unique_consistent_successor_pair": 907
+      },
+      "issue_record_counts": {},
+      "affected_observation_counts": {},
+      "repeated_cycle_check_statuses": {
+        "mother_cycle": {
+          "unavailable": 32,
+          "consistent": 1814
+        },
+        "grandmother_cycle_vs_mother_annotation": {
+          "unavailable": 82,
+          "consistent": 1764
+        },
+        "grandmother_cycle": {
+          "unavailable": 82,
+          "consistent": 1764
+        }
+      },
+      "group_counts": {
+        "raw_recorded_components": 32,
+        "consistent_recorded_components": 32,
+        "conservative_related_groups": 16
+      },
+      "group_size_histograms": {
+        "raw": {
+          "1": 7,
+          "3": 3,
+          "7": 2,
+          "9": 1,
+          "21": 1,
+          "27": 2,
+          "39": 1,
+          "49": 1,
+          "67": 2,
+          "71": 1,
+          "81": 2,
+          "83": 1,
+          "93": 2,
+          "97": 1,
+          "117": 1,
+          "131": 1,
+          "137": 1,
+          "211": 1,
+          "315": 1
+        },
+        "consistent": {
+          "1": 7,
+          "3": 3,
+          "7": 2,
+          "9": 1,
+          "21": 1,
+          "27": 2,
+          "39": 1,
+          "49": 1,
+          "67": 2,
+          "71": 1,
+          "81": 2,
+          "83": 1,
+          "93": 2,
+          "97": 1,
+          "117": 1,
+          "131": 1,
+          "137": 1,
+          "211": 1,
+          "315": 1
+        },
+        "related": {
+          "4": 2,
+          "8": 1,
+          "10": 1,
+          "24": 1,
+          "28": 1,
+          "68": 1,
+          "94": 2,
+          "130": 1,
+          "144": 1,
+          "164": 1,
+          "168": 1,
+          "170": 1,
+          "210": 1,
+          "526": 1
+        }
+      },
+      "groups_with_no_recorded_issue": {
+        "raw": 32,
+        "consistent": 32,
+        "related": 16
+      },
+      "raw_root_observations": 32,
+      "consistent_root_observations": 32,
+      "source_units": "numeric_source_time_units_hour_interpretation_from_separate_dictionary",
+      "no_outcome_grid": true,
+      "no_original_founder_assignment": true,
+      "no_continuous_observation_mask": true
+    },
+    {
+      "file": "kuchen-control.xlsx",
+      "sheet": "rep2",
+      "workbook_sha256": "8ecdd5c66a466b71b5ee4790c79c2b9ce38fd1ec6daf59f88347d67e4fa1b86e",
+      "pair_rows": 808,
+      "observations": 1616,
+      "unique_nonmissing_cell_tokens": 1616,
+      "uniquely_recorded_entities": 1616,
+      "duplicate_identity_entities": 0,
+      "observations_missing_usable_identity": 0,
+      "lexical_numeric_alias_groups": 0,
+      "source_lineage_label_groups": 17,
+      "mother_assertions": 1616,
+      "raw_unique_recorded_edges": 1582,
+      "consistent_recorded_edges": 1582,
+      "cyclic_raw_edges": 0,
+      "self_raw_edges": 0,
+      "cyclic_raw_scc_count": 0,
+      "cyclic_scc_size_histogram": {},
+      "external_reference_entities": 34,
+      "external_mother_assertions": 34,
+      "edge_parent_reference_kinds": {
+        "external_reference": 34,
+        "unique_recorded_reference": 1582
+      },
+      "consistent_edge_blocking_reasons": {
+        "parent_without_usable_division": 34,
+        "unresolved_or_conflicting_parent_child_time": 34,
+        "nonunique_or_external_identity": 34
+      },
+      "edge_check_status_counts": {
+        "identity": {
+          "external_reference_or_ambiguous_child": 34,
+          "unique": 1582
+        },
+        "successor_pair_uniqueness": {
+          "unique": 1616
+        },
+        "cycle": {
+          "not_in_raw_directed_cycle": 1616
+        },
+        "parent_division": {
+          "unavailable": 34,
+          "usable_division": 1582
+        },
+        "parent_child_time": {
+          "unavailable": 34,
+          "consistent": 1582
+        },
+        "lineage": {
+          "unavailable": 34,
+          "consistent": 1582
+        },
+        "generation": {
+          "unavailable": 34,
+          "consistent": 1582
+        },
+        "grandmother_reference": {
+          "unavailable": 34,
+          "consistent": 1582
+        }
+      },
+      "maximum_absolute_parent_child_residual_source_units": 7.105427357601002e-13,
+      "fate_annotation_states": {
+        "candidate_division": 791,
+        "candidate_loss": 759,
+        "candidate_death": 64,
+        "unresolved": 2
+      },
+      "usable_fate_labels": {
+        "division": 791,
+        "loss": 759,
+        "death": 64,
+        "unresolved": 2
+      },
+      "successor_states": {
+        "unique_consistent_successor_pair": 791,
+        "not_one_usable_division": 825
+      },
+      "issue_record_counts": {
+        "negative_fate_duration": 2
+      },
+      "affected_observation_counts": {
+        "negative_fate_duration": 2
+      },
+      "repeated_cycle_check_statuses": {
+        "mother_cycle": {
+          "unavailable": 34,
+          "consistent": 1582
+        },
+        "grandmother_cycle_vs_mother_annotation": {
+          "unavailable": 90,
+          "consistent": 1526
+        },
+        "grandmother_cycle": {
+          "unavailable": 90,
+          "consistent": 1526
+        }
+      },
+      "group_counts": {
+        "raw_recorded_components": 34,
+        "consistent_recorded_components": 34,
+        "conservative_related_groups": 17
+      },
+      "group_size_histograms": {
+        "raw": {
+          "1": 6,
+          "3": 11,
+          "5": 1,
+          "7": 1,
+          "11": 2,
+          "45": 1,
+          "67": 1,
+          "91": 1,
+          "93": 1,
+          "95": 1,
+          "105": 1,
+          "109": 1,
+          "111": 1,
+          "149": 1,
+          "153": 1,
+          "161": 1,
+          "179": 1,
+          "185": 1
+        },
+        "consistent": {
+          "1": 6,
+          "3": 11,
+          "5": 1,
+          "7": 1,
+          "11": 2,
+          "45": 1,
+          "67": 1,
+          "91": 1,
+          "93": 1,
+          "95": 1,
+          "105": 1,
+          "109": 1,
+          "111": 1,
+          "149": 1,
+          "153": 1,
+          "161": 1,
+          "179": 1,
+          "185": 1
+        },
+        "related": {
+          "2": 2,
+          "4": 1,
+          "6": 2,
+          "8": 1,
+          "56": 1,
+          "68": 1,
+          "96": 1,
+          "108": 1,
+          "114": 1,
+          "164": 2,
+          "186": 1,
+          "188": 1,
+          "204": 1,
+          "240": 1
+        }
+      },
+      "groups_with_no_recorded_issue": {
+        "raw": 32,
+        "consistent": 32,
+        "related": 15
+      },
+      "raw_root_observations": 34,
+      "consistent_root_observations": 34,
+      "source_units": "numeric_source_time_units_hour_interpretation_from_separate_dictionary",
+      "no_outcome_grid": true,
+      "no_original_founder_assignment": true,
+      "no_continuous_observation_mask": true
+    },
+    {
+      "file": "kuchen-control.xlsx",
+      "sheet": "rep3",
+      "workbook_sha256": "8ecdd5c66a466b71b5ee4790c79c2b9ce38fd1ec6daf59f88347d67e4fa1b86e",
+      "pair_rows": 871,
+      "observations": 1742,
+      "unique_nonmissing_cell_tokens": 1742,
+      "uniquely_recorded_entities": 1742,
+      "duplicate_identity_entities": 0,
+      "observations_missing_usable_identity": 0,
+      "lexical_numeric_alias_groups": 0,
+      "source_lineage_label_groups": 35,
+      "mother_assertions": 1742,
+      "raw_unique_recorded_edges": 1672,
+      "consistent_recorded_edges": 1672,
+      "cyclic_raw_edges": 0,
+      "self_raw_edges": 0,
+      "cyclic_raw_scc_count": 0,
+      "cyclic_scc_size_histogram": {},
+      "external_reference_entities": 70,
+      "external_mother_assertions": 70,
+      "edge_parent_reference_kinds": {
+        "external_reference": 70,
+        "unique_recorded_reference": 1672
+      },
+      "consistent_edge_blocking_reasons": {
+        "parent_without_usable_division": 70,
+        "unresolved_or_conflicting_parent_child_time": 70,
+        "nonunique_or_external_identity": 70
+      },
+      "edge_check_status_counts": {
+        "identity": {
+          "external_reference_or_ambiguous_child": 70,
+          "unique": 1672
+        },
+        "successor_pair_uniqueness": {
+          "unique": 1742
+        },
+        "cycle": {
+          "not_in_raw_directed_cycle": 1742
+        },
+        "parent_division": {
+          "unavailable": 70,
+          "usable_division": 1672
+        },
+        "parent_child_time": {
+          "unavailable": 70,
+          "consistent": 1672
+        },
+        "lineage": {
+          "unavailable": 70,
+          "consistent": 1672
+        },
+        "generation": {
+          "unavailable": 70,
+          "consistent": 1672
+        },
+        "grandmother_reference": {
+          "unavailable": 70,
+          "consistent": 1672
+        }
+      },
+      "maximum_absolute_parent_child_residual_source_units": 1.4210854715202004e-14,
+      "fate_annotation_states": {
+        "candidate_division": 837,
+        "candidate_loss": 831,
+        "candidate_death": 74
+      },
+      "usable_fate_labels": {
+        "division": 837,
+        "loss": 831,
+        "death": 74
+      },
+      "successor_states": {
+        "unique_consistent_successor_pair": 836,
+        "not_one_usable_division": 905,
+        "missing_successor_pair_unknown_descendants": 1
+      },
+      "issue_record_counts": {
+        "division_without_successor_pair": 1
+      },
+      "affected_observation_counts": {
+        "division_without_successor_pair": 1
+      },
+      "repeated_cycle_check_statuses": {
+        "mother_cycle": {
+          "unavailable": 70,
+          "consistent": 1672
+        },
+        "grandmother_cycle_vs_mother_annotation": {
+          "unavailable": 180,
+          "consistent": 1562
+        },
+        "grandmother_cycle": {
+          "unavailable": 180,
+          "consistent": 1562
+        }
+      },
+      "group_counts": {
+        "raw_recorded_components": 70,
+        "consistent_recorded_components": 70,
+        "conservative_related_groups": 35
+      },
+      "group_size_histograms": {
+        "raw": {
+          "1": 15,
+          "3": 12,
+          "5": 1,
+          "7": 2,
+          "15": 3,
+          "17": 4,
+          "23": 1,
+          "27": 1,
+          "29": 2,
+          "33": 5,
+          "35": 1,
+          "37": 1,
+          "39": 2,
+          "41": 2,
+          "43": 1,
+          "45": 3,
+          "47": 3,
+          "51": 1,
+          "53": 2,
+          "55": 1,
+          "57": 1,
+          "61": 1,
+          "69": 1,
+          "71": 1,
+          "73": 1,
+          "89": 1,
+          "103": 1
+        },
+        "consistent": {
+          "1": 15,
+          "3": 12,
+          "5": 1,
+          "7": 2,
+          "15": 3,
+          "17": 4,
+          "23": 1,
+          "27": 1,
+          "29": 2,
+          "33": 5,
+          "35": 1,
+          "37": 1,
+          "39": 2,
+          "41": 2,
+          "43": 1,
+          "45": 3,
+          "47": 3,
+          "51": 1,
+          "53": 2,
+          "55": 1,
+          "57": 1,
+          "61": 1,
+          "69": 1,
+          "71": 1,
+          "73": 1,
+          "89": 1,
+          "103": 1
+        },
+        "related": {
+          "2": 1,
+          "4": 5,
+          "6": 1,
+          "8": 3,
+          "16": 2,
+          "18": 1,
+          "28": 1,
+          "46": 2,
+          "48": 1,
+          "52": 1,
+          "54": 1,
+          "56": 2,
+          "62": 2,
+          "64": 1,
+          "72": 1,
+          "74": 2,
+          "78": 1,
+          "80": 3,
+          "84": 1,
+          "126": 1,
+          "146": 1,
+          "172": 1
+        }
+      },
+      "groups_with_no_recorded_issue": {
+        "raw": 69,
+        "consistent": 69,
+        "related": 34
+      },
+      "raw_root_observations": 70,
+      "consistent_root_observations": 70,
+      "source_units": "numeric_source_time_units_hour_interpretation_from_separate_dictionary",
+      "no_outcome_grid": true,
+      "no_original_founder_assignment": true,
+      "no_continuous_observation_mask": true
+    },
+    {
+      "file": "kuchen-perturbation.xlsx",
+      "sheet": "-myc1",
+      "workbook_sha256": "0065797f9d1cb12dc695bf9baa516f68afea1d6c6077b75c2a9830389806a6f3",
+      "pair_rows": 492,
+      "observations": 984,
+      "unique_nonmissing_cell_tokens": 984,
+      "uniquely_recorded_entities": 984,
+      "duplicate_identity_entities": 0,
+      "observations_missing_usable_identity": 0,
+      "lexical_numeric_alias_groups": 0,
+      "source_lineage_label_groups": 40,
+      "mother_assertions": 984,
+      "raw_unique_recorded_edges": 904,
+      "consistent_recorded_edges": 904,
+      "cyclic_raw_edges": 0,
+      "self_raw_edges": 0,
+      "cyclic_raw_scc_count": 0,
+      "cyclic_scc_size_histogram": {},
+      "external_reference_entities": 80,
+      "external_mother_assertions": 80,
+      "edge_parent_reference_kinds": {
+        "external_reference": 80,
+        "unique_recorded_reference": 904
+      },
+      "consistent_edge_blocking_reasons": {
+        "parent_without_usable_division": 80,
+        "unresolved_or_conflicting_parent_child_time": 80,
+        "nonunique_or_external_identity": 80
+      },
+      "edge_check_status_counts": {
+        "identity": {
+          "external_reference_or_ambiguous_child": 80,
+          "unique": 904
+        },
+        "successor_pair_uniqueness": {
+          "unique": 984
+        },
+        "cycle": {
+          "not_in_raw_directed_cycle": 984
+        },
+        "parent_division": {
+          "unavailable": 80,
+          "usable_division": 904
+        },
+        "parent_child_time": {
+          "unavailable": 80,
+          "consistent": 904
+        },
+        "lineage": {
+          "unavailable": 80,
+          "consistent": 904
+        },
+        "generation": {
+          "unavailable": 80,
+          "consistent": 904
+        },
+        "grandmother_reference": {
+          "unavailable": 80,
+          "consistent": 904
+        }
+      },
+      "maximum_absolute_parent_child_residual_source_units": 7.105427357601002e-13,
+      "fate_annotation_states": {
+        "candidate_division": 452,
+        "candidate_loss": 520,
+        "candidate_death": 11,
+        "unresolved": 1
+      },
+      "usable_fate_labels": {
+        "division": 452,
+        "loss": 520,
+        "death": 11,
+        "unresolved": 1
+      },
+      "successor_states": {
+        "unique_consistent_successor_pair": 452,
+        "not_one_usable_division": 532
+      },
+      "issue_record_counts": {
+        "negative_fate_duration": 1
+      },
+      "affected_observation_counts": {
+        "negative_fate_duration": 1
+      },
+      "repeated_cycle_check_statuses": {
+        "mother_cycle": {
+          "unavailable": 80,
+          "consistent": 904
+        },
+        "grandmother_cycle_vs_mother_annotation": {
+          "unavailable": 188,
+          "consistent": 796
+        },
+        "grandmother_cycle": {
+          "unavailable": 188,
+          "consistent": 796
+        }
+      },
+      "group_counts": {
+        "raw_recorded_components": 80,
+        "consistent_recorded_components": 80,
+        "conservative_related_groups": 40
+      },
+      "group_size_histograms": {
+        "raw": {
+          "1": 26,
+          "3": 11,
+          "5": 4,
+          "7": 6,
+          "9": 5,
+          "13": 5,
+          "15": 4,
+          "17": 3,
+          "19": 3,
+          "25": 1,
+          "27": 1,
+          "29": 2,
+          "33": 3,
+          "35": 1,
+          "47": 1,
+          "59": 1,
+          "61": 1,
+          "81": 1,
+          "93": 1
+        },
+        "consistent": {
+          "1": 26,
+          "3": 11,
+          "5": 4,
+          "7": 6,
+          "9": 5,
+          "13": 5,
+          "15": 4,
+          "17": 3,
+          "19": 3,
+          "25": 1,
+          "27": 1,
+          "29": 2,
+          "33": 3,
+          "35": 1,
+          "47": 1,
+          "59": 1,
+          "61": 1,
+          "81": 1,
+          "93": 1
+        },
+        "related": {
+          "2": 6,
+          "4": 5,
+          "6": 2,
+          "10": 3,
+          "12": 3,
+          "14": 1,
+          "18": 4,
+          "20": 3,
+          "22": 1,
+          "26": 1,
+          "28": 1,
+          "30": 1,
+          "32": 1,
+          "34": 1,
+          "42": 1,
+          "60": 2,
+          "72": 1,
+          "94": 1,
+          "100": 1,
+          "128": 1
+        }
+      },
+      "groups_with_no_recorded_issue": {
+        "raw": 79,
+        "consistent": 79,
+        "related": 39
+      },
+      "raw_root_observations": 80,
+      "consistent_root_observations": 80,
+      "source_units": "numeric_source_time_units_hour_interpretation_from_separate_dictionary",
+      "no_outcome_grid": true,
+      "no_original_founder_assignment": true,
+      "no_continuous_observation_mask": true
+    },
+    {
+      "file": "kuchen-perturbation.xlsx",
+      "sheet": "-myc2",
+      "workbook_sha256": "0065797f9d1cb12dc695bf9baa516f68afea1d6c6077b75c2a9830389806a6f3",
+      "pair_rows": 600,
+      "observations": 1200,
+      "unique_nonmissing_cell_tokens": 1200,
+      "uniquely_recorded_entities": 1200,
+      "duplicate_identity_entities": 0,
+      "observations_missing_usable_identity": 0,
+      "lexical_numeric_alias_groups": 0,
+      "source_lineage_label_groups": 28,
+      "mother_assertions": 1200,
+      "raw_unique_recorded_edges": 1144,
+      "consistent_recorded_edges": 1144,
+      "cyclic_raw_edges": 0,
+      "self_raw_edges": 0,
+      "cyclic_raw_scc_count": 0,
+      "cyclic_scc_size_histogram": {},
+      "external_reference_entities": 56,
+      "external_mother_assertions": 56,
+      "edge_parent_reference_kinds": {
+        "external_reference": 56,
+        "unique_recorded_reference": 1144
+      },
+      "consistent_edge_blocking_reasons": {
+        "parent_without_usable_division": 56,
+        "unresolved_or_conflicting_parent_child_time": 56,
+        "nonunique_or_external_identity": 56
+      },
+      "edge_check_status_counts": {
+        "identity": {
+          "external_reference_or_ambiguous_child": 56,
+          "unique": 1144
+        },
+        "successor_pair_uniqueness": {
+          "unique": 1200
+        },
+        "cycle": {
+          "not_in_raw_directed_cycle": 1200
+        },
+        "parent_division": {
+          "unavailable": 56,
+          "usable_division": 1144
+        },
+        "parent_child_time": {
+          "unavailable": 56,
+          "consistent": 1144
+        },
+        "lineage": {
+          "unavailable": 56,
+          "consistent": 1144
+        },
+        "generation": {
+          "unavailable": 56,
+          "consistent": 1144
+        },
+        "grandmother_reference": {
+          "unavailable": 56,
+          "consistent": 1144
+        }
+      },
+      "maximum_absolute_parent_child_residual_source_units": 7.105427357601002e-13,
+      "fate_annotation_states": {
+        "candidate_division": 572,
+        "candidate_loss": 621,
+        "candidate_death": 6,
+        "unresolved": 1
+      },
+      "usable_fate_labels": {
+        "division": 572,
+        "loss": 621,
+        "death": 6,
+        "unresolved": 1
+      },
+      "successor_states": {
+        "unique_consistent_successor_pair": 572,
+        "not_one_usable_division": 628
+      },
+      "issue_record_counts": {
+        "negative_fate_duration": 1
+      },
+      "affected_observation_counts": {
+        "negative_fate_duration": 1
+      },
+      "repeated_cycle_check_statuses": {
+        "mother_cycle": {
+          "unavailable": 56,
+          "consistent": 1144
+        },
+        "grandmother_cycle_vs_mother_annotation": {
+          "unavailable": 152,
+          "consistent": 1048
+        },
+        "grandmother_cycle": {
+          "unavailable": 152,
+          "consistent": 1048
+        }
+      },
+      "group_counts": {
+        "raw_recorded_components": 56,
+        "consistent_recorded_components": 56,
+        "conservative_related_groups": 28
+      },
+      "group_size_histograms": {
+        "raw": {
+          "1": 8,
+          "3": 7,
+          "7": 3,
+          "9": 4,
+          "11": 3,
+          "13": 1,
+          "17": 2,
+          "19": 4,
+          "21": 1,
+          "25": 3,
+          "27": 2,
+          "29": 3,
+          "31": 1,
+          "33": 2,
+          "35": 1,
+          "37": 2,
+          "39": 2,
+          "41": 1,
+          "49": 1,
+          "53": 1,
+          "61": 1,
+          "73": 1,
+          "77": 1,
+          "83": 1
+        },
+        "consistent": {
+          "1": 8,
+          "3": 7,
+          "7": 3,
+          "9": 4,
+          "11": 3,
+          "13": 1,
+          "17": 2,
+          "19": 4,
+          "21": 1,
+          "25": 3,
+          "27": 2,
+          "29": 3,
+          "31": 1,
+          "33": 2,
+          "35": 1,
+          "37": 2,
+          "39": 2,
+          "41": 1,
+          "49": 1,
+          "53": 1,
+          "61": 1,
+          "73": 1,
+          "77": 1,
+          "83": 1
+        },
+        "related": {
+          "2": 3,
+          "6": 1,
+          "12": 1,
+          "14": 1,
+          "16": 2,
+          "20": 1,
+          "28": 1,
+          "34": 1,
+          "36": 1,
+          "40": 2,
+          "42": 1,
+          "48": 4,
+          "50": 1,
+          "58": 1,
+          "62": 1,
+          "64": 1,
+          "78": 2,
+          "86": 1,
+          "110": 1,
+          "112": 1
+        }
+      },
+      "groups_with_no_recorded_issue": {
+        "raw": 55,
+        "consistent": 55,
+        "related": 27
+      },
+      "raw_root_observations": 56,
+      "consistent_root_observations": 56,
+      "source_units": "numeric_source_time_units_hour_interpretation_from_separate_dictionary",
+      "no_outcome_grid": true,
+      "no_original_founder_assignment": true,
+      "no_continuous_observation_mask": true
+    },
+    {
+      "file": "kuchen-perturbation.xlsx",
+      "sheet": "rap1",
+      "workbook_sha256": "0065797f9d1cb12dc695bf9baa516f68afea1d6c6077b75c2a9830389806a6f3",
+      "pair_rows": 482,
+      "observations": 964,
+      "unique_nonmissing_cell_tokens": 964,
+      "uniquely_recorded_entities": 964,
+      "duplicate_identity_entities": 0,
+      "observations_missing_usable_identity": 0,
+      "lexical_numeric_alias_groups": 0,
+      "source_lineage_label_groups": 19,
+      "mother_assertions": 964,
+      "raw_unique_recorded_edges": 926,
+      "consistent_recorded_edges": 926,
+      "cyclic_raw_edges": 0,
+      "self_raw_edges": 0,
+      "cyclic_raw_scc_count": 0,
+      "cyclic_scc_size_histogram": {},
+      "external_reference_entities": 38,
+      "external_mother_assertions": 38,
+      "edge_parent_reference_kinds": {
+        "external_reference": 38,
+        "unique_recorded_reference": 926
+      },
+      "consistent_edge_blocking_reasons": {
+        "parent_without_usable_division": 38,
+        "unresolved_or_conflicting_parent_child_time": 38,
+        "nonunique_or_external_identity": 38
+      },
+      "edge_check_status_counts": {
+        "identity": {
+          "external_reference_or_ambiguous_child": 38,
+          "unique": 926
+        },
+        "successor_pair_uniqueness": {
+          "unique": 964
+        },
+        "cycle": {
+          "not_in_raw_directed_cycle": 964
+        },
+        "parent_division": {
+          "unavailable": 38,
+          "usable_division": 926
+        },
+        "parent_child_time": {
+          "unavailable": 38,
+          "consistent": 926
+        },
+        "lineage": {
+          "unavailable": 38,
+          "consistent": 926
+        },
+        "generation": {
+          "unavailable": 38,
+          "consistent": 926
+        },
+        "grandmother_reference": {
+          "unavailable": 38,
+          "consistent": 926
+        }
+      },
+      "maximum_absolute_parent_child_residual_source_units": 1.4210854715202004e-14,
+      "fate_annotation_states": {
+        "candidate_division": 463,
+        "candidate_loss": 498,
+        "candidate_death": 3
+      },
+      "usable_fate_labels": {
+        "division": 463,
+        "loss": 498,
+        "death": 3
+      },
+      "successor_states": {
+        "unique_consistent_successor_pair": 463,
+        "not_one_usable_division": 501
+      },
+      "issue_record_counts": {},
+      "affected_observation_counts": {},
+      "repeated_cycle_check_statuses": {
+        "mother_cycle": {
+          "unavailable": 38,
+          "consistent": 926
+        },
+        "grandmother_cycle_vs_mother_annotation": {
+          "unavailable": 110,
+          "consistent": 854
+        },
+        "grandmother_cycle": {
+          "unavailable": 110,
+          "consistent": 854
+        }
+      },
+      "group_counts": {
+        "raw_recorded_components": 38,
+        "consistent_recorded_components": 38,
+        "conservative_related_groups": 19
+      },
+      "group_size_histograms": {
+        "raw": {
+          "1": 2,
+          "5": 1,
+          "7": 1,
+          "13": 1,
+          "17": 2,
+          "19": 3,
+          "21": 1,
+          "23": 3,
+          "25": 3,
+          "27": 2,
+          "29": 2,
+          "31": 10,
+          "33": 3,
+          "35": 1,
+          "41": 2,
+          "43": 1
+        },
+        "consistent": {
+          "1": 2,
+          "5": 1,
+          "7": 1,
+          "13": 1,
+          "17": 2,
+          "19": 3,
+          "21": 1,
+          "23": 3,
+          "25": 3,
+          "27": 2,
+          "29": 2,
+          "31": 10,
+          "33": 3,
+          "35": 1,
+          "41": 2,
+          "43": 1
+        },
+        "related": {
+          "8": 1,
+          "28": 1,
+          "38": 2,
+          "42": 2,
+          "44": 1,
+          "46": 2,
+          "54": 1,
+          "58": 1,
+          "60": 2,
+          "62": 3,
+          "64": 1,
+          "66": 1,
+          "84": 1
+        }
+      },
+      "groups_with_no_recorded_issue": {
+        "raw": 38,
+        "consistent": 38,
+        "related": 19
+      },
+      "raw_root_observations": 38,
+      "consistent_root_observations": 38,
+      "source_units": "numeric_source_time_units_hour_interpretation_from_separate_dictionary",
+      "no_outcome_grid": true,
+      "no_original_founder_assignment": true,
+      "no_continuous_observation_mask": true
+    },
+    {
+      "file": "kuchen-perturbation.xlsx",
+      "sheet": "rap2",
+      "workbook_sha256": "0065797f9d1cb12dc695bf9baa516f68afea1d6c6077b75c2a9830389806a6f3",
+      "pair_rows": 502,
+      "observations": 1004,
+      "unique_nonmissing_cell_tokens": 1004,
+      "uniquely_recorded_entities": 1004,
+      "duplicate_identity_entities": 0,
+      "observations_missing_usable_identity": 0,
+      "lexical_numeric_alias_groups": 0,
+      "source_lineage_label_groups": 16,
+      "mother_assertions": 1004,
+      "raw_unique_recorded_edges": 972,
+      "consistent_recorded_edges": 972,
+      "cyclic_raw_edges": 0,
+      "self_raw_edges": 0,
+      "cyclic_raw_scc_count": 0,
+      "cyclic_scc_size_histogram": {},
+      "external_reference_entities": 32,
+      "external_mother_assertions": 32,
+      "edge_parent_reference_kinds": {
+        "external_reference": 32,
+        "unique_recorded_reference": 972
+      },
+      "consistent_edge_blocking_reasons": {
+        "parent_without_usable_division": 32,
+        "unresolved_or_conflicting_parent_child_time": 32,
+        "nonunique_or_external_identity": 32
+      },
+      "edge_check_status_counts": {
+        "identity": {
+          "external_reference_or_ambiguous_child": 32,
+          "unique": 972
+        },
+        "successor_pair_uniqueness": {
+          "unique": 1004
+        },
+        "cycle": {
+          "not_in_raw_directed_cycle": 1004
+        },
+        "parent_division": {
+          "unavailable": 32,
+          "usable_division": 972
+        },
+        "parent_child_time": {
+          "unavailable": 32,
+          "consistent": 972
+        },
+        "lineage": {
+          "unavailable": 32,
+          "consistent": 972
+        },
+        "generation": {
+          "unavailable": 32,
+          "consistent": 972
+        },
+        "grandmother_reference": {
+          "unavailable": 32,
+          "consistent": 972
+        }
+      },
+      "maximum_absolute_parent_child_residual_source_units": 1.4210854715202004e-14,
+      "fate_annotation_states": {
+        "candidate_division": 486,
+        "candidate_loss": 517,
+        "candidate_death": 1
+      },
+      "usable_fate_labels": {
+        "division": 486,
+        "loss": 517,
+        "death": 1
+      },
+      "successor_states": {
+        "unique_consistent_successor_pair": 486,
+        "not_one_usable_division": 518
+      },
+      "issue_record_counts": {},
+      "affected_observation_counts": {},
+      "repeated_cycle_check_statuses": {
+        "mother_cycle": {
+          "unavailable": 32,
+          "consistent": 972
+        },
+        "grandmother_cycle_vs_mother_annotation": {
+          "unavailable": 94,
+          "consistent": 910
+        },
+        "grandmother_cycle": {
+          "unavailable": 94,
+          "consistent": 910
+        }
+      },
+      "group_counts": {
+        "raw_recorded_components": 32,
+        "consistent_recorded_components": 32,
+        "conservative_related_groups": 16
+      },
+      "group_size_histograms": {
+        "raw": {
+          "1": 1,
+          "3": 2,
+          "5": 1,
+          "9": 2,
+          "15": 1,
+          "17": 1,
+          "19": 2,
+          "23": 1,
+          "27": 3,
+          "29": 3,
+          "33": 3,
+          "35": 1,
+          "37": 2,
+          "39": 1,
+          "49": 1,
+          "51": 1,
+          "53": 1,
+          "57": 1,
+          "59": 1,
+          "63": 1,
+          "67": 2
+        },
+        "consistent": {
+          "1": 1,
+          "3": 2,
+          "5": 1,
+          "9": 2,
+          "15": 1,
+          "17": 1,
+          "19": 2,
+          "23": 1,
+          "27": 3,
+          "29": 3,
+          "33": 3,
+          "35": 1,
+          "37": 2,
+          "39": 1,
+          "49": 1,
+          "51": 1,
+          "53": 1,
+          "57": 1,
+          "59": 1,
+          "63": 1,
+          "67": 2
+        },
+        "related": {
+          "22": 1,
+          "24": 1,
+          "32": 1,
+          "34": 1,
+          "36": 1,
+          "56": 1,
+          "58": 2,
+          "62": 1,
+          "64": 1,
+          "70": 2,
+          "72": 1,
+          "108": 1,
+          "118": 1,
+          "120": 1
+        }
+      },
+      "groups_with_no_recorded_issue": {
+        "raw": 32,
+        "consistent": 32,
+        "related": 16
+      },
+      "raw_root_observations": 32,
+      "consistent_root_observations": 32,
+      "source_units": "numeric_source_time_units_hour_interpretation_from_separate_dictionary",
+      "no_outcome_grid": true,
+      "no_original_founder_assignment": true,
+      "no_continuous_observation_mask": true
+    }
+  ],
+  "read_checks": [
+    {
+      "file": "kuchen-control.xlsx",
+      "sheet": "rep1",
+      "xml_path": "xl/worksheets/sheet1.xml",
+      "header_excel_row": 1,
+      "pair_rows": 923,
+      "xml_sha256": "0a7cc4aa522ed8d92d1700b935df1b5f22cc2cc1cb69d96c4dc79e539a39bdcc",
+      "xml_bytes": 617369
+    },
+    {
+      "file": "kuchen-control.xlsx",
+      "sheet": "rep2",
+      "xml_path": "xl/worksheets/sheet2.xml",
+      "header_excel_row": 1,
+      "pair_rows": 808,
+      "xml_sha256": "8fa58b0082383c4eaa663326317a653218e9cf0afcf21fca51041171da67e9e9",
+      "xml_bytes": 522409
+    },
+    {
+      "file": "kuchen-control.xlsx",
+      "sheet": "rep3",
+      "xml_path": "xl/worksheets/sheet3.xml",
+      "header_excel_row": 1,
+      "pair_rows": 871,
+      "xml_sha256": "58a1803f67bdd09e5a1800e3a090371a1bb1d8efddca237dd3c2350344a74378",
+      "xml_bytes": 532866
+    },
+    {
+      "file": "kuchen-perturbation.xlsx",
+      "sheet": "-myc1",
+      "xml_path": "xl/worksheets/sheet1.xml",
+      "header_excel_row": 1,
+      "pair_rows": 492,
+      "xml_sha256": "5c249468db699491709b202662c60514c9d24973fccb79a6e15f284ba16d494d",
+      "xml_bytes": 251079
+    },
+    {
+      "file": "kuchen-perturbation.xlsx",
+      "sheet": "-myc2",
+      "xml_path": "xl/worksheets/sheet2.xml",
+      "header_excel_row": 1,
+      "pair_rows": 600,
+      "xml_sha256": "0c13271e70536bafc35bf2f4734e78be07ba77156f792a537af28ae3334e0c4a",
+      "xml_bytes": 313905
+    },
+    {
+      "file": "kuchen-perturbation.xlsx",
+      "sheet": "rap1",
+      "xml_path": "xl/worksheets/sheet3.xml",
+      "header_excel_row": 1,
+      "pair_rows": 482,
+      "xml_sha256": "7c448ff4bcb685c8ac4ba3ccc0e6372ba48f7711a854e384afa1d233bf1abd33",
+      "xml_bytes": 230853
+    },
+    {
+      "file": "kuchen-perturbation.xlsx",
+      "sheet": "rap2",
+      "xml_path": "xl/worksheets/sheet4.xml",
+      "header_excel_row": 1,
+      "pair_rows": 502,
+      "xml_sha256": "a793988fea438e52ae7fce91c3fe0edbb719783d8c55a68ad9ff2dc2330c056e",
+      "xml_bytes": 242931
+    }
+  ],
+  "private_artifacts": [
+    {
+      "file": "kuchen-control.xlsx",
+      "sheet": "rep1",
+      "private_relative_file": "sheet-00.json",
+      "sha256": "3e6b7612180e0c20425a893d8217d42bdbf5febe10c3c4e664520afcd1347d11"
+    },
+    {
+      "file": "kuchen-control.xlsx",
+      "sheet": "rep2",
+      "private_relative_file": "sheet-01.json",
+      "sha256": "4600e82aee334c4775928ba7c7794455b2e8b2c38a698191ee906ab404a8e5c7"
+    },
+    {
+      "file": "kuchen-control.xlsx",
+      "sheet": "rep3",
+      "private_relative_file": "sheet-02.json",
+      "sha256": "96d48c2eb5b28777f4d052043bce2e8c60172dd5a2005204598b6c336c039440"
+    },
+    {
+      "file": "kuchen-perturbation.xlsx",
+      "sheet": "-myc1",
+      "private_relative_file": "sheet-03.json",
+      "sha256": "01f9012826b2d10a52ed7819b055ab02ee3afa3ad8dedfe846fb265b02a56dd4"
+    },
+    {
+      "file": "kuchen-perturbation.xlsx",
+      "sheet": "-myc2",
+      "private_relative_file": "sheet-04.json",
+      "sha256": "da9bec1a75fce61590f19baaabbdc2e6e6dfbc76822e65468f04fc1a904e5349"
+    },
+    {
+      "file": "kuchen-perturbation.xlsx",
+      "sheet": "rap1",
+      "private_relative_file": "sheet-05.json",
+      "sha256": "0bf9eea769423c27f59da25695aae898556445cf5faf5e3bc1f9c7e33872d8c8"
+    },
+    {
+      "file": "kuchen-perturbation.xlsx",
+      "sheet": "rap2",
+      "private_relative_file": "sheet-06.json",
+      "sha256": "587100168d7914dc44828c5da71b11d1186ee9d785e000ecfe92dbe36773364f"
+    }
+  ],
+  "per_cell_output_public": false,
+  "outcome_calculations": false,
+  "interpretation": "Recorded components and conservative related groups are not original founders or proof of independence; no continuous observation or outcome masks assigned."
+}

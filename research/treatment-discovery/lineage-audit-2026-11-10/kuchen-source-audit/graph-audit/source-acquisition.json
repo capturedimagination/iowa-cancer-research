@@ -1,0 +1,50 @@
+{
+  "status": "NEW_SOURCE_FILES_ARCHIVED_WITHOUT_ALTERING_PREVIOUS_SOURCES",
+  "audit_date": "2026-11-10",
+  "scope": "Primary-paper and author-supplied reporting resources only; no new cell-level acquisition or biological outcome analysis. Raw copies remain excluded from publication.",
+  "files": [
+    {
+      "name": "transparent-reporting.pdf",
+      "url": "https://cdn.elifesciences.org/articles/51002/elife-51002-transrepform-v2.pdf",
+      "final_url": "https://cdn.elifesciences.org/articles/51002/elife-51002-transrepform-v2.pdf",
+      "status": 200,
+      "content_type": "application/pdf",
+      "retrieved_utc": "2026-11-10T21:07:32.525756+00:00",
+      "bytes": 356518,
+      "sha256": "bd7c4eaeed745b4d5d02e76ebca881b57d28d54d87bc751a508e6472eb92a719",
+      "local_path": "research/treatment-discovery/sources/lineage-2026-11-10/kuchen-graph-2026-11-10/transparent-reporting.pdf",
+      "publication_status": "source_link_and_hash_only",
+      "working_acquisition_path": "tmp/kuchen-graph-2026-11-10/source-evidence/transparent-reporting.pdf"
+    },
+    {
+      "name": "article-v2.pdf",
+      "url": "https://cdn.elifesciences.org/articles/51002/elife-51002-v2.pdf",
+      "final_url": "https://cdn.elifesciences.org/articles/51002/elife-51002-v2.pdf",
+      "status": 200,
+      "content_type": "application/pdf",
+      "retrieved_utc": "2026-11-10T21:07:32.869696+00:00",
+      "bytes": 1698211,
+      "sha256": "25af00085cf54507ec19bf867b3cbabb7287263d3f78c63ab1236b3f2b5d9167",
+      "local_path": "research/treatment-discovery/sources/lineage-2026-11-10/kuchen-graph-2026-11-10/article-v2.pdf",
+      "publication_status": "source_link_and_hash_only",
+      "working_acquisition_path": "tmp/kuchen-graph-2026-11-10/source-evidence/article-v2.pdf"
+    },
+    {
+      "name": "key-resources.doc",
+      "url": "https://cdn.elifesciences.org/articles/51002/elife-51002-supp1-v2.doc",
+      "final_url": "https://cdn.elifesciences.org/articles/51002/elife-51002-supp1-v2.doc",
+      "status": 200,
+      "content_type": "application/msword",
+      "retrieved_utc": "2026-11-10T21:07:33.085138+00:00",
+      "bytes": 51712,
+      "sha256": "6364bbab1b7198171dc924040a68bd88185c13b9e032d3e41f56e02ee8071b71",
+      "local_path": "research/treatment-discovery/sources/lineage-2026-11-10/kuchen-graph-2026-11-10/key-resources.doc",
+      "publication_status": "source_link_and_hash_only",
+      "working_acquisition_path": "tmp/kuchen-graph-2026-11-10/source-evidence/key-resources.doc"
+    }
+  ],
+  "license_basis": {
+    "article": "Article v2 page1 specifies Creative Commons Attribution; source article rights record preserved in prior audit.",
+    "supplements": "Author-supplied linked supplemental resources; no separate contrary restriction observed. Only source links, hashes and paraphrased assertions published."
+  }
+}

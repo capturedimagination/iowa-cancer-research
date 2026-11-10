@@ -10,9 +10,9 @@
     "Ephemeral tmp working files/environments are excluded from the inventory; durable source originals have their own dated paths and provenance."
   ],
   "counts": {
-    "included": 569,
+    "included": 628,
     "local_generated": 3,
-    "linked_source_only": 92
+    "linked_source_only": 117
   },
   "expected_public_files": [
     ".gitattributes",
@@ -35,6 +35,7 @@
     "publication/verification-age-calendar-2026-11-10.json",
     "publication/verification-cell-cycle-2026-11-10.json",
     "publication/verification-discovery-2026-11-10.json",
+    "publication/verification-kuchen-graph-2026-11-10.json",
     "publication/verification-lineage-2026-11-10.json",
     "publication/verification-missing-branches-2026-11-10.json",
     "publication/verification.json",
@@ -327,6 +328,57 @@
     "research/treatment-discovery/lineage-audit-2026-11-10/identity-check-results.json",
     "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/README.md",
     "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/acquisition.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/README.md",
+    "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/author-code-evidence.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/author-code-evidence.md",
+    "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/compatibility-bounds/README.md",
+    "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/compatibility-bounds/freeze-record.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/compatibility-bounds/independent-freeze.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/compatibility-bounds/independent-plan.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/compatibility-bounds/independent-review.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/compatibility-bounds/independent-review.md",
+    "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/compatibility-bounds/independent-verification.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/compatibility-bounds/protocol.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/compatibility-bounds/verification-first.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/compatibility-proposal.md",
+    "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/dictionary-evidence.md",
+    "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/documentation-review.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/documentation-review.md",
+    "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/freeze-record.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/implementation-review.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/implementation-review.md",
+    "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/independent-code-pin-v2.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/independent-code-pin.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/independent-comparator-pin-v3.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/independent-comparison-first.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/independent-comparison-v3.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/independent-fixtures-comparator-v3.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/independent-fixtures-final-prepin.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/independent-fixtures-first.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/independent-fixtures-parser-v2-final.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/independent-fixtures-parser-v2.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/independent-preflight-checks.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/independent-reference-v2.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/independent-reference.json.failure.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/independent-review.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/independent-verification.md",
+    "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/producer-fixtures.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/producer-freeze.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/protocol-candidate-v2.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/protocol-candidate.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/protocol-draft.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/protocol.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/repository-data-search.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/reproduction-freeze-v2.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/reproduction-freeze.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/reproduction-results.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/reproduction.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/research-destination.md",
+    "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/results.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/source-acquisition.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/source-assertion-ledger.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/verification-history/verify_kuchen_graph-v1.py",
+    "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/verification-history/verify_kuchen_graph-v2.py",
     "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-plan-draft.md",
     "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/kuchen-anomaly-locators.json",
     "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/kuchen-schema.json",
@@ -466,6 +518,7 @@
     "scripts/build_food_industry_evidence.py",
     "scripts/build_gse292469_sample_metadata.py",
     "scripts/build_knowledge_base.py",
+    "scripts/build_kuchen_graph.py",
     "scripts/build_report.py",
     "scripts/build_services_evidence.py",
     "scripts/check_age_calendar_aggregation.py",
@@ -474,6 +527,8 @@
     "scripts/check_age_lineage_fixtures.py",
     "scripts/check_compilation.py",
     "scripts/check_egfr_curvature_design.py",
+    "scripts/check_kuchen_graph_preflight.py",
+    "scripts/check_kuchen_graph_reproduction.py",
     "scripts/check_lineage_family_sampling.py",
     "scripts/check_lineage_horizon_invariance.py",
     "scripts/check_lineage_sampling_identity.py",
@@ -489,6 +544,7 @@
     "scripts/extract_maynard_seurat_object.py",
     "scripts/fetch_iowa_tri_history.py",
     "scripts/interpret_age_calendar_grid.py",
+    "scripts/lineage_compatibility_bounds.py",
     "scripts/lineage_joint_bounds.py",
     "scripts/lineage_missing_bounds.py",
     "scripts/ocr_pdf_applevision.swift",
@@ -519,6 +575,9 @@
     "scripts/simulate_signature_depth.py",
     "scripts/verify_age_calendar_calibration.py",
     "scripts/verify_age_lineage_models.py",
+    "scripts/verify_kuchen_graph.py",
+    "scripts/verify_lineage_bounds_independent.py",
+    "scripts/verify_lineage_compatibility.py",
     "scripts/verify_lineage_joint_bounds.py",
     "scripts/verify_lineage_missing_forest.py",
     "sources/HF2635-Signed-2026.ocr.provenance.json",
@@ -598,18 +657,19 @@
     },
     {
       "path": ".gitignore",
-      "bytes": 7542,
-      "sha256": "4ce60f6d4724b7c521f98f11c671b033e1957ba600656008cbfa3d70fef90b66",
+      "bytes": 10378,
+      "sha256": "902375b1d65a0a523ea94715d0dbe6b972f17d0225182c687bd5d72306358342",
       "publication_status": "included",
       "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
       "upstream_urls": [
-        "https://api.github.com/repos/czbiohub-sf/scell_lung_adenocarcinoma/git/blobs/eb3865b480d84c5e7cb65e08ef00da865d2babcc"
+        "https://api.github.com/repos/czbiohub-sf/scell_lung_adenocarcinoma/git/blobs/eb3865b480d84c5e7cb65e08ef00da865d2babcc",
+        "https://api.github.com/repos/hoefer-lab/bar-cycle/git/blobs/1875d0ac46c8eca1c17855fde07dc434be818fdb"
       ]
     },
     {
       "path": "AGENTS.md",
-      "bytes": 4072,
-      "sha256": "23b9f8656d2945c1d607d2932ea9882a954b9a174066a40df76ba595dff94a72",
+      "bytes": 4687,
+      "sha256": "d4ea1ec70106c591f7f88dd8e901d884c7415dba7ec5c91fa6b630e803350d93",
       "publication_status": "included",
       "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
       "upstream_urls": []
@@ -648,12 +708,14 @@
     },
     {
       "path": "README.md",
-      "bytes": 7627,
-      "sha256": "4640e183221f35eadbb09876180b90fdaf7060b06c5e313ff0f653aba1f9c521",
+      "bytes": 7675,
+      "sha256": "feedb6d1d0cd29717bd3ba5b515e69b4ff42f6567f1a3712e44f33c470f4ce92",
       "publication_status": "included",
       "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
       "upstream_urls": [
         "https://api.github.com/repos/czbiohub-sf/scell_lung_adenocarcinoma/git/blobs/e00bd39ec1d3583b176d5201c87b4b9a0986acdc",
+        "https://api.github.com/repos/hoefer-lab/bar-cycle/git/blobs/c6a6cf306e2a2d86abde9d879293ad087d87c4d5",
+        "https://raw.githubusercontent.com/hoefer-lab/bar-cycle/1ae898389010da4cba0097f2f09fbe308b2aa912/README.md",
         "https://raw.githubusercontent.com/shahcompbio/egfr_nucseq/c4211458564c92b32c1276badaed2e6731ad1a68/README.md"
       ]
     },
@@ -667,8 +729,8 @@
     },
     {
       "path": "knowledge/INDEX.md",
-      "bytes": 16612,
-      "sha256": "e9d84b9a83fbdac2cdbcb0699a2c4c55604c8b641c1c589b511a23ddd60ab965",
+      "bytes": 17073,
+      "sha256": "a6e8b2944ea0546e6453db2933c4bb262073f3fa951baebf9ec53c655f16b855",
       "publication_status": "included",
       "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
       "upstream_urls": []
@@ -676,7 +738,7 @@
     {
       "path": "knowledge/build-manifest.json",
       "bytes": 1870,
-      "sha256": "bf189927260672236541d1ac25e245767652f3e69dea2167c8659139e1193a91",
+      "sha256": "0b3c7cf656e3c7119e086c025de5296d1d461fdc7a9058c53cc6e2fc71a588bc",
       "publication_status": "included",
       "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
       "upstream_urls": []
@@ -691,8 +753,8 @@
     },
     {
       "path": "knowledge/research.sqlite",
-      "bytes": 295878656,
-      "sha256": "1c7ea2ceb99c8ebde80dd2c6100e7e8b6e39e9a3b01246f587fd899e88c558d7",
+      "bytes": 296116224,
+      "sha256": "c42a2220ab9ac1cedbd5c5e80f3da796b2b2fe45908ceabc7f3ff7dcfd054cb5",
       "publication_status": "local_generated",
       "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
       "upstream_urls": []
@@ -741,6 +803,14 @@
       "path": "publication/verification-discovery-2026-11-10.json",
       "bytes": 3160,
       "sha256": "6966d4166100f0613323dd8c986a8b282c6bae2e17e0e9ddc37fb63f1d872cba",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "publication/verification-kuchen-graph-2026-11-10.json",
+      "bytes": 6056,
+      "sha256": "15d4871f11234924c2ea62163aca9793680508139bd6e5723c617fcb6747d202",
       "publication_status": "included",
       "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
       "upstream_urls": []
@@ -1747,8 +1817,8 @@
     },
     {
       "path": "research/treatment-discovery/README.md",
-      "bytes": 11838,
-      "sha256": "79ac016983e9b9ddeceee98298cea1ba2f66401d00f0ce8f895970469ef1e296",
+      "bytes": 12340,
+      "sha256": "c48ea04a394572cff349b653ce47b41514077221729119386e54b6f3e0d0f608",
       "publication_status": "included",
       "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
       "upstream_urls": []
@@ -1901,8 +1971,8 @@
     },
     {
       "path": "research/treatment-discovery/data-access-catalog.json",
-      "bytes": 28512,
-      "sha256": "d5422c15b2298b16d368dedc3182b729e02780eb02b034de545b4636bb4f5baf",
+      "bytes": 29640,
+      "sha256": "5145b42221cbbcc539b2a830bd034fd4f4fdaa7a6c0b581b15bcae798d8aa36e",
       "publication_status": "included",
       "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
       "upstream_urls": []
@@ -2159,8 +2229,8 @@
     },
     {
       "path": "research/treatment-discovery/lineage-audit-2026-11-10/README.md",
-      "bytes": 13229,
-      "sha256": "00b064f678f8900b7ded053465094b4c911085466dab858c02a4f5ac5a2a17d3",
+      "bytes": 13665,
+      "sha256": "061636640ab506d3d2e5e788e1efa05e68371025d36ae8cf44c0aab4187fc4fb",
       "publication_status": "included",
       "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
       "upstream_urls": []
@@ -2543,8 +2613,8 @@
     },
     {
       "path": "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/research-destination.md",
-      "bytes": 10260,
-      "sha256": "15e8bc7d012a0078b1e602696b20fe8da09b6b81fb3d03e3daa484caf9396033",
+      "bytes": 10776,
+      "sha256": "4fd01ec77c294571936698ac2de30dbaeff9774842ecbb0d4375166e2f9688a3",
       "publication_status": "included",
       "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
       "upstream_urls": []
@@ -3119,8 +3189,8 @@
     },
     {
       "path": "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/README.md",
-      "bytes": 11231,
-      "sha256": "d6b9c0b08ca9b56cbb731cb7e50557395dc17c0f84960eb1955810f8bf1bb351",
+      "bytes": 11834,
+      "sha256": "820b12a9ac9cc69dd5dde72e10984c673d6c586f0a8552e9956ad56479b887e2",
       "publication_status": "included",
       "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
       "upstream_urls": []
@@ -3129,6 +3199,416 @@
       "path": "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/acquisition.json",
       "bytes": 3484,
       "sha256": "0a4f7cf4b87ecf993b9a718025c282821db2f88b7a27e6172aac89a586099288",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/README.md",
+      "bytes": 9810,
+      "sha256": "080f08d490f7e09325d9a6095668b7a5a197f9e7c6b310de9ebaa97a1d069e71",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": [
+        "https://raw.githubusercontent.com/hoefer-lab/bar-cycle/1ae898389010da4cba0097f2f09fbe308b2aa912/README.md"
+      ]
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/author-code-evidence.json",
+      "bytes": 7545,
+      "sha256": "4499635f6d7b83478cb9a25beba0d2a7897c79bf217ac609e443d8f0841156e7",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/author-code-evidence.md",
+      "bytes": 3212,
+      "sha256": "ae2b45b410df76437b573bf763db52f0147c9c8689e81e50a413594a7ecb0ca3",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/compatibility-bounds/README.md",
+      "bytes": 6125,
+      "sha256": "4c2ac065c40badef679e812eaf13986b29b7f3cb5b83f3cfb3226a93db83bd76",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/compatibility-bounds/freeze-record.json",
+      "bytes": 450,
+      "sha256": "a726e25bfef14a3a2b51f25040c4398de2d95959c28017ed330775d7130d9a95",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/compatibility-bounds/independent-freeze.json",
+      "bytes": 1276,
+      "sha256": "97bc1e7c9f029d737e0c6ddf29c9e7778b1d008f5920050bdb9a2f073550f6aa",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/compatibility-bounds/independent-plan.json",
+      "bytes": 1801,
+      "sha256": "256dc6181261ef20ef7d38c67a5712d4471650bdf044f1c29ea207096c607c70",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/compatibility-bounds/independent-review.json",
+      "bytes": 4019,
+      "sha256": "95434bc313a89260c0723f5c87c6cadf61ff6166bf23e87bcfeb8318c58dc8e7",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/compatibility-bounds/independent-review.md",
+      "bytes": 5236,
+      "sha256": "699910845775f809b1178f30a2159a89f9c99e28a1d236a2e00d32ea29563c16",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/compatibility-bounds/independent-verification.json",
+      "bytes": 2714,
+      "sha256": "8de9629845b5edb2a970d06b71e79dd893b4238265bb69061c23cd0a0da93318",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/compatibility-bounds/protocol.json",
+      "bytes": 2368,
+      "sha256": "9bae915785c5230b62ff096fe63810ca9e01bddaafc1c87653503d33833974fb",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/compatibility-bounds/verification-first.json",
+      "bytes": 3552,
+      "sha256": "d641c87884524f89ebbb41c9abed3a370e463d483783a07477b565fca9737f24",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/compatibility-proposal.md",
+      "bytes": 24315,
+      "sha256": "6f29602cf982943bf1e4aa0b9a462865026f40ede13a52e033cdbbb75512b167",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/dictionary-evidence.md",
+      "bytes": 4872,
+      "sha256": "bbe325e4423e0eec11d39dab07ca1d3c26a218b3428bb1cef2efdd2deb247487",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/documentation-review.json",
+      "bytes": 5723,
+      "sha256": "fbe71a47a07dc29a847af7a34703185a8f9864316e39e0fe30d187979019a716",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/documentation-review.md",
+      "bytes": 2576,
+      "sha256": "e0dfc530622967fe2745003a4f78cc38a01b6f4205efc4536e6277045a44dc31",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/freeze-record.json",
+      "bytes": 1193,
+      "sha256": "8f96628efcd0d201a79f67f7dd0443ff2d09133cb71534782089ce0a80377f9d",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/implementation-review.json",
+      "bytes": 4622,
+      "sha256": "6106aaf5fcb71301110cc2e0117195809c940e297a946aaf199ac9d8189f7145",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/implementation-review.md",
+      "bytes": 2665,
+      "sha256": "1fb508f6484f30b61e2095a3ad6a750019ce7650917bb9a2393bbc1a58e7edec",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/independent-code-pin-v2.json",
+      "bytes": 906,
+      "sha256": "ac74b0d6b2bd06f214f19ed15bcc0710c3074ac8dc1aa3450bbebf09a626c652",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/independent-code-pin.json",
+      "bytes": 637,
+      "sha256": "9d8ca39e757d5be7a89437a70a02cdee83573a9d6274a0842dac3516d7bb4acd",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/independent-comparator-pin-v3.json",
+      "bytes": 1135,
+      "sha256": "f7b9e2dc008dfb9da1627916de3ef793331e3539d1d767f38adaaa370ecdc6f9",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/independent-comparison-first.json",
+      "bytes": 4714,
+      "sha256": "14a3490ac6dea0322eb7215c6251350387689b925ccc92cbd9518c3c056b30fb",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/independent-comparison-v3.json",
+      "bytes": 5064,
+      "sha256": "d524d8db127df3d1121d26ec9d3316d6fa79f04596f7e41c2a611d5657e8187e",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/independent-fixtures-comparator-v3.json",
+      "bytes": 1282,
+      "sha256": "9f0e13bed83fa56bd80dac9c350c6e3c7973c476c0ca37cc49e090144d6a0a8d",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/independent-fixtures-final-prepin.json",
+      "bytes": 1158,
+      "sha256": "62847c1cba464c071207b545e605398b2ec8b32f9a0b688eaa6fa71abb77b82b",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/independent-fixtures-first.json",
+      "bytes": 1158,
+      "sha256": "27478e99f63cb7eec014b0a2b4a8c4f54a1a17888049703377be22c9ebc3fbd7",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/independent-fixtures-parser-v2-final.json",
+      "bytes": 1215,
+      "sha256": "d0eb0a4b2cb6cef8a0693d782e6efb2a9484c8430e722b99dfb1d8f2bebaf0a4",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/independent-fixtures-parser-v2.json",
+      "bytes": 1215,
+      "sha256": "a00a6edddb65e28af6e75e827ae50aff4d0cdadf0b125626a6883b05e8cd26cd",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/independent-preflight-checks.json",
+      "bytes": 1058,
+      "sha256": "927687887deee59ae2140c454bf2ee091b135af8c8aed94a9b2780d190e53b6c",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/independent-reference-v2.json",
+      "bytes": 19860,
+      "sha256": "290d045ac35993c62be18ae9a49a7ad42e097025776830afb65379a3cb90bcef",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/independent-reference.json.failure.json",
+      "bytes": 8712,
+      "sha256": "a4fff95c564275ab18e789deda732595368765b169503c30573035dde85b3e33",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/independent-review.json",
+      "bytes": 4755,
+      "sha256": "452ab711bbcb04f3563c080238907012c48b9592bcb0e87844a0196d491b3028",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/independent-verification.md",
+      "bytes": 6449,
+      "sha256": "db3b5f73335e9294cc37179054df6d756e382e4e544ae64a62c556a5fc95110b",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/producer-fixtures.json",
+      "bytes": 3160,
+      "sha256": "34ec44d2c83306a0d5b433d7321d9f19bb52fe86ef952ebadb82243f962a21a5",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/producer-freeze.json",
+      "bytes": 802,
+      "sha256": "91c7a2097d6f54d087e7a32d3825ad512347a4cfac7c3165951e880e4ed6db0e",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/protocol-candidate-v2.json",
+      "bytes": 12483,
+      "sha256": "6e749479c1f4b81a99448acf7eeaa5a6f20f44ab47944fa03c20ab82477e9494",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/protocol-candidate.json",
+      "bytes": 11004,
+      "sha256": "c07ab59b2db4d9a924b3e1e581984190f43df26cf18fde8d2ec2882306d40eed",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/protocol-draft.json",
+      "bytes": 9559,
+      "sha256": "5652cacc6ea243c1e9f268bb74e47a87b30c50a617b7b7ac85e827d8fd85dd15",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/protocol.json",
+      "bytes": 12545,
+      "sha256": "6e0c73303c34a970d5fc17f6ffd7d0dfe478c0854435b7be20f085a8288bceae",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/repository-data-search.json",
+      "bytes": 1187,
+      "sha256": "de2ef3608ff4c1cb8d45c14a07388b828a893365c09af93765911256060b790f",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/reproduction-freeze-v2.json",
+      "bytes": 1746,
+      "sha256": "9a7c9c840458a4cb9154c68b83b5996082f7254f71d042e388953da0d82ef2fe",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/reproduction-freeze.json",
+      "bytes": 1001,
+      "sha256": "a1bbfa5197d3b865c8c4baf81171d09b95451d8cbdce65ecd2469fbb9cb2e4d1",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/reproduction-results.json",
+      "bytes": 39692,
+      "sha256": "1ddc2414f49addc6981eec3bf70aa9369369b40135bf116e5f099466a1c5038e",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/reproduction.json",
+      "bytes": 4862,
+      "sha256": "29754dcfaf272d9d4b4573069769c12308b9a504d51a0f53e69b21c070868629",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/research-destination.md",
+      "bytes": 7477,
+      "sha256": "e0f7d917d4c47873b6fc0ff2196bca4d7dd424c3903c69ba48f3d8f508b09216",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/results.json",
+      "bytes": 39692,
+      "sha256": "c0df90daf0058f717f984ff981bab8d9f4bc31b795d35193c8753682316d1fc8",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/source-acquisition.json",
+      "bytes": 2847,
+      "sha256": "09bee63f5d4cc4c35c1225c6702b19dde7eb74171608d90ed951fe2fcffbb0ff",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/source-assertion-ledger.json",
+      "bytes": 23872,
+      "sha256": "40420d0a913aab750418c6fdaa99d4ec52fc2493b207a3ea9ec36696de900b6b",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/verification-history/verify_kuchen_graph-v1.py",
+      "bytes": 58031,
+      "sha256": "305ca3f41422f15d0166721964bcef69548d58dd61b06bde8dc658dc5f076e5c",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/verification-history/verify_kuchen_graph-v2.py",
+      "bytes": 60211,
+      "sha256": "da8d18846c6345194bc8e3ff0b91475b88a3b2ce09be9fae2085d8eb886b8e16",
       "publication_status": "included",
       "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
       "upstream_urls": []
@@ -3922,6 +4402,218 @@
       ]
     },
     {
+      "path": "research/treatment-discovery/sources/lineage-2026-11-10/kuchen-graph-2026-11-10/article-v2.pdf",
+      "bytes": 1698211,
+      "sha256": "25af00085cf54507ec19bf867b3cbabb7287263d3f78c63ab1236b3f2b5d9167",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Public research originals retained for local reanalysis; publish original findings and source provenance, not raw participant-level or publisher/author source mirrors",
+      "upstream_urls": [
+        "https://cdn.elifesciences.org/articles/51002/elife-51002-v2.pdf"
+      ]
+    },
+    {
+      "path": "research/treatment-discovery/sources/lineage-2026-11-10/kuchen-graph-2026-11-10/author-code/README.md",
+      "bytes": 8964,
+      "sha256": "8a92f423627624a2af02208848aa64d6bd878b7cfd469d522c91f7b6024a0c75",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Public research originals retained for local reanalysis; publish original findings and source provenance, not raw participant-level or publisher/author source mirrors",
+      "upstream_urls": [
+        "https://api.github.com/repos/hoefer-lab/bar-cycle/git/blobs/c6a6cf306e2a2d86abde9d879293ad087d87c4d5",
+        "https://raw.githubusercontent.com/hoefer-lab/bar-cycle/1ae898389010da4cba0097f2f09fbe308b2aa912/README.md"
+      ]
+    },
+    {
+      "path": "research/treatment-discovery/sources/lineage-2026-11-10/kuchen-graph-2026-11-10/author-code/acquisition.json",
+      "bytes": 1270,
+      "sha256": "2644893473d9b0a79c0c9cbf6277a097fa082a91af9756dbf90955c2273cefca",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Public research originals retained for local reanalysis; publish original findings and source provenance, not raw participant-level or publisher/author source mirrors",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/sources/lineage-2026-11-10/kuchen-graph-2026-11-10/author-code/data-analysis/MS_KuchenBeckeretal_datanalysis.m",
+      "bytes": 14458,
+      "sha256": "44a9e3060e5a193690362fc5b1a4caaa98bee2dec2de05498160e991da458822",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Public research originals retained for local reanalysis; publish original findings and source provenance, not raw participant-level or publisher/author source mirrors",
+      "upstream_urls": [
+        "https://api.github.com/repos/hoefer-lab/bar-cycle/git/blobs/698dda60d6b9798cc08c1c5bccaefc996fdf2605",
+        "https://raw.githubusercontent.com/hoefer-lab/bar-cycle/1ae898389010da4cba0097f2f09fbe308b2aa912/data-analysis/MS_KuchenBeckeretal_datanalysis.m"
+      ]
+    },
+    {
+      "path": "research/treatment-discovery/sources/lineage-2026-11-10/kuchen-graph-2026-11-10/author-code/repository-tree.json",
+      "bytes": 9750,
+      "sha256": "505f543cfdd78d3d1fdb2005ba840e52f2471d8153fef453b866e0d511b68792",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Public research originals retained for local reanalysis; publish original findings and source provenance, not raw participant-level or publisher/author source mirrors",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/sources/lineage-2026-11-10/kuchen-graph-2026-11-10/derived/first/sheet-00.json",
+      "bytes": 28020541,
+      "sha256": "8b0f9f334dafdc10ad5e63a85729590e0139de08fbb9398d9315896dfb586f1b",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Public research originals retained for local reanalysis; publish original findings and source provenance, not raw participant-level or publisher/author source mirrors",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/sources/lineage-2026-11-10/kuchen-graph-2026-11-10/derived/first/sheet-01.json",
+      "bytes": 24484282,
+      "sha256": "ed1fd20f1302c26dbea581333e4334a92af17bc0575d9383f13989448ad6bef0",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Public research originals retained for local reanalysis; publish original findings and source provenance, not raw participant-level or publisher/author source mirrors",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/sources/lineage-2026-11-10/kuchen-graph-2026-11-10/derived/first/sheet-02.json",
+      "bytes": 26209842,
+      "sha256": "684ec1df0d3e7759f26a9cbcb86418ba3e07d7b4636ab4c62a781af23f42e3ce",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Public research originals retained for local reanalysis; publish original findings and source provenance, not raw participant-level or publisher/author source mirrors",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/sources/lineage-2026-11-10/kuchen-graph-2026-11-10/derived/first/sheet-03.json",
+      "bytes": 13204620,
+      "sha256": "5145a9934703b0bbb7efcb64fd1ffe33f6b1ff06f38367ec77789ed8c2eea82f",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Public research originals retained for local reanalysis; publish original findings and source provenance, not raw participant-level or publisher/author source mirrors",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/sources/lineage-2026-11-10/kuchen-graph-2026-11-10/derived/first/sheet-04.json",
+      "bytes": 16088095,
+      "sha256": "05112ba076533747dfc61016ec4e5064d07d13c3c431efccb08634d58782e4fc",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Public research originals retained for local reanalysis; publish original findings and source provenance, not raw participant-level or publisher/author source mirrors",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/sources/lineage-2026-11-10/kuchen-graph-2026-11-10/derived/first/sheet-05.json",
+      "bytes": 12767901,
+      "sha256": "36ba84dd8f96f843ed007cb49efbcf5c83737ae08155a3cd775d9650ec9d1683",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Public research originals retained for local reanalysis; publish original findings and source provenance, not raw participant-level or publisher/author source mirrors",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/sources/lineage-2026-11-10/kuchen-graph-2026-11-10/derived/first/sheet-06.json",
+      "bytes": 13294786,
+      "sha256": "a06a40cd9f76e978f99a88f452e0aa8239ae836fb73a42fad079994abf34f1f7",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Public research originals retained for local reanalysis; publish original findings and source provenance, not raw participant-level or publisher/author source mirrors",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/sources/lineage-2026-11-10/kuchen-graph-2026-11-10/derived/independent-comparison-first.json",
+      "bytes": 1913323,
+      "sha256": "0bdbc5802aeb866e1d5b98f1a02f5a6a9c9626539213442c45dd66ed51028cbb",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Public research originals retained for local reanalysis; publish original findings and source provenance, not raw participant-level or publisher/author source mirrors",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/sources/lineage-2026-11-10/kuchen-graph-2026-11-10/derived/independent-comparison-v3.json",
+      "bytes": 5060,
+      "sha256": "a80b3628052ce6788523abca5e617233563f3065459f852c2f85b72bafa9d255",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Public research originals retained for local reanalysis; publish original findings and source provenance, not raw participant-level or publisher/author source mirrors",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/sources/lineage-2026-11-10/kuchen-graph-2026-11-10/derived/independent-reference-v2.json",
+      "bytes": 119775462,
+      "sha256": "f94d53d4ba5915d9356ded391264a5ee923e86cbfb899fdf023c9bbe728b8345",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Public research originals retained for local reanalysis; publish original findings and source provenance, not raw participant-level or publisher/author source mirrors",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/sources/lineage-2026-11-10/kuchen-graph-2026-11-10/derived/independent-reference.json.failure.json",
+      "bytes": 74719826,
+      "sha256": "be7eac0dc4bac02d95b597b403a17518cab4f1e3c2807b7b185011d96e748c9a",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Public research originals retained for local reanalysis; publish original findings and source provenance, not raw participant-level or publisher/author source mirrors",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/sources/lineage-2026-11-10/kuchen-graph-2026-11-10/derived/reproduction/sheet-00.json",
+      "bytes": 28020541,
+      "sha256": "3e6b7612180e0c20425a893d8217d42bdbf5febe10c3c4e664520afcd1347d11",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Public research originals retained for local reanalysis; publish original findings and source provenance, not raw participant-level or publisher/author source mirrors",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/sources/lineage-2026-11-10/kuchen-graph-2026-11-10/derived/reproduction/sheet-01.json",
+      "bytes": 24484282,
+      "sha256": "4600e82aee334c4775928ba7c7794455b2e8b2c38a698191ee906ab404a8e5c7",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Public research originals retained for local reanalysis; publish original findings and source provenance, not raw participant-level or publisher/author source mirrors",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/sources/lineage-2026-11-10/kuchen-graph-2026-11-10/derived/reproduction/sheet-02.json",
+      "bytes": 26209842,
+      "sha256": "96d48c2eb5b28777f4d052043bce2e8c60172dd5a2005204598b6c336c039440",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Public research originals retained for local reanalysis; publish original findings and source provenance, not raw participant-level or publisher/author source mirrors",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/sources/lineage-2026-11-10/kuchen-graph-2026-11-10/derived/reproduction/sheet-03.json",
+      "bytes": 13204620,
+      "sha256": "01f9012826b2d10a52ed7819b055ab02ee3afa3ad8dedfe846fb265b02a56dd4",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Public research originals retained for local reanalysis; publish original findings and source provenance, not raw participant-level or publisher/author source mirrors",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/sources/lineage-2026-11-10/kuchen-graph-2026-11-10/derived/reproduction/sheet-04.json",
+      "bytes": 16088095,
+      "sha256": "da9bec1a75fce61590f19baaabbdc2e6e6dfbc76822e65468f04fc1a904e5349",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Public research originals retained for local reanalysis; publish original findings and source provenance, not raw participant-level or publisher/author source mirrors",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/sources/lineage-2026-11-10/kuchen-graph-2026-11-10/derived/reproduction/sheet-05.json",
+      "bytes": 12767901,
+      "sha256": "0bf9eea769423c27f59da25695aae898556445cf5faf5e3bc1f9c7e33872d8c8",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Public research originals retained for local reanalysis; publish original findings and source provenance, not raw participant-level or publisher/author source mirrors",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/sources/lineage-2026-11-10/kuchen-graph-2026-11-10/derived/reproduction/sheet-06.json",
+      "bytes": 13294786,
+      "sha256": "587100168d7914dc44828c5da71b11d1186ee9d785e000ecfe92dbe36773364f",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Public research originals retained for local reanalysis; publish original findings and source provenance, not raw participant-level or publisher/author source mirrors",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/sources/lineage-2026-11-10/kuchen-graph-2026-11-10/key-resources.doc",
+      "bytes": 51712,
+      "sha256": "6364bbab1b7198171dc924040a68bd88185c13b9e032d3e41f56e02ee8071b71",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Public research originals retained for local reanalysis; publish original findings and source provenance, not raw participant-level or publisher/author source mirrors",
+      "upstream_urls": [
+        "https://cdn.elifesciences.org/articles/51002/elife-51002-supp1-v2.doc"
+      ]
+    },
+    {
+      "path": "research/treatment-discovery/sources/lineage-2026-11-10/kuchen-graph-2026-11-10/transparent-reporting.pdf",
+      "bytes": 356518,
+      "sha256": "bd7c4eaeed745b4d5d02e76ebca881b57d28d54d87bc751a508e6472eb92a719",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Public research originals retained for local reanalysis; publish original findings and source provenance, not raw participant-level or publisher/author source mirrors",
+      "upstream_urls": [
+        "https://cdn.elifesciences.org/articles/51002/elife-51002-transrepform-v2.pdf"
+      ]
+    },
+    {
       "path": "research/treatment-discovery/sources/lineage-2026-11-10/oren-figure1-matrices.npz",
       "bytes": 66594,
       "sha256": "802d397448e9d86c4895fcae2be43fa64c0dc8745e514cac7a1245337e4693a6",
@@ -4694,6 +5386,14 @@
       "upstream_urls": []
     },
     {
+      "path": "scripts/build_kuchen_graph.py",
+      "bytes": 59331,
+      "sha256": "be80f025ba7137b27cda1c6a755763eef0d9f938243e49be3f943f06881708c6",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
       "path": "scripts/build_report.py",
       "bytes": 8719,
       "sha256": "346d6e0ead05854df3868f3515623d863049047f345d42a4ef425b5a1215b049",
@@ -4753,6 +5453,22 @@
       "path": "scripts/check_egfr_curvature_design.py",
       "bytes": 9783,
       "sha256": "cb928aa702a23692854751a7e711e0bac55940f23a88db83496800ff70f2f1a1",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "scripts/check_kuchen_graph_preflight.py",
+      "bytes": 6019,
+      "sha256": "8ce225002539531c707ae5d79e756c88cb3c6358614e5b55c22893de3ee66ff4",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "scripts/check_kuchen_graph_reproduction.py",
+      "bytes": 10245,
+      "sha256": "3fa87b53905c8f0dd22be2612c67353081bafff1fef03d449ffc6b3b8b5441e0",
       "publication_status": "included",
       "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
       "upstream_urls": []
@@ -4873,6 +5589,14 @@
       "path": "scripts/interpret_age_calendar_grid.py",
       "bytes": 12838,
       "sha256": "7d66d69628027f5010d8c4b90dc48a0c497dc8712a7fd86bf42dcc7cb79767aa",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "scripts/lineage_compatibility_bounds.py",
+      "bytes": 4675,
+      "sha256": "22943378b7b9f3c52de568c01ab10a7c72a963130e2df8bd529160451789ff57",
       "publication_status": "included",
       "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
       "upstream_urls": []
@@ -5113,6 +5837,30 @@
       "path": "scripts/verify_age_lineage_models.py",
       "bytes": 22921,
       "sha256": "4c6ed695f526d8ec07df9a4dafe4e4572e1bef0529c7d70a61a19f6a666e8883",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "scripts/verify_kuchen_graph.py",
+      "bytes": 62231,
+      "sha256": "321fbbd0a6d0c59a6339e1e1b6126bd51e30c9464b624bb0afd890a2b2b1f271",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "scripts/verify_lineage_bounds_independent.py",
+      "bytes": 9626,
+      "sha256": "61dac4289a97f19bbc94370ca7dc6f543df291c8b0f997bedc887e8d52a355a0",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "scripts/verify_lineage_compatibility.py",
+      "bytes": 10254,
+      "sha256": "e65d9b98c484a3b645df775ddab494e15ba93d537b12df737585ae32426fccf3",
       "publication_status": "included",
       "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
       "upstream_urls": []

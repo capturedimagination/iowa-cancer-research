@@ -1,0 +1,104 @@
+{
+  "status": "READ_ONLY_AUTHOR_CODE_EVIDENCE_ADDENDUM",
+  "audit_date": "2026-11-10",
+  "created_utc": "2026-11-10T21:16:04.395681+00:00",
+  "repository": "hoefer-lab/bar-cycle",
+  "observed_default_branch": "publish",
+  "pinned_commit": "1ae898389010da4cba0097f2f09fbe308b2aa912",
+  "repo_url": "https://github.com/hoefer-lab/bar-cycle",
+  "repository_tree_url": "https://api.github.com/repos/hoefer-lab/bar-cycle/git/trees/1ae898389010da4cba0097f2f09fbe308b2aa912?recursive=1",
+  "acquisition_method": "GitHub connector read of README, MATLAB source, repository metadata and recursive tree; raw pinned file downloads independently verified against Git blob SHA-1.",
+  "files": [
+    {
+      "path": "README.md",
+      "commit": "1ae898389010da4cba0097f2f09fbe308b2aa912",
+      "blob_sha1": "c6a6cf306e2a2d86abde9d879293ad087d87c4d5",
+      "sha256": "8a92f423627624a2af02208848aa64d6bd878b7cfd469d522c91f7b6024a0c75",
+      "bytes": 8964,
+      "url": "https://raw.githubusercontent.com/hoefer-lab/bar-cycle/1ae898389010da4cba0097f2f09fbe308b2aa912/README.md",
+      "retrieved_utc": "2026-11-10T21:14:48.779457+00:00",
+      "local_path": "research/treatment-discovery/sources/lineage-2026-11-10/kuchen-graph-2026-11-10/author-code/README.md",
+      "executed": false
+    },
+    {
+      "path": "data-analysis/MS_KuchenBeckeretal_datanalysis.m",
+      "commit": "1ae898389010da4cba0097f2f09fbe308b2aa912",
+      "blob_sha1": "698dda60d6b9798cc08c1c5bccaefc996fdf2605",
+      "sha256": "44a9e3060e5a193690362fc5b1a4caaa98bee2dec2de05498160e991da458822",
+      "bytes": 14458,
+      "url": "https://raw.githubusercontent.com/hoefer-lab/bar-cycle/1ae898389010da4cba0097f2f09fbe308b2aa912/data-analysis/MS_KuchenBeckeretal_datanalysis.m",
+      "retrieved_utc": "2026-11-10T21:14:48.977965+00:00",
+      "local_path": "research/treatment-discovery/sources/lineage-2026-11-10/kuchen-graph-2026-11-10/author-code/data-analysis/MS_KuchenBeckeretal_datanalysis.m",
+      "executed": false
+    }
+  ],
+  "assertions": [
+    {
+      "id": "AC01",
+      "finding": "Repository README identifies software used for the Kuchen/Becker paper and names its authors.",
+      "locator": "README.md lines3–11",
+      "url": "https://github.com/hoefer-lab/bar-cycle/blob/1ae898389010da4cba0097f2f09fbe308b2aa912/README.md#L3-L11",
+      "scope": "Author-code attribution as stated by the repository; not an independent replication."
+    },
+    {
+      "id": "AC02",
+      "finding": "README describes loading the published control supplement, then correcting it and saving separate MAT files. The MATLAB code performs those operations in that order.",
+      "locator": "README.md lines147–160; MATLAB lines11–35",
+      "url": "https://github.com/hoefer-lab/bar-cycle/blob/1ae898389010da4cba0097f2f09fbe308b2aa912/data-analysis/MS_KuchenBeckeretal_datanalysis.m#L11-L35",
+      "scope": "Stronger evidence that this generation-filtering step is downstream of the intended control XLSX. It does not certify what acquisition/export selection occurred before that file was created."
+    },
+    {
+      "id": "AC03",
+      "finding": "The code places unscaled columns B/E and H on cycle-duration and birth-time axes labeled hours.",
+      "locator": "MATLAB lines94–116",
+      "url": "https://github.com/hoefer-lab/bar-cycle/blob/1ae898389010da4cba0097f2f09fbe308b2aa912/data-analysis/MS_KuchenBeckeretal_datanalysis.m#L94-L116",
+      "scope": "Direct author-code support for hours in control cycle lengths and birth times. No exact clock origin, frame mapping or event-boundary convention follows. Perturbation processing is not implemented by this control loop."
+    },
+    {
+      "id": "AC04",
+      "finding": "The control loader constructs loss endpoints from H+D and H+G; it derives maxtime from their maximum and groups endpoints within 0.01 of that maximum.",
+      "locator": "MATLAB lines18–26",
+      "url": "https://github.com/hoefer-lab/bar-cycle/blob/1ae898389010da4cba0097f2f09fbe308b2aa912/data-analysis/MS_KuchenBeckeretal_datanalysis.m#L18-L26",
+      "scope": "This is a calculation used by the authors, not an independently logged administrative recording end. The 0.01 buffer is a numerical rule, not imaging precision or proof that every selected loss is administrative."
+    },
+    {
+      "id": "AC05",
+      "finding": "The script uses ceil(5% of selected endpoint counts), cumulative generation counts and a final generation filter before saving corrected trees.",
+      "locator": "MATLAB lines23–33",
+      "url": "https://github.com/hoefer-lab/bar-cycle/blob/1ae898389010da4cba0097f2f09fbe308b2aa912/data-analysis/MS_KuchenBeckeretal_datanalysis.m#L23-L33",
+      "scope": "No cutoff values were computed here; the table/prose ordering discrepancy is not resolved. Do not run this future-informed filter to choose a prospective roster."
+    },
+    {
+      "id": "AC06",
+      "finding": "Although a comment calls the window 10 hours, the actual birth-time predicate spans center−10 to center+10.",
+      "locator": "MATLAB lines99–103",
+      "url": "https://github.com/hoefer-lab/bar-cycle/blob/1ae898389010da4cba0097f2f09fbe308b2aa912/data-analysis/MS_KuchenBeckeretal_datanalysis.m#L99-L103",
+      "scope": "Static interpretation gives a 20-hour full window. This note avoids reproducing the comment as a distinct 10-hour full-width procedure; no drift calculation was executed."
+    },
+    {
+      "id": "AC07",
+      "finding": "The same script includes later birth-position and spatial-confound analysis after loading corrected trees.",
+      "locator": "MATLAB lines133–191; README.md lines160–176",
+      "url": "https://github.com/hoefer-lab/bar-cycle/blob/1ae898389010da4cba0097f2f09fbe308b2aa912/data-analysis/MS_KuchenBeckeretal_datanalysis.m#L133-L191",
+      "scope": "Retain the authors’ existing context analyses as prior work; this code is not an acquisition or observation-gap specification."
+    }
+  ],
+  "earlier_evidence_preserved": {
+    "source_assertion_ledger_sha256": "40420d0a913aab750418c6fdaa99d4ec52fc2493b207a3ea9ec36696de900b6b",
+    "dictionary_evidence_sha256": "bbe325e4423e0eec11d39dab07ca1d3c26a218b3428bb1cef2efdd2deb247487",
+    "clarification": "Earlier bounded search did not find code; this later addendum now supplies it rather than rewriting that historical search outcome.",
+    "updated_claims": {
+      "K01": "Control birth and cycle fields now directly mapped to hours by author code; other timing limits remain.",
+      "K14": "Post-loading control generation filtering is now source-code-supported; export inclusion still unverified.",
+      "K22": "Author analysis code now located; no original acquisition/export generator or full tracking dictionary identified."
+    }
+  },
+  "limits": [
+    "No author code was executed; no original or corrected dataset outcomes calculated.",
+    "The original-named control XLSX is referenced by basename, not cryptographic input hash; this inspection does not prove byte identity with every archived file version.",
+    "No exact event landmark, clock origin, continuous-observation rule or loss-reason code is established.",
+    "Current loop handles three controls; its comment says perturbations need adaptation, so no rapamycin-label resolution follows.",
+    "No repository-wide LICENSE or COPYING file was observed in the pinned recursive tree. Code snapshots remain local and excluded; no full-source redistribution claim is made.",
+    "No author contact, external submission, code adoption or execution."
+  ]
+}

@@ -1,0 +1,363 @@
+{
+  "status": "FAIL",
+  "created_utc": "2026-11-10T21:25:46.862753+00:00",
+  "protocol_sha256": "6e0c73303c34a970d5fc17f6ffd7d0dfe478c0854435b7be20f085a8288bceae",
+  "code_sha256": "305ca3f41422f15d0166721964bcef69548d58dd61b06bde8dc658dc5f076e5c",
+  "current_sheet": {
+    "file": "kuchen-control.xlsx",
+    "sheet": "rep3"
+  },
+  "error_type": "AssertionError",
+  "completed_summaries": [
+    {
+      "file": "kuchen-control.xlsx",
+      "sheet": "rep1",
+      "workbook_sha256": "8ecdd5c66a466b71b5ee4790c79c2b9ce38fd1ec6daf59f88347d67e4fa1b86e",
+      "pair_rows": 923,
+      "observations": 1846,
+      "unique_nonmissing_cell_tokens": 1846,
+      "uniquely_recorded_entities": 1846,
+      "duplicate_identity_entities": 0,
+      "observations_missing_usable_identity": 0,
+      "source_lineage_label_groups": 16,
+      "lexical_numeric_alias_groups": 0,
+      "raw_unique_recorded_edges": 1814,
+      "consistent_recorded_edges": 1814,
+      "cyclic_raw_edges": 0,
+      "directed_cyclic_sccs": 0,
+      "self_raw_edges": 0,
+      "external_reference_entities": 32,
+      "external_mother_assertions": 32,
+      "group_counts": {
+        "raw": 32,
+        "consistent": 32,
+        "related": 16
+      },
+      "group_size_histograms": {
+        "raw": {
+          "1": 7,
+          "3": 3,
+          "7": 2,
+          "9": 1,
+          "21": 1,
+          "27": 2,
+          "39": 1,
+          "49": 1,
+          "67": 2,
+          "71": 1,
+          "81": 2,
+          "83": 1,
+          "93": 2,
+          "97": 1,
+          "117": 1,
+          "131": 1,
+          "137": 1,
+          "211": 1,
+          "315": 1
+        },
+        "consistent": {
+          "1": 7,
+          "3": 3,
+          "7": 2,
+          "9": 1,
+          "21": 1,
+          "27": 2,
+          "39": 1,
+          "49": 1,
+          "67": 2,
+          "71": 1,
+          "81": 2,
+          "83": 1,
+          "93": 2,
+          "97": 1,
+          "117": 1,
+          "131": 1,
+          "137": 1,
+          "211": 1,
+          "315": 1
+        },
+        "related": {
+          "4": 2,
+          "8": 1,
+          "10": 1,
+          "24": 1,
+          "28": 1,
+          "68": 1,
+          "94": 2,
+          "130": 1,
+          "144": 1,
+          "164": 1,
+          "168": 1,
+          "170": 1,
+          "210": 1,
+          "526": 1
+        }
+      },
+      "raw_root_observations": 32,
+      "consistent_root_observations": 32,
+      "usable_fate_labels": {
+        "death": 31,
+        "division": 907,
+        "loss": 908
+      },
+      "repeated_cycle_check_statuses": {
+        "mother_cycle": {
+          "unavailable": 32,
+          "consistent": 1814
+        },
+        "grandmother_cycle_vs_mother_annotation": {
+          "unavailable": 82,
+          "consistent": 1764
+        },
+        "grandmother_cycle": {
+          "unavailable": 82,
+          "consistent": 1764
+        }
+      },
+      "no_outcome_grid": true,
+      "no_original_founder_assignment": true,
+      "no_continuous_observation_mask": true
+    },
+    {
+      "file": "kuchen-control.xlsx",
+      "sheet": "rep2",
+      "workbook_sha256": "8ecdd5c66a466b71b5ee4790c79c2b9ce38fd1ec6daf59f88347d67e4fa1b86e",
+      "pair_rows": 808,
+      "observations": 1616,
+      "unique_nonmissing_cell_tokens": 1616,
+      "uniquely_recorded_entities": 1616,
+      "duplicate_identity_entities": 0,
+      "observations_missing_usable_identity": 0,
+      "source_lineage_label_groups": 17,
+      "lexical_numeric_alias_groups": 0,
+      "raw_unique_recorded_edges": 1582,
+      "consistent_recorded_edges": 1582,
+      "cyclic_raw_edges": 0,
+      "directed_cyclic_sccs": 0,
+      "self_raw_edges": 0,
+      "external_reference_entities": 34,
+      "external_mother_assertions": 34,
+      "group_counts": {
+        "raw": 34,
+        "consistent": 34,
+        "related": 17
+      },
+      "group_size_histograms": {
+        "raw": {
+          "1": 6,
+          "3": 11,
+          "5": 1,
+          "7": 1,
+          "11": 2,
+          "45": 1,
+          "67": 1,
+          "91": 1,
+          "93": 1,
+          "95": 1,
+          "105": 1,
+          "109": 1,
+          "111": 1,
+          "149": 1,
+          "153": 1,
+          "161": 1,
+          "179": 1,
+          "185": 1
+        },
+        "consistent": {
+          "1": 6,
+          "3": 11,
+          "5": 1,
+          "7": 1,
+          "11": 2,
+          "45": 1,
+          "67": 1,
+          "91": 1,
+          "93": 1,
+          "95": 1,
+          "105": 1,
+          "109": 1,
+          "111": 1,
+          "149": 1,
+          "153": 1,
+          "161": 1,
+          "179": 1,
+          "185": 1
+        },
+        "related": {
+          "2": 2,
+          "4": 1,
+          "6": 2,
+          "8": 1,
+          "56": 1,
+          "68": 1,
+          "96": 1,
+          "108": 1,
+          "114": 1,
+          "164": 2,
+          "186": 1,
+          "188": 1,
+          "204": 1,
+          "240": 1
+        }
+      },
+      "raw_root_observations": 34,
+      "consistent_root_observations": 34,
+      "usable_fate_labels": {
+        "division": 791,
+        "loss": 759,
+        "death": 64,
+        "unresolved": 2
+      },
+      "repeated_cycle_check_statuses": {
+        "mother_cycle": {
+          "unavailable": 34,
+          "consistent": 1582
+        },
+        "grandmother_cycle_vs_mother_annotation": {
+          "unavailable": 90,
+          "consistent": 1526
+        },
+        "grandmother_cycle": {
+          "unavailable": 90,
+          "consistent": 1526
+        }
+      },
+      "no_outcome_grid": true,
+      "no_original_founder_assignment": true,
+      "no_continuous_observation_mask": true
+    },
+    {
+      "file": "kuchen-control.xlsx",
+      "sheet": "rep3",
+      "workbook_sha256": "8ecdd5c66a466b71b5ee4790c79c2b9ce38fd1ec6daf59f88347d67e4fa1b86e",
+      "pair_rows": 871,
+      "observations": 1742,
+      "unique_nonmissing_cell_tokens": 1742,
+      "uniquely_recorded_entities": 1742,
+      "duplicate_identity_entities": 0,
+      "observations_missing_usable_identity": 0,
+      "source_lineage_label_groups": 35,
+      "lexical_numeric_alias_groups": 0,
+      "raw_unique_recorded_edges": 1672,
+      "consistent_recorded_edges": 1672,
+      "cyclic_raw_edges": 0,
+      "directed_cyclic_sccs": 0,
+      "self_raw_edges": 0,
+      "external_reference_entities": 70,
+      "external_mother_assertions": 70,
+      "group_counts": {
+        "raw": 70,
+        "consistent": 70,
+        "related": 35
+      },
+      "group_size_histograms": {
+        "raw": {
+          "1": 15,
+          "3": 12,
+          "5": 1,
+          "7": 2,
+          "15": 3,
+          "17": 4,
+          "23": 1,
+          "27": 1,
+          "29": 2,
+          "33": 5,
+          "35": 1,
+          "37": 1,
+          "39": 2,
+          "41": 2,
+          "43": 1,
+          "45": 3,
+          "47": 3,
+          "51": 1,
+          "53": 2,
+          "55": 1,
+          "57": 1,
+          "61": 1,
+          "69": 1,
+          "71": 1,
+          "73": 1,
+          "89": 1,
+          "103": 1
+        },
+        "consistent": {
+          "1": 15,
+          "3": 12,
+          "5": 1,
+          "7": 2,
+          "15": 3,
+          "17": 4,
+          "23": 1,
+          "27": 1,
+          "29": 2,
+          "33": 5,
+          "35": 1,
+          "37": 1,
+          "39": 2,
+          "41": 2,
+          "43": 1,
+          "45": 3,
+          "47": 3,
+          "51": 1,
+          "53": 2,
+          "55": 1,
+          "57": 1,
+          "61": 1,
+          "69": 1,
+          "71": 1,
+          "73": 1,
+          "89": 1,
+          "103": 1
+        },
+        "related": {
+          "2": 1,
+          "4": 5,
+          "6": 1,
+          "8": 3,
+          "16": 2,
+          "18": 1,
+          "28": 1,
+          "46": 2,
+          "48": 1,
+          "52": 1,
+          "54": 1,
+          "56": 2,
+          "62": 2,
+          "64": 1,
+          "72": 1,
+          "74": 2,
+          "78": 1,
+          "80": 3,
+          "84": 1,
+          "126": 1,
+          "146": 1,
+          "172": 1
+        }
+      },
+      "raw_root_observations": 70,
+      "consistent_root_observations": 70,
+      "usable_fate_labels": {
+        "division": 837,
+        "loss": 831,
+        "death": 74
+      },
+      "repeated_cycle_check_statuses": {
+        "mother_cycle": {
+          "unavailable": 70,
+          "consistent": 1672
+        },
+        "grandmother_cycle_vs_mother_annotation": {
+          "unavailable": 180,
+          "consistent": 1562
+        },
+        "grandmother_cycle": {
+          "unavailable": 180,
+          "consistent": 1562
+        }
+      },
+      "no_outcome_grid": true,
+      "no_original_founder_assignment": true,
+      "no_continuous_observation_mask": true
+    }
+  ]
+}

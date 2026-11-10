@@ -1,0 +1,17 @@
+{
+  "status": "PINNED_BEFORE_THIS_COMPARISON",
+  "created_utc": "2026-11-10T21:29:01.636756+00:00",
+  "code_sha256": "321fbbd0a6d0c59a6339e1e1b6126bd51e30c9464b624bb0afd890a2b2b1f271",
+  "protocol_sha256": "6e0c73303c34a970d5fc17f6ffd7d0dfe478c0854435b7be20f085a8288bceae",
+  "implementation": "scripts/verify_kuchen_graph.py",
+  "production_access": "schema-only lines516–545 and schema descriptions; no production algorithm imports",
+  "source_inputs_read": true,
+  "production_outputs_read": true,
+  "arithmetic": "Decimal source arithmetic; logical residual tolerance1e−6",
+  "later_residual_comparison_absolute_tolerance": 1e-09,
+  "preserved_prior_comparison": {
+    "path": "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/independent-comparison-first.json",
+    "sha256": "14a3490ac6dea0322eb7215c6251350387689b925ccc92cbd9518c3c056b30fb"
+  },
+  "revision_scope": "Comparison-only boundary token correction, explicit tracking/absorbing-mask assertions, numeric-difference diagnostic, separate immutable-reference pin and FAIL exit status; no source reconstruction changes or rerun."
+}

@@ -1,0 +1,51 @@
+{
+  "status": "PASS",
+  "created_utc": "2026-11-10T21:22:18.304524+00:00",
+  "timing": "Additional independent verification designed after the original N=0..4 PASS report; frozen before this N=5..6 run.",
+  "protocol_sha256": "256dc6181261ef20ef7d38c67a5712d4471650bdf044f1c29ea207096c607c70",
+  "freeze_sha256": "97bc1e7c9f029d737e0c6ddf29c9e7778b1d008f5920050bdb9a2f073550f6aa",
+  "input_sha256": {
+    "scripts/verify_lineage_bounds_independent.py": "61dac4289a97f19bbc94370ca7dc6f543df291c8b0f997bedc887e8d52a355a0",
+    "scripts/lineage_compatibility_bounds.py": "22943378b7b9f3c52de568c01ab10a7c72a963130e2df8bd529160451789ff57",
+    "scripts/verify_lineage_compatibility.py": "e65d9b98c484a3b645df775ddab494e15ba93d537b12df737585ae32426fccf3",
+    "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/compatibility-bounds/protocol.json": "9bae915785c5230b62ff096fe63810ca9e01bddaafc1c87653503d33833974fb",
+    "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/compatibility-bounds/freeze-record.json": "a726e25bfef14a3a2b51f25040c4398de2d95959c28017ed330775d7130d9a95",
+    "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/compatibility-bounds/verification-first.json": "d641c87884524f89ebbb41c9abed3a370e463d483783a07477b565fca9737f24"
+  },
+  "environment": {
+    "python": "3.12.14",
+    "implementation": "CPython"
+  },
+  "source_data_read": false,
+  "random_numbers_used": false,
+  "reference": "Independent exact integer state DP in (A,B,J), followed by rational objective evaluation.",
+  "counts_by_n": {
+    "5": {
+      "count_vectors": 1287,
+      "attainable_state_entries": 12324,
+      "maximum_states_in_one_vector": 56
+    },
+    "6": {
+      "count_vectors": 3003,
+      "attainable_state_entries": 39494,
+      "maximum_states_in_one_vector": 84
+    }
+  },
+  "checks": {
+    "reference_empty_control": 1,
+    "reference_transition_table_control": 9,
+    "fixed_D_exact_state_dp": 8580,
+    "fixed_A_exact_state_dp": 8580,
+    "sym_global_rational_endpoint": 8580,
+    "ordered_global_rational_endpoint": 8580,
+    "fixed_D_witness": 82368,
+    "fixed_A_witness": 49764,
+    "global_sister_swap_ordered": 4290,
+    "global_sister_swap_sym": 4290,
+    "complete_data_collapse": 140,
+    "complete_count_vector_roster": 2
+  },
+  "first_failure": null,
+  "interpretation": "Exact arithmetic matches the production fixed-margin formulas, global endpoints and all requested witnesses on the frozen roster. This establishes a finite independent-mask computation check, not biological attainability, population coverage or novelty.",
+  "completed_utc": "2026-11-10T21:22:19.160520+00:00"
+}

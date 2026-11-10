@@ -1,0 +1,60 @@
+{
+  "status": "NO_MATERIAL_CURRENT_CLAIM_ISSUE_FOUND",
+  "created_utc": "2026-11-10T21:26:54.898394+00:00",
+  "scope": "Bounded read-only claim/navigation review of the pinned document snapshots. No empirical graph or source workbook inspected; public aggregate reports and code/provenance reviewed.",
+  "document_sha256": {
+    "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/README.md": "2f11b9e07307b95b1fe6b2ef5ee95924177e30b037fb11e651968ce3918c538c",
+    "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/compatibility-bounds/README.md": "3b2a6f38b4a32d313c746c8a03768828df45371dd5ea43d8a23931ab92789071",
+    "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/research-destination.md": "e0f7d917d4c47873b6fc0ff2196bca4d7dd424c3903c69ba48f3d8f508b09216",
+    "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/README.md": "820b12a9ac9cc69dd5dde72e10984c673d6c586f0a8552e9956ad56479b887e2",
+    "research/treatment-discovery/data-access-catalog.json": "abb269e5e42e3cf8e8d19a2c177c0013c7413fad71dcf0b5e13ccaec7487a84b",
+    "AGENTS.md": "d4ea1ec70106c591f7f88dd8e901d884c7415dba7ec5c91fa6b630e803350d93",
+    "knowledge/INDEX.md": "a6e8b2944ea0546e6453db2933c4bb262073f3fa951baebf9ec53c655f16b855"
+  },
+  "evidence_sha256": {
+    "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/results.json": "c0df90daf0058f717f984ff981bab8d9f4bc31b795d35193c8753682316d1fc8",
+    "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/reproduction.json": "29754dcfaf272d9d4b4573069769c12308b9a504d51a0f53e69b21c070868629",
+    "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/reproduction-freeze-v2.json": "9a7c9c840458a4cb9154c68b83b5996082f7254f71d042e388953da0d82ef2fe",
+    "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/source-assertion-ledger.json": "40420d0a913aab750418c6fdaa99d4ec52fc2493b207a3ea9ec36696de900b6b",
+    "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/author-code-evidence.json": "4499635f6d7b83478cb9a25beba0d2a7897c79bf217ac609e443d8f0841156e7",
+    "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/compatibility-bounds/verification-first.json": "d641c87884524f89ebbb41c9abed3a370e463d483783a07477b565fca9737f24",
+    "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/compatibility-bounds/independent-verification.json": "8de9629845b5edb2a970d06b71e79dd893b4238265bb69061c23cd0a0da93318",
+    "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/compatibility-bounds/independent-review.json": "95434bc313a89260c0723f5c87c6cadf61ff6166bf23e87bcfeb8318c58dc8e7",
+    "scripts/check_kuchen_graph_reproduction.py": "3fa87b53905c8f0dd22be2612c67353081bafff1fef03d449ffc6b3b8b5441e0"
+  },
+  "confirmed": [
+    "All seven table rows and totals match saved public structural aggregates: 4678 pairs,9356 observations,9014 consistent edges,342 recorded components and171 conservative related groups",
+    "342 external reference entities and342 root observations are distinct record objects, not original founders",
+    "Four negative durations and one division without successor affect five related groups; no-issue status is not completeness or independence",
+    "Reporting-form biological-replicate declaration retained while batch allocation/export selection remain unresolved",
+    "Control hour mapping and downstream generation filtering scoped to available author-code evidence",
+    "Catalog unit wording narrowed from an unconditional all-field assertion",
+    "Bounds original and independent check counts agree; both targets and incomplete-history limits remain explicit",
+    "Independent N5/N6 follow-up disclosed as designed after first PASS and frozen before its own outputs",
+    "Reproduction comparator final unique/exact sheet and artifact roster guards close the initially identified coverage gap",
+    "Reproduction v2 freeze occurred after two graph runs and before first comparison, as stated",
+    "No causal inheritance, clinical effect, source completeness or established novelty claim",
+    "Destination proposal remains conditional and no contact/submission is claimed"
+  ],
+  "broken_local_links": [],
+  "resolved_during_review": [
+    "Pending research-destination.md link now resolves",
+    "Overbroad catalog unit wording narrowed",
+    "Completed independent bounds follow-up now linked with adaptive timing disclosure"
+  ],
+  "reproduction_checker_source_review": {
+    "code_sha256": "3fa87b53905c8f0dd22be2612c67353081bafff1fef03d449ffc6b3b8b5441e0",
+    "status": "CLEARED_BEFORE_FIRST_COMPARISON",
+    "excluded_private_fields": [
+      "top-level created_utc"
+    ],
+    "public_artifact_hash_handling": "Each side verified against its own bytes; all other artifact metadata and complete private payloads compared exactly. Exact frozen seven-sheet roster and per-sheet/total counts verified."
+  },
+  "limitations": [
+    "Independent source-graph reconstruction was still pending in the reviewed README snapshot; its later result and related edits are outside this review",
+    "Did not rerun tests, simulations, graph producer or reproduction comparison for this documentation review",
+    "No new literature or official-policy refresh conducted; destination policy links were refreshed by the author of that brief",
+    "Snapshot hashes identify coverage; later documentation changes are not retroactively certified"
+  ],
+  "blockers": []
+}

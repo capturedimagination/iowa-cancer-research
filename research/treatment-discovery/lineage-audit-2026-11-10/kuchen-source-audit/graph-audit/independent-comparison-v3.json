@@ -1,0 +1,108 @@
+{
+  "status": "PASS",
+  "created_utc": "2026-11-10T21:29:10.257592+00:00",
+  "protocol_sha256": "6e0c73303c34a970d5fc17f6ffd7d0dfe478c0854435b7be20f085a8288bceae",
+  "code_sha256": "321fbbd0a6d0c59a6339e1e1b6126bd51e30c9464b624bb0afd890a2b2b1f271",
+  "reference_sha256": "f94d53d4ba5915d9356ded391264a5ee923e86cbfb899fdf023c9bbe728b8345",
+  "production_summary_sha256": "c0df90daf0058f717f984ff981bab8d9f4bc31b795d35193c8753682316d1fc8",
+  "immutable_reference_code_sha256": "da8d18846c6345194bc8e3ff0b91475b88a3b2ce09be9fae2085d8eb886b8e16",
+  "reference_code_pin_sha256": "ac74b0d6b2bd06f214f19ed15bcc0710c3074ac8dc1aa3450bbebf09a626c652",
+  "producer_artifacts": [
+    {
+      "path": "research/treatment-discovery/sources/lineage-2026-11-10/kuchen-graph-2026-11-10/derived/first/sheet-00.json",
+      "sha256": "8b0f9f334dafdc10ad5e63a85729590e0139de08fbb9398d9315896dfb586f1b",
+      "code_sha256": "be80f025ba7137b27cda1c6a755763eef0d9f938243e49be3f943f06881708c6"
+    },
+    {
+      "path": "research/treatment-discovery/sources/lineage-2026-11-10/kuchen-graph-2026-11-10/derived/first/sheet-01.json",
+      "sha256": "ed1fd20f1302c26dbea581333e4334a92af17bc0575d9383f13989448ad6bef0",
+      "code_sha256": "be80f025ba7137b27cda1c6a755763eef0d9f938243e49be3f943f06881708c6"
+    },
+    {
+      "path": "research/treatment-discovery/sources/lineage-2026-11-10/kuchen-graph-2026-11-10/derived/first/sheet-02.json",
+      "sha256": "684ec1df0d3e7759f26a9cbcb86418ba3e07d7b4636ab4c62a781af23f42e3ce",
+      "code_sha256": "be80f025ba7137b27cda1c6a755763eef0d9f938243e49be3f943f06881708c6"
+    },
+    {
+      "path": "research/treatment-discovery/sources/lineage-2026-11-10/kuchen-graph-2026-11-10/derived/first/sheet-03.json",
+      "sha256": "5145a9934703b0bbb7efcb64fd1ffe33f6b1ff06f38367ec77789ed8c2eea82f",
+      "code_sha256": "be80f025ba7137b27cda1c6a755763eef0d9f938243e49be3f943f06881708c6"
+    },
+    {
+      "path": "research/treatment-discovery/sources/lineage-2026-11-10/kuchen-graph-2026-11-10/derived/first/sheet-04.json",
+      "sha256": "05112ba076533747dfc61016ec4e5064d07d13c3c431efccb08634d58782e4fc",
+      "code_sha256": "be80f025ba7137b27cda1c6a755763eef0d9f938243e49be3f943f06881708c6"
+    },
+    {
+      "path": "research/treatment-discovery/sources/lineage-2026-11-10/kuchen-graph-2026-11-10/derived/first/sheet-05.json",
+      "sha256": "36ba84dd8f96f843ed007cb49efbcf5c83737ae08155a3cd775d9650ec9d1683",
+      "code_sha256": "be80f025ba7137b27cda1c6a755763eef0d9f938243e49be3f943f06881708c6"
+    },
+    {
+      "path": "research/treatment-discovery/sources/lineage-2026-11-10/kuchen-graph-2026-11-10/derived/first/sheet-06.json",
+      "sha256": "a06a40cd9f76e978f99a88f452e0aa8239ae836fb73a42fad079994abf34f1f7",
+      "code_sha256": "be80f025ba7137b27cda1c6a755763eef0d9f938243e49be3f943f06881708c6"
+    }
+  ],
+  "comparisons_by_category": {
+    "manifest_roster": 2,
+    "manifest_hashes": 7,
+    "sheet_roster": 1,
+    "frozen_sheet_roster": 2,
+    "public_private_summary": 7,
+    "source_read_checks": 7,
+    "worksheet_provenance": 7,
+    "namespace": 7,
+    "pair_roster": 7,
+    "observation_roster": 7,
+    "unique_serialized_records": 14,
+    "pair_fields": 23390,
+    "numeric": 145025,
+    "field_roster": 4678,
+    "unmapped_field_roster": 4678,
+    "cell_provenance": 966936,
+    "cell_xml_structure": 80578,
+    "observation_fields": 28068,
+    "fate_semantics": 9356,
+    "no_mask_claim": 37424,
+    "edge_roster": 14,
+    "edges": 56136,
+    "check_roster": 9356,
+    "edge_checks": 74848,
+    "raw_edge_set": 7,
+    "consistent_edge_set": 7,
+    "cyclic_scc_membership": 7,
+    "component_membership": 21,
+    "component_partition": 21,
+    "repeated_roster": 14,
+    "repeated_checks": 84204,
+    "successor_states": 28068,
+    "successor_uncertainty": 28068,
+    "numeric_aliases": 7,
+    "entity_membership": 7,
+    "entity_metadata": 18712,
+    "external_roster": 7,
+    "external_references": 1026,
+    "external_uncertainty": 1368,
+    "lineage_label_groups": 7,
+    "summary": 231,
+    "internal_issue_bookkeeping": 890,
+    "internal_status_bookkeeping": 28
+  },
+  "comparison_count": 1603255,
+  "mismatch_count": 0,
+  "mismatches_by_category": {},
+  "residual_absolute_tolerance": 1e-09,
+  "maximum_absolute_numeric_difference": 2.842170943040401e-14,
+  "additional_post_first_comparison_checks": [
+    "continuous_tracking_support",
+    "death_is_absorbing_mask"
+  ],
+  "independent_scope": "Original XML/source fields, Decimal times, identities, raw and consistent edges, repeated annotations, cycles, components, related groups, successors and common aggregate fields.",
+  "internal_only_scope": "Producer issue-code naming and issue-count/group issue-code serialization checked for self-consistency, not independently recoded.",
+  "no_outcome_grid": true,
+  "private_comparison": {
+    "path": "research/treatment-discovery/sources/lineage-2026-11-10/kuchen-graph-2026-11-10/derived/independent-comparison-v3.json",
+    "sha256": "a80b3628052ce6788523abca5e617233563f3065459f852c2f85b72bafa9d255"
+  }
+}

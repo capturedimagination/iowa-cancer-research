@@ -1,0 +1,19 @@
+{
+  "reviewed_utc": "2026-11-10T21:19:37.550803+00:00",
+  "repository": "hoefer-lab/bar-cycle",
+  "commit": "1ae898389010da4cba0097f2f09fbe308b2aa912",
+  "source_url": "https://api.github.com/repos/hoefer-lab/bar-cycle/git/trees/1ae898389010da4cba0097f2f09fbe308b2aa912?recursive=1",
+  "tree_entries": 40,
+  "truncated": false,
+  "archive_path": "research/treatment-discovery/sources/lineage-2026-11-10/kuchen-graph-2026-11-10/author-code/repository-tree.json",
+  "archive_sha256": "505f543cfdd78d3d1fdb2005ba840e52f2471d8153fef453b866e0d511b68792",
+  "search_scope": "All returned tracked paths at pinned commit; not releases, deleted history, author machines or other repositories.",
+  "candidate_data_extensions": [
+    ".csv",
+    ".xlsx",
+    ".mat"
+  ],
+  "matching_paths": [],
+  "result": "README refers to bar-hmm/tree_data experiment CSVs, but that directory and candidate data extensions are absent from this complete pinned repository tree. Direct contents request for tree_data returned404. No alternative raw cohort acquired.",
+  "original_source_workbooks": "Remain the acquired experimental records; repository code does not supply a newly certified unfiltered cohort."
+}

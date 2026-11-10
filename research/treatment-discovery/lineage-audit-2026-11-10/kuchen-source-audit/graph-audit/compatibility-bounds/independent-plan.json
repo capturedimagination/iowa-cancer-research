@@ -1,0 +1,69 @@
+{
+  "version": "independent-mask-count-vector-check-v1",
+  "status": "FROZEN_BEFORE_THIS_FOLLOWUP_RUN",
+  "created_utc": "2026-11-10T21:22:02.894973+00:00",
+  "timing": "Designed after original ordered-roster N=0..4 report PASS; no N=5..6 outcomes generated before freeze.",
+  "purpose": "Independent exact integer-state verification of fixed margins, endpoints and constructive witnesses.",
+  "sizes": [
+    5,
+    6
+  ],
+  "patterns": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      null
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      null
+    ],
+    [
+      null,
+      0
+    ],
+    [
+      null,
+      1
+    ],
+    [
+      null,
+      null
+    ]
+  ],
+  "expected_count_vectors": {
+    "5": 1287,
+    "6": 3003
+  },
+  "reference": "Set-valued dynamic programming over attainable (A,B,J) triples from literal complete-pair contributions. No production helpers construct reference states. Exact Fraction objectives.",
+  "checks": [
+    "Every fixed-D min/max J",
+    "Every fixed-A min/max NJ-AB",
+    "Ordered and symmetrized global rational endpoints",
+    "Both endpoint witnesses at every fixed margin; binary compatibility and independent state membership",
+    "Canonical and reversed row orders",
+    "Global sister swap",
+    "Complete-data collapse",
+    "Empty reference state and independently enumerated one-pair transition controls",
+    "Combinatorial roster counts"
+  ],
+  "source_data_read": false,
+  "random_numbers_used": false,
+  "tuning": "None; retain first failure before fixes and require a new version/output if needed.",
+  "scope": "Sharp independent-mask bounds; real genealogy/history constraints may narrow them. No empirical mask, confidence interval, population inference, or novelty claim."
+}

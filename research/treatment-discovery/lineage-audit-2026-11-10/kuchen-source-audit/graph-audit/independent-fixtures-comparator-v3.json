@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "fixture_count": 24,
+  "fixtures": [
+    "clean_chain_and_external_parent",
+    "invalid_child_fate_keeps_birth_edge",
+    "invalid_competing_parent_fate_garbage",
+    "invalid_competing_parent_fate_Infinity",
+    "invalid_competing_parent_fate_('NaN', '=bad()')",
+    "duplicate_identity_does_not_split_related_group",
+    "duplicate_successor_blocks_all_birth_edges",
+    "conflict_Lineage ID",
+    "conflict_Generation",
+    "conflict_Grandmother ID",
+    "conflict_Birth time",
+    "repeated_duration_does_not_block_birth_edges",
+    "unavailable_annotations_are_not_matches",
+    "cycle_basis_precedes_timing_filter",
+    "clean_component_beside_affected",
+    "self_cycle_keeps_downstream",
+    "exact_decimal_tolerance_boundary",
+    "namespace_separation",
+    "numeric_alias_does_not_join",
+    "explicit_missing_formula_nonfinite_rules",
+    "independent_xml_package_provenance",
+    "blank_formatted_header_retained_without_new_field",
+    "post_first_comparison_explicit_four_no_mask_contract_tokens",
+    "no_overwrite_and_no_nonfinite_output"
+  ],
+  "created_utc": "2026-11-10T21:29:01.560242+00:00",
+  "code_sha256": "321fbbd0a6d0c59a6339e1e1b6126bd51e30c9464b624bb0afd890a2b2b1f271",
+  "scope": "synthetic_only_no_original_workbook_access"
+}

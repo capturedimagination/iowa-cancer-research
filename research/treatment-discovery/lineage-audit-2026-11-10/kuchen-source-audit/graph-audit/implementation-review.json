@@ -1,0 +1,61 @@
+{
+  "status": "CLEAR_FOR_FIRST_SOURCE_PARSE_WITHIN_FROZEN_STRUCTURAL_SCOPE",
+  "created_utc": "2026-11-10T21:19:38.040490+00:00",
+  "review_timing": "Source-only review and constructed checks completed before authorization of first source parse; no source graph outcomes inspected.",
+  "input_hashes": {
+    "scripts/build_kuchen_graph.py": "be80f025ba7137b27cda1c6a755763eef0d9f938243e49be3f943f06881708c6",
+    "scripts/check_kuchen_graph_preflight.py": "8ce225002539531c707ae5d79e756c88cb3c6358614e5b55c22893de3ee66ff4",
+    "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/protocol.json": "6e0c73303c34a970d5fc17f6ffd7d0dfe478c0854435b7be20f085a8288bceae",
+    "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/independent-preflight-checks.json": "927687887deee59ae2140c454bf2ee091b135af8c8aed94a9b2780d190e53b6c"
+  },
+  "production_fixture_count_independently_rerun": 38,
+  "independent_exhaustive_directed_graphs": 530,
+  "reference_method": "Boolean transitive closure on every directed graph with 1–3 nodes, independently compared to production iterative-Kosaraju cycle-edge set.",
+  "additional_checks": [
+    "empty directed graph",
+    "all 530 directed graphs on one through three nodes",
+    "UTF-8 byte-exact cell markup with independently expected resolved text",
+    "duplicate row provenance fails instead of overwriting",
+    "private-output escape rejected before source access",
+    "public/private output overlap rejected before source access"
+  ],
+  "findings_resolved_before_source_run": [
+    {
+      "finding": "Biological unknown-descendant cardinality was zero when the recorded pair was internally consistent, despite no binary completeness assumption.",
+      "resolution": "Biological cardinality remains null. Separate missing_successor_record_assertion_count=0 is explicitly record-scoped; recorded_child_observation_count is named accordingly."
+    },
+    {
+      "finding": "Finite source times could produce nonfinite subtraction residuals.",
+      "resolution": "Derived parent-child and repeated-cycle residuals now receive explicit unresolved statuses without nonfinite JSON. Constructed overflow controls pass."
+    },
+    {
+      "finding": "Original candidate exposed cyclic edges but not explicit cyclic-SCC memberships required by the plan.",
+      "resolution": "Final candidate retains cyclic-SCC groups and counts on the raw identity graph before other filtering."
+    }
+  ],
+  "confirmed_semantics": [
+    "Exact resolved identity text namespaced by workbook SHA and sheet; no floating-point ID merge",
+    "All original row/side observations retained; duplicate entities and multiple successor assertions remain ambiguous",
+    "Formula text/cached source token preserved but not used as trusted identity/numeric evidence",
+    "XML cell markup, storage token, address, shared-string resolution and parser version retained",
+    "Cycle quarantine applies to internal raw-SCC edges, not blanket descendants",
+    "Repeated-cycle disagreement recorded separately; no replacement of original event annotation",
+    "Missing checks remain unavailable, not certified matches",
+    "Connected components, external references and conservative related groups are distinct from founders",
+    "Related groups use shared exact recorded/mother/grandmother assertions including ambiguity plus source lineage labels; no independence guarantee",
+    "No continuous-live, absorbing-death, event-boundary or biological offspring-completeness mask",
+    "Private output constrained by frozen excluded prefix; public success/failure reports contain aggregate evidence, not raw per-cell records",
+    "Input/protocol/schema/evidence hashes checked before and after; output creation exclusive"
+  ],
+  "limitations": [
+    "Constructed validation is not an empirical graph verification. Separate independent source parsing remains required.",
+    "Consistency denotes applicable arithmetic/reference checks only; missing metadata and source ascertainment remain unresolved.",
+    "Numeric lexical aliases warn but are not merged; all clustering remains a retained-record construction.",
+    "Output restriction relies on the verified frozen protocol prefix; no general certification of arbitrary user-written protocols.",
+    "Public exception records omit raw exception text, but terminal traceback logs must remain private when they contain local paths."
+  ],
+  "real_source_workbooks_parsed_by_reviewer": false,
+  "source_graph_outputs_inspected": false,
+  "biological_outcomes_computed": false,
+  "blockers": []
+}

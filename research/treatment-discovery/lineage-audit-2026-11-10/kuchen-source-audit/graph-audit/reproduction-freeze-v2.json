@@ -1,0 +1,36 @@
+{
+  "status": "PINNED_AFTER_TWO_GRAPH_RUNS_BEFORE_FIRST_COMPARISON",
+  "created_utc": "2026-11-10T21:25:01.058017+00:00",
+  "code_path": "scripts/check_kuchen_graph_reproduction.py",
+  "code_sha256": "3fa87b53905c8f0dd22be2612c67353081bafff1fef03d449ffc6b3b8b5441e0",
+  "prior_freeze": "reproduction-freeze.json",
+  "prior_freeze_sha256": "a1bbfa5197d3b865c8c4baf81171d09b95451d8cbdce65ecd2469fbb9cb2e4d1",
+  "prior_checker_sha256": "19ed63f051220943137ef7e0333df4324d7abd53b9f2da6a0daf0e01a1c889a1",
+  "prior_checker_preserved_in_ignored_tmp": true,
+  "producer_code_sha256": "be80f025ba7137b27cda1c6a755763eef0d9f938243e49be3f943f06881708c6",
+  "protocol_sha256": "6e0c73303c34a970d5fc17f6ffd7d0dfe478c0854435b7be20f085a8288bceae",
+  "fixtures": {
+    "status": "PASS",
+    "count": 13,
+    "code_sha256": "3fa87b53905c8f0dd22be2612c67353081bafff1fef03d449ffc6b3b8b5441e0",
+    "fixtures": [
+      "only top-level creation time excluded",
+      "integer versus float change detected",
+      "raw lexical token change detected",
+      "nested provenance retained",
+      "first reproduction output preserved",
+      "exact roster accepted",
+      "missing sheet rejected",
+      "duplicate sheet rejected",
+      "reordered source mapping rejected",
+      "duplicate private file rejected",
+      "exact private counts accepted",
+      "wrong source sheet rejected",
+      "missing observation rejected"
+    ],
+    "source_graphs_read": false
+  },
+  "change": "Add exact seven-sheet and unique private-file roster plus per-sheet and complete observation reconciliation, following pre-comparison independent review. No graph generation or scientific rules changed.",
+  "comparison_previously_executed": false,
+  "graph_outputs_unchanged": true
+}

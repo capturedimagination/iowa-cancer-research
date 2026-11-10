@@ -1,0 +1,16 @@
+{
+  "status": "PINNED_BEFORE_THIS_SOURCE_RUN",
+  "created_utc": "2026-11-10T21:27:00.993064+00:00",
+  "code_sha256": "da8d18846c6345194bc8e3ff0b91475b88a3b2ce09be9fae2085d8eb886b8e16",
+  "protocol_sha256": "6e0c73303c34a970d5fc17f6ffd7d0dfe478c0854435b7be20f085a8288bceae",
+  "implementation": "scripts/verify_kuchen_graph.py",
+  "production_access": "schema-only lines516–545 and schema descriptions; no production algorithm imports",
+  "source_inputs_read": true,
+  "production_outputs_read": false,
+  "arithmetic": "Decimal source arithmetic; logical residual tolerance1e−6",
+  "later_residual_comparison_absolute_tolerance": 1e-09,
+  "preserved_prior_source_failure": {
+    "path": "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/independent-reference.json.failure.json",
+    "sha256": "a4fff95c564275ab18e789deda732595368765b169503c30573035dde85b3e33"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "version": "binary-lineage-compatibility-exact-verification-v1",
+  "status": "FROZEN_BEFORE_FIRST_NUMERICAL_ENUMERATION",
+  "created_utc": "2026-11-10T21:17:57.925052+00:00",
+  "purpose": "Verify exact finite-record ordered and symmetrized covariance extrema under independent binary mask completion; test simple logical graph constraints.",
+  "source_data": "None; no scientific lag or empirical masks selected",
+  "theory_source": "../compatibility-proposal.md",
+  "theory_sha256": "6f29602cf982943bf1e4aa0b9a462865026f40ede13a52e033cdbbb75512b167",
+  "mask_symbols": [
+    0,
+    1,
+    null
+  ],
+  "pair_order": "itertools.product((0,1,None),repeat=2)",
+  "roster": "Every ordered mask sequence of length N=0 through 4",
+  "expected_masks": 7381,
+  "expected_completed_assignments": 69905,
+  "reference_methods": [
+    "Exhaustive independent unknown-bit assignment",
+    "Contribution-set dynamic programming for (D,J) totals"
+  ],
+  "checks": [
+    "Every feasible fixed-D min/max J",
+    "Every feasible fixed-A min/max N*J-A*B",
+    "Global exact rational endpoints",
+    "Constructive fixed-margin endpoint witnesses",
+    "Every within-pair relabelling for symmetrized bounds",
+    "Global ordered swap invariance",
+    "Every one-bit refinement to both values nests bounds",
+    "Complete-data collapse",
+    "All-unknown symmetrized exact extrema",
+    "N=0 undefined",
+    "Zero inside interval need not be attainable"
+  ],
+  "logical_fixtures": [
+    "shared_variable",
+    "absorbing_extinction",
+    "parent_child_or",
+    "missing_branch_or",
+    "contradictory_known_extinction"
+  ],
+  "logical_interpretation": "Exhaustive abstract variable assignments, not a proof of full event-history realizability",
+  "implementation_independence": "Production formulas and reference enumeration/DP separately implemented by same root analyst; algorithmic independence only. Independent reviewer may add separate verification.",
+  "first_failure_policy": "Write immutable report with first failing fixture; preserve pinned code and report before any correction. Fresh output paths for every run.",
+  "novelty": "Unestablished; partial identification, covariance bounds, and binary optimization are established ideas.",
+  "inference_scope": "Finite fixed record roster only; no confidence interval, population bound, causal inheritance or clinical claim."
+}

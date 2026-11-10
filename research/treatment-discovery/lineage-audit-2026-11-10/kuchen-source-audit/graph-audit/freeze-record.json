@@ -1,0 +1,16 @@
+{
+  "status": "FROZEN",
+  "created_utc": "2026-11-10T21:16:17.378064+00:00",
+  "protocol_sha256": "6e0c73303c34a970d5fc17f6ffd7d0dfe478c0854435b7be20f085a8288bceae",
+  "reviewed_candidate_sha256": "6e749479c1f4b81a99448acf7eeaa5a6f20f44ab47944fa03c20ab82477e9494",
+  "algorithm_changes_from_reviewed_candidate": false,
+  "known_prior_source_information": [
+    "Both workbooks and schema inspected in previous published structural audit.",
+    "4678 pair rows,9356 child records,4 negative loss durations,1 missing successor pair already known.",
+    "Source reporting form now explicitly labels rep1/rep2/rep3 and two sheets per perturbation as biological replicates; export selection remains unresolved.",
+    "No new graph topology, component or observation-mask outcome has been computed before this plan."
+  ],
+  "additional_pre_freeze_evidence": "author-code-evidence.md/.json: control time units and downstream generation filtering; no graph results; separate additive source evidence, no algorithm changes.",
+  "independent_review": "mechanistic_simulation cleared candidate v2; production implementation review pending before source execution.",
+  "first_graph_run_occurred": false
+}

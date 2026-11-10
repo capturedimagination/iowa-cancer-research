@@ -1,0 +1,12 @@
+{
+  "status": "PINNED_BEFORE_SOURCE_RUN",
+  "created_utc": "2026-11-10T21:25:28.252732+00:00",
+  "code_sha256": "305ca3f41422f15d0166721964bcef69548d58dd61b06bde8dc658dc5f076e5c",
+  "protocol_sha256": "6e0c73303c34a970d5fc17f6ffd7d0dfe478c0854435b7be20f085a8288bceae",
+  "implementation": "scripts/verify_kuchen_graph.py",
+  "production_access": "schema-only lines516–545 and schema descriptions; no production algorithm imports",
+  "source_inputs_read": false,
+  "production_outputs_read": false,
+  "arithmetic": "Decimal source arithmetic; logical residual tolerance1e−6",
+  "later_residual_comparison_absolute_tolerance": 1e-09
+}

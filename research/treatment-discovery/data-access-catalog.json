@@ -374,10 +374,12 @@
       "source_urls": [
         "https://doi.org/10.7554/eLife.51002",
         "https://cdn.elifesciences.org/articles/51002/elife-51002-fig1-data2-v2.xlsx",
-        "https://cdn.elifesciences.org/articles/51002/elife-51002-fig4-data1-v2.xlsx"
+        "https://cdn.elifesciences.org/articles/51002/elife-51002-fig4-data1-v2.xlsx",
+        "https://cdn.elifesciences.org/articles/51002/elife-51002-transrepform-v2.pdf",
+        "https://github.com/hoefer-lab/bar-cycle/tree/1ae898389010da4cba0097f2f09fbe308b2aa912"
       ],
       "record_grain": "4,678 exported sister-pair rows / 9,356 child records in seven sheets; not a certified original-founder denominator",
-      "units": "Birth and division/death/loss durations in hours; opaque cell/mother/lineage IDs; control birth coordinates in source units",
+      "units": "Source numeric time values with a study-level hour interpretation; pinned author code directly supports control birth/cycle hours. Exact clock origin, per-sheet precision and event conventions remain unresolved. Opaque IDs; control spatial coordinates in source units.",
       "join_keys": [
         "workbook SHA256",
         "sheet",
@@ -385,17 +387,22 @@
         "mother ID",
         "source cell locator"
       ],
-      "local_status": "original_workbooks_and_experiment_overview_downloaded_structural_audit_only",
+      "local_status": "source_dictionary_and_structural_graph_independently_checked_no_empirical_outcomes",
       "local_paths": [
         "research/treatment-discovery/sources/lineage-2026-11-10/alternative-lineage-2026-11-10/kuchen-control.xlsx",
         "research/treatment-discovery/sources/lineage-2026-11-10/alternative-lineage-2026-11-10/kuchen-perturbation.xlsx",
         "research/treatment-discovery/sources/lineage-2026-11-10/alternative-lineage-2026-11-10/kuchen-overview.pdf",
         "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/acquisition.json",
         "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/README.md",
-        "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/structural-verification.json"
+        "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/structural-verification.json",
+        "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/dictionary-evidence.md",
+        "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/author-code-evidence.json",
+        "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/README.md",
+        "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/results.json",
+        "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/independent-comparison-v3.json"
       ],
       "access": "Source links and article CC BY 4.0 attribution verified. Established cell-line data, no human participant records. Raw originals retained locally; public findings, hashes and parser provided.",
-      "limitations": "First exported generation is 2; future-independent inclusion and loss meanings remain uncertified. Four negative loss durations and one division without successor pair remain unknown. Rapamycin dose-to-sheet mapping conflicts with duration/generation overview. Biological versus technical replication is unspecified. Growth/cycle perturbations do not define a drug-persister cohort. No Q, covariance or treatment association fitted."
+      "limitations": "First exported generation is 2; future-independent inclusion and loss meanings remain uncertified. Four negative loss durations and one division without successor pair remain unknown. Rapamycin dose-to-sheet mapping conflicts with duration/generation overview. Reporting form explicitly names 3 control and 2 sheets per perturbation as biological replicates; detailed batch/date allocation remains unknown. Author code verifies control birth/cycle hours and post-loading generation correction, not pre-export inclusion. Growth/cycle perturbations do not define a drug-persister cohort. No Q, covariance or treatment association fitted."
     },
     {
       "resource_id": "TD-DATA-16",

@@ -1,0 +1,210 @@
+{
+  "version": "kuchen-structural-graph-2026-11-10-v1",
+  "status": "FROZEN_BEFORE_FIRST_SOURCE_GRAPH_RUN",
+  "question": "What recorded identities, ancestry assertions, chronological support and unresolved observations can be reconstructed from the pinned seven source sheets without selecting future-complete families?",
+  "implementation_contract": {
+    "version": "kuchen-graph-v1",
+    "schema_sha256": "c0b676bd16c3a1eeac12dadf061498e7f7830fdfeded69f6d7d042396768f3db",
+    "workbook_sha256": {
+      "kuchen-control.xlsx": "8ecdd5c66a466b71b5ee4790c79c2b9ce38fd1ec6daf59f88347d67e4fa1b86e",
+      "kuchen-perturbation.xlsx": "0065797f9d1cb12dc695bf9baa516f68afea1d6c6077b75c2a9830389806a6f3"
+    },
+    "identity": "exact_resolved_text_no_numeric_merge_namespaced_workbook_sha_sheet",
+    "duplicates": "retain_each_row_side_observation_ambiguous_entity_no_preferred_record",
+    "time_residual_tolerance": 1e-06,
+    "time_tolerance_role": "arithmetic_consistency_not_imaging_precision",
+    "component_vertices": "all_recorded_row_side_observations_external_references_separate",
+    "component_edges": [
+      "unique_recorded_identity_joins",
+      "consistent_recorded_parent_edges"
+    ],
+    "consistent_edge_requirements": [
+      "unique_parent_and_child_identity",
+      "unique_successor_pair_assertion_for_parent",
+      "not_self_or_inside_directed_cycle",
+      "one_finite_nonnegative_parent_division_other_fates_recognized_source_missing_no_invalid_or_formula_fate",
+      "finite_child_birth_and_time_residual_within_tolerance",
+      "no_present_lineage_generation_grandmother_reference_conflict"
+    ],
+    "missing_annotations": "retain_unavailable_check_status_not_a_positive_match",
+    "repeat_cycle_annotation_mismatch": "retain_residual_and_issue_do_not_replace_or_block_edge_alone",
+    "cycle_quarantine": "only_edges_inside_cyclic_scc_no_blanket_descendant_exclusion",
+    "missing_successor_cardinality": null,
+    "recording_end": null,
+    "continuous_tracking_support": "unresolved",
+    "event_boundary_convention": "unresolved",
+    "outcome_grid": null,
+    "source_ascertainment": "unresolved_export_selection",
+    "source_condition_labels": "preserve_no_reassignment",
+    "related_groups": "shared_nonmissing_recorded_or_ancestor_identity_assertions_including_ambiguous_identities_plus_same_nonmissing_source_lineage_label_within_namespace",
+    "formula_cells": "preserve_formula_and_cached_token_unverified_no_execution",
+    "scc_basis": "raw_unique_recorded_identity_directed_graph_before_other_edge_filtering"
+  },
+  "prior_information": [
+    "Both workbooks and schema inspected in previous published structural audit.",
+    "4678 pair rows,9356 child records,4 negative loss durations,1 missing successor pair already known.",
+    "Source reporting form now explicitly labels rep1/rep2/rep3 and two sheets per perturbation as biological replicates; export selection remains unresolved.",
+    "No new graph topology, component or observation-mask outcome has been computed before this plan."
+  ],
+  "source_inputs": {
+    "directory": "research/treatment-discovery/sources/lineage-2026-11-10/alternative-lineage-2026-11-10",
+    "schema": "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/kuchen-schema.json",
+    "sheet_roster": [
+      {
+        "file": "kuchen-control.xlsx",
+        "sheet": "rep1",
+        "xml_path": "xl/worksheets/sheet1.xml",
+        "expected_pair_rows": 923
+      },
+      {
+        "file": "kuchen-control.xlsx",
+        "sheet": "rep2",
+        "xml_path": "xl/worksheets/sheet2.xml",
+        "expected_pair_rows": 808
+      },
+      {
+        "file": "kuchen-control.xlsx",
+        "sheet": "rep3",
+        "xml_path": "xl/worksheets/sheet3.xml",
+        "expected_pair_rows": 871
+      },
+      {
+        "file": "kuchen-perturbation.xlsx",
+        "sheet": "-myc1",
+        "xml_path": "xl/worksheets/sheet1.xml",
+        "expected_pair_rows": 492
+      },
+      {
+        "file": "kuchen-perturbation.xlsx",
+        "sheet": "-myc2",
+        "xml_path": "xl/worksheets/sheet2.xml",
+        "expected_pair_rows": 600
+      },
+      {
+        "file": "kuchen-perturbation.xlsx",
+        "sheet": "rap1",
+        "xml_path": "xl/worksheets/sheet3.xml",
+        "expected_pair_rows": 482
+      },
+      {
+        "file": "kuchen-perturbation.xlsx",
+        "sheet": "rap2",
+        "xml_path": "xl/worksheets/sheet4.xml",
+        "expected_pair_rows": 502
+      }
+    ]
+  },
+  "field_preservation": {
+    "required": [
+      "workbook_sha256",
+      "exact_sheet_name",
+      "xml_sheet_path",
+      "original_excel_row",
+      "original_excel_cell",
+      "xml_storage_type",
+      "raw_storage_token",
+      "resolved_text",
+      "missing_or_parse_status",
+      "parser_version"
+    ],
+    "normalized_references_allowed": true,
+    "missing_ids": "No shared dummy identity; retain unresolved row/side observation.",
+    "numeric_aliases": "Flag lexically different numeric-equivalent identifiers without merging.",
+    "numeric_values": "Preserve original tokens; require finite values for arithmetic. Preserve every nonfinite/invalid/negative annotation with an explicit status.",
+    "schema_guard": "Verify hashes before and after read; verify workbook sheet relationship/name/XML mapping, exact headers and expected row roster.",
+    "source_mutation": "Forbidden; outputs use separate unused paths.",
+    "formula_policy": "Preserve any formula text and cached raw/resolved token; do not execute formulas or use unverified formula cells as identity or numeric evidence."
+  },
+  "graph_scope": {
+    "recorded_observation": "One original row/side, retained even if an identity or field is unresolved.",
+    "raw_identity_join": "Directed parent-to-child assertion only where both referenced identities resolve uniquely within workbook/sheet namespace.",
+    "external_reference": "An absent recorded identity remains a reference, not an invented observed ancestor.",
+    "consistent_edge": "Subset passing every applicable declared direct check; missing checks remain labeled unavailable. No best-record selection.",
+    "related_group": "Conservative clustering of recorded observations through stated identity/ancestor/lineage assertions; neither proof of independence nor original-founder identity.",
+    "numeric_tolerance": "Absolute1e-6 in source time units only for arithmetic/repeated-time checks; no event times are rounded or repaired.",
+    "duplicate_successor": "Retain all conflicting pair assertions; none is preferred for consistent edges.",
+    "descendant_uncertainty": "A division without a successor pair has unknown descendants, not a terminal death or a one-daughter renormalization.",
+    "no_trajectory_mask": "Only birth and terminal assertions plus support-status fields. No continuous-alive, death-at-query, subtree-survival or population masks.",
+    "parent_fate_exclusivity": "The parent division field must be finite and nonnegative; both other fate fields must be recognized source-missing (literal NaN, empty/absent field). Any invalid/nonfinite nonmissing token or unverified formula in any fate field leaves the parent fate unresolved. Parent birth must be finite for chronological arithmetic. A child terminal-fate problem alone does not invalidate an otherwise sound parent-to-child birth assertion.",
+    "related_group_identity_assertions": "Connect observations sharing any accepted exact nonmissing recorded-cell, mother or grandmother ID token within a namespace, including duplicated identities and references to ambiguous recorded IDs. Also join equal sourceLineageID labels in their separate label namespace. These are conservative split groups, not merged identities or independent founders. Numeric-equivalent but lexically distinct IDs remain an alias warning without identity merging.",
+    "cycle_basis": "Compute directed strongly connected components on the raw unique-recorded-identity assertion graph before chronological or annotation filtering. Quarantine internal cycle edges in the consistent subset, without blanket deletion of unrelated or downstream observations."
+  },
+  "required_structural_outputs": [
+    "All7sheet/4678pair/9356observation reconciliation; no omitted ambiguous records",
+    "Unique/duplicate/missing identifier and lexical-alias counts",
+    "Raw directed identity-edge counts; self edges; directed cyclic SCCs; consistent-edge reasons",
+    "Parent time/generation/lineage/grandmother assertion checks and unavailable statuses",
+    "Mother/grandmother repeated-cycle residuals and conflicts separately from edge identity",
+    "Recorded components under raw and consistent edges; conservative related groups; source lineage labels separately",
+    "External parent/grandmother references and recorded root observations without founder claims",
+    "Every recorded division successor state; unknown descendants preserved",
+    "Invalid/missing/multiple fate fields and chronology; no event probabilities",
+    "Original source/schema hashes and first-output artifacts/provenance"
+  ],
+  "fixtures": [
+    "namespace_reuse",
+    "external_mother_with_recorded_sisters",
+    "duplicate_child_identity",
+    "duplicate_successor_pair",
+    "self_parent_and_directed_cycle",
+    "grandmother_generation_lineage_conflicts",
+    "repeated_cycle_annotation_mismatch",
+    "division_without_successor",
+    "missing_child_identity",
+    "negative_multiple_missing_nonfinite_fate",
+    "death_or_loss_with_successor",
+    "clean_component_beside_affected_component",
+    "unavailable_annotations_not_certified_matches",
+    "numeric_equivalent_id_tokens_not_merged",
+    "source_cell_provenance_and_no_overwrite",
+    "ambiguous_identity_and_references_cannot_split_related_group"
+  ],
+  "execution_and_review": {
+    "code_review_before_source_run": true,
+    "independent_verifier": "Separate parser/graph traversal or aggregate reconstruction without importing production implementation; compare exact integer findings and specified arithmetic tolerances.",
+    "first_run": "Preserve first complete or incomplete report, code/input hashes and any failures. Corrections receive separate records.",
+    "reproduction": "Fresh output paths; scientific graph/summary fields compare exactly in recorded environment with explicit metadata exclusions.",
+    "no_outcome_grid_or_model": "No Q, covariance, death fraction, fitted hazard, treatment comparison, predictive score, lag or data-based exclusion selection."
+  },
+  "publication": {
+    "public": [
+      "protocol/code/synthetic fixtures",
+      "source assertion dictionary and acquisition hashes",
+      "aggregate graph/consistency findings",
+      "independent verification and reproduction",
+      "readiness decision and concrete next analysis proposal"
+    ],
+    "local_only": [
+      "Original source files",
+      "Expanded row/cell/edge/provenance/relationship or per-cell mask records"
+    ],
+    "private_output_prefix": "research/treatment-discovery/sources/lineage-2026-11-10/kuchen-graph-2026-11-10/derived",
+    "no_contact": true
+  },
+  "success_criterion": "Produce a reproducible observation-graph and source-readiness finding, retaining all unresolved source assertions. This is not a hypothesis test or evidence of cancer inheritance.",
+  "source_evidence": {
+    "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/dictionary-evidence.md": "bbe325e4423e0eec11d39dab07ca1d3c26a218b3428bb1cef2efdd2deb247487",
+    "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/source-assertion-ledger.json": "40420d0a913aab750418c6fdaa99d4ec52fc2493b207a3ea9ec36696de900b6b",
+    "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/source-acquisition.json": "09bee63f5d4cc4c35c1225c6702b19dde7eb74171608d90ed951fe2fcffbb0ff"
+  },
+  "source_replication": {
+    "control": [
+      "rep1",
+      "rep2",
+      "rep3"
+    ],
+    "MYCN_inhibition": [
+      "-myc1",
+      "-myc2"
+    ],
+    "rapamycin": [
+      "rap1",
+      "rap2"
+    ],
+    "status": "Author reporting form explicitly names these biological replicates; detailed batch/date allocation and export selection remain unresolved.",
+    "source": "https://cdn.elifesciences.org/articles/51002/elife-51002-transrepform-v2.pdf",
+    "source_sha256": "bd7c4eaeed745b4d5d02e76ebca881b57d28d54d87bc751a508e6472eb92a719",
+    "locator": "page2 Replicates author response"
+  },
+  "frozen_utc": "2026-11-10T21:16:17.378064+00:00"
+}

@@ -1,0 +1,149 @@
+{
+  "status": "PASS",
+  "created_utc": "2026-11-10T21:18:01.552294+00:00",
+  "protocol_sha256": "9bae915785c5230b62ff096fe63810ca9e01bddaafc1c87653503d33833974fb",
+  "freeze_sha256": "a726e25bfef14a3a2b51f25040c4398de2d95959c28017ed330775d7130d9a95",
+  "implementation_sha256": {
+    "scripts/lineage_compatibility_bounds.py": "22943378b7b9f3c52de568c01ab10a7c72a963130e2df8bd529160451789ff57",
+    "scripts/verify_lineage_compatibility.py": "e65d9b98c484a3b645df775ddab494e15ba93d537b12df737585ae32426fccf3"
+  },
+  "counts": {
+    "masks": 7381,
+    "completed_assignments": 69905,
+    "fixed_D_enumeration": 7381,
+    "fixed_A_enumeration": 7381,
+    "fixed_D_dynamic_program": 7381,
+    "sym_witness": 52898,
+    "ordered_witness": 33830,
+    "empty_undefined": 1,
+    "global_exact_endpoints": 14760,
+    "within_pair_sym_invariance": 111150,
+    "global_ordered_swap_invariance": 7380,
+    "complete_data_collapse": 340,
+    "one_bit_refinement_nesting": 76272,
+    "all_unknown_sym_control": 4,
+    "zero_interval_gap": 1,
+    "graph_outer_containment": 8,
+    "shared_variable_exact": 1,
+    "unexpected_empty_graph": 1,
+    "frozen_roster_counts": 1
+  },
+  "source_data_read": false,
+  "random_numbers_used": false,
+  "logical_fixtures": [
+    {
+      "name": "shared_variable",
+      "status": "FEASIBLE_LOGICAL_FIXTURE",
+      "assignments": 2,
+      "bounds": {
+        "ordered": {
+          "mask": [
+            "-1/4",
+            "1/4"
+          ],
+          "logical": [
+            "0",
+            "0"
+          ]
+        },
+        "symmetrized": {
+          "mask": [
+            "-1/4",
+            "1/4"
+          ],
+          "logical": [
+            "-1/16",
+            "-1/16"
+          ]
+        }
+      }
+    },
+    {
+      "name": "absorbing_extinction",
+      "status": "FEASIBLE_LOGICAL_FIXTURE",
+      "assignments": 3,
+      "bounds": {
+        "ordered": {
+          "mask": [
+            "-1/4",
+            "1/4"
+          ],
+          "logical": [
+            "-1/4",
+            "0"
+          ]
+        },
+        "symmetrized": {
+          "mask": [
+            "-1/4",
+            "1/4"
+          ],
+          "logical": [
+            "-1/4",
+            "-1/16"
+          ]
+        }
+      }
+    },
+    {
+      "name": "parent_child_or",
+      "status": "FEASIBLE_LOGICAL_FIXTURE",
+      "assignments": 4,
+      "bounds": {
+        "ordered": {
+          "mask": [
+            "-1/4",
+            "1/4"
+          ],
+          "logical": [
+            "-1/4",
+            "0"
+          ]
+        },
+        "symmetrized": {
+          "mask": [
+            "-1/4",
+            "1/4"
+          ],
+          "logical": [
+            "-1/4",
+            "0"
+          ]
+        }
+      }
+    },
+    {
+      "name": "missing_branch_or",
+      "status": "FEASIBLE_LOGICAL_FIXTURE",
+      "assignments": 2,
+      "bounds": {
+        "ordered": {
+          "mask": [
+            "-1/4",
+            "1/4"
+          ],
+          "logical": [
+            "0",
+            "0"
+          ]
+        },
+        "symmetrized": {
+          "mask": [
+            "-1/4",
+            "1/4"
+          ],
+          "logical": [
+            "-1/16",
+            "-1/16"
+          ]
+        }
+      }
+    },
+    {
+      "name": "contradictory_known_extinction",
+      "status": "INFEASIBLE_DECLARED_LOGIC",
+      "assignments": 0
+    }
+  ],
+  "interpretation": "Exact synthetic mask bounds and witnesses verified; no source outcomes, sampling inference, or novelty claim. Logical fixtures do not prove full-history attainability."
+}

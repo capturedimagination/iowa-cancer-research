@@ -1,0 +1,16 @@
+# Author-code evidence addendum
+
+Reviewed 2026-11-10, after the initial dictionary ledger. **The author repository directly supports hours for control birth/cycle fields and places generation correction after loading the intended published control workbook.** It does not certify earlier acquisition/export selection. The previous [source ledger](source-assertion-ledger.json) remains unchanged; its bounded search finding is historical.
+
+The [repository README](https://github.com/hoefer-lab/bar-cycle/blob/1ae898389010da4cba0097f2f09fbe308b2aa912/README.md#L147-L160) describes the analysis pipeline. Inspection is pinned to commit `1ae898389010da4cba0097f2f09fbe308b2aa912`. The [acquisition and assertion JSON](author-code-evidence.json) records Git blob identities, independently checked SHA-256 hashes and exact local archived copies. No author code was executed.
+
+| Code evidence | What it establishes | What remains unresolved |
+|---|---|---|
+| [Unscaled B/E and H, lines 94–116](https://github.com/hoefer-lab/bar-cycle/blob/1ae898389010da4cba0097f2f09fbe308b2aa912/data-analysis/MS_KuchenBeckeretal_datanalysis.m#L94-L116) | Control cycle duration and birth time are intended in hours. | Exact zero, frame mapping, landmarks, gaps and tie rules. The shown loop is control-specific. |
+| [Load/filter/save, lines 11–35](https://github.com/hoefer-lab/bar-cycle/blob/1ae898389010da4cba0097f2f09fbe308b2aa912/data-analysis/MS_KuchenBeckeretal_datanalysis.m#L11-L35) | The generation filter follows XLSX loading and produces separate corrected files. | Early-leaver exclusions or other selection before export; original founder completeness. |
+| [H+D/G endpoints, lines 18–26](https://github.com/hoefer-lab/bar-cycle/blob/1ae898389010da4cba0097f2f09fbe308b2aa912/data-analysis/MS_KuchenBeckeretal_datanalysis.m#L18-L26) | Authors derive an endpoint maximum and use a 0.01 numerical buffer. | This is not an independently recorded administrative end, acquisition precision or loss-reason certificate. |
+| [Generation rule, lines 23–33](https://github.com/hoefer-lab/bar-cycle/blob/1ae898389010da4cba0097f2f09fbe308b2aa912/data-analysis/MS_KuchenBeckeretal_datanalysis.m#L23-L33) | Ceiling of 5% of selected endpoint counts, cumulative generation counts, then truncation. | No cutoff was computed here; named-table versus prose ordering remains unresolved. |
+
+One comment describes 10-hour bins, but the [actual predicate](https://github.com/hoefer-lab/bar-cycle/blob/1ae898389010da4cba0097f2f09fbe308b2aa912/data-analysis/MS_KuchenBeckeretal_datanalysis.m#L99-L103) uses ±10, a 20-hour full window. Preserve the implemented arithmetic rather than the comment when describing the method. Existing spatial and temporal-confound analyses remain prior work.
+
+The loader references the original supplemental filename without an input hash; this is a strong intended-schema mapping, not proof of every source version's byte identity. Its perturbation adaptation comment does not resolve the rapamycin metadata discrepancy. No repository-wide license file was observed in the pinned tree; source code stays in the excluded archive, and this addendum publishes only pointers, hashes and paraphrased findings.

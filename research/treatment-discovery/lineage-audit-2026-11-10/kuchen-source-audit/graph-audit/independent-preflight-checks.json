@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "created_utc": "2026-11-10T21:18:46.171000+00:00",
+  "checker_sha256": "8ce225002539531c707ae5d79e756c88cb3c6358614e5b55c22893de3ee66ff4",
+  "builder_sha256": "be80f025ba7137b27cda1c6a755763eef0d9f938243e49be3f943f06881708c6",
+  "protocol_sha256": "6e0c73303c34a970d5fc17f6ffd7d0dfe478c0854435b7be20f085a8288bceae",
+  "production_fixture_count_rerun": 38,
+  "production_fixture_status": "PASS",
+  "independent_exhaustive_graphs": 530,
+  "additional_checks": [
+    "empty directed graph",
+    "all 530 directed graphs on one through three nodes",
+    "UTF-8 byte-exact cell markup with independently expected resolved text",
+    "duplicate row provenance fails instead of overwriting",
+    "private-output escape rejected before source access",
+    "public/private output overlap rejected before source access"
+  ],
+  "real_source_workbooks_parsed": false,
+  "source_graph_outputs_inspected_or_generated": false,
+  "biological_outcomes_computed": false,
+  "scope": "Constructed software checks only; not empirical graph validation."
+}

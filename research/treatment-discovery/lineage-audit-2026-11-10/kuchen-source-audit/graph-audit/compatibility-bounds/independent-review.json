@@ -1,0 +1,74 @@
+{
+  "status": "PASS_NO_BLOCKING_FINDING",
+  "created_utc": "2026-11-10T21:23:02.409018+00:00",
+  "review_timing": "Post-original-result independent review; new N=5..6 plan and script frozen before their first outcomes.",
+  "terminal_exit_code": 0,
+  "input_sha256": {
+    "scripts/lineage_compatibility_bounds.py": "22943378b7b9f3c52de568c01ab10a7c72a963130e2df8bd529160451789ff57",
+    "scripts/verify_lineage_compatibility.py": "e65d9b98c484a3b645df775ddab494e15ba93d537b12df737585ae32426fccf3",
+    "scripts/verify_lineage_bounds_independent.py": "61dac4289a97f19bbc94370ca7dc6f543df291c8b0f997bedc887e8d52a355a0",
+    "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/compatibility-bounds/protocol.json": "9bae915785c5230b62ff096fe63810ca9e01bddaafc1c87653503d33833974fb",
+    "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/compatibility-bounds/freeze-record.json": "a726e25bfef14a3a2b51f25040c4398de2d95959c28017ed330775d7130d9a95",
+    "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/compatibility-bounds/verification-first.json": "d641c87884524f89ebbb41c9abed3a370e463d483783a07477b565fca9737f24",
+    "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/compatibility-bounds/independent-plan.json": "256dc6181261ef20ef7d38c67a5712d4471650bdf044f1c29ea207096c607c70",
+    "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/compatibility-bounds/independent-freeze.json": "97bc1e7c9f029d737e0c6ddf29c9e7778b1d008f5920050bdb9a2f073550f6aa",
+    "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/compatibility-bounds/independent-verification.json": "8de9629845b5edb2a970d06b71e79dd893b4238265bb69061c23cd0a0da93318",
+    "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/compatibility-bounds/independent-review.md": "699910845775f809b1178f30a2159a89f9c99e28a1d236a2e00d32ea29563c16"
+  },
+  "counts_by_n": {
+    "5": {
+      "count_vectors": 1287,
+      "attainable_state_entries": 12324,
+      "maximum_states_in_one_vector": 56
+    },
+    "6": {
+      "count_vectors": 3003,
+      "attainable_state_entries": 39494,
+      "maximum_states_in_one_vector": 84
+    }
+  },
+  "checks": {
+    "reference_empty_control": 1,
+    "reference_transition_table_control": 9,
+    "fixed_D_exact_state_dp": 8580,
+    "fixed_A_exact_state_dp": 8580,
+    "sym_global_rational_endpoint": 8580,
+    "ordered_global_rational_endpoint": 8580,
+    "fixed_D_witness": 82368,
+    "fixed_A_witness": 49764,
+    "global_sister_swap_ordered": 4290,
+    "global_sister_swap_sym": 4290,
+    "complete_data_collapse": 140,
+    "complete_count_vector_roster": 2
+  },
+  "total_count_vectors": 4290,
+  "total_attainable_state_entries": 51818,
+  "total_endpoint_witness_checks": 132132,
+  "independent_reference": "Exact integer (A,B,J) attainable-state DP from literal per-pattern contributions; no production helper used for reference.",
+  "production_tested": [
+    "sym_fixed",
+    "ordered_fixed",
+    "endpoints",
+    "sym_witness",
+    "ordered_witness"
+  ],
+  "algebra_review": [
+    "Fixed-D capacity proof and constructive joint-count extremes",
+    "Fixed-A separable row gains and greedy priorities",
+    "Rational covariance denominator and target distinction",
+    "Count-vector reduction by row permutation invariance"
+  ],
+  "scope": [
+    "Only independent binary mask completion is sharp",
+    "Graph constraints can make endpoints unattainable",
+    "Interval containing zero need not contain an attainable zero",
+    "No confidence interval or population inference",
+    "No source-roster eligibility or biological mechanism certification",
+    "No novelty or first-ever claim"
+  ],
+  "no_scientific_source_input": true,
+  "random_numbers_used": false,
+  "original_root_verification_rerun": false,
+  "original_root_verification_code_inspected": true,
+  "blockers": []
+}

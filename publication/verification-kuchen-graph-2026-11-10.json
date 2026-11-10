@@ -1,0 +1,122 @@
+{
+  "status": "PASS_PREPUBLICATION_EXPORT_AND_CODE_CHECKS",
+  "created_utc": "2026-11-10T21:34:00.537613+00:00",
+  "scope": "Structural lineage source graph, exact incomplete-pair covariance method, preserved failures and destination packet; no experimental outcome calculation or novelty claim.",
+  "local_library": {
+    "library": {
+      "integrity": "ok",
+      "datasets": 60,
+      "search_index": 1525,
+      "county_cancer_summary": 99,
+      "tri_forms": 60040,
+      "age_calendar_and_source_audit_documents": 26,
+      "source_pdf_bodies": 35,
+      "all_study_document_hashes_current": true
+    },
+    "figures": {
+      "age-context-grid.svg": "869f9dd3ec6104bb2fa588bb9a79f89cd659878bd2b0cd1ca6a9841a0599f7f1",
+      "calibration-variance.svg": "7f8d2e30d525fd782b760b37bd73ea593e40a2ac53822261110b36292aac01b5"
+    },
+    "report_pdf_sha256": "6019900da230ba69322aea6bf537fb879a1403b09cfe7acf0f8c71df27f9eeec"
+  },
+  "public_export": {
+    "library": {
+      "integrity": "ok",
+      "datasets": 60,
+      "search_index": 1487,
+      "county_cancer_summary": 99,
+      "tri_forms": 60040,
+      "age_calendar_and_source_audit_documents": 26,
+      "source_pdf_bodies": 0,
+      "all_study_document_hashes_current": true
+    },
+    "export": {
+      "files": 629,
+      "included_hashes_checked": 625,
+      "derived_library_metadata_regenerated": [
+        "knowledge/build-manifest.json",
+        "knowledge/pdf-text-extraction-log.json"
+      ],
+      "no_extra_public_files": true
+    },
+    "figures": {
+      "age-context-grid.svg": "869f9dd3ec6104bb2fa588bb9a79f89cd659878bd2b0cd1ca6a9841a0599f7f1",
+      "calibration-variance.svg": "7f8d2e30d525fd782b760b37bd73ea593e40a2ac53822261110b36292aac01b5"
+    },
+    "report_pdf_sha256": "6019900da230ba69322aea6bf537fb879a1403b09cfe7acf0f8c71df27f9eeec"
+  },
+  "scientific_artifact_checks": {
+    "status": "PASS",
+    "graph_observations": 9356,
+    "consistent_links": 9014,
+    "conservative_related_groups": 171,
+    "independent_comparisons": 1603255,
+    "independent_mismatches": 0,
+    "failures_and_initial_code_preserved": true,
+    "core_protocol_code_and_report_pins_current": true,
+    "root_exact_mask_patterns": 7381,
+    "root_completed_assignments": 69905,
+    "independent_bound_followup_status": "PASS",
+    "artifact_sha256": {
+      "protocol.json": "6e0c73303c34a970d5fc17f6ffd7d0dfe478c0854435b7be20f085a8288bceae",
+      "producer-freeze.json": "91c7a2097d6f54d087e7a32d3825ad512347a4cfac7c3165951e880e4ed6db0e",
+      "results.json": "c0df90daf0058f717f984ff981bab8d9f4bc31b795d35193c8753682316d1fc8",
+      "reproduction.json": "29754dcfaf272d9d4b4573069769c12308b9a504d51a0f53e69b21c070868629",
+      "independent-reference-v2.json": "290d045ac35993c62be18ae9a49a7ad42e097025776830afb65379a3cb90bcef",
+      "independent-comparison-v3.json": "d524d8db127df3d1121d26ec9d3316d6fa79f04596f7e41c2a611d5657e8187e",
+      "independent-reference.json.failure.json": "a4fff95c564275ab18e789deda732595368765b169503c30573035dde85b3e33",
+      "independent-comparison-first.json": "14a3490ac6dea0322eb7215c6251350387689b925ccc92cbd9518c3c056b30fb",
+      "compatibility-bounds/verification-first.json": "d641c87884524f89ebbb41c9abed3a370e463d483783a07477b565fca9737f24",
+      "compatibility-bounds/independent-verification.json": "8de9629845b5edb2a970d06b71e79dd893b4238265bb69061c23cd0a0da93318"
+    },
+    "private_originals_read": false
+  },
+  "exported_code_replays": {
+    "status": "PASS",
+    "root_bounds_counts_and_logical_fixtures_exact": true,
+    "independent_bounds_counts_and_checks_exact": true,
+    "fixtures": {
+      "export-preflight.json": {
+        "status": "PASS",
+        "production_fixture_count_rerun": 38,
+        "independent_exhaustive_graphs": 530
+      },
+      "export-independent-fixtures.json": {
+        "status": "PASS",
+        "fixture_count": 24
+      },
+      "export-reproduction-fixtures.json": {
+        "status": "PASS",
+        "count": 13
+      }
+    },
+    "all_replays_source_free": true,
+    "scope": "Portability of published code and fixed synthetic tests; no source graph or biological outcome rerun."
+  },
+  "staged_index_before_this_record": {
+    "status": "PASS",
+    "indexed_files": 629,
+    "manifest_hashes_checked": 627,
+    "all_staged_blobs_match_working_files": true,
+    "expected_file_set_exact": true,
+    "no_unstaged_or_untracked_public_files": true,
+    "manifest_sha256": "6261970a006038fce6aadc4281cc695b4b581b912f773b608cb01b1d22f5d472"
+  },
+  "public_scanner_before_this_record": {
+    "status": "PASS",
+    "indexed_paths": 629,
+    "checks": "Bounded content/path/link/file-set scanner; no untracked sources scanned."
+  },
+  "whitespace_check": "PASS",
+  "final_record_scope": {
+    "this_file_added_after_export": "publication/verification-kuchen-graph-2026-11-10.json",
+    "expected_final_public_files": 630,
+    "required_final_gate": "Regenerate manifest, stage, rerun publication scanner and exact index/hash comparison after adding this record. Final Git/remote checks are separate from this prepublication artifact."
+  },
+  "source_preservation": "Original workbooks and pinned dictionary unchanged; expanded source records, partial references, raw third-party files and generated local database excluded from public Git.",
+  "failure_history": "First independent parser failure and first comparison FAIL plus exact source versions retained; current final comparison passed. A transient library hash probe before rebuild completion saw stale document hashes; final completed-build checks passed.",
+  "old_findings_preserved": "Earlier two approximate simulation flags and168 low-count unresolved comparisons are not cleared by this new study. Original report PDF hash unchanged.",
+  "destination": "Prepared DKFZ source-validation packet and conditional methods/preprint/PLOS ONE route; no contact or submission.",
+  "goal_status": "active; useful computational component established, scientific novelty and biological mechanism unestablished",
+  "checker_runtime_observed": "3.14.7"
+}

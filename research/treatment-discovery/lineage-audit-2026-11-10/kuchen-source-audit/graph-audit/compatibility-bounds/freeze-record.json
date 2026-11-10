@@ -1,0 +1,9 @@
+{
+  "created_utc": "2026-11-10T21:17:57.925393+00:00",
+  "protocol_sha256": "9bae915785c5230b62ff096fe63810ca9e01bddaafc1c87653503d33833974fb",
+  "implementation_sha256": {
+    "scripts/lineage_compatibility_bounds.py": "22943378b7b9f3c52de568c01ab10a7c72a963130e2df8bd529160451789ff57",
+    "scripts/verify_lineage_compatibility.py": "e65d9b98c484a3b645df775ddab494e15ba93d537b12df737585ae32426fccf3"
+  },
+  "numerical_enumeration_started": false
+}

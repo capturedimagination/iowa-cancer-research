@@ -1,0 +1,14 @@
+{
+  "created_utc": "2026-11-10T21:22:02.895295+00:00",
+  "status": "PINNED_BEFORE_FOLLOWUP_ENUMERATION",
+  "protocol_sha256": "256dc6181261ef20ef7d38c67a5712d4471650bdf044f1c29ea207096c607c70",
+  "input_sha256": {
+    "scripts/verify_lineage_bounds_independent.py": "61dac4289a97f19bbc94370ca7dc6f543df291c8b0f997bedc887e8d52a355a0",
+    "scripts/lineage_compatibility_bounds.py": "22943378b7b9f3c52de568c01ab10a7c72a963130e2df8bd529160451789ff57",
+    "scripts/verify_lineage_compatibility.py": "e65d9b98c484a3b645df775ddab494e15ba93d537b12df737585ae32426fccf3",
+    "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/compatibility-bounds/protocol.json": "9bae915785c5230b62ff096fe63810ca9e01bddaafc1c87653503d33833974fb",
+    "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/compatibility-bounds/freeze-record.json": "a726e25bfef14a3a2b51f25040c4398de2d95959c28017ed330775d7130d9a95",
+    "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/compatibility-bounds/verification-first.json": "d641c87884524f89ebbb41c9abed3a370e463d483783a07477b565fca9737f24"
+  },
+  "original_result_readiness": "Original N=0..4 PASS known before this follow-up; no empirical masks."
+}

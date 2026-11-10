@@ -1,0 +1,14 @@
+{
+  "status": "PINNED_BEFORE_FIRST_SOURCE_GRAPH",
+  "created_utc": "2026-11-10T21:19:15.049979+00:00",
+  "code_path": "scripts/build_kuchen_graph.py",
+  "code_sha256": "be80f025ba7137b27cda1c6a755763eef0d9f938243e49be3f943f06881708c6",
+  "protocol_sha256": "6e0c73303c34a970d5fc17f6ffd7d0dfe478c0854435b7be20f085a8288bceae",
+  "python_version": "3.12.14",
+  "executable": "tmp/egfr-resistance-2026-11-10/venv/bin/python",
+  "fixture_count": 38,
+  "fixture_report_sha256": "34ec44d2c83306a0d5b433d7321d9f19bb52fe86ef952ebadb82243f962a21a5",
+  "independent_preflight_sha256": "927687887deee59ae2140c454bf2ee091b135af8c8aed94a9b2780d190e53b6c",
+  "source_graph_previously_generated": false,
+  "scientific_scope": "Structural assertions only; no biological masks, lags, outcome summaries or model fits."
+}

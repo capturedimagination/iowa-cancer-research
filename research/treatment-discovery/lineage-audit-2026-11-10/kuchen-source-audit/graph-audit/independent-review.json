@@ -1,0 +1,100 @@
+{
+  "status": "PASS_WITH_PRESERVED_HISTORICAL_FAILURES",
+  "protocol_sha256": "6e0c73303c34a970d5fc17f6ffd7d0dfe478c0854435b7be20f085a8288bceae",
+  "final_comparator_code_sha256": "321fbbd0a6d0c59a6339e1e1b6126bd51e30c9464b624bb0afd890a2b2b1f271",
+  "independent_reference_code_sha256": "da8d18846c6345194bc8e3ff0b91475b88a3b2ce09be9fae2085d8eb886b8e16",
+  "reference_counts": {
+    "sheets": 7,
+    "pair_rows": 4678,
+    "observations": 9356
+  },
+  "comparison_count": 1603255,
+  "mismatch_count": 0,
+  "maximum_absolute_numeric_difference": 2.842170943040401e-14,
+  "numeric_comparison_absolute_tolerance": 1e-09,
+  "artifact_sha256": {
+    "protocol.json": "6e0c73303c34a970d5fc17f6ffd7d0dfe478c0854435b7be20f085a8288bceae",
+    "independent-code-pin.json": "9d8ca39e757d5be7a89437a70a02cdee83573a9d6274a0842dac3516d7bb4acd",
+    "independent-reference.json.failure.json": "a4fff95c564275ab18e789deda732595368765b169503c30573035dde85b3e33",
+    "independent-code-pin-v2.json": "ac74b0d6b2bd06f214f19ed15bcc0710c3074ac8dc1aa3450bbebf09a626c652",
+    "independent-reference-v2.json": "290d045ac35993c62be18ae9a49a7ad42e097025776830afb65379a3cb90bcef",
+    "independent-comparison-first.json": "14a3490ac6dea0322eb7215c6251350387689b925ccc92cbd9518c3c056b30fb",
+    "independent-comparator-pin-v3.json": "f7b9e2dc008dfb9da1627916de3ef793331e3539d1d767f38adaaa370ecdc6f9",
+    "independent-comparison-v3.json": "d524d8db127df3d1121d26ec9d3316d6fa79f04596f7e41c2a611d5657e8187e",
+    "independent-fixtures-final-prepin.json": "62847c1cba464c071207b545e605398b2ec8b32f9a0b688eaa6fa71abb77b82b",
+    "independent-fixtures-parser-v2-final.json": "d0eb0a4b2cb6cef8a0693d782e6efb2a9484c8430e722b99dfb1d8f2bebaf0a4",
+    "independent-fixtures-comparator-v3.json": "9f0e13bed83fa56bd80dac9c350c6e3c7973c476c0ca37cc49e090144d6a0a8d",
+    "verification-history/verify_kuchen_graph-v1.py": "305ca3f41422f15d0166721964bcef69548d58dd61b06bde8dc658dc5f076e5c",
+    "verification-history/verify_kuchen_graph-v2.py": "da8d18846c6345194bc8e3ff0b91475b88a3b2ce09be9fae2085d8eb886b8e16"
+  },
+  "immutable_private_reference": {
+    "path": "research/treatment-discovery/sources/lineage-2026-11-10/kuchen-graph-2026-11-10/derived/independent-reference-v2.json",
+    "sha256": "f94d53d4ba5915d9356ded391264a5ee923e86cbfb899fdf023c9bbe728b8345"
+  },
+  "private_first_failure": {
+    "path": "research/treatment-discovery/sources/lineage-2026-11-10/kuchen-graph-2026-11-10/derived/independent-reference.json.failure.json",
+    "sha256": "be7eac0dc4bac02d95b597b403a17518cab4f1e3c2807b7b185011d96e748c9a"
+  },
+  "source_reconstruction_unchanged_v2_to_v3": {
+    "method": "Python AST comparison, excluding source positions",
+    "functions": [
+      "read_xlsx",
+      "classify",
+      "accepted_identity",
+      "numeric",
+      "fields_of",
+      "fate",
+      "reconstruct",
+      "components",
+      "strongly_connected",
+      "source_reference"
+    ],
+    "all_identical": true
+  },
+  "independence": {
+    "production_algorithm_imports": false,
+    "initial_access": "schema-only definitions and schema clarifications",
+    "reference_saved_before_production_output_inspection": true
+  },
+  "history": [
+    {
+      "stage": "first_source_reference",
+      "status": "FAIL",
+      "process_exit_code": 1,
+      "completed_sheets_preserved": 3,
+      "reason": "Overstrict header-coordinate roster rejected an empty formatted R1 cell in rap1."
+    },
+    {
+      "stage": "source_reference_v2",
+      "status": "PASS",
+      "process_exit_code": 0,
+      "fixture_count": 23,
+      "change": "Preserve genuinely empty extra header cells and unmapped row cells; reject nonempty/formula extra headers."
+    },
+    {
+      "stage": "first_comparison",
+      "status": "FAIL",
+      "process_exit_code": 0,
+      "mismatches": 9356,
+      "other_comparisons_matched": 1575187,
+      "reason": "Adapter incorrectly expected null instead of the frozen unresolved event-boundary token."
+    },
+    {
+      "stage": "comparison_v3",
+      "status": "PASS",
+      "process_exit_code": 0,
+      "fixture_count": 24,
+      "reference_regenerated": false,
+      "additional_post_first_comparison_checks": [
+        "continuous_tracking_support",
+        "death_is_absorbing_mask"
+      ]
+    }
+  ],
+  "scope_limits": [
+    "Issue-code naming is not an independently regenerated ontology; issue counts and group bookkeeping are internal cross-checks.",
+    "No claim that every free-text or producer-specific diagnostic field was independently regenerated.",
+    "Structural agreement does not establish continuous observation, event boundaries, export eligibility, complete founders or any cancer mechanism.",
+    "No lag/outcome mask/covariance/hazard/model test was computed."
+  ]
+}

@@ -66,3 +66,5 @@ Proceed with the mechanism calculation only after its identifiers, timing, signa
 - Source ledgers: [therapeutic](sources.json), [clinical](clinical-pilot-sources.json), [preclinical](preclinical-data-sources.json)
 
 The broader Iowa prevention, occupational and environmental library remains at [knowledge/INDEX.md](../../knowledge/INDEX.md). Its observed population data retain their original dates and scope.
+
+The [Kuchen graph and compatibility extension](lineage-audit-2026-11-10/kuchen-source-audit/graph-audit/README.md) preserves all recorded children and unresolved branches, and verifies exact paired-outcome covariance bounds on synthetic data. It supplies a reusable observation/grouping layer; biological masks, lags and treatment comparisons remain uncomputed. The reporting form now explicitly names the biological replicate sheets, while export selection and detailed allocation remain unresolved.

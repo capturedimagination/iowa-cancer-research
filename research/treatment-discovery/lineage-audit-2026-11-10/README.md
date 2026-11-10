@@ -76,3 +76,5 @@ python scripts/plot_lineage_family_sampling.py
 ```
 
 Run in a disposable checkout to preserve published timestamps. Simulations and independent identity checks require no workbook or other empirical data. The result files retain code/protocol hashes, environments, all fixed cases, exact controls and limits. The broader discovery goal remains active: a new cancer mechanism or therapeutic target has not been established.
+
+The [structural graph and incomplete-outcome bound audit](kuchen-source-audit/graph-audit/README.md) now reconstructs all 9,356 source children without a future-complete filter and tests an exact compatibility method. The new reporting form resolves biological replicate labels; it does not resolve source selection or continuous tracking. Use the current graph audit for these updates and retain earlier protocols/results as history.
