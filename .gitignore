@@ -22,6 +22,8 @@ id_rsa
 /research/treatment-discovery/sources/egfr-resistance-2026-11-10/GSE292469_cell_metadata.tsv.gz
 /research/treatment-discovery/sources/egfr-resistance-2026-11-10/GSE292469_counts.h5
 /research/treatment-discovery/sources/egfr-resistance-2026-11-10/NI04_tumor_seurat_object.RData
+/research/treatment-discovery/sources/egfr-resistance-2026-11-10/depth-target-counts.json
+/research/treatment-discovery/sources/egfr-resistance-2026-11-10/depth-target-counts.npz
 /research/treatment-discovery/sources/egfr-resistance-2026-11-10/maynard/data_out/IM06/Table_of_ALL_cell_types_by_sample.csv
 /research/treatment-discovery/sources/egfr-resistance-2026-11-10/maynard/data_out/NI03/results/inferCNV_annotation.csv
 /research/treatment-discovery/sources/egfr-resistance-2026-11-10/sample-metadata-derived.json

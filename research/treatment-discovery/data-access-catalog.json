@@ -225,15 +225,112 @@
         "source GSM",
         "gene symbol and source feature ID (both symbols in this H5)"
       ],
-      "local_status": "full_expression_and_metadata_audited; fixed_descriptive_comparison_completed",
+      "local_status": "full_expression_and_metadata_audited; fixed_descriptive_comparison_completed; depth_and_joint_expression_diagnostics_completed",
       "local_paths": [
         "research/treatment-discovery/updates/2026-11-10/acquisition-manifest.json",
         "research/treatment-discovery/updates/2026-11-10/independent-cohort-review.json",
         "research/treatment-discovery/sources/egfr-resistance-2026-11-10/GSE292469_counts.h5",
-        "research/treatment-discovery/results/gse292469-alveolar-2026-11-10/results.json"
+        "research/treatment-discovery/results/gse292469-alveolar-2026-11-10/results.json",
+        "research/treatment-discovery/discovery-2026-11-10/depth-simulation/results.json",
+        "research/treatment-discovery/discovery-2026-11-10/coexpression/results.json"
       ],
       "access": "Public on 2026-11-01. GEO/NCBI provider permits open reanalysis subject to third-party rights; no record-specific use condition found. Raw originals remain local; publish original aggregate analysis/code with attribution. No controlled data acquired.",
       "limitations": "Non-Iowa, unmatched patients; source histology includes transformed SCLC. LUAD and at least 20 tumor cells leaves 26 TN/9 MRD/24 PD. Major stage/site/procedure/kit imbalance; Series/GSM kit contradiction. Raw UMI differs from author SoupX assay. Descriptive state comparison cannot isolate treatment-induced change or establish target efficacy."
+    },
+    {
+      "resource_id": "TD-DATA-10",
+      "name": "GSE342824 matched untreated/progression Xenium sections",
+      "verified_date": "2026-11-10",
+      "source_urls": [
+        "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE342824"
+      ],
+      "record_grain": "Five patient pairs; ten tissue sections; 389-gene spatial panel",
+      "units": "Spatial transcript measurements; expression matrices not analyzed here",
+      "join_keys": [
+        "patient",
+        "treatment state",
+        "slide/section",
+        "cell segmentation",
+        "gene panel"
+      ],
+      "local_status": "source_metadata_and_gene_panel_audited; no_expression_analysis",
+      "local_paths": [
+        "research/treatment-discovery/discovery-2026-11-10/research-destinations.md",
+        "research/treatment-discovery/discovery-2026-11-10/research-destinations.json"
+      ],
+      "access": "Public source record and gene panel inspected. Raw spatial expression not held as a durable project input; consult source terms before acquisition.",
+      "limitations": "Same originating study as GSE292469, not independent cohort. Progression is not MRD. Only 8/17 Maynard genes measured; do not fill absent genes with zeros or call this full-signature validation."
+    },
+    {
+      "resource_id": "TD-DATA-11",
+      "name": "Oren 2021 PC9 Watermelon lineage division/death source data",
+      "verified_date": "2026-11-10",
+      "source_urls": [
+        "https://www.nature.com/articles/s41586-021-03796-6",
+        "https://github.com/yaaraore/Watermelon"
+      ],
+      "record_grain": "1,135 tracked lineage paths; numeric division and death sheets each have 2,025 columns",
+      "units": "Numeric event matrices with time/identity dictionary unresolved; cycle-time and censoring fields separately available",
+      "join_keys": [
+        "lineage/row identity unresolved",
+        "time-column map unresolved",
+        "replicate",
+        "selection/censoring flags"
+      ],
+      "local_status": "source_workbook_structure_inspected_in_memory; raw_not_retained; no_event_rate_analysis",
+      "local_paths": [
+        "research/treatment-discovery/discovery-2026-11-10/mechanistic-simulation/v2/validation-data-route.md",
+        "research/treatment-discovery/discovery-2026-11-10/mechanistic-simulation/v2/validation-data-route.json"
+      ],
+      "access": "13,180,157-byte workbook publicly retrieved for field audit; hash retained. No explicit open-data redistribution license verified. GitHub transcriptomic LFS matrix not downloaded.",
+      "limitations": "One-sister tracking and retrospective persister selection affect inference. No verified same-lineage withdrawal functional transitions. Conditional growth/death benchmark only after event/time/identity and reuse questions are resolved."
+    },
+    {
+      "resource_id": "TD-DATA-12",
+      "name": "Berger 2021 PC9 IRS1 movies and figure source tables",
+      "verified_date": "2026-11-10",
+      "source_urls": [
+        "https://www.nature.com/articles/s43018-021-00261-1",
+        "https://zenodo.org/records/5036166"
+      ],
+      "record_grain": "Listed long-term PC9 movies; population and clone/plate/timepoint source summaries",
+      "units": "Figure source measurements; no complete per-cell event history established",
+      "join_keys": [
+        "movie/frame/time map unverified",
+        "cell/parent identities absent from inspected table structures",
+        "clone/plate/timepoint"
+      ],
+      "local_status": "source_workbook_structure_and_movie_header_audited; movie_not_downloaded_or_viewed; raw_not_retained",
+      "local_paths": [
+        "research/treatment-discovery/discovery-2026-11-10/mechanistic-simulation/v2/validation-data-route.md",
+        "research/treatment-discovery/discovery-2026-11-10/mechanistic-simulation/v2/validation-data-route.json"
+      ],
+      "access": "Publisher supplements publicly linked. Zenodo 392-byte simulation code is CC BY 4.0; that license does not cover publisher movies/workbooks. Movie HEAD returned 200; visual content unverified.",
+      "limitations": "No full state/parent/division/death/withdrawal event table identified. Movie availability is not machine-readable track availability or suitability for state-exit inference."
+    },
+    {
+      "resource_id": "TD-DATA-13",
+      "name": "GSE335848 PC9 sequencing superseries including GSE335847",
+      "verified_date": "2026-11-10",
+      "source_urls": [
+        "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE335848",
+        "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE335847"
+      ],
+      "record_grain": "RNA-seq and TrAEL-seq samples; GSE335847 contains 13 sequencing samples",
+      "units": "Sequencing assays, not observed cell-event histories",
+      "join_keys": [
+        "GEO sample",
+        "assay",
+        "treatment-day label",
+        "derivative label"
+      ],
+      "local_status": "public_series_metadata_inspected; no_expression_matrix_or_tracks_acquired",
+      "local_paths": [
+        "research/treatment-discovery/discovery-2026-11-10/mechanistic-simulation/v2/validation-data-route.md",
+        "research/treatment-discovery/discovery-2026-11-10/mechanistic-simulation/v2/validation-data-route.json"
+      ],
+      "access": "Public GEO records; no controlled-access requirement observed. No linked publication citation in inspected GSE335847 record.",
+      "limitations": "Submitter biological description is not a project-verified finding. No time-lapse event table, withdrawal functional labels or state trajectories listed; assay mismatch for v2 validation."
     }
   ]
 }

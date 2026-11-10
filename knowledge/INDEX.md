@@ -1,6 +1,6 @@
 # Iowa cancer reference library
 
-Library extended **November 10, 2026** with verified malignant-cell expression data and an independent lung-cancer signature comparison. The clinical benchmark remains the October 29 analysis; the Iowa surveillance/environmental compilation remains the **October 22, 2026** snapshot. Individual sources retain their own dates. This folder is the starting point for future research, data work and model design. Rebuilding its index does not refresh the underlying sources.
+Library extended **November 10, 2026** with verified malignant-cell expression data, an independent lung-cancer signature comparison and falsification/study-design simulations. The clinical benchmark remains the October 29 analysis; the Iowa surveillance/environmental compilation remains the **October 22, 2026** snapshot. Individual sources retain their own dates. This folder is the starting point for future research, data work and model design. Rebuilding its index does not refresh the underlying sources.
 
 ## Find evidence for a question
 
@@ -17,6 +17,7 @@ Library extended **November 10, 2026** with verified malignant-cell expression d
 | Screening, care, prevention, policy or disparities | [Prevention and care](../research/prevention-care.md) |
 | Choosing or fitting a statistical model | [Methods](../research/modeling-methods.md), [readiness checklist](../research/model-readiness-checklist.md), [dataset catalog](../research/data-source-catalog.md) |
 | Treatment discovery, response or resistance | [Latest molecular findings](../research/treatment-discovery/updates/2026-11-10/README.md), then [lung cancer research program](../research/treatment-discovery/README.md). Keep the clinical TMB benchmark and EGFR residual-state analysis separate. |
+| Simulations, tested explanations and experimental design | [Discovery ledger](../research/treatment-discovery/discovery-2026-11-10/README.md), [depth falsification](../research/treatment-discovery/discovery-2026-11-10/depth-simulation/README.md), [state-measurement design](../research/treatment-discovery/discovery-2026-11-10/mechanistic-simulation/v2/README.md), and [research destinations](../research/treatment-discovery/discovery-2026-11-10/research-destinations.md). Simulations establish consequences of assumptions; novelty and cancer mechanisms remain unvalidated. |
 | Individual exposure histories, cohort data or occupational coding | [Cohort access](../research/cohort-data-access.md), [occupational data systems](../research/manufacturing-input-datasets.csv); access metadata do not imply individual records are held here |
 | Narrative orientation | [Original research report](../Iowa-Cancer-Research.md); the later industry and modeling work is in this library |
 

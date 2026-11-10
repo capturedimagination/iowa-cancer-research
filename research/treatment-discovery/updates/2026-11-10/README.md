@@ -8,5 +8,6 @@ The exact published alveolar signature and the original malignant-cell expressio
 - [Original-cohort malignant-cell and pair attrition audit](malignant-membership-review.md)
 - [Independent-cohort search and access review](independent-cohort-review.md)
 - [Source acquisition manifest](acquisition-manifest.json)
+- [Subsequent simulations, tested explanations and novelty audit](../../discovery-2026-11-10/README.md)
 
 This phase adds usable expression data, reproducible code, an honest external comparison and clear limits. It does not identify a new treatment or establish a cure. Raw molecular/clinical source files remain local; original findings, code, derived specimen scores and provenance are public.

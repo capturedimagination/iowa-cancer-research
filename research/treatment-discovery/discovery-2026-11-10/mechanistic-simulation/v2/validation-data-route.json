@@ -1,0 +1,118 @@
+{
+  "audit_date": "2026-11-10",
+  "scope": "Bounded three-candidate audit of primary publications and official deposits for empirical validation of the version-2 exit-versus-growth-versus-marker ambiguity.",
+  "overall_decision": "NO-GO for direct identification of post-withdrawal tolerant-to-sensitive exit hazard from the audited resources. CONDITIONAL GO for a narrower division/death benchmark using Oren Figure 1 source data after resolving its time/identity dictionary and reuse terms.",
+  "limits": "No claim that a suitable dataset does not exist elsewhere. No author contact, raw-data republication, movie download, or large expression-matrix download. Four source workbooks totaling about 13.41 MB were inspected in memory; only metadata, hashes and field descriptions are retained.",
+  "candidates": [
+    {
+      "id": "oren_2021_watermelon",
+      "title": "Cycling cancer persister cells arise from lineages with distinct programs",
+      "primary_url": "https://www.nature.com/articles/s41586-021-03796-6",
+      "full_text_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9209846/",
+      "publication_date": "2021-08-11",
+      "model": "EGFR-driven PC9 lung cancer cells; additional cell-line transcriptomic models are a separate resource.",
+      "observed_relevance": "Paper reports 1135 live-imaged PC9 lineages, including 77 persister lineages, during continued osimertinib exposure. Division and death events were recorded. A single path was followed through divisions, with one sister selected; persister lineages also used endpoint-based retrospective tracing.",
+      "source_data": {
+        "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41586-021-03796-6/MediaObjects/41586_2021_3796_MOESM8_ESM.xlsx",
+        "bytes_inspected": 13180157,
+        "sha256": "a53fe57483b0e55a3b2545f611ff2cf2a31338b8c9dffad0f9af1522222d8f7c",
+        "inspection": "ZIP/XML workbook structure and headers, not a fitted reanalysis.",
+        "sheets": ["Figure 1b-divison", "Figure 1b-death", "Figure 1c", "Figure 1d", "Figure 1g", "Figure 1h"],
+        "division_and_death_dimensions_each": {"rows": 1135, "columns": 2025, "excel_range": "A1:BYW1135"},
+        "division_death_header_status": "First rows/columns are numeric data, not named cell IDs, timestamps or event-code definitions. A column-time mapping and row identity dictionary were not verified.",
+        "figure_1c_fields": ["type", "cell_cycle_time", "censoring_status"],
+        "figure_1c_range": "A1:C307",
+        "figure_1d_fields": ["viability(0_persister)", "Progeny_size"],
+        "figure_1d_range": "A1:B1136",
+        "other_sheets": "Figure 1g contains population dose-response measurements of parental and persister-derived populations; Figure 1h contains population growth summaries. These are not continuous functional state labels on each tracked cell."
+      },
+      "additional_small_workbook": {
+        "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41586-021-03796-6/MediaObjects/41586_2021_3796_MOESM12_ESM.xlsx",
+        "bytes_inspected": 9076,
+        "sha256": "7188f3ae41856f3234f5871fdd556c4485b68b3cdf673c38d07e03dc82e08c3b",
+        "contents": "Figure ED1 a, A1:D8, a population dose-response table, not single-cell tracks."
+      },
+      "repository": {
+        "url": "https://github.com/yaaraore/Watermelon",
+        "status": "Public; official linked repository inspected through GitHub connector.",
+        "readme_url": "https://github.com/yaaraore/Watermelon/blob/master/README.md",
+        "data_inventory": "Two Seurat RDS objects; transcriptomes with lineage barcodes, not microscopy event tables.",
+        "pc9_lfs_pointer": {"file": "data/pc9_time_course.rds", "object_bytes": 581991189, "sha256": "7709f7ef5524ddf29cb98500667c320f4068ca3137cf5811229d8554aaf3ade0", "object_downloaded": false},
+        "code_inventory": ["10X_WTA_dialOut.Rmd", "plasmid_pool_barcode_dialOut.Rmd"],
+        "license": "GitHub repository metadata reports license:null; no explicit repository license verified."
+      },
+      "movie_status": "Live imaging is described, but no raw movie deposit was identified in the inspected article supplementary listing or linked Watermelon repository. The public numeric division/death workbook is more than a movie-only resource.",
+      "withdrawal_status": "Population resensitization of persister-derived cells is reported, but no longitudinal post-withdrawal functional P-to-S label sequence linked to the division/death matrices was verified.",
+      "terms": "Article publisher page specifies exclusive licence to Springer Nature Limited and no Creative Commons link was identified. Public source-file access is verified; an explicit open-data redistribution/training licence for this workbook was not verified. Link and summarize; do not mirror raw tables on that basis alone.",
+      "decision": "CONDITIONAL GO for division/death observation-model development; NO-GO for the full withdrawal exit-hazard validation.",
+      "minimum_missing_fields": ["Exact mapping of matrix columns to elapsed time, including changes in acquisition intervals", "Row-to-lineage and biological-replicate identifiers and event/censoring codebook", "Parent/daughter links or an explicit analysis restricted to the sampled single path, including endpoint-based ascertainment", "Withdrawal/rechallenge event timestamps attached to the same tracked lineages", "Repeated functional tolerant/sensitive labels and independent marker-retention calibration", "State re-entry events or a justified no-re-entry interval"]
+    },
+    {
+      "id": "berger_2021_irs1",
+      "title": "IRS1 phosphorylation underlies the non-stochastic probability of cancer cells to persist during EGFR inhibition therapy",
+      "primary_url": "https://www.nature.com/articles/s43018-021-00261-1",
+      "model": "PC9 lung cancer gefitinib persistence, alongside other models.",
+      "verified_resources": "Publisher lists three WMV supplementary time-lapse videos of PC9 under gefitinib for 80 days, source-data workbooks, and separate omics deposits GSE178978/GSE179240 and PRIDE accessions.",
+      "source_workbooks_inspected": [
+        {
+          "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs43018-021-00261-1/MediaObjects/43018_2021_261_MOESM6_ESM.xlsx",
+          "bytes": 59609,
+          "sha256": "0cbb07fedf22b84598434f57d24f8098f0f9190bad1ccf063b73d33b39f169a0",
+          "sheets": ["1A", "1C", "1D", "1E", "1F"],
+          "observed_structure": "Population drug-release, viability/growth inhibition and concentration summaries with experiment/replicate labels. These are not a complete linked per-cell withdrawal event history."
+        },
+        {
+          "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs43018-021-00261-1/MediaObjects/43018_2021_261_MOESM8_ESM.xlsx",
+          "bytes": 157010,
+          "sha256": "f30d418ee12e15204c5275d04f25ab9907335b993058356c1254f02c43919982",
+          "sheets": ["3A", "3B", "3C", "3D", "3E", "3F"],
+          "observed_fields": ["Clone name", "Plate number", "Column", "Day", "Persisters Selected - Number of Objects", "Timepoint", "Clone", "Week"],
+          "observed_structure": "Clone/plate/timepoint and population object-count summaries, with generation/cycle comparisons. Header inspection did not identify a complete cell-parent-event table or repeated functional state labels. No numerical reanalysis performed."
+        }
+      ],
+      "movie": {
+        "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs43018-021-00261-1/MediaObjects/43018_2021_261_MOESM2_ESM.wmv",
+        "access_check": "HTTP HEAD 200, Content-Length 18350764 bytes; movie body was not downloaded or inspected.",
+        "available_is_not_validated": "An accessible movie does not establish complete cell trees, event timestamps, state labels or censoring fields."
+      },
+      "code_deposit": {
+        "url": "https://zenodo.org/records/5036166",
+        "doi": "10.5281/zenodo.5036166",
+        "record_api": "https://zenodo.org/api/records/5036166",
+        "status": "Open, publication date 2021-10-28, record metadata verified.",
+        "license": "CC BY 4.0 for this deposit, confirmed by Zenodo and DataCite metadata.",
+        "only_listed_file": {"name": "panel1v2.m", "bytes": 392, "md5": "9e78637be15630ca4569ed4288d433b6"},
+        "scope": "Code for Extended Data Fig. 10, concerning chance-to-persist distributions; not a deposited imaging track/event dataset. This licence is not transferred to publisher movies or other files."
+      },
+      "terms": "Publisher article states exclusive licence to Springer Nature America, Inc.; no Creative Commons link identified for publisher supplements. Video link/access verified, explicit reusable movie/annotation licence not verified. Zenodo code alone has a verified CC BY 4.0 licence.",
+      "withdrawal_status": "The inspected video descriptions concern continued treatment; no annotated withdrawal-resensitization movie/track table identified.",
+      "decision": "NO-GO for direct quantitative withdrawal exit-hazard validation. Movie reannotation might support a narrower continued-treatment fate benchmark, contingent on original frame timing, full image quality, censoring and rights.",
+      "minimum_missing_fields": ["Machine-readable cell IDs, parent/daughter relationships, frame timestamps and spatial tracks", "Division, death, tracking-loss and end-of-observation event annotations", "Same-lineage withdrawal/rechallenge timestamps and repeated functional state labels", "State marker calibration separated from fluorescence dilution/decay", "Explicit movie/annotation reuse terms"]
+    },
+    {
+      "id": "may_houseley_geo_2026",
+      "title": "TrAEL-seq of osimertinib-treated PC9 cells in specific cell cycle stages",
+      "primary_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE335847",
+      "metadata_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE335847&targ=self&form=text&view=full",
+      "superseries_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE335848",
+      "status": "GSE335847 public 2026-06-22, last updated 2026-06-22; direct SOFT metadata retrieved. The GEO record has no linked publication citation at audit time.",
+      "model": "PC9 cells at treatment days 7, 14 and 28, pretreatment controls and resistant derivatives; 13 sequencing samples, not 13 patients or imaging lineages.",
+      "relevance": "Submitter summary reports continuing cycling and death balancing population size, directly relevant to why stable total abundance does not imply quiescence. This is a submitter's mechanistic description, not independent validation performed here.",
+      "actual_data_type": "TrAEL-seq; SuperSeries includes RNA-seq GSE335846. Raw sequencing in SRA and a 13.8 MB processed genomic text file are listed. Only metadata were retrieved.",
+      "movie_and_track_status": "No image movie, per-cell track table, division/death event log or functional state-transition annotation is listed in the inspected GEO records.",
+      "withdrawal_status": "No withdrawal trajectory specified in the inspected series design.",
+      "terms": "GEO describes its records/raw files as freely downloadable; these access terms do not establish a separate licence for any unlocated imaging data. No controlled-access application or file-specific licence is shown in the inspected public series metadata.",
+      "terms_source": "https://www.ncbi.nlm.nih.gov/geo/info/download.html",
+      "decision": "NO-GO: assay mismatch. Suitable for a separate replication/cell-cycle question, not identification of switching versus growth/death from individual histories.",
+      "minimum_missing_fields": ["The underlying imaging resource or event-level division/death histories, if any", "Cell/lineage identifiers and exact observation/censoring times", "Withdrawal/rechallenge history", "Functional state transitions and marker-retention measurements", "A linked publication or complete imaging methods/data dictionary"]
+    }
+  ],
+  "focused_validation_design": {
+    "status": "Conceptual measurement specification for a qualified laboratory, not an operational wet-lab protocol or patient regimen.",
+    "question": "After stress removal, does the observed change in a validated tolerant-state abundance require time-dependent exit after accounting separately for division, death, entry and marker change?",
+    "minimum_joint_observations": ["Persistent cell, parent, lineage, field and independent experimental-replicate identifiers", "Exact observation and exposure-change timestamps", "Both-daughter division and death events, with tracking loss distinguished from death and censored follow-up retained", "Repeated functional-state observations or a prospectively validated reporter with independently measured marker retention", "Functional resensitization assessment linked to the tracked lineage, with any destructive assay represented as such rather than a longitudinal observation", "Absolute counts of both defined states and state-entry events", "Time-specific assay variance, label error and missingness estimates"],
+    "analysis_plan": "Freeze the state definition and time window using an independent pilot. Compare constant exit, changing exit, changing division/death, marker-drift and re-entry models on held-out independent experimental replicates. Estimate state-specific transition hazards only from observed at-risk state durations and transition events; use divisions/deaths as separate events and preserve lineage dependence. Do not fit the hazard from a transcriptomic pseudotime or endpoint survivor label.",
+    "falsification": "A curvature signal explained by measured growth/death or marker drift does not support changing exit. Failure of the changing-exit model to improve held-out joint event predictions rejects its claimed added explanatory value. Absence of a well-powered prespecified contrast constrains only the tested effect size and time window.",
+    "next_concrete_step": "First resolve the Oren workbook's column-time mapping and sampled-lineage dictionary from source documentation; absent that information, retain it as a documented partial resource. Do not call the v2 synthetic contrast biologically validated."
+  }
+}

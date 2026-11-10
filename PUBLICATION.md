@@ -2,6 +2,8 @@
 
 First prepared November 3, 2026 for the public `capturedimagination/iowa-cancer-research` repository; extended November 10 with molecular data audits and an independent expression comparison. The evidence retains its original observation periods, retrieval dates and limitations. Publication does not mean the research has been peer reviewed or that a treatment or cure has been established.
 
+The [November 10 discovery extension](research/treatment-discovery/discovery-2026-11-10/README.md) includes hypothesis freezes, finite-depth simulations, a joint-expression diagnostic, two versions of a hypothetical cell-state experiment-design model, independent computational checks and a research-destination brief. Failed tests and exact competing explanations are published alongside useful results. Scientific novelty remains unestablished.
+
 ## What is published
 
 All original project reports, research memos, source ledgers, evidence tables, derived factual data, methods, protocols, audit findings, benchmark results and analysis code are included. The authored 19-page report PDF is included. Federal NCI/EPA tabular downloads, the specifically licensed DepMap/PRISM metadata archives and the public ODbL clinical snapshot are included with attribution.
@@ -51,6 +53,19 @@ The overall residual-disease signature score is lower, while the small newer-kit
 The preclinical overlap JSON is a dated audit result. Its metadata sources and identifiers are documented; a standalone complete overlap-reproduction script was not saved. Do not present that artifact as a fully automated pipeline. The TRI historical download script refreshes remote data and is not an exact historical restoration tool; for a pinned reproduction use the included originals and their manifest hashes.
 
 PDF regeneration is optional. `scripts/build_report.py` accepts `IOWA_CANCER_FONT_DIR` containing the original Libertine/Rubik font files, discovers compatible local fonts, and otherwise falls back to built-in ReportLab fonts. Layout/page count can differ under fallback fonts. Existing source extraction and OCR tools may require original linked PDFs; Apple Vision OCR additionally requires macOS, Swift and Poppler. Their presence is not required to read the findings or run the clinical benchmark.
+
+## Reproduce the discovery simulations
+
+Use the same Python 3.12 environment and `requirements-treatment.txt`. The [depth report](research/treatment-discovery/discovery-2026-11-10/depth-simulation/README.md) explains acquisition of the pinned molecular originals; its target-count cache remains local. The [joint-expression report](research/treatment-discovery/discovery-2026-11-10/coexpression/README.md) uses that cache. The [mechanistic simulations](research/treatment-discovery/discovery-2026-11-10/mechanistic-simulation/README.md) are entirely synthetic and can run from the public files without patient-level source inputs. Their parameters are hypothetical, with no mapping to clinical dosing or real calendar time.
+
+```sh
+python -m unittest discover -s tests -p test_signature_depth.py -v
+python scripts/audit_signature_coexpression.py --self-check-only
+python scripts/simulate_egfr_state_dynamics.py --help
+python scripts/simulate_egfr_curvature_design.py --help
+```
+
+Use the report-specific commands for full calculations; they regenerate result files and timestamps. The published package includes source/code hashes, assumptions and all design-grid results. No external peer review, collaboration, submission or acceptance has occurred.
 
 ## Publication checks
 

@@ -1,0 +1,65 @@
+{
+  "verified_at_utc": "2026-11-10T18:43:11.557784+00:00",
+  "scope": "Discovery simulations, auditable research findings and public-package reproducibility; not biological validation or external scientific peer review",
+  "public_export_files_checked": 344,
+  "public_export_manifest_hashes_checked": 342,
+  "verification_record_added_after_export": true,
+  "publication_index_check": "344 indexed paths passed; final index checked again after this record is added",
+  "synthetic_depth_tests": {
+    "passed": 4,
+    "failed": 0,
+    "command": "python -m unittest discover -s tests -p test_signature_depth.py -v"
+  },
+  "coexpression_self_checks": {
+    "passed": true,
+    "command": "python scripts/audit_signature_coexpression.py --self-check-only"
+  },
+  "frozen_protocol_and_code_hash_pairs_verified": 4,
+  "depth_cache_hardening_reproduction": "All numerical output exactly identical before/after hardening; only creation time and simulator hash changed",
+  "depth_independent_review": {
+    "path": "research/treatment-discovery/discovery-2026-11-10/depth-simulation/independent-review.json",
+    "sha256": "a056f8a02e838133352a51e70824ee7978b769433c1cc6331656a6985609a33b",
+    "raw_H5_spot_checks": 134,
+    "patients_checked": 35,
+    "mean_contrasts_checked": 12,
+    "max_Monte_Carlo_SE_discrepancy": 1.782
+  },
+  "v2_public_export_reproduction": {
+    "command": "python scripts/simulate_egfr_curvature_design.py --out verification-output/curvature",
+    "all_numeric_results_exactly_identical": true,
+    "only_excluded_fields": [
+      "created_utc",
+      "runtime_seconds"
+    ],
+    "alternative_settings": 2916,
+    "heldout_null_settings": 2304,
+    "raw_patient_data_needed": false
+  },
+  "v2_independent_review": {
+    "path": "research/treatment-discovery/discovery-2026-11-10/mechanistic-simulation/v2/independent-review.json",
+    "sha256": "5cb1980fe5d0a23a80d7d10ee30db0dbf89d8714215f98020fba7271006bc6c8",
+    "standalone_checker_exactly_reproduced_from_public_export": true,
+    "alternative_trajectories_checked": 243,
+    "power_rows_checked": 2916,
+    "known_and_estimated_variance_separate": true
+  },
+  "public_library_rebuild": {
+    "integrity_check": "ok",
+    "datasets": 56,
+    "search_records": 1419,
+    "county_rows": 99,
+    "tri_forms": 60040,
+    "source_PDF_bodies": 0
+  },
+  "local_library_rebuild": {
+    "integrity_check": "ok",
+    "datasets": 56,
+    "search_records": 1456,
+    "new_curvature_report_retrievable": true,
+    "new_Watermelon_resource_retrievable": true
+  },
+  "figure_validation": "All three new SVGs parse and have no trailing whitespace; author/reviewer previews inspected. Full public v2 regeneration completed.",
+  "original_report_sha256_unchanged": "6019900da230ba69322aea6bf537fb879a1403b09cfe7acf0f8c71df27f9eeec",
+  "publication_scope": "Original reports/code/synthetic outputs/patient aggregates/source provenance only; no raw nucleus vectors, raw source workbooks or movies added.",
+  "scientific_status": "Useful conditional measurement results; novelty and new cancer mechanisms remain unestablished. Candidate validation routes audited; no external contact or submission."
+}

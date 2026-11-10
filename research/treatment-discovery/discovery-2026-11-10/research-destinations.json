@@ -1,0 +1,380 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-11-10",
+  "scope": "Scientific-use, collaboration and publication routes for completed expression measurement audits and synthetic recovery-design benchmarks.",
+  "external_actions": {
+    "contacted_people": false,
+    "submitted_forms": false,
+    "submitted_manuscript": false,
+    "purchased_services": false,
+    "created_affiliation": false
+  },
+  "claim_status": "Proposed methodology/reproducibility contribution; no new biological mechanism, clinical benefit or novelty established.",
+  "ranked_destinations": [
+    {
+      "rank": 1,
+      "name": "GSE292469 original MSK study team",
+      "type": "dataset-owner scientific clarification",
+      "people": [
+        "Helena A. Yu",
+        "Sohrab Shah"
+      ],
+      "source_ids": [
+        "geo_nucseq",
+        "author_code",
+        "shah",
+        "yu"
+      ],
+      "offer": "Completed depth and joint-expression reproducibility packet; confirm results in the intended corrected assay and chemistry metadata. Synthetic model parameters are not inferred from this cohort.",
+      "missing_inputs": [
+        "Authoritative library-to-chemistry map",
+        "Intended RNAsoup matrix and correction metadata, or permitted reconstruction inputs",
+        "Clarification of sample and treatment-state labels"
+      ],
+      "eligibility": "No collaboration or data access confirmed.",
+      "cost_usd": null,
+      "cost_status": "No quoted fee; no engagement established.",
+      "next_authorized_internal_step": "Complete assay-representation preflight and preserve all conflicting results; no contact."
+    },
+    {
+      "rank": 2,
+      "name": "University of Iowa IIHG Bioinformatics, with Holden collaboration if appropriate",
+      "type": "methods review and validation design",
+      "source_ids": [
+        "iihg",
+        "iihg_fees",
+        "iihg_form",
+        "holden_stats",
+        "smith",
+        "dupuy"
+      ],
+      "offer": "Auditable molecular analyses plus retained V1 negative results and V2 conditional precision rule; evaluate real assay feasibility before collecting data.",
+      "missing_validation": [
+        "Independent human scientific/statistical review",
+        "Corrected expression and chemistry metadata for the signature track",
+        "Independent patient validation for the signature track",
+        "Functional state label, measured time-specific error and label stability for the dynamics track",
+        "Power recalculation allowing zero counts, heteroscedasticity and correlated measurements where relevant"
+      ],
+      "eligibility": "IIHG supports off-campus invoicing, but PI/RAMS onboarding unconfirmed. Holden core is scoped to Holden investigators.",
+      "cost_usd": null,
+      "cost_status": "Paid service; single-cell project quote and available capacity unconfirmed.",
+      "next_authorized_internal_step": "Prepare a bounded assay-feasibility and statistical-review packet; no intake submission or purchase."
+    },
+    {
+      "rank": 3,
+      "name": "PLOS ONE methods/reproducibility research article",
+      "type": "peer-reviewed publication",
+      "source_ids": [
+        "plos_criteria",
+        "plos_authors",
+        "plos_ai",
+        "plos_data",
+        "plos_code",
+        "plos_fees"
+      ],
+      "offer": "Completed methods/reproducibility benchmark preserving V1 null findings, V2 precision rule, specificity counterexamples and empirical signature-audit limitations.",
+      "missing_validation": [
+        "Accountable human scientific review",
+        "Comparison with established methods and justified methodological scope or independent empirical evaluation",
+        "Reproducible environment and complete source access statement",
+        "Original code reuse license decision and publication declarations"
+      ],
+      "eligibility": "Scientific and authorship criteria must be met; unaffiliated-author onboarding not separately verified. No acceptance presumed.",
+      "cost_usd": null,
+      "cost_status": "APC due on acceptance; exact journal-mapped amount not conclusively verified in publisher text rendering. Assistance is case-by-case at submission.",
+      "next_authorized_internal_step": "Develop a human-reviewable manuscript outline around measured failure boundaries and design precision; no submission."
+    }
+  ],
+  "conditional_preprint": {
+    "venue": "bioRxiv",
+    "source_ids": [
+      "biorxiv_screen",
+      "biorxiv_ai"
+    ],
+    "policy_date": "2026-10-20",
+    "current_gate": "All authors must be verifiable humans affiliated with an accountable organization, with genuine intellectual input and review. Current project eligibility is not established.",
+    "cost_usd": null,
+    "cost_status": "Current fee not verified.",
+    "status": "No submission."
+  },
+  "next_data_resource": {
+    "accession": "GSE342824",
+    "release_date": "2026-11-01",
+    "source_ids": [
+      "geo_spatial",
+      "geo_panel"
+    ],
+    "patients": 5,
+    "sections": 10,
+    "pairs": "Within-patient treatment-naive/progression; each pair on one slide.",
+    "endpoint": "TN versus PD, not MRD",
+    "same_originating_study": true,
+    "independent_external_validation": false,
+    "modality": "Xenium in situ, 389 gene targets",
+    "proposed_use": "Spatial localization of measured alveolar transcripts in confidently annotated malignant cells, with segmentation and neighboring-normal-cell sensitivity.",
+    "expression_analysis_performed": false,
+    "total_panel_entries": 412,
+    "unique_gene_symbols": 389,
+    "signature_size": 17,
+    "signature_genes_present": [
+      "AGER",
+      "HOPX",
+      "NAPSA",
+      "NKX2-1",
+      "SCGB3A1",
+      "SFTPB",
+      "SFTPC",
+      "SFTPD"
+    ],
+    "signature_genes_absent": [
+      "ABCA3",
+      "AQP4",
+      "CLDN18",
+      "FOXA2",
+      "GATA6",
+      "IGFBP2",
+      "LAMP1",
+      "PGC",
+      "SFTA3"
+    ],
+    "constraint": "Eight measured markers are not the original 17-gene signature; absent targets cannot be scored as biological zeros.",
+    "required_before_analysis": [
+      "Panel and cell-annotation audit",
+      "Patient overlap and biopsy-site audit",
+      "Reuse-terms assessment",
+      "Frozen spatial estimand and segmentation sensitivity",
+      "Sample-level paired inference; retain progression/MRD separation"
+    ],
+    "files": [
+      {
+        "name": "GSE342824-series.txt",
+        "local_cache": "tmp/research-destinations-2026-11-10/GSE342824-series.txt",
+        "bytes": 3361,
+        "sha256": "333b9ad0bf138c7fee7b83b78b65a54661a605de68d3810a4d94f9723ea819b2"
+      },
+      {
+        "name": "GSE342824_gene_panel.json.gz",
+        "local_cache": "tmp/research-destinations-2026-11-10/GSE342824_gene_panel.json.gz",
+        "bytes": 7628,
+        "sha256": "a2fa0af3889bbf529fe8aba76a2f8b96e35c123a916871bc9ea3adfdcad96c3b"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "geo_nucseq",
+      "title": "GSE292469",
+      "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE292469",
+      "source_date": "2026-11-01",
+      "verified_on": "2026-11-10",
+      "notes": "Pinned local primary record inspected; browser fetch unavailable; authors and dataset scope verified from source text."
+    },
+    {
+      "id": "author_code",
+      "title": "Pinned author code",
+      "url": "https://github.com/shahcompbio/egfr_nucseq/tree/c4211458564c92b32c1276badaed2e6731ad1a68",
+      "source_date": null,
+      "verified_on": "2026-11-10",
+      "notes": "Processed-assay distinction documented in existing project source audit."
+    },
+    {
+      "id": "shah",
+      "title": "MSK Shah lab",
+      "url": "https://www.mskcc.org/research-areas/labs/sohrab-shah",
+      "source_date": null,
+      "verified_on": "2026-11-10",
+      "notes": "Current official profile/research page."
+    },
+    {
+      "id": "yu",
+      "title": "MSK Helena Yu",
+      "url": "https://www.mskcc.org/cancer-care/doctors/helena-yu",
+      "source_date": null,
+      "verified_on": "2026-11-10",
+      "notes": "Current official profile."
+    },
+    {
+      "id": "iihg",
+      "title": "IIHG Bioinformatics and Biostatistics",
+      "url": "https://humangenetics.medicine.uiowa.edu/bioinformatics-and-biostatistics-division",
+      "source_date": null,
+      "verified_on": "2026-11-10",
+      "notes": "Current official services."
+    },
+    {
+      "id": "iihg_fees",
+      "title": "IIHG services and pricing",
+      "url": "https://humangenetics.medicine.uiowa.edu/bioinformatics-and-biostatistics-division/bioinformatics-services-and-pricing",
+      "source_date": null,
+      "verified_on": "2026-11-10",
+      "notes": "Off-campus invoicing and single-cell services verified; exact project price not quoted."
+    },
+    {
+      "id": "iihg_form",
+      "title": "IIHG consultation form",
+      "url": "https://humangenetics.medicine.uiowa.edu/form/ask-a-bioinformatician",
+      "source_date": null,
+      "verified_on": "2026-11-10",
+      "notes": "Read only; PI and RAMS fields observed. Not submitted."
+    },
+    {
+      "id": "holden_stats",
+      "title": "Holden Biostatistics Core",
+      "url": "https://holden.uihealthcare.org/research/shared-research-resources/biostatistics-core",
+      "source_date": null,
+      "verified_on": "2026-11-10",
+      "notes": "Official indexed source; direct fetch 403. Serves Holden investigators."
+    },
+    {
+      "id": "smith",
+      "title": "Brian J. Smith",
+      "url": "https://www.public-health.uiowa.edu/people/brian-smith/",
+      "source_date": null,
+      "verified_on": "2026-11-10",
+      "notes": "Official faculty and core-director profile."
+    },
+    {
+      "id": "dupuy",
+      "title": "Adam Dupuy",
+      "url": "https://biomed.medicine.uiowa.edu/people/current-faculty/adam-dupuy",
+      "source_date": null,
+      "verified_on": "2026-11-10",
+      "notes": "Adjacent single-cell BRAF/MAPK-resistance expertise; not verified EGFR specialization."
+    },
+    {
+      "id": "plos_criteria",
+      "title": "PLOS ONE criteria",
+      "url": "https://journals.plos.org/plosone/s/criteria-for-publication",
+      "source_date": null,
+      "verified_on": "2026-11-10",
+      "notes": "Methods and negative/null results within scope if scientifically sound; hypothesis-only paper not suitable."
+    },
+    {
+      "id": "plos_authors",
+      "title": "PLOS authorship",
+      "url": "https://journals.plos.org/plosone/s/authorship",
+      "source_date": null,
+      "verified_on": "2026-11-10",
+      "notes": "Accountability, author consent and corresponding-author ORCID requirements."
+    },
+    {
+      "id": "plos_ai",
+      "title": "PLOS AI policy",
+      "url": "https://journals.plos.org/plosone/s/ethical-publishing-practice",
+      "source_date": null,
+      "verified_on": "2026-11-10",
+      "notes": "Human authors accountable; AI use disclosed; AI cannot be author."
+    },
+    {
+      "id": "plos_data",
+      "title": "PLOS data policy",
+      "url": "https://journals.plos.org/plosone/s/data-availability",
+      "source_date": null,
+      "verified_on": "2026-11-10",
+      "notes": "Data access statement and underlying-data availability required, subject to policy exceptions."
+    },
+    {
+      "id": "plos_code",
+      "title": "PLOS code sharing",
+      "url": "https://journals.plos.org/plosone/s/materials-software-and-code-sharing",
+      "source_date": null,
+      "verified_on": "2026-11-10",
+      "notes": "Underlying author-generated code availability required; current project license choice remains unresolved."
+    },
+    {
+      "id": "plos_fees",
+      "title": "PLOS fees",
+      "url": "https://plos.org/fees/",
+      "source_date": null,
+      "verified_on": "2026-11-10",
+      "notes": "APC payable at acceptance; rates effective at submission. Text rendering omitted journal labels, so exact PLOS ONE amount not treated as conclusively verified. Assistance requested at submission."
+    },
+    {
+      "id": "biorxiv_screen",
+      "title": "bioRxiv screening",
+      "url": "https://connect.biorxiv.org/news/2022/06/13/screening_procedures",
+      "source_date": "2022-06-13",
+      "verified_on": "2026-11-10",
+      "notes": "Biological reanalysis with results can fit; screening applies."
+    },
+    {
+      "id": "biorxiv_ai",
+      "title": "bioRxiv AI and accountability policy",
+      "url": "https://connect.biorxiv.org/news/2026/10/20/approach_to_ai",
+      "source_date": "2026-10-20",
+      "verified_on": "2026-11-10",
+      "notes": "Verifiable human authors with accountable organizational affiliation and human intellectual input required."
+    },
+    {
+      "id": "geo_spatial",
+      "title": "GSE342824",
+      "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE342824",
+      "source_date": "2026-11-01",
+      "verified_on": "2026-11-10",
+      "notes": "Primary full-text record fetched directly from NCBI; browser fetch failed."
+    },
+    {
+      "id": "geo_panel",
+      "title": "GSE342824 deposited panel",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE342nnn/GSE342824/suppl/GSE342824_gene_panel.json.gz",
+      "source_date": null,
+      "verified_on": "2026-11-10",
+      "notes": "Downloaded and parsed locally; original kept under ignored tmp."
+    }
+  ],
+  "limitations": [
+    "No route guarantees acceptance, funding, response or data access.",
+    "No clinical efficacy or cure inference.",
+    "No prospective registration claimed.",
+    "Date-sensitive access, pricing and publication policies require refresh before action."
+  ],
+  "program_findings": {
+    "expression_audit": {
+      "depth_result": "Opposite kit-stratum directions persist after equal-depth thinning; cannot assign a causal fraction to depth.",
+      "joint_expression_result": "Within-patient/depth-bin marginal-preserving shuffles leave additive means invariant while changing joint-distribution diagnostics.",
+      "biological_claim": "No functional tolerant-cell label or resistance mechanism established."
+    },
+    "dynamics_v1": {
+      "status": "Completed synthetic benchmark; negative result retained.",
+      "primary_cases_reaching_80_percent_detection": 0,
+      "primary_cases": 81,
+      "limitation": "Sparse designs do not reliably distinguish the prespecified recovery-memory alternative; parameter values and noise are hypothetical."
+    },
+    "dynamics_v2": {
+      "status": "Completed synthetic conditional precision benchmark.",
+      "contrast": "2 mean(log X(T)) - mean(log X(0)) - mean(log X(2T))",
+      "noise_sd": "sqrt(6 log(1+CV^2)/r)",
+      "test": "Two-sided Gaussian alpha 0.05 under independent common-variance lognormal assay error with known variance.",
+      "example": {
+        "cv": 0.1,
+        "independent_replicates_per_time": 6,
+        "minimum_positive_log_contrast_for_80_percent_power": 0.2794615517171687
+      },
+      "scope": "Curvature tests constant net state growth; time-varying growth or marker retention can exactly mimic the alternative. No clinical timing or dose recommendation.",
+      "needed_followup": "Evaluate existing permitted model/assay for functional state definition, time-specific error, zeros, correlation and label stability before choosing replication."
+    },
+    "local_evidence": [
+      {
+        "path": "research/treatment-discovery/discovery-2026-11-10/depth-simulation/results.json",
+        "sha256": "d2cb0e7a21fac28e3ad9e70d72a045675b73aaacc733c8ece42505ea110be801"
+      },
+      {
+        "path": "research/treatment-discovery/discovery-2026-11-10/coexpression/results.json",
+        "sha256": "108269993a677b2202bc0387e930b5eec848393fbe474d66bab3f9668cc42d84"
+      },
+      {
+        "path": "research/treatment-discovery/discovery-2026-11-10/mechanistic-simulation/results.json",
+        "sha256": "73d82ee1d0e999689fdb4714f8259c0f5a3329f694c9793656ebd1ec7ea28b19"
+      },
+      {
+        "path": "research/treatment-discovery/discovery-2026-11-10/mechanistic-simulation/v2/protocol.json",
+        "sha256": "0a643d27634f4e336a4355d8d685c531089bb2359d8bc5627d8a2ae19949ced0"
+      },
+      {
+        "path": "research/treatment-discovery/discovery-2026-11-10/mechanistic-simulation/v2/results.json",
+        "sha256": "41b51eb1167438813bc5054ab6f4f94d8d522826ff012cd15136362062fae24c"
+      }
+    ]
+  }
+}

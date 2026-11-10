@@ -1,0 +1,599 @@
+{
+  "schema_version": 1,
+  "audit_date": "2026-11-10",
+  "status": "bounded_literature_and_source_code_audit_not_novelty_certification",
+  "scope": "GSE292469 transfer of fixed Maynard17 alveolar score; depth, ambient RNA and gene-program interpretation",
+  "conclusion": "No new biological mechanism or new general method established. A reproducible cohort-specific measurement audit may be useful if tests demonstrate an unresolved effect beyond known artifacts.",
+  "evidence_tiers": {
+    "primary_methods": "Establishes prior art; not direct evidence of the mechanism in GSE292469",
+    "patient_observational": "Association in sampled tumors; not causal treatment effect",
+    "preclinical_intervention": "Perturbation evidence in stated models; not clinical efficacy",
+    "primary_analysis_code": "What code implements; does not prove every deposited output was reproduced",
+    "simulation": "Conditional consequences of explicit assumptions; not patient validation",
+    "hypothesis": "Proposed falsifiable explanation, not a finding"
+  },
+  "source_ledger": [
+    {
+      "id": "BP2021",
+      "title": "Normalization of single-cell RNA-seq counts by log(x + 1) or log(1 + x)",
+      "url": "https://academic.oup.com/bioinformatics/article/37/15/2223/6155989",
+      "doi": "10.1093/bioinformatics/btab085",
+      "version": "2021",
+      "evidence_type": "peer_reviewed_methods",
+      "inspection": "Full-text relevant passages",
+      "finding": "Log-pseudocount expectation and conditioning on positive counts can distort comparisons. This already excludes novelty of the generic log1p/zero-selection artifact.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "OSCA",
+      "title": "Normalization, redux: downsampling instead of scaling",
+      "url": "https://www.bioconductor.org/books/3.19/OSCA.advanced/more-norm.html",
+      "doi": null,
+      "version": "Bioconductor 3.19",
+      "evidence_type": "primary_software_documentation",
+      "inspection": "Full chapter",
+      "finding": "Explicitly demonstrates residual library-size effects after log normalization and downsampling as a sensitivity analysis; notes information loss.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "TOWNES2019",
+      "title": "Feature selection and dimension reduction for single-cell RNA-Seq based on a multinomial model",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31870412/",
+      "doi": "10.1186/s13059-019-1861-6",
+      "version": "2019",
+      "evidence_type": "peer_reviewed_methods",
+      "inspection": "Abstract and primary paper excerpt",
+      "finding": "Multinomial UMI sampling null and normalization-induced false variation are established; such a null is not a new model.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "MAST2015",
+      "title": "MAST: a flexible statistical framework for assessing transcriptional changes and characterizing heterogeneity in single-cell RNA sequencing data",
+      "url": "https://link.springer.com/article/10.1186/s13059-015-0844-5",
+      "doi": "10.1186/s13059-015-0844-5",
+      "version": "2015",
+      "evidence_type": "peer_reviewed_methods",
+      "inspection": "Abstract and methods/results passages",
+      "finding": "Detection versus positive abundance, cellular detection-rate covariates and residual coexpression analyses are established ideas.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "NOUREEN2022",
+      "title": "Signature-scoring methods developed for bulk samples are not adequate for cancer single-cell RNA sequencing data",
+      "url": "https://elifesciences.org/articles/71994",
+      "doi": "10.7554/eLife.71994",
+      "version": "2022",
+      "evidence_type": "peer_reviewed_methods",
+      "inspection": "Full-text benchmarking methods/results",
+      "finding": "Cancer signature benchmarking already uses within-cell downsampling followed by renormalization as a technical null and compares rank-based and expression-based scores. It does not validate the present 17-gene score.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "UCELL2021",
+      "title": "UCell: Robust and scalable single-cell gene signature scoring",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8271111/",
+      "doi": "10.1016/j.csbj.2021.06.043",
+      "version": "2021",
+      "evidence_type": "peer_reviewed_methods",
+      "inspection": "Full-text method/results",
+      "finding": "Within-cell ranks reduce dependence on dataset composition. Composition robustness is not a guarantee of depth invariance.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "UCELL_PARAMS",
+      "title": "Some important parameters for UCell",
+      "url": "https://bioc-release.r-universe.dev/UCell/doc/UCell_parameters.html",
+      "doi": null,
+      "version": "retrieved 2026-11-10",
+      "evidence_type": "primary_software_documentation",
+      "inspection": "maxRank section",
+      "finding": "The authors advise choosing maxRank with regard to detected-gene counts, explicitly acknowledging sparsity sensitivity.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "SOUPX2020",
+      "title": "SoupX removes ambient RNA contamination from droplet-based single-cell RNA sequencing data",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7763177/",
+      "doi": "10.1093/gigascience/giaa151",
+      "version": "2020",
+      "evidence_type": "peer_reviewed_methods",
+      "inspection": "Abstract and relevant method/discussion passages",
+      "finding": "Ambient mixture correction and negative marker/cell controls are established; no-expression assumptions must be defensible.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "LUNG2020",
+      "title": "Single-Nucleus RNA-Sequencing Profiling of Mouse Lung. Reduced Dissociation Bias and Improved Rare Cell-Type Detection Compared with Single-Cell RNA Sequencing",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7790136/",
+      "doi": "10.1165/rcmb.2020-0095MA",
+      "version": "2020",
+      "evidence_type": "peer_reviewed_biological_comparison",
+      "inspection": "Full-text relevant results",
+      "finding": "Healthy mouse lung nuclei show ambient epithelial contamination; SoupX improves many markers but Sftpc is incompletely removed. This is direct lung prior art, not proof of contamination in these human tumors.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "MAYNARD2020",
+      "title": "Therapy-Induced Evolution of Human Lung Cancer Revealed by Single-Cell RNA Sequencing",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7484178/",
+      "doi": "10.1016/j.cell.2020.07.017",
+      "version": "2020",
+      "evidence_type": "peer_reviewed_patient_observational",
+      "inspection": "Project signature source verification and primary paper",
+      "finding": "The 17-gene alveolar signature and residual-state observation are published prior art. Reusing it is external application, not signature discovery.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "ZATZMAN2025",
+      "title": "Complementary modes of resistance to EGFR TKI in lung adenocarcinoma through MAPK activation and cellular plasticity",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12248098/",
+      "doi": "10.1101/2025.05.07.652714",
+      "version": "2025-05-10 version1",
+      "evidence_type": "preprint_patient_observational",
+      "inspection": "Full-text relevant results/methods",
+      "finding": "Original 62-patient preprint reports declining patient-aggregated alveolar/LUAD/MAPK signatures and heterogeneous persister states. It uses UCell and malignant metaprograms, not a demonstrated identical Maynard17 score.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "AUTHOR_CODE",
+      "title": "egfr_nucseq author code",
+      "url": "https://github.com/shahcompbio/egfr_nucseq/tree/c4211458564c92b32c1276badaed2e6731ad1a68",
+      "doi": null,
+      "version": "commit c4211458564c92b32c1276badaed2e6731ad1a68",
+      "evidence_type": "primary_analysis_code",
+      "inspection": "15 key files retrieved; relevant sections inspected",
+      "finding": "Current code uses SoupX-corrected UCell scoring, sample/library integration, specimen-average comparisons, QC plots, and a depth-adjusted gene-level mixed model. Different stages have different adjustments.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "METAPROGRAM",
+      "title": "Malignant alveolar metaprogram referenced in trajectory code",
+      "url": "https://github.com/mjz1/meta_programs_tirosh/blob/f56a579fbcfa7413de83f2f071cd00e5951d37aa/tirosh_mp_patched.txt",
+      "doi": null,
+      "version": "commit f56a579fbcfa7413de83f2f071cd00e5951d37aa",
+      "evidence_type": "primary_analysis_code",
+      "inspection": "Downloaded table parsed; 50 alveolar genes",
+      "finding": "This trajectory-input set overlaps 9 of 17 Maynard genes. It is not proof of the exact contents of the separate current 67-metaprogram score CSV.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "HOPX2025",
+      "title": "Epigenomic analysis identifies DTP subpopulation using HOPX to develop targeted therapy resistance in lung adenocarcinoma",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12063144/",
+      "doi": "10.1016/j.isci.2025.112387",
+      "version": "2025",
+      "evidence_type": "peer_reviewed_preclinical_intervention",
+      "inspection": "Relevant results and limitations",
+      "finding": "HOPX-associated persister heterogeneity, transient lineage-gene induction and delayed regrowth after HOPX deletion are already reported in treated models; this is not a new target proposal.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "ASCL12024",
+      "title": "ASCL1 Drives Tolerance to Osimertinib in EGFR Mutant Lung Cancer in Permissive Cellular Contexts",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11142404/",
+      "doi": "10.1158/0008-5472.CAN-23-0438",
+      "version": "2024",
+      "evidence_type": "peer_reviewed_preclinical_intervention",
+      "inspection": "Relevant methods/results",
+      "finding": "ASCL1-dependent tolerance is context-dependent in cell and patient-derived models. Generic plasticity or universal ASCL1 dependence would rebrand or overstate prior results.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "FAKYAP2024",
+      "title": "Focal adhesion kinase-YAP signaling axis drives drug-tolerant persister cells and residual disease in lung cancer",
+      "url": "https://www.nature.com/articles/s41467-024-47423-0",
+      "doi": "10.1038/s41467-024-47423-0",
+      "version": "2024",
+      "evidence_type": "peer_reviewed_preclinical_intervention",
+      "inspection": "Abstract and relevant results",
+      "finding": "FAK-YAP promotion of persistence has direct model-based prior evidence. It is not a new mechanism inferred from the 17-gene score.",
+      "accessed": "2026-11-10"
+    }
+  ],
+  "search_log": [
+    {
+      "date": "2026-11-10",
+      "method": "web_search",
+      "query": "\"GSE292469\" \"Maynard\""
+    },
+    {
+      "date": "2026-11-10",
+      "method": "web_search",
+      "query": "\"Coupled MAPK output\" \"2026\""
+    },
+    {
+      "date": "2026-11-10",
+      "method": "web_search",
+      "query": "\"Feature selection and dimension reduction\" \"multinomial model\" Townes"
+    },
+    {
+      "date": "2026-11-10",
+      "method": "web_search",
+      "query": "\"MAST\" \"hurdle\" \"Finak\" 2015"
+    },
+    {
+      "date": "2026-11-10",
+      "method": "web_search",
+      "query": "\"SoupX removes ambient RNA contamination\" Young Behjati 2020"
+    },
+    {
+      "date": "2026-11-10",
+      "method": "web_search",
+      "query": "\"Normalization of single-cell RNA-seq counts by log(x + 1)\""
+    },
+    {
+      "date": "2026-11-10",
+      "method": "web_search",
+      "query": "\"single nucleus\" lung \"ambient\" \"Sftpc\" Koenitzer"
+    },
+    {
+      "date": "2026-11-10",
+      "method": "web_search",
+      "query": "\"Hallmarks of transcriptional intratumour heterogeneity\" \"alveolar\""
+    },
+    {
+      "date": "2026-11-10",
+      "method": "web_search",
+      "query": "\"UCell\" \"maxRank\" \"800\""
+    },
+    {
+      "date": "2026-11-10",
+      "method": "web_search",
+      "query": "\"ASCL1 Drives Tolerance to Osimertinib\" permissive"
+    },
+    {
+      "date": "2026-11-10",
+      "method": "web_search",
+      "query": "\"Focal adhesion kinase-YAP signaling axis drives\""
+    },
+    {
+      "date": "2026-11-10",
+      "method": "web_search",
+      "query": "Tirosh 2025 \"67\" \"metaprograms\" cancer"
+    },
+    {
+      "date": "2026-11-10",
+      "method": "web_search",
+      "query": "\"mp44_alveolar\""
+    },
+    {
+      "date": "2026-11-10",
+      "method": "web_search",
+      "query": "\"Epigenomic analysis identifies DTP subpopulation using HOPX\""
+    },
+    {
+      "date": "2026-11-10",
+      "method": "web_search",
+      "query": "\"single cell\" \"gene signature\" \"sequencing depth\" bias UCell"
+    },
+    {
+      "date": "2026-11-10",
+      "method": "web_search",
+      "query": "\"alveolar\" \"GSE292469\" kit"
+    },
+    {
+      "date": "2026-11-10",
+      "method": "web_search",
+      "query": "\"GSE292469\" \"depth\""
+    },
+    {
+      "date": "2026-11-10",
+      "method": "web_search",
+      "query": "\"GSE292469\" \"v4\""
+    }
+  ],
+  "search_limits": [
+    "Targeted primary-source search, not systematic review or patent search.",
+    "A no-result query is not proof that no one has studied the idea.",
+    "Original 2025 preprint and expanded 2026 release/current code are different source versions.",
+    "No complete current revised manuscript or deposited67-metaprogram gene table was inspected."
+  ],
+  "author_code": {
+    "repository": "shahcompbio/egfr_nucseq",
+    "commit": "c4211458564c92b32c1276badaed2e6731ad1a68",
+    "files": [
+      {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/shahcompbio/egfr_nucseq/c4211458564c92b32c1276badaed2e6731ad1a68/README.md",
+        "bytes": 3772,
+        "sha256": "78afe6ea9ac2ea8604d674b59793eccdd6d7d02c9109ab76ae8579600406fae1"
+      },
+      {
+        "path": "R/markers.R",
+        "url": "https://raw.githubusercontent.com/shahcompbio/egfr_nucseq/c4211458564c92b32c1276badaed2e6731ad1a68/R/markers.R",
+        "bytes": 4214,
+        "sha256": "de20eae624ebf72f09bbfd8c2d028bd2621a62f2c1789cbccf58e2a7fd72e1a5"
+      },
+      {
+        "path": "code/00_download_convert.qmd",
+        "url": "https://raw.githubusercontent.com/shahcompbio/egfr_nucseq/c4211458564c92b32c1276badaed2e6731ad1a68/code/00_download_convert.qmd",
+        "bytes": 5446,
+        "sha256": "0ef4b6ca5ca4c00b057d61a389a04b53ad501049fb336321dae19b863c76baee"
+      },
+      {
+        "path": "code/01_cohort_metadata.qmd",
+        "url": "https://raw.githubusercontent.com/shahcompbio/egfr_nucseq/c4211458564c92b32c1276badaed2e6731ad1a68/code/01_cohort_metadata.qmd",
+        "bytes": 28031,
+        "sha256": "7aa2c7240fb4be0cc887f40464daf7802e1ef4e3192fb3b77b42dd9d65f1a402"
+      },
+      {
+        "path": "code/03_soupx.qmd",
+        "url": "https://raw.githubusercontent.com/shahcompbio/egfr_nucseq/c4211458564c92b32c1276badaed2e6731ad1a68/code/03_soupx.qmd",
+        "bytes": 11477,
+        "sha256": "86f216cc3d6818f168e30a745db704cb3c3a09c656f9fefdd7cb218f312bd41e"
+      },
+      {
+        "path": "code/12_ucell_cohort_ranks.qmd",
+        "url": "https://raw.githubusercontent.com/shahcompbio/egfr_nucseq/c4211458564c92b32c1276badaed2e6731ad1a68/code/12_ucell_cohort_ranks.qmd",
+        "bytes": 1719,
+        "sha256": "fb046a7049e40bd180897b3b8698c4ae27bbc19feab1f2980d2cdfe23f622f68"
+      },
+      {
+        "path": "code/13b_lung_lineage_genes.qmd",
+        "url": "https://raw.githubusercontent.com/shahcompbio/egfr_nucseq/c4211458564c92b32c1276badaed2e6731ad1a68/code/13b_lung_lineage_genes.qmd",
+        "bytes": 2026,
+        "sha256": "16d944208f6b3b32b0918c35e0afd3ce78d5e366b26df12e5b5eb9e589c7d973"
+      },
+      {
+        "path": "code/14_score_signatures_ucell.qmd",
+        "url": "https://raw.githubusercontent.com/shahcompbio/egfr_nucseq/c4211458564c92b32c1276badaed2e6731ad1a68/code/14_score_signatures_ucell.qmd",
+        "bytes": 6335,
+        "sha256": "804032d96ed2e41544d1d1f466c4d20e6776fd9b8b7bd0c51208a61d042fc303"
+      },
+      {
+        "path": "code/91_figure3.qmd",
+        "url": "https://raw.githubusercontent.com/shahcompbio/egfr_nucseq/c4211458564c92b32c1276badaed2e6731ad1a68/code/91_figure3.qmd",
+        "bytes": 51079,
+        "sha256": "d2e92dbc4de71217738aac0da7b6a405edde5bb90ec30df0cf673ffbed7d9853"
+      },
+      {
+        "path": "code/92_figure4.qmd",
+        "url": "https://raw.githubusercontent.com/shahcompbio/egfr_nucseq/c4211458564c92b32c1276badaed2e6731ad1a68/code/92_figure4.qmd",
+        "bytes": 46610,
+        "sha256": "00e4a8073468e0f4a85c3ac2adab309eec2964cba698ba3dc156c716a8ad57f2"
+      },
+      {
+        "path": "code/23_fit_gams.qmd",
+        "url": "https://raw.githubusercontent.com/shahcompbio/egfr_nucseq/c4211458564c92b32c1276badaed2e6731ad1a68/code/23_fit_gams.qmd",
+        "bytes": 14212,
+        "sha256": "3051517935da8a15758dbd361d15f07b7123c6e4f99473625361a37e03a80a12"
+      },
+      {
+        "path": "code/90_figure2.qmd",
+        "url": "https://raw.githubusercontent.com/shahcompbio/egfr_nucseq/c4211458564c92b32c1276badaed2e6731ad1a68/code/90_figure2.qmd",
+        "bytes": 21138,
+        "sha256": "7988f8a056b2e96f4d3898fe7fe7bcbc70023bdb086fd68ee575c4f4f7ae8198"
+      },
+      {
+        "path": "code/05_sketch_integration.qmd",
+        "url": "https://raw.githubusercontent.com/shahcompbio/egfr_nucseq/c4211458564c92b32c1276badaed2e6731ad1a68/code/05_sketch_integration.qmd",
+        "bytes": 4124,
+        "sha256": "c6d61a95c70842937a3a94bf77286a74b64f52ececb6442d0292bfd085aa05ae"
+      },
+      {
+        "path": "R/utils.R",
+        "url": "https://raw.githubusercontent.com/shahcompbio/egfr_nucseq/c4211458564c92b32c1276badaed2e6731ad1a68/R/utils.R",
+        "bytes": 30803,
+        "sha256": "8791af383459a057cbb8f9fa157123699a31f53a15d1c494702673392699653f"
+      },
+      {
+        "path": "code/22_run_slingshot.qmd",
+        "url": "https://raw.githubusercontent.com/shahcompbio/egfr_nucseq/c4211458564c92b32c1276badaed2e6731ad1a68/code/22_run_slingshot.qmd",
+        "bytes": 11574,
+        "sha256": "c1d7dacdf8f59dcce5a3017b9d10486376a0f27e10147d853b587de8798c928e"
+      }
+    ],
+    "queries": [
+      "Maynard",
+      "mp44",
+      "alveolar",
+      "v3.1",
+      "v4",
+      "chemistry",
+      "kit",
+      "depth",
+      "nCount",
+      "SoupX",
+      "UCell",
+      "batch"
+    ],
+    "key_observations": [
+      "12: UCell ranks computed on SoupX-corrected counts.",
+      "14: current67 malignant metaprograms loaded from an untracked CSV; missing_genes=skip used for pathway scoring.",
+      "91: mp44_alveolar and separate AT1/AT2 scores; specimen-level mean comparison uses Wilcoxon and global BH.",
+      "91: gene-level mixed model includes log(nCount_RNA), treatment state and sample random effects; S8B plots quality metrics.",
+      "05: RPCA integration by sample/library on corrected assay; this does not imply signature means are kit-adjusted."
+    ],
+    "negative_search": "No explicit Maynard17 kit-stratified reversal/depth-thinning analysis found in inspected key files; not a repository-wide proof of absence."
+  },
+  "trajectory_signature": {
+    "url": "https://github.com/mjz1/meta_programs_tirosh/blob/f56a579fbcfa7413de83f2f071cd00e5951d37aa/tirosh_mp_patched.txt",
+    "sha256": "099176b6646fede5a1942908a432ac3681b6ffc8542c26ff74d116d5a88feefd",
+    "n": 50,
+    "maynard17_overlap": [
+      "ABCA3",
+      "HOPX",
+      "NAPSA",
+      "PGC",
+      "SCGB3A1",
+      "SFTA3",
+      "SFTPB",
+      "SFTPC",
+      "SFTPD"
+    ],
+    "boundary": "Trajectory source table only; do not equate with current mp44 score table without direct verification."
+  },
+  "hypotheses": [
+    {
+      "id": "H1",
+      "title": "Finite sampling explains part of the kit-dependent mean-score reversal",
+      "status": "Executed in separate depth-simulation results; causal attribution remains unresolved.",
+      "novelty": "Established mechanism; potentially new dataset-specific quantitative application",
+      "mechanism": "With fixed true transcript fractions, depth changes detection and the expectation of the concave log1p score.",
+      "predictions": [
+        "Technical-null log scores change across the observed depth distribution although the expected 17-gene UMI fraction is constant.",
+        "Repeated depth thinning attenuates a depth-driven difference; large residual differences in count fractions reject depth-only sufficiency."
+      ],
+      "falsifiers": [
+        "Observed differences exceed the depth-only null over reasonable abundance and heterogeneity models.",
+        "Differences persist across overlapping-depth patients and nonlog count fractions."
+      ],
+      "controls": [
+        "Freeze threshold grid, score, exclusions and patient weights before testing.",
+        "Inject a known program shift to quantify power lost by thinning.",
+        "Bootstrap patients; thinning replicates are technical replicates."
+      ],
+      "limits": [
+        "No proof that real data satisfy multinomial assumptions.",
+        "Capture-efficiency changes, composition, ambient RNA and stage/site confounding remain.",
+        "Total UMI can itself contain biological variation; standardizing it changes the estimand."
+      ],
+      "prior_art": [
+        "BP2021",
+        "OSCA",
+        "TOWNES2019",
+        "NOUREEN2022"
+      ]
+    },
+    {
+      "id": "H2",
+      "title": "Ambient alveolar RNA interacts with low endogenous nuclear RNA",
+      "status": "Proposed only; ambient-mixture simulation not executed.",
+      "novelty": "Known mixture mechanism; potentially useful cohort-specific falsification",
+      "mechanism": "Fixed or varying ambient molecules can have a larger fraction in nuclei with fewer endogenous molecules; uniform thinning alone does not recreate that fraction change.",
+      "predictions": [
+        "Surfactant-marker contributions covary with per-library ambient estimates and appear in justified negative cell types.",
+        "A mixture-only simulation predicts the relevant direction and magnitude; corrected/raw comparisons reduce the surfactant component while independent lineage anchors behave differently."
+      ],
+      "falsifiers": [
+        "No relevant signal in validated negatives or empty-droplet profiles.",
+        "Plausible ambient fractions cannot reproduce the observed contrast.",
+        "Differences survive correction and orthogonal same-cell localization with coherent lineage anchors."
+      ],
+      "controls": [
+        "Use SFTPC/SFTPB/SFTPD-specific justified negatives, not the whole 17-gene set as a negative signature.",
+        "Reject doublets/misannotation and separate library-level background from tumor biology.",
+        "Show both constant-contamination-fraction and fixed-ambient-molecule scenarios."
+      ],
+      "limits": [
+        "A filtered matrix alone cannot identify the true ambient profile.",
+        "SoupX correction is model-dependent and does not prove truth.",
+        "Immune cells are imperfect negatives; broad genes including LAMP1 are not alveolar-specific."
+      ],
+      "prior_art": [
+        "SOUPX2020",
+        "LUNG2020",
+        "AUTHOR_CODE"
+      ]
+    },
+    {
+      "id": "H3",
+      "title": "The same mean score can conceal different within-cell lineage coherence",
+      "status": "Executed in separately frozen coexpression diagnostic; joint dependence is not causal program validation.",
+      "novelty": "Established decomposition/permutation concepts; potentially underexplored exact17-gene transfer audit",
+      "mechanism": "An additive mean score ignores cross-gene dependence. Equal total signature abundance can also produce different log scores when distributed differently across genes.",
+      "predictions": [
+        "Within patient and narrow depth strata, cross-gene permutations preserve per-gene marginals and aggregate mean score but remove coordinated expression.",
+        "Observed multi-anchor co-detection or residual covariance exceeds a calibrated sampling null if a coherent lineage program is present.",
+        "Means, fraction of coherent cells and surfactant contribution can disagree."
+      ],
+      "falsifiers": [
+        "Joint marker behavior is reproduced by depth/ambient/marginal-matched nulls.",
+        "Apparent coherence disappears after doublet controls or is equally present in inappropriate negative cells."
+      ],
+      "controls": [
+        "Freeze biologically justified groups independently of current group differences.",
+        "Do not permute unconditioned across patients or depths.",
+        "Use an 18-category multinomial model for 17 genes plus other to preserve count competition; stratified marginal permutations alone need not produce valid total-count vectors.",
+        "Include injected coordinated-state positive controls and unrelated abundance-matched marker sets."
+      ],
+      "limits": [
+        "Gene covariance cannot alter expected additive mean score when gene marginals are held fixed.",
+        "Coexpression is not causal dependency, and failure to detect it in sparse nuclei is not evidence of absence.",
+        "No threshold selected on current outcomes can be called validated."
+      ],
+      "prior_art": [
+        "MAST2015",
+        "MAYNARD2020",
+        "ZATZMAN2025",
+        "HOPX2025"
+      ]
+    }
+  ],
+  "recommended_claim": "We tested the sensitivity of a published alveolar signature to finite UMI sampling and within-cell gene coherence in a recently expanded, unmatched lung-cancer cohort; ambient-mixture explanations remain to be tested.",
+  "prohibited_claims": [
+    "New cancer mechanism proved",
+    "New cure or clinical target identified",
+    "Authors ignored sequencing depth",
+    "All alveolar signatures are equivalent",
+    "Rank-based scores eliminate all depth effects",
+    "Covariance alone explains a mean additive-score reversal",
+    "Correction or downsampling identifies the causal treatment effect"
+  ],
+  "mathematical_constraints": [
+    "For fixed per-gene marginal distributions, covariance cannot alter the expected additive mean-log score.",
+    "A signature UMI fraction is conditionally mean-unbiased under fixed-composition multinomial sampling; real assays need not obey that null.",
+    "Count-fraction and mean-log comparisons are different estimands; disagreement alone does not identify which is biologically true."
+  ],
+  "execution_status_update_2026_11_10": {
+    "finite_UMI_sampling": "Executed by the separate depth simulation; see its results.",
+    "within_cell_gene_coherence": "Executed in coexpression/results.json under its separately frozen protocol.",
+    "ambient_mixture": "Proposed only; no ambient-mixture simulation executed."
+  },
+  "curvature_design_followup": {
+    "date": "2026-11-10",
+    "review": "mechanistic-simulation/v2/independent-review.md",
+    "verdict": "General log-growth lag detection, curvature-based identifiability and state-switching experiment design are known. Exact three-point illustration novelty unestablished.",
+    "sources": [
+      {
+        "id": "HARRIS2016",
+        "title": "An unbiased metric of antiproliferative drug effect in vitro",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4887341/",
+        "doi": "10.1038/nmeth.3852",
+        "evidence": "Peer-reviewed primary methods/experimental paper",
+        "inspection": "Relevant full-text model and lag passages",
+        "overlap": "Log-growth slopes, transient drug effects and two-state kinetics precede this toy contrast."
+      },
+      {
+        "id": "GUNNARSSON2023",
+        "title": "Statistical inference of the rates of cell proliferation and phenotypic switching in cancer",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10372878/",
+        "doi": "10.1016/j.jtbi.2023.111497",
+        "evidence": "Peer-reviewed primary mathematical/statistical paper",
+        "inspection": "Full-text structural-identifiability sections and Appendix G.2, retrieved through PMC report=xml",
+        "overlap": "Derivatives, curvature, counts versus fractions and replicate/timepoint design are established; its curvature result is not this exact log-state contrast."
+      },
+      {
+        "id": "WU2025",
+        "title": "A statistical framework for detecting therapy-induced resistance from drug screens",
+        "url": "https://www.nature.com/articles/s41540-025-00560-8",
+        "doi": "10.1038/s41540-025-00560-8",
+        "evidence": "Peer-reviewed primary methods paper with simulated/in-vitro validation",
+        "inspection": "Primary indexed full-text methods and results; direct publisher request failed",
+        "overlap": "Richer bulk-count models infer plasticity and include delayed drug effects; bulk inference is not generally impossible."
+      }
+    ],
+    "searches": [
+      "cancer persister three time points log curvature growth rate delayed phenotypic switching",
+      "Gunnarsson \"curvature\" \"10372878\"",
+      "\"drug tolerant\" \"log\" \"curvature\"",
+      "\"DIP rate\" Harris 2016 transient response",
+      "\"Statistical inference of the rates\" \"curvatures\"",
+      "\"Statistical inference\" \"G.2\" \"switching\"",
+      "Harris 2016 \"An unbiased metric\" drug-induced proliferation rate",
+      "\"three\" \"time points\" \"log\" \"drug-tolerant\" curvature",
+      "\"Gunnarsson\" \"curvatures\" cancer",
+      "\"Statistical inference of the rates of cell proliferation\" \"Appendix G\"",
+      "\"A statistical framework for detecting therapy-induced resistance\"",
+      "\"PMC10372878\" \"curvatures\"",
+      "\"PMC10372878\" \"G.2\"",
+      "\"Gunnarsson\" \"cell number data\" \"second\"",
+      "\"Statistical inference of the rates\" \"replicates\" \"timepoints\"",
+      "\"three-point\" \"curvature\" cancer growth",
+      "\"three time points\" \"persister\" \"log\"",
+      "\"log-curvature\" \"cancer\"",
+      "\"three-point\" \"growth\" \"phenotypic\""
+    ],
+    "separate_review_only_result": "Estimated common variance raises the10%CV,r3 minimum80% contrast from.395218 to.474967 under independent equal-logvariance Gaussian replicate wells."
+  }
+}

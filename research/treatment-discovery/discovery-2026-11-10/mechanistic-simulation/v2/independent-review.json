@@ -1,0 +1,256 @@
+{
+  "version": 1,
+  "reviewed_utc": "2026-11-10T18:38:58.985879+00:00",
+  "verdict": "Computations and derivations pass under explicit assumptions; scientific novelty and biological specificity unestablished. Bulk comparison is limited to a conservative scalar envelope procedure.",
+  "review_type": "Independent agent computational/literature review, not external scientific peer review or biological validation.",
+  "reviewed_files": {
+    "protocol_sha256": "0a643d27634f4e336a4355d8d685c531089bb2359d8bc5627d8a2ae19949ced0",
+    "results_sha256": "41b51eb1167438813bc5054ab6f4f94d8d522826ff012cd15136362062fae24c",
+    "script_sha256": "d29a519b8dfab5cc5673431257030d2b2be487bad489ab5d54a9fd2f0493a736",
+    "README_sha256": "4149ad7dc0d835e398dfc04dca1f5c732a69defd6ef3ce3d1124bc6ad3ec80d3"
+  },
+  "review_only_checker": "scripts/check_egfr_curvature_design.py",
+  "checker_sha256": "cb928aa702a23692854751a7e711e0bac55940f23a88db83496800ff70f2f1a1",
+  "numerical_checks": {
+    "reviewer_method": "Independent derivation and numerical checks; simulator functions not imported",
+    "checker_sha256": "cb928aa702a23692854751a7e711e0bac55940f23a88db83496800ff70f2f1a1",
+    "reviewed_results_sha256": "41b51eb1167438813bc5054ab6f4f94d8d522826ff012cd15136362062fae24c",
+    "reviewed_protocol_sha256": "0a643d27634f4e336a4355d8d685c531089bb2359d8bc5627d8a2ae19949ced0",
+    "reviewed_script_sha256": "d29a519b8dfab5cc5673431257030d2b2be487bad489ab5d54a9fd2f0493a736",
+    "environment": {
+      "numpy": "2.3.5",
+      "scipy": "1.16.3"
+    },
+    "standardized_delta80": 2.8015817870135784,
+    "max_threshold_absolute_error": 5.861977570020827e-14,
+    "quadrature_unique_alternative_cases": 243,
+    "analytic_power_rows_checked": 2916,
+    "max_state_contrast_error": 9.992007221626409e-16,
+    "max_bulk_contrast_error": 1.8231910425825504e-10,
+    "max_all_alternative_analytic_power_error": 7.068993133907409e-11,
+    "max_null_matrix_exponential_error": 3.1530333899354446e-14,
+    "continuous_bulk_minima_numerical_check": {
+      "0.5": {
+        "optimized_min": -0.13014539137365,
+        "parameters_f_gP_ratio_b": [
+          0.8999999999996797,
+          3.422262473407045e-13,
+          1.5999999999989178
+        ],
+        "grid_min": -0.13014539137375863,
+        "grid_minus_optimized_min": -1.0863532295957157e-13,
+        "optimizer_success": true
+      },
+      "1": {
+        "optimized_min": -0.27766636528046584,
+        "parameters_f_gP_ratio_b": [
+          0.8999999999998094,
+          4.4170223034711853e-13,
+          0.8306891435404105
+        ],
+        "grid_min": -0.27766631821042487,
+        "grid_minus_optimized_min": 4.7070040976038285e-08,
+        "optimizer_success": true
+      },
+      "2": {
+        "optimized_min": -0.6082486563266307,
+        "parameters_f_gP_ratio_b": [
+          0.8999999999999916,
+          5.5344617777564054e-14,
+          0.23805561785157647
+        ],
+        "grid_min": -0.6082432682864478,
+        "grid_minus_optimized_min": 5.388040182907616e-06,
+        "optimizer_success": true
+      }
+    },
+    "independently_counted_80_percent_alternatives": {
+      "absolute_state": 621,
+      "bulk": 0
+    },
+    "minimum_assumed_contrast_noise_sd": 0.03533327184529618,
+    "bulk_comparator_overlap": {
+      "unique_alternative_window_cases": 243,
+      "noiseless_contrasts_inside_envelope": 242,
+      "noiseless_contrasts_outside_envelope": 1,
+      "minimum_signed_distance_to_envelope_boundary": -0.004066486736628461,
+      "maximum_bulk_analytic_power": 0.037918610571104946
+    },
+    "optional_unknown_variance_sensitivity_not_original_simulation": {
+      "model": "Independent Gaussian log errors; common variance estimated from within-time independent wells. Pooled variance df=3(r-1); noncentral-t power computed by normal/chi-square quadrature.",
+      "r1": "Variance cannot be estimated from within-time replicates when r=1.",
+      "cv_for_comparison": 0.1,
+      "results": [
+        {
+          "replicates_per_time": 3,
+          "residual_df": 6,
+          "critical_two_sided_t": 2.4469118511449692,
+          "minimum_contrast_80_percent_if_common_variance_estimated_within_times": 0.4749668703458785,
+          "verified_power": 0.8000000000000007,
+          "null_rate": 0.050000000000003306
+        },
+        {
+          "replicates_per_time": 6,
+          "residual_df": 15,
+          "critical_two_sided_t": 2.131449545559323,
+          "minimum_contrast_80_percent_if_common_variance_estimated_within_times": 0.29904082464455145,
+          "verified_power": 0.7999999999999999,
+          "null_rate": 0.05000000000004276
+        },
+        {
+          "replicates_per_time": 12,
+          "residual_df": 33,
+          "critical_two_sided_t": 2.034515297449338,
+          "minimum_contrast_80_percent_if_common_variance_estimated_within_times": 0.20359779573597464,
+          "verified_power": 0.8000000000000015,
+          "null_rate": 0.050000000000000086
+        }
+      ]
+    },
+    "all_computational_checks_passed": true
+  },
+  "derivations": {
+    "contrast": "C=T*(average log-growth slope over first interval minus average slope over second); it is a negative second finite difference.",
+    "recovery_model": "Integrate Pprime/P=gP-b_inf*(1-exp(-t/tau)); constant and linear terms cancel, leaving b_inf*tau*(1-exp(-T/tau))^2.",
+    "known_variance": "With independent common Gaussian log errors sigma^2=log(1+CV^2), variance of contrast is(1+4+1)*sigma^2/r. Common mean-log bias cancels.",
+    "unknown_variance": "Pooled within-time residual variance has3(r-1) degrees of freedom and is independent of the mean contrast under Gaussian errors. The standardized contrast is noncentral-t under alternatives.",
+    "bulk_geometry": "For constant rates with gP<=gS, N(t)=(1-w)*exp(gS*t)+w*exp((gP-b)*t), where w=f0*(gS-gP)/(gS-gP+b). Positive mixture implies convex logN and nonpositive C_N; degeneracy gP=gS,b=0 has C_N=0."
+  },
+  "nonblocking_findings": [
+    {
+      "id": "R1",
+      "topic": "Known versus estimated variance",
+      "assessment": "Known-variance80% thresholds are correct but optimistic if precision must be estimated from few replicate wells. The separate reviewer sensitivity givesC=.47496687 for10%CV andr3, versus .39521832 with known variance; all assumptions remain idealized."
+    },
+    {
+      "id": "R2",
+      "topic": "Bulk comparator",
+      "assessment": "242/243 unique alternatives have their noiseless bulk contrast inside the constant-rate envelope; one exceeds its lower edge by only.00406649. Thus low bulk power is specific to this scalar summary and broad nuisance envelope, not a universal result about bulk data."
+    },
+    {
+      "id": "R3",
+      "topic": "Finite grid",
+      "assessment": "Continuous numerical minimization finds lower-envelope gaps up to5.38804e-6, versus smallest assumed contrastSD .0353333. Numerically negligible here; finite-grid and64-heldout checks are not a proof of uniform continuous-null error control."
+    },
+    {
+      "id": "R4",
+      "topic": "Specificity",
+      "assessment": "Changing net proliferation, label retention, or state re-entry can curve logP without the proposed recovery mechanism. MoreP-only measurements do not distinguish exact equivalent trajectories."
+    },
+    {
+      "id": "R5",
+      "topic": "Observation assumptions",
+      "assessment": "Independent equal-variance Gaussian log errors, validated direct state abundance, no zeros and no biological replicate heterogeneity are stronger than ordinary experimental guarantees. For correlated errors usew-transposeSigmaw; average logs and log-of-average differ."
+    }
+  ],
+  "primary_literature": [
+    {
+      "id": "HARRIS2016",
+      "title": "An unbiased metric of antiproliferative drug effect in vitro",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4887341/",
+      "doi": "10.1038/nmeth.3852",
+      "evidence": "Peer-reviewed primary methods/experimental paper",
+      "inspection": "Relevant full-text model and lag passages",
+      "overlap": "Log-growth slopes, transient drug effects and two-state kinetics precede this toy contrast."
+    },
+    {
+      "id": "GUNNARSSON2023",
+      "title": "Statistical inference of the rates of cell proliferation and phenotypic switching in cancer",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10372878/",
+      "doi": "10.1016/j.jtbi.2023.111497",
+      "evidence": "Peer-reviewed primary mathematical/statistical paper",
+      "inspection": "Full-text structural-identifiability sections and Appendix G.2, retrieved through PMC report=xml",
+      "overlap": "Derivatives, curvature, counts versus fractions and replicate/timepoint design are established; its curvature result is not this exact log-state contrast."
+    },
+    {
+      "id": "WU2025",
+      "title": "A statistical framework for detecting therapy-induced resistance from drug screens",
+      "url": "https://www.nature.com/articles/s41540-025-00560-8",
+      "doi": "10.1038/s41540-025-00560-8",
+      "evidence": "Peer-reviewed primary methods paper with simulated/in-vitro validation",
+      "inspection": "Primary indexed full-text methods and results; direct publisher request failed",
+      "overlap": "Richer bulk-count models infer plasticity and include delayed drug effects; bulk inference is not generally impossible."
+    }
+  ],
+  "search_log": [
+    {
+      "date": "2026-11-10",
+      "query": "cancer persister three time points log curvature growth rate delayed phenotypic switching"
+    },
+    {
+      "date": "2026-11-10",
+      "query": "Gunnarsson \"curvature\" \"10372878\""
+    },
+    {
+      "date": "2026-11-10",
+      "query": "\"drug tolerant\" \"log\" \"curvature\""
+    },
+    {
+      "date": "2026-11-10",
+      "query": "\"DIP rate\" Harris 2016 transient response"
+    },
+    {
+      "date": "2026-11-10",
+      "query": "\"Statistical inference of the rates\" \"curvatures\""
+    },
+    {
+      "date": "2026-11-10",
+      "query": "\"Statistical inference\" \"G.2\" \"switching\""
+    },
+    {
+      "date": "2026-11-10",
+      "query": "Harris 2016 \"An unbiased metric\" drug-induced proliferation rate"
+    },
+    {
+      "date": "2026-11-10",
+      "query": "\"three\" \"time points\" \"log\" \"drug-tolerant\" curvature"
+    },
+    {
+      "date": "2026-11-10",
+      "query": "\"Gunnarsson\" \"curvatures\" cancer"
+    },
+    {
+      "date": "2026-11-10",
+      "query": "\"Statistical inference of the rates of cell proliferation\" \"Appendix G\""
+    },
+    {
+      "date": "2026-11-10",
+      "query": "\"A statistical framework for detecting therapy-induced resistance\""
+    },
+    {
+      "date": "2026-11-10",
+      "query": "\"PMC10372878\" \"curvatures\""
+    },
+    {
+      "date": "2026-11-10",
+      "query": "\"PMC10372878\" \"G.2\""
+    },
+    {
+      "date": "2026-11-10",
+      "query": "\"Gunnarsson\" \"cell number data\" \"second\""
+    },
+    {
+      "date": "2026-11-10",
+      "query": "\"Statistical inference of the rates\" \"replicates\" \"timepoints\""
+    },
+    {
+      "date": "2026-11-10",
+      "query": "\"three-point\" \"curvature\" cancer growth"
+    },
+    {
+      "date": "2026-11-10",
+      "query": "\"three time points\" \"persister\" \"log\""
+    },
+    {
+      "date": "2026-11-10",
+      "query": "\"log-curvature\" \"cancer\""
+    },
+    {
+      "date": "2026-11-10",
+      "query": "\"three-point\" \"growth\" \"phenotypic\""
+    }
+  ],
+  "novelty_verdict": "Prior art already covers log-growth transients, curvature-based identifiability, state-switching inference and experiment design. The exact elementary three-point precision calculation was not located in this bounded search; that absence does not establish novelty. Claim an original implementation and conditional precision illustration only.",
+  "frozen_simulation_changed": false,
+  "new_review_sensitivity_status": "Separately added analytical estimated-variance calculation; not part of frozen v2 simulation and not calibrated to biological data."
+}

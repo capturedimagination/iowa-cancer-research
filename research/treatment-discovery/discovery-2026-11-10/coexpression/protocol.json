@@ -1,0 +1,80 @@
+{
+  "version": 1,
+  "frozen_utc": "2026-11-10T18:29:27.001298+00:00",
+  "status": "Frozen before target-cache loading, coexpression calculations or permutation outcomes; local timestamp, not external preregistration.",
+  "question": "Does the fixed17-gene additive mean signature identify coordinated within-cell expression beyond a patient- and coarse-depth-conditioned independence null?",
+  "study_type": "Exploratory dataset-specific joint-structure diagnostic; permutation principles are established, not a novel method.",
+  "prior_information": "Prior patient mean scores, cohort metadata, depth range, cache shape and root depth-analysis plan were known. No new coexpression variance, joint-detection or permutation outcomes inspected before this freeze.",
+  "input_files": {
+    "cache": "research/treatment-discovery/sources/egfr-resistance-2026-11-10/depth-target-counts.npz",
+    "sidecar": "research/treatment-discovery/sources/egfr-resistance-2026-11-10/depth-target-counts.json",
+    "labels": "research/treatment-discovery/results/gse292469-alveolar-2026-11-10/sample-scores.json"
+  },
+  "input_sha256": {
+    "cache": "dcc28cde0ddd2e91d5c1a40a8355eb3475191cd9dbfcf30742fb9ef803fa5827",
+    "sidecar": "411816a76d7a361a7e051a1704af98d9f1fdc7e9f26a71b6371e7da0b393695f",
+    "labels": "1f2a742f8dc07c53ebd34f44e3387d4a0f033b0814fa45d6b7298b2be144dcf2"
+  },
+  "cohort": "Exactly35 previous primary-eligible LUAD patients:26TN/9MRD;121083 malignant singlet nuclei;MRD2 remains one patient. No new filtering.",
+  "score": "For each nucleus compute17 float64 values log1p(10000*geneUMI/totalUMI), including zeros; per-cell score is their arithmetic mean. Detection is the corresponding value>0.",
+  "bins": {
+    "number": 10,
+    "construction": "Within each patient, sort by totalUMI using independent seeded random tie-breaking, then split sorted positions into10 nearly equal contiguous rank groups with numpy.array_split. Bins are fixed across permutations.",
+    "tie_seed": 20261110031,
+    "limitations": "Depth conditioning is coarse; residual depth variation, ambient RNA, technical quality, biological cell subtypes and gene capture dependence can survive."
+  },
+  "permutation": {
+    "replicates": 100,
+    "seed": 20261110032,
+    "operation": "Independently permute each normalized-gene column within every fixed patient-depth bin. Detection travels with that same normalized value. Preserve every per-gene empirical marginal within each bin; remove cross-gene association conditional on the bin.",
+    "invariants": "Per-patient mean additive score and mean number of detected genes are mathematically invariant; floating-point tolerance1e-12 for means. Per-gene sums are checked every permutation with tolerance1e-11 relative/1e-10 absolute.",
+    "boundary": "Permuted normalized vectors are not synthetic count vectors with valid conserved totalUMI; this is a conditional association diagnostic, not a multinomial molecular mechanism."
+  },
+  "metrics": {
+    "primary": [
+      "Within-patient population variance (ddof0) of the per-cell17-gene mean score",
+      "Within-patient fraction of nuclei detecting at least5 of the17 genes"
+    ],
+    "reported": [
+      "Observed value",
+      "100-null-replicate mean, SD, MonteCarloSE and2.5/50/97.5 percentiles",
+      "Observed minus null mean",
+      "Observed/null variance ratio if denominator positive",
+      "All patient aggregates and null replicate metrics; no cell-level exports"
+    ],
+    "analytic_check": "Calculate exact conditional-null expected variance from weighted within-bin sum of per-gene population variances/17^2 plus between-bin variance of bin mean scores. Calculate exact expected breadth>=5 using the Poisson-binomial distribution of17 within-bin detection proportions. Report MonteCarlo deviations rather than changing method based on them."
+  },
+  "inference": {
+    "unit": "Patient; all35 weighted equally, never nuclei or permutation replicates as independent patients.",
+    "primary_summary": "Mean and median patient-level observed-minus-null differences for both metrics, across all35.",
+    "uncertainty": "10000 patient bootstrap resamples of patient excesses; percentile95% intervals condition on observed patients/annotations/bins and estimated null means. They do not cover confounding or model misspecification.",
+    "bootstrap_seed": 20261110033,
+    "secondary_descriptive": "Summarize observed/null/excess by TN andMRD and by source-implied v3.1/v4; mixed-kitMRD2 remains pooled. State contrasts are descriptive and cannot establish treatment effects.",
+    "p_values": "None; no cell-level tests, individual-patient significance declarations or multiplicity-selected gene findings."
+  },
+  "interpretation_rules": [
+    "Greater observed score variance indicates joint dependence beyond the coarse-conditioned independence reference; it does not establish coordinated regulation or a causal persister state.",
+    "Positive dependence can increase or decrease a thresholded breadth fraction, depending on marginals. A negative>=5 excess does not mean no coherence.",
+    "Covariance cannot shift the expected additive mean when gene marginals are preserved; never claim it explains mean-score reversal.",
+    "A small or null discrepancy does not exclude real programs under sparse measurement.",
+    "Preserve both endpoints, nulls and all patient directions; do not select a favorable patient or assay."
+  ],
+  "validation": [
+    "Verify cache SHA against sidecar and frozen protocol, genes/order/IDs against prior sources, shape, integer/nonnegative counts and counts<=depth.",
+    "Reproduce previous patient score means to1e-12.",
+    "Synthetic all-zero and perfectly coexpressed5-gene fixtures: exact means and detection breadth invariance; independently known analytic null variance and>=5 probability.",
+    "Validate all empirical per-gene marginals by construction and sum checks, plus additive-score/mean-breadth invariance every replicate."
+  ],
+  "prior_art": [
+    "https://link.springer.com/article/10.1186/s13059-015-0844-5",
+    "https://elifesciences.org/articles/71994",
+    "../novelty-audit.md"
+  ],
+  "claims_excluded": [
+    "New biological mechanism",
+    "Clinical target or cure",
+    "Causal treatment effect",
+    "Novel permutation method",
+    "Covariance-induced additive mean shift"
+  ]
+}

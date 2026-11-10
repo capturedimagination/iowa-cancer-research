@@ -1,0 +1,170 @@
+{
+  "version": 1,
+  "frozen_before_simulation": true,
+  "frozen_utc": "2026-11-10T18:22:49.478727+00:00",
+  "question": "Which added readout can distinguish time-dependent recovery of a drug-tolerant state from a constant-rate alternative after allowing the constant-rate model to fit the same early observations?",
+  "scope": "Synthetic experiment-design stress test; no patient data fitting, doses, treatment scheduling, validated biomarker, or new biological mechanism claim.",
+  "hypotheses": {
+    "H0": "Post-stress P-to-S switching has constant rate b, estimated as a nuisance parameter from each virtual experiment.",
+    "H1": "Post-stress exit recovers gradually: b(t)=b_inf*(1-exp(-t/tau)); this is a phenomenological memory alternative, not an established molecular mechanism."
+  },
+  "equations": [
+    "dS/dt=gS*S+b(t)*P",
+    "dP/dt=(gP-b(t))*P",
+    "S(0)=1-f0; P(0)=f0; N=S+P; F=P/N"
+  ],
+  "time_unit": "One hypothetical sensitive-cell doubling time; no conversion to days is justified.",
+  "known_initial_observations": "Both models share exactly the same stress-endpoint N0=1 and F0=f0. These initial values and gS,gP are treated as known in the primary design, an idealization.",
+  "model_parameters": {
+    "gS": "ln(2)",
+    "gP_over_gS": [
+      0,
+      0.5,
+      1.0
+    ],
+    "f0": [
+      0.1,
+      0.5,
+      0.9
+    ],
+    "b_inf": [
+      0.1,
+      0.4,
+      1.0
+    ],
+    "tau": [
+      0.25,
+      1,
+      4
+    ],
+    "source_status": "All numbers are hypothetical sensitivity values, not estimated from papers, Iowa records or GSE292469."
+  },
+  "observation_times": [
+    0.5,
+    2.0
+  ],
+  "designs": {
+    "counts_only": [
+      "log N(0.5)",
+      "log N(2)"
+    ],
+    "early_count_and_fraction": [
+      "log N(0.5)",
+      "F(0.5)"
+    ],
+    "early_count_and_two_fractions": [
+      "log N(0.5)",
+      "F(0.5)",
+      "F(2)"
+    ]
+  },
+  "noise_settings": [
+    {
+      "name": "primary",
+      "burden_cv": 0.1,
+      "phenotype_cells": 200,
+      "symmetric_label_error": 0.05
+    },
+    {
+      "name": "precise",
+      "burden_cv": 0.05,
+      "phenotype_cells": 200,
+      "symmetric_label_error": 0
+    },
+    {
+      "name": "noisy",
+      "burden_cv": 0.2,
+      "phenotype_cells": 50,
+      "symmetric_label_error": 0.05
+    },
+    {
+      "name": "label_error",
+      "burden_cv": 0.1,
+      "phenotype_cells": 200,
+      "symmetric_label_error": 0.15
+    }
+  ],
+  "noise_model": "Independent mean-unbiased lognormal burden errors; independent binomial state counts with known symmetric label error. No demographic or replicate heterogeneity is simulated; power may be optimistic.",
+  "null_fit": "Minimize joint count/binomial deviance over b in a fixed uniform grid from0 to1.6 with321 points; estimate separately in every simulated replicate.",
+  "null_calibration": {
+    "true_b_grid": [
+      0,
+      0.025,
+      0.05,
+      0.1,
+      0.2,
+      0.4,
+      0.8,
+      1.2,
+      1.6
+    ],
+    "replicates_per_true_b": 2000,
+    "critical_value": "Maximum empirical95th-percentile deviance over calibration b-grid, independently for each design/f0/gP/noise combination. This only controls the specified grid and assumptions."
+  },
+  "heldout_null": {
+    "true_b_grid": [
+      0.013,
+      0.077,
+      0.303,
+      0.607,
+      1.403
+    ],
+    "replicates_per_true_b": 2000,
+    "report": "False-positive proportion and binomial Monte Carlo standard error for each case; no claim of uniform mathematical type-I control."
+  },
+  "alternative_power": {
+    "replicates_per_parameter_case": 2000,
+    "report": "Reject-constant-rate frequency, not probability of a biological mechanism."
+  },
+  "seeds": {
+    "null_calibration": 2026111001,
+    "heldout_null": 2026111002,
+    "alternative": 2026111003
+  },
+  "specificity_stress_test": "For every noiseless alternative fit a memoryless model with both b and gP free to the two total-count observations; record whether it mimics both counts, and held-out phenotype/third-time count discrepancies. This is an alternate explanation, not validation.",
+  "controls": [
+    "Constant b solved analytically and compared with ODE integration.",
+    "Equal growth gS=gP makes total N exactly exp(gS*t) regardless of switching; no total-count design can identify memory.",
+    "Vanishing tau converges to constant-b alternative.",
+    "No P population gives no switching-dependent signal.",
+    "Primary false-positive performance must be reported beside power."
+  ],
+  "novelty": "Memory/state-switching models and measurement-based identifiability are established prior art. Novelty of this exact stress-test design is unestablished; useful output is a reproducible quantitative measurement comparison under explicit assumptions.",
+  "prior_art": [
+    {
+      "title": "A chromatin-mediated reversible drug-tolerant state in cancer cell subpopulations",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2851638/",
+      "year": 2010,
+      "role": "Biological reversibility motivation only; rates not transplanted."
+    },
+    {
+      "title": "The role of memory in non-genetic inheritance and its impact on cancer treatment resistance",
+      "url": "https://doi.org/10.1371/journal.pcbi.1009348",
+      "year": 2021,
+      "role": "Prior art for memory and switching models."
+    },
+    {
+      "title": "Statistical inference of the rates of cell proliferation and phenotypic switching in cancer",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10372878/",
+      "year": 2023,
+      "role": "Prior art for counts/fractions, identifiability and experiment design."
+    },
+    {
+      "title": "Transition between cell states of sensitivity reveals molecular vulnerability of drug-tolerant cells",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12673137/",
+      "role": "Prior art for stress-dependent relaxation/memory variables."
+    },
+    {
+      "title": "Sharp transitions between optimal therapy regimes reveal robust dosing strategies against drug-induced persistence",
+      "url": "https://arxiv.org/abs/2611.00295",
+      "year": 2026,
+      "role": "Recent preprint; excludes novelty claim for dose-dependent switching/schedule theory."
+    }
+  ],
+  "specificity_matching_tolerances": {
+    "numerically_exact_max_abs_log_count_error": 1e-06,
+    "practical_one_percent_count_match_max_abs_log_count_error": "log(1.01)"
+  },
+  "design_comparison_limit": "Designs differ in measurement modality and number of readouts; no cost-normalized or universally optimal design claim. State fractions require a validated functional phenotype assay, not merely the17-gene score.",
+  "summary_reporting": "Report all81 parameter cases per noise setting/design, max/min/median power and count of primary cases with at least80percent power; this is descriptive simulation performance, not an empirical biological threshold."
+}

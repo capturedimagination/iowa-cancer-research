@@ -9,6 +9,7 @@ Start future Iowa cancer work with `knowledge/INDEX.md`. It routes questions to 
 - Form A TRI quantities are unknown despite raw zero placeholders. Missing facility-years are not zero. Keep Pounds and Grams separate. Title V ton definition is unconfirmed. AirToxScreen source-group and pollutant decompositions must not be added together.
 - County rates are descriptive and age-adjusted; rounded average annual counts do not supply exact counts or denominators. Do not fit an exact count model from this summary alone.
 - Refresh time-sensitive facts for current questions while preserving dated local snapshots and citing their actual observation periods.
+- For treatment simulations and discovery claims, read `research/treatment-discovery/discovery-2026-11-10/README.md` and the relevant frozen protocol, results and novelty audit. Retain failed hypotheses. Computational review is not scientific peer review; the gene signature is not a validated functional persister-state marker. The project has not established a new cancer mechanism or cure.
 - `scripts/build_knowledge_base.py` rebuilds derived search/data artifacts from saved sources. It does not refresh data or fit a model.
 
 Follow the user's existing preferences, including Brave for personal browsing and the project-folder destination for research outputs.

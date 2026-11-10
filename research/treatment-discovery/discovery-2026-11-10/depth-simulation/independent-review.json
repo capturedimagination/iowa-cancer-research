@@ -1,0 +1,189 @@
+{
+  "reviewed_at_utc": "2026-11-10T18:35:02.617633+00:00",
+  "status": "Independent source, arithmetic and marginal-expectation checks passed",
+  "checker_sha256": "6d58ad625b9c4f8373ea20d162a0e69af221ba4ccadb20edb1d114234227a73b",
+  "simulator_code_sha256_in_results": "82a484522f00ed072e85322e833d3a212cd901a2a59b45bf2e8089a5892a2ea6",
+  "result_sha256": "d2cb0e7a21fac28e3ad9e70d72a045675b73aaacc733c8ece42505ea110be801",
+  "cache_sha256": "dcc28cde0ddd2e91d5c1a40a8355eb3475191cd9dbfcf30742fb9ef803fa5827",
+  "n_patients": 35,
+  "n_nuclei": 121083,
+  "h5_spot_checks": 134,
+  "diagnostic_max_abs_error": 3.3306690738754696e-15,
+  "binomial_truncation_upper_bounds_per_score": {
+    "observed": 2.984651655155301e-11,
+    "fixed": 2.842250453013617e-13,
+    "double": 3.024515471831912e-13
+  },
+  "hypergeometric_max_abs_pmf_mass_error": 3.885780586188048e-15,
+  "observed_patient_contrasts": {
+    "mean_log_score": {
+      "pooled": {
+        "mean_difference": -0.2631444397583953,
+        "auc": 0.21794871794871795
+      },
+      "v3.1": {
+        "mean_difference": -0.46107990621178174,
+        "auc": 0.041666666666666664
+      },
+      "v4": {
+        "mean_difference": 0.3620054607560379,
+        "auc": 0.9
+      }
+    },
+    "signature_fraction_mean": {
+      "pooled": {
+        "mean_difference": -0.010293562929087082,
+        "auc": 0.2222222222222222
+      },
+      "v3.1": {
+        "mean_difference": -0.014660007291083646,
+        "auc": 0.05555555555555555
+      },
+      "v4": {
+        "mean_difference": 0.006051677539178402,
+        "auc": 0.9
+      }
+    },
+    "mean_genes_detected": {
+      "pooled": {
+        "mean_difference": -1.6822829815107,
+        "auc": 0.23931623931623933
+      },
+      "v3.1": {
+        "mean_difference": -2.190113230918379,
+        "auc": 0.18055555555555555
+      },
+      "v4": {
+        "mean_difference": 2.334325852877071,
+        "auc": 0.9
+      }
+    },
+    "median_UMIs": {
+      "pooled": {
+        "mean_difference": -497.6025641025635,
+        "auc": 0.3803418803418803
+      },
+      "v3.1": {
+        "mean_difference": 2265.875000000001,
+        "auc": 0.4305555555555556
+      },
+      "v4": {
+        "mean_difference": 1839.3999999999996,
+        "auc": 0.7
+      }
+    }
+  },
+  "marginal_expectation_checks": {
+    "observed_depth_null": {
+      "pooled": {
+        "marginal_expected_mean_difference": -0.029788787366203717,
+        "reported_monte_carlo_mean": -0.02964870840239996,
+        "difference": 0.00014007896380375737,
+        "reported_monte_carlo_se_of_mean": 0.00023116852370336314,
+        "difference_in_mc_se": 0.6059603684777931,
+        "within_five_mc_se": true
+      },
+      "v3.1": {
+        "marginal_expected_mean_difference": -0.011587353657801058,
+        "reported_monte_carlo_mean": -0.011262938449900553,
+        "difference": 0.0003244152079005056,
+        "reported_monte_carlo_se_of_mean": 0.0005695329468189559,
+        "difference_in_mc_se": 0.5696162262648368,
+        "within_five_mc_se": true
+      },
+      "v4": {
+        "marginal_expected_mean_difference": 0.03742979657154866,
+        "reported_monte_carlo_mean": 0.037441485086659024,
+        "difference": 1.1688515110366837e-05,
+        "reported_monte_carlo_se_of_mean": 0.0002381134151197574,
+        "difference_in_mc_se": 0.04908801591245157,
+        "within_five_mc_se": true
+      }
+    },
+    "fixed_depth_null": {
+      "pooled": {
+        "marginal_expected_mean_difference": 0.0,
+        "reported_monte_carlo_mean": -0.000628205633733736,
+        "difference": -0.000628205633733736,
+        "reported_monte_carlo_se_of_mean": 0.00035259066313888653,
+        "difference_in_mc_se": -1.781685391613118,
+        "within_five_mc_se": true
+      },
+      "v3.1": {
+        "marginal_expected_mean_difference": 0.0,
+        "reported_monte_carlo_mean": -0.0014726085595488235,
+        "difference": -0.0014726085595488235,
+        "reported_monte_carlo_se_of_mean": 0.0009754705748168484,
+        "difference_in_mc_se": -1.5096391398841695,
+        "within_five_mc_se": true
+      },
+      "v4": {
+        "marginal_expected_mean_difference": 1.1102230246251565e-16,
+        "reported_monte_carlo_mean": -0.0006341167135488357,
+        "difference": -0.0006341167135489467,
+        "reported_monte_carlo_se_of_mean": 0.00038520347641415246,
+        "difference_in_mc_se": -1.6461863725943495,
+        "within_five_mc_se": true
+      }
+    },
+    "fixed_depth_twofold_MRD_control": {
+      "pooled": {
+        "marginal_expected_mean_difference": 0.43766297651292485,
+        "reported_monte_carlo_mean": 0.43795280221792154,
+        "difference": 0.00028982570499669347,
+        "reported_monte_carlo_se_of_mean": 0.00040129572307047906,
+        "difference_in_mc_se": 0.7222247543011858,
+        "within_five_mc_se": true
+      },
+      "v3.1": {
+        "marginal_expected_mean_difference": 0.43766297651292485,
+        "reported_monte_carlo_mean": 0.4389239698402792,
+        "difference": 0.0012609933273543539,
+        "reported_monte_carlo_se_of_mean": 0.0010929035778537916,
+        "difference_in_mc_se": 1.1538010789850752,
+        "within_five_mc_se": true
+      },
+      "v4": {
+        "marginal_expected_mean_difference": 0.43766297651292496,
+        "reported_monte_carlo_mean": 0.43788989549808544,
+        "difference": 0.0002269189851604736,
+        "reported_monte_carlo_se_of_mean": 0.000357525504011127,
+        "difference_in_mc_se": 0.6346931410896252,
+        "within_five_mc_se": true
+      }
+    },
+    "primary_thinning_1000": {
+      "pooled": {
+        "marginal_expected_mean_difference": -0.20920870248634155,
+        "reported_monte_carlo_mean": -0.20885942323782342,
+        "difference": 0.00034927924851813064,
+        "reported_monte_carlo_se_of_mean": 0.000266772523504577,
+        "difference_in_mc_se": 1.3092774470536432,
+        "within_five_mc_se": true
+      },
+      "v3.1": {
+        "marginal_expected_mean_difference": -0.39944467357713037,
+        "reported_monte_carlo_mean": -0.3986461539243746,
+        "difference": 0.0007985196527557914,
+        "reported_monte_carlo_se_of_mean": 0.0006501540762520509,
+        "difference_in_mc_se": 1.2282006403144081,
+        "within_five_mc_se": true
+      },
+      "v4": {
+        "marginal_expected_mean_difference": 0.31768181572428505,
+        "reported_monte_carlo_mean": 0.31775068034714277,
+        "difference": 6.886462285771167e-05,
+        "reported_monte_carlo_se_of_mean": 0.00015219160816359233,
+        "difference_in_mc_se": 0.4524863340933251,
+        "within_five_mc_se": true
+      }
+    }
+  },
+  "limits": [
+    "Does not import the simulator or replay its random stream.",
+    "Marginal expectations verify mean contrasts, not joint variance or rank-AUC sampling.",
+    "Same permitted source data; independent computation is not independent biological validation or external peer review.",
+    "Monte Carlo percentiles condition on data/model, with only 100 replicates; they are not patient confidence intervals.",
+    "Source-H5 checks cover selected nuclei; full source integrity is additionally asserted by the simulator's input hashes."
+  ]
+}

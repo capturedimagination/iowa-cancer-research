@@ -2,6 +2,8 @@
 
 Completed November 10, 2026. **This dataset does not give a clean confirmation of higher alveolar-signature expression in residual disease.** The pooled comparison points in the opposite direction, but the direction reverses in the small newer-kit subset. Major differences in stage, tissue sampling and sequencing remain unresolved. This is a descriptive expression analysis, not a causal resistance finding or a treatment result.
 
+**Later November 10 context:** the [novelty audit](../../discovery-2026-11-10/novelty-audit.md) verified that the source study's 2025 preprint already reported declining alveolar signatures using different genes/processing. A lower pooled alveolar signal is therefore not a newly discovered biological observation. Subsequent [depth simulations](../../discovery-2026-11-10/depth-simulation/README.md) retain the opposite kit-stratum directions after equal-depth sampling. This contextual addition does not change the frozen plan, scores or intervals below.
+
 ## What was calculated
 
 We verified the exact Maynard 17-gene alveolar signature against Table S2 and author code, then applied its mean log-normalized-expression formula to an independent public MSK cohort, [GSE292469](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE292469), released November 1, 2026. The cohort comprises different patients in each treatment state; it is not an Iowa cohort. The [plan](../../updates/2026-11-10/analysis-plan.md) was fixed after metadata inspection and before expression scores, with its [timestamp and hash](../../updates/2026-11-10/analysis-plan-freeze.json). It was not externally preregistered.

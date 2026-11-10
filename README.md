@@ -4,7 +4,8 @@ Public repository established November 3, 2026; treatment research extended Nove
 
 Core compilation October 22, 2026. Treatment research added October 29, 2026. **Start with the [reference-library guide](knowledge/INDEX.md)** for future questions, data work and model design. The original report is a dated narrative overview; later research extends beyond it.
 
-- [Latest lung-cancer research](research/treatment-discovery/updates/2026-11-10/README.md): verified molecular signature, original-cohort audit and an independent expression comparison. The overall and sequencing-kit-specific directions differ; strong confounding leaves the biological interpretation unresolved.
+- [Latest simulations and hypothesis tests](research/treatment-discovery/discovery-2026-11-10/README.md): equal-depth sampling retains a signature reversal, gene coordination differs from a mean score, and a state-measurement simulation supplies a conditional experiment-design rule. Novelty remains unestablished; no treatment target has been validated.
+- [Molecular data and comparison](research/treatment-discovery/updates/2026-11-10/README.md): verified signature, original-cohort audit and independent expression comparison. Major confounding leaves the biological interpretation unresolved.
 - [Lung cancer treatment program](research/treatment-discovery/README.md): clinical benchmark, molecular studies and remaining research requirements
 
 - [Searchable research database and usage](knowledge/INDEX.md#search-and-retrieve)

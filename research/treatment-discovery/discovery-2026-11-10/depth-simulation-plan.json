@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "question": "Can differences in UMI depth, without changes in transcript proportions, explain the observed GSE292469 alveolar-signature state/kit reversal?",
+  "study_type": "Exploratory dataset-specific falsification and measurement simulation; generic log-normalization depth bias and thinning are established methods, not novel discoveries.",
+  "prior_information": "Previous mean-score results and sample metadata were inspected. New target-count fractions, thinning results and technical-null simulations have not been inspected at plan creation. Depth metadata show all 121083 primary malignant nuclei have at least1000 UMIs, allowing primary depth standardization without nucleus or patient attrition.",
+  "cohort": "Use exactly the previous fixed primary cohort:26TN/9MRD LUAD patients, at least20 deposited malignant singlet nuclei. Preserve MRD2 as one patient and source-implied kit uncertainty. No outcome-selected exclusions.",
+  "signature": "Exact17 Maynard alveolar genes, identical order and mean ln(1+10000*gene_count/total_count) rule to the previous analysis.",
+  "seed": 2026111002,
+  "replicates": 100,
+  "primary_depth": 1000,
+  "sensitivity_depths": [250,500,2000],
+  "tests": [
+    {
+      "id": "D1",
+      "hypothesis": "Observed depth differences alone explain the opposite state-score directions in legacy and newer kit strata.",
+      "method": "Exactly sample d molecules without replacement from each observed nucleus, by sequential multivariate-hypergeometric draws for17 genes and a remainder category. Average within patient then compare state. Repeat100 times. Primary d1000 retains every primary nucleus; d2000 changes nucleus selection and is reported with the corresponding unthinned retained-cell baseline.",
+      "falsifier": "Opposite kit-stratum directions persist after shared-depth sampling beyond the reported Monte Carlo variation. This rejects depth-alone sufficiency under this thinning intervention, not all technical confounding.",
+      "limits": "Thinning discards information, conditions on observed molecules, cannot recover unobserved expression, and does not remove ambient RNA, cell composition, stage, site or chemistry-specific capture differences. Simulation replicates are not patients."
+    },
+    {
+      "id": "D2",
+      "hypothesis": "A homogeneous transcript-proportion technical null with the observed depths can generate the pooled negative contrast and kit reversal.",
+      "method": "Estimate one pooled17-gene proportion vector by averaging each patient's mean per-nucleus fractions equally across all35 patients, without state-specific fitting. Generate multinomial17-plus-remainder counts at each observed nucleus depth for100 replicate datasets. Preserve observed nucleus counts and patient assignments. Also generate a fixed-depth1000 null with identical biology and a known twofold signature-proportion increase inMRD at fixed depth.",
+      "falsifier": "The expected direction or simulated range under the depth-only null is incompatible with the observed contrast. This addresses a deliberately restricted null; it does not identify the true biological explanation.",
+      "limits": "The null removes cell/patient biological heterogeneity and uses a data-estimated common profile. Its Monte Carlo interval is conditional on that model and must not be called a confidence interval for a patient treatment effect. Positive control establishes computational sensitivity only."
+    },
+    {
+      "id": "D3",
+      "hypothesis": "The direction depends on the log-score estimand rather than being shared by all summaries of the signature.",
+      "method": "Report all35 patient means of total signature UMI fraction, per-gene fractions, gene detection count, and per-gene contributions to the existing mean log score. Compare pooled and each kit stratum; no gene-by-gene significance tests or post-hoc target selection.",
+      "limits": "Linear abundance, breadth of detected genes and mean log expression measure different properties; none is designated the true biological activity score."
+    }
+  ],
+  "summaries": "Report patient-level mean difference and rank AUC for pooled, series-implied v3.1 and v4 groups; mixed MRD2 remains pooled and excluded from homogeneous-kit strata. State contrasts from each replicate yield Monte Carlo2.5/50/97.5 percentiles, explicitly not patient-bootstrap uncertainty. Preserve all nulls, failures and opposite directions.",
+  "checks": "Exact source hashes/IDs/previous-score reproduction, hypergeometric totals/bounds, d=N identity, known simple distribution expectation, fixed-depth null centering and known positive-control direction. Independent reviewer must recompute selected scores and contrasts without calling the new main functions.",
+  "novelty_standard": "Claim at most a new dataset-specific audited observation if the literature/source-code audit finds no matching published analysis. No claim of new normalization method, new cancer mechanism or first-ever discovery."
+}

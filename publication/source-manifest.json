@@ -10,9 +10,9 @@
     "Ephemeral tmp working files/environments are excluded from the inventory; durable source originals have their own dated paths and provenance."
   ],
   "counts": {
-    "included": 305,
+    "included": 343,
     "local_generated": 1,
-    "linked_source_only": 79
+    "linked_source_only": 81
   },
   "expected_public_files": [
     ".gitattributes",
@@ -32,6 +32,7 @@
     "publication/sanitization-log.json",
     "publication/source-manifest.json",
     "publication/verification-2026-11-10.json",
+    "publication/verification-discovery-2026-11-10.json",
     "publication/verification.json",
     "requirements-treatment.txt",
     "requirements.txt",
@@ -171,6 +172,35 @@
     "research/treatment-discovery/data/nsclc_pd1_msk_2018/2026-10-29/meta_clinical_patient.txt",
     "research/treatment-discovery/data/nsclc_pd1_msk_2018/2026-10-29/meta_clinical_sample.txt",
     "research/treatment-discovery/data/nsclc_pd1_msk_2018/2026-10-29/meta_study.txt",
+    "research/treatment-discovery/discovery-2026-11-10/README.md",
+    "research/treatment-discovery/discovery-2026-11-10/coexpression/README.md",
+    "research/treatment-discovery/discovery-2026-11-10/coexpression/protocol.json",
+    "research/treatment-discovery/discovery-2026-11-10/coexpression/results.json",
+    "research/treatment-discovery/discovery-2026-11-10/depth-plan-freeze.json",
+    "research/treatment-discovery/discovery-2026-11-10/depth-simulation-plan.json",
+    "research/treatment-discovery/discovery-2026-11-10/depth-simulation/README.md",
+    "research/treatment-discovery/discovery-2026-11-10/depth-simulation/depth-falsification.svg",
+    "research/treatment-discovery/discovery-2026-11-10/depth-simulation/independent-review.json",
+    "research/treatment-discovery/discovery-2026-11-10/depth-simulation/independent-review.md",
+    "research/treatment-discovery/discovery-2026-11-10/depth-simulation/patient-diagnostics.json",
+    "research/treatment-discovery/discovery-2026-11-10/depth-simulation/results.json",
+    "research/treatment-discovery/discovery-2026-11-10/mechanistic-simulation/README.md",
+    "research/treatment-discovery/discovery-2026-11-10/mechanistic-simulation/measurement-design-power.svg",
+    "research/treatment-discovery/discovery-2026-11-10/mechanistic-simulation/protocol.json",
+    "research/treatment-discovery/discovery-2026-11-10/mechanistic-simulation/results.json",
+    "research/treatment-discovery/discovery-2026-11-10/mechanistic-simulation/v2/README.md",
+    "research/treatment-discovery/discovery-2026-11-10/mechanistic-simulation/v2/curvature-design-power.svg",
+    "research/treatment-discovery/discovery-2026-11-10/mechanistic-simulation/v2/independent-review.json",
+    "research/treatment-discovery/discovery-2026-11-10/mechanistic-simulation/v2/independent-review.md",
+    "research/treatment-discovery/discovery-2026-11-10/mechanistic-simulation/v2/protocol.json",
+    "research/treatment-discovery/discovery-2026-11-10/mechanistic-simulation/v2/results.json",
+    "research/treatment-discovery/discovery-2026-11-10/mechanistic-simulation/v2/validation-data-route.json",
+    "research/treatment-discovery/discovery-2026-11-10/mechanistic-simulation/v2/validation-data-route.md",
+    "research/treatment-discovery/discovery-2026-11-10/novelty-audit.json",
+    "research/treatment-discovery/discovery-2026-11-10/novelty-audit.md",
+    "research/treatment-discovery/discovery-2026-11-10/proposal.md",
+    "research/treatment-discovery/discovery-2026-11-10/research-destinations.json",
+    "research/treatment-discovery/discovery-2026-11-10/research-destinations.md",
     "research/treatment-discovery/egfr-mechanism-feasibility.json",
     "research/treatment-discovery/egfr-mechanism-feasibility.md",
     "research/treatment-discovery/preclinical-data-sources.json",
@@ -239,6 +269,7 @@
     "scripts/analyze_industry_records.py",
     "scripts/audit_maynard_malignant_membership.py",
     "scripts/audit_maynard_metadata.py",
+    "scripts/audit_signature_coexpression.py",
     "scripts/build_data_source_catalog.py",
     "scripts/build_food_industry_evidence.py",
     "scripts/build_gse292469_sample_metadata.py",
@@ -246,18 +277,24 @@
     "scripts/build_report.py",
     "scripts/build_services_evidence.py",
     "scripts/check_compilation.py",
+    "scripts/check_egfr_curvature_design.py",
     "scripts/check_publication.py",
+    "scripts/check_signature_depth.py",
     "scripts/extract_iowa_title_v_2024.py",
     "scripts/extract_maynard_seurat_object.py",
     "scripts/fetch_iowa_tri_history.py",
     "scripts/ocr_pdf_applevision.swift",
     "scripts/plot_gse292469_signature.py",
+    "scripts/plot_signature_depth.py",
     "scripts/prepare_compilation.py",
     "scripts/prepare_publication.py",
     "scripts/query_research.py",
     "scripts/review_gse292469_signature.py",
     "scripts/run_gse292469_signature.py",
     "scripts/run_nsclc_benchmark.py",
+    "scripts/simulate_egfr_curvature_design.py",
+    "scripts/simulate_egfr_state_dynamics.py",
+    "scripts/simulate_signature_depth.py",
     "sources/HF2635-Signed-2026.ocr.provenance.json",
     "sources/cohort-access/ahs-public-cancer-summary-through-2021.csv",
     "sources/cohort-access/provenance.json",
@@ -321,7 +358,8 @@
     "sources/industries/tri-history/tri-2022-iowa-original.csv",
     "sources/industries/tri-history/tri-2023-iowa-original.csv",
     "sources/industries/tri-history/tri-2024-iowa-original.csv",
-    "tests/test_gse292469_signature.py"
+    "tests/test_gse292469_signature.py",
+    "tests/test_signature_depth.py"
   ],
   "files": [
     {
@@ -334,8 +372,8 @@
     },
     {
       "path": ".gitignore",
-      "bytes": 6239,
-      "sha256": "13207a2dccf9e52025216b251778a0dc9dc8b0a2685d69355e2f2e9927d6580d",
+      "bytes": 6418,
+      "sha256": "52cac524e64d516763a7647a8354e5b07ae09449c479bef6febce7dc71afd9dd",
       "publication_status": "included",
       "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
       "upstream_urls": [
@@ -344,8 +382,8 @@
     },
     {
       "path": "AGENTS.md",
-      "bytes": 1883,
-      "sha256": "3b67ec01b13d0ea610fef6d9b959f4ca489612986a26319977ceb575ba4d8577",
+      "bytes": 2276,
+      "sha256": "4e8351795114108bad632b5e31ca3659463f78e7445b149ee009ffeedaf599cb",
       "publication_status": "included",
       "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
       "upstream_urls": []
@@ -376,20 +414,21 @@
     },
     {
       "path": "PUBLICATION.md",
-      "bytes": 7592,
-      "sha256": "48b3934c95cb7b16a5a339da5c7c13bbeeb44ceddfc72d4640d1c55a7de68cd1",
+      "bytes": 9291,
+      "sha256": "9c1ed751ce3b4efaf029360b8b2075f048c3574039054cdb73ca422431ac6733",
       "publication_status": "included",
       "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
       "upstream_urls": []
     },
     {
       "path": "README.md",
-      "bytes": 5620,
-      "sha256": "318f3b327c862c9cd0a3b3e0849b0533b767fdde7038e8505dc72a1dd349578a",
+      "bytes": 5904,
+      "sha256": "6a12fad172a303fbf590979e38adf83283a3df317d555eacffb4a0cfd490fed8",
       "publication_status": "included",
       "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
       "upstream_urls": [
-        "https://api.github.com/repos/czbiohub-sf/scell_lung_adenocarcinoma/git/blobs/e00bd39ec1d3583b176d5201c87b4b9a0986acdc"
+        "https://api.github.com/repos/czbiohub-sf/scell_lung_adenocarcinoma/git/blobs/e00bd39ec1d3583b176d5201c87b4b9a0986acdc",
+        "https://raw.githubusercontent.com/shahcompbio/egfr_nucseq/c4211458564c92b32c1276badaed2e6731ad1a68/README.md"
       ]
     },
     {
@@ -402,8 +441,8 @@
     },
     {
       "path": "knowledge/INDEX.md",
-      "bytes": 12827,
-      "sha256": "7771d929b162003cab8cc354948a17411843e012b0e82c9cfafb87ceb91b5995",
+      "bytes": 13445,
+      "sha256": "b645037f68d7fb97c0c55c352bfc99b116e1940e4210f8904aac4393e2448bad",
       "publication_status": "included",
       "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
       "upstream_urls": []
@@ -411,7 +450,7 @@
     {
       "path": "knowledge/build-manifest.json",
       "bytes": 1870,
-      "sha256": "632bde1ccc2766798a80d3fea054ea3fe7b720b6aa7b4d9f538239a4908f98a7",
+      "sha256": "2af43cff279e02a3ffb3979c76640d17d11ac3c7850d04fda6ef74d7d232f7c4",
       "publication_status": "included",
       "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
       "upstream_urls": []
@@ -426,8 +465,8 @@
     },
     {
       "path": "knowledge/research.sqlite",
-      "bytes": 293998592,
-      "sha256": "40e2eff55b19c71e47e5f37639508d531f573dd361f2d5f505bdcca1f2a95629",
+      "bytes": 294297600,
+      "sha256": "bcf18d674d295fe60424f2d6261912903bb196af6000d3dfdd410ac70e5c8111",
       "publication_status": "local_generated",
       "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
       "upstream_urls": []
@@ -452,6 +491,14 @@
       "path": "publication/verification-2026-11-10.json",
       "bytes": 2577,
       "sha256": "a9067c33a3a66729ebfc0df7240f831f6129d07f73150163b21e47dcbf6bcdf9",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "publication/verification-discovery-2026-11-10.json",
+      "bytes": 3160,
+      "sha256": "6966d4166100f0613323dd8c986a8b282c6bae2e17e0e9ddc37fb63f1d872cba",
       "publication_status": "included",
       "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
       "upstream_urls": []
@@ -1442,8 +1489,8 @@
     },
     {
       "path": "research/treatment-discovery/README.md",
-      "bytes": 8717,
-      "sha256": "6911c575ffc8891b4d0c42c833bbe893d156f36f4838759e941f91fc92466760",
+      "bytes": 9377,
+      "sha256": "96ffa7095e02aad4d16f88bda01e08dc4324067efc6370ac1651ec5d1946b44d",
       "publication_status": "included",
       "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
       "upstream_urls": []
@@ -1596,8 +1643,242 @@
     },
     {
       "path": "research/treatment-discovery/data-access-catalog.json",
-      "bytes": 13307,
-      "sha256": "e45771086132c4bfa0c04ec807f385e287b982075861a0144c201e0428feb0aa",
+      "bytes": 19157,
+      "sha256": "7d0f2af95c2b5e19297ce2f4bd24e1509deb5ed3b6be86526d239c17790ad391",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/discovery-2026-11-10/README.md",
+      "bytes": 8025,
+      "sha256": "ee8bf59f10e1923455abf5624b2c03e9fcf75a62bf039d58db599f6cce9fb4f7",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": [
+        "https://raw.githubusercontent.com/shahcompbio/egfr_nucseq/c4211458564c92b32c1276badaed2e6731ad1a68/README.md"
+      ]
+    },
+    {
+      "path": "research/treatment-discovery/discovery-2026-11-10/coexpression/README.md",
+      "bytes": 7170,
+      "sha256": "37a4debc5a4731bc049ff668d4f447d172208560924dc3f4a4bdd29e078d2fa7",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/discovery-2026-11-10/coexpression/protocol.json",
+      "bytes": 6351,
+      "sha256": "c3ebe1106843832006e0757cd734da9a6e4a823df2f68efab485dfdeeb09e1b9",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/discovery-2026-11-10/coexpression/results.json",
+      "bytes": 311332,
+      "sha256": "108269993a677b2202bc0387e930b5eec848393fbe474d66bab3f9668cc42d84",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/discovery-2026-11-10/depth-plan-freeze.json",
+      "bytes": 273,
+      "sha256": "90eaa9230a62ae271971c669e0a648d7428f8930cacc21f0ef981ac34e80a227",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/discovery-2026-11-10/depth-simulation/README.md",
+      "bytes": 8424,
+      "sha256": "c6df8748378c20dcb91b10f6e97a65b4226430e7d14a200ee4e6736ab7b9ab1c",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/discovery-2026-11-10/depth-simulation/depth-falsification.svg",
+      "bytes": 35465,
+      "sha256": "d8b2086d8871833d5504db61026c48cc445caa00e0628e24162c7ea4ac4219a6",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/discovery-2026-11-10/depth-simulation/independent-review.json",
+      "bytes": 7144,
+      "sha256": "a056f8a02e838133352a51e70824ee7978b769433c1cc6331656a6985609a33b",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/discovery-2026-11-10/depth-simulation/independent-review.md",
+      "bytes": 4597,
+      "sha256": "e23c2b762428867956327edfd072607f2a5fc941279bd5a41d2bb3812f52260b",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/discovery-2026-11-10/depth-simulation/patient-diagnostics.json",
+      "bytes": 57993,
+      "sha256": "ef7030735406dd927ecce495f9e6f62ba1639013a7fe4a917dbcca8a1d902e5f",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/discovery-2026-11-10/depth-simulation/results.json",
+      "bytes": 26997,
+      "sha256": "d2cb0e7a21fac28e3ad9e70d72a045675b73aaacc733c8ece42505ea110be801",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/discovery-2026-11-10/depth-simulation-plan.json",
+      "bytes": 5028,
+      "sha256": "657d91b2aff8749be08d2f957cbed1d7791bd8dbec6a132d40ad1c30a2332765",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/discovery-2026-11-10/mechanistic-simulation/README.md",
+      "bytes": 6489,
+      "sha256": "ec1653b2631564ade1e5d64d733966f9170665949c08ef35dbe5a286261f514d",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/discovery-2026-11-10/mechanistic-simulation/measurement-design-power.svg",
+      "bytes": 31370,
+      "sha256": "fb4687dc04b0d6f51e587f265247fc799c01cce43d466b3cde5f17ccfb8e86f8",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/discovery-2026-11-10/mechanistic-simulation/protocol.json",
+      "bytes": 6865,
+      "sha256": "a8d626c0944ce0fe31360fdc607f4babe635474e84ff18439dd75b31b4680e1e",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/discovery-2026-11-10/mechanistic-simulation/results.json",
+      "bytes": 653522,
+      "sha256": "73d82ee1d0e999689fdb4714f8259c0f5a3329f694c9793656ebd1ec7ea28b19",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/discovery-2026-11-10/mechanistic-simulation/v2/README.md",
+      "bytes": 10990,
+      "sha256": "4149ad7dc0d835e398dfc04dca1f5c732a69defd6ef3ce3d1124bc6ad3ec80d3",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/discovery-2026-11-10/mechanistic-simulation/v2/curvature-design-power.svg",
+      "bytes": 74092,
+      "sha256": "17b8a6f7ebb22d7edf18258327d0edd1e9f0ededbb217484bcaa85e858e2c1f3",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/discovery-2026-11-10/mechanistic-simulation/v2/independent-review.json",
+      "bytes": 12010,
+      "sha256": "5cb1980fe5d0a23a80d7d10ee30db0dbf89d8714215f98020fba7271006bc6c8",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/discovery-2026-11-10/mechanistic-simulation/v2/independent-review.md",
+      "bytes": 7994,
+      "sha256": "506bcd87a04b0a21ce74d0a625d9d4188a510daec98a832b7323d6311e18f613",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/discovery-2026-11-10/mechanistic-simulation/v2/protocol.json",
+      "bytes": 5935,
+      "sha256": "0a643d27634f4e336a4355d8d685c531089bb2359d8bc5627d8a2ae19949ced0",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/discovery-2026-11-10/mechanistic-simulation/v2/results.json",
+      "bytes": 4299960,
+      "sha256": "41b51eb1167438813bc5054ab6f4f94d8d522826ff012cd15136362062fae24c",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/discovery-2026-11-10/mechanistic-simulation/v2/validation-data-route.json",
+      "bytes": 14331,
+      "sha256": "f8fbafee4b1f59cdbd2ba916dc1f45c49015b15131ed16e0011991f64b1a22d2",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/discovery-2026-11-10/mechanistic-simulation/v2/validation-data-route.md",
+      "bytes": 8977,
+      "sha256": "bd606a36b7e7c11b78773da7ef3ed9dd1643db15029aeba8af2b90c5dfc1324a",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/discovery-2026-11-10/novelty-audit.json",
+      "bytes": 30463,
+      "sha256": "1998994565005253f7f6a214acddc5cc9fff1d67b10b50816043bcfa0838c527",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/discovery-2026-11-10/novelty-audit.md",
+      "bytes": 18796,
+      "sha256": "287b317057c80b545e8e4e7e3df19004468af32332881c50587bf998d2743233",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/discovery-2026-11-10/proposal.md",
+      "bytes": 4393,
+      "sha256": "481103c6e611b8b44c4f62f77c8f3533d2f55a77486746be2fd3b5f76a6f74af",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/discovery-2026-11-10/research-destinations.json",
+      "bytes": 16272,
+      "sha256": "c6475b2c57096e05597ed34ad2c7d22ea245fb4635a101bca56b74e47ffd7e6c",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/discovery-2026-11-10/research-destinations.md",
+      "bytes": 11829,
+      "sha256": "b5cc6cc0c5cbabdadb2cd58668fb00f16de0f7fae6d0f405957865fc210917e5",
       "publication_status": "included",
       "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
       "upstream_urls": []
@@ -1644,8 +1925,8 @@
     },
     {
       "path": "research/treatment-discovery/results/gse292469-alveolar-2026-11-10/RESULTS.md",
-      "bytes": 9263,
-      "sha256": "fd029cf77d0f60616aa1dc0f3d2fb54bbfd958d2df6857b305dda932ae8c33ff",
+      "bytes": 9821,
+      "sha256": "dd13ba4e792f22b5293e08f915d44e0d71d0a8eba4ccfdd3c3e96aa2cbefccef",
       "publication_status": "included",
       "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
       "upstream_urls": []
@@ -1787,6 +2068,22 @@
       "upstream_urls": [
         "https://drive.google.com/uc?export=download&id=11pWeBoGxjhE7VDHl9eaErB8_7seCPJ8V"
       ]
+    },
+    {
+      "path": "research/treatment-discovery/sources/egfr-resistance-2026-11-10/depth-target-counts.json",
+      "bytes": 1258,
+      "sha256": "411816a76d7a361a7e051a1704af98d9f1fdc7e9f26a71b6371e7da0b393695f",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Public research originals retained for local reanalysis; publish original findings and source provenance, not raw participant-level or publisher/author source mirrors",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/sources/egfr-resistance-2026-11-10/depth-target-counts.npz",
+      "bytes": 2333510,
+      "sha256": "dcc28cde0ddd2e91d5c1a40a8355eb3475191cd9dbfcf30742fb9ef803fa5827",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Public research originals retained for local reanalysis; publish original findings and source provenance, not raw participant-level or publisher/author source mirrors",
+      "upstream_urls": []
     },
     {
       "path": "research/treatment-discovery/sources/egfr-resistance-2026-11-10/maynard/data_out/IM06/Table_of_ALL_cell_types_by_sample.csv",
@@ -2338,8 +2635,8 @@
     },
     {
       "path": "research/treatment-discovery/updates/2026-11-10/README.md",
-      "bytes": 1252,
-      "sha256": "781f904410755e5b340b74fdbbcbfcfc27edce9cbe0d74a4f07b0bf1d11acdcf",
+      "bytes": 1356,
+      "sha256": "f508ec436de53356d98f5d757da45fbfeb159cf3955d97704253bfa37b202c40",
       "publication_status": "included",
       "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
       "upstream_urls": []
@@ -2481,6 +2778,14 @@
       "upstream_urls": []
     },
     {
+      "path": "scripts/audit_signature_coexpression.py",
+      "bytes": 11924,
+      "sha256": "8d2b3088002c62c389e20faac4cdbc15d47f34ac948f04be1fe4d71fd6653b8d",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
       "path": "scripts/build_data_source_catalog.py",
       "bytes": 6536,
       "sha256": "f0278154544b1ebbe324dc973e3e80ce86112644ffb40e3c265d22446e96ce77",
@@ -2537,9 +2842,25 @@
       "upstream_urls": []
     },
     {
+      "path": "scripts/check_egfr_curvature_design.py",
+      "bytes": 9783,
+      "sha256": "cb928aa702a23692854751a7e711e0bac55940f23a88db83496800ff70f2f1a1",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
       "path": "scripts/check_publication.py",
       "bytes": 13449,
       "sha256": "62df8a54ed8bc8ffcf64f527cb4e4e2ab7aef161967868ceb6586a360f7892f4",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "scripts/check_signature_depth.py",
+      "bytes": 11399,
+      "sha256": "6d58ad625b9c4f8373ea20d162a0e69af221ba4ccadb20edb1d114234227a73b",
       "publication_status": "included",
       "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
       "upstream_urls": []
@@ -2580,6 +2901,14 @@
       "path": "scripts/plot_gse292469_signature.py",
       "bytes": 3445,
       "sha256": "7a75c645961660318f17917d07e8dee7bab80ec5e05e341789ceb100726df794",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "scripts/plot_signature_depth.py",
+      "bytes": 3524,
+      "sha256": "d5fa074e84b0fed6dc0acaa5c7ccfb43bc121a441d4906febc0120b0707272f9",
       "publication_status": "included",
       "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
       "upstream_urls": []
@@ -2628,6 +2957,30 @@
       "path": "scripts/run_nsclc_benchmark.py",
       "bytes": 11067,
       "sha256": "debac42b7d8a2e9c99ec081d97216ed9287525c2ce56ecd217cc82d5597c4e79",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "scripts/simulate_egfr_curvature_design.py",
+      "bytes": 14183,
+      "sha256": "d29a519b8dfab5cc5673431257030d2b2be487bad489ab5d54a9fd2f0493a736",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "scripts/simulate_egfr_state_dynamics.py",
+      "bytes": 13732,
+      "sha256": "ccb3cbc85aa31e0637004e93cf01a8e7259c09cac4d43ef4dae635f842645ded",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "scripts/simulate_signature_depth.py",
+      "bytes": 13659,
+      "sha256": "82a484522f00ed072e85322e833d3a212cd901a2a59b45bf2e8089a5892a2ea6",
       "publication_status": "included",
       "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
       "upstream_urls": []
@@ -3678,6 +4031,14 @@
       "path": "tests/test_gse292469_signature.py",
       "bytes": 5336,
       "sha256": "096cc41244bcb7c5641a17c9006e82fbe72b2febae2b03a92695799b69294a0a",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "tests/test_signature_depth.py",
+      "bytes": 1742,
+      "sha256": "9c5d5ff180e6cc9d573d0e326b994e2c7efcb2dd62bad4fa38f5da68f0926a9f",
       "publication_status": "included",
       "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
       "upstream_urls": []
