@@ -1,0 +1,774 @@
+{
+  "reviewed_at_utc": "2026-11-10T18:52:11.411690+00:00",
+  "protocol_sha256": "9c00b14a08a36eb3ba585a9c396eee5f3a242c624da49cbd723bd4e17d6ef16d",
+  "root_protocol_sha256": "424705a8c9dac1d199285eddda49b19a4050aa82f235102f731046c62a78ee8e",
+  "checker_sha256": "fd30aaa4729157be465d713d9c7aca18dbc195d2158d71b9931bac2e0f9f6a24",
+  "numpy_version": "2.3.5",
+  "seed": 2026111005,
+  "scope": "Explicit full branching Gillespie simulation, independent of the tag-plus-sidebranch shortcut; synthetic only.",
+  "horizon": 1.0,
+  "total_founder_trees": 120000,
+  "all_cases": [
+    {
+      "lambda": 0.5,
+      "mu": 2.0,
+      "founder_trees": 20000,
+      "family_inclusion": {
+        "successes": 3540,
+        "trials": 20000,
+        "observed": 0.177,
+        "analytic": 0.17723419361245352,
+        "monte_carlo_se_at_analytic_probability": 0.002700205864624,
+        "estimated_monte_carlo_se": 0.0026988052912353643,
+        "difference": -0.000234193612453526,
+        "difference_in_analytic_mc_se": -0.08673176201924039,
+        "within_predeclared_six_mc_se": true
+      },
+      "selected_tag_deaths_before_horizon": 808,
+      "total_population_divisions": 5126,
+      "total_population_deaths": 20649,
+      "mean_terminal_population": 0.22385,
+      "expected_terminal_population": 0.22313016014842982,
+      "mc_se_mean_terminal_population": 0.003793781558540989,
+      "population_balance_checked_for_every_tree": true,
+      "survival_points": [
+        {
+          "time": 0.25,
+          "prospective_tag_survival": {
+            "successes": 12148,
+            "trials": 20000,
+            "observed": 0.6074,
+            "analytic": 0.6065306597126334,
+            "monte_carlo_se_at_analytic_probability": 0.0034543539087736152,
+            "estimated_monte_carlo_se": 0.003453007674477426,
+            "difference": 0.0008693402873666267,
+            "difference_in_analytic_mc_se": 0.2516650900067344,
+            "within_predeclared_six_mc_se": true
+          },
+          "family_selected_tag_survival": {
+            "successes": 3464,
+            "trials": 3540,
+            "observed": 0.9785310734463277,
+            "analytic": 0.9744856502085829,
+            "monte_carlo_se_at_analytic_probability": 0.0026501981455682765,
+            "estimated_monte_carlo_se": 0.002436076065109933,
+            "difference": 0.004045423237744816,
+            "difference_in_analytic_mc_se": 1.5264606703123946,
+            "within_predeclared_six_mc_se": true
+          }
+        },
+        {
+          "time": 0.5,
+          "prospective_tag_survival": {
+            "successes": 7300,
+            "trials": 20000,
+            "observed": 0.365,
+            "analytic": 0.36787944117144233,
+            "monte_carlo_se_at_analytic_probability": 0.003409869190561638,
+            "estimated_monte_carlo_se": 0.00340422531569225,
+            "difference": -0.002879441171442343,
+            "difference_in_analytic_mc_se": -0.8444432940162351,
+            "within_predeclared_six_mc_se": true
+          },
+          "family_selected_tag_survival": {
+            "successes": 3256,
+            "trials": 3540,
+            "observed": 0.919774011299435,
+            "analytic": 0.9157745637047258,
+            "monte_carlo_se_at_analytic_probability": 0.00466782205762204,
+            "estimated_monte_carlo_se": 0.004565585445766372,
+            "difference": 0.003999447594709271,
+            "difference_in_analytic_mc_se": 0.8568123517430604,
+            "within_predeclared_six_mc_se": true
+          }
+        },
+        {
+          "time": 0.75,
+          "prospective_tag_survival": {
+            "successes": 4430,
+            "trials": 20000,
+            "observed": 0.2215,
+            "analytic": 0.22313016014842982,
+            "monte_carlo_se_at_analytic_probability": 0.0029440031571022975,
+            "estimated_monte_carlo_se": 0.002936305076111813,
+            "difference": -0.0016301601484298156,
+            "difference_in_analytic_mc_se": -0.5537222827010614,
+            "within_predeclared_six_mc_se": true
+          },
+          "family_selected_tag_survival": {
+            "successes": 2999,
+            "trials": 3540,
+            "observed": 0.8471751412429378,
+            "analytic": 0.842008985005153,
+            "monte_carlo_se_at_analytic_probability": 0.006130175760278442,
+            "estimated_monte_carlo_se": 0.006047584877778864,
+            "difference": 0.005166156237784825,
+            "difference_in_analytic_mc_se": 0.8427419440825576,
+            "within_predeclared_six_mc_se": true
+          }
+        },
+        {
+          "time": 1.0,
+          "prospective_tag_survival": {
+            "successes": 2732,
+            "trials": 20000,
+            "observed": 0.1366,
+            "analytic": 0.1353352832366127,
+            "monte_carlo_se_at_analytic_probability": 0.0024188803644235746,
+            "estimated_monte_carlo_se": 0.002428378471326082,
+            "difference": 0.0012647167633872969,
+            "difference_in_analytic_mc_se": 0.5228521352227695,
+            "within_predeclared_six_mc_se": true
+          },
+          "family_selected_tag_survival": {
+            "successes": 2732,
+            "trials": 3540,
+            "observed": 0.7717514124293785,
+            "analytic": 0.7635957852046403,
+            "monte_carlo_se_at_analytic_probability": 0.0071409787034041414,
+            "estimated_monte_carlo_se": 0.007054092249869695,
+            "difference": 0.008155627224738171,
+            "difference_in_analytic_mc_se": 1.142088159547422,
+            "within_predeclared_six_mc_se": true
+          }
+        }
+      ]
+    },
+    {
+      "lambda": 2.0,
+      "mu": 0.5,
+      "founder_trees": 20000,
+      "family_inclusion": {
+        "successes": 15907,
+        "trials": 20000,
+        "observed": 0.79535,
+        "analytic": 0.7943085484031134,
+        "monte_carlo_se_at_analytic_probability": 0.0028581679301333245,
+        "estimated_monte_carlo_se": 0.002852791418067574,
+        "difference": 0.0010414515968866223,
+        "difference_in_analytic_mc_se": 0.36437732923482974,
+        "within_predeclared_six_mc_se": true
+      },
+      "selected_tag_deaths_before_horizon": 3779,
+      "total_population_divisions": 92628,
+      "total_population_deaths": 23160,
+      "mean_terminal_population": 4.4734,
+      "expected_terminal_population": 4.4816890703380645,
+      "mc_se_mean_terminal_population": 0.035294219159733575,
+      "population_balance_checked_for_every_tree": true,
+      "survival_points": [
+        {
+          "time": 0.25,
+          "prospective_tag_survival": {
+            "successes": 17580,
+            "trials": 20000,
+            "observed": 0.879,
+            "analytic": 0.8824969025845955,
+            "monte_carlo_se_at_analytic_probability": 0.002277016902804967,
+            "estimated_monte_carlo_se": 0.002306068082256029,
+            "difference": -0.0034969025845954516,
+            "difference_in_analytic_mc_se": -1.5357385271438941,
+            "within_predeclared_six_mc_se": true
+          },
+          "family_selected_tag_survival": {
+            "successes": 15479,
+            "trials": 15907,
+            "observed": 0.9730936065882945,
+            "analytic": 0.9744856502085829,
+            "monte_carlo_se_at_analytic_probability": 0.001250218255821934,
+            "estimated_monte_carlo_se": 0.0012829534915527528,
+            "difference": -0.0013920436202884412,
+            "difference_in_analytic_mc_se": -1.1134404843362864,
+            "within_predeclared_six_mc_se": true
+          }
+        },
+        {
+          "time": 0.5,
+          "prospective_tag_survival": {
+            "successes": 15550,
+            "trials": 20000,
+            "observed": 0.7775,
+            "analytic": 0.7788007830714049,
+            "monte_carlo_se_at_analytic_probability": 0.002934877538831658,
+            "estimated_monte_carlo_se": 0.00294103510689689,
+            "difference": -0.0013007830714049096,
+            "difference_in_analytic_mc_se": -0.44321545079619806,
+            "within_predeclared_six_mc_se": true
+          },
+          "family_selected_tag_survival": {
+            "successes": 14564,
+            "trials": 15907,
+            "observed": 0.9155717608599987,
+            "analytic": 0.9157745637047258,
+            "monte_carlo_se_at_analytic_probability": 0.0022020226529575284,
+            "estimated_monte_carlo_se": 0.0022044280060150305,
+            "difference": -0.000202802844727068,
+            "difference_in_analytic_mc_se": -0.09209843706861247,
+            "within_predeclared_six_mc_se": true
+          }
+        },
+        {
+          "time": 0.75,
+          "prospective_tag_survival": {
+            "successes": 13696,
+            "trials": 20000,
+            "observed": 0.6848,
+            "analytic": 0.6872892787909722,
+            "monte_carlo_se_at_analytic_probability": 0.0032781300008538215,
+            "estimated_monte_carlo_se": 0.003285186143888958,
+            "difference": -0.0024892787909722713,
+            "difference_in_analytic_mc_se": -0.759359387920526,
+            "within_predeclared_six_mc_se": true
+          },
+          "family_selected_tag_survival": {
+            "successes": 13336,
+            "trials": 15907,
+            "observed": 0.8383730433142642,
+            "analytic": 0.842008985005153,
+            "monte_carlo_se_at_analytic_probability": 0.0028918809937714383,
+            "estimated_monte_carlo_se": 0.0029186459135329486,
+            "difference": -0.0036359416908887665,
+            "difference_in_analytic_mc_se": -1.2572929863711175,
+            "within_predeclared_six_mc_se": true
+          }
+        },
+        {
+          "time": 1.0,
+          "prospective_tag_survival": {
+            "successes": 12128,
+            "trials": 20000,
+            "observed": 0.6064,
+            "analytic": 0.6065306597126334,
+            "monte_carlo_se_at_analytic_probability": 0.0034543539087736152,
+            "estimated_monte_carlo_se": 0.0034545552535746185,
+            "difference": -0.00013065971263337417,
+            "difference_in_analytic_mc_se": -0.0378246456744097,
+            "within_predeclared_six_mc_se": true
+          },
+          "family_selected_tag_survival": {
+            "successes": 12128,
+            "trials": 15907,
+            "observed": 0.7624316338718803,
+            "analytic": 0.7635957852046403,
+            "monte_carlo_se_at_analytic_probability": 0.0033687224309475678,
+            "estimated_monte_carlo_se": 0.003374431515383113,
+            "difference": -0.001164151332760044,
+            "difference_in_analytic_mc_se": -0.3455765075998223,
+            "within_predeclared_six_mc_se": true
+          }
+        }
+      ]
+    },
+    {
+      "lambda": 2.0,
+      "mu": 2.0,
+      "founder_trees": 20000,
+      "family_inclusion": {
+        "successes": 6661,
+        "trials": 20000,
+        "observed": 0.33305,
+        "analytic": 0.3333333333333333,
+        "monte_carlo_se_at_analytic_probability": 0.0033333333333333335,
+        "estimated_monte_carlo_se": 0.003332624322512215,
+        "difference": -0.00028333333333330213,
+        "difference_in_analytic_mc_se": -0.08499999999999064,
+        "within_predeclared_six_mc_se": true
+      },
+      "selected_tag_deaths_before_horizon": 3972,
+      "total_population_divisions": 39682,
+      "total_population_deaths": 39820,
+      "mean_terminal_population": 0.9931,
+      "expected_terminal_population": 1.0,
+      "mc_se_mean_terminal_population": 0.01398400504576053,
+      "population_balance_checked_for_every_tree": true,
+      "survival_points": [
+        {
+          "time": 0.25,
+          "prospective_tag_survival": {
+            "successes": 12192,
+            "trials": 20000,
+            "observed": 0.6096,
+            "analytic": 0.6065306597126334,
+            "monte_carlo_se_at_analytic_probability": 0.0034543539087736152,
+            "estimated_monte_carlo_se": 0.003449549535808987,
+            "difference": 0.0030693402873666065,
+            "difference_in_analytic_mc_se": 0.8885425085052451,
+            "within_predeclared_six_mc_se": true
+          },
+          "family_selected_tag_survival": {
+            "successes": 6076,
+            "trials": 6661,
+            "observed": 0.9121753490466897,
+            "analytic": 0.9097959895689501,
+            "monte_carlo_se_at_analytic_probability": 0.003510065457447905,
+            "estimated_monte_carlo_se": 0.0034679886316296756,
+            "difference": 0.0023793594777395954,
+            "difference_in_analytic_mc_se": 0.6778675516409253,
+            "within_predeclared_six_mc_se": true
+          }
+        },
+        {
+          "time": 0.5,
+          "prospective_tag_survival": {
+            "successes": 7410,
+            "trials": 20000,
+            "observed": 0.3705,
+            "analytic": 0.36787944117144233,
+            "monte_carlo_se_at_analytic_probability": 0.003409869190561638,
+            "estimated_monte_carlo_se": 0.003414892018790638,
+            "difference": 0.002620558828557662,
+            "difference_in_analytic_mc_se": 0.7685218060010187,
+            "within_predeclared_six_mc_se": true
+          },
+          "family_selected_tag_survival": {
+            "successes": 4894,
+            "trials": 6661,
+            "observed": 0.7347245158384627,
+            "analytic": 0.7357588823428847,
+            "monte_carlo_se_at_analytic_probability": 0.005402543082702948,
+            "estimated_monte_carlo_se": 0.0054093004817264735,
+            "difference": -0.001034366504422013,
+            "difference_in_analytic_mc_se": -0.1914591866437294,
+            "within_predeclared_six_mc_se": true
+          }
+        },
+        {
+          "time": 0.75,
+          "prospective_tag_survival": {
+            "successes": 4437,
+            "trials": 20000,
+            "observed": 0.22185,
+            "analytic": 0.22313016014842982,
+            "monte_carlo_se_at_analytic_probability": 0.0029440031571022975,
+            "estimated_monte_carlo_se": 0.0029379633889822384,
+            "difference": -0.0012801601484298264,
+            "difference_in_analytic_mc_se": -0.4348365406271688,
+            "within_predeclared_six_mc_se": true
+          },
+          "family_selected_tag_survival": {
+            "successes": 3692,
+            "trials": 6661,
+            "observed": 0.5542711304608917,
+            "analytic": 0.5578254003710745,
+            "monte_carlo_se_at_analytic_probability": 0.00608522052873514,
+            "estimated_monte_carlo_se": 0.006090133243555526,
+            "difference": -0.003554269910182817,
+            "difference_in_analytic_mc_se": -0.5840823505736774,
+            "within_predeclared_six_mc_se": true
+          }
+        },
+        {
+          "time": 1.0,
+          "prospective_tag_survival": {
+            "successes": 2689,
+            "trials": 20000,
+            "observed": 0.13445,
+            "analytic": 0.1353352832366127,
+            "monte_carlo_se_at_analytic_probability": 0.0024188803644235746,
+            "estimated_monte_carlo_se": 0.002412189850530012,
+            "difference": -0.0008852832366127161,
+            "difference_in_analytic_mc_se": -0.36598884741605703,
+            "within_predeclared_six_mc_se": true
+          },
+          "family_selected_tag_survival": {
+            "successes": 2689,
+            "trials": 6661,
+            "observed": 0.403693139168293,
+            "analytic": 0.4060058497098381,
+            "monte_carlo_se_at_analytic_probability": 0.00601710392675747,
+            "estimated_monte_carlo_se": 0.006011611001247262,
+            "difference": -0.002312710541545082,
+            "difference_in_analytic_mc_se": -0.38435609052067155,
+            "within_predeclared_six_mc_se": true
+          }
+        }
+      ]
+    },
+    {
+      "lambda": 0.0,
+      "mu": 2.0,
+      "founder_trees": 20000,
+      "family_inclusion": {
+        "successes": 2750,
+        "trials": 20000,
+        "observed": 0.1375,
+        "analytic": 0.1353352832366127,
+        "monte_carlo_se_at_analytic_probability": 0.0024188803644235746,
+        "estimated_monte_carlo_se": 0.0024350949673472696,
+        "difference": 0.002164716763387309,
+        "difference_in_analytic_mc_se": 0.8949251046994903,
+        "within_predeclared_six_mc_se": true
+      },
+      "selected_tag_deaths_before_horizon": 0,
+      "total_population_divisions": 0,
+      "total_population_deaths": 17250,
+      "mean_terminal_population": 0.1375,
+      "expected_terminal_population": 0.1353352832366127,
+      "mc_se_mean_terminal_population": 0.00243515584700445,
+      "population_balance_checked_for_every_tree": true,
+      "survival_points": [
+        {
+          "time": 0.25,
+          "prospective_tag_survival": {
+            "successes": 11999,
+            "trials": 20000,
+            "observed": 0.59995,
+            "analytic": 0.6065306597126334,
+            "monte_carlo_se_at_analytic_probability": 0.0034543539087736152,
+            "estimated_monte_carlo_se": 0.003464173765127841,
+            "difference": -0.006580659712633441,
+            "difference_in_analytic_mc_se": -1.905033440817807,
+            "within_predeclared_six_mc_se": true
+          },
+          "family_selected_tag_survival": {
+            "successes": 2750,
+            "trials": 2750,
+            "observed": 1.0,
+            "analytic": 1.0,
+            "monte_carlo_se_at_analytic_probability": 0.0,
+            "estimated_monte_carlo_se": 0.0,
+            "difference": 0.0,
+            "difference_in_analytic_mc_se": null,
+            "within_predeclared_six_mc_se": true
+          }
+        },
+        {
+          "time": 0.5,
+          "prospective_tag_survival": {
+            "successes": 7382,
+            "trials": 20000,
+            "observed": 0.3691,
+            "analytic": 0.36787944117144233,
+            "monte_carlo_se_at_analytic_probability": 0.003409869190561638,
+            "estimated_monte_carlo_se": 0.0034122220765946637,
+            "difference": 0.0012205588285576496,
+            "difference_in_analytic_mc_se": 0.35794887145116905,
+            "within_predeclared_six_mc_se": true
+          },
+          "family_selected_tag_survival": {
+            "successes": 2750,
+            "trials": 2750,
+            "observed": 1.0,
+            "analytic": 1.0,
+            "monte_carlo_se_at_analytic_probability": 0.0,
+            "estimated_monte_carlo_se": 0.0,
+            "difference": 0.0,
+            "difference_in_analytic_mc_se": null,
+            "within_predeclared_six_mc_se": true
+          }
+        },
+        {
+          "time": 0.75,
+          "prospective_tag_survival": {
+            "successes": 4463,
+            "trials": 20000,
+            "observed": 0.22315,
+            "analytic": 0.22313016014842982,
+            "monte_carlo_se_at_analytic_probability": 0.0029440031571022975,
+            "estimated_monte_carlo_se": 0.0029440964445819366,
+            "difference": 1.983985157016921e-05,
+            "difference_in_analytic_mc_se": 0.006739072790158634,
+            "within_predeclared_six_mc_se": true
+          },
+          "family_selected_tag_survival": {
+            "successes": 2750,
+            "trials": 2750,
+            "observed": 1.0,
+            "analytic": 1.0,
+            "monte_carlo_se_at_analytic_probability": 0.0,
+            "estimated_monte_carlo_se": 0.0,
+            "difference": 0.0,
+            "difference_in_analytic_mc_se": null,
+            "within_predeclared_six_mc_se": true
+          }
+        },
+        {
+          "time": 1.0,
+          "prospective_tag_survival": {
+            "successes": 2750,
+            "trials": 20000,
+            "observed": 0.1375,
+            "analytic": 0.1353352832366127,
+            "monte_carlo_se_at_analytic_probability": 0.0024188803644235746,
+            "estimated_monte_carlo_se": 0.0024350949673472696,
+            "difference": 0.002164716763387309,
+            "difference_in_analytic_mc_se": 0.8949251046994903,
+            "within_predeclared_six_mc_se": true
+          },
+          "family_selected_tag_survival": {
+            "successes": 2750,
+            "trials": 2750,
+            "observed": 1.0,
+            "analytic": 1.0,
+            "monte_carlo_se_at_analytic_probability": 0.0,
+            "estimated_monte_carlo_se": 0.0,
+            "difference": 0.0,
+            "difference_in_analytic_mc_se": null,
+            "within_predeclared_six_mc_se": true
+          }
+        }
+      ]
+    },
+    {
+      "lambda": 2.0,
+      "mu": 0.0,
+      "founder_trees": 20000,
+      "family_inclusion": {
+        "successes": 20000,
+        "trials": 20000,
+        "observed": 1.0,
+        "analytic": 1.0,
+        "monte_carlo_se_at_analytic_probability": 0.0,
+        "estimated_monte_carlo_se": 0.0,
+        "difference": 0.0,
+        "difference_in_analytic_mc_se": null,
+        "within_predeclared_six_mc_se": true
+      },
+      "selected_tag_deaths_before_horizon": 0,
+      "total_population_divisions": 126735,
+      "total_population_deaths": 0,
+      "mean_terminal_population": 7.33675,
+      "expected_terminal_population": 7.38905609893065,
+      "mc_se_mean_terminal_population": 0.04777898715393277,
+      "population_balance_checked_for_every_tree": true,
+      "survival_points": [
+        {
+          "time": 0.25,
+          "prospective_tag_survival": {
+            "successes": 20000,
+            "trials": 20000,
+            "observed": 1.0,
+            "analytic": 1.0,
+            "monte_carlo_se_at_analytic_probability": 0.0,
+            "estimated_monte_carlo_se": 0.0,
+            "difference": 0.0,
+            "difference_in_analytic_mc_se": null,
+            "within_predeclared_six_mc_se": true
+          },
+          "family_selected_tag_survival": {
+            "successes": 20000,
+            "trials": 20000,
+            "observed": 1.0,
+            "analytic": 1.0,
+            "monte_carlo_se_at_analytic_probability": 0.0,
+            "estimated_monte_carlo_se": 0.0,
+            "difference": 0.0,
+            "difference_in_analytic_mc_se": null,
+            "within_predeclared_six_mc_se": true
+          }
+        },
+        {
+          "time": 0.5,
+          "prospective_tag_survival": {
+            "successes": 20000,
+            "trials": 20000,
+            "observed": 1.0,
+            "analytic": 1.0,
+            "monte_carlo_se_at_analytic_probability": 0.0,
+            "estimated_monte_carlo_se": 0.0,
+            "difference": 0.0,
+            "difference_in_analytic_mc_se": null,
+            "within_predeclared_six_mc_se": true
+          },
+          "family_selected_tag_survival": {
+            "successes": 20000,
+            "trials": 20000,
+            "observed": 1.0,
+            "analytic": 1.0,
+            "monte_carlo_se_at_analytic_probability": 0.0,
+            "estimated_monte_carlo_se": 0.0,
+            "difference": 0.0,
+            "difference_in_analytic_mc_se": null,
+            "within_predeclared_six_mc_se": true
+          }
+        },
+        {
+          "time": 0.75,
+          "prospective_tag_survival": {
+            "successes": 20000,
+            "trials": 20000,
+            "observed": 1.0,
+            "analytic": 1.0,
+            "monte_carlo_se_at_analytic_probability": 0.0,
+            "estimated_monte_carlo_se": 0.0,
+            "difference": 0.0,
+            "difference_in_analytic_mc_se": null,
+            "within_predeclared_six_mc_se": true
+          },
+          "family_selected_tag_survival": {
+            "successes": 20000,
+            "trials": 20000,
+            "observed": 1.0,
+            "analytic": 1.0,
+            "monte_carlo_se_at_analytic_probability": 0.0,
+            "estimated_monte_carlo_se": 0.0,
+            "difference": 0.0,
+            "difference_in_analytic_mc_se": null,
+            "within_predeclared_six_mc_se": true
+          }
+        },
+        {
+          "time": 1.0,
+          "prospective_tag_survival": {
+            "successes": 20000,
+            "trials": 20000,
+            "observed": 1.0,
+            "analytic": 1.0,
+            "monte_carlo_se_at_analytic_probability": 0.0,
+            "estimated_monte_carlo_se": 0.0,
+            "difference": 0.0,
+            "difference_in_analytic_mc_se": null,
+            "within_predeclared_six_mc_se": true
+          },
+          "family_selected_tag_survival": {
+            "successes": 20000,
+            "trials": 20000,
+            "observed": 1.0,
+            "analytic": 1.0,
+            "monte_carlo_se_at_analytic_probability": 0.0,
+            "estimated_monte_carlo_se": 0.0,
+            "difference": 0.0,
+            "difference_in_analytic_mc_se": null,
+            "within_predeclared_six_mc_se": true
+          }
+        }
+      ]
+    },
+    {
+      "lambda": 0.0,
+      "mu": 0.0,
+      "founder_trees": 20000,
+      "family_inclusion": {
+        "successes": 20000,
+        "trials": 20000,
+        "observed": 1.0,
+        "analytic": 1.0,
+        "monte_carlo_se_at_analytic_probability": 0.0,
+        "estimated_monte_carlo_se": 0.0,
+        "difference": 0.0,
+        "difference_in_analytic_mc_se": null,
+        "within_predeclared_six_mc_se": true
+      },
+      "selected_tag_deaths_before_horizon": 0,
+      "total_population_divisions": 0,
+      "total_population_deaths": 0,
+      "mean_terminal_population": 1.0,
+      "expected_terminal_population": 1.0,
+      "mc_se_mean_terminal_population": 0.0,
+      "population_balance_checked_for_every_tree": true,
+      "survival_points": [
+        {
+          "time": 0.25,
+          "prospective_tag_survival": {
+            "successes": 20000,
+            "trials": 20000,
+            "observed": 1.0,
+            "analytic": 1.0,
+            "monte_carlo_se_at_analytic_probability": 0.0,
+            "estimated_monte_carlo_se": 0.0,
+            "difference": 0.0,
+            "difference_in_analytic_mc_se": null,
+            "within_predeclared_six_mc_se": true
+          },
+          "family_selected_tag_survival": {
+            "successes": 20000,
+            "trials": 20000,
+            "observed": 1.0,
+            "analytic": 1.0,
+            "monte_carlo_se_at_analytic_probability": 0.0,
+            "estimated_monte_carlo_se": 0.0,
+            "difference": 0.0,
+            "difference_in_analytic_mc_se": null,
+            "within_predeclared_six_mc_se": true
+          }
+        },
+        {
+          "time": 0.5,
+          "prospective_tag_survival": {
+            "successes": 20000,
+            "trials": 20000,
+            "observed": 1.0,
+            "analytic": 1.0,
+            "monte_carlo_se_at_analytic_probability": 0.0,
+            "estimated_monte_carlo_se": 0.0,
+            "difference": 0.0,
+            "difference_in_analytic_mc_se": null,
+            "within_predeclared_six_mc_se": true
+          },
+          "family_selected_tag_survival": {
+            "successes": 20000,
+            "trials": 20000,
+            "observed": 1.0,
+            "analytic": 1.0,
+            "monte_carlo_se_at_analytic_probability": 0.0,
+            "estimated_monte_carlo_se": 0.0,
+            "difference": 0.0,
+            "difference_in_analytic_mc_se": null,
+            "within_predeclared_six_mc_se": true
+          }
+        },
+        {
+          "time": 0.75,
+          "prospective_tag_survival": {
+            "successes": 20000,
+            "trials": 20000,
+            "observed": 1.0,
+            "analytic": 1.0,
+            "monte_carlo_se_at_analytic_probability": 0.0,
+            "estimated_monte_carlo_se": 0.0,
+            "difference": 0.0,
+            "difference_in_analytic_mc_se": null,
+            "within_predeclared_six_mc_se": true
+          },
+          "family_selected_tag_survival": {
+            "successes": 20000,
+            "trials": 20000,
+            "observed": 1.0,
+            "analytic": 1.0,
+            "monte_carlo_se_at_analytic_probability": 0.0,
+            "estimated_monte_carlo_se": 0.0,
+            "difference": 0.0,
+            "difference_in_analytic_mc_se": null,
+            "within_predeclared_six_mc_se": true
+          }
+        },
+        {
+          "time": 1.0,
+          "prospective_tag_survival": {
+            "successes": 20000,
+            "trials": 20000,
+            "observed": 1.0,
+            "analytic": 1.0,
+            "monte_carlo_se_at_analytic_probability": 0.0,
+            "estimated_monte_carlo_se": 0.0,
+            "difference": 0.0,
+            "difference_in_analytic_mc_se": null,
+            "within_predeclared_six_mc_se": true
+          },
+          "family_selected_tag_survival": {
+            "successes": 20000,
+            "trials": 20000,
+            "observed": 1.0,
+            "analytic": 1.0,
+            "monte_carlo_se_at_analytic_probability": 0.0,
+            "estimated_monte_carlo_se": 0.0,
+            "difference": 0.0,
+            "difference_in_analytic_mc_se": null,
+            "within_predeclared_six_mc_se": true
+          }
+        }
+      ]
+    }
+  ],
+  "probability_comparisons": 54,
+  "all_probability_checks_within_predeclared_bound": true,
+  "maximum_absolute_deviation_in_analytic_mc_se": 1.905033440817807,
+  "all_exact_edge_and_population_balance_checks_passed": true,
+  "runtime_seconds": 0.3876781659782864,
+  "limits": [
+    "This validates the homogeneous branching/sampling identity, not the actual workbook selection rule or cancer biology.",
+    "Family selection and endpoint-connected ancestry are different; a selected tag may die while its side-branch family survives.",
+    "Survival points from one tree are correlated; no multiple-testing discovery claim is made.",
+    "No patient or workbook event data were used. No event-rate or treatment-effect inference."
+  ]
+}

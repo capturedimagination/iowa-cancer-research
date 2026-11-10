@@ -1,0 +1,250 @@
+{
+  "version": 1,
+  "created_at_utc": "2026-11-10T19:14:25.827134+00:00",
+  "audit_date": "2026-11-10",
+  "purpose": "Bounded primary-literature audit of empirical cross-horizon comparison for a prospective random tag selected by any family survivor, and verification of the correct model scope.",
+  "evidence_tiers": {
+    "primary_documented": "Observation-rule or method documented in an inspected primary source.",
+    "project_analytic": "Original project derivation, independently checked; no theorem novelty claim.",
+    "project_numerical": "Deterministic verification of that derivation, no empirical evidence.",
+    "bounded_negative_search": "Exact application not found in inspected sources; not proof of absence.",
+    "proposed_only": "Unexecuted empirical design subject to dictionary and observation gates."
+  },
+  "decision": {
+    "exact_empirical_application_found": false,
+    "novelty_status": "Not located in a bounded search; no first-ever, new-theorem or new-biological-mechanism claim.",
+    "useful_candidate": "Parameter-free comparison of selected random-tag survivor functions at common absolute times across family-selection horizons.",
+    "scope_correction": "Invariance also holds under arbitrary shared deterministic calendar-time rates. It cannot distinguish constant from common changing rates.",
+    "data_fit_performed": false,
+    "empirical_curves_calculated": false,
+    "authors_contacted": false
+  },
+  "search": {
+    "date": "2026-11-10",
+    "additional_query_count": 12,
+    "queries": [
+      "\"lineage\" \"survival\" \"horizon\" \"invariance\"",
+      "\"branching\" \"random lineage\" \"conditioning\" survival time",
+      "\"chronological\" \"lineage\" \"observation time\" \"survivor\"",
+      "\"persister\" \"lineage\" \"held-out\" survival",
+      "\"cell lineage\" \"survival\" \"observation time\" selection chronological",
+      "\"lineage\" \"survival conditioning\" cancer",
+      "\"branching process\" \"tagged\" \"time-inhomogeneous\" survival",
+      "\"Inheritable cell-states\" \"Horizon\"",
+      "\"branching\" \"survival\" \"tagged lineage\" horizon",
+      "\"lineage\" \"horizon invariance\" survival",
+      "\"Hidden heterogeneity and circadian-controlled cell fate\" lineage survival",
+      "\"Inheritable cell-states\" \"cross-validation\""
+    ],
+    "method": "Web search plus direct primary-source inspection and pinned-source text review; earlier broader ledger remains separate.",
+    "outcome": "No exact empirical application located. Relevant known lineage selection and cancer methods retained; unrelated results and reviews not used as evidence.",
+    "limits": [
+      "Not a systematic review across all databases",
+      "Not an audit of all source code or every supplement",
+      "No guarantee against unindexed, differently named or unpublished prior work",
+      "Primary-source absence judgments restricted to inspected scope"
+    ],
+    "previous_ledger": "novelty-and-identifiability.json"
+  },
+  "sources": [
+    {
+      "id": "Iyer2025",
+      "title": "Inheritable cell-states shape drug-persister correlations and population dynamics in cancer cells",
+      "doi": "10.1371/journal.pcbi.1013446",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12469175/",
+      "year": 2025,
+      "scope": "Main Methods/Results; supplementary sections 1, 5, 8 and 13; targeted full-text search. Not an exhaustive source-code audit.",
+      "known": "Random forward-daughter endpoint sampling, competing risks, age-dependent hazards, inherited-state models, and fate-dispersion analysis.",
+      "exact_horizon_test": "Not located in inspected material; bounded negative observation.",
+      "artifacts": [
+        {
+          "local_path": "tmp/discovery-novelty/lineage-audit/Iyer2025.html",
+          "sha256": "8f04eede88c75131c11670c68491c014481e2ba7ca73483306d99493d0a289ec"
+        },
+        {
+          "local_path": "tmp/iyer-empirical-audit/Iyer2025-supplement.pdf",
+          "sha256": "cae587bca7e9de6de4bbdc9668dbf626ddc705b397dfa60ee5b0c16669acde2e"
+        }
+      ],
+      "supplement_url": "https://journals.plos.org/ploscompbiol/article/file?id=10.1371/journal.pcbi.1013446.s001&type=supplementary"
+    },
+    {
+      "id": "Chakrabarti2018",
+      "title": "Hidden heterogeneity and circadian-controlled cell fate inferred from single cell lineages",
+      "doi": "10.1038/s41467-018-07788-5",
+      "url": "https://www.nature.com/articles/s41467-018-07788-5",
+      "year": 2018,
+      "scope": "Main text, division/death lineage correlations, age-dependent model and tracking Methods.",
+      "known": "HCT116 lineage resource and oscillatory fate models; ambiguous cell identities discarded.",
+      "exact_horizon_test": "Not located in inspected main text.",
+      "artifacts": [
+        {
+          "local_path": "tmp/iyer-empirical-audit/Chakrabarti2018.html",
+          "sha256": "094277b92fe0f931cc1b292859dc966868736b4f03646c5e600166ec4d2a8e10"
+        }
+      ],
+      "access_note": "Current publisher web open redirected to inaccessible identity page. Reused existing pinned publisher HTML."
+    },
+    {
+      "id": "Genthon2023",
+      "title": "Cell lineage statistics with incomplete population trees",
+      "doi": "10.1103/PRXLife.1.013014",
+      "url": "https://arxiv.org/html/2305.05406v2",
+      "year": 2023,
+      "scope": "Primary author manuscript, sections II-IV and relevant appendices.",
+      "known": "Dead-lineage inclusion, separation of reproductive and survival selection, empirical mycobacterial antibiotic analysis, rate inference under additional restrictions.",
+      "exact_horizon_test": "Not located. Source lineage-survival conditioning differs from family-survival conditioning of a possibly dead random tag.",
+      "artifacts": [
+        {
+          "local_path": "tmp/discovery-novelty/lineage-audit/Genthon2023.html",
+          "sha256": "c976c2977e9b48b1aa8f39ab29ff472c4b279aa02efec2114cdbb3428a402ea2"
+        }
+      ]
+    },
+    {
+      "id": "Nakashima2020",
+      "title": "Lineage EM algorithm for inferring latent states from cellular lineage trees",
+      "doi": "10.1093/bioinformatics/btaa040",
+      "url": "https://arxiv.org/html/1806.00215v4",
+      "year": 2020,
+      "scope": "Primary author manuscript Figure 4, sections 3.1-3.3 and latent-state method.",
+      "known": "Explicit chronological random-daughter versus retrospective surviving-ancestry and whole-tree sampling distinction; bias-corrected latent-state inference.",
+      "exact_horizon_test": "Not located. The observation-rule distinction is already known.",
+      "artifacts": [
+        {
+          "local_path": "tmp/discovery-novelty/lineage-audit/Nakashima2020.html",
+          "sha256": "2ba9d08c78d89ce134deed35d2847d4fc1a5df37621b813056204876b044001b"
+        }
+      ]
+    },
+    {
+      "id": "Yamauchi2022",
+      "title": "A unified framework for measuring selection on cellular lineages and traits",
+      "doi": "10.7554/eLife.72299",
+      "url": "https://elifesciences.org/articles/72299",
+      "year": 2022,
+      "scope": "Theoretical background, empirical applications, Discussion and tree-weighting Methods.",
+      "known": "Chronological/retrospective weighting and model-independent selection statistics, including changing growth conditions.",
+      "exact_horizon_test": "Not located in inspected material; general model-free selection analysis is not new.",
+      "artifacts": [
+        {
+          "local_path": "tmp/discovery-novelty/lineage-audit/Yamauchi2022.html",
+          "sha256": "46d4759812d0a9d03b722ad65774c5bf96cc4041c8736a9cd26a4830b9fbd859"
+        }
+      ],
+      "archive_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9725751/?report=xml"
+    },
+    {
+      "id": "Oren2021",
+      "title": "Cycling cancer persister cells arise from lineages with distinct programs",
+      "doi": "10.1038/s41586-021-03796-6",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9209846/",
+      "year": 2021,
+      "scope": "Live-imaging Methods, Figure 1 and Extended Data Figure 1; linked existing dictionary audit.",
+      "known": "Retrospective founder ascertainment followed by one forward path per lineage; source distinguishes nonpersister random tracking.",
+      "exact_horizon_test": "Not located; precise selected-founder sister rule and dead-tag handling unverified. Do not attribute the model to this dataset.",
+      "artifacts": [
+        {
+          "local_path": "tmp/discovery-novelty/Oren2021.html",
+          "sha256": "a3e70030a7399d9aeeaf551f5254bb35c5f6ee2eb8f2de4785050ebb9c1db27f"
+        }
+      ],
+      "access_note": "Current PMC open returned a browser challenge. Reused previously pinned primary full text."
+    }
+  ],
+  "derivation": {
+    "tier": "project_analytic",
+    "proof": "horizon-invariance/proof.md",
+    "estimand": "Q_T(t)=P(prospective random tag alive at t | N(T)>0), 0<=t<=T",
+    "formula": "exp(-L(t))+exp(-M(t))*integral_0^t lambda(u)*exp(M(u)-L(u)) du",
+    "definitions": "L(t)=integral_0^t lambda(u)du; M(t)=integral_0^t mu(u)du",
+    "assumptions": [
+      "One founder at a common known origin",
+      "Independent binary splitting and death",
+      "Shared deterministic locally bounded nonnegative calendar-time rates",
+      "Identical future schedules for both daughters",
+      "Prospective fate-independent random daughter choices",
+      "No tag replacement after death",
+      "Equal founder weights",
+      "Complete family survival ascertainment at T",
+      "Positive family inclusion probability"
+    ],
+    "not_implied": [
+      "Constant rates",
+      "Absence of inherited heterogeneity",
+      "Specific persister mechanism",
+      "Actual tag lifetime law beyond T",
+      "Sum of independent elapsed waiting times for arbitrary schedules"
+    ],
+    "mixture_blind_spot": "Q_mix,T(t)=E[h_Z(0,T)*Q_Z(t)]/E[h_Z(0,T)]. Constant-rate types with rates exchanged have identical Q_Z and hence any mixture is horizon invariant despite heterogeneous rates and net growth.",
+    "endpoint_identity": "Q_T(T)*h(0,T)=exp(-M(T)); identifies cumulative mortality with a matched prospective denominator, not instantaneous mu.",
+    "independent_review": "calendar-rate-independent-review.md"
+  },
+  "numerical_check": {
+    "tier": "project_numerical",
+    "first_run_status": "PASS",
+    "case_count": 9,
+    "case_horizon_time_count": 270,
+    "shared_time_horizon_checks": 54,
+    "maximum_absolute_errors": {
+      "pgfl_vs_direct": 2.930988785010413e-14,
+      "forward_vs_direct": 4.440892098500626e-16,
+      "endpoint_joint_identity": 1.3877787807814457e-17,
+      "horizon_spread": 2.9753977059954195e-14,
+      "zero_control": 9.992007221626409e-16,
+      "constant_closed_form": 1.1102230246251565e-16
+    },
+    "threshold": 1e-08,
+    "failures": [],
+    "seed": null,
+    "environment": {
+      "python": "3.12.14",
+      "numpy": "2.3.5",
+      "scipy": "1.16.3",
+      "platform": "macOS-26.6.2-arm64-arm-64bit"
+    },
+    "protocol": {
+      "local_path": "research/treatment-discovery/lineage-audit-2026-11-10/horizon-invariance/protocol.json",
+      "sha256": "752885ddeb5de119deaa3a36dcd1d28e2735cf6bc222add08bb3dfb150133996"
+    },
+    "script": {
+      "local_path": "scripts/check_lineage_horizon_invariance.py",
+      "sha256": "1a26eea7ec3b1bf734003e3fa691848d7d21e60f75622b7ee403380b8219be3c"
+    },
+    "results": {
+      "local_path": "research/treatment-discovery/lineage-audit-2026-11-10/horizon-invariance/results.json",
+      "sha256": "69b93e07018f468da3af4e1bf261e08f5ab2a8fc8b0c3ec280ad16a82487f798"
+    },
+    "knowledge_before_freeze": "Analytic formula and scope were already derived; numerical grid/functions/tolerances frozen before first numerical run.",
+    "calibration": "No empirical data or source outcomes used.",
+    "packaging_note": "horizon-invariance/packaging-note.json",
+    "first_run_provenance": {
+      "script_sha256": "7be17332f2f76dad913847ed8b15bc9efe6182186fe663866942597cc13b1aa1",
+      "results_sha256": "262aa86d5ee5b7e52f433cb3eea1ebae6f656607cfe32107bd9131d899e93958",
+      "generated_at_utc": "2026-11-10T19:10:24.016796+00:00",
+      "environment": {
+        "python": "3.12.14",
+        "numpy": "2.3.5",
+        "scipy": "1.16.3",
+        "platform": "macOS-26.6.2-arm64-arm-64bit"
+      },
+      "status": "PASS"
+    },
+    "packaged_rerun_identical_except_timestamp_and_script_hash": true
+  },
+  "empirical_design": {
+    "tier": "proposed_only",
+    "status": "No empirical protocol or analysis executed by this audit. Requires complete validated trees and a new frozen analysis plan.",
+    "contrast": "Q_T1(t)-Q_T2(t) at identical absolute t<=min(T1,T2); do not compare Q_T(T) at different t.",
+    "fixed_sampling_frame": "Same prospective eligible founders for every endpoint; retain never-dividers, extinct families and dead tags; no horizon-dependent inclusion.",
+    "exact_tree_weight_option": "For complete binary trees U_i(t)=sum over cells alive at t of 2^(-number of ancestral divisions from founder i). Estimate Q_T(t) by averaging U_i(t) over founders with N_i(T)>0. Established chronological weighting, not new method.",
+    "dependence": "Resample original independent family/experiment clusters and recompute all nested-horizon contrasts jointly; do not count cells, tags or repeated endpoints as independent.",
+    "statistical_gate": "Freeze horizons/common times, contrasts, uncertainty/multiplicity method and minimum information before viewing outcome curves. Survival labels are not naively exchangeable.",
+    "interpretation": "Disagreement challenges the conjunction of branching and observation assumptions; cannot distinguish age dependence, inherited states, random environments, interactions or tracking error by itself. Agreement does not validate the full model.",
+    "source_gates": [
+      "source-dictionary.md",
+      "next-empirical-resource.md"
+    ]
+  },
+  "public_artifacts": "Original memo/proof/checker and aggregate deterministic results only. Pinned third-party full text and empirical source workbooks stay local/ignored."
+}

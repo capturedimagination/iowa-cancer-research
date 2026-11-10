@@ -2,6 +2,8 @@
 
 November 10, 2026. **We found useful measurement limits and a testable experimental design, not a new cancer mechanism or cure.** The discovery goal remains open. A bounded literature search cannot prove that nobody has previously considered an idea; prior work already covers several tempting claims.
 
+**Subsequent work:** the [lineage-sampling audit](../lineage-audit-2026-11-10/README.md) derives and checks a finite-horizon selection counterexample, inspects the original PC9 event workbook, and records why its empirical hazard interpretation remains unresolved. Prior-art checks narrow the originality claim; the existing protocols and numerical outputs below remain unchanged.
+
 This extension asks which observations could distinguish competing explanations for residual cancer-cell states. It combines a fixed public lung-cancer cohort with separate hypothetical cell-state simulations. The two tracks do not validate one another: an alveolar expression signature is not an established functional label for drug tolerance, and synthetic model parameters are not fitted patient biology.
 
 ## Findings that change the next experiment

@@ -1,0 +1,598 @@
+{
+  "version": 1,
+  "reviewed_on": "2026-11-10",
+  "scope": "Independent hazard-estimand review and hypothetical analytic controls; no workbook measurements analyzed and no biological rates fitted.",
+  "workbook_data_analyzed": false,
+  "external_contact": false,
+  "decision": "NO-GO for unconditional empirical hazard estimation until observation and selection gates pass; conditional go for synthetic method validation.",
+  "source_dictionary_status": "Version 2 reviewed. Structural patterns are documented, but the time map, study-specific event transformation/observation mask, row sampling, replicate joins and censoring definitions remain unverified.",
+  "schemes": [
+    {
+      "id": "prospective_random_path",
+      "at_risk_unit": "One current live tracked cell per enrolled founder; division renews daughter episode without doubling path risk.",
+      "identifiable_given_dictionary": "Chronological-path cause-specific intensities; constant homogeneous event/exposure rates converge to lambda and mu.",
+      "not_without_more": "Heterogeneous population-cell rates without justified design weighting; family extinction; functional state exit."
+    },
+    {
+      "id": "family_selected_random_path",
+      "selection": "Any descendant survives at T; the tagged daughter is chosen independently of future fate.",
+      "identifiable_given_dictionary": "Family-survival-conditional path intensities.",
+      "tag_can_die": true,
+      "unconditional_hazards": "Require known selection likelihood/design; cannot ignore endpoint inclusion."
+    },
+    {
+      "id": "endpoint_connected_ancestry",
+      "selection": "Tracked path leads to selected endpoint survivor.",
+      "identifiable_given_dictionary": "Ancestral division history under stated terminal sampling rule.",
+      "death_hazard_before_T": "Zero by construction, not evidence of zero generating mortality."
+    },
+    {
+      "id": "full_tree",
+      "at_risk_unit": "All live observed cells in a verified founder cohort.",
+      "identifiable_given_dictionary": "Population-cell events per cell-time; separately defined family survival/extinction.",
+      "state_exit": "Still requires observed functional-state transitions and state exposure."
+    }
+  ],
+  "primary_source_facts": {
+    "source": "oren2021_author_manuscript",
+    "location": "Methods pp9-10; Fig1; source dictionary also reads Extended Data Fig1b.",
+    "summary": "Nonpersisters use forward random-sister tracking. Persister founders are identified from endpoint cells and then one forward path retained. Exact selected-path/entry rules needed for hazard inference remain unresolved."
+  },
+  "estimand_definition": {
+    "risk": "Y_i(t)=1 if the current tracked cell is alive, observed and eligible. Division resets to the selected daughter; death ends the path.",
+    "rates": "D_B / sum_i integral_B Y_i(t)dt; M_B / sum_i integral_B Y_i(t)dt.",
+    "constant_hazard_likelihood": "lambda^D mu^M exp[-(lambda+mu)A], for exact events and a valid observation scheme.",
+    "cycle_clock": "Cell age and calendar time since drug exposure differ. Unknown initial birth time cannot be replaced by movie start.",
+    "censoring": "Administrative end, tracking loss and missing annotation must be distinct from death. A competing-risk division probability is not naive 1-minus-KM with death censored.",
+    "population_weighting": "Only under verified prospective founder sampling and independent half-probability sister choices, generation-g contributions weighted by 2^g yield full-tree totals in expectation. Include founder sampling weights. This is not certified for the workbook."
+  },
+  "analytic_model": {
+    "type": "Homogeneous binary branching birth/death with a random daughter tag and independent identical cells.",
+    "parameters": "lambda: division; mu: death; T: endpoint; arbitrary time units.",
+    "q": "mu*(1-exp(-(lambda-mu)*s))/(lambda-mu*exp(-(lambda-mu)*s)); criticalk*s/(1+k*s).",
+    "A": "exp(lambda*integral_0^t(q(T-u)-1)du).",
+    "joint_risk_R": "exp(-mu*t)*(1-q(T-t)*A(t)).",
+    "family_selection_probability": "1-q(T).",
+    "selected_division_hazard": "lambda*(1-q(T-t)^2*A)/(1-q(T-t)*A).",
+    "selected_death_hazard": "mu*(1-A)/(1-q(T-t)*A).",
+    "selected_tag_survival": "[lambda*exp(-mu*t)-mu*exp(-lambda*t)]/(lambda-mu); criticalexp(-k*t)*(1+k*t).",
+    "risk_conservation": "Rprime=-mu*exp(-mu*t)*(1-A).",
+    "critical_death_hazard": "k^2*t/(1+k*t).",
+    "endpoint_death_limit": "mu*(1-A(T)), not generally mu.",
+    "limitations": [
+      "Inherited frailty or correlated/asymmetric daughter fates",
+      "Time-, age- or density-dependent biology",
+      "Informative observation loss",
+      "Nonrandom daughter choice",
+      "Unknown outcome ascertainment"
+    ],
+    "not_an_Oren_model_claim": true
+  },
+  "independent_controls": {
+    "unselected_path": {
+      "risk_survival": "exp(-mu*t)",
+      "expected_exposure": "(1-exp(-mu*T))/mu, limitT",
+      "expected_divisions": "lambda*expected_exposure",
+      "expected_deaths": "1-exp(-mu*T)"
+    },
+    "own_path_endpoint_selection": {
+      "survives_T": "Death hazard zero; division stays lambda under independent homogeneous clocks.",
+      "dies_by_T": "Death hazard mu/[1-exp(-mu*(T-t))]."
+    },
+    "fixed_tree_sampling": {
+      "leaf_generations": [
+        1,
+        2,
+        2
+      ],
+      "forward_probabilities": [
+        0.5,
+        0.25,
+        0.25
+      ],
+      "endpoint_uniform_probabilities": [
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "expected_forward_divisions": 1.5,
+      "expected_uniform_terminal_divisions": 1.6666666666666667,
+      "horvitz_thompson_terminal_total_expectation": 3
+    },
+    "critical_fixture": {
+      "lambda": 1,
+      "mu": 1,
+      "T": 2,
+      "t": 1,
+      "q": 0.5,
+      "A": 0.6666666666666666,
+      "division_hazard": 1.25,
+      "death_hazard": 0.5,
+      "selected_risk": 0.7357588823428847
+    },
+    "first_event_interval": {
+      "no_event": "exp(-(lambda+mu)*delta)",
+      "event_k": "hazard_k/(lambda+mu)*(1-exp(-(lambda+mu)*delta))",
+      "caveat": "First-event classification only; unresolved multiple events require an observation model."
+    },
+    "numeric_formula_checks": {
+      "method": "Independent SciPy quadrature of A and central finite difference of R with h=1e-6; all fixed cases retained.",
+      "cases": [
+        {
+          "lambda": 0.5,
+          "mu": 2,
+          "T": 2.0,
+          "t": 0.25,
+          "A_closed": 0.9942654512406176,
+          "A_quadrature": 0.9942654512406176,
+          "A_absolute_error": 0.0,
+          "selected_risk_from_joint": 0.9744856502085821,
+          "selected_risk_from_lifetime_law": 0.9744856502085829,
+          "risk_absolute_error": 7.771561172376096e-16,
+          "division_hazard": 0.927747034756311,
+          "death_hazard": 0.1887944632212843,
+          "risk_derivative_finite_difference": -0.0069563592733357105,
+          "risk_derivative_identity": -0.006956359284364937,
+          "derivative_absolute_error": 1.1029226143488557e-11
+        },
+        {
+          "lambda": 0.5,
+          "mu": 2,
+          "T": 2.0,
+          "t": 0.5,
+          "A_closed": 0.9859217320290067,
+          "A_quadrature": 0.9859217320290067,
+          "A_absolute_error": 0.0,
+          "selected_risk_from_joint": 0.9157745637047262,
+          "selected_risk_from_lifetime_law": 0.9157745637047258,
+          "risk_absolute_error": 4.440892098500626e-16,
+          "division_hazard": 0.8906916441866136,
+          "death_hazard": 0.29914301196399085,
+          "risk_derivative_finite_difference": -0.010358210733585338,
+          "risk_derivative_identity": -0.010358210707661675,
+          "derivative_absolute_error": 2.592366252218703e-11
+        },
+        {
+          "lambda": 0.5,
+          "mu": 2,
+          "T": 2.0,
+          "t": 1,
+          "A_closed": 0.9561180385005361,
+          "A_quadrature": 0.9561180385005361,
+          "A_absolute_error": 0.0,
+          "selected_risk_from_joint": 0.7635957852046406,
+          "selected_risk_from_lifetime_law": 0.7635957852046403,
+          "risk_absolute_error": 2.220446049250313e-16,
+          "division_hazard": 0.8267649566737046,
+          "death_hazard": 0.411382903193773,
+          "risk_derivative_finite_difference": -0.011877555373268622,
+          "risk_derivative_identity": -0.011877555377016158,
+          "derivative_absolute_error": 3.747535268217028e-12
+        },
+        {
+          "lambda": 0.5,
+          "mu": 2,
+          "T": 2.0,
+          "t": 1.75,
+          "A_closed": 0.8386157350359067,
+          "A_quadrature": 0.8386157350359068,
+          "A_absolute_error": 1.1102230246251565e-16,
+          "selected_risk_from_joint": 0.5457502317639052,
+          "selected_risk_from_lifetime_law": 0.545750231763905,
+          "risk_absolute_error": 2.220446049250313e-16,
+          "division_hazard": 0.6442074353100624,
+          "death_hazard": 0.47233406266753364,
+          "risk_derivative_finite_difference": -0.00974676505303973,
+          "risk_derivative_identity": -0.009746765054899536,
+          "derivative_absolute_error": 1.8598057122121148e-12
+        },
+        {
+          "lambda": 2,
+          "mu": 0.5,
+          "T": 2.0,
+          "t": 0.25,
+          "A_closed": 0.6833479849099445,
+          "A_quadrature": 0.6833479849099445,
+          "A_absolute_error": 0.0,
+          "selected_risk_from_joint": 0.9744856502085828,
+          "selected_risk_from_lifetime_law": 0.9744856502085829,
+          "risk_absolute_error": 1.1102230246251565e-16,
+          "division_hazard": 2.2939859510226417,
+          "death_hazard": 0.18879446322128543,
+          "risk_derivative_finite_difference": -0.13972221130087448,
+          "risk_derivative_identity": -0.13972221125707227,
+          "derivative_absolute_error": 4.380221185762423e-11
+        },
+        {
+          "lambda": 2,
+          "mu": 0.5,
+          "T": 2.0,
+          "t": 0.5,
+          "A_closed": 0.46571644983099236,
+          "A_quadrature": 0.46571644983099225,
+          "A_absolute_error": 1.1102230246251565e-16,
+          "selected_risk_from_joint": 0.9157745637047258,
+          "selected_risk_from_lifetime_law": 0.9157745637047258,
+          "risk_absolute_error": 0.0,
+          "division_hazard": 2.1845496651491496,
+          "death_hazard": 0.2991430119639913,
+          "risk_derivative_finite_difference": -0.20805022371561677,
+          "risk_derivative_identity": -0.20805022362689668,
+          "derivative_absolute_error": 8.872008683269428e-11
+        },
+        {
+          "lambda": 2,
+          "mu": 0.5,
+          "T": 2.0,
+          "t": 1,
+          "A_closed": 0.2133387710514272,
+          "A_quadrature": 0.21333877105142723,
+          "A_absolute_error": 2.7755575615628914e-17,
+          "selected_risk_from_joint": 0.7635957852046403,
+          "selected_risk_from_lifetime_law": 0.7635957852046403,
+          "risk_absolute_error": 0.0,
+          "division_hazard": 2.0729111171134984,
+          "death_hazard": 0.41138290319377324,
+          "risk_derivative_finite_difference": -0.23856707709324354,
+          "risk_derivative_identity": -0.2385670770822644,
+          "derivative_absolute_error": 1.0979134268396251e-11
+        },
+        {
+          "lambda": 2,
+          "mu": 0.5,
+          "T": 2.0,
+          "t": 1.75,
+          "A_closed": 0.06074912009110128,
+          "A_quadrature": 0.060749120091101325,
+          "A_absolute_error": 4.163336342344337e-17,
+          "selected_risk_from_joint": 0.545750231763905,
+          "selected_risk_from_lifetime_law": 0.545750231763905,
+          "risk_absolute_error": 0.0,
+          "division_hazard": 2.0104463515763933,
+          "death_hazard": 0.4723340626675335,
+          "risk_derivative_finite_difference": -0.19576900939233255,
+          "risk_derivative_identity": -0.19576900939181985,
+          "derivative_absolute_error": 5.127009927718973e-13
+        },
+        {
+          "lambda": 2,
+          "mu": 2,
+          "T": 2.0,
+          "t": 0.25,
+          "A_closed": 0.9,
+          "A_quadrature": 0.9,
+          "A_absolute_error": 0.0,
+          "selected_risk_from_joint": 0.9097959895689501,
+          "selected_risk_from_lifetime_law": 0.9097959895689501,
+          "risk_absolute_error": 0.0,
+          "division_hazard": 3.037037037037037,
+          "death_hazard": 0.6666666666666666,
+          "risk_derivative_finite_difference": -0.12130613197269824,
+          "risk_derivative_identity": -0.12130613194252665,
+          "derivative_absolute_error": 3.017158745066695e-11
+        },
+        {
+          "lambda": 2,
+          "mu": 2,
+          "T": 2.0,
+          "t": 0.5,
+          "A_closed": 0.8,
+          "A_quadrature": 0.7999999999999999,
+          "A_absolute_error": 1.1102230246251565e-16,
+          "selected_risk_from_joint": 0.7357588823428847,
+          "selected_risk_from_lifetime_law": 0.7357588823428847,
+          "risk_absolute_error": 0.0,
+          "division_hazard": 2.750000000000001,
+          "death_hazard": 1.0,
+          "risk_derivative_finite_difference": -0.1471517764722874,
+          "risk_derivative_identity": -0.1471517764685769,
+          "derivative_absolute_error": 3.710476370599736e-12
+        },
+        {
+          "lambda": 2,
+          "mu": 2,
+          "T": 2.0,
+          "t": 1,
+          "A_closed": 0.6,
+          "A_quadrature": 0.6,
+          "A_absolute_error": 0.0,
+          "selected_risk_from_joint": 0.4060058497098383,
+          "selected_risk_from_lifetime_law": 0.4060058497098381,
+          "risk_absolute_error": 1.6653345369377348e-16,
+          "division_hazard": 2.444444444444444,
+          "death_hazard": 1.3333333333333333,
+          "risk_derivative_finite_difference": -0.10826822657850066,
+          "risk_derivative_identity": -0.10826822658929017,
+          "derivative_absolute_error": 1.0789508175790274e-11
+        },
+        {
+          "lambda": 2,
+          "mu": 2,
+          "T": 2.0,
+          "t": 1.75,
+          "A_closed": 0.3,
+          "A_quadrature": 0.30000000000000004,
+          "A_absolute_error": 5.551115123125783e-17,
+          "selected_risk_from_joint": 0.1358882254004333,
+          "selected_risk_from_lifetime_law": 0.13588822540043324,
+          "risk_absolute_error": 5.551115123125783e-17,
+          "division_hazard": 2.148148148148148,
+          "death_hazard": 1.5555555555555554,
+          "risk_derivative_finite_difference": -0.04227633678723086,
+          "risk_derivative_identity": -0.0422763367912459,
+          "derivative_absolute_error": 4.015038301830032e-12
+        },
+        {
+          "lambda": 0,
+          "mu": 2,
+          "T": 2.0,
+          "t": 0.25,
+          "A_closed": 1.0,
+          "A_quadrature": 1.0,
+          "A_absolute_error": 0.0,
+          "selected_risk_from_joint": 0.9999999999999971,
+          "selected_risk_from_lifetime_law": 1.0,
+          "risk_absolute_error": 2.886579864025407e-15,
+          "division_hazard": 0.0,
+          "death_hazard": 0.0,
+          "risk_derivative_finite_difference": 5.204170427930421e-12,
+          "risk_derivative_identity": -0.0,
+          "derivative_absolute_error": 5.204170427930421e-12
+        },
+        {
+          "lambda": 0,
+          "mu": 2,
+          "T": 2.0,
+          "t": 0.5,
+          "A_closed": 1.0,
+          "A_quadrature": 1.0,
+          "A_absolute_error": 0.0,
+          "selected_risk_from_joint": 0.9999999999999981,
+          "selected_risk_from_lifetime_law": 1.0,
+          "risk_absolute_error": 1.887379141862766e-15,
+          "division_hazard": 0.0,
+          "death_hazard": 0.0,
+          "risk_derivative_finite_difference": -8.673617379884035e-12,
+          "risk_derivative_identity": -0.0,
+          "derivative_absolute_error": 8.673617379884035e-12
+        },
+        {
+          "lambda": 0,
+          "mu": 2,
+          "T": 2.0,
+          "t": 1,
+          "A_closed": 1.0,
+          "A_quadrature": 1.0,
+          "A_absolute_error": 0.0,
+          "selected_risk_from_joint": 0.9999999999999979,
+          "selected_risk_from_lifetime_law": 1.0,
+          "risk_absolute_error": 2.1094237467877974e-15,
+          "division_hazard": 0.0,
+          "death_hazard": 0.0,
+          "risk_derivative_finite_difference": 0.0,
+          "risk_derivative_identity": -0.0,
+          "derivative_absolute_error": 0.0
+        },
+        {
+          "lambda": 0,
+          "mu": 2,
+          "T": 2.0,
+          "t": 1.75,
+          "A_closed": 1.0,
+          "A_quadrature": 1.0,
+          "A_absolute_error": 0.0,
+          "selected_risk_from_joint": 0.9999999999999978,
+          "selected_risk_from_lifetime_law": 1.0,
+          "risk_absolute_error": 2.220446049250313e-15,
+          "division_hazard": 0.0,
+          "death_hazard": 0.0,
+          "risk_derivative_finite_difference": 3.469446951953614e-12,
+          "risk_derivative_identity": -0.0,
+          "derivative_absolute_error": 3.469446951953614e-12
+        },
+        {
+          "lambda": 2,
+          "mu": 0,
+          "T": 2.0,
+          "t": 0.25,
+          "A_closed": 0.6065306597126334,
+          "A_quadrature": 0.6065306597126334,
+          "A_absolute_error": 0.0,
+          "selected_risk_from_joint": 1.0,
+          "selected_risk_from_lifetime_law": 1.0,
+          "risk_absolute_error": 0.0,
+          "division_hazard": 2.0,
+          "death_hazard": 0.0,
+          "risk_derivative_finite_difference": 0.0,
+          "risk_derivative_identity": 0.0,
+          "derivative_absolute_error": 0.0
+        },
+        {
+          "lambda": 2,
+          "mu": 0,
+          "T": 2.0,
+          "t": 0.5,
+          "A_closed": 0.36787944117144233,
+          "A_quadrature": 0.36787944117144233,
+          "A_absolute_error": 0.0,
+          "selected_risk_from_joint": 1.0,
+          "selected_risk_from_lifetime_law": 1.0,
+          "risk_absolute_error": 0.0,
+          "division_hazard": 2.0,
+          "death_hazard": 0.0,
+          "risk_derivative_finite_difference": 0.0,
+          "risk_derivative_identity": 0.0,
+          "derivative_absolute_error": 0.0
+        },
+        {
+          "lambda": 2,
+          "mu": 0,
+          "T": 2.0,
+          "t": 1,
+          "A_closed": 0.1353352832366127,
+          "A_quadrature": 0.1353352832366127,
+          "A_absolute_error": 0.0,
+          "selected_risk_from_joint": 1.0,
+          "selected_risk_from_lifetime_law": 1.0,
+          "risk_absolute_error": 0.0,
+          "division_hazard": 2.0,
+          "death_hazard": 0.0,
+          "risk_derivative_finite_difference": 0.0,
+          "risk_derivative_identity": 0.0,
+          "derivative_absolute_error": 0.0
+        },
+        {
+          "lambda": 2,
+          "mu": 0,
+          "T": 2.0,
+          "t": 1.75,
+          "A_closed": 0.030197383422318504,
+          "A_quadrature": 0.0301973834223185,
+          "A_absolute_error": 3.469446951953614e-18,
+          "selected_risk_from_joint": 1.0,
+          "selected_risk_from_lifetime_law": 1.0,
+          "risk_absolute_error": 0.0,
+          "division_hazard": 2.0,
+          "death_hazard": 0.0,
+          "risk_derivative_finite_difference": 0.0,
+          "risk_derivative_identity": 0.0,
+          "derivative_absolute_error": 0.0
+        },
+        {
+          "lambda": 0,
+          "mu": 0,
+          "T": 2.0,
+          "t": 0.25,
+          "A_closed": 1.0,
+          "A_quadrature": 1.0,
+          "A_absolute_error": 0.0,
+          "selected_risk_from_joint": 1.0,
+          "selected_risk_from_lifetime_law": 1.0,
+          "risk_absolute_error": 0.0,
+          "division_hazard": 0.0,
+          "death_hazard": 0.0,
+          "risk_derivative_finite_difference": 0.0,
+          "risk_derivative_identity": 0.0,
+          "derivative_absolute_error": 0.0
+        },
+        {
+          "lambda": 0,
+          "mu": 0,
+          "T": 2.0,
+          "t": 0.5,
+          "A_closed": 1.0,
+          "A_quadrature": 1.0,
+          "A_absolute_error": 0.0,
+          "selected_risk_from_joint": 1.0,
+          "selected_risk_from_lifetime_law": 1.0,
+          "risk_absolute_error": 0.0,
+          "division_hazard": 0.0,
+          "death_hazard": 0.0,
+          "risk_derivative_finite_difference": 0.0,
+          "risk_derivative_identity": 0.0,
+          "derivative_absolute_error": 0.0
+        },
+        {
+          "lambda": 0,
+          "mu": 0,
+          "T": 2.0,
+          "t": 1,
+          "A_closed": 1.0,
+          "A_quadrature": 1.0,
+          "A_absolute_error": 0.0,
+          "selected_risk_from_joint": 1.0,
+          "selected_risk_from_lifetime_law": 1.0,
+          "risk_absolute_error": 0.0,
+          "division_hazard": 0.0,
+          "death_hazard": 0.0,
+          "risk_derivative_finite_difference": 0.0,
+          "risk_derivative_identity": 0.0,
+          "derivative_absolute_error": 0.0
+        },
+        {
+          "lambda": 0,
+          "mu": 0,
+          "T": 2.0,
+          "t": 1.75,
+          "A_closed": 1.0,
+          "A_quadrature": 1.0,
+          "A_absolute_error": 0.0,
+          "selected_risk_from_joint": 1.0,
+          "selected_risk_from_lifetime_law": 1.0,
+          "risk_absolute_error": 0.0,
+          "division_hazard": 0.0,
+          "death_hazard": 0.0,
+          "risk_derivative_finite_difference": 0.0,
+          "risk_derivative_identity": 0.0,
+          "derivative_absolute_error": 0.0
+        }
+      ],
+      "max_A_error": 1.1102230246251565e-16,
+      "max_risk_identity_error": 2.886579864025407e-15,
+      "max_risk_derivative_error": 8.872008683269428e-11
+    }
+  },
+  "minimum_gate": [
+    {
+      "id": "cohort",
+      "required": "Day-0 founder roster, enrollment/exclusions, inclusion probabilities, row duplicates, endpoint ascertainment and branch-choice rule."
+    },
+    {
+      "id": "dictionary",
+      "required": "Named row identity and cross-sheet join; event/cumulative/zero/missing definitions; actual timestamp map and exposure history."
+    },
+    {
+      "id": "risk_censoring",
+      "required": "Birth or entry clock, alive/observed mask, loss versus death/administrative end, lineage/independent-experiment IDs; retain nondividers."
+    },
+    {
+      "id": "frozen_analysis",
+      "required": "Choose path/family/population estimand, denominator, justified weights, dependence model and observation likelihood before fitting; pass analytic selection controls."
+    },
+    {
+      "id": "stop_rule",
+      "required": "Unverified selection/time/censoring means no empirical hazard estimate. Functional-state exit needs observed transitions and state-risk exposure separately."
+    }
+  ],
+  "sources": [
+    {
+      "id": "oren2021_author_manuscript",
+      "url": "https://escholarship.org/content/qt71d7s3v6/qt71d7s3v6.pdf",
+      "doi": "10.1038/s41586-021-03796-6",
+      "verified_on": "2026-11-10",
+      "access_note": "Read primary author manuscript through institutional repository; PMC/publisher fetches were inconsistent."
+    },
+    {
+      "id": "nakashima2020",
+      "url": "https://academic.oup.com/bioinformatics/article/36/9/2829/5714738",
+      "doi": "10.1093/bioinformatics/btaa040",
+      "verified_on": "2026-11-10",
+      "role": "Existing chronological, retrospective and tree sampling distinctions; indexed primary article."
+    },
+    {
+      "id": "igelbrink2024",
+      "url": "https://link.springer.com/article/10.1007/s00285-024-02105-9",
+      "verified_on": "2026-11-10",
+      "role": "Different ancestral sampling schemes and reproductive bias are established mathematical prior art."
+    },
+    {
+      "id": "iyer2025",
+      "url": "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1013446",
+      "verified_on": "2026-11-10",
+      "role": "Cancer division/death competing risks and lineage-history context."
+    }
+  ],
+  "local_evidence": [
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/source-dictionary.json",
+      "sha256": "d372f281a1d6de66c1880904a78f3ca3393296b133649db9ce7220b97036c766",
+      "source_version_reviewed": 2,
+      "review_note": "Reviewed version 2 structural update: monotone division/death encodings, five initial division ones, and 146 unverified positional disagreements. These narrow numeric interpretation but do not certify cohort selection, event semantics, timestamps, row joins or censoring. Hazard-estimation gate unchanged."
+    },
+    {
+      "path": "research/treatment-discovery/discovery-2026-11-10/mechanistic-simulation/v2/validation-data-route.json",
+      "sha256": "f8fbafee4b1f59cdbd2ba916dc1f45c49015b15131ed16e0011991f64b1a22d2"
+    }
+  ],
+  "full_tree_verification": "See full-tree-review.md/json and the pinned reviewer protocol for separately executed explicit branching verification."
+}

@@ -1,0 +1,278 @@
+{
+  "version": 1,
+  "audit_date": "2026-11-10",
+  "scope": "Read-only resource/codebook reconnaissance and bounded acquisition; no event-rate fitting, outcome comparison, raw republication or contact.",
+  "overall_decision": "CONDITIONAL_GO_HCT116_RECONSTRUCTION; NOT_YET_GO_OUTCOME_INFERENCE",
+  "primary_sources": [
+    {
+      "id": "Iyer2025",
+      "url": "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1013446",
+      "doi": "10.1371/journal.pcbi.1013446",
+      "role": "Reanalysis and existing-analysis scope",
+      "availability": "Statement points to https://github.com/Shaonlab without a named repository or data accession.",
+      "article_license": "Creative Commons Attribution, as stated by publisher."
+    },
+    {
+      "id": "Chakrabarti2018",
+      "url": "https://www.nature.com/articles/s41467-018-07788-5",
+      "doi": "10.1038/s41467-018-07788-5",
+      "role": "Original HCT116 source",
+      "availability": "Supplementary Data 1 contains lineage data; Supplementary Data 2 explains its structure.",
+      "article_license": "CC BY 4.0; third-party exceptions apply if separately credited. No contrary notice identified in the acquired workbook or its dictionary."
+    },
+    {
+      "id": "Granada2020",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7185964/",
+      "doi": "10.1091/mbc.E19-09-0515",
+      "role": "Original U2OS source",
+      "availability": "Generic p53Cinema is linked; additional custom MATLAB code is available on request. No machine-readable event deposit located in the inspected article/supplement inventory.",
+      "article_license": "CC BY-NC-SA 3.0 after the publisher embargo; this does not establish availability or separate permission for an absent event dataset."
+    }
+  ],
+  "local_acquisition": {
+    "directory": "research/treatment-discovery/sources/lineage-2026-11-10",
+    "git_ignored_verified": true,
+    "files": [
+      {
+        "name": "41467_2018_7788_MOESM5_ESM.xlsx",
+        "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-018-07788-5/MediaObjects/41467_2018_7788_MOESM5_ESM.xlsx",
+        "bytes": 1446947,
+        "sha256": "212e5ca40af8fe5f1b07baf613459f275c7b97a2ec99e31fa2505af252a3f130",
+        "content_type": "application/octet-stream"
+      },
+      {
+        "name": "41467_2018_7788_MOESM6_ESM.docx",
+        "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-018-07788-5/MediaObjects/41467_2018_7788_MOESM6_ESM.docx",
+        "bytes": 17442,
+        "sha256": "6f863bac4ce6157dfcf59f802e61b3fcf457251d7d6e7e489a6f0d69627d944b",
+        "content_type": "application/octet-stream"
+      },
+      {
+        "name": "Iyer2025-supplement.pdf",
+        "url": "https://journals.plos.org/ploscompbiol/article/file?id=10.1371/journal.pcbi.1013446.s001&type=supplementary",
+        "bytes": 2059025,
+        "sha256": "cae587bca7e9de6de4bbdc9668dbf626ddc705b397dfa60ee5b0c16669acde2e",
+        "content_type": "application/pdf",
+        "pages": 25
+      }
+    ],
+    "movies_downloaded": false,
+    "raw_files_in_public_output": false,
+    "temporary_original_directory": "tmp/iyer-empirical-audit",
+    "durable_copies_hash_verified": true
+  },
+  "iyer_code_reconnaissance": {
+    "source_link": "https://github.com/Shaonlab",
+    "method": "GitHub connector repository searches: user:Shaonlab; persister user:Shaonlab; Iyer persister. Focused paper-title/author web searches also checked.",
+    "observed_account_search_results": [
+      "Diffusion-Accessible-Domains",
+      "Simulation-DADs",
+      "Circadian-phase-estimation---PRECISE",
+      "Alaya-Test",
+      "ODeGP"
+    ],
+    "matching_named_repository_located": false,
+    "scope_limit": "Search results are a bounded observed inventory, not proof that unpublished/private/unindexed code does not exist.",
+    "other_access_results": "GitHub account repositories web tab unavailable to web fetch; a direct search endpoint was rejected by the connector URL schema. No alternate access was used to circumvent that rejection.",
+    "code_license": "No study-specific public code located, so no study-specific code licence certified."
+  },
+  "hct116": {
+    "source": "Chakrabarti2018",
+    "decision": "GO for event/tree reconstruction and structural eligibility audit; conditional hold on inferential modeling.",
+    "cell_line": "HCT116 p53-Venus / p53-VKI with H2B-ECFP; colorectal cancer cell line, not EGFR-mutant lung cancer.",
+    "deposited_workbook": {
+      "name": "41467_2018_7788_MOESM5_ESM.xlsx",
+      "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-018-07788-5/MediaObjects/41467_2018_7788_MOESM5_ESM.xlsx",
+      "bytes": 1446947,
+      "sha256": "212e5ca40af8fe5f1b07baf613459f275c7b97a2ec99e31fa2505af252a3f130",
+      "content_type": "application/octet-stream"
+    },
+    "deposited_dictionary": {
+      "name": "41467_2018_7788_MOESM6_ESM.docx",
+      "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-018-07788-5/MediaObjects/41467_2018_7788_MOESM6_ESM.docx",
+      "bytes": 17442,
+      "sha256": "6f863bac4ce6157dfcf59f802e61b3fcf457251d7d6e7e489a6f0d69627d944b",
+      "content_type": "application/octet-stream"
+    },
+    "verified_workbook_structure": [
+      {
+        "name": "Divisions",
+        "dimension": "A1:II394",
+        "defined_cells": 95742,
+        "numeric_values": 95742,
+        "non_numeric_types": [],
+        "formula_count": 0,
+        "unique_codes": [
+          "0",
+          "1"
+        ]
+      },
+      {
+        "name": "p53",
+        "dimension": "A1:II394",
+        "defined_cells": 95742,
+        "numeric_values": 95742,
+        "non_numeric_types": [],
+        "formula_count": 0
+      },
+      {
+        "name": "Apoptosis",
+        "dimension": "A1:II394",
+        "defined_cells": 95742,
+        "numeric_values": 95742,
+        "non_numeric_types": [],
+        "formula_count": 0,
+        "unique_codes": [
+          "0",
+          "1"
+        ]
+      },
+      {
+        "name": "Lineage",
+        "dimension": "A1:II394",
+        "defined_cells": 95742,
+        "numeric_values": 95742,
+        "non_numeric_types": [],
+        "formula_count": 0
+      }
+    ],
+    "dictionary_fields": {
+      "rows": "394 tracked-cell rows with shared ancestral histories; not 394 independent founders.",
+      "columns": "243 nominal 30-minute timepoints; codebook reports 121.5-hour experiment.",
+      "Divisions": "1 means division at that timepoint; 0 means no division.",
+      "Apoptosis": "1 means death at that timepoint.",
+      "p53": "p53-Venus measurement; -1 denotes not tracked, due either to death or ambiguous identity at the beginning.",
+      "Lineage": "Shared numeric labels at a frame identify a common tracked cell/history; splitting labels mark divisions. Zero means not tracked. An unchanged label alone does not rule out division.",
+      "parent_id": "No explicit parent-ID column. A biological event/parent table must be reconstructed from lineage splits and division indicators; one descendant can retain the prior label.",
+      "replicate_id": "No movie, field, well, experiment or replicate field in the four arrays.",
+      "treatment_arm": "One source-described cisplatin trajectory; no per-row arm column or multiple-dose table."
+    },
+    "time_and_treatment": {
+      "dictionary_hours_before_treatment": 49,
+      "dictionary_frame_before_which_treatment_added": 98,
+      "dictionary_sampling_minutes": 30,
+      "dictionary_total_hours": 121.5,
+      "source_concentration_micromolar": 12.5,
+      "dictionary_unit_extraction_note": "The DOCX micro symbol is stored as Symbol-font character F06D; naive text extraction drops it. Unit agrees with primary paper.",
+      "main_methods_hours_before_treatment": 50,
+      "status": "Workbook-specific codebook is more precise, but 49-hour/frame98 versus main-text50-hour discrepancy and first-frame/event-boundary convention must remain explicit; no silent alignment correction.",
+      "absolute_timestamp_vector_deposited": false
+    },
+    "known_source_selection": {
+      "source": "Iyer2025 Supporting Text section1/TableA, pages2-3",
+      "reported_ancestor_trees": 83,
+      "reported_retained_trees": 65,
+      "reported_retained_present_first_frame": 49,
+      "reported_retained_later_entries": 16,
+      "excluded_lineage_labels": [
+        1,
+        189,
+        205,
+        256,
+        258,
+        261,
+        279,
+        281,
+        284,
+        287,
+        288,
+        295,
+        296,
+        298,
+        314,
+        316,
+        317,
+        338
+      ],
+      "source_described_missing_or_abrupt_identity_groups": [
+        1,
+        205,
+        295,
+        296,
+        338
+      ],
+      "other_exclusions": "13 never-dividing founder lineages; some later enter and some die, so this is outcome-related selection.",
+      "limit": "These are published exclusion labels, not independently reconstructed tree identities or a repaired population denominator."
+    },
+    "censoring": "Explicit -1 and zero tracking conventions are helpful, but the dictionary does not provide a separate per-episode lost-track, administrative-end or complete-family flag. Parent reconstruction and missing-branch checks are required.",
+    "replication_limit": "The original article reports two experiments in parts of its analysis, but no row-to-experiment mapping is supplied in this workbook. Multiple tracked cells do not supply independent experimental replication.",
+    "reuse_assessment": "Article-associated workbook/dictionary are publicly supplied under the original CC BY 4.0 framework absent a separately credited exception. Attribute source, describe transformations and retain originals. This audit publishes metadata and links only; no raw file or third-party code is mirrored.",
+    "required_next_structural_checks": [
+      "Reconstruct unique biological cell episodes, splitting an inherited label at every division, and deduplicate repeated ancestor histories.",
+      "Verify each division has the expected daughter relationships and event timing; list orphan, merging or abruptly appearing identities instead of fixing them silently.",
+      "Cross-check apoptosis flags, p53 -1 entries and lineage-zero masks; retain contradictions and uncertain loss as distinct states.",
+      "Build an eligible-founder roster with baseline presence, delayed entry and complete post-treatment follow-up indicators, without selecting by survival or division count.",
+      "Map and report the original 18 exclusions, with never-divider inclusion sensitivity distinct from missing-identity exclusions.",
+      "Resolve frame98 alignment, the codebook49-hour versus main-methods50-hour timing, and division/death boundary conventions; otherwise carry prespecified treatment-origin and one-frame event-boundary sensitivities.",
+      "Determine whether any provenance source can recover independent experiment/field IDs; otherwise keep all inference within this recorded experiment."
+    ]
+  },
+  "u2os": {
+    "source": "Granada2020 and Iyer2025 Supporting Text",
+    "decision": "NO_GO for full-tree empirical validation from currently located public files.",
+    "tracking": "One randomly selected daughter per division; the untracked sister subtree is absent by design.",
+    "reported_arms_micromolar": [
+      0,
+      7,
+      10,
+      13
+    ],
+    "located_files": [
+      {
+        "name": "mbc-31-845-s001.pdf",
+        "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/7185964/bin/mbc-31-845-s001.pdf",
+        "format": "PDF",
+        "publisher_displayed_size": "1.6 MB (approximate; exact bytes not acquired)",
+        "role": "Supplementary figures/count tables, not a deposited normalized event table verified here.",
+        "access_check": "PMC attachment returned a browser-check page; publisher supplemental URL returned403. Contents not certified in this audit."
+      },
+      {
+        "names": [
+          "Movie S1",
+          "Movie S2",
+          "Movie S3",
+          "Movie S4"
+        ],
+        "formats": [
+          "MOV"
+        ],
+        "publisher_displayed_sizes": [
+          "6.2 MB",
+          "5.9 MB",
+          "4.8 MB",
+          "4 MB"
+        ],
+        "role": "Example movies; not equivalent to lineage/event records, and not downloaded."
+      }
+    ],
+    "missing": "Reusable event file/accession, exact per-cell/frame dictionary, identity/parent fields, tracking/censoring roster, replicate links and dataset-specific reuse terms. Even with single-tag events, family extinction of an untracked full tree cannot be recovered."
+  },
+  "existing_analyses_to_avoid_repackaging": [
+    "Chakrabarti2018: division/death timing correlations, sister-fate and p53 associations, competing-risk/copula inference and an oscillatory lineage model.",
+    "Granada2020: proliferation/cell-cycle features versus cisplatin outcome and information-theoretic interactions.",
+    "Iyer2025: cycling-mixture analysis, population-decay fits, age-structured and inherited-state alternatives, competing-risk inference, lineage-fate correlation, barcode-diversity simulation and repeated random-daughter sampling for a Luria-Delbruck statistic."
+  ],
+  "one_concrete_proposed_test": {
+    "status": "PROPOSAL_ONLY; no empirical outcome fit or performance score computed.",
+    "question": "Can a model trained on prospective event histories predict held-out families\u2019 endpoint survival and the death-time distribution after conditioning those families on endpoint survival, without introducing inherited latent states?",
+    "purpose": "Test transport of a sampling-aware baseline to a withheld ascertainment design, not the algebraic Qh identity and not a repeat of published lineage-correlation or population-slope fits.",
+    "primary_data": "HCT116 full trees only, after reconstruction/censoring gates. Keep entire founder families together in training/test partitions.",
+    "baseline": "An observed cause-specific event model with cell age and time since treatment; both division and death use a common observable risk set and administrative/loss censoring is explicit. No latent counterfactual failure-time claim.",
+    "comparison": "An inherited-family effect or documented inherited-state model with the same observed-event likelihood and equally prespecified flexibility; a constant-rate branching model is an additional restricted reference.",
+    "target_measurements": [
+      "Held-out family survival at fixed post-treatment landmarks, suggested 24/48/72 hours pending certified frame map",
+      "Held-out conditional random-forward-tag death-time distribution among endpoint-surviving families",
+      "Calibration and proper predictive score, with uncertainty clustered by original founder and branch sampling integrated or repeated with fixed seeds"
+    ],
+    "analysis_commitments": [
+      "Freeze eligibility, endpoint, model complexity, split seed and scoring before outcome fitting.",
+      "Use a hierarchy-aware split: entire family in one fold; no duplicated ancestor event in both training and testing.",
+      "Compare the actual selected distribution to predictions; do not call Qhat*hhat=tag_survivors/all_founders an empirical model test because it is an accounting identity.",
+      "Report all-founder versus published never-divider-excluded sensitivity, delayed-entry handling and one-frame timing sensitivity.",
+      "Report all-founder versus published never-divider-excluded sensitivity, delayed-entry handling, the 49-hour versus 50-hour treatment-origin difference and one-frame event-boundary sensitivity."
+    ],
+    "interpretation": "A successful baseline challenges the need for additional latent-state structure for this prediction; a failure does not uniquely establish memory, because unobserved heterogeneity, environmental effects or censoring misspecification remain alternatives. Small single-experiment data cannot establish cross-experiment generalization.",
+    "novelty_status": "Unestablished; proposed incremental predictive/design test, with focused prior-art review required before a novelty claim."
+  },
+  "bottom_line": "The HCT116 pair supplies actual small reusable event/lineage arrays with a source dictionary and a favourable reuse framework. It is a concrete reconstruction target, not yet a complete normalized event table with verified replication and censoring. Iyer-specific code and U2OS event data were not located in the inspected public sources."
+}

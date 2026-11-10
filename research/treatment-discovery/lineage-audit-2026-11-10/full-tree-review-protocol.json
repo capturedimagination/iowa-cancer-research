@@ -1,0 +1,58 @@
+{
+  "version": 1,
+  "created_utc": "2026-11-10T18:51:29.364513+00:00",
+  "root_plan_sha256": "424705a8c9dac1d199285eddda49b19a4050aa82f235102f731046c62a78ee8e",
+  "purpose": "Independent full-tree Gillespie verification of selected-family tagged-path survival; no shortcut/tag-sidebranch simulator imports.",
+  "horizon": 1.0,
+  "rate_pairs": [
+    [
+      0.5,
+      2.0
+    ],
+    [
+      2.0,
+      0.5
+    ],
+    [
+      2.0,
+      2.0
+    ],
+    [
+      0.0,
+      2.0
+    ],
+    [
+      2.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ]
+  ],
+  "founder_trees_per_pair": 20000,
+  "seed": 2026111005,
+  "observation_times": [
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "algorithm": "Explicit active-cell list. Population event rate n*(lambda+mu); choose active cell uniformly. Each division replaces it by two cells; if tagged, independently choose one daughter uniformly to retain the tag. Each death removes that cell. Continue all remaining cells after tag death through T. Endpoint-select founder iff population remains positive.",
+  "aggregates": [
+    "Family selection count and probability",
+    "Prospective and selected tag-alive counts at each fixed time",
+    "Selected tag deaths",
+    "Full population divisions/deaths/terminal counts and balance identity",
+    "Monte Carlo SE and deviations from independent formulas"
+  ],
+  "checks": [
+    "Population balance N(T)=1+divisions-deaths for every tree",
+    "Tag cannot die twice or be alive if full tree extinct",
+    "Zero-birth/death edge fixtures",
+    "Compare all family inclusion and selected survival probabilities with analytic formulas; preserve every case and deviation"
+  ],
+  "evaluation": "Predeclared numerical verification threshold: deviations <=6 analytic binomial MCSE plus1e-12, with exact checks for probability0/1. This is a computational check, not scientific significance or a selection rule.",
+  "runtime": "No adaptive sample size or parameter removal; all20000 trees per each of6cases.",
+  "results_inspected": false
+}

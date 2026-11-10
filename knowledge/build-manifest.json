@@ -2,7 +2,7 @@
   "source_cutoff": "2026-11-10",
   "schema_version": 1,
   "database": "knowledge/research.sqlite",
-  "database_sha256": "bcf18d674d295fe60424f2d6261912903bb196af6000d3dfdd410ac70e5c8111",
+  "database_sha256": "ad87e15b85403c03cef9e7c18c7ebe7debc5b7ed24673edf2fc906aa73d15537",
   "checks": {
     "integrity_check": "ok",
     "tri_forms": 60040,
@@ -14,8 +14,8 @@
     "title_v_rows": 283,
     "ahs_public_summary_rows": 46,
     "industry_evidence_records": 93,
-    "datasets": 56,
-    "search_records": 1456,
+    "datasets": 57,
+    "search_records": 1471,
     "search_smoke_matches": 84,
     "pdfs": {
       "ocr_sidecar_requires_page_verification": 11,

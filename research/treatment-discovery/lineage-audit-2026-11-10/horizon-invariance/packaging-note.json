@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "packaged_at_utc": "2026-11-10T19:17:14.248189+00:00",
+  "reason": "Publication diff check found trailing spaces on an otherwise blank source line.",
+  "change": {
+    "file": "scripts/check_lineage_horizon_invariance.py",
+    "line": 171,
+    "removed": "12 ASCII spaces before newline",
+    "all_other_source_bytes_unchanged": true,
+    "python_ast_identical": true
+  },
+  "protocol_sha256": "752885ddeb5de119deaa3a36dcd1d28e2735cf6bc222add08bb3dfb150133996",
+  "protocol_unchanged": true,
+  "first_run": {
+    "script_sha256": "7be17332f2f76dad913847ed8b15bc9efe6182186fe663866942597cc13b1aa1",
+    "results_sha256": "262aa86d5ee5b7e52f433cb3eea1ebae6f656607cfe32107bd9131d899e93958",
+    "generated_at_utc": "2026-11-10T19:10:24.016796+00:00",
+    "environment": {
+      "python": "3.12.14",
+      "numpy": "2.3.5",
+      "scipy": "1.16.3",
+      "platform": "macOS-26.6.2-arm64-arm-64bit"
+    },
+    "status": "PASS"
+  },
+  "packaged_rerun": {
+    "script_sha256": "1a26eea7ec3b1bf734003e3fa691848d7d21e60f75622b7ee403380b8219be3c",
+    "results_sha256": "69b93e07018f468da3af4e1bf261e08f5ab2a8fc8b0c3ec280ad16a82487f798",
+    "generated_at_utc": "2026-11-10T19:16:46.291711+00:00",
+    "environment": {
+      "python": "3.12.14",
+      "numpy": "2.3.5",
+      "scipy": "1.16.3",
+      "platform": "macOS-26.6.2-arm64-arm-64bit"
+    },
+    "status": "PASS"
+  },
+  "comparison": {
+    "excluded_fields": [
+      "generated_at_utc",
+      "script_sha256"
+    ],
+    "exactly_changed_top_level_fields": [
+      "generated_at_utc",
+      "script_sha256"
+    ],
+    "all_remaining_fields_exactly_equal": true,
+    "all_270_points_and_54_horizon_comparisons_exactly_equal": true,
+    "comparable_payload_sha256": "715b5364eb56fdf568c6760e5987253245de2e5f1c04038cbe5ac0607aff278a",
+    "canonicalization": "JSON with sorted keys, compact separators, allow_nan=false after dropping exactly the two excluded fields",
+    "canonical_payload_bytes_exactly_identical": true
+  },
+  "scientific_change": false,
+  "grid_or_tolerances_changed": false,
+  "interpretation": "Packaging-only source cleanup; frozen first-run provenance retained. This rerun does not represent an additional independent scientific check."
+}

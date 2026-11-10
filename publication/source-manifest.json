@@ -10,9 +10,9 @@
     "Ephemeral tmp working files/environments are excluded from the inventory; durable source originals have their own dated paths and provenance."
   ],
   "counts": {
-    "included": 343,
+    "included": 391,
     "local_generated": 1,
-    "linked_source_only": 81
+    "linked_source_only": 87
   },
   "expected_public_files": [
     ".gitattributes",
@@ -33,6 +33,7 @@
     "publication/source-manifest.json",
     "publication/verification-2026-11-10.json",
     "publication/verification-discovery-2026-11-10.json",
+    "publication/verification-lineage-2026-11-10.json",
     "publication/verification.json",
     "requirements-treatment.txt",
     "requirements.txt",
@@ -203,6 +204,45 @@
     "research/treatment-discovery/discovery-2026-11-10/research-destinations.md",
     "research/treatment-discovery/egfr-mechanism-feasibility.json",
     "research/treatment-discovery/egfr-mechanism-feasibility.md",
+    "research/treatment-discovery/lineage-audit-2026-11-10/README.md",
+    "research/treatment-discovery/lineage-audit-2026-11-10/calendar-rate-independent-review.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/calendar-rate-independent-review.md",
+    "research/treatment-discovery/lineage-audit-2026-11-10/encoding-checks.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/full-tree-review-freeze.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/full-tree-review-protocol.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/full-tree-review.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/full-tree-review.md",
+    "research/treatment-discovery/lineage-audit-2026-11-10/hazard-estimand-review.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/hazard-estimand-review.md",
+    "research/treatment-discovery/lineage-audit-2026-11-10/hct116-structure/README.md",
+    "research/treatment-discovery/lineage-audit-2026-11-10/hct116-structure/first-pass-results.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/hct116-structure/protocol-v1.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/hct116-structure/protocol.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/hct116-structure/results.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/horizon-invariance-prior-art.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/horizon-invariance-prior-art.md",
+    "research/treatment-discovery/lineage-audit-2026-11-10/horizon-invariance/packaging-note.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/horizon-invariance/packaging-note.md",
+    "research/treatment-discovery/lineage-audit-2026-11-10/horizon-invariance/proof.md",
+    "research/treatment-discovery/lineage-audit-2026-11-10/horizon-invariance/protocol.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/horizon-invariance/results.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/identity-check-results.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/next-empirical-resource.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/next-empirical-resource.md",
+    "research/treatment-discovery/lineage-audit-2026-11-10/novelty-and-identifiability.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/novelty-and-identifiability.md",
+    "research/treatment-discovery/lineage-audit-2026-11-10/plan-freeze.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/research-destination.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/research-destination.md",
+    "research/treatment-discovery/lineage-audit-2026-11-10/sampling-information-review.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/sampling-information-review.md",
+    "research/treatment-discovery/lineage-audit-2026-11-10/sampling-simulation-plan.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/sampling-simulation/results.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/sampling-simulation/sampling-induced-delay.svg",
+    "research/treatment-discovery/lineage-audit-2026-11-10/source-dictionary.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/source-dictionary.md",
+    "research/treatment-discovery/lineage-audit-2026-11-10/theory.md",
+    "research/treatment-discovery/lineage-audit-2026-11-10/workbook-structure.json",
     "research/treatment-discovery/preclinical-data-sources.json",
     "research/treatment-discovery/preclinical-data.md",
     "research/treatment-discovery/preclinical-metadata-audit.json",
@@ -267,8 +307,10 @@
     "research/winnebago-2000-personal-wood-dust.csv",
     "scripts/add_gap_ocr_sidecars.py",
     "scripts/analyze_industry_records.py",
+    "scripts/audit_hct116_lineage_structure.py",
     "scripts/audit_maynard_malignant_membership.py",
     "scripts/audit_maynard_metadata.py",
+    "scripts/audit_oren_lineage_workbook.py",
     "scripts/audit_signature_coexpression.py",
     "scripts/build_data_source_catalog.py",
     "scripts/build_food_industry_evidence.py",
@@ -278,6 +320,10 @@
     "scripts/build_services_evidence.py",
     "scripts/check_compilation.py",
     "scripts/check_egfr_curvature_design.py",
+    "scripts/check_lineage_family_sampling.py",
+    "scripts/check_lineage_horizon_invariance.py",
+    "scripts/check_lineage_sampling_identity.py",
+    "scripts/check_oren_lineage_encoding.py",
     "scripts/check_publication.py",
     "scripts/check_signature_depth.py",
     "scripts/extract_iowa_title_v_2024.py",
@@ -285,6 +331,7 @@
     "scripts/fetch_iowa_tri_history.py",
     "scripts/ocr_pdf_applevision.swift",
     "scripts/plot_gse292469_signature.py",
+    "scripts/plot_lineage_family_sampling.py",
     "scripts/plot_signature_depth.py",
     "scripts/prepare_compilation.py",
     "scripts/prepare_publication.py",
@@ -294,6 +341,7 @@
     "scripts/run_nsclc_benchmark.py",
     "scripts/simulate_egfr_curvature_design.py",
     "scripts/simulate_egfr_state_dynamics.py",
+    "scripts/simulate_lineage_family_sampling.py",
     "scripts/simulate_signature_depth.py",
     "sources/HF2635-Signed-2026.ocr.provenance.json",
     "sources/cohort-access/ahs-public-cancer-summary-through-2021.csv",
@@ -372,8 +420,8 @@
     },
     {
       "path": ".gitignore",
-      "bytes": 6418,
-      "sha256": "52cac524e64d516763a7647a8354e5b07ae09449c479bef6febce7dc71afd9dd",
+      "bytes": 6993,
+      "sha256": "94fe5afc4001cccb9a3ff504fac0337b2175676bc29fab19a1ae5b2884a67a4e",
       "publication_status": "included",
       "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
       "upstream_urls": [
@@ -382,8 +430,8 @@
     },
     {
       "path": "AGENTS.md",
-      "bytes": 2276,
-      "sha256": "4e8351795114108bad632b5e31ca3659463f78e7445b149ee009ffeedaf599cb",
+      "bytes": 2709,
+      "sha256": "d31b7a57c73f816bf7bd8ca1808a88c65e3f94a2c5fe7278a29011dbbed00a4c",
       "publication_status": "included",
       "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
       "upstream_urls": []
@@ -414,16 +462,16 @@
     },
     {
       "path": "PUBLICATION.md",
-      "bytes": 9291,
-      "sha256": "9c1ed751ce3b4efaf029360b8b2075f048c3574039054cdb73ca422431ac6733",
+      "bytes": 9764,
+      "sha256": "bc81c51d7292443613395bcd0d809c6d07cbf1749d6bb1128b890b85f7d7729e",
       "publication_status": "included",
       "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
       "upstream_urls": []
     },
     {
       "path": "README.md",
-      "bytes": 5904,
-      "sha256": "6a12fad172a303fbf590979e38adf83283a3df317d555eacffb4a0cfd490fed8",
+      "bytes": 6225,
+      "sha256": "2082a21e483203e0c9a9e5736b0d3eac843b12bbf43e1efca3e579436985c62b",
       "publication_status": "included",
       "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
       "upstream_urls": [
@@ -433,16 +481,16 @@
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
-      "bytes": 12754,
-      "sha256": "2d0e589891b06dde6b985075a58a1c95a8e51ce26205a7b4fc8e9ada57fb0626",
+      "bytes": 14246,
+      "sha256": "8ba84e15a0a5c7a41dafcbfc7e6073a6f1a42888c50cfddb5a50f424a33e0072",
       "publication_status": "included",
       "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
       "upstream_urls": []
     },
     {
       "path": "knowledge/INDEX.md",
-      "bytes": 13445,
-      "sha256": "b645037f68d7fb97c0c55c352bfc99b116e1940e4210f8904aac4393e2448bad",
+      "bytes": 15021,
+      "sha256": "c915f23f4b4537ed9104321cd2f10f8842c60e90951309c547c3da2b0299e766",
       "publication_status": "included",
       "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
       "upstream_urls": []
@@ -450,7 +498,7 @@
     {
       "path": "knowledge/build-manifest.json",
       "bytes": 1870,
-      "sha256": "2af43cff279e02a3ffb3979c76640d17d11ac3c7850d04fda6ef74d7d232f7c4",
+      "sha256": "6c99b07ecf074d2d559a375cf693f45cbf448fc66049610ec1d5ed3606a1e3a0",
       "publication_status": "included",
       "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
       "upstream_urls": []
@@ -465,8 +513,8 @@
     },
     {
       "path": "knowledge/research.sqlite",
-      "bytes": 294297600,
-      "sha256": "bcf18d674d295fe60424f2d6261912903bb196af6000d3dfdd410ac70e5c8111",
+      "bytes": 294686720,
+      "sha256": "ad87e15b85403c03cef9e7c18c7ebe7debc5b7ed24673edf2fc906aa73d15537",
       "publication_status": "local_generated",
       "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
       "upstream_urls": []
@@ -499,6 +547,14 @@
       "path": "publication/verification-discovery-2026-11-10.json",
       "bytes": 3160,
       "sha256": "6966d4166100f0613323dd8c986a8b282c6bae2e17e0e9ddc37fb63f1d872cba",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "publication/verification-lineage-2026-11-10.json",
+      "bytes": 4785,
+      "sha256": "b71c74c8ca00feea7bda4b77ec8b26798220795adacda7fb8022063c61faa0ec",
       "publication_status": "included",
       "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
       "upstream_urls": []
@@ -1489,8 +1545,8 @@
     },
     {
       "path": "research/treatment-discovery/README.md",
-      "bytes": 9377,
-      "sha256": "96ffa7095e02aad4d16f88bda01e08dc4324067efc6370ac1651ec5d1946b44d",
+      "bytes": 9980,
+      "sha256": "5cdc17f57b86fbd1d1475a0615690d0a244533a0478efd7a8a67bb7292a28c20",
       "publication_status": "included",
       "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
       "upstream_urls": []
@@ -1643,16 +1699,16 @@
     },
     {
       "path": "research/treatment-discovery/data-access-catalog.json",
-      "bytes": 19157,
-      "sha256": "7d0f2af95c2b5e19297ce2f4bd24e1509deb5ed3b6be86526d239c17790ad391",
+      "bytes": 22795,
+      "sha256": "4414fd98b1ad348d71cdf91ef98eb79e4917bfdc9eb841db2b5df8e35b7cdfc2",
       "publication_status": "included",
       "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
       "upstream_urls": []
     },
     {
       "path": "research/treatment-discovery/discovery-2026-11-10/README.md",
-      "bytes": 8025,
-      "sha256": "ee8bf59f10e1923455abf5624b2c03e9fcf75a62bf039d58db599f6cce9fb4f7",
+      "bytes": 8407,
+      "sha256": "efd71c2563e0922ea0d4e2723b8ff8ce7c0f09ddddeb5f88f294505d8f4d672a",
       "publication_status": "included",
       "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
       "upstream_urls": [
@@ -1900,6 +1956,318 @@
       "upstream_urls": []
     },
     {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/README.md",
+      "bytes": 11828,
+      "sha256": "394e6bf33efec1870826df71711f7b8a7f5693ca3265fefe20d05a7409e2412c",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/calendar-rate-independent-review.json",
+      "bytes": 7145,
+      "sha256": "3fbb68f8c04eefaf8f74034f6948a0a5136a1c61ac4fdf6256929aa43e2e7f7f",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/calendar-rate-independent-review.md",
+      "bytes": 5970,
+      "sha256": "1818b681461770de15f96ea944862b3b76a3c09cc46153b0aa1710f21f9349eb",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/encoding-checks.json",
+      "bytes": 3451,
+      "sha256": "e4caea3084cf7454046fcd9d8c8c90903e6e96968ae0ef793ac81ac43a69a97f",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/full-tree-review-freeze.json",
+      "bytes": 281,
+      "sha256": "8c1e2d185667feed90f354cf4020b3a65deb39806eb82131e9665681353b1a87",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/full-tree-review-protocol.json",
+      "bytes": 2020,
+      "sha256": "9c00b14a08a36eb3ba585a9c396eee5f3a242c624da49cbd723bd4e17d6ef16d",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/full-tree-review.json",
+      "bytes": 29645,
+      "sha256": "68e1d6b126490bd7586e8815e16a64fb90009b75e90d2050218f621693483399",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/full-tree-review.md",
+      "bytes": 4146,
+      "sha256": "f976905af2c52537d7fc72537c1f1b3d55485c737f67602030e19d4a5a592e4d",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/hazard-estimand-review.json",
+      "bytes": 24741,
+      "sha256": "2ac034d4ee48b4fc24627206259a95a1d0b17fce00ee55ab095a66ad037770fc",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/hazard-estimand-review.md",
+      "bytes": 14103,
+      "sha256": "5a123be479fe3cef4c71f2ef16b0ed0f54e88e338e14fb78072cb8795be39365",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/hct116-structure/README.md",
+      "bytes": 11557,
+      "sha256": "aa23df62c1d62ff6fe6b690eb1e5ea46e7c7d2a2ba734715e66e8bba821a8e8b",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/hct116-structure/first-pass-results.json",
+      "bytes": 4152,
+      "sha256": "7e765bc86e3be8938bbe8870c37103e0e52cf754389904b08e5ddb69972db902",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/hct116-structure/protocol-v1.json",
+      "bytes": 3364,
+      "sha256": "8000404fa8b432e899d6d16364fc69301716d911c874534c95384cf818792c21",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/hct116-structure/protocol.json",
+      "bytes": 6229,
+      "sha256": "b70fd900f55fdddaf327c76a8b2a458e3f35c4df3fdcb3bfd3a8fb7602f19c97",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/hct116-structure/results.json",
+      "bytes": 6085,
+      "sha256": "9a45ba1626ebfcddf31796a97b4664e50c8030618bcf036eff46b9d400545b10",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/horizon-invariance/packaging-note.json",
+      "bytes": 2228,
+      "sha256": "5739b5eded4cb31fc50f6561a0a3e11f6e6fc71b57e49eb21e6e69c075a19d35",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/horizon-invariance/packaging-note.md",
+      "bytes": 1718,
+      "sha256": "0ff144bb51525dbb281fad2dd327dc9b7bc3689179d0824ac730b692fe567804",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/horizon-invariance/proof.md",
+      "bytes": 8342,
+      "sha256": "2fe1f50fff448efb32d35d71fc63c8e43bf68b13c0aca2dca47fdf74839a8c8b",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/horizon-invariance/protocol.json",
+      "bytes": 3765,
+      "sha256": "752885ddeb5de119deaa3a36dcd1d28e2735cf6bc222add08bb3dfb150133996",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/horizon-invariance/results.json",
+      "bytes": 115645,
+      "sha256": "69b93e07018f468da3af4e1bf261e08f5ab2a8fc8b0c3ec280ad16a82487f798",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/horizon-invariance-prior-art.json",
+      "bytes": 14091,
+      "sha256": "08a44ff1d35fe03c2d79da3dd4bf8b12ee938c04886c89219319de8fe4d333dd",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/horizon-invariance-prior-art.md",
+      "bytes": 11791,
+      "sha256": "7a07ed271267f45749ac5a14ace9a6d22d172aafed8a4192b520eb649779589d",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/identity-check-results.json",
+      "bytes": 90156,
+      "sha256": "706df82dcd172f993f9ac225bb89fbeecff983758e4bde4de60e77430a319e56",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/next-empirical-resource.json",
+      "bytes": 16502,
+      "sha256": "b176c2451fe2944a3a183ec15f95729693d7207835de6c5574509e5dd12900e0",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/next-empirical-resource.md",
+      "bytes": 9725,
+      "sha256": "bfb97ed9eb67285c808980eb13f4b556a4c300f4ce508767da84fc397600843d",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/novelty-and-identifiability.json",
+      "bytes": 24441,
+      "sha256": "e7ad430e88311dfc1c6b735f94d9f41e9849f05d2ceeaf9f129ef5219e9a347d",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/novelty-and-identifiability.md",
+      "bytes": 17708,
+      "sha256": "e0dc954fd5b0a16006d24aae842760357f65dda6a4ca3f66273162a4bc6dccc1",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/plan-freeze.json",
+      "bytes": 277,
+      "sha256": "e91451049c635d60396b643ba2fb2bd8d7066a0b6afe48efd54d349cb37fc8ca",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/research-destination.json",
+      "bytes": 9094,
+      "sha256": "ec53a6d366f951cd72aee023f930dd57522ee0edacc120eec458ee79a6d6fa29",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/research-destination.md",
+      "bytes": 7261,
+      "sha256": "9fd407654aba2846ea8dac725f2d5b02ad86f78c816a7fb08118ebfd8dac4375",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/sampling-information-review.json",
+      "bytes": 6264,
+      "sha256": "fb85a9295109bb62f4a3380537c4422dfe1786b378ebdcdef4ab623e266ed15c",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/sampling-information-review.md",
+      "bytes": 7962,
+      "sha256": "12a88584cbe692eb4a4c34d03ffab51164b2a805b9239b1f56bbfa6f5fc84138",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/sampling-simulation/results.json",
+      "bytes": 411512,
+      "sha256": "03a87e2662d9af0292e5e88a5ff755b03c25c4029c40e606c4cef62e4a056360",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/sampling-simulation/sampling-induced-delay.svg",
+      "bytes": 31306,
+      "sha256": "5addf5d8b32af92fdcbd5f9b5afc8349000fcd35005a102c1fa6ae7f03e92c8d",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/sampling-simulation-plan.json",
+      "bytes": 4515,
+      "sha256": "424705a8c9dac1d199285eddda49b19a4050aa82f235102f731046c62a78ee8e",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/source-dictionary.json",
+      "bytes": 19366,
+      "sha256": "d372f281a1d6de66c1880904a78f3ca3393296b133649db9ce7220b97036c766",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/source-dictionary.md",
+      "bytes": 10914,
+      "sha256": "b9d0834f0c53a0eeb9e81400693f666fa167fc9f3cf49d0540cb6d1946c9dda3",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/theory.md",
+      "bytes": 7058,
+      "sha256": "77d2d1bfaff964295f6f50ffeaf9b25633b3ba7317c477acb206a49e904efa84",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/workbook-structure.json",
+      "bytes": 3963,
+      "sha256": "add9c1445418a86464a80fc5edd1b561151a98aee1f099a15646bb23cf462eff",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
       "path": "research/treatment-discovery/preclinical-data-sources.json",
       "bytes": 40110,
       "sha256": "bcef83d8d4fba641c7fc7cc71ace70958e40cecd80f899c7a18cbf5b9e5db446",
@@ -2105,6 +2473,54 @@
       "path": "research/treatment-discovery/sources/egfr-resistance-2026-11-10/sample-metadata-derived.json",
       "bytes": 85971,
       "sha256": "d9732c068bfc69925de8929e1486a73059efeaac27de42fb388961894523726e",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Public research originals retained for local reanalysis; publish original findings and source provenance, not raw participant-level or publisher/author source mirrors",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/sources/lineage-2026-11-10/41467_2018_7788_MOESM5_ESM.xlsx",
+      "bytes": 1446947,
+      "sha256": "212e5ca40af8fe5f1b07baf613459f275c7b97a2ec99e31fa2505af252a3f130",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Public research originals retained for local reanalysis; publish original findings and source provenance, not raw participant-level or publisher/author source mirrors",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/sources/lineage-2026-11-10/41467_2018_7788_MOESM6_ESM.docx",
+      "bytes": 17442,
+      "sha256": "6f863bac4ce6157dfcf59f802e61b3fcf457251d7d6e7e489a6f0d69627d944b",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Public research originals retained for local reanalysis; publish original findings and source provenance, not raw participant-level or publisher/author source mirrors",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/sources/lineage-2026-11-10/Iyer2025-supplement.pdf",
+      "bytes": 2059025,
+      "sha256": "cae587bca7e9de6de4bbdc9668dbf626ddc705b397dfa60ee5b0c16669acde2e",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Public research originals retained for local reanalysis; publish original findings and source provenance, not raw participant-level or publisher/author source mirrors",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/sources/lineage-2026-11-10/Oren-2021-Figure1-source.xlsx",
+      "bytes": 13180157,
+      "sha256": "a53fe57483b0e55a3b2545f611ff2cf2a31338b8c9dffad0f9af1522222d8f7c",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Public research originals retained for local reanalysis; publish original findings and source provenance, not raw participant-level or publisher/author source mirrors",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/sources/lineage-2026-11-10/oren-figure1-matrices.npz",
+      "bytes": 66594,
+      "sha256": "802d397448e9d86c4895fcae2be43fa64c0dc8745e514cac7a1245337e4693a6",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Public research originals retained for local reanalysis; publish original findings and source provenance, not raw participant-level or publisher/author source mirrors",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/sources/lineage-2026-11-10/oren-figure1-small-tables.json",
+      "bytes": 59302,
+      "sha256": "0f1ba4fc21240f564c19e138d86fb2114d18a88b9277e5c2736441277a05bcc6",
       "publication_status": "linked_source_only",
       "rights_or_scope_basis": "Public research originals retained for local reanalysis; publish original findings and source provenance, not raw participant-level or publisher/author source mirrors",
       "upstream_urls": []
@@ -2762,6 +3178,14 @@
       "upstream_urls": []
     },
     {
+      "path": "scripts/audit_hct116_lineage_structure.py",
+      "bytes": 25355,
+      "sha256": "af4d949dae48361278e12a7b5df4fbe7a7ed779963be90627b729de752688e1c",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
       "path": "scripts/audit_maynard_malignant_membership.py",
       "bytes": 11950,
       "sha256": "52a32f7c1188c113ce33e1bced6df378a9d15ab909583d8a73f5dadbac0f8017",
@@ -2773,6 +3197,14 @@
       "path": "scripts/audit_maynard_metadata.py",
       "bytes": 6863,
       "sha256": "b974461f3fe2179b66789b8c3b7f443e149d9c3e2c36739b1663050eaa92f134",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "scripts/audit_oren_lineage_workbook.py",
+      "bytes": 6249,
+      "sha256": "be9a2cf3da9144c78398ee15d54decaa0c23051129792f07f980d75a511b97c8",
       "publication_status": "included",
       "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
       "upstream_urls": []
@@ -2850,6 +3282,38 @@
       "upstream_urls": []
     },
     {
+      "path": "scripts/check_lineage_family_sampling.py",
+      "bytes": 7443,
+      "sha256": "fd30aaa4729157be465d713d9c7aca18dbc195d2158d71b9931bac2e0f9f6a24",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "scripts/check_lineage_horizon_invariance.py",
+      "bytes": 9764,
+      "sha256": "1a26eea7ec3b1bf734003e3fa691848d7d21e60f75622b7ee403380b8219be3c",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "scripts/check_lineage_sampling_identity.py",
+      "bytes": 5238,
+      "sha256": "fff6392627c2129b157b9680dd3acad63b8a2857b1fb8ce6153815bdb12ecd5e",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "scripts/check_oren_lineage_encoding.py",
+      "bytes": 3665,
+      "sha256": "607d0bdd48581d5a1056f74047b3ea14e92e9ab36ada0984f5aaf4328cf33d4f",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
       "path": "scripts/check_publication.py",
       "bytes": 13449,
       "sha256": "62df8a54ed8bc8ffcf64f527cb4e4e2ab7aef161967868ceb6586a360f7892f4",
@@ -2906,6 +3370,14 @@
       "upstream_urls": []
     },
     {
+      "path": "scripts/plot_lineage_family_sampling.py",
+      "bytes": 3046,
+      "sha256": "074e93e8b2d59348d2ee3eb45c385f4c24fac4c219d3a39586529ae9546ab448",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
       "path": "scripts/plot_signature_depth.py",
       "bytes": 3524,
       "sha256": "d5fa074e84b0fed6dc0acaa5c7ccfb43bc121a441d4906febc0120b0707272f9",
@@ -2923,8 +3395,8 @@
     },
     {
       "path": "scripts/prepare_publication.py",
-      "bytes": 8124,
-      "sha256": "0019ffaecb21c14237cfdda82456d5e7329804cc803d0f2362701f0a0750cfcd",
+      "bytes": 8235,
+      "sha256": "3ff7b6e828299910ee2d20aa2e11f48b072926ff1448b9197a80245b5ef77043",
       "publication_status": "included",
       "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
       "upstream_urls": []
@@ -2973,6 +3445,14 @@
       "path": "scripts/simulate_egfr_state_dynamics.py",
       "bytes": 13732,
       "sha256": "ccb3cbc85aa31e0637004e93cf01a8e7259c09cac4d43ef4dae635f842645ded",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "scripts/simulate_lineage_family_sampling.py",
+      "bytes": 7909,
+      "sha256": "10e335ef2df373653fc9788087c9b2af5244528b40aa93d15ed9f0a60d43029c",
       "publication_status": "included",
       "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
       "upstream_urls": []

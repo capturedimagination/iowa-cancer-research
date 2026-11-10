@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "frozen_at_utc": "2026-11-10T19:09:00Z",
+  "type": "Locally frozen deterministic mathematical check; not external preregistration or an empirical experiment",
+  "knowledge_before_freeze": "The analytic finite-horizon cancellation for shared deterministic calendar-time rates and its two-transient-state representation were derived before this numerical check. No empirical outcomes are used.",
+  "question": "Does the family-selected prospective random-tag survivor function remain independent of selection horizon under shared nonconstant calendar-time birth and death rates?",
+  "assumptions": ["One founder at time zero", "Independent binary splitting and death", "All living cells share deterministic calendar-time rates lambda(t), mu(t)", "Locally bounded nonnegative rates on [0,4]", "Each tagged division chooses one daughter uniformly and independently of future fate", "A dead tag stays dead", "Retain founders iff any family descendant is alive at T", "Equal founder weights", "Compare only t <= T with positive inclusion probability"],
+  "not_covered": ["Cell-age hazards", "Inherited states or founder frailty", "Random environments averaged across founders", "Cell interactions", "Incomplete family observation", "Surviving terminal-cell ancestry selection", "The actual tag lifetime beyond T"],
+  "rate_cases": [
+    {"id": "constant_unequal", "lambda": "0.5", "mu": "2"},
+    {"id": "constant_equal", "lambda": "2", "mu": "2"},
+    {"id": "increasing_both", "lambda": "0.4+0.2*t", "mu": "0.3+0.35*t"},
+    {"id": "increasing_birth_decreasing_death", "lambda": "0.5+0.15*t", "mu": "2.5/(1+0.7*t)"},
+    {"id": "piecewise_opposite", "lambda": "0.3 if t<0.8; 2.2 if 0.8<=t<2; 0.6 if t>=2", "mu": "2 if t<0.8; 0.4 if 0.8<=t<2; 1.8 if t>=2", "breakpoints": [0.8, 2]},
+    {"id": "oscillatory", "lambda": "1.1+0.7*sin(1.3*t)", "mu": "1.2+0.7*cos(0.9*t)"},
+    {"id": "zero_birth", "lambda": "0", "mu": "0.4+0.2*t"},
+    {"id": "zero_death", "lambda": "0.3+0.15*t", "mu": "0"},
+    {"id": "zero_both", "lambda": "0", "mu": "0"}
+  ],
+  "horizons": [0.5, 1, 2, 4],
+  "time_fractions_each_horizon": [0, 0.1, 0.25, 0.5, 0.75, 1],
+  "additional_shared_absolute_times_when_le_horizon": [0, 0.1, 0.25, 0.5, 1, 2, 4],
+  "method_1": "Solve backward family survival ODE h_s=(mu-lambda)*h+lambda*h*h, h(T)=1; independently integrate the discarded-sister Poisson functional A=exp(-integral_0^t lambda(u)*h(u,T)du); Q_PGFL=exp(-M(t))*(1-(1-h(t,T))*A)/h(0,T).",
+  "method_2": "Direct quadrature of Q=exp(-L(t))+exp(-M(t))*integral_0^t lambda(u)*exp(M(u)-L(u))du, using analytic cumulative rates L and M.",
+  "method_3": "Forward ODE x1'=-lambda*x1, x2'=lambda*x1-mu*x2, x1(0)=1,x2(0)=0; Q=x1+x2.",
+  "numerics": {"ode_method": "DOP853", "ode_rtol": 1e-11, "ode_atol": 1e-13, "ode_max_step": 0.02, "quadrature_epsabs": 1e-11, "quadrature_epsrel": 1e-11, "piecewise_policy": "Split ODEs and quadratures at known discontinuities; use correct one-sided segment rates for ODE endpoints.", "absolute_agreement_threshold": 1e-8, "probability_range_tolerance": 1e-10, "shared_time_horizon_spread_threshold": 1e-8},
+  "checks": ["All three survivor functions agree at every fixed case/time", "PGFL estimates agree across different horizons at shared absolute times", "Probabilities stay in [0,1] and are nonincreasing with t", "Q(0)=1", "Q(T)*h(0,T)=exp(-M(T))", "All zero-birth/zero-death control Q values equal one", "Constant cases recover the earlier hypoexponential or Erlang-two formula"],
+  "seed": null,
+  "failure_policy": "Retain every case and failure. Do not change grids or thresholds after first numerical run; any correction is separately labeled.",
+  "empirical_data": "None; no fitting, source-outcome calibration, or biological inference."
+}

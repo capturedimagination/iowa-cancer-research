@@ -277,13 +277,18 @@
         "replicate",
         "selection/censoring flags"
       ],
-      "local_status": "source_workbook_structure_inspected_in_memory; raw_not_retained; no_event_rate_analysis",
+      "local_status": "pinned_source_workbook_and_local_extractions_acquired; structural_and_source_dictionary_audits_completed; no_empirical_hazard_fit",
       "local_paths": [
         "research/treatment-discovery/discovery-2026-11-10/mechanistic-simulation/v2/validation-data-route.md",
-        "research/treatment-discovery/discovery-2026-11-10/mechanistic-simulation/v2/validation-data-route.json"
+        "research/treatment-discovery/discovery-2026-11-10/mechanistic-simulation/v2/validation-data-route.json",
+        "research/treatment-discovery/lineage-audit-2026-11-10/README.md",
+        "research/treatment-discovery/lineage-audit-2026-11-10/source-dictionary.json",
+        "research/treatment-discovery/lineage-audit-2026-11-10/workbook-structure.json",
+        "research/treatment-discovery/lineage-audit-2026-11-10/encoding-checks.json",
+        "research/treatment-discovery/sources/lineage-2026-11-10/Oren-2021-Figure1-source.xlsx"
       ],
-      "access": "13,180,157-byte workbook publicly retrieved for field audit; hash retained. No explicit open-data redistribution license verified. GitHub transcriptomic LFS matrix not downloaded.",
-      "limitations": "One-sister tracking and retrospective persister selection affect inference. No verified same-lineage withdrawal functional transitions. Conditional growth/death benchmark only after event/time/identity and reuse questions are resolved."
+      "access": "Source workbook13,180,157bytes acquired after earlier in-memory reconnaissance; original SHA256a53fe57483b0e55a3b2545f611ff2cf2a31338b8c9dffad0f9af1522222d8f7c. Raw workbook/extractions remain local; authored audits and source provenance published. No explicit workbook redistribution license verified; no large transcriptomic LFS object acquired.",
+      "limitations": "No certified2025column time map, observation mask, row/replicate join, selected-path/inclusion dictionary or censoring-code interpretation. Death sheet and separate viability labels each have80terminal/labelzeros, versus77reported persister lineages;146positional label/code disagreements preclude an assumed row join. Five initial division ones and monotone code increments are structural facts, not certified event counts. No post-withdrawal functional transitions or calibrated empirical hazards."
     },
     {
       "resource_id": "TD-DATA-12",
@@ -331,6 +336,34 @@
       ],
       "access": "Public GEO records; no controlled-access requirement observed. No linked publication citation in inspected GSE335847 record.",
       "limitations": "Submitter biological description is not a project-verified finding. No time-lapse event table, withdrawal functional labels or state trajectories listed; assay mismatch for v2 validation."
+    },
+    {
+      "resource_id": "TD-DATA-14",
+      "name": "Chakrabarti 2018 HCT116 cisplatin full-lineage event workbook and codebook",
+      "verified_date": "2026-11-10",
+      "source_urls": [
+        "https://www.nature.com/articles/s41467-018-07788-5",
+        "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-018-07788-5/MediaObjects/41467_2018_7788_MOESM5_ESM.xlsx",
+        "https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-018-07788-5/MediaObjects/41467_2018_7788_MOESM6_ESM.docx",
+        "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1013446"
+      ],
+      "record_grain": "Repeated lineage histories in four 394 by 243 arrays; no normalized cell/parent event table yet",
+      "units": "Nominal 30-minute frames, binary division and apoptosis annotations, p53 fluorescence, frame-specific lineage labels",
+      "join_keys": [
+        "source row and frame",
+        "changing lineage label; parent mapping requires structural reconstruction"
+      ],
+      "local_status": "workbook_and_codebook_acquired_with_pinned_hashes; candidate_graph_structurally_audited; no_empirical_outcome_curve_or_rate_model_fitted",
+      "local_paths": [
+        "research/treatment-discovery/lineage-audit-2026-11-10/next-empirical-resource.md",
+        "research/treatment-discovery/lineage-audit-2026-11-10/next-empirical-resource.json",
+        "research/treatment-discovery/lineage-audit-2026-11-10/hct116-structure/README.md",
+        "research/treatment-discovery/lineage-audit-2026-11-10/hct116-structure/results.json",
+        "research/treatment-discovery/sources/lineage-2026-11-10/41467_2018_7788_MOESM5_ESM.xlsx",
+        "research/treatment-discovery/sources/lineage-2026-11-10/41467_2018_7788_MOESM6_ESM.docx"
+      ],
+      "access": "Public article-associated materials under CC BY 4.0, subject to separately credited exceptions; attribution and transformation details required. Original workbook/codebook retained locally; only authored audit and source links published.",
+      "limitations": "Colorectal cell line, not Iowa patients or EGFR lung cancer. Source says 49 hours/frame 98 before treatment versus 50 hours in methods. No replicate/field identifiers in arrays. Iyer reports 83 ancestor trees and 18 exclusions including 13 never-dividers; these source-reported counts and exclusions are not an independent structural reconstruction or outcome-independent eligibility rule. Structural audit finds incomplete daughter observations. Published exclusion identifiers are not verified joins to dynamic source labels. Apparently complete later subtrees are selected using future recording information; no naive whole-cohort horizon test is certified."
     }
   ]
 }

@@ -1,0 +1,162 @@
+{
+  "version": 2,
+  "reviewed_on": "2026-11-10",
+  "review_type": "Independent algebra and read-only protocol/code/result inspection; no new simulation or rerun of the numerical checker",
+  "conclusion": "Formula and horizon cancellation verified under the listed assumptions; no blocking issue identified",
+  "formula": "Q_T(t)=exp(-L(t))+exp(-M(t))*integral_0^t lambda(u)*exp(M(u)-L(u))du, 0<=t<=T",
+  "definitions": {
+    "L": "integral_0^t lambda(u)du",
+    "M": "integral_0^t mu(u)du",
+    "h": "single-cell probability of a living descendant at selection horizon T",
+    "A": "probability all independent sister subtrees generated through t are extinct at T"
+  },
+  "assumptions": [
+    "One founder at common known calendar time zero",
+    "Nonnegative locally bounded deterministic calendar-time rates shared by all living cells",
+    "Independent binary daughters; no interactions or informative observation losses",
+    "Future-blind uniform sister tag; after tag death the family may still survive",
+    "Any-descendant family survival selection; equally weighted founders",
+    "Positive family inclusion probability; compare identical absolute t with T>=t"
+  ],
+  "algebra_checks": [
+    {
+      "check": "Backward family survival",
+      "identity": "h_s=(mu-lambda)*h+lambda*h*h; h(T,T)=1",
+      "verified": true
+    },
+    {
+      "check": "Sister-subtree functional",
+      "identity": "A=exp(-integral_0^t lambda*h)=h(0,T)/h(t,T)*exp(M-L)",
+      "verified": true
+    },
+    {
+      "check": "Joint probability",
+      "identity": "R=exp(-M)*(1-(1-h)*A); Q=R/h(0,T)",
+      "verified": true
+    },
+    {
+      "check": "Linearized reciprocal survival",
+      "identity": "z=1/h; z_s=(lambda-mu)*z-lambda; derivative(z*exp(M-L))=-lambda*exp(M-L)",
+      "verified": true
+    },
+    {
+      "check": "Horizon cancellation",
+      "identity": "Substitution cancels z(0) and yields displayed Q independent of T for t<=T",
+      "verified": true
+    },
+    {
+      "check": "Probability and monotonicity",
+      "identity": "x0=exp(-L); x1=Q-x0; x0_s=-lambda*x0; x1_s=lambda*x0-mu*x1; Q_s=-mu*x1",
+      "verified": true
+    },
+    {
+      "check": "Initial value",
+      "identity": "Q(0)=1",
+      "verified": true
+    },
+    {
+      "check": "Endpoint accounting",
+      "identity": "Q_T(T)*h(0,T)=exp(-M(T))",
+      "verified": true
+    },
+    {
+      "check": "Zero-rate boundaries",
+      "identity": "lambda identically zero or mu identically zero gives Q=1 through T",
+      "verified": true
+    },
+    {
+      "check": "Constant-rate reduction",
+      "identity": "Unequal rates give hypoexponential survival; equal positive rates give exp(-k*t)*(1+k*t)",
+      "verified": true
+    },
+    {
+      "check": "Beyond selection horizon",
+      "identity": "For t>T the actual tagged survival is Q_T(T)*exp(-(M(t)-M(T))), rather than continuation of the two-state formula",
+      "verified": true
+    }
+  ],
+  "rate_exchange_counterexample": {
+    "type": "Exact analytic corollary, not part of the frozen numerical grid",
+    "T": 1,
+    "first_schedule": "lambda=1,mu=0 on [0,0.5); lambda=0,mu=1 on [0.5,1]",
+    "first_survival_expression": "1-(1-exp(-0.5))^2",
+    "first_survival_numeric": 0.8451818782538245,
+    "exchanged_schedule": "mu=1,lambda=0 on [0,0.5); mu=0,lambda=1 on [0.5,1]",
+    "exchanged_survival": 1.0,
+    "both_integrated_rates": 0.5,
+    "conclusion": "Arbitrary schedule exchange is not symmetric; the endpoint survivor function is not determined by L(T),M(T) alone."
+  },
+  "reviewed_numerical_check": {
+    "independently_rerun": false,
+    "reported_status": "PASS",
+    "reported_case_count": 9,
+    "reported_points": 270,
+    "reported_shared_horizon_comparisons": 54,
+    "source_hashes_match": true,
+    "implementation_review": "Correct backward ODE, Poisson-functional integral, direct cumulative-rate expression and independent forward-chain equation; piecewise ODE and quadrature boundaries handled explicitly."
+  },
+  "scope_limits": [
+    "Not cell-age hazards or inherited states",
+    "Not founder frailty or averaged random environments",
+    "Not a mixture of unmatched founder-entry calendar times",
+    "Not interactions, informative censoring or absent branches",
+    "Not terminal-survivor ancestry sampling",
+    "No claimed biological mechanism, priority or clinical applicability",
+    "Endpoint Q_T(T) need not be invariant as T itself changes"
+  ],
+  "empirical_implication": "Horizon invariance cannot alone establish constant biological rates. Rejecting this model requires an explicit prediction test with an identified observation process.",
+  "local_evidence": [
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/horizon-invariance/protocol.json",
+      "sha256": "752885ddeb5de119deaa3a36dcd1d28e2735cf6bc222add08bb3dfb150133996"
+    },
+    {
+      "path": "scripts/check_lineage_horizon_invariance.py",
+      "sha256": "1a26eea7ec3b1bf734003e3fa691848d7d21e60f75622b7ee403380b8219be3c"
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/horizon-invariance/results.json",
+      "sha256": "69b93e07018f468da3af4e1bf261e08f5ab2a8fc8b0c3ec280ad16a82487f798"
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/horizon-invariance/packaging-note.md",
+      "sha256": "0ff144bb51525dbb281fad2dd327dc9b7bc3689179d0824ac730b692fe567804"
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/horizon-invariance/packaging-note.json",
+      "sha256": "5739b5eded4cb31fc50f6561a0a3e11f6e6fc71b57e49eb21e6e69c075a19d35"
+    }
+  ],
+  "original_review_local_evidence": [
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/horizon-invariance/protocol.json",
+      "sha256": "752885ddeb5de119deaa3a36dcd1d28e2735cf6bc222add08bb3dfb150133996"
+    },
+    {
+      "path": "scripts/check_lineage_horizon_invariance.py",
+      "sha256": "7be17332f2f76dad913847ed8b15bc9efe6182186fe663866942597cc13b1aa1"
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/horizon-invariance/results.json",
+      "sha256": "262aa86d5ee5b7e52f433cb3eea1ebae6f656607cfe32107bd9131d899e93958"
+    }
+  ],
+  "packaging_review": {
+    "reviewed_on": "2026-11-10",
+    "note": "horizon-invariance/packaging-note.md",
+    "record": "horizon-invariance/packaging-note.json",
+    "original_review_preserved": true,
+    "verification": "Reconstructed first-run source by restoring exactly 12 spaces on blank line 171; recovered its previously reviewed SHA256 and identical AST. Reconstructed first-run result bytes by restoring only original timestamp/script hash and recovered its previously reviewed SHA256. Canonical comparison hash and unchanged protocol verified.",
+    "source_change": "Whitespace only",
+    "python_ast_identical": true,
+    "protocol_unchanged": true,
+    "numerical_fields_exactly_equal": true,
+    "only_changed_result_fields": [
+      "generated_at_utc",
+      "script_sha256"
+    ],
+    "scientific_change": false,
+    "reviewer_reran_checker": false,
+    "packaging_rerun_is_additional_independent_check": false
+  }
+}

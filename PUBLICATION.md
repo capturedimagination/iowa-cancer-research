@@ -4,6 +4,8 @@ First prepared November 3, 2026 for the public `capturedimagination/iowa-cancer-
 
 The [November 10 discovery extension](research/treatment-discovery/discovery-2026-11-10/README.md) includes hypothesis freezes, finite-depth simulations, a joint-expression diagnostic, two versions of a hypothetical cell-state experiment-design model, independent computational checks and a research-destination brief. Failed tests and exact competing explanations are published alongside useful results. Scientific novelty remains unestablished.
 
+The [lineage-sampling extension](research/treatment-discovery/lineage-audit-2026-11-10/README.md) adds a finite-horizon mathematical identity, 2.4 million synthetic tagged paths, 120,000 independently simulated full trees, deterministic identity checks and a source-workbook audit. All synthetic results/code and authored source findings are public. The publisher workbook and extracted arrays remain local; no empirical hazard or biological mechanism has been validated.
+
 ## What is published
 
 All original project reports, research memos, source ledgers, evidence tables, derived factual data, methods, protocols, audit findings, benchmark results and analysis code are included. The authored 19-page report PDF is included. Federal NCI/EPA tabular downloads, the specifically licensed DepMap/PRISM metadata archives and the public ODbL clinical snapshot are included with attribution.

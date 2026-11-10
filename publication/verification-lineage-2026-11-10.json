@@ -1,0 +1,93 @@
+{
+  "verified_at_utc": "2026-11-10T19:20:31.079698+00:00",
+  "scope": "Lineage-sampling simulations, finite-horizon identities, source reconstruction and public-package reproducibility; not biological validation or external scientific peer review",
+  "public_export_files_checked": 392,
+  "public_export_manifest_hashes_checked": 390,
+  "clean_numerical_reproduction_code_and_protocols_match_export": true,
+  "verification_record_added_after_export": true,
+  "publication_index_check": "392 indexed paths passed; final index checked again after this record is added",
+  "synthetic_reproduction": {
+    "scope": "Clean numerical reproduction with only published Python scripts and frozen protocols, no empirical source inputs",
+    "checks": [
+      {
+        "source": "research/treatment-discovery/lineage-audit-2026-11-10/sampling-simulation/results.json",
+        "reproduction": "verification-output/shortcut/results.json",
+        "comparison": "exact_semantic_match",
+        "ignored_metadata": [
+          "created_utc"
+        ]
+      },
+      {
+        "source": "research/treatment-discovery/lineage-audit-2026-11-10/full-tree-review.json",
+        "reproduction": "research/treatment-discovery/lineage-audit-2026-11-10/full-tree-review.json",
+        "comparison": "exact_semantic_match",
+        "ignored_metadata": [
+          "reviewed_at_utc",
+          "runtime_seconds"
+        ]
+      },
+      {
+        "source": "research/treatment-discovery/lineage-audit-2026-11-10/identity-check-results.json",
+        "reproduction": "verification-output/identity.json",
+        "comparison": "exact_semantic_match",
+        "ignored_metadata": [
+          "created_utc"
+        ]
+      },
+      {
+        "source": "research/treatment-discovery/lineage-audit-2026-11-10/horizon-invariance/results.json",
+        "reproduction": "verification-output/horizon.json",
+        "comparison": "exact_semantic_match",
+        "ignored_metadata": [
+          "generated_at_utc"
+        ]
+      }
+    ],
+    "code_hashes": {
+      "scripts/check_lineage_family_sampling.py": "fd30aaa4729157be465d713d9c7aca18dbc195d2158d71b9931bac2e0f9f6a24",
+      "scripts/simulate_lineage_family_sampling.py": "10e335ef2df373653fc9788087c9b2af5244528b40aa93d15ed9f0a60d43029c",
+      "scripts/check_lineage_sampling_identity.py": "fff6392627c2129b157b9680dd3acad63b8a2857b1fb8ce6153815bdb12ecd5e",
+      "scripts/check_lineage_horizon_invariance.py": "1a26eea7ec3b1bf734003e3fa691848d7d21e60f75622b7ee403380b8219be3c"
+    },
+    "horizon_whitespace_packaging": "horizon-invariance/packaging-note.json records exact numeric/AST equality and unchanged protocol"
+  },
+  "structural_reproduction": {
+    "scope": "Separate reconstruction using pinned local workbook/codebook/supplement and published structural code; raw source data required",
+    "results_exact_match": true,
+    "results_sha256": "9a45ba1626ebfcddf31796a97b4664e50c8030618bcf036eff46b9d400545b10",
+    "script_sha256": "af4d949dae48361278e12a7b5df4fbe7a7ed779963be90627b729de752688e1c",
+    "protocol_sha256": "b70fd900f55fdddaf327c76a8b2a458e3f35c4df3fdcb3bfd3a8fb7602f19c97",
+    "fixtures": {
+      "cases": 11,
+      "passed": true,
+      "scope": "Hand-constructed topology fixtures, not biological validation."
+    },
+    "private_graph_exact_hash_match": true,
+    "candidate_nodes": 795,
+    "candidate_edges": 729,
+    "root_components": 66,
+    "scientific_validation": false
+  },
+  "public_library_rebuild": {
+    "integrity_check": "ok",
+    "datasets": 57,
+    "search_records": 1434,
+    "lineage_documents": 14,
+    "all_lineage_document_hashes_current": true,
+    "county_rows": 99,
+    "tri_forms": 60040,
+    "source_PDF_bodies": 0
+  },
+  "local_library_rebuild": {
+    "integrity_check": "ok",
+    "datasets": 57,
+    "search_records": 1471,
+    "lineage_documents": 14,
+    "all_lineage_document_hashes_current": true
+  },
+  "original_report_sha256_unchanged": "6019900da230ba69322aea6bf537fb879a1403b09cfe7acf0f8c71df27f9eeec",
+  "figure_validation": "Synthetic SVG parsed and rendered preview visually inspected; no numerical or plotting-data changes afterward",
+  "publication_scope": "Authored reports, proofs, code, synthetic results, aggregate source audits and provenance. Original publisher workbooks, extracted matrices, source DOCX/PDF and cell/frame graphs are excluded.",
+  "scientific_status": "Conditional measurement results and a proposed parameter-free falsification application. Related mathematics is established prior art; exact priority and empirical applicability remain unestablished. Missing branches and source sampling prevent an unqualified empirical test. No clinical cure, new biological mechanism, investigator contact or submission.",
+  "current_result_code_hash_pairs_verified": 5
+}

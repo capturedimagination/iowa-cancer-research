@@ -15,6 +15,7 @@ tmp/
 id_ed25519
 id_rsa
 /research/treatment-discovery/sources/egfr-resistance-2026-11-10/
+/research/treatment-discovery/sources/lineage-2026-11-10/
 # Source mirrors without publication clearance
 /research/sources/2026-Cancer-in-Iowa-download-403.html
 /research/treatment-discovery/sources/egfr-resistance-2026-11-10/GSE292469-samples.txt
@@ -27,6 +28,12 @@ id_rsa
 /research/treatment-discovery/sources/egfr-resistance-2026-11-10/maynard/data_out/IM06/Table_of_ALL_cell_types_by_sample.csv
 /research/treatment-discovery/sources/egfr-resistance-2026-11-10/maynard/data_out/NI03/results/inferCNV_annotation.csv
 /research/treatment-discovery/sources/egfr-resistance-2026-11-10/sample-metadata-derived.json
+/research/treatment-discovery/sources/lineage-2026-11-10/41467_2018_7788_MOESM5_ESM.xlsx
+/research/treatment-discovery/sources/lineage-2026-11-10/41467_2018_7788_MOESM6_ESM.docx
+/research/treatment-discovery/sources/lineage-2026-11-10/Iyer2025-supplement.pdf
+/research/treatment-discovery/sources/lineage-2026-11-10/Oren-2021-Figure1-source.xlsx
+/research/treatment-discovery/sources/lineage-2026-11-10/oren-figure1-matrices.npz
+/research/treatment-discovery/sources/lineage-2026-11-10/oren-figure1-small-tables.json
 /research/treatment-discovery/sources/maynard-2026-10-29/README.md
 /research/treatment-discovery/sources/maynard-2026-10-29/S01_metacells.csv
 /research/treatment-discovery/sources/maynard-2026-10-29/data_out/IM06/Table_of_ALL_cell_types_by_sample_plus_immune_info.csv

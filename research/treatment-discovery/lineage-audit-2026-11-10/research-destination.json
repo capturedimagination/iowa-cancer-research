@@ -1,0 +1,203 @@
+{
+  "version": 1,
+  "assessed_on": "2026-11-10",
+  "scope": "Destination and application assessment for an HCT116 lineage-observation benchmark; no contacts, submissions, fees or raw-data republication.",
+  "status": "RECONSTRUCTION_AND_VALIDATION_PACKET_FIRST; EMPIRICAL_INFERENCE_NOT_READY",
+  "proposed_contribution": "Traceable reconstruction plus founder-held-out prediction of family survival and conditional random-tag outcomes under explicit ascertainment.",
+  "novelty": "Unestablished; existing 2018 and 2025 lineage models and correlations are prior work, not new project findings.",
+  "ranked_destinations": [
+    {
+      "rank": 1,
+      "name": "Shaon Chakrabarti group, NCBS",
+      "role": "Potential source-owner scientific validation",
+      "fit": "Official cancer time-lapse/population-model program and corresponding authorship of the 2025 HCT116 reanalysis.",
+      "proposed_packet": [
+        "Source-to-graph code and traceable relationships",
+        "Founder and exclusion reconciliation",
+        "Time, loss and missing-branch discrepancy table",
+        "Frozen protocol, controls and all empirical outcomes"
+      ],
+      "proposed_request_if_later_authorized": "Verify the data reconstruction and intended cohort; assess incremental value of a held-out ascertainment prediction test.",
+      "gates": [
+        "A concrete reviewable packet",
+        "Separate authorization to contact",
+        "Consent before collaboration or authorship attribution"
+      ],
+      "contacted": false,
+      "scientific_endorsement": false,
+      "cost": "No service, fee or funding arrangement identified or agreed.",
+      "sources": [
+        "NCBS",
+        "Iyer2025"
+      ]
+    },
+    {
+      "rank": 2,
+      "name": "Existing public Iowa cancer research repository",
+      "url": "https://github.com/capturedimagination/iowa-cancer-research",
+      "role": "Reusable code, provenance and observation-model benchmark",
+      "outputs": [
+        "Versioned parser and codebook",
+        "Source hashes and transformation history",
+        "Founder roster and ambiguity flags",
+        "Known-truth controls",
+        "Frozen splits and all prediction results, including failures"
+      ],
+      "gates": [
+        "Project publication checks",
+        "Preserved source attribution and third-party terms",
+        "Explicit owner-selected license for new project code before calling it open source"
+      ],
+      "authorization": "User authorized public GitHub research publication; parent agent controls publication.",
+      "new_external_service_or_upload": false,
+      "peer_review": false,
+      "sources": [
+        "Chakrabarti2018"
+      ]
+    },
+    {
+      "rank": 3,
+      "name": "PLOS ONE",
+      "role": "Possible completed methods/reanalysis research article",
+      "fit": "Considers methods and negative/null results; prior-work rationale and technical adequacy remain necessary.",
+      "gates": [
+        "Completed reproducible study with justified incremental contribution",
+        "Human authorship, intellectual ownership, approval and accountability",
+        "Corresponding-author ORCID and submission account",
+        "AI-use disclosure",
+        "Supporting data and code availability",
+        "Applicable publication fee or approved assistance"
+      ],
+      "software_article_caveat": "A software-centered submission also has project-maturity and open-source requirements; do not assume a new parser alone meets them.",
+      "account_or_author_consent_verified": false,
+      "submitted": false,
+      "fee": {
+        "exact_amount_verified": false,
+        "reason": "Accessible publisher fee-table extraction omitted journal labels; raw HTML request returned403. No price assigned by inference.",
+        "payable": "On acceptance at applicable submission-date rate",
+        "assistance": "Formal application at submission; case-by-case, not guaranteed",
+        "commitment_made": false
+      },
+      "acceptance_prediction": null,
+      "sources": [
+        "PLOSCriteria",
+        "PLOSAuthorship",
+        "PLOSAI",
+        "PLOSData",
+        "PLOSCode",
+        "PLOSFees"
+      ]
+    }
+  ],
+  "optional_preprint": {
+    "name": "bioRxiv",
+    "role": "Screened dissemination, not scientific peer review",
+    "current_policy_date": "2026-10-20",
+    "gates": [
+      "Verifiable human authors",
+      "Affiliation with an accountable organization",
+      "Meaningful human intellectual input and critical review",
+      "Author-approved manuscript and submission account"
+    ],
+    "eligibility_verified": false,
+    "submission_fee_terms_verified": false,
+    "submitted": false,
+    "source": "bioRxivAI2026"
+  },
+  "interpretation_by_outcome": {
+    "baseline_predictive_success": "Support for adequacy on prespecified outcomes in this cohort, conditional on useful precision; not absence of inheritance.",
+    "alternative_predictive_improvement": "Extra predictive structure within tested models; not uniquely memory, causality or a therapeutic target.",
+    "imprecise_comparison": "Inconclusive; failure to reject is not equivalence.",
+    "reconstruction_failure": "Useful documentation and missing-data requirements; no empirical hazard inference from unresolved identities."
+  },
+  "minimum_analysis_gate": [
+    "Reconcile candidate episodes, repeated ancestry and source founder roster before defining denominators.",
+    "Separate administrative censoring from unknown losses and absent daughter branches; complete-follow-up selection must not silently replace the target cohort.",
+    "Freeze time origin, eligibility, model flexibility, likelihood, score, split and practical precision/tolerance criteria before fitting.",
+    "Keep all descendants and resampled paths of each founder in one partition and one uncertainty cluster.",
+    "Handle delayed entry and observable never-dividers explicitly; no outcome-dependent exclusions disguised as missingness.",
+    "Test held-out predictions, not the Qh accounting identity; avoid tuning on test founders.",
+    "Without replicate identifiers, restrict conclusions to the recorded cohort."
+  ],
+  "resource_audit_findings": [
+    {
+      "severity": "editorial",
+      "file": "next-empirical-resource.json",
+      "field": "one_concrete_proposed_test.analysis_commitments",
+      "finding": "Two consecutive commitments repeat the same sensitivity list; retain the more complete one if edited."
+    },
+    {
+      "severity": "design",
+      "finding": "Specify practical predictive adequacy and useful precision before interpreting a negative model comparison."
+    },
+    {
+      "severity": "readiness",
+      "finding": "Structural reconstruction is being refined; no provisional root or issue counts are used as evidence of a data limitation. Outcome inference requires a verified event graph and eligible-founder cohort."
+    }
+  ],
+  "sources": [
+    {
+      "id": "NCBS",
+      "url": "https://www.ncbs.res.in/faculty/shaon-research",
+      "checked_on": "2026-11-10",
+      "access": "Official research text read earlier in this audit; latest direct retry denied. Official indexed node/80022 text also retrieved; no access-control bypass."
+    },
+    {
+      "id": "Chakrabarti2018",
+      "url": "https://www.nature.com/articles/s41467-018-07788-5",
+      "checked_on": "2026-11-10",
+      "basis": "Pinned original source/resource audit; article-associated CC BY4.0 subject to separate notices."
+    },
+    {
+      "id": "Iyer2025",
+      "url": "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1013446",
+      "checked_on": "2026-11-10",
+      "access": "Primary article and author roles read."
+    },
+    {
+      "id": "PLOSCriteria",
+      "url": "https://journals.plos.org/plosone/s/criteria-for-publication",
+      "checked_on": "2026-11-10"
+    },
+    {
+      "id": "PLOSAuthorship",
+      "url": "https://journals.plos.org/plosone/s/authorship",
+      "checked_on": "2026-11-10"
+    },
+    {
+      "id": "PLOSAI",
+      "url": "https://journals.plos.org/plosone/s/ethical-publishing-practice",
+      "checked_on": "2026-11-10"
+    },
+    {
+      "id": "PLOSData",
+      "url": "https://journals.plos.org/plosone/s/data-availability",
+      "checked_on": "2026-11-10"
+    },
+    {
+      "id": "PLOSCode",
+      "url": "https://journals.plos.org/plosone/s/materials-software-and-code-sharing",
+      "checked_on": "2026-11-10"
+    },
+    {
+      "id": "PLOSFees",
+      "url": "https://plos.org/fees/",
+      "checked_on": "2026-11-10"
+    },
+    {
+      "id": "bioRxivAI2026",
+      "url": "https://connect.biorxiv.org/news/2026/10/20/approach_to_ai",
+      "checked_on": "2026-11-10"
+    }
+  ],
+  "local_evidence": [
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/next-empirical-resource.md",
+      "sha256": "bfb97ed9eb67285c808980eb13f4b556a4c300f4ce508767da84fc397600843d"
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/next-empirical-resource.json",
+      "sha256": "b176c2451fe2944a3a183ec15f95729693d7207835de6c5574509e5dd12900e0"
+    }
+  ]
+}

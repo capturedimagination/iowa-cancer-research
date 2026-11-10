@@ -1,0 +1,93 @@
+{
+  "version": 1,
+  "frozen_at_utc": "2026-11-10T18:50:06.093401+00:00",
+  "purpose": "Test whether terminal family-survival sampling of a random chronological branch creates a two-stage-like lifetime law under homogeneous one-stage birth/death; keep empirical source audit separate.",
+  "prior_information": "Published methods and first structural workbook audit inspected. No event hazards fitted. Analytic identities derived before simulation with two agents; simulation is validation and design sensitivity, not independent discovery of a prespecified biological effect. Raw matrix codes and terminal counts inspected, including80 terminal death-code zeros versus77 reported persister lineages.",
+  "model": {
+    "founders": 1,
+    "horizon": 1.0,
+    "time_units": "arbitrary units; not mapped to workbook frames or clinical time",
+    "division": "Each cell independently splits into two at constant rate lambda; one uniformly random daughter continues a tagged chronological path.",
+    "death": "Each cell independently dies at constant rate mu.",
+    "selection": "Select a founder iff ANY descendant survives at horizon, then retain the independent random tag path even if that tag dies. Distinct comparison: select only tags alive at horizon.",
+    "assumptions": [
+      "Homogeneous exponential rates",
+      "Independent identical daughters",
+      "No inherited frailty or state switching",
+      "No informative tracking loss",
+      "Random tag choice independent of future fate"
+    ]
+  },
+  "rate_pairs": [
+    [
+      0.5,
+      0.5
+    ],
+    [
+      0.5,
+      2.0
+    ],
+    [
+      0.5,
+      5.0
+    ],
+    [
+      2.0,
+      0.5
+    ],
+    [
+      2.0,
+      2.0
+    ],
+    [
+      2.0,
+      5.0
+    ],
+    [
+      5.0,
+      0.5
+    ],
+    [
+      5.0,
+      2.0
+    ],
+    [
+      5.0,
+      5.0
+    ],
+    [
+      0.0,
+      2.0
+    ],
+    [
+      2.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ]
+  ],
+  "prospective_founders_per_case": 200000,
+  "seed": 2026111004,
+  "observation_bins": 10,
+  "simulation": "Draw tag death exponential(mu), tag division Poisson process(lambda) until death or T. Each discarded sister starts independent subtree; its extinction by T has exact branching probability q(T-birthtime). Family survives iff tag survives or at least one discarded subtree survives. Store aggregate endpoints only.",
+  "primary_identity": "Among family-selected founders, tagged lifetime survival at t<=T equals [lambda*exp(-mu*t)-mu*exp(-lambda*t)]/(lambda-mu). At equality k, it is exp(-k*t)*(1+k*t). This is the lifetime distribution of independent Exp(lambda)+Exp(mu), censored at T. Zero-rate edge cases use the appropriate degenerate limits.",
+  "other_controls": [
+    "Family inclusion probability1-q(T)",
+    "Prospective tag death survival exp(-mu*t)",
+    "Tag-survival conditioning leaves division rate unchanged under this independent homogeneous model",
+    "Exact joint family-selected at-risk, division and death bin integrals",
+    "Exchange of lambda and mu leaves selected tag death-time law unchanged; tagged division histories can differ",
+    "Independent full-tree Gillespie simulation on a fixed subset, never importing the shortcut simulation functions"
+  ],
+  "reporting": "All12parameter cases and all10bins; bin event/person-time ratios are descriptive, with Monte Carlo comparisons to analytic expectations. No cells treated as independent experiments in empirical data. No scientific significance threshold or model chosen from observed workbook outcomes.",
+  "structural_workbook_checks": [
+    "Compare actual XML ranges, all source numeric values and missingness without altering source",
+    "Check cumulative monotonicity and jump sizes separately for division/death matrices",
+    "Count encoding changes after first terminal death-code transition; do not interpret as events without dictionary",
+    "Check whether Figure1d terminal labels/progeny totals agree by row; positional agreement alone does not prove biological identity",
+    "Do not infer frame-to-time mapping from matrix width or fit empirical hazards if at-risk/censoring/dictionary remains unverified"
+  ],
+  "interpretation": "A conditional sampling identity could warn against mechanistic inference from selected death-time curves. It does not show that Oren used this exact branch-selection rule, that their biological conclusions are wrong, or that a new cancer mechanism exists. Novelty audit required; mathematical prior art may already cover the identity."
+}

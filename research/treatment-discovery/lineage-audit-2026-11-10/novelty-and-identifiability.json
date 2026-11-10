@@ -1,0 +1,520 @@
+{
+  "version": 2,
+  "date": "2026-11-10",
+  "scope": "Bounded primary-literature and identifiability audit for endpoint-family selection and random chronological sister tracking in Oren2021 PC9 source reuse.",
+  "scientific_status": {
+    "new_cancer_mechanism": false,
+    "validated_treatment": false,
+    "first_ever_claim": false,
+    "mathematical_priority": "No new theorem claimed; limiting law is a direct corollary of standard spine constructions. Exact finite-horizon statement priority unresolved.",
+    "source_specific_mortal_tag_rule": "unverified",
+    "empirical_hazards_fitted": false,
+    "independent_scientific_peer_review": false,
+    "new_theorem_claim": false
+  },
+  "decision": "Retain the finite-horizon observation-model benchmark and source dictionary audit as an application of known branching principles. The limiting two-exponential law follows immediately from standard spine constructions; no mathematical novelty or new cancer mechanism is claimed.",
+  "sources": [
+    {
+      "id": "Oren2021",
+      "title": "Cycling cancer persister cells arise from lineages with distinct programs",
+      "doi": "10.1038/s41586-021-03796-6",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9209846/",
+      "review_scope": [
+        "Live cell imaging methods",
+        "Figure 1 legend",
+        "Extended Data Figure 1b",
+        "barcode-sampling context"
+      ],
+      "evidence": "primary_experiment",
+      "archive": "tmp/discovery-novelty/Oren2021.html",
+      "scope_note": "Endpoint founder ascertainment established; selected-sister export rule unresolved.",
+      "sha256": "a3e70030a7399d9aeeaf551f5254bb35c5f6ee2eb8f2de4785050ebb9c1db27f",
+      "archive_bytes": 243800,
+      "accessed_date": "2026-11-10"
+    },
+    {
+      "id": "Nakashima2020",
+      "title": "Lineage EM algorithm for inferring latent states from cellular lineage trees",
+      "doi": "10.1093/bioinformatics/btaa040",
+      "url": "https://arxiv.org/html/1806.00215v4",
+      "publication_url": "https://pubmed.ncbi.nlm.nih.gov/31971568/",
+      "review_scope": [
+        "Author preprint sections 3.1-3.3",
+        "Figure 4",
+        "publication metadata"
+      ],
+      "evidence": "primary_methods",
+      "archive": "tmp/discovery-novelty/lineage-audit/Nakashima2020.html",
+      "scope_note": "Chronological, retrospective and tree sampling distinctions already established.",
+      "sha256": "2ba9d08c78d89ce134deed35d2847d4fc1a5df37621b813056204876b044001b",
+      "archive_bytes": 205506,
+      "accessed_date": "2026-11-10"
+    },
+    {
+      "id": "Genthon2023",
+      "title": "Cell lineage statistics with incomplete population trees",
+      "doi": "10.1103/PRXLife.1.013014",
+      "url": "https://arxiv.org/html/2305.05406v2",
+      "review_scope": [
+        "Abstract",
+        "Sections II-IV",
+        "Section IV.2 experimental system",
+        "Discussion"
+      ],
+      "evidence": "primary_theory_and_experiment",
+      "archive": "tmp/discovery-novelty/lineage-audit/Genthon2023.html",
+      "scope_note": "Death and survival effects; bacterial isoniazid data, not PC9.",
+      "sha256": "c976c2977e9b48b1aa8f39ab29ff472c4b279aa02efec2114cdbb3428a402ea2",
+      "archive_bytes": 702077,
+      "accessed_date": "2026-11-10"
+    },
+    {
+      "id": "Cheek2023",
+      "title": "Ancestral reproductive bias in branching processes",
+      "doi": "10.1007/s00285-023-01907-7",
+      "url": "https://link.springer.com/article/10.1007/s00285-023-01907-7",
+      "preprint_url": "https://arxiv.org/abs/2205.13875",
+      "review_scope": [
+        "Publisher abstract and metadata",
+        "Author-preprint abstract"
+      ],
+      "evidence": "primary_theory_abstract_review",
+      "archive": null,
+      "scope_note": "Terminal ancestry can have time-varying reproduction despite homogeneous intrinsic law.",
+      "sha256": null,
+      "accessed_date": "2026-11-10"
+    },
+    {
+      "id": "Igelbrink2024",
+      "title": "Ancestral reproductive bias in continuous-time branching trees under various sampling schemes",
+      "doi": "10.1007/s00285-024-02105-9",
+      "url": "https://link.springer.com/article/10.1007/s00285-024-02105-9",
+      "review_scope": [
+        "Abstract",
+        "Sections 1-2",
+        "Sections 5-7"
+      ],
+      "evidence": "primary_theory",
+      "archive": "tmp/discovery-novelty/lineage-audit/Igelbrink2024.html",
+      "scope_note": "Different terminal and surviving-spine selection mechanisms are explicit prior art.",
+      "sha256": "faf3023b17553e91ec8c6a42ebb70657ef80f0468749de92691d054fe53b8c3c",
+      "archive_bytes": 331337,
+      "accessed_date": "2026-11-10"
+    },
+    {
+      "id": "Iyer2025",
+      "title": "Inheritable cell-states shape drug-persister correlations and population dynamics in cancer cells",
+      "doi": "10.1371/journal.pcbi.1013446",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12469175/",
+      "review_scope": [
+        "Dataset descriptions",
+        "Competing risks methods",
+        "Models M0-M3",
+        "Luria-Delbruck analysis",
+        "Oren reference check"
+      ],
+      "evidence": "primary_cancer_models",
+      "archive": "tmp/discovery-novelty/lineage-audit/Iyer2025.html",
+      "scope_note": "HCT116/U2OS, not an Oren PC9 reanalysis.",
+      "sha256": "8f04eede88c75131c11670c68491c014481e2ba7ca73483306d99493d0a289ec",
+      "archive_bytes": 349066,
+      "accessed_date": "2026-11-10"
+    },
+    {
+      "id": "tHMM2022",
+      "title": "A lineage tree-based hidden Markov model quantifies cellular heterogeneity and plasticity",
+      "doi": "10.1038/s42003-022-04208-9",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9671968/",
+      "review_scope": [
+        "Finite-window censorship section",
+        "Time censorship methods",
+        "Model structure"
+      ],
+      "evidence": "primary_cancer_methods",
+      "archive": "tmp/discovery-novelty/lineage-audit/tHMM2022.html",
+      "scope_note": "Finite-window censoring corrections are established.",
+      "sha256": "36f0911e1441ac8f3fe5d1db54e6147d54b00014a5cffab25e81e4ae9ca7097c",
+      "archive_bytes": 279469,
+      "accessed_date": "2026-11-10"
+    },
+    {
+      "id": "HautphenneHorton2025",
+      "title": "Consistent estimation in subcritical birth-and-death processes",
+      "doi": null,
+      "url": "https://arxiv.org/html/2511.01153v1",
+      "publication_status": "primary preprint, version1 submitted2025-11-03",
+      "review_scope": [
+        "Section 2 model",
+        "Section 3 Q-process equations6-9",
+        "Binary specialization"
+      ],
+      "evidence": "primary_theory_preprint",
+      "scope_note": "Explicit spine rate m*lambda and uniformly chosen continuing spine child; tagged-lifetime corollary is project specialization.",
+      "accessed_date": "2026-11-10",
+      "sha256": "b2d61e3e890aa32c0e3bf43e811a837a2ad73cc230f7dac9ca7585c263fb66db",
+      "archive_bytes": 823914,
+      "archive_status": "downloaded",
+      "archive": "tmp/discovery-novelty/lineage-audit/HautphenneHorton2025.html"
+    },
+    {
+      "id": "Lambert2007",
+      "title": "Quasi-stationary distributions and the continuous-state branching process conditioned to be never extinct",
+      "doi": "10.1214/EJP.v12-402",
+      "url": "https://www.maths.tcd.ie/EMIS/journals/EJP-ECP/article/download/402/402-1261-1-PB.pdf",
+      "review_scope": [
+        "Introduction finite versus distant-future conditioning",
+        "Section2.1 size-biased tree and spine"
+      ],
+      "evidence": "primary_theory_published",
+      "scope_note": "Established spine principle; critical binary rate specialization here is our calculation, not a quote of a continuous-state theorem.",
+      "accessed_date": "2026-11-10",
+      "sha256": "ac9052a867c44553b79e36c1ac26db6124882ad2ac7cb45d8056a57a7c7a71cc",
+      "archive_bytes": 279416,
+      "archive_status": "downloaded",
+      "archive": "tmp/discovery-novelty/lineage-audit/Lambert2007.pdf"
+    },
+    {
+      "id": "JagersLageras2008",
+      "title": "General branching processes conditioned on extinction are still branching processes",
+      "doi": "10.1214/ECP.v13-1419",
+      "url": "https://staff.math.su.se/andreas/ECP-2008-2048.pdf",
+      "publication_url": "https://www.maths.tcd.ie/EMIS/journals/EJP-ECP/article/view/1419.html",
+      "review_scope": [
+        "Theorem1",
+        "Remark1 equation7",
+        "Example1 life kernel"
+      ],
+      "evidence": "primary_theory_published",
+      "scope_note": "Offspring tilt q^(offspring-1) supplies conditional-extinction rate swap; tagged immortal-to-doomed calculation is project specialization.",
+      "accessed_date": "2026-11-10",
+      "sha256": null,
+      "archive_bytes": null,
+      "archive_status": "failed",
+      "archive": null,
+      "archive_error": "HTTP Error 466: ",
+      "review_access": "PDF text retrieved and inspected through web tool; shell download failed."
+    }
+  ],
+  "evidence_tiers": {
+    "E1": "Primary source observation/methods inspected",
+    "E2": "Published mathematical or statistical prior art",
+    "E3": "Exact project derivation under stated assumptions",
+    "E4": "Numerical or synthetic validation only",
+    "E5": "Biological or causal validation required and absent"
+  },
+  "claims": [
+    {
+      "id": "ascertainment",
+      "tier": "E1",
+      "status": "documented_with_unresolved_sister_rule",
+      "sources": [
+        "Oren2021"
+      ]
+    },
+    {
+      "id": "broad_selection_bias",
+      "tier": "E2",
+      "status": "known_not_novel",
+      "sources": [
+        "Nakashima2020",
+        "Genthon2023",
+        "Cheek2023",
+        "Igelbrink2024"
+      ]
+    },
+    {
+      "id": "competing_risks_and_censoring",
+      "tier": "E2",
+      "status": "known_not_novel",
+      "sources": [
+        "Iyer2025",
+        "tHMM2022"
+      ]
+    },
+    {
+      "id": "family_selected_random_tag_hypoexponential_identity",
+      "tier": "E3",
+      "status": "exact_under_model_assumptions_no_new_theorem_claim",
+      "bounded_search": "No exact finite-horizon statement located; targeted spine review gives a clear standard-construction corollary for the limiting law. Search absence does not establish originality.",
+      "priority_addendum_sources": [
+        "HautphenneHorton2025",
+        "Lambert2007",
+        "JagersLageras2008"
+      ]
+    },
+    {
+      "id": "two_stage_biology_from_selected_death_curve",
+      "tier": "E5",
+      "status": "not_identified_by_curve_alone"
+    },
+    {
+      "id": "oren_empirical_explanation",
+      "tier": "E5",
+      "status": "not_established"
+    },
+    {
+      "id": "limiting_tagged_lifetime_spine_corollary",
+      "tier": "E2_and_E3",
+      "status": "direct_project_specialization_of_known_constructions",
+      "sources": [
+        "HautphenneHorton2025",
+        "Lambert2007",
+        "JagersLageras2008"
+      ]
+    }
+  ],
+  "mathematical_model": {
+    "description": "One homogeneous binary birth-death founder; constant division lambda and death mu; independent identical daughters; random tag chooses one daughter independently of future fate; select any-descendant survival at T and retain tag even if it dies.",
+    "survival_one_founder": "h(u)=(lambda-mu)/(lambda-mu*exp(-(lambda-mu)*u)); at lambda=mu=k use 1/(1+k*u)",
+    "discarded_sister_extinction": "A(t)=exp(-lambda*integral_0^t h(T-u)du)",
+    "joint_probability": "P(D>t,F)=exp(-mu*t)*(1-q(T-t)*A(t)); q=1-h",
+    "selected_survival": "[lambda*exp(-mu*t)-mu*exp(-lambda*t)]/(lambda-mu)",
+    "critical_selected_survival": "exp(-k*t)*(1+k*t)",
+    "validity_window": "0 <= t <= T; observed lifetime is right-censored at T",
+    "post_horizon_boundary": "If tag remains alive at T, later death hazard reverts to mu. Do not equate the complete uncensored lifetime to the two-stage law.",
+    "equivalent_observed_law": "Independent Exp(lambda)+Exp(mu), with the same right censoring at T",
+    "symmetry": "Selected death times alone are invariant to exchange lambda and mu.",
+    "division_intensity": "lambda*(1-q(T-t)^2*A(t))/(1-q(T-t)*A(t))",
+    "death_intensity": "mu*(1-A(t))/(1-q(T-t)*A(t))",
+    "endpoint_limits": {
+      "division": "lambda",
+      "death": "mu*(1-A(T))"
+    },
+    "conditional_intensity_scope": "Marginal over the selected at-risk histories; not a claim that every tagged history has the same Markov transition rates.",
+    "zero_rate_limits": "lambda=0 implies selected tag survives to T; mu=0 or both0 implies no death."
+  },
+  "independent_math_check": {
+    "n_cases": 500,
+    "max_abs_pgfl_vs_closed": 1.0093526014998133e-10,
+    "max_abs_sequential_vs_closed": 9.353628982466944e-15,
+    "methods": [
+      "Poisson generating functional with scipy.integrate.quad epsabs=epsrel=1e-12",
+      "closed form with exact critical case",
+      "two-transient-state generator scipy.linalg.expm"
+    ],
+    "scope": "Independent analytic identity check, not tree Monte Carlo and not observed cancer data",
+    "lambda_grid": [
+      0.1,
+      0.5,
+      1,
+      2,
+      3
+    ],
+    "mu_grid": [
+      0.1,
+      0.5,
+      1,
+      2,
+      3
+    ],
+    "horizon_grid": [
+      0.5,
+      1,
+      2,
+      5
+    ],
+    "time_fraction_grid": [
+      0,
+      0.1,
+      0.5,
+      0.9,
+      1
+    ],
+    "generator": "Q=[[-lambda,lambda],[0,-mu]]; initial row vector [1,0]; sum [1,0] exp(Q*t)",
+    "cache_ignored": "tmp/discovery-novelty/lineage-audit/formula-check.json",
+    "cache_sha256": "b5154ab3d1ba7b7f689419b4e700673676983f1c5905aadfd1cc54279fb93175",
+    "relation_to_frozen_simulation": "Review-only arithmetic check; not new Monte Carlo settings or a replacement of the frozen plan.",
+    "public_script": "scripts/check_lineage_sampling_identity.py",
+    "public_script_sha256": "fff6392627c2129b157b9680dd3acad63b8a2857b1fb8ce6153815bdb12ecd5e",
+    "public_result": "research/treatment-discovery/lineage-audit-2026-11-10/identity-check-results.json",
+    "public_result_sha256": "706df82dcd172f993f9ac225bb89fbeecff983758e4bde4de60e77430a319e56",
+    "environment": {
+      "python": "3.12.14",
+      "numpy": "2.3.5",
+      "scipy": "1.16.3"
+    },
+    "seed": null,
+    "seed_reason": "Deterministic numerical integration and matrix exponentiation; no RNG.",
+    "packaging_status": "Packaged after original scratch results and root simulator results were inspected; all 500 original cases and numerical methods retained. Not a new frozen protocol.",
+    "original_case_outputs_unchanged": true
+  },
+  "adopted_simulation_plan": {
+    "path": "research/treatment-discovery/lineage-audit-2026-11-10/sampling-simulation-plan.json",
+    "sha256": "424705a8c9dac1d199285eddda49b19a4050aa82f235102f731046c62a78ee8e",
+    "alternative_plan_introduced": false,
+    "scope": "All 12 fixed cases, 200,000 tags each, T=1, seed 2026111004, 10 bins; independent full-tree check is separately specified by reviewer."
+  },
+  "source_dictionary": {
+    "path": "research/treatment-discovery/lineage-audit-2026-11-10/source-dictionary.json",
+    "reported_status": "PARTIAL_DICTIONARY_NOT_HAZARD_READY",
+    "ownership": "separate source-dictionary audit; no empirical hazard analysis performed in this memo",
+    "sha256": "683b726e90cad71058f1cee36d82cdca734991f88b18fe6ea310568fa0933de0"
+  },
+  "minimum_empirical_gate": [
+    "Selected-path sister algorithm and dead-path retention",
+    "Frame-to-physical-time mapping",
+    "Event code and post-death coding",
+    "Censoring, entry and tracking loss",
+    "Founder identities and counts/subset reconciliation"
+  ],
+  "search_ledger": {
+    "date": "2026-11-10",
+    "engine": "web search with primary-paper direct reads and reference chasing",
+    "recorded_queries": [
+      "\"Ancestral reproductive bias in branching processes\" journal",
+      "\"Oren\" \"survivorship\" lineage",
+      "\"survival\" \"chronological\" \"founder\" branching lineage conditioning",
+      "\"branching\" \"chronological\" \"conditioned on survival\"",
+      "\"lineage\" \"family survival\" \"random\" division",
+      "\"Oren\" \"persister\" \"sampling bias\"",
+      "\"Oren\" \"persister\" \"immortal time\"",
+      "\"chronological\" \"survival\" \"lineage\" \"sampling\" branching",
+      "\"random lineage\" \"surviving\" branching process",
+      "\"persister\" \"retrospective\" \"lineage\" bias",
+      "\"Oren\" \"osimertinib\" \"survivorship bias\"",
+      "\"Lineage EM\" \"doi\"",
+      "\"lineage sampling\" \"conditioned\" \"survival\" cancer",
+      "\"retrospective\" \"single-sister\" cancer bias",
+      "\"Oren\" \"birth\" \"death\" \"branching\" 2021 persister",
+      "\"A lineage tree-based hidden Markov model\" censoring",
+      "\"Oren\" \"PC9\" \"conditioning\" lineage",
+      "branching \"random lineage\" \"Erlang\"",
+      "\"conditioned\" \"survival\" branching \"hypoexponential\"",
+      "\"lineage\" \"sum of two\" \"exponential\" death survival",
+      "\"persister\" \"two-stage\" \"death\" model",
+      "\"lineage\" \"Erlang\" \"survival\" birth death",
+      "\"hypoexponential\" \"sampling\" \"cell\"",
+      "\"random daughter\" \"conditioned\" survival death",
+      "\"chronological lineage\" \"death\" conditional",
+      "branching process tagged lineage lifetime conditioned survival exponential death",
+      "\"branching\" \"lineage\" \"hypo-exponential\"",
+      "\"branching process\" \"Erlang-2\"",
+      "\"birth-death\" \"random path\" \"survival\"",
+      "\"birth-death\" \"tagged\" \"survival\" lineage",
+      "\"random line of descent\" \"survival\"",
+      "\"branching process\" \"two exponential\" lifetime conditioned",
+      "\"birth death\" \"survivorship\" \"Erlang\""
+    ],
+    "query_count": 33,
+    "exact_identity_focused_queries": [
+      "branching \"random lineage\" \"Erlang\"",
+      "\"conditioned\" \"survival\" branching \"hypoexponential\"",
+      "\"lineage\" \"sum of two\" \"exponential\" death survival",
+      "\"persister\" \"two-stage\" \"death\" model",
+      "\"lineage\" \"Erlang\" \"survival\" birth death",
+      "\"hypoexponential\" \"sampling\" \"cell\"",
+      "\"random daughter\" \"conditioned\" survival death",
+      "\"chronological lineage\" \"death\" conditional",
+      "branching process tagged lineage lifetime conditioned survival exponential death",
+      "\"branching\" \"lineage\" \"hypo-exponential\"",
+      "\"branching process\" \"Erlang-2\"",
+      "\"birth-death\" \"random path\" \"survival\"",
+      "\"birth-death\" \"tagged\" \"survival\" lineage",
+      "\"random line of descent\" \"survival\"",
+      "\"branching process\" \"two exponential\" lifetime conditioned",
+      "\"birth death\" \"survivorship\" \"Erlang\""
+    ],
+    "focused_query_count": 16,
+    "domain_restrictions_for_queries_8_to_10": [
+      [
+        "arxiv.org",
+        "pmc.ncbi.nlm.nih.gov",
+        "link.springer.com"
+      ],
+      [
+        "arxiv.org",
+        "link.springer.com"
+      ],
+      [
+        "pmc.ncbi.nlm.nih.gov",
+        "nature.com",
+        "journals.plos.org"
+      ]
+    ],
+    "limitations": [
+      "Bounded search, not a systematic review or proof of priority",
+      "Some exact-phrase queries returned unrelated results",
+      "No paywalled full-text bypass or author contact",
+      "Generic formulas may be present under different terminology",
+      "No claim that article reference searches are exhaustive"
+    ],
+    "priority_followup_queries": [
+      "birth death process immortal spine conditioned survival birth death rates lambda mu backbone decomposition",
+      "critical branching process Q process immortal particle binary birth rate spine",
+      "birth death process conditioned extinction birth death rates interchanged skeleton decomposition",
+      "random lineage lifetime immortal spine Erlang distribution",
+      "\"General branching processes conditioned on extinction are still branching processes\""
+    ],
+    "total_recorded_query_count_including_followup": 38
+  },
+  "next_tests": [
+    "Validate shortcut simulation against complete-tree simulation and exact bin integrals",
+    "Resolve source dictionary before fitting any empirical hazard",
+    "Use prospectively included founders and random tags with parallel family endpoint classification for a direct observation-model test"
+  ],
+  "publication_boundary": "Original synthesis and aggregate mathematical checks only; source text stays in ignored local cache; no contact or submission.",
+  "simulator_code_review": {
+    "script": "scripts/simulate_lineage_family_sampling.py",
+    "script_sha256": "10e335ef2df373653fc9788087c9b2af5244528b40aa93d15ed9f0a60d43029c",
+    "result": "research/treatment-discovery/lineage-audit-2026-11-10/sampling-simulation/results.json",
+    "result_sha256": "03a87e2662d9af0292e5e88a5ff755b03c25c4029c40e606c4cef62e4a056360",
+    "script_hash_matches_recorded_result": true,
+    "material_issues_found": [],
+    "scope": [
+      "Shortcut selection logic",
+      "Endpoint survival and event totals",
+      "Founder event/exposure delta-method MCSE",
+      "Conditional binomial MCSE",
+      "Zero-rate controls",
+      "No source-outcome calibration"
+    ],
+    "limits": [
+      "Pointwise Monte Carlo diagnostics, not simultaneous confidence bands or biological uncertainty",
+      "Rate MCSE is a delta-method approximation, not an exact finite-sample standard error",
+      "Independent full-tree review is a separate artifact"
+    ],
+    "source_outcome_calibration": false,
+    "max_recorded_absolute_bin_rate_MCSE_discrepancy": 2.8510029240815014,
+    "smallest_nonzero_bin_event_count": 23
+  },
+  "priority_addendum": {
+    "date": "2026-11-10",
+    "trigger": "Root requested targeted check for an immortal-spine or backbone interpretation before publication.",
+    "query_budget": 5,
+    "queries": [
+      "birth death process immortal spine conditioned survival birth death rates lambda mu backbone decomposition",
+      "critical branching process Q process immortal particle binary birth rate spine",
+      "birth death process conditioned extinction birth death rates interchanged skeleton decomposition",
+      "random lineage lifetime immortal spine Erlang distribution",
+      "\"General branching processes conditioned on extinction are still branching processes\""
+    ],
+    "queries_executed": 5,
+    "subcritical_Q_process": {
+      "published_ingredients": "Spine birth rate m*lambda; one uniform continuing spine daughter; other subtrees ordinary and independent.",
+      "binary_tagged_corollary": "For m=2, random tag exits spine at rate lambda, then dies at rate mu; independent exponential sum.",
+      "status": "project specialization of explicitly published preprint construction",
+      "source": "HautphenneHorton2025"
+    },
+    "critical_Q_process": {
+      "standard_ingredient": "Size-biased spine and Doob h-transform.",
+      "project_rate_calculation": "h(n)=n gives upward k(n+1) and downward k(n-1), realized by n-1 ordinary cells plus a spine splitting at 2k. Tag exit at rate k followed by death at rate k gives Erlang-2.",
+      "status": "project specialization; not a quoted continuous-state theorem",
+      "source": "Lambert2007"
+    },
+    "supercritical_infinite_survival": {
+      "published_ingredient": "Single-type extinction tilting q^(offspring-1).",
+      "project_rate_calculation": "q=mu/lambda. Doomed branches have division rate lambda*q=mu and death rate mu/q=lambda. An immortal parent produces one immortal and one doomed daughter at rate 2lambda*q=2mu. A uniform tag enters the doomed branch at rate mu, then dies at rate lambda.",
+      "status": "project conditional-branching corollary using published extinction transformation",
+      "source": "JagersLageras2008"
+    },
+    "finite_horizon_boundary": "These infinite-horizon or Q-process interpretations do not prove exact finite-T equality. The independently derived Poisson-functional identity and numerical checks remain the proof/check on 0<=t<=T, with post-T death hazard mu.",
+    "originality_decision": "Downgrade to explicit finite-window derivation, reproducible benchmark and application/identifiability audit rooted in standard branching constructions; no new-theorem or first-ever claim.",
+    "screened_not_relied_on": [
+      {
+        "title": "Immortal Branching Processes",
+        "url": "https://arxiv.org/abs/2101.04498",
+        "reason": "Explicitly added immortality models; not used as proof of equality to the conditioned Q-process."
+      }
+    ]
+  }
+}

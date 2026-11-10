@@ -1,0 +1,414 @@
+{
+  "version": 2,
+  "audit_date": "2026-11-10",
+  "scope": "Primary-source dictionary and independently pinned numeric-structure audit only; no event-rate estimation, matrix-derived biological results, patient prediction or contact with authors.",
+  "overall_status": "PARTIAL_DICTIONARY_NOT_HAZARD_READY",
+  "input_workbook": {
+    "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41586-021-03796-6/MediaObjects/41586_2021_3796_MOESM8_ESM.xlsx",
+    "sha256": "a53fe57483b0e55a3b2545f611ff2cf2a31338b8c9dffad0f9af1522222d8f7c",
+    "bytes": 13180157,
+    "schema_provenance": "Workbook structure verified in the preceding validation-route audit; root independently pinned and inspected numeric arrays in workbook-structure.json and encoding-checks.json.",
+    "sheets_of_interest": [
+      "Figure 1b-divison",
+      "Figure 1b-death",
+      "Figure 1c",
+      "Figure 1d"
+    ],
+    "matrices_each": {
+      "range": "A1:BYW1135",
+      "rows": 1135,
+      "columns": 2025
+    },
+    "raw_republication_authorized_by_source_license": "not established"
+  },
+  "paper_sources": {
+    "publisher": "https://www.nature.com/articles/s41586-021-03796-6",
+    "author_manuscript": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9209846/",
+    "primary_sections_checked": [
+      "Main text before Figure 1",
+      "Figure 1 legend",
+      "Methods: Live cell imaging",
+      "Methods: Statistical analyses",
+      "Extended Data Figure 1b legend",
+      "Data and code availability"
+    ],
+    "supplementary_information": {
+      "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41586-021-03796-6/MediaObjects/41586_2021_3796_MOESM1_ESM.pdf",
+      "bytes": 616578,
+      "sha256": "6ab441771431fbe161956fdd5694eda96d0da418672bc9e8d09bedd66603df5f",
+      "pages": 10,
+      "inspection": "Native PDF text searched for imaging, tracking, frames, sister selection, censoring and matrix-size terms. No Figure 1b column-time or event-export dictionary found. Transcriptomic lineage analyses in this supplement are not the microscopy export."
+    },
+    "reporting_summary": {
+      "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41586-021-03796-6/MediaObjects/41586_2021_3796_MOESM2_ESM.pdf",
+      "bytes": 1451362,
+      "sha256": "fef6a6e62c747141493ff23992e42ff333aa081b082c24840b279bac26e7e085",
+      "pages": 3,
+      "inspection": "Image-based PDF; page text inspected with native OCR. Broad replication/randomization statements do not assign these matrix rows to experimental replicates."
+    }
+  },
+  "time_dictionary": {
+    "status": "EXACT_COLUMN_TIME_MAP_UNKNOWN",
+    "affirmative_source_schedule": [
+      {
+        "elapsed_hours": "0 to 24",
+        "nominal_interval_minutes": 10
+      },
+      {
+        "elapsed_hours": "24 to 120",
+        "nominal_interval_minutes": 20
+      },
+      {
+        "elapsed_hours": "later",
+        "nominal_interval_minutes": 60
+      }
+    ],
+    "nominal_figure_duration_days": 14,
+    "source_schedule_locator": "Author manuscript, Methods: Live cell imaging",
+    "independent_consistency_arithmetic": {
+      "assumptions": "Exactly 0 through 336 hours, t=0 included, stated intervals, no duplicate boundary frames",
+      "expected_frames": 649,
+      "formula": "1 + 24*6 + (120-24)*3 + (336-120)",
+      "uniform_10_minute_span_for_2025_points_hours": 337.3333333333333
+    },
+    "interpretation": "Neither 2025 uniform ten-minute frames nor an exact 14-day rescaling is source-certified. Resampling, interpolation, padding, unequal starts/stops or a separate export grid remain possibilities, not findings.",
+    "missing": [
+      "Actual timestamp vector or original image database",
+      "Matrix-column to original-frame/time mapping",
+      "Any interpolation or resampling rule",
+      "Treatment start offset and exact observation end",
+      "Handling of missing frames and duplicated boundaries"
+    ]
+  },
+  "selection_dictionary": {
+    "reported_figure_rows": 1135,
+    "reported_persister_subset_rows": 77,
+    "reported_persister_definition": "Alive at day 14 in this imaging experiment; endpoint phenotype, not continuous functional drug-tolerance classification.",
+    "nonpersister_tracking": "Starts from movie beginning; only one representative branch per progeny, with a sister selected randomly at divisions.",
+    "persister_ascertainment": "Every final-frame cell is initially traced backward to identify its day-0 founder; a single path per lineage/timepoint is then tracked forward to limit overrepresentation of large progenies.",
+    "extended_data_legend_nuance": "Extended Data Figure 1b says the found initiator is tracked forward 'as in a'. This supports forward re-tracking but does not provide an Oren export algorithm or a fully explicit chosen-sister rule in the selected persister subset.",
+    "unresolved": [
+      "How prospective and retrospectively ascertained rows were merged and deduplicated",
+      "Whether selected persister forward paths can end in death while a different branch survives",
+      "Exact chosen-sister sampling rule and seed for those paths",
+      "Complete initial eligible-founder denominator and any field/track exclusions",
+      "Inclusion probabilities for each row and whether endpoint selection changed sampling weights"
+    ],
+    "denominator_caution": "The Figure 1b counts and narrative approximate percentages are insufficient to reconstruct an unconditional initial-population sampling denominator. Do not use 77/1135 as a certified population persistence estimate.",
+    "lineage_vs_cell_caution": "A row is a selected lineage path, not a full expanding population or necessarily a complete binary family tree. A selected path's death does not automatically establish extinction of all descendants."
+  },
+  "cycle_time_dictionary": {
+    "table_fields": [
+      "type",
+      "cell_cycle_time",
+      "censoring_status"
+    ],
+    "table_range": "A1:C307",
+    "displayed_unit": "hours, verified visually on publisher Figure 1c x-axis; y-axis is non-division probability",
+    "figure_image_url": "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41586-021-03796-6/MediaObjects/41586_2021_3796_Fig1_HTML.png",
+    "source_method_untreated": "Interval between first and second mitoses.",
+    "source_method_persister": "Intervals beginning at the first mitosis after 72 hours of treatment and subsequent mitoses, averaged; intended to omit early events before drug uptake.",
+    "censoring_code_0_1_meaning": "UNKNOWN: field name does not specify which value means observed/censored or the censoring time.",
+    "unknown": [
+      "Row-to-lineage join",
+      "Handling of cells with no eligible mitosis or incomplete terminal cycles",
+      "Left truncation and interval aggregation rules in the actual export",
+      "Whether censoring is administrative, tracking loss or another reason"
+    ],
+    "boundary": "These filtered/averaged intervals must not be silently pooled with all birth-to-division intervals or used as an unbiased untreated-versus-persister hazard comparison."
+  },
+  "identity_replication_censoring": {
+    "row_ids_and_joins": "No explicit lineage/cell identifiers verified in the two numeric matrix headers. The Figure 1d first column differs from the terminal death-matrix code at 146 positions despite matching row and category counts. Neither equality of counts nor positional comparison certifies a biological row join.",
+    "replicate_ids": "No matrix-row to movie, field, well, date or biological-experiment mapping verified.",
+    "reported_replication": "Reporting-summary OCR states n at least 3 for all experiments, most experiments repeated at least twice with n=3, and two single-cell samples at days 3, 7 and 14. Those broad statements do not identify the microscopy rows' replicate memberships; sequencing replicates must not be assigned to movie rows.",
+    "figure_legend_limit": "The Figure 1 legend explicitly associates three biological replicates with growth/response summaries and representative images. It does not supply track-level replicate assignments.",
+    "tracking_loss_vs_death": "Methods report manual death recording; no explicit tracking-loss/exclusion/censoring table was located.",
+    "at_risk_mask": "Not certified. Zero event entries alone do not establish that a cell was observable, alive or at risk.",
+    "withdrawal_state_labels": "No repeated withdrawal-sensitive/tolerant transition label sequence verified. This is continued-treatment tracking, not direct validation of the post-withdrawal v2 model."
+  },
+  "structural_reconciliation_from_root_audit": {
+    "sources": [
+      "workbook-structure.json",
+      "encoding-checks.json"
+    ],
+    "evidence_class": "Derived numerical observations from the pinned workbook; distinguish these from paper statements and study-specific export provenance.",
+    "source_sha256": "a53fe57483b0e55a3b2545f611ff2cf2a31338b8c9dffad0f9af1522222d8f7c",
+    "checked_utc": "2026-11-10T18:53:24.032833+00:00",
+    "division": {
+      "first_column_all_zero": false,
+      "decreasing_steps": 0,
+      "positive_steps": 1668,
+      "steps_larger_than_one": 0,
+      "maximum_positive_step": 1.0,
+      "positive_step_entries_after_prior_death_code_one": 0,
+      "rows_with_positive_step_after_prior_death_code_one": 0,
+      "first_column_value_counts": {
+        "0": 1130,
+        "1": 5
+      },
+      "value_range": [
+        0,
+        7
+      ],
+      "interpretation": "All observed changes are nondecreasing unit steps. This is compatible with a cumulative-count encoding, not raw isolated binary event spikes; the study-specific transform and five initial ones remain unresolved. The 1668 increments exclude initial-column values and must not be relabeled a biological event total."
+    },
+    "death": {
+      "first_column_all_zero": true,
+      "decreasing_steps": 0,
+      "positive_steps": 1055,
+      "rows_with_multiple_positive_steps": 0,
+      "terminal_zero_rows": 80,
+      "terminal_one_rows": 1055,
+      "interpretation": "Each row starts at zero and has at most one transition to a persistent one. This certifies the numerical step pattern, not a documented death/observation/at-risk convention or exact event time."
+    },
+    "figure1d": {
+      "header": [
+        "viability(0_persister)",
+        "Progeny_size"
+      ],
+      "data_rows": 1135,
+      "first_column_value_counts": {
+        "0.0": 80,
+        "1.0": 1055
+      },
+      "second_column_range": [
+        0.0,
+        14.0
+      ],
+      "evidence_class": "Header is affirmative workbook text; counts and range are derived numeric observations.",
+      "interpretation": "The source header labels zero as persister within this table. It does not establish correspondence to death-matrix rows or explain the Figure 1b 77-row subset."
+    },
+    "unverified_positional_join": {
+      "comparison": "Figure1d first column versus terminal death-matrix code, same row number; identity/order not certified",
+      "different_rows": 146,
+      "matrix_excel_row_numbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        48,
+        49,
+        50,
+        52,
+        53,
+        54,
+        55,
+        56,
+        59,
+        60,
+        61,
+        62,
+        63,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        92,
+        94,
+        95,
+        104,
+        105,
+        106,
+        123,
+        148,
+        163,
+        164,
+        222,
+        254,
+        270,
+        284,
+        287,
+        302,
+        306,
+        311,
+        326,
+        342,
+        360,
+        421,
+        444,
+        470,
+        471,
+        479,
+        487,
+        500,
+        501,
+        503,
+        516,
+        531,
+        532,
+        545,
+        550,
+        551,
+        560,
+        563,
+        576,
+        591,
+        605,
+        610,
+        614,
+        625,
+        666,
+        686,
+        716,
+        764,
+        779,
+        782,
+        794,
+        807,
+        820,
+        836,
+        837,
+        838,
+        841,
+        845,
+        847,
+        853,
+        854,
+        884,
+        892,
+        893,
+        916,
+        917,
+        929,
+        975,
+        976,
+        977,
+        981,
+        986,
+        992,
+        1003,
+        1095,
+        1135
+      ],
+      "interpretation": "Agreement or disagreement by position cannot establish a biological row join."
+    },
+    "reported_figure1b_persister_subset_rows": 77,
+    "status": "UNRESOLVED_RECONCILIATION",
+    "interpretation_limit": "Figure 1d has 80 explicitly zero-labeled persister entries; the death matrix independently has 80 terminal zeros; Figure 1b reports 77 persister lineages. The matching counts do not certify matching rows: 146 positional comparisons differ. No intended correction, source error, missing-label assignment or biological meaning of these discrepancies is inferred. Need row identities, selection/exclusions and export provenance.",
+    "no_empirical_rates_or_timestamp_conversion": true
+  },
+  "official_software_evidence": {
+    "repository": "https://github.com/balvahal/p53CinemaManual",
+    "observed_default_branch": "master",
+    "observed_last_pushed": "2021-09-24T23:18:07Z",
+    "license": "No explicit licence reported in repository metadata.",
+    "study_specific_commit_or_export_call_verified": false,
+    "semantic_scope": "The following are exact conventions of inspected generic functions. They are conditional clues, NOT certified meanings of the Oren workbook cells.",
+    "files": [
+      {
+        "path": "quantificationScripts/getDivisionMatrix.m",
+        "git_blob_sha": "f014d5b139a4bf469e6fffd4d7314361b528435a",
+        "meaning": "Initializes all entries to zero; sets one at timepoints with a recorded event centroid for a tracked cell. Does not provide an observation mask."
+      },
+      {
+        "path": "analysisScripts/accumulatedDivisionMatrix.m",
+        "git_blob_sha": "a0c9bf222c2dc358242411cfdb62431fa38ed8a7",
+        "meaning": "For each input entry equal to one, increments that row from the event column through the end; output is cumulative event count."
+      },
+      {
+        "path": "quantificationScripts/centroids2table_withCellFates.m",
+        "git_blob_sha": "ce5dfddc3a041f8f22e27e5811b3ee4c44af0afc",
+        "meaning": "Can export cell_id, centroid_col, centroid_row, timepoint, division, death, value; binary division/death flags refer to recorded event centroids."
+      },
+      {
+        "path": "quantificationScripts/getDatasetTraces_fillLineageInformation.m",
+        "git_blob_sha": "d79d5ff9d93cdc9f5cb5111d775ebc6340cc1e70",
+        "meaning": "Uses the division event builder for both division and death annotations. Separately retains raw/lineage-filled event arrays, traces, lineageTree, centroid coordinates and cellAnnotation containing group, position and tracked-cell ID."
+      },
+      {
+        "path": "quantificationScripts/fillLineageInformation.m",
+        "git_blob_sha": "a7399556fb88f20332a8bc975d6f10db1a819c41",
+        "meaning": "Copies pre-division trace information between linked branches; filled arrays can repeat ancestral history and must not automatically be counted as independent events."
+      },
+      {
+        "path": "analysisScripts/sample_unique_id.m",
+        "git_blob_sha": "d680206cf2453db62f28249e85830443a2fb06f4",
+        "meaning": "Randomly retains one entry for each repeated progenitor identifier; actual use for Oren's published rows was not verified."
+      },
+      {
+        "path": "fileManaging/createDatabaseFile.m",
+        "git_blob_sha": "a0b89801ca02004a2f732eb4d8a506af6a7107e9",
+        "meaning": "Parses filename/group/channel/position/timepoint from microscopy filenames; integer timepoint is not itself a verified elapsed-time vector."
+      }
+    ],
+    "possible_missing_companion_objects": [
+      "Original p53Cinema .mat annotation files",
+      "centroidsTracks, centroidsDivisions, centroidsDeath",
+      "Original image database and elapsed timestamps",
+      "measurements.cellAnnotation",
+      "measurements.lineageTree",
+      "Raw and lineage-filled trace/event arrays",
+      "Study-specific plotting/export script and row-selection indices"
+    ],
+    "specific_workbook_codes": {
+      "division_sheet": "STRUCTURAL_PATTERN_VERIFIED_SEMANTICS_PARTIAL: codes 0 through 7 are nondecreasing with 1668 unit increments and five initial ones. Raw isolated binary-spike encoding is incompatible with these observed values. Cumulative-type structure is supported, but study-specific event definition, initial-state handling, lineage filling, observation coverage and timestamp mapping remain unknown.",
+      "death_sheet": "STRUCTURAL_PATTERN_VERIFIED_SEMANTICS_PARTIAL: all rows begin at zero; 1055 rows transition once to persistent one and 80 stay zero. It is a numerical persistent-step array, not an isolated event-spike array. Exact biological/missing-observation semantics, export transform, observation mask and frame timing remain uncertified."
+    }
+  },
+  "watermelon_repository_check": {
+    "url": "https://github.com/yaaraore/Watermelon",
+    "finding": "Inspected official code inventory contains lineage-barcode processing scripts and transcriptomic RDS pointers; no Figure 1b microscopy export dictionary located. The two listed public issues concern RDS access and barcode processing, not this matrix dictionary.",
+    "giant_rds_downloaded": false
+  },
+  "minimum_gates_before_hazard_analysis": [
+    "Certify exact elapsed-time mapping for every matrix column.",
+    "Certify event-code meanings and an observation/at-risk mask, separately from event absence.",
+    "Resolve the five initial division ones and certify whether, and how, first differences correspond to eligible observed events; do not count pre-window or unknown-baseline events by assumption.",
+    "Certify row identity, selection provenance and whether a row is a surviving spine or a newly chosen random forward path.",
+    "Require explicit row identifiers and certified joins across Figure 1b matrices and Figure 1d; the equal counts conceal 146 positional disagreements.",
+    "Resolve field/experiment grouping and any repeated ancestral histories.",
+    "Identify track-loss and administrative censoring, plus a verified codebook for Figure 1c.",
+    "State the estimand conditional on the actual selection design; do not relabel selected-path hazards as population or state-exit hazards."
+  ],
+  "permitted_current_use": "Structural validation, provenance checks, selected-data descriptions with explicit unidentified fields, and independent synthetic selection demonstrations. No biological event-rate claim is supplied by this dictionary audit.",
+  "old_published_files_modified": false
+}

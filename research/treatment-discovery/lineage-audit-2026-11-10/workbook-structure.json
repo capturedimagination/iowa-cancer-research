@@ -1,0 +1,148 @@
+{
+  "retrieved_or_verified_utc": "2026-11-10T18:47:17.111419+00:00",
+  "source_url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41586-021-03796-6/MediaObjects/41586_2021_3796_MOESM8_ESM.xlsx",
+  "source_path": "research/treatment-discovery/sources/lineage-2026-11-10/Oren-2021-Figure1-source.xlsx",
+  "source_sha256": "a53fe57483b0e55a3b2545f611ff2cf2a31338b8c9dffad0f9af1522222d8f7c",
+  "source_bytes": 13180157,
+  "code_sha256": "be9a2cf3da9144c78398ee15d54decaa0c23051129792f07f980d75a511b97c8",
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "sheets": {
+    "Figure 1b-divison": {
+      "rows": 1135,
+      "columns": 2025,
+      "written_cells": 2298375,
+      "formulas": 0,
+      "error_cells": 0,
+      "numeric_value_counts": {
+        "0.0": 398726,
+        "1.0": 1073974,
+        "2.0": 658897,
+        "3.0": 112978,
+        "4.0": 39448,
+        "5.0": 10668,
+        "6.0": 2628,
+        "7.0": 1056
+      },
+      "missing_cells": 0,
+      "rows_with_missing_cells": 0,
+      "first_column_value_counts": {
+        "0.0": 1130,
+        "1.0": 5
+      },
+      "last_column_value_counts": {
+        "0.0": 160,
+        "2.0": 348,
+        "4.0": 40,
+        "1.0": 498,
+        "3.0": 67,
+        "5.0": 16,
+        "7.0": 2,
+        "6.0": 4
+      },
+      "interpretation": "Numeric structure only; do not equate source codes with events or state labels without source documentation."
+    },
+    "Figure 1b-death": {
+      "rows": 1135,
+      "columns": 2025,
+      "written_cells": 2298375,
+      "formulas": 0,
+      "error_cells": 0,
+      "numeric_value_counts": {
+        "0.0": 683117,
+        "1.0": 1615258
+      },
+      "missing_cells": 0,
+      "rows_with_missing_cells": 0,
+      "first_column_value_counts": {
+        "0.0": 1135
+      },
+      "last_column_value_counts": {
+        "1.0": 1055,
+        "0.0": 80
+      },
+      "interpretation": "Numeric structure only; do not equate source codes with events or state labels without source documentation."
+    },
+    "Figure 1c": {
+      "rows": 307,
+      "columns": 3,
+      "written_cells": 921,
+      "formulas": 0,
+      "error_cells": 0,
+      "header_row": [
+        "type",
+        "cell_cycle_time",
+        "censoring_status"
+      ],
+      "first_column_types": [
+        "str"
+      ]
+    },
+    "Figure 1d": {
+      "rows": 1136,
+      "columns": 2,
+      "written_cells": 2272,
+      "formulas": 0,
+      "error_cells": 0,
+      "header_row": [
+        "viability(0_persister)",
+        "Progeny_size"
+      ],
+      "first_column_types": [
+        "float",
+        "str"
+      ]
+    },
+    "Figure 1g": {
+      "rows": 10,
+      "columns": 10,
+      "written_cells": 98,
+      "formulas": 0,
+      "error_cells": 0,
+      "header_row": [
+        "osi nM",
+        "non-cycling_derived",
+        "non-cycling_derived",
+        "non-cycling_derived",
+        "cycling_derived",
+        "cycling_derived",
+        "cycling_derived",
+        "Parental",
+        "Parental",
+        "Parental"
+      ],
+      "first_column_types": [
+        "float",
+        "str"
+      ]
+    },
+    "Figure 1h": {
+      "rows": 10,
+      "columns": 3,
+      "written_cells": 30,
+      "formulas": 0,
+      "error_cells": 0,
+      "header_row": [
+        "Parental",
+        "Non-cycling_derived",
+        "Cycling_derived"
+      ],
+      "first_column_types": [
+        "float",
+        "str"
+      ]
+    }
+  },
+  "derived_cache": {
+    "path": "research/treatment-discovery/sources/lineage-2026-11-10/oren-figure1-matrices.npz",
+    "sha256": "802d397448e9d86c4895fcae2be43fa64c0dc8745e514cac7a1245337e4693a6",
+    "public": false
+  },
+  "limits": [
+    "Raw workbook and extracted matrices remain local; no raw source mirror published.",
+    "No inferred time mapping, event-rate estimate, row join or biological model fitted by this structural audit.",
+    "Original XLSX bytes unchanged; all cell positions and missing values retained."
+  ]
+}

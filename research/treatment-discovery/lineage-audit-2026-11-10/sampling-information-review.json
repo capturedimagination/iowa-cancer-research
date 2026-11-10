@@ -1,0 +1,122 @@
+{
+  "version": 1,
+  "audit_date": "2026-11-10",
+  "evidence_class": "Independent mathematical derivation and numerical cross-check; no empirical workbook estimate or biological parameter fit.",
+  "model": {
+    "founders": 1,
+    "division": "Homogeneous constant per-cell rate lambda; each division replaces parent with two daughters.",
+    "death": "Homogeneous constant per-cell rate mu.",
+    "tag": "A forward tag follows one daughter at each division without future information; tag death is final, with no branch replacement.",
+    "family_selection": "A_T={at least one descendant alive at fixed known T}; equal founder weighting or known corrected weights.",
+    "definitions": {
+      "h": "P(A_T) in the matched prospective founder population",
+      "Q": "P(tag alive at T | A_T)",
+      "T": "Known positive observation horizon in arbitrary model time units"
+    },
+    "branching_assumptions": "Independent descendant processes; no density dependence, cell types, treatment changes or unmodeled state-dependent rates."
+  },
+  "identity": {
+    "set_relation": "{tag alive at T} subset of {family nonextinct at T}",
+    "formula": "Q(T)*h(T)=exp(-mu*T)",
+    "mu": "-log(Q(T)*h(T))/T",
+    "status": "EXACT_UNDER_STATED_MODEL",
+    "sufficient_additional_scalar_given_Q": "Matched unselected family-survival probability h(T)."
+  },
+  "conditional_tag_death_law": {
+    "lambda_not_equal_mu": {
+      "density_before_T": "lambda*mu/(lambda-mu) * (exp(-mu*t)-exp(-lambda*t)), 0<=t<T",
+      "survival_atom_at_T": "(lambda*exp(-mu*T)-mu*exp(-lambda*T))/(lambda-mu)"
+    },
+    "lambda_equals_mu_r": {
+      "density_before_T": "r^2*t*exp(-r*t)",
+      "survival_atom_at_T": "(1+r*T)*exp(-r*T)"
+    },
+    "interpretation": "The law equals a sum of independent Exponential(lambda) and Exponential(mu) waiting times, right-censored at T, for strictly positive rates; zero-rate cases follow by limits. It is symmetric under rate interchange.",
+    "scope_limit": "Unidentifiability statement concerns these conditional tag-death observations alone; it does not cover complete division histories, family-size/tree observations or external rate/selection information."
+  },
+  "hidden_conditions_and_limits": [
+    "The tag must be chosen without knowledge of future outcomes. Following a required terminal survivor or replacing a dead tag changes Q and invalidates exp(-mu*T).",
+    "Family inclusion, tag survival, follow-up horizon and exposure must refer to the same target founder population; endpoint-cell size weighting is not equal-founder sampling.",
+    "The h denominator must count initially eligible founders, including extinct families, under the matched observation design. A selected table fraction is insufficient.",
+    "Observed alive/dead/censored labels and loss to tracking must be known; terminal zeros in an undocumented matrix are not certified survival observations.",
+    "For common time-varying death rates, the identity yields exp(-integral_0^T mu(s) ds) and identifies cumulative hazard, not the full time-dependent rate.",
+    "For heterogeneous constant founder-specific death rates, the product is a mixture of survivals; -log(Q*h)/T is an effective rate, not proof of a shared individual rate.",
+    "Population identity requires T>0 and h>0; finite nonnegative mu implies Q*h>0. A finite-sample zero survival estimate does not prove an infinite biological death rate.",
+    "Known h and Q identify mu under this model, not automatically every model parameter or biological mechanism; extra division/tree information may break the rate-swap ambiguity.",
+    "Shared-cohort estimates of Q and h have dependence. With complete correctly matched ascertainment, their product equals tag survivors divided by all eligible founders; uncertainty must respect the common denominator."
+  ],
+  "numerical_cross_check": {
+    "method": "Independent survival ODE h'=(lambda-mu)*h-lambda*h^2, h(0)=1; conditional density from Poisson sibling survival: mu*exp(-mu*t)*(1-exp(-lambda*integral_0^t h(T-s) ds))/h(T). Compared against closed forms, normalization, recovered mu and swapped-rate laws.",
+    "rate_grid": [
+      0.0,
+      0.1,
+      0.3,
+      0.8,
+      1.2
+    ],
+    "additional_near_critical_pairs": [
+      [
+        0.3,
+        0.300001
+      ],
+      [
+        0.3,
+        0.299999
+      ]
+    ],
+    "horizons": [
+      0.1,
+      1.0,
+      3.0,
+      10.0
+    ],
+    "cases": 108,
+    "density_times_as_fractions_of_T": [
+      0.0,
+      0.1,
+      0.5,
+      0.9
+    ],
+    "ode_rtol": 1e-12,
+    "ode_atol": 1e-14,
+    "absolute_acceptance_tolerance": 1e-08,
+    "max_absolute_errors": {
+      "h_ode_vs_closed_form": 3.9840464260976205e-11,
+      "q_h_ode_vs_tag_survival": 5.262901225933092e-11,
+      "mu_recovery_from_q_and_h_ode": 5.423185234221251e-10,
+      "conditional_density_branching_vs_closed_form": 8.465117495859431e-12,
+      "density_plus_survival_normalization": 5.428746341351598e-11,
+      "rate_swap_q": 0.0,
+      "rate_swap_density": 0.0
+    },
+    "passed": true,
+    "numpy": "2.3.5",
+    "scipy": "1.16.3",
+    "root_simulation_modified": false,
+    "implementation_availability": "Documented reviewer calculation reproducible from the stated equations, grid and tolerances; no standalone public checker script is supplied."
+  },
+  "illustrative_rate_swap_example": [
+    {
+      "lambda": 0.8,
+      "mu": 0.2,
+      "T": 3.0,
+      "Q": 0.701509530362231,
+      "h": 0.7823295512616093,
+      "Q_times_h": 0.5488116360940264,
+      "mu_recovered": 0.20000000000000004,
+      "net_growth_rate": 0.6000000000000001
+    },
+    {
+      "lambda": 0.2,
+      "mu": 0.8,
+      "T": 3.0,
+      "Q": 0.701509530362231,
+      "h": 0.12931820504643665,
+      "Q_times_h": 0.09071795328941246,
+      "mu_recovered": 0.8000000000000002,
+      "net_growth_rate": -0.6000000000000001
+    }
+  ],
+  "empirical_application_status": "NOT_APPLIED: Oren row selection, original founder denominator, chosen-path rule, observation masks, row joins and timestamps remain unresolved; neither 80/1135 nor 77/1135 is certified h or Q.",
+  "novelty": "This is a bounded reviewer derivation. Novelty is unestablished; the set identity itself is elementary conditional probability. Prior-art review is separate."
+}
