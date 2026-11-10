@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "frozen_at_utc": "2026-11-10T19:39:07.925497+00:00",
+  "purpose": "Tighten the same fixed finite-record horizon contrasts by exactly optimizing a common-u rectangular/nested-selection relaxation; no population inference or new endpoint search.",
+  "known_before_freeze": {
+    "primary_results_sha256": "a3919f4994d57c6d77ac43fbe249aa9b01ee332d1116d367f5a6c9d9e3481a9e",
+    "primary_result": "All300 marginal-subtraction/nesting-cap contrast envelopes include zero at1e-12 tolerance. Allsource baseline/time/annotation cases already inspected. Primary bounds may be loose; no fundamental nonidentifiability conclusion follows.",
+    "joint_results_inspected": false,
+    "analytical_dynamic_program_already_derived": true
+  },
+  "unchanged_inputs": "Same20 scenarios, same3horizon pairs, same5common times, same fixed rosters and per-cell interval/status records as primary protocol. Refine all300contrasts, never select cases by sign.",
+  "primary_protocol_sha256": "c46e452f3b17b96a8f98e6bc834540d830af9b4a1e3b39b8d3a2c1665f342771",
+  "private_input": {
+    "path": "tmp/hct116-missing-bounds/per-cell.json",
+    "sha256": "73874aa71853f50ec65de682d44bca37e8ebdf42f3b8160d3eb625df79cf9a76"
+  },
+  "optimization": {
+    "states": [
+      "00 neither horizon",
+      "10 earlier only",
+      "11 both horizons"
+    ],
+    "domain": "Allowed per-family selection states respect both known/unknown statuses and nesting. An upper early-path survival bound of zero forbids selected states. Other strict-positivity requirements are interpreted through closure/infima where no uniform bound on hidden branch depth is known.",
+    "fixed_counts": "Enumerate feasible total selected N1>=N2>0. For each, minimize or maximize \u03a3_i(f2_i/N2\u2212f1_i/N1)*u_i over u_i\u2208[lower_i,upper_i] and permitted states.",
+    "costs_minimum": {
+      "00": "0",
+      "10": "\u2212upper_i/N1",
+      "11": "(1/N2\u22121/N1)*lower_i"
+    },
+    "costs_maximum": {
+      "00": "0",
+      "10": "\u2212lower_i/N1",
+      "11": "(1/N2\u22121/N1)*upper_i"
+    },
+    "method": "Exact cardinality-constrained dynamic program over permitted states and selected-count increments, with fixed states aggregated. Vectorization or bounded batching changes computation only. No stochastic optimizer or fitted parameters.",
+    "scope": "Sharp infimum/supremum for the stated closed common-u/nested rectangular relaxation. Still outer bounds for complete biological trees because branch/fate/time constraints are omitted.",
+    "numeric_tolerance": 1e-12
+  },
+  "verification": {
+    "before_empirical_joint_run": "Independent exhaustive small rational cases and deterministic controls must match extrema. Undefined later denominators handled explicitly; all-identical path values and a single possible founder imply zero contrast.",
+    "source_checks": "Every joint interval must lie inside its primary outer interval within numerical tolerance; all300cases retained, no horizon or eligibility change.",
+    "forest_controls": "Use first12founders by fixed creation index from each of the previously fixed900-forest experiment cases, all4mask policies and bothannotation offsets/policies. Independent complete-tree truth remains unchanged; compareeverydefinedcontrast to joint bound. This subset is a computational control, not a new biological sample or a claim to have applied jointoptimization to all900founders.",
+    "resource_handling": "Bound working-array size or batch total-count candidates. Do not omit source cases to save computation; report operational failures if unresolved."
+  },
+  "reporting": "Publish all joint intervals, primary versus joint widths, algorithm/protocol/code hashes, exact-control outcomes and forest checks. Label this as a post-primary-results methodological refinement. Zero inclusion remains a relaxation result; zero exclusion remains finite-record only."
+}

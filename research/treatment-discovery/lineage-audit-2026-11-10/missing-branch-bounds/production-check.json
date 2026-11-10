@@ -1,0 +1,296 @@
+{
+  "version": 1,
+  "checked_utc": "2026-11-10T19:33:42.517314+00:00",
+  "status": "PASS",
+  "production_core_sha256": "27bb3b07186b015a5d573d45ffe1da6515131ea0b3da09e677531c468eb4513e",
+  "production_driver_sha256": "31dcbbeb9ff04c0ab6eb49ea99f5e1d63c9525cc69d0f3c1e3652cc63821d17c",
+  "empirical_protocol_sha256": "c46e452f3b17b96a8f98e6bc834540d830af9b4a1e3b39b8d3a2c1665f342771",
+  "independent_truth_code_sha256": "3812f791250c092df7356b996ac5cbed9448f16545225700b07f00d67fcbffa4",
+  "checker_sha256": "60ffb55cb71e895ec9258cae336e89bd5726caf882bd710e896ba3012e1271e6",
+  "synthetic_controls": [
+    {
+      "name": "mandatory",
+      "expected": [
+        "1/2",
+        "3/4"
+      ],
+      "actual": {
+        "mandatory_selected": 2,
+        "optional_selected": 0,
+        "excluded": 0,
+        "maximum_selected": 2,
+        "zero_denominator_possible": false,
+        "defined_for_some_completion": true,
+        "lower": 0.5,
+        "upper": 0.75,
+        "lower_optional_count": 0,
+        "upper_optional_count": 0
+      },
+      "passed": true
+    },
+    {
+      "name": "extinct_later_alive_earlier",
+      "expected": [
+        "1/4",
+        "1/2"
+      ],
+      "actual": {
+        "mandatory_selected": 1,
+        "optional_selected": 0,
+        "excluded": 1,
+        "maximum_selected": 1,
+        "zero_denominator_possible": false,
+        "defined_for_some_completion": true,
+        "lower": 0.25,
+        "upper": 0.5,
+        "lower_optional_count": 0,
+        "upper_optional_count": 0
+      },
+      "passed": true
+    },
+    {
+      "name": "optional_low_and_high",
+      "expected": [
+        "1/4",
+        "3/4"
+      ],
+      "actual": {
+        "mandatory_selected": 1,
+        "optional_selected": 2,
+        "excluded": 0,
+        "maximum_selected": 3,
+        "zero_denominator_possible": false,
+        "defined_for_some_completion": true,
+        "lower": 0.25,
+        "upper": 0.75,
+        "lower_optional_count": 1,
+        "upper_optional_count": 1
+      },
+      "passed": true
+    },
+    {
+      "name": "optional_only",
+      "expected": [
+        "1/4",
+        "1"
+      ],
+      "actual": {
+        "mandatory_selected": 0,
+        "optional_selected": 2,
+        "excluded": 0,
+        "maximum_selected": 2,
+        "zero_denominator_possible": true,
+        "defined_for_some_completion": true,
+        "lower": 0.25,
+        "upper": 1.0,
+        "lower_optional_count": 1,
+        "upper_optional_count": 1
+      },
+      "passed": true
+    },
+    {
+      "name": "initial_alive",
+      "expected": [
+        "1",
+        "1"
+      ],
+      "actual": {
+        "mandatory_selected": 1,
+        "optional_selected": 1,
+        "excluded": 0,
+        "maximum_selected": 2,
+        "zero_denominator_possible": false,
+        "defined_for_some_completion": true,
+        "lower": 1.0,
+        "upper": 1.0,
+        "lower_optional_count": 0,
+        "upper_optional_count": 1
+      },
+      "passed": true
+    },
+    {
+      "name": "selected_zero_infimum",
+      "expected": [
+        "0",
+        "1/2"
+      ],
+      "actual": {
+        "mandatory_selected": 1,
+        "optional_selected": 0,
+        "excluded": 0,
+        "maximum_selected": 1,
+        "zero_denominator_possible": false,
+        "defined_for_some_completion": true,
+        "lower": 0.0,
+        "upper": 0.5,
+        "lower_optional_count": 0,
+        "upper_optional_count": 0
+      },
+      "passed": true
+    },
+    {
+      "name": "endpoint_promotes_positive_lower",
+      "expected": [
+        "1/8",
+        "3/4"
+      ],
+      "actual": {
+        "mandatory_selected": 1,
+        "optional_selected": 1,
+        "excluded": 0,
+        "maximum_selected": 2,
+        "zero_denominator_possible": false,
+        "defined_for_some_completion": true,
+        "lower": 0.125,
+        "upper": 0.75,
+        "lower_optional_count": 1,
+        "upper_optional_count": 1
+      },
+      "passed": true
+    },
+    {
+      "name": "zero_upper_cannot_be_selected",
+      "expected": [
+        "1/2",
+        "1/2"
+      ],
+      "actual": {
+        "mandatory_selected": 1,
+        "optional_selected": 0,
+        "excluded": 1,
+        "maximum_selected": 1,
+        "zero_denominator_possible": false,
+        "defined_for_some_completion": true,
+        "lower": 0.5,
+        "upper": 0.5,
+        "lower_optional_count": 0,
+        "upper_optional_count": 0
+      },
+      "passed": true
+    },
+    {
+      "name": "empty_selection",
+      "expected": null,
+      "actual": {
+        "mandatory_selected": 0,
+        "optional_selected": 0,
+        "excluded": 2,
+        "maximum_selected": 0,
+        "zero_denominator_possible": true,
+        "defined_for_some_completion": false,
+        "lower": null,
+        "upper": null,
+        "lower_optional_count": null,
+        "upper_optional_count": null
+      },
+      "passed": true
+    },
+    {
+      "name": "empty_roster",
+      "expected": null,
+      "actual": {
+        "mandatory_selected": 0,
+        "optional_selected": 0,
+        "excluded": 0,
+        "maximum_selected": 0,
+        "zero_denominator_possible": true,
+        "defined_for_some_completion": false,
+        "lower": null,
+        "upper": null,
+        "lower_optional_count": null,
+        "upper_optional_count": null
+      },
+      "passed": true
+    },
+    {
+      "name": "all_optional_zero_upper",
+      "expected": null,
+      "actual": {
+        "mandatory_selected": 0,
+        "optional_selected": 0,
+        "excluded": 2,
+        "maximum_selected": 0,
+        "zero_denominator_possible": true,
+        "defined_for_some_completion": false,
+        "lower": null,
+        "upper": null,
+        "lower_optional_count": null,
+        "upper_optional_count": null
+      },
+      "passed": true
+    },
+    {
+      "name": "nonbinary_fraction_arithmetic",
+      "expected": [
+        "5/21",
+        "11/15"
+      ],
+      "actual": {
+        "mandatory_selected": 1,
+        "optional_selected": 2,
+        "excluded": 0,
+        "maximum_selected": 3,
+        "zero_denominator_possible": false,
+        "defined_for_some_completion": true,
+        "lower": 0.23809523809523808,
+        "upper": 0.7333333333333334,
+        "lower_optional_count": 1,
+        "upper_optional_count": 1
+      },
+      "passed": true
+    },
+    {
+      "name": "selected_zero_upper_rejected",
+      "passed": true
+    },
+    {
+      "name": "invalid_interval_rejected",
+      "passed": true
+    },
+    {
+      "name": "known_later_possible_earlier_zero_upper_pruned",
+      "actual": {
+        "defined_for_some_completion": true,
+        "lower": -0.0,
+        "upper": 0.0,
+        "nesting_cap": 0.0,
+        "zero_denominator_possible": false
+      },
+      "passed": true
+    },
+    {
+      "name": "undefined_later_contrast",
+      "actual": {
+        "defined_for_some_completion": false,
+        "lower": null,
+        "upper": null,
+        "nesting_cap": null,
+        "zero_denominator_possible": true
+      },
+      "passed": true
+    },
+    {
+      "name": "later_known_earlier_impossible_rejected",
+      "passed": true
+    },
+    {
+      "name": "known_later_exceeds_possible_earlier_rejected",
+      "passed": true
+    }
+  ],
+  "ratio_comparisons": 810,
+  "maximum_absolute_ratio_error": 1.1102230246251565e-16,
+  "float_comparison_tolerance": 1e-12,
+  "nested_status_cases": 399,
+  "exact_rational_contrasts_checked": 8200,
+  "nested_status_cases_without_positive_later_selection": 39,
+  "driver_static_counts": {
+    "scenarios": 20,
+    "ratio_rows": 300,
+    "contrast_rows": 300
+  },
+  "failures": [],
+  "empirical_driver_invoked": false,
+  "source_records_read": false,
+  "scope": "Production arithmetic versus independent exact rectangular-closure enumeration; not empirical validation or outward-rounded interval certification"
+}

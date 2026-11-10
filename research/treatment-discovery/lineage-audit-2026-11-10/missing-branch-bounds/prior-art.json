@@ -1,0 +1,228 @@
+{
+  "version": 1,
+  "audit_date": "2026-11-10",
+  "created_at_utc": "2026-11-10T19:26:51.038012+00:00",
+  "scope": "Primary prior art and interpretation of conservative finite-record random-tag/family-survival envelopes for incomplete cell trees. No outcome computation or data fitting.",
+  "evidence_tiers": {
+    "primary_documented": "Supported within explicitly inspected primary material",
+    "project_analytic_review": "Mathematical reasoning about target and assumptions, not a new-theorem claim",
+    "bounded_negative_search": "Exact application not found in inspected scope; no priority guarantee",
+    "not_established": "Biological inference, original-cohort coverage and stochastic null rejection are not established"
+  },
+  "decision": {
+    "generic_method_novel": false,
+    "specific_lineage_application_found": false,
+    "application_priority": "Unresolved; exact application not located in bounded search, not first-ever evidence",
+    "defensible_contribution": "Auditable application of established missing-data extrema and chronological tree weighting to a fixed recorded roster with explicit uncertainty",
+    "current_inference": "Finite-record descriptive compatibility conditional on graph/timing interpretation and nonempty selected family set",
+    "population_inference_authorized_by_these_bounds": false,
+    "cancer_mechanism_claim": false
+  },
+  "search": {
+    "query_count": 16,
+    "queries": [
+      "\"cell lineage\" \"bounds\" \"missing\"",
+      "\"lineage trees\" \"partial identification\"",
+      "\"cell lineage\" \"incomplete\" \"selection bias\"",
+      "\"missing daughters\" lineage inference",
+      "\"Manski\" \"Anatomy of the Selection Problem\" pdf",
+      "\"cell lineage\" \"incomplete trees\" likelihood missing",
+      "\"cell lineage statistics\" \"incomplete\" bounds",
+      "\"lineage\" \"partial identification\" missing data",
+      "Manski 1989 Anatomy Selection Problem 24 343 360 pdf northwestern",
+      "\"Censoring of outcomes and regressors\" Horowitz Manski pdf",
+      "\"cell lineage\" \"missing\" \"censoring\" inference tHMM",
+      "\"cell lineage\" \"complete\" \"selection\" \"tracking\" bias",
+      "Imbens Manski 2004 confidence intervals partially identified parameters pdf",
+      "\"lineage\" \"worst-case bounds\"",
+      "\"cell lineage\" \"partial identification\" bounds",
+      "\"cell lineages\" \"missing\" \"bounds\" selection"
+    ],
+    "date": "2026-11-10",
+    "method": "Web search and direct primary-source inspection, with pinned prior full text where current access was blocked",
+    "scope_limit": "Not systematic; no exhaustive repository, supplement or unpublished-literature search",
+    "result": "No exact missing-daughter, family-selectedQ_T(t), cross-horizon envelope application located",
+    "excluded_evidence": "Irrelevant broad-search hits, secondary reviews and lecture notes were not used as core support"
+  },
+  "sources": [
+    {
+      "id": "HorowitzManski1998",
+      "title": "Censoring of outcomes and regressors due to survey nonresponse: Identification and estimation using weights and imputations",
+      "doi": "10.1016/S0304-4076(97)00077-8",
+      "url": "https://doi.org/10.1016/S0304-4076(97)00077-8",
+      "year": 1998,
+      "reviewed_version": "October 1995 primary author manuscript, not a verified identical copy of the final 1998 typeset article",
+      "full_text_url": "https://econwpa.ub.uni-muenchen.de/econ-wp/em/papers/9602/9602007.pdf",
+      "inspected": "Introduction and sections 2-3, particularly missing conditioning events and conditional-mean bounds",
+      "known": "Worst-case conditional means when outcomes and selection/conditioning information are missing. Identification and sampling inference are separated.",
+      "relation": "Direct general prior art for uncertain family inclusion plus tag survival; does not itself give the proposed tree-completion calculation.",
+      "artifacts": [
+        {
+          "local_path": "tmp/discovery-novelty/missing-branch-bounds/HorowitzManski1995.pdf",
+          "sha256": "2c92d38b2afaf95c22e0d72774508bfaccbce4559e77c75a7f9c19e6da33e679"
+        }
+      ]
+    },
+    {
+      "id": "ImbensManski2004",
+      "title": "Confidence intervals for partially identified parameters",
+      "doi": "10.1111/j.1468-0262.2004.00555.x",
+      "url": "https://doi.org/10.1111/j.1468-0262.2004.00555.x",
+      "year": 2004,
+      "inspected": "Publisher abstract and indexed introductory text of author-hosted PDF",
+      "known": "Identification intervals and sampling confidence intervals are different; coverage of parameter versus entire identified set is distinguished.",
+      "relation": "Supports scope boundary only. No specific interval formula is implemented or endorsed by this audit.",
+      "full_text_url": "https://scholar.harvard.edu/files/imbens/files/confidence_intervals_for_partially_identified_parameters.pdf",
+      "access_limit": "Full PDF fetch timed out in web tool and returned HTTP 403 via urllib. No full-proof inspection claimed.",
+      "artifacts": []
+    },
+    {
+      "id": "Genthon2023",
+      "title": "Cell lineage statistics with incomplete population trees",
+      "doi": "10.1103/PRXLife.1.013014",
+      "url": "https://arxiv.org/html/2305.05406v2",
+      "year": 2023,
+      "inspected": "Primary author manuscript sections II-III, empirical application, growth bounds and Discussion",
+      "known": "Forward lineage weights, inclusion of terminated paths, and bounds on growth. Broad termination includes known removal as well as death.",
+      "relation": "Growth bounds differ from biological survival bounds for an unseen daughter. Unknown biological fate cannot be coded as death merely from disappearance.",
+      "artifacts": [
+        {
+          "local_path": "tmp/discovery-novelty/lineage-audit/Genthon2023.html",
+          "sha256": "c976c2977e9b48b1aa8f39ab29ff472c4b279aa02efec2114cdbb3428a402ea2"
+        }
+      ]
+    },
+    {
+      "id": "Nakashima2020",
+      "title": "Lineage EM algorithm for inferring latent states from cellular lineage trees",
+      "doi": "10.1093/bioinformatics/btaa040",
+      "url": "https://arxiv.org/html/1806.00215v4",
+      "year": 2020,
+      "inspected": "Primary author manuscript introduction, Figure 4 and sections 3.1-3.3",
+      "known": "Chronological random paths, retrospective survivor ancestry, tree samples and pruning differ; latent-state estimation accounts for sampling bias.",
+      "relation": "Observation-rule distinctions and pruning concerns are known; no exact missing-branch family-selected envelope located.",
+      "artifacts": [
+        {
+          "local_path": "tmp/discovery-novelty/lineage-audit/Nakashima2020.html",
+          "sha256": "2ba9d08c78d89ce134deed35d2847d4fc1a5df37621b813056204876b044001b"
+        }
+      ]
+    },
+    {
+      "id": "Yamauchi2022",
+      "title": "A unified framework for measuring selection on cellular lineages and traits",
+      "doi": "10.7554/eLife.72299",
+      "url": "https://elifesciences.org/articles/72299",
+      "year": 2022,
+      "inspected": "Weighting Methods and Discussion in previously pinned primary full text",
+      "known": "Chronological/retrospective weighting; incomplete-tree probability inference identified as a needed extension.",
+      "relation": "Direct prior recognition of information gap; does not establish novelty or biological identification of this proposal.",
+      "artifacts": [
+        {
+          "local_path": "tmp/discovery-novelty/lineage-audit/Yamauchi2022.html",
+          "sha256": "46d4759812d0a9d03b722ad65774c5bf96cc4041c8736a9cd26a4830b9fbd859"
+        }
+      ],
+      "access_limit": "Current PMC page challenged browser; previously pinned primary HTML used."
+    },
+    {
+      "id": "Iyer2025",
+      "title": "Inheritable cell-states shape drug-persister correlations and population dynamics in cancer cells",
+      "doi": "10.1371/journal.pcbi.1013446",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12469175/",
+      "year": 2025,
+      "inspected": "Main Methods and Supporting Text sections 1 and 13",
+      "known": "Random forward daughter sampling; reported exclusions for never-dividers and missing cells, with delayed-entry founders also present.",
+      "relation": "Published cohort filtering is not an outcome-independent eligibility rule for the different proposed estimand; no missing-daughter worst-case Q bounds located.",
+      "supplement_url": "https://journals.plos.org/ploscompbiol/article/file?id=10.1371/journal.pcbi.1013446.s001&type=supplementary",
+      "artifacts": [
+        {
+          "local_path": "tmp/discovery-novelty/lineage-audit/Iyer2025.html",
+          "sha256": "8f04eede88c75131c11670c68491c014481e2ba7ca73483306d99493d0a289ec"
+        },
+        {
+          "local_path": "tmp/iyer-empirical-audit/Iyer2025-supplement.pdf",
+          "sha256": "cae587bca7e9de6de4bbdc9668dbf626ddc705b397dfa60ee5b0c16669acde2e"
+        }
+      ]
+    }
+  ],
+  "additional_screening": [
+    {
+      "title": "Inheritance entropy: A model-independent method to probe the hereditary structure of cell lineage trees",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7619470/",
+      "doi": "10.1103/p2mj-q682",
+      "year": 2026,
+      "screen": "Primary abstract/selected main-text discussion; biological inactive branches and inheritance topology differ from unknown tracking-loss outcomes. Not used as evidence for our proposed bound."
+    },
+    {
+      "title": "A lineage tree-based hidden Markov model quantifies cellular heterogeneity and plasticity",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9671968/",
+      "doi": "10.1038/s42003-022-04208-9",
+      "year": 2022,
+      "screen": "Search/access check and prior cached-study pointer only in this follow-up; current page challenged browser. Not used to claim exact bound prior art."
+    }
+  ],
+  "finite_record_target": {
+    "notation": "q_R,T(t)=sum_i_in_R f_i(T)*u_i(t)/sum_i_in_R f_i(T)",
+    "R": "Fixed recorded baseline roster; not presumed complete original cohort",
+    "u": "Random forward-daughter survival probability, with tag remaining dead after death",
+    "f": "Any-descendant family-survival indicator",
+    "denominator": "Require at least one included family; retain feasibility of zero denominator separately",
+    "weights": "2^(-g), where g counts divisions after chosen baseline; do not renormalize missing-daughter mass onto observed sister",
+    "distinction": "Path weights are not probabilities of inclusion in original source recording"
+  },
+  "bound_review": {
+    "tier": "project_analytic_review",
+    "outer_not_tree_sharp": "Independent interval/status optimization may be sharp for its relaxation but is only an outer bound for coupled tree completions",
+    "necessary_couplings": [
+      "u_i(t) nonincreasing with t",
+      "f_i(T2)<=f_i(T1) for T2>T1",
+      "At endpoint f_i(T)=0 implies u_i(T)=0",
+      "f_i(T)=0 permits u_i(t)>0 for t<T",
+      "Positive endpoint family survival gives positive endpoint tag weight in finite resolved tree; zero can be unattained infimum with unrestricted hidden depth",
+      "Unknown identity/timing/mask assignments must be included in completion scope"
+    ],
+    "contrasts": "Marginal subtraction is conservative and generally nonsharp; zero in every separate contrast does not certify one joint equality-producing completion",
+    "empty_set": "No compatible completion may reflect graph/timing inconsistency, not a biological effect",
+    "complete_case_illustration": "With B required links independently observed with probability p, P(complete|B)=p^B, so constant local tracking errors still select by branch opportunity count. Analytic illustration, not fitted."
+  },
+  "population_boundary": {
+    "tier": "project_analytic_review",
+    "decomposition": "Q_T(t)=pi_T*E[u|F_T,R=1]+(1-pi_T)*E[u|F_T,R=0], pi_T=P(R=1|F_T)",
+    "known_coverage_example": "If recorded conditional population mean is bounded by [L,U] and pi_T known, support [0,1] yields [pi_T*L, pi_T*U+1-pi_T]. This is not computed for the data.",
+    "unknown_coverage": "When original denominator and family-survivor-specific coverage are unrestricted, population bounds generally reduce to [0,1] in closure",
+    "warning": "The finite-record envelope does not automatically bound the recorded conditional population mean; total recording fraction is not family-survivor coverage"
+  },
+  "sampling_boundary": {
+    "tier": "primary_documented_and_project_analytic_review",
+    "statement": "Identification/completion envelopes are not confidence intervals. Finite cohorts under population horizon invariance can have unequal empirical curves.",
+    "contrast_excludes_zero": "A fixed-record contrast envelope excluding zero establishes a sign for that empirical contrast under the completion relaxation; alone it does not reject the stochastic null.",
+    "requirements_for_population_test": [
+      "Verified eligibility and recording mechanism",
+      "Original family/experiment dependence accounted for",
+      "Sampling uncertainty distinct from missing-data ambiguity",
+      "Prespecified horizons, contrasts and multiplicity",
+      "Applicable inferential method; no confidence procedure selected here"
+    ]
+  },
+  "local_context": [
+    {
+      "local_path": "research/treatment-discovery/lineage-audit-2026-11-10/hct116-structure/README.md",
+      "sha256": "aa23df62c1d62ff6fe6b690eb1e5ea46e7c7d2a2ba734715e66e8bba821a8e8b"
+    },
+    {
+      "local_path": "research/treatment-discovery/lineage-audit-2026-11-10/next-empirical-resource.md",
+      "sha256": "bfb97ed9eb67285c808980eb13f4b556a4c300f4ce508767da84fc397600843d"
+    }
+  ],
+  "activities": {
+    "cell_level_data_read": false,
+    "source_outcomes_calculated": false,
+    "parameters_fitted": false,
+    "numeric_bound_results_inspected": false,
+    "external_contact": false,
+    "publication_by_this_agent": false
+  },
+  "public_content": "Original source-linked memo and ledger only; downloaded primary originals remain in ignored tmp."
+}

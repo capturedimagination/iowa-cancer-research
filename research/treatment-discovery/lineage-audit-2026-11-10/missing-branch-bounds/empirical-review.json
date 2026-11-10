@@ -1,0 +1,2810 @@
+{
+  "version": 1,
+  "reviewed_at_utc": "2026-11-10T19:41:28.335539+00:00",
+  "status": "PASS_PRIMARY_FINITE_RECORDED_ROSTER_RESULTS; NO_POPULATION_NULL_INFERENCE",
+  "scope": "Independent review of the primary frozen results and saved per-cell records. No new window, rate fit, biological hypothesis test or joint-refinement calculation.",
+  "checks_and_pins": {
+    "tolerance": 1e-12,
+    "source_graph_sha256": "89257469c39355c2b145bfb8a13a88cec54156317b43f3ed171af3d87a5d9b4e",
+    "results_sha256": "a3919f4994d57c6d77ac43fbe249aa9b01ee332d1116d367f5a6c9d9e3481a9e",
+    "private_records_sha256": "73874aa71853f50ec65de682d44bca37e8ebdf42f3b8160d3eb625df79cf9a76",
+    "protocol_sha256": "c46e452f3b17b96a8f98e6bc834540d830af9b4a1e3b39b8d3a2c1665f342771",
+    "core_sha256": "27bb3b07186b015a5d573d45ffe1da6515131ea0b3da09e677531c468eb4513e",
+    "caller_sha256": "31dcbbeb9ff04c0ab6eb49ea99f5e1d63c9525cc69d0f3c1e3652cc63821d17c",
+    "review_check_sha256": "13c919067b5e9cbbb1e7048d9c76978ce476da2f2726de014bce715055e97eaf",
+    "expected_and_observed_counts": {
+      "baseline_sensitivity_combinations": 20,
+      "private_selection_groups": 60,
+      "unique_cell_time_mass_vectors": 39788,
+      "stored_cell_time_mass_vectors_including_horizon_repetition": 119364,
+      "ratio_cases": 300,
+      "contrast_cases": 300
+    },
+    "max_absolute_errors": {
+      "mass_conservation": 0.0,
+      "independent_exact_fraction_frontier_vs_saved_mass": 0.0,
+      "independent_rational_ratio_vs_saved_ratio": 0.0,
+      "independent_contrast_formula_vs_saved_contrast": 0.0
+    },
+    "checks": {
+      "all_hashes_and_freeze_order_match": true,
+      "complete_unique_fixed_grid": true,
+      "all_rosters_match_pinned_graph": true,
+      "same_roster_all_horizons_and_sensitivities": true,
+      "common_per_cell_mass_vectors_across_selection_horizons": true,
+      "family_status_matches_selection_time_mass": true,
+      "family_status_sets_nested_across_horizons": true,
+      "mass_components_nonnegative_and_conserved": true,
+      "survival_bounds_nonincreasing_in_elapsed_time": true,
+      "dead_and_unknown_mass_nondecreasing": true,
+      "whole_episode_mass_ratio_and_contrast_envelopes_contain_first_issue": true,
+      "offset1_survival_bounds_no_lower_than_offset0": true,
+      "time_zero_ratios_one_and_contrasts_zero": true,
+      "independent_frontier_and_rational_recalculations_match": true,
+      "joint_refinement_not_read_or_run": true
+    },
+    "contrast_classification_at_tolerance": {
+      "includes_zero": 300
+    },
+    "contrast_classification_exact_zero": {
+      "includes_zero": 300
+    },
+    "contrast_classification_by_evaluation_hours": {
+      "0": {
+        "includes_zero": 60
+      },
+      "6": {
+        "includes_zero": 60
+      },
+      "12": {
+        "includes_zero": 60
+      },
+      "18": {
+        "includes_zero": 60
+      },
+      "24": {
+        "includes_zero": 60
+      }
+    },
+    "zero_denominator_possible_ratio_cases": 0,
+    "undefined_ratio_cases": 0,
+    "time_zero_point_zero_contrasts": 60,
+    "scope": "Finite recorded-roster primary envelopes only; no population null inference, effect-size fit, window selection, or joint-refinement output."
+  },
+  "method": {
+    "source_rosters": "Reconstructed strict baseline eligibility from pinned source graph and event annotations. Original-workbook roster reconciliation was already verified in implementation-review.json; the graph and workbook hashes remain unchanged.",
+    "path_mass": "Separate iterative path-frontier calculation with fractions.Fraction. Each missing biological daughter retains half the incoming weight. Production mass/ratio/contrast code was neither imported nor called.",
+    "ratios": "Independent exact rational calculation across all optional inclusion counts, converted to float only for comparison.",
+    "contrasts": "Independently re-evaluated the frozen marginal-difference interval and nesting cap for every fixed pair and evaluation time.",
+    "common_U": "Every node mass vector is identical across the three saved selection-horizon groups for the same baseline/offset/policy/time.",
+    "sensitivity": "Checked per-cell interval, ratio, and contrast containment under whole_episode versus first_issue, plus offset1 versus offset0 survival-bound order. No unsupported monotonicity of conditional ratios across death offsets was assumed.",
+    "checker_location": "scripts/review_hct116_primary_bounds.py",
+    "checker_sha256": "13c919067b5e9cbbb1e7048d9c76978ce476da2f2726de014bce715055e97eaf",
+    "checker_publication_status": "Packaged after primary results and after the independent review run; byte-identical to the executed local reviewer calculation. No scientific tuning or new empirical calculation during packaging.",
+    "checker_command_from_repository_root": "python3 scripts/review_hct116_primary_bounds.py",
+    "executed_scratch_copy": "tmp/hct116-lineage-structure/check-primary-empirical-review.py",
+    "review_gate_results_path": "tmp/hct116-lineage-structure/primary-empirical-review-checks.json",
+    "review_gate_results_sha256": "bead2aefe2f0652abbcb2f22331249fbe74186a7e0e72867a770fab0f6fdb635"
+  },
+  "all_contrast_classifications": [
+    {
+      "baseline_frame": 97,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 0,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 97,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 6,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 97,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 12,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 97,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 18,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 97,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 24,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 97,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 0,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 97,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 6,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 97,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 12,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 97,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 18,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 97,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 24,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 97,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 0,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 97,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 6,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 97,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 12,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 97,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 18,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 97,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 24,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 97,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 0,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 97,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 6,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 97,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 12,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 97,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 18,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 97,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 24,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 97,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 0,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 97,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 6,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 97,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 12,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 97,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 18,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 97,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 24,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 97,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 0,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 97,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 6,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 97,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 12,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 97,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 18,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 97,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 24,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 97,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 0,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 97,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 6,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 97,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 12,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 97,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 18,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 97,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 24,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 97,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 0,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 97,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 6,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 97,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 12,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 97,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 18,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 97,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 24,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 97,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 0,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 97,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 6,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 97,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 12,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 97,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 18,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 97,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 24,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 97,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 0,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 97,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 6,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 97,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 12,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 97,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 18,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 97,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 24,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 97,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 0,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 97,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 6,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 97,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 12,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 97,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 18,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 97,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 24,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 97,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 0,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 97,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 6,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 97,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 12,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 97,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 18,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 97,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 24,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 98,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 0,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 98,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 6,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 98,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 12,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 98,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 18,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 98,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 24,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 98,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 0,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 98,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 6,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 98,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 12,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 98,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 18,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 98,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 24,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 98,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 0,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 98,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 6,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 98,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 12,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 98,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 18,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 98,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 24,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 98,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 0,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 98,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 6,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 98,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 12,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 98,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 18,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 98,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 24,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 98,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 0,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 98,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 6,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 98,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 12,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 98,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 18,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 98,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 24,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 98,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 0,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 98,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 6,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 98,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 12,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 98,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 18,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 98,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 24,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 98,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 0,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 98,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 6,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 98,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 12,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 98,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 18,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 98,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 24,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 98,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 0,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 98,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 6,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 98,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 12,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 98,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 18,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 98,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 24,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 98,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 0,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 98,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 6,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 98,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 12,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 98,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 18,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 98,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 24,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 98,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 0,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 98,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 6,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 98,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 12,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 98,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 18,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 98,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 24,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 98,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 0,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 98,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 6,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 98,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 12,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 98,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 18,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 98,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 24,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 98,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 0,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 98,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 6,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 98,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 12,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 98,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 18,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 98,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 24,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 99,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 0,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 99,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 6,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 99,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 12,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 99,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 18,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 99,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 24,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 99,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 0,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 99,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 6,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 99,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 12,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 99,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 18,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 99,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 24,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 99,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 0,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 99,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 6,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 99,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 12,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 99,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 18,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 99,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 24,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 99,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 0,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 99,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 6,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 99,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 12,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 99,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 18,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 99,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 24,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 99,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 0,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 99,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 6,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 99,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 12,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 99,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 18,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 99,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 24,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 99,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 0,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 99,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 6,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 99,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 12,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 99,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 18,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 99,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 24,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 99,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 0,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 99,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 6,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 99,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 12,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 99,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 18,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 99,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 24,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 99,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 0,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 99,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 6,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 99,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 12,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 99,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 18,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 99,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 24,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 99,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 0,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 99,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 6,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 99,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 12,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 99,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 18,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 99,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 24,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 99,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 0,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 99,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 6,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 99,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 12,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 99,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 18,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 99,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 24,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 99,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 0,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 99,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 6,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 99,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 12,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 99,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 18,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 99,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 24,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 99,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 0,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 99,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 6,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 99,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 12,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 99,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 18,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 99,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 24,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 100,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 0,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 100,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 6,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 100,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 12,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 100,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 18,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 100,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 24,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 100,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 0,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 100,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 6,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 100,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 12,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 100,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 18,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 100,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 24,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 100,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 0,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 100,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 6,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 100,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 12,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 100,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 18,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 100,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 24,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 100,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 0,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 100,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 6,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 100,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 12,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 100,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 18,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 100,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 24,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 100,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 0,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 100,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 6,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 100,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 12,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 100,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 18,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 100,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 24,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 100,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 0,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 100,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 6,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 100,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 12,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 100,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 18,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 100,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 24,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 100,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 0,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 100,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 6,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 100,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 12,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 100,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 18,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 100,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 24,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 100,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 0,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 100,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 6,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 100,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 12,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 100,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 18,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 100,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 24,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 100,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 0,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 100,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 6,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 100,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 12,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 100,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 18,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 100,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 24,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 100,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 0,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 100,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 6,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 100,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 12,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 100,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 18,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 100,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 24,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 100,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 0,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 100,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 6,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 100,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 12,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 100,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 18,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 100,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 24,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 100,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 0,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 100,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 6,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 100,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 12,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 100,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 18,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 100,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 24,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 101,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 0,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 101,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 6,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 101,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 12,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 101,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 18,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 101,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 24,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 101,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 0,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 101,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 6,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 101,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 12,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 101,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 18,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 101,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 24,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 101,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 0,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 101,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 6,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 101,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 12,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 101,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 18,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 101,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 24,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 101,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 0,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 101,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 6,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 101,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 12,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 101,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 18,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 101,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 24,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 101,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 0,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 101,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 6,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 101,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 12,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 101,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 18,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 101,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 24,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 101,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 0,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 101,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 6,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 101,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 12,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 101,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 18,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 101,
+      "death_frame_offset": 0,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 24,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 101,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 0,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 101,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 6,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 101,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 12,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 101,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 18,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 101,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 24,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 101,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 0,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 101,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 6,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 101,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 12,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 101,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 18,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 101,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 24,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 101,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 0,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 101,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 6,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 101,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 12,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 101,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 18,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 101,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "first_issue",
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 24,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 101,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 0,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 101,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 6,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 101,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 12,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 101,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 18,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 101,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 24,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 101,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 0,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 101,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 6,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 101,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 12,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 101,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 18,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 101,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 24,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 101,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 0,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 101,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 6,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 101,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 12,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 101,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 18,
+      "classification_at_1e_minus_12": "includes_zero"
+    },
+    {
+      "baseline_frame": 101,
+      "death_frame_offset": 1,
+      "ambiguity_policy": "whole_episode",
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 24,
+      "classification_at_1e_minus_12": "includes_zero"
+    }
+  ],
+  "findings": [
+    "No missing or duplicated fixed-grid cases, node records, or mass-query times.",
+    "All source-derived rosters are identical across all horizons and sensitivities for a given baseline; no additional at-or-before-baseline apoptosis exclusions occurred.",
+    "All saved values match independent recalculations exactly; maximum observed error and conservation residual are zero.",
+    "All 300 primary contrast intervals include zero exactly and at tolerance 1e-12. The 60 time-zero intervals are [0,0] by construction, leaving 240 nontrivial evaluation-time comparisons that also include zero.",
+    "No ratio case has an undefined or potentially zero denominator under the recorded-source relaxation."
+  ],
+  "blocking_findings": [],
+  "interpretation_limits": [
+    "Zero containment is a feature of these conservative finite-record envelopes. It neither proves no effect nor validates population horizon invariance.",
+    "The rectangular marginal and separate-horizon relaxation may include incompatible histories; these results do not prove fundamental nonidentifiability.",
+    "No confidence level, population p-value, biological efficacy estimate or patient conclusion follows.",
+    "Original cohort eligibility, independent experiments, replicate labels and uncertain annotations remain unresolved. Different baseline cells may share ancestry.",
+    "The treatment-origin bracket and two death offsets are explicit sensitivity choices; they are not a resolved time dictionary."
+  ],
+  "prospective_next_action": "Use the separately frozen joint-refinement plan on every one of the same 300 cases, preserving these primary outputs and the source/observation limits. If the refined relaxation still contains zero, report that result without changing windows or calling it proof of no effect. Any attempt to identify population dynamics needs an explicit cohort/annotation route beyond interval tightening.",
+  "joint_refinement_read_or_run": false,
+  "root_owned_code_results_or_protocol_modified": false,
+  "review_timing": "Post-primary-results independent validation, not a pre-results registered scientific analysis."
+}

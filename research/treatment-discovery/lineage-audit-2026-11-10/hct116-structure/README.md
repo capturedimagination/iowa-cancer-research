@@ -74,7 +74,7 @@ At the 328 verified binary splits, a future-blind choice between the two observe
 
 **No-go for a naive whole-cohort horizon-invariance test at present.** This does not mean no empirical work can ever proceed. The later baseline rosters contain many apparently complete descendant subtrees, but selecting only those subtrees uses future recording information and can condition on division history. An unqualified test of a prospective homogeneous branching model cannot ignore that selection. Replicate and founder-denominator gaps also remain.
 
-A useful next method could keep a fixed recoverable baseline roster and derive conservative bounds over unknown daughters and uncertain family inclusion. That would require a precise estimand, identifier validation, assumptions about observation loss and fixed treatment/frame conventions. It is not implemented here. No horizon curve or favorable-window search has been performed.
+The subsequent [fixed-roster bounds analysis](../missing-branch-bounds/README.md) implements conservative ranges over unknown daughters and uncertain family inclusion under explicit timing and observation assumptions. It also quarantines a source-verified simultaneous division/apoptosis annotation. All planned settings are retained; every nonzero-time joint interval includes zero. That follow-up does not change this structural audit's frozen outputs or certify a population null test. Source eligibility and identifiers still need validation.
 
 Even after the observation problem is resolved, rejecting horizon invariance would not uniquely identify inheritance: cell-age effects or other departures from the null can also matter. See the project's separate mathematical audit before choosing an empirical model.
 

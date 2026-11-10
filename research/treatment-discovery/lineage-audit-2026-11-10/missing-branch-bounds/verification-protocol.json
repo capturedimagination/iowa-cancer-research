@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "specified_on": "2026-11-10",
+  "purpose": "Deterministic verification of finite-roster outer-bound algebra, not empirical inference or novelty assessment.",
+  "knowledge_before_run": "Sorting formulas, endpoint compatibility and the nesting inequality were derived before verification.",
+  "data": "Synthetic rational-number interval/status fixtures only; no cell data or fitted outcomes.",
+  "fixed_single_horizon_controls": ["mandatory", "extinct_later_alive_earlier", "optional_low_and_high", "optional_only", "initial_alive", "selected_zero_infimum", "endpoint_promotes_positive_lower", "zero_upper_cannot_be_selected", "empty_selection", "inconsistent_endpoint_extinction", "inconsistent_selected_zero_upper"],
+  "single_horizon_reference": "Exhaustive subset and interval-endpoint enumeration of the closed rectangular relaxation, using exact rational arithmetic.",
+  "nested_horizon_grid": {
+    "roster_sizes": [1, 2, 3],
+    "per_row_status_pairs": [[0, 0], [1, 0], [1, 1], [1, null], [null, 0], [null, 1], [null, null]],
+    "intervals_in_row_order": [["0", "1"], ["1/4", "3/4"], ["1/2", "1"]],
+    "enumeration": "All compatible nested binary selection vectors with nonempty later selection and all interval-endpoint vectors; the same vector of path probabilities is used for both horizons.",
+    "checks": "Every enumerated contrast lies within marginal subtraction and its intersection with the count-only nesting bound. Selected zero endpoints are admitted solely as the closure relaxation."
+  },
+  "additional_controls": ["One founder selected at both horizons has exact zero contrast despite loose marginal subtraction", "Nested selections can yield either positive or negative contrasts"],
+  "tolerance": "Exact Fraction arithmetic; zero numerical tolerance needed.",
+  "failure_policy": "Retain every control and grid case; report any failure without changing the grid.",
+  "not_established": ["Tree-sharp bounds", "Coverage of an unknown original cohort", "A stochastic hypothesis test", "Scientific priority or biological mechanism"]
+}

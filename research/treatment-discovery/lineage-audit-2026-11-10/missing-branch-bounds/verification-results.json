@@ -1,0 +1,175 @@
+{
+  "version": 1,
+  "created_utc": "2026-11-10T19:26:38.549574+00:00",
+  "status": "PASS",
+  "protocol_sha256": "42070261483a96c52f1277b3608280903af01ea858b004ba2a32cefd92e02c1f",
+  "code_sha256": "3812f791250c092df7356b996ac5cbed9448f16545225700b07f00d67fcbffa4",
+  "arithmetic": "Exact fractions; no Monte Carlo or numerical tolerance",
+  "seed": null,
+  "controls": [
+    {
+      "name": "mandatory",
+      "sorting": [
+        "1/2",
+        "3/4"
+      ],
+      "exhaustive": [
+        "1/2",
+        "3/4"
+      ],
+      "expected": [
+        "1/2",
+        "3/4"
+      ],
+      "passed": true
+    },
+    {
+      "name": "extinct_later_alive_earlier",
+      "sorting": [
+        "1/4",
+        "1/2"
+      ],
+      "exhaustive": [
+        "1/4",
+        "1/2"
+      ],
+      "expected": [
+        "1/4",
+        "1/2"
+      ],
+      "passed": true
+    },
+    {
+      "name": "optional_low_and_high",
+      "sorting": [
+        "1/4",
+        "3/4"
+      ],
+      "exhaustive": [
+        "1/4",
+        "3/4"
+      ],
+      "expected": [
+        "1/4",
+        "3/4"
+      ],
+      "passed": true
+    },
+    {
+      "name": "optional_only",
+      "sorting": [
+        "1/4",
+        "1"
+      ],
+      "exhaustive": [
+        "1/4",
+        "1"
+      ],
+      "expected": [
+        "1/4",
+        "1"
+      ],
+      "passed": true
+    },
+    {
+      "name": "initial_alive",
+      "sorting": [
+        "1",
+        "1"
+      ],
+      "exhaustive": [
+        "1",
+        "1"
+      ],
+      "expected": [
+        "1",
+        "1"
+      ],
+      "passed": true
+    },
+    {
+      "name": "selected_zero_infimum",
+      "sorting": [
+        "0",
+        "1/2"
+      ],
+      "exhaustive": [
+        "0",
+        "1/2"
+      ],
+      "expected": [
+        "0",
+        "1/2"
+      ],
+      "passed": true
+    },
+    {
+      "name": "endpoint_promotes_positive_lower",
+      "sorting": [
+        "1/8",
+        "3/4"
+      ],
+      "exhaustive": [
+        "1/8",
+        "3/4"
+      ],
+      "expected": [
+        "1/8",
+        "3/4"
+      ],
+      "passed": true
+    },
+    {
+      "name": "zero_upper_cannot_be_selected",
+      "sorting": [
+        "1/2",
+        "1/2"
+      ],
+      "exhaustive": [
+        "1/2",
+        "1/2"
+      ],
+      "expected": [
+        "1/2",
+        "1/2"
+      ],
+      "passed": true
+    },
+    {
+      "name": "empty_selection",
+      "sorting": null,
+      "exhaustive": null,
+      "expected": null,
+      "passed": true
+    },
+    {
+      "name": "inconsistent_endpoint_extinction",
+      "invalid_input_rejected": true
+    },
+    {
+      "name": "inconsistent_selected_zero_upper",
+      "invalid_input_rejected": true
+    }
+  ],
+  "nested_status_cases": 399,
+  "nested_probability_selection_combinations_checked": 8200,
+  "nested_status_cases_without_positive_later_selection": 39,
+  "nonsharp_example": {
+    "one_founder_selected_at_both_horizons": true,
+    "marginal_subtraction": [
+      "-1/2",
+      "1/2"
+    ],
+    "actual_contrast": "0",
+    "count_tightened_contrast": [
+      "0",
+      "0"
+    ]
+  },
+  "nested_selection_sign_control": {
+    "positive": "3/8",
+    "negative": "-3/8"
+  },
+  "failures": [],
+  "scope": "Finite rectangular-closure and nesting verification only; no empirical inference, tree-sharpness proof or sampling-uncertainty calculation"
+}

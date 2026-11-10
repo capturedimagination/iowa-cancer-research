@@ -1,0 +1,145 @@
+{
+  "version": 1,
+  "frozen_at_utc": "2026-11-10T19:28:34.295016+00:00",
+  "question": "How much can unobserved daughters and explicitly ambiguous annotations change finite-record, family-selected chronological-path survival summaries and cross-horizon differences?",
+  "scope": "Descriptive conditional compatibility envelope for fixed recorded baseline cells; no population null test, cancer mechanism claim, fitted hazard or first-ever novelty claim.",
+  "known_before_freeze": [
+    "Previous synthetic finite-horizon identity and shared-calendar-rate extension; substantial prior art.",
+    "Published HCT116/Iyer methods and reported aggregates; candidate graph structural counts and fixed baseline counts from earlier published audit.",
+    "One source-verified same-frame division/apoptosis conflict; no strictly later division after death and no repeated apoptosis flag within an episode.",
+    "Unknown original eligibility/replicate mapping; nominal half-hour sampling; treatment origin bracket97\u2013101.",
+    "No project-generated empirical Q curve, family-survival fraction, ratio envelope or horizon contrast has been inspected."
+  ],
+  "source_inputs": {
+    "candidate_graph": {
+      "path": "tmp/hct116-lineage-structure/candidate-graph.json",
+      "sha256": "89257469c39355c2b145bfb8a13a88cec54156317b43f3ed171af3d87a5d9b4e"
+    },
+    "structure_results": {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/hct116-structure/results.json",
+      "sha256": "9a45ba1626ebfcddf31796a97b4664e50c8030618bcf036eff46b9d400545b10"
+    },
+    "workbook_sha256": "212e5ca40af8fe5f1b07baf613459f275c7b97a2ec99e31fa2505af252a3f130"
+  },
+  "baseline_frames": [
+    97,
+    98,
+    99,
+    100,
+    101
+  ],
+  "baseline_eligibility": "Use the already verified recorded-baseline roster: positive source lineage label and available p53 at baseline. Require no apoptosis annotation at or before baseline in its episode. Keep every eligible baseline cell regardless of later division, death, missing branch or follow-up completeness. Reset chronological mass to1 at baseline. Earlier component ambiguity remains a clustering/eligibility limit.",
+  "clock": {
+    "hours_per_frame": 0.5,
+    "coordinate": "elapsed_hours=(frame-baseline_frame)/2; frames are nominal imaging coordinates, not certified continuous event times",
+    "selection_horizons_hours": [
+      24,
+      48,
+      60
+    ],
+    "common_evaluation_hours": [
+      0,
+      6,
+      12,
+      18,
+      24
+    ],
+    "final_source_frame": 243,
+    "treatment_bracket": "All five previously stated frames retained, none selected for its result."
+  },
+  "annotation_sensitivities": {
+    "apoptosis_death_frame_offsets": [
+      0,
+      1
+    ],
+    "meaning": "Recorded apoptosis at frame d becomes absorbing death at d+offset; initial eligibility is common to both. Division flags at d transfer mass to daughters first observed at d+1. Baseline-time division is after the baseline parent snapshot.",
+    "ambiguity_policies": [
+      "first_issue",
+      "whole_episode"
+    ],
+    "first_issue": "An unresolved observation/identity mask or contradictory event cuts that path to unknown from its first post-baseline issue frame. Earlier verified death remains absorbing if strictly before that cutoff. Equality favors unknown.",
+    "whole_episode": "For each episode with a post-baseline ambiguity, move its unknown cutoff to max(episode first frame, baseline+1), retaining known baseline survival. This deliberately discards more information.",
+    "coannotation": "Simultaneous division/apoptosis is unresolved, not death-priority or division-priority. Quarantine before either fate classification.",
+    "prebaseline": "Prior episode ambiguity alone does not remove the observed baseline cell; only post-baseline ambiguities determine forward-path coarsening. Prior roots do not supply certified independent experiments."
+  },
+  "path_mass_rules": [
+    "One unit per baseline cell; each documented binary division gives each biological daughter one half of parent mass, even if unobserved.",
+    "Zero/one observed daughters leave corresponding mass unknown. Do not renormalize onto the available child.",
+    "Known death removes that mass from survival; continued image tracking after annotation does not keep it alive.",
+    "Unknown mass is absorbing for this conservative relaxation; later apparent recovery is not used to repair identity.",
+    "At each evaluation frame return known-live l, known-dead d and unknown v with l+d+v=1. Chronological survival lies in[l,l+v].",
+    "Known observed-live mass at T makes family inclusion mandatory; zero upper mass makes exclusion mandatory; otherwise inclusion is optional. Interpret certainty conditional on source annotations and mapping assumptions, not universal biological viability.",
+    "Require valid acyclic source graph, at most two observed daughters, consistent event/episode mapping and no unhandled issue kind. Fail instead of silently repairing unsupported topology."
+  ],
+  "ratio_bounds": {
+    "definition": "Q_T(t)=sum_i f_i(T)*u_i(t)/sum_i f_i(T), equal weights for recorded baseline cells.",
+    "marginal": "For each optional inclusion count k, minimize mandatory lower sum plus k smallest optional lower values divided by mandatory count+k; maximize using upper values and k largest optional uppers. Keep only positive denominators.",
+    "limits": "Sharp for the rectangular interval/selection relaxation, only outer bounds for compatible full trees. Earlier u>0 can coexist with later f=0. At t=T, optional included zero values can represent unattained infima when unknown branch depth is unbounded.",
+    "undefined": "Report when no positive denominator is possible and when denominator-zero completions remain possible. Never report zero as a substitute for undefined."
+  },
+  "contrasts": {
+    "pairs_hours": [
+      [
+        24,
+        48
+      ],
+      [
+        24,
+        60
+      ],
+      [
+        48,
+        60
+      ]
+    ],
+    "direction": "Q_later(t)-Q_earlier(t)",
+    "primary_envelope": "[lower_later-upper_earlier, upper_later-lower_earlier], intersect with nesting cap +/-[1-max(1,known_later)/max_possible_earlier], conditional on positive later denominator.",
+    "meaning": "Conservative finite-record outer interval, not confidence interval or population hypothesis test. Zero inside may reflect looseness; it does not prove fundamental nonidentifiability. Separation alone does not reject a stochastic branching law."
+  },
+  "verification_before_empirical_run": {
+    "fixtures": [
+      "Complete simple trees reduce to exact chronological probabilities and selected means.",
+      "Missing one daughter retains unknown half mass; missing both retains full mass.",
+      "A tracked record after apoptosis is dead under the chosen offset.",
+      "Same-frame division/death remains unknown.",
+      "Unknown status persists after a mask ambiguity; whole-episode coarsening contains first-issue bounds.",
+      "Prebaseline ambiguity does not exclude the recorded baseline cell.",
+      "At t=0 every defined ratio is1.",
+      "A known early survivor may belong to a later extinct family.",
+      "Undefined denominators and single-possible-founder nested contrasts are handled."
+    ],
+    "independent_math": "Exhaustive small-case checks of ratio bounds and nesting contrast containment by separate reviewer.",
+    "synthetic_forest_plan": {
+      "seed": 2026111011,
+      "families_per_case": 300,
+      "frame_horizon": 120,
+      "per_frame_division_death_probabilities": [
+        [
+          0.04,
+          0.06
+        ],
+        [
+          0.06,
+          0.04
+        ],
+        [
+          0.03,
+          0.03
+        ]
+      ],
+      "missing_daughter_policies": [
+        "none",
+        "independent0.1",
+        "independent0.3",
+        "terminal_survivor_dependent0.3"
+      ],
+      "death_annotation_offsets": [
+        0,
+        1
+      ],
+      "verification": "Independent complete-tree truth must lie in every incomplete-record mass, ratio and nested-contrast envelope. This is deterministic containment conditional on each simulated tree, not nominal frequentist confidence coverage. No empirical calibration."
+    }
+  },
+  "outputs": "Original code, all fixed aggregate results, source/plan/code hashes, mathematical/source reviews and limits public. Per-cell mass/roster detail remains ignored local tmp. No raw workbook or source graph is republished.",
+  "revision_policy": "Freeze precedes empirical outcomes and independent forest outcomes. Fix implementation errors transparently without changing the question/grid to favor a result; any scientific expansion gets a separate prospective plan."
+}

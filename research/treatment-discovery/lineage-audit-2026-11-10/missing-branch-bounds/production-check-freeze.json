@@ -1,0 +1,9 @@
+{
+  "specified_before_first_run_utc": "2026-11-10T19:33:39.040985+00:00",
+  "empirical_protocol_sha256": "c46e452f3b17b96a8f98e6bc834540d830af9b4a1e3b39b8d3a2c1665f342771",
+  "production_core_sha256": "27bb3b07186b015a5d573d45ffe1da6515131ea0b3da09e677531c468eb4513e",
+  "production_driver_sha256": "31dcbbeb9ff04c0ab6eb49ea99f5e1d63c9525cc69d0f3c1e3652cc63821d17c",
+  "checker_sha256": "60ffb55cb71e895ec9258cae336e89bd5726caf882bd710e896ba3012e1271e6",
+  "independent_truth_sha256": "3812f791250c092df7356b996ac5cbed9448f16545225700b07f00d67fcbffa4",
+  "scope": "Existing exact rational grid plus bounded interface controls; no empirical source or driver execution; 1e-12 float comparison tolerance."
+}

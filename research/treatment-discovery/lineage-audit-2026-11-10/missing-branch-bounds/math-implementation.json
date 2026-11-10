@@ -1,0 +1,152 @@
+{
+  "version": 1,
+  "implemented_on": "2026-11-10",
+  "post_primary_results_methodological_refinement": true,
+  "knowledge_before_implementation": "All primary empirical outer contrast envelopes included zero; the joint formula was already derived. No empirical joint outcomes were inspected.",
+  "module": "scripts/lineage_joint_bounds.py",
+  "module_sha256": "f24fe1d3a99d2abfd3fdb453d74b87e2b28ad44017845cd3c8ac3b429984802d",
+  "api": {
+    "function": "joint_bounds(rows, *, max_working_bytes=67108864, max_state_updates=500000000)",
+    "row_schema": [
+      "lower",
+      "upper",
+      "status_early",
+      "status_late"
+    ],
+    "status_values": [
+      0,
+      1,
+      null
+    ],
+    "required_shared_input": "One roster and one per-row probability interval at the same evaluation time",
+    "returns": [
+      "lower",
+      "upper",
+      "defined_for_some_completion",
+      "zero_denominator_possible",
+      "feasible_count_pairs",
+      "feasible_count_pair_count",
+      "lower_count_pair",
+      "upper_count_pair",
+      "resource diagnostics"
+    ]
+  },
+  "optimization": {
+    "states": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "fixed_counts": "N1>=N2>0",
+    "minimum_costs": [
+      "0",
+      "-upper_i/N1",
+      "(1/N2-1/N1)*lower_i"
+    ],
+    "maximum_costs": [
+      "0",
+      "-lower_i/N1",
+      "(1/N2-1/N1)*upper_i"
+    ],
+    "fixed_rows": "Aggregate interval endpoint sums and selected counts for rows with one allowed state.",
+    "variable_reduction": "Subtract minimum per-row early and late counts; the DP tracks only remaining increments.",
+    "feasibility": "Boolean cardinality DP returns every reachable positive later count pair.",
+    "cost": "For each count pair, additive min/max DP over all permitted row states; add fixed-row contribution and take global extrema.",
+    "batching": "Candidate count pairs form the leading NumPy dimension; batches change storage only.",
+    "scope": "Sharp infimum/supremum for the closed common-probability interval/nesting relaxation, within floating-point tolerance; still an outer bound for full biological tree completions."
+  },
+  "boundary_handling": {
+    "zero_upper": "Only state00 is allowed; known selected status is inconsistent.",
+    "known_status_contradiction": "Raise ValueError when no allowed nested state remains.",
+    "no_positive_later_denominator": "Return lower=None, upper=None, defined_for_some_completion=False.",
+    "zero_denominator_possible": "True exactly when each row permits some state with late=0.",
+    "selected_zero_lower": "Use closure infimum; do not claim a selected finite family has zero true path probability.",
+    "endpoint_compatibility": "Caller responsibility because the API receives no evaluation or horizon times.",
+    "zero_contrast_shortcuts": [
+      "All feasible count pairs have N1=N2",
+      "Only one row can be selected",
+      "All potentially selected rows have the same fixed probability"
+    ]
+  },
+  "resource_policy": {
+    "default_working_array_bytes": 67108864,
+    "default_state_update_limit": 500000000,
+    "covers": "Estimated NumPy DP arrays and feasibility/cost operation counts; not total process memory or Python input/metadata.",
+    "failure": "MemoryError or RuntimeError; no source case or count pair silently omitted."
+  },
+  "numerics": {
+    "numpy_version_used": "2.3.5",
+    "cost_arithmetic": "float64",
+    "verification_tolerance": 1e-12,
+    "outward_rounding_certified": false,
+    "stochastic_optimizer": false
+  },
+  "implementation_fixtures": {
+    "passed": true,
+    "count": 17,
+    "empirical_data": false,
+    "includes": [
+      "Constant fixed probabilities",
+      "Single possible founder",
+      "Undefined denominator",
+      "Positive and negative fixed contrasts",
+      "Shared intervals",
+      "Known-status contradictions",
+      "Zero-upper compatibility",
+      "Memory/work guards",
+      "Batch-size-one equivalence"
+    ]
+  },
+  "independent_verification": {
+    "path": "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/joint-verification.json",
+    "status": "PASS",
+    "failure_count": 0,
+    "exact_cases": 4495,
+    "solver_calls": 8961,
+    "maximum_absolute_error": 1.6653345369377348e-16,
+    "forest_unique_founders": 36,
+    "forest_candidate_contrasts": 720,
+    "forest_defined_truth_checks": 560,
+    "forest_undefined_truth_cases": 160,
+    "not_all_900_founders_joint_verified": true,
+    "empirical_inputs_used": false
+  },
+  "pre_empirical_revision": {
+    "initial_module_sha256": "17294576d7eba77cd9da2668b7c479253038d2f46f0e1af11bf1097da448afda",
+    "change": "Added feasibility-DP work guard before allocating/iterating large generic cases and included that work in diagnostics. Selection states, formulas and cost optimization unchanged.",
+    "independent_review_uses_final_hash": true
+  },
+  "limitations": [
+    "Not a sampling confidence interval or population branching-law test",
+    "Still omits full-tree and cross-time compatibility constraints",
+    "Input source identities, masks and endpoint statuses remain assumptions",
+    "A post-primary-results refinement, not a blinded empirical test"
+  ],
+  "local_evidence": [
+    {
+      "path": "scripts/lineage_joint_bounds.py",
+      "sha256": "f24fe1d3a99d2abfd3fdb453d74b87e2b28ad44017845cd3c8ac3b429984802d"
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/joint-refinement-plan.json",
+      "sha256": "531ac9e5c63a5ed000ca59d282038bee1d6ad66a192d54d4aeb8cf9a4811532b"
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/protocol.json",
+      "sha256": "c46e452f3b17b96a8f98e6bc834540d830af9b4a1e3b39b8d3a2c1665f342771"
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/joint-verification.json",
+      "sha256": "b409ffe1cf84e9c2a184c47c36abfd945e379cf45d9c925b4c408f246451dd30"
+    }
+  ]
+}

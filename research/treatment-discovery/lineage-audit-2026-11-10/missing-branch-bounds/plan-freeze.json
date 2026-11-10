@@ -1,0 +1,8 @@
+{
+  "path": "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/protocol.json",
+  "sha256": "c46e452f3b17b96a8f98e6bc834540d830af9b4a1e3b39b8d3a2c1665f342771",
+  "frozen_at_utc": "2026-11-10T19:28:34.295016+00:00",
+  "empirical_bounds_inspected": false,
+  "synthetic_forest_outcomes_inspected": false,
+  "analytic_derivations_known": true
+}

@@ -1,0 +1,165 @@
+{
+  "version": 1,
+  "audit_date": "2026-11-10",
+  "status": "READY_TO_FREEZE_CONSERVATIVE_RECORDED_DATA_FUNCTIONAL_WITH_EXPLICIT_UNKNOWNS; NOT_POPULATION_INFERENCE",
+  "scope": "Structural schema, event consistency and time/weight contract only. No Q_T curve, family-survival fraction, outcome comparison, weight-derived outcome bound or selected window computed.",
+  "source_pins": {
+    "41467_2018_7788_MOESM5_ESM.xlsx": {
+      "path": "research/treatment-discovery/sources/lineage-2026-11-10/41467_2018_7788_MOESM5_ESM.xlsx",
+      "sha256": "212e5ca40af8fe5f1b07baf613459f275c7b97a2ec99e31fa2505af252a3f130",
+      "bytes": 1446947
+    },
+    "41467_2018_7788_MOESM6_ESM.docx": {
+      "path": "research/treatment-discovery/sources/lineage-2026-11-10/41467_2018_7788_MOESM6_ESM.docx",
+      "sha256": "6f863bac4ce6157dfcf59f802e61b3fcf457251d7d6e7e489a6f0d69627d944b",
+      "bytes": 17442
+    }
+  },
+  "derived_graph": {
+    "path": "tmp/hct116-lineage-structure/candidate-graph.json",
+    "sha256": "89257469c39355c2b145bfb8a13a88cec54156317b43f3ed171af3d87a5d9b4e",
+    "producer": "scripts/audit_hct116_lineage_structure.py",
+    "producer_sha256": "af4d949dae48361278e12a7b5df4fbe7a7ed779963be90627b729de752688e1c",
+    "structural_protocol_sha256": "b70fd900f55fdddaf327c76a8b2a458e3f35c4df3fdcb3bfd3a8fb7602f19c97",
+    "all_checked_against_published_structural_results": true
+  },
+  "schema": {
+    "nodes": {
+      "id": "Unique candidate cell episode, distinct from the dynamic source label.",
+      "label": "Source Lineage value. May be retained by a daughter.",
+      "first_frame_last_frame": "Inclusive record interval, not automatically an alive interval; renewed at every division.",
+      "parent_nodes_child_nodes": "Candidate directed parent/child IDs. Missing daughter slots are not represented as nodes.",
+      "apoptosis_annotation_frames_in_episode": "Source death flags mapped into this episode; normally empty or a single frame.",
+      "source_rows": "1-based original workbook rows; repeated ancestor rows must not create extra path weight.",
+      "candidate_roots": "Derived component roots, not verified original population founder identities."
+    },
+    "edges": [
+      "parent",
+      "child",
+      "boundary_frame",
+      "source_label_pair"
+    ],
+    "edge_boundary_semantics": "Observed children begin in boundary_frame; the parent\u2019s division flag is in boundary_frame-1.",
+    "event_annotation_keys": "Deduplicated [source_label, one_based_frame] pairs in Divisions and Apoptosis.",
+    "issues": "Includes incomplete daughter observations and positive-Lineage/p53-minus1 contradictions; does not currently include the newly detected simultaneous division/death case, which must be added by the bounds implementation.",
+    "baseline_rosters": "Keys97,98,99,100,101. Each row contains node, source_label, frame, candidate_roots, post_baseline_issue_kinds and prior_component_issue. Do not select only rows with empty future issue lists."
+  },
+  "additional_structural_checks": {
+    "source_graph_sha256": "89257469c39355c2b145bfb8a13a88cec54156317b43f3ed171af3d87a5d9b4e",
+    "structural_contradiction_checks": {
+      "Apoptosis_annotation_episode_map_not_unique": 0,
+      "Divisions_annotation_episode_map_not_unique": 0,
+      "child_edges_without_single_parent_division_flag": 0,
+      "descendants_after_apoptosis_in_episode": 0,
+      "division_after_apoptosis_in_episode": 0,
+      "division_and_apoptosis_same_frame": 1,
+      "division_flag_not_at_episode_end": 0,
+      "more_than_two_observed_daughters": 0,
+      "multiple_apoptosis_flags_within_episode": 0,
+      "multiple_division_flags_within_episode": 0,
+      "multiple_parent_episodes": 0,
+      "stored_apoptosis_list_disagrees_with_event_keys": 0
+    },
+    "baseline_frame_readiness": [
+      {
+        "baseline_frame": 97,
+        "last_recorded_frame": 243,
+        "relative_last_frame_hours": 73.0,
+        "baseline_nodes_with_apoptosis_annotation_at_same_frame": 0,
+        "baseline_nodes_with_division_annotation_at_same_frame": 3,
+        "missing_recorded_frames_within_node_interval": 0
+      },
+      {
+        "baseline_frame": 98,
+        "last_recorded_frame": 243,
+        "relative_last_frame_hours": 72.5,
+        "baseline_nodes_with_apoptosis_annotation_at_same_frame": 0,
+        "baseline_nodes_with_division_annotation_at_same_frame": 4,
+        "missing_recorded_frames_within_node_interval": 0
+      },
+      {
+        "baseline_frame": 99,
+        "last_recorded_frame": 243,
+        "relative_last_frame_hours": 72.0,
+        "baseline_nodes_with_apoptosis_annotation_at_same_frame": 0,
+        "baseline_nodes_with_division_annotation_at_same_frame": 6,
+        "missing_recorded_frames_within_node_interval": 0
+      },
+      {
+        "baseline_frame": 100,
+        "last_recorded_frame": 243,
+        "relative_last_frame_hours": 71.5,
+        "baseline_nodes_with_apoptosis_annotation_at_same_frame": 0,
+        "baseline_nodes_with_division_annotation_at_same_frame": 3,
+        "missing_recorded_frames_within_node_interval": 0
+      },
+      {
+        "baseline_frame": 101,
+        "last_recorded_frame": 243,
+        "relative_last_frame_hours": 71.0,
+        "baseline_nodes_with_apoptosis_annotation_at_same_frame": 0,
+        "baseline_nodes_with_division_annotation_at_same_frame": 5,
+        "missing_recorded_frames_within_node_interval": 0
+      }
+    ],
+    "outcome_curves_or_fractions_computed": false
+  },
+  "new_fate_conflict": {
+    "count": 1,
+    "handling": "Fate conflict takes precedence over death and branch classification. Quarantine the affected candidate episode/path as unknown; do not accept either annotation first or invent event ordering.",
+    "private_locator_file": "tmp/hct116-lineage-structure/bounds-readiness-conflicts.json",
+    "published_previous_audit_changed": false,
+    "raw_workbook_coannotation_verified": true
+  },
+  "weight_propagation_contract": [
+    "Give each chosen baseline cell one unit of prospective tag probability. g starts at0 at that baseline, even if the cell has a long pre-baseline ancestry.",
+    "At each documented binary division after baseline, propagate half of incoming weight to each biological daughter: w=2^(-g). A daughter retaining the parent label still increments g.",
+    "With two observed children, assign w/2 to each. With one observed child, assign w/2 to it and reserve w/2 for the absent daughter. With no observed child, reserve total w for two absent daughter possibilities.",
+    "Never renormalize to observed daughters, uniform terminal rows, selected survivors or the number of extant descendants.",
+    "A verified recorded death terminates that tagged branch; it cannot transfer its probability mass to a surviving sibling. Post-apoptosis tracking is not living time.",
+    "Once a branch is unknown, keep its tag mass unresolved for later query times; do not invent its hidden generations or split it into multiple independent probability units.",
+    "For complete disjoint path-frontier accounting, known-status terminal/frontier mass plus unknown mass must equal1 per baseline node. This is an implementation invariant, not an outcome calculation performed here."
+  ],
+  "recorded_status_contract": {
+    "source_supported": "The codebook defines division1 and apoptosis1 as events; p53 -1 and Lineage0 as untracked. It does not equate fluorescence positivity or a nonzero lineage label with biological viability.",
+    "known_death": "Use an unconflicted apoptosis annotation under the frozen frame-event convention, never mere disappearance or a zero lineage label. Stop tag mass at the annotated event even if tracking continues.",
+    "observed_not_death_annotated": "A positive lineage label plus available measurement and no prior unconflicted death flag can define a recorded present/not-death-annotated state. Calling this biological alive additionally assumes the manual annotation process is correct and complete at the stated temporal resolution.",
+    "unknown_branch": "No observed sister or daughter is an unresolved branch, not evidence of extinction. Family inclusion can remain uncertain even if the observed sibling dies.",
+    "mask_inconsistency": "Conservative default: at least the entire affected candidate episode and continuation of the affected tag path are unknown; do not decide that Lineage or p53 wins. A more conservative optional rule can make the whole affected baseline path unknown. Freeze the rule before calculating bounds.",
+    "prior_component_issue": "An earlier issue in a sibling branch need not invalidate a later observed cell\u2019s future subtree, but original founder clustering remains a separate uncertainty.",
+    "scope": "Bounds would concern this finite recorded roster under explicit observation assumptions; they are not automatic bounds on population drug persistence or patient outcomes."
+  },
+  "time_contract": {
+    "source_sampling_interval_hours": 0.5,
+    "one_based_frame_coordinates": true,
+    "relative_coordinate": "tau_b(f)=0.5*(f-b) hours",
+    "inverse_for_on_grid_elapsed_time": "f=b+2*tau; integer frames only unless an explicit interval convention is frozen.",
+    "baseline_frames": [
+      97,
+      98,
+      99,
+      100,
+      101
+    ],
+    "final_frame": 243,
+    "common_max_recorded_relative_coordinate_hours": 71,
+    "treatment_alignment": "Codebook says49h and just before frame98; main methods say50h. First-frame absolute origin remains uncertain. The fixed frame bracket is retained; do not use different founder rosters for different horizons within one baseline scenario.",
+    "baseline_annotation_boundary": "No same-frame apoptosis flags occur among these current rosters, but3,4,6,3,5 baseline cells respectively have a same-frame division annotation. A before/after-division convention at time0 is therefore material and must be frozen.",
+    "interval_resolution": "A flag frame is not an exact continuous-time event instant. Specify event processing at the annotation frame versus the next-frame child boundary, or conservatively leave a one-frame boundary band unknown. Do not silently create living time between death annotation and track disappearance.",
+    "query_grid_status": "Not selected here. Root must freeze common elapsed t and T within support and state how equality at annotated boundaries is handled."
+  },
+  "coupled_bounds_requirements": [
+    "Family inclusion and tag status arise from the same possible completed family; a live tag implies a live family.",
+    "Unknown daughter completions must remain consistent across horizons and shared t; do not independently assign incompatible branch fates at each query.",
+    "Distinct observed baseline cells may share an earlier root component. Equal baseline-cell weights and equal original-founder weights are different estimands; do not mix them.",
+    "Do not filter rosters by future completeness or nondivision. Preserve unknown paths within the same fixed roster across every horizon."
+  ],
+  "implementation_release_gates": [
+    "Hash-match graph, workbook and codebook.",
+    "Detect and quarantine simultaneous division/apoptosis before ordinary terminal-fate classification.",
+    "Add unknown daughter slots and conserve prospective tag mass.",
+    "Freeze baseline event ordering, query frames, endpoint equality, mask-conflict policy, family weighting and any broad observation assumptions.",
+    "Retain joint logical constraints on family inclusion and tag status across all query points."
+  ],
+  "no_outcome_quantities_computed": true
+}

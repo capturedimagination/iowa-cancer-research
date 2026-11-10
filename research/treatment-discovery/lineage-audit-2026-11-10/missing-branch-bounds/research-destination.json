@@ -1,0 +1,128 @@
+{
+  "version": 1,
+  "prepared_on": "2026-11-10",
+  "status": "INTERNAL_SOURCE_VALIDATION_PACKET; NO_CONTACT_OR_SUBMISSION",
+  "scope": "Updated destination for the completed missing-branch finite-record bounds, not a patient or Iowa-population claim.",
+  "first_recipient": {
+    "name": "Shaon Chakrabarti",
+    "institution": "Simons Centre for the Study of Living Machines, National Centre for Biological Sciences, Bengaluru",
+    "basis": "Current official faculty listing and corresponding author/data-curation roles in Iyer2025.",
+    "route_if_later_authorized": "Published corresponding-author contact in Iyer2025; route original imaging/export questions to its responsible custodian as appropriate.",
+    "contacted": false,
+    "collaboration_agreed": false
+  },
+  "result_to_report": {
+    "joint_intervals": 300,
+    "include_zero_at_1e_12": 300,
+    "time_zero_controls": 60,
+    "later_evaluation_comparisons": 240,
+    "post_primary_results_refinement": true,
+    "interpretation": "Envelopes do not resolve a direction; neither equality nor population-model validity follows. Not confidence intervals or a tested null finding."
+  },
+  "questions": [
+    {
+      "priority": 1,
+      "topic": "Same-frame division/apoptosis",
+      "question": "What do both annotations mean for the single co-annotated candidate episode? Is a documented ordering or correction available, or should its fate remain unresolved?",
+      "evidence": [
+        "structure-readiness.md",
+        "implementation-review.md",
+        "../next-empirical-resource.md"
+      ],
+      "private_locator": "tmp/hct116-lineage-structure/bounds-readiness-conflicts.json",
+      "current_handling": "Unknown path mass; do not select death-first or division-first by convention."
+    },
+    {
+      "priority": 2,
+      "topic": "Founder identifier namespace",
+      "question": "Which namespace does Iyer Table A use, and what crosswalk relates the reported 83 original / 65 retained trees to the workbook dynamic labels/repeated rows and 66 algorithmic roots? Is this a filtered or different-version export?",
+      "evidence": [
+        "../hct116-structure/README.md",
+        "../hct116-structure/results.json",
+        "Iyer2025SupportingText"
+      ],
+      "current_handling": "Unverified crosswalk; count mismatch is not proof of missing founders or source error."
+    },
+    {
+      "priority": 3,
+      "topic": "Clock and event boundary",
+      "question": "What time is frame 1, when exactly was drug added, and how should 49 hours / just before frame 98 versus 50 hours be reconciled? Are division/apoptosis annotations at interval beginning/end, and is a baseline division before or after the snapshot?",
+      "evidence": [
+        "../next-empirical-resource.md",
+        "structure-readiness.md",
+        "protocol.json"
+      ],
+      "current_handling": "All baseline frames 97\u2013101 and both death offsets retained; no outcome-selected window."
+    }
+  ],
+  "additional_metadata": "Export/annotation code version, stable original cell/parent IDs, movie/field/experiment IDs and reasons tracks/daughters become unobserved.",
+  "next_action_if_clarified": "Version the source-supported dictionary and freeze a revised analysis before rerunning; preserve existing results.",
+  "next_action_if_unresolved": "Retain the parser, discrepancy record and bounds as a documented reconstruction benchmark; do not turn zero containment into no-effect evidence.",
+  "conditional_destination": {
+    "collaboration": "Bounded methods/reproducibility study with source-domain validation and accountable human quantitative review.",
+    "journal": "PLOS ONE is a possible fit after a complete technically justified study; no acceptance prediction.",
+    "novelty": "Unestablished; method and prior-art comparison must support any contribution claim.",
+    "submission_gates": "Human intellectual ownership/review, author consent, reproducible source/data/code access, AI disclosure, account/ORCID, code licensing and applicable fee decision; see prior destination assessment.",
+    "submitted": false,
+    "email_drafted": false,
+    "fee_commitment": false
+  },
+  "sources": [
+    {
+      "id": "NCBSCurrentProfile",
+      "url": "https://theory.ncbs.res.in/people/shaon-chakrabarti",
+      "verified_on": "2026-11-10",
+      "access": "Official page read; lists Faculty and NCBS/Simons Centre."
+    },
+    {
+      "id": "NCBSFaculty",
+      "url": "https://theory.ncbs.res.in/team/faculty",
+      "verified_on": "2026-11-10",
+      "access": "Official current faculty list read."
+    },
+    {
+      "id": "Iyer2025",
+      "url": "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1013446",
+      "verified_on": "2026-11-10",
+      "access": "Primary article and corresponding-author roles read."
+    },
+    {
+      "id": "Iyer2025SupportingText",
+      "url": "https://journals.plos.org/ploscompbiol/article/file?id=10.1371/journal.pcbi.1013446.s001&type=supplementary",
+      "verified_on": "2026-11-10",
+      "basis": "Pinned supporting text previously acquired/read in the resource audit; unchanged source link in the primary article."
+    },
+    {
+      "id": "PLOSCriteria",
+      "url": "https://journals.plos.org/plosone/s/criteria-for-publication",
+      "verified_on": "2026-11-10",
+      "access": "Current primary journal criteria refreshed."
+    }
+  ],
+  "local_evidence": [
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/joint-results.json",
+      "sha256": "615f048074d62addf4138e1a71304116075580bdcf86cda0c96e47ff8057d784"
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/joint-refinement-plan.json",
+      "sha256": "531ac9e5c63a5ed000ca59d282038bee1d6ad66a192d54d4aeb8cf9a4811532b"
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/empirical-review.md",
+      "sha256": "a2ca3fda357d703296c65eeb11dbe870d984c89619f584996b15e680c892697b"
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/structure-readiness.md",
+      "sha256": "72a2a705156ffd2abbc35f96b1b83e76818a172ae465cd0879a9ece05795d15e"
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/research-destination.md",
+      "sha256": "9fd407654aba2846ea8dac725f2d5b02ad86f78c816a7fb08118ebfd8dac4375"
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/next-empirical-resource.md",
+      "sha256": "bfb97ed9eb67285c808980eb13f4b556a4c300f4ce508767da84fc397600843d"
+    }
+  ]
+}

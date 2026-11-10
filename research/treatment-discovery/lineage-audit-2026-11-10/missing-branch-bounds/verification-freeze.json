@@ -1,0 +1,6 @@
+{
+  "frozen_before_first_run_utc": "2026-11-10T19:26:35.452496+00:00",
+  "protocol_sha256": "42070261483a96c52f1277b3608280903af01ea858b004ba2a32cefd92e02c1f",
+  "script_sha256": "3812f791250c092df7356b996ac5cbed9448f16545225700b07f00d67fcbffa4",
+  "knowledge": "Analytic formulas and controls known before deterministic exhaustive verification; no empirical data."
+}

@@ -10,7 +10,7 @@
     "Ephemeral tmp working files/environments are excluded from the inventory; durable source originals have their own dated paths and provenance."
   ],
   "counts": {
-    "included": 391,
+    "included": 439,
     "local_generated": 1,
     "linked_source_only": 87
   },
@@ -34,6 +34,7 @@
     "publication/verification-2026-11-10.json",
     "publication/verification-discovery-2026-11-10.json",
     "publication/verification-lineage-2026-11-10.json",
+    "publication/verification-missing-branches-2026-11-10.json",
     "publication/verification.json",
     "requirements-treatment.txt",
     "requirements.txt",
@@ -227,6 +228,44 @@
     "research/treatment-discovery/lineage-audit-2026-11-10/horizon-invariance/protocol.json",
     "research/treatment-discovery/lineage-audit-2026-11-10/horizon-invariance/results.json",
     "research/treatment-discovery/lineage-audit-2026-11-10/identity-check-results.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/README.md",
+    "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/bounds-review.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/bounds-review.md",
+    "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/check_production_bounds.py",
+    "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/display-summary.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/empirical-review.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/empirical-review.md",
+    "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/forest-verification.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/forest-verification.md",
+    "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/implementation-notes.md",
+    "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/implementation-review.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/implementation-review.md",
+    "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/joint-empirical-review.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/joint-empirical-review.md",
+    "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/joint-refinement-freeze.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/joint-refinement-plan.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/joint-results.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/joint-verification.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/joint-verification.md",
+    "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/math-implementation.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/math-implementation.md",
+    "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/missing-branch-bounds.svg",
+    "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/plan-freeze.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/prior-art.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/prior-art.md",
+    "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/production-check-freeze.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/production-check.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/production-check.md",
+    "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/protocol.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/research-destination.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/research-destination.md",
+    "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/results.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/structure-readiness.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/structure-readiness.md",
+    "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/verification-freeze.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/verification-protocol.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/verification-results.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/verify_bounds.py",
     "research/treatment-discovery/lineage-audit-2026-11-10/next-empirical-resource.json",
     "research/treatment-discovery/lineage-audit-2026-11-10/next-empirical-resource.md",
     "research/treatment-discovery/lineage-audit-2026-11-10/novelty-and-identifiability.json",
@@ -312,6 +351,7 @@
     "scripts/audit_maynard_metadata.py",
     "scripts/audit_oren_lineage_workbook.py",
     "scripts/audit_signature_coexpression.py",
+    "scripts/bound_hct116_lineages.py",
     "scripts/build_data_source_catalog.py",
     "scripts/build_food_industry_evidence.py",
     "scripts/build_gse292469_sample_metadata.py",
@@ -329,20 +369,28 @@
     "scripts/extract_iowa_title_v_2024.py",
     "scripts/extract_maynard_seurat_object.py",
     "scripts/fetch_iowa_tri_history.py",
+    "scripts/lineage_joint_bounds.py",
+    "scripts/lineage_missing_bounds.py",
     "scripts/ocr_pdf_applevision.swift",
     "scripts/plot_gse292469_signature.py",
+    "scripts/plot_hct116_missing_bounds.py",
     "scripts/plot_lineage_family_sampling.py",
     "scripts/plot_signature_depth.py",
     "scripts/prepare_compilation.py",
     "scripts/prepare_publication.py",
     "scripts/query_research.py",
+    "scripts/refine_hct116_lineage_bounds.py",
     "scripts/review_gse292469_signature.py",
+    "scripts/review_hct116_joint_bounds.py",
+    "scripts/review_hct116_primary_bounds.py",
     "scripts/run_gse292469_signature.py",
     "scripts/run_nsclc_benchmark.py",
     "scripts/simulate_egfr_curvature_design.py",
     "scripts/simulate_egfr_state_dynamics.py",
     "scripts/simulate_lineage_family_sampling.py",
     "scripts/simulate_signature_depth.py",
+    "scripts/verify_lineage_joint_bounds.py",
+    "scripts/verify_lineage_missing_forest.py",
     "sources/HF2635-Signed-2026.ocr.provenance.json",
     "sources/cohort-access/ahs-public-cancer-summary-through-2021.csv",
     "sources/cohort-access/provenance.json",
@@ -462,16 +510,16 @@
     },
     {
       "path": "PUBLICATION.md",
-      "bytes": 9764,
-      "sha256": "bc81c51d7292443613395bcd0d809c6d07cbf1749d6bb1128b890b85f7d7729e",
+      "bytes": 10406,
+      "sha256": "a3fcd4058e5d4c9051d968e085502113023649862377de91768c109cd85c8cb3",
       "publication_status": "included",
       "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
       "upstream_urls": []
     },
     {
       "path": "README.md",
-      "bytes": 6225,
-      "sha256": "2082a21e483203e0c9a9e5736b0d3eac843b12bbf43e1efca3e579436985c62b",
+      "bytes": 6564,
+      "sha256": "1f1b4a45ac7195f2193bc8aa0106d8d39f363f5fcd8f570be959b4900127f5fa",
       "publication_status": "included",
       "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
       "upstream_urls": [
@@ -489,8 +537,8 @@
     },
     {
       "path": "knowledge/INDEX.md",
-      "bytes": 15021,
-      "sha256": "c915f23f4b4537ed9104321cd2f10f8842c60e90951309c547c3da2b0299e766",
+      "bytes": 15431,
+      "sha256": "25642f984affbd2b13e4385b07e05f72e5ec0ddc28bc2ea7fc4c95ee6df1a2e2",
       "publication_status": "included",
       "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
       "upstream_urls": []
@@ -498,7 +546,7 @@
     {
       "path": "knowledge/build-manifest.json",
       "bytes": 1870,
-      "sha256": "6c99b07ecf074d2d559a375cf693f45cbf448fc66049610ec1d5ed3606a1e3a0",
+      "sha256": "fe6015edad7ae41e701f7eba726b336d4b997c740c8fdbbabe24be5a3fdc330d",
       "publication_status": "included",
       "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
       "upstream_urls": []
@@ -513,8 +561,8 @@
     },
     {
       "path": "knowledge/research.sqlite",
-      "bytes": 294686720,
-      "sha256": "ad87e15b85403c03cef9e7c18c7ebe7debc5b7ed24673edf2fc906aa73d15537",
+      "bytes": 295227392,
+      "sha256": "2c70809e850d8f23ad5cb5b037b5cb4d643185dde4f84bfd39a958eab0686502",
       "publication_status": "local_generated",
       "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
       "upstream_urls": []
@@ -555,6 +603,14 @@
       "path": "publication/verification-lineage-2026-11-10.json",
       "bytes": 4785,
       "sha256": "b71c74c8ca00feea7bda4b77ec8b26798220795adacda7fb8022063c61faa0ec",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "publication/verification-missing-branches-2026-11-10.json",
+      "bytes": 14258,
+      "sha256": "967edc8c27c381ce2fd3cf0fe245cd6c2da7a04085a15d5ea654432c8c9f6e85",
       "publication_status": "included",
       "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
       "upstream_urls": []
@@ -1545,8 +1601,8 @@
     },
     {
       "path": "research/treatment-discovery/README.md",
-      "bytes": 9980,
-      "sha256": "5cdc17f57b86fbd1d1475a0615690d0a244533a0478efd7a8a67bb7292a28c20",
+      "bytes": 10538,
+      "sha256": "5b6a5b54c74ad8c214c81b21dabb0c275c67fe1932d5fbb876ea3b30bcd3e68b",
       "publication_status": "included",
       "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
       "upstream_urls": []
@@ -1699,8 +1755,8 @@
     },
     {
       "path": "research/treatment-discovery/data-access-catalog.json",
-      "bytes": 22795,
-      "sha256": "4414fd98b1ad348d71cdf91ef98eb79e4917bfdc9eb841db2b5df8e35b7cdfc2",
+      "bytes": 23088,
+      "sha256": "1f8cf3d0cbe49844f31dfaad7832d2ce482f0f0e6aec8e14bbc47824f76f05a8",
       "publication_status": "included",
       "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
       "upstream_urls": []
@@ -1957,8 +2013,8 @@
     },
     {
       "path": "research/treatment-discovery/lineage-audit-2026-11-10/README.md",
-      "bytes": 11828,
-      "sha256": "394e6bf33efec1870826df71711f7b8a7f5693ca3265fefe20d05a7409e2412c",
+      "bytes": 12127,
+      "sha256": "9c9cdda27a8add2e27330625a47aaa31ef6b47d638321b7ef75c63468c67161b",
       "publication_status": "included",
       "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
       "upstream_urls": []
@@ -2037,8 +2093,8 @@
     },
     {
       "path": "research/treatment-discovery/lineage-audit-2026-11-10/hct116-structure/README.md",
-      "bytes": 11557,
-      "sha256": "aa23df62c1d62ff6fe6b690eb1e5ea46e7c7d2a2ba734715e66e8bba821a8e8b",
+      "bytes": 11722,
+      "sha256": "e28a1876870a5e1af6c97279f783ad2d0016eb942c6b87b6ca09f20e4d2ace19",
       "publication_status": "included",
       "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
       "upstream_urls": []
@@ -2135,6 +2191,310 @@
       "path": "research/treatment-discovery/lineage-audit-2026-11-10/identity-check-results.json",
       "bytes": 90156,
       "sha256": "706df82dcd172f993f9ac225bb89fbeecff983758e4bde4de60e77430a319e56",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/README.md",
+      "bytes": 11469,
+      "sha256": "d7e90c82e0b1c5560e0bea4962914fa1716ddba73e28a1f3a7337cb83affeb1f",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/bounds-review.json",
+      "bytes": 6932,
+      "sha256": "1b5faaf7b70a38a5627caf55db37bda32d0b90e82f635f8f0ab601204cf3cbf3",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/bounds-review.md",
+      "bytes": 8439,
+      "sha256": "4c43f9aa4e63c646a7fbf082a0827ac13c99ecce5c76d906606f7e53f3b19f56",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/check_production_bounds.py",
+      "bytes": 9727,
+      "sha256": "60ffb55cb71e895ec9258cae336e89bd5726caf882bd710e896ba3012e1271e6",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/display-summary.json",
+      "bytes": 5704,
+      "sha256": "ab024b1ed5e60851bfedf358c14546e0c496f71f09d6dec3623e6ba259b2e2df",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/empirical-review.json",
+      "bytes": 88679,
+      "sha256": "155fdd8b1abc75ad1b36366e7708f051b7802c2328693519cca308dff652071f",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/empirical-review.md",
+      "bytes": 4886,
+      "sha256": "a2ca3fda357d703296c65eeb11dbe870d984c89619f584996b15e680c892697b",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/forest-verification.json",
+      "bytes": 914375,
+      "sha256": "42ff99e11735d753df81a440804cb2ba0247c8a4a75d95a6614a62d56b0cf8d4",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/forest-verification.md",
+      "bytes": 8107,
+      "sha256": "994381dafaa261622ecae975e6a3a5ccdd573f47443aa759779c528df0599002",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/implementation-notes.md",
+      "bytes": 2510,
+      "sha256": "ce1edfe063ae4b8bd4124026929139e086cc6e10db5152bc8bdce27dc4d3491d",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/implementation-review.json",
+      "bytes": 10483,
+      "sha256": "558d06a73af8a0bb4370379d437c85fa49ed6c6f6cbba35a5a5b7b40b9af4b06",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/implementation-review.md",
+      "bytes": 5935,
+      "sha256": "aa1888288fc581b15007d80b21c8b1399647d475e395a91fd44d73e77089cd9e",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/joint-empirical-review.json",
+      "bytes": 125423,
+      "sha256": "5abd5563b7b83d223ceba037295a78005e51c6cce9b03a6e18ffaabbf77fc167",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/joint-empirical-review.md",
+      "bytes": 4472,
+      "sha256": "a6421375cdcaa1c36c49f8b98c4a6d0d2fb76e05a73266a3e3a4660597f16842",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/joint-refinement-freeze.json",
+      "bytes": 300,
+      "sha256": "ba5da84dd07c63e3f3e8793664a2191b521bfc264fc7da544696294b77c8f6a1",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/joint-refinement-plan.json",
+      "bytes": 3893,
+      "sha256": "531ac9e5c63a5ed000ca59d282038bee1d6ad66a192d54d4aeb8cf9a4811532b",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/joint-results.json",
+      "bytes": 1957123,
+      "sha256": "615f048074d62addf4138e1a71304116075580bdcf86cda0c96e47ff8057d784",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/joint-verification.json",
+      "bytes": 4370901,
+      "sha256": "b409ffe1cf84e9c2a184c47c36abfd945e379cf45d9c925b4c408f246451dd30",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/joint-verification.md",
+      "bytes": 7219,
+      "sha256": "031d7b6aa2563e31ce8d306b2e2f6a9a8f653463cfde74ea963e786e1a2932af",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/math-implementation.json",
+      "bytes": 6062,
+      "sha256": "cf8aee7101865f3a650d51dca0899f98fd6742f0c5913503ef127ecb973f6911",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/math-implementation.md",
+      "bytes": 5447,
+      "sha256": "b00be3ec44f82f52d5d3404cd7372ea8a035d67c6bfebac1022922de918d5af7",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/missing-branch-bounds.svg",
+      "bytes": 79225,
+      "sha256": "8468667051943df331007627fda98ac99c64ca2e48f4880b9bedc1ee4980f992",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/plan-freeze.json",
+      "bytes": 366,
+      "sha256": "73fdace954793b9d078df665a2b0f4a8d862a52b84e9392f439e156d3ce183fa",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/prior-art.json",
+      "bytes": 14084,
+      "sha256": "15b486a765cabc9ce0ce697853353fbfa02db4bf55afdf9454482bf255c4520d",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/prior-art.md",
+      "bytes": 13337,
+      "sha256": "5b236f55d863862beae8ee5dd18868c267a6f6c3e62891fa45cef2941eba44bb",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/production-check-freeze.json",
+      "bytes": 705,
+      "sha256": "bf64bfa9ceed63123b83877cd2bc5f59a7687ba00b9acf5ea46080a6b987bbd9",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/production-check.json",
+      "bytes": 7809,
+      "sha256": "b0764b5b98cab2c00432388aaa27ae8adf49f4a316290216d04fbbbf3bc8d5b9",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/production-check.md",
+      "bytes": 4867,
+      "sha256": "2f4749e33171b556e8f3b999f98d9fa8294a9c127aeae8d3f0f7b395608b89f4",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/protocol.json",
+      "bytes": 8740,
+      "sha256": "c46e452f3b17b96a8f98e6bc834540d830af9b4a1e3b39b8d3a2c1665f342771",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/research-destination.json",
+      "bytes": 6636,
+      "sha256": "79f2ca16df6c2e261af3adfbf9d234ace0438af63e4968960e1a5c0d5696d29c",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/research-destination.md",
+      "bytes": 6895,
+      "sha256": "4db80a41b6c2ccaeca3ccf1d3e647293c09cbd15f2ca9d6b2ce2c8a5fb9145cc",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/results.json",
+      "bytes": 295545,
+      "sha256": "a3919f4994d57c6d77ac43fbe249aa9b01ee332d1116d367f5a6c9d9e3481a9e",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/structure-readiness.json",
+      "bytes": 11583,
+      "sha256": "74b35cdc9e823d5c407ce33ff5b5447aefb227a459de907c5ddcc9a67ac2e9ea",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/structure-readiness.md",
+      "bytes": 8628,
+      "sha256": "72a2a705156ffd2abbc35f96b1b83e76818a172ae465cd0879a9ece05795d15e",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/verification-freeze.json",
+      "bytes": 368,
+      "sha256": "cc38a070bd019a7b3eb36c30519f21216b02be190f838e09acc95c95db1ccb13",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/verification-protocol.json",
+      "bytes": 2077,
+      "sha256": "42070261483a96c52f1277b3608280903af01ea858b004ba2a32cefd92e02c1f",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/verification-results.json",
+      "bytes": 3317,
+      "sha256": "a3de053ec21a99c2114ddacc8f6312c57cdbbcc9049cdbed65802cab02418722",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/verify_bounds.py",
+      "bytes": 8841,
+      "sha256": "3812f791250c092df7356b996ac5cbed9448f16545225700b07f00d67fcbffa4",
       "publication_status": "included",
       "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
       "upstream_urls": []
@@ -3218,6 +3578,14 @@
       "upstream_urls": []
     },
     {
+      "path": "scripts/bound_hct116_lineages.py",
+      "bytes": 7552,
+      "sha256": "31dcbbeb9ff04c0ab6eb49ea99f5e1d63c9525cc69d0f3c1e3652cc63821d17c",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
       "path": "scripts/build_data_source_catalog.py",
       "bytes": 6536,
       "sha256": "f0278154544b1ebbe324dc973e3e80ce86112644ffb40e3c265d22446e96ce77",
@@ -3354,6 +3722,22 @@
       "upstream_urls": []
     },
     {
+      "path": "scripts/lineage_joint_bounds.py",
+      "bytes": 11559,
+      "sha256": "f24fe1d3a99d2abfd3fdb453d74b87e2b28ad44017845cd3c8ac3b429984802d",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "scripts/lineage_missing_bounds.py",
+      "bytes": 12555,
+      "sha256": "27bb3b07186b015a5d573d45ffe1da6515131ea0b3da09e677531c468eb4513e",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
       "path": "scripts/ocr_pdf_applevision.swift",
       "bytes": 2313,
       "sha256": "5756a8b33867164afb60f2c5a87abb6ce1c2bd3d803cfadd99b4d867b2f23721",
@@ -3365,6 +3749,14 @@
       "path": "scripts/plot_gse292469_signature.py",
       "bytes": 3445,
       "sha256": "7a75c645961660318f17917d07e8dee7bab80ec5e05e341789ceb100726df794",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "scripts/plot_hct116_missing_bounds.py",
+      "bytes": 5256,
+      "sha256": "d05c64cbba8f9cc9e8452c40b82a38582df3f9c29cbd2fb0d8176dd39479c6a1",
       "publication_status": "included",
       "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
       "upstream_urls": []
@@ -3410,9 +3802,33 @@
       "upstream_urls": []
     },
     {
+      "path": "scripts/refine_hct116_lineage_bounds.py",
+      "bytes": 6217,
+      "sha256": "406bffebfa80872b0ae0b2cbc9778db0cf5b04f52f879237a93721e8ebc464c8",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
       "path": "scripts/review_gse292469_signature.py",
       "bytes": 13385,
       "sha256": "751dc410f15a70b3e330a286e7dd7afa0017f5c4a82dd0ff0a00b8e93a90273e",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "scripts/review_hct116_joint_bounds.py",
+      "bytes": 14842,
+      "sha256": "fbcdac53cc87840549869b1cfc360cf9c449aaf23915ea9e08da08795b612c82",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "scripts/review_hct116_primary_bounds.py",
+      "bytes": 12227,
+      "sha256": "13c919067b5e9cbbb1e7048d9c76978ce476da2f2726de014bce715055e97eaf",
       "publication_status": "included",
       "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
       "upstream_urls": []
@@ -3461,6 +3877,22 @@
       "path": "scripts/simulate_signature_depth.py",
       "bytes": 13659,
       "sha256": "82a484522f00ed072e85322e833d3a212cd901a2a59b45bf2e8089a5892a2ea6",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "scripts/verify_lineage_joint_bounds.py",
+      "bytes": 20268,
+      "sha256": "bb4b1571c95731444d3870bad704a2c205cf93b2b5d23ea9010cde8617418a13",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "scripts/verify_lineage_missing_forest.py",
+      "bytes": 22905,
+      "sha256": "9c4d02e1a8621e4299df644f4bc7d4de7b150c90a583352498961230e51cf05e",
       "publication_status": "included",
       "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
       "upstream_urls": []

@@ -1,0 +1,144 @@
+{
+  "version": 1,
+  "reviewed_on": "2026-11-10",
+  "type": "Analytic conservative finite-record bounds and deterministic synthetic verification",
+  "empirical_data_used": false,
+  "rates_fitted": false,
+  "novelty_claim": false,
+  "estimand": {
+    "name": "Q_T(t)",
+    "formula": "sum_i f_i(T)*p_i(t) / sum_i f_i(T)",
+    "unit": "One fixed roster of baseline cells; equal selected-family weights",
+    "domain": "0<=t<=T; positive selection denominator",
+    "p": "Probability a future-blind uniformly chosen daughter path is alive at t in the completed family",
+    "f": "Indicator that any descendant of that baseline cell is alive at T"
+  },
+  "scope": "Finite recorded-roster path-probability average, not a population expectation or clinical endpoint",
+  "row_mass_rules": [
+    "At a verified division split chronological mass equally between the two daughters.",
+    "An absent daughter contributes unresolved mass, not zero survival.",
+    "Unknown subtrees form a disjoint frontier; do not double-count an unknown ancestor and a known descendant.",
+    "Lower bound is verified-live mass; upper bound adds all unresolved mass once.",
+    "Tracking after apoptosis is not living mass; event timing and observation contradictions require explicit uncertainty.",
+    "Any verified living descendant establishes family inclusion; extinction requires all possible paths verified extinct."
+  ],
+  "compatibility": {
+    "all_t_le_T": "For finite nonexplosive binary trees, f(T)=1 implies p(t)>0. An upper bound of zero excludes selection; a known selected family with upper=0 is inconsistent.",
+    "earlier_t": "f(T)=0 does not imply p(t)=0 for t<T.",
+    "endpoint": "At t=T, p(T)>0 iff f(T)=1. Known exclusion forces p=0; positive lower bound forces inclusion; zero upper bound forces exclusion.",
+    "strict_boundary": "Selected rows with lower=0 use a closure infimum. Zero need not be attained by any selected completed tree; arbitrarily large unknown division depth can make positive mass arbitrarily small."
+  },
+  "marginal_envelope": {
+    "sets": {
+      "K": "mandatory inclusion",
+      "O": "optional inclusion after consistency reductions",
+      "Z": "excluded"
+    },
+    "definitions": {
+      "n": "|K|",
+      "m": "|O|",
+      "A": "sum_K lower_i",
+      "B": "sum_K upper_i"
+    },
+    "lower": "min_k (A + sum of k smallest optional lower bounds)/(n+k)",
+    "upper": "max_k (B + sum of k largest optional upper bounds)/(n+k)",
+    "k_domain_if_n_positive": "0 through m",
+    "k_domain_if_n_zero": "1 through m",
+    "claim": "Exact infimum/supremum in the closed rectangular interval/selection relaxation; conservative outer bounds for true compatible tree completions.",
+    "denominator": "If n=m=0, Q is undefined. If n=0,m>0, report that zero selection is not excluded by marginal information, and bounds apply only to positive-denominator completions.",
+    "baseline_control": "For verified living baseline cells p_i(0)=1, hence Q(0)=1 whenever defined."
+  },
+  "contrast_envelope": {
+    "definition": "Delta=Q_T2(t)-Q_T1(t), T2>T1>=t; same roster and same p_i(t)",
+    "logical_nesting": "f_i(T2)<=f_i(T1); later known inclusion implies earlier inclusion, and earlier known extinction implies later extinction.",
+    "marginal_subtraction": "[L_T2-U_T1, U_T2-L_T1]",
+    "fixed_count_identity": "Delta=(1-N2/N1)*(Q_later-Q_early_only) if N1>N2; Delta=0 if N1=N2.",
+    "fixed_count_bound": "|Delta|<=1-N2/N1",
+    "count_only_cap": "With a=max(1,|K2|), b=|K1|+|O1|, intersect subtraction with [-(1-a/b), +(1-a/b)]. Require positive later selection and consistent b>=a>=1.",
+    "attainability": "Nonsharp in general; separate extrema can require incompatible common probabilities or tree completions.",
+    "single_founder_example": {
+      "p_interval": [
+        "1/4",
+        "3/4"
+      ],
+      "both_selected": true,
+      "marginal_contrast": [
+        "-1/2",
+        "1/2"
+      ],
+      "actual_contrast": "0"
+    },
+    "nesting_does_not_fix_sign": {
+      "probabilities": [
+        "1",
+        "1/4"
+      ],
+      "earlier_both_selected": true,
+      "later_first_only": "3/8",
+      "later_second_only": "-3/8"
+    }
+  },
+  "future_joint_relaxation": {
+    "implemented": false,
+    "fixed_counts": "N1>=N2>0",
+    "states": [
+      "00",
+      "10",
+      "11"
+    ],
+    "coefficients": [
+      "0",
+      "-1/N1",
+      "1/N2-1/N1"
+    ],
+    "minimizing_costs": [
+      "0",
+      "-upper_i/N1",
+      "(1/N2-1/N1)*lower_i"
+    ],
+    "maximizing_costs": [
+      "0",
+      "-lower_i/N1",
+      "(1/N2-1/N1)*upper_i"
+    ],
+    "constraints": "Known status permissions and capacities N-N1, N1-N2, N2; consistency reductions applied first.",
+    "method": "Count-conditioned dynamic programming or minimum-cost assignment, then optimize across feasible counts.",
+    "claim_limit": "Exact for the common-p interval/nested-selection relaxation, not automatically sharp for actual full trees."
+  },
+  "interpretation": [
+    "No stochastic confidence level is attached to these missing-information bounds.",
+    "Excluding zero establishes a finite-record descriptive contrast under the assumptions, not rejection of population horizon invariance without sampling and observation modeling.",
+    "Including zero means this outer envelope has not excluded equality; it does not prove fundamental nonidentifiability or failure of all tighter methods.",
+    "Unknown original-cohort coverage and selection prevent extending these bounds to that population without added assumptions.",
+    "Related baseline cells and repeated path draws do not create independent experimental replicates."
+  ],
+  "verification": {
+    "status": "PASS",
+    "fixed_controls": 11,
+    "nested_status_cases": 399,
+    "selection_probability_combinations": 8200,
+    "no_positive_later_selection_status_cases": 39,
+    "arithmetic": "Exact Fraction arithmetic",
+    "random_draws": false,
+    "scope": "Closed rectangular relaxation and nesting containment, not biological completion sharpness",
+    "failures": []
+  },
+  "local_evidence": [
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/verification-protocol.json",
+      "sha256": "42070261483a96c52f1277b3608280903af01ea858b004ba2a32cefd92e02c1f"
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/verification-freeze.json",
+      "sha256": "cc38a070bd019a7b3eb36c30519f21216b02be190f838e09acc95c95db1ccb13"
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/verify_bounds.py",
+      "sha256": "3812f791250c092df7356b996ac5cbed9448f16545225700b07f00d67fcbffa4"
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/verification-results.json",
+      "sha256": "a3de053ec21a99c2114ddacc8f6312c57cdbbcc9049cdbed65802cab02418722"
+    }
+  ]
+}

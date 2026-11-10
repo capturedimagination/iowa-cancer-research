@@ -1,0 +1,164 @@
+{
+  "source_sha256": "615f048074d62addf4138e1a71304116075580bdcf86cda0c96e47ff8057d784",
+  "plot_script_sha256": "d05c64cbba8f9cc9e8452c40b82a38582df3f9c29cbd2fb0d8176dd39479c6a1",
+  "presentation_scope": "Post-result descriptive summary of the full frozen grid; no cases omitted.",
+  "nonzero_time_cases": 240,
+  "all_nonzero_time_intervals_narrowed": true,
+  "median_width_reduction_percent": 51.56508439473909,
+  "minimum_width_reduction_percent": 43.70982552800713,
+  "maximum_width_reduction_percent": 65.5065149694056,
+  "all_300_joint_intervals_include_zero_exactly": true,
+  "display": [
+    {
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 0,
+      "configuration_count": 20,
+      "primary_hull_lower": 0.0,
+      "primary_hull_upper": 0.0,
+      "joint_hull_lower": 0.0,
+      "joint_hull_upper": 0.0
+    },
+    {
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 6,
+      "configuration_count": 20,
+      "primary_hull_lower": -0.07037037037037042,
+      "primary_hull_upper": 0.03941908713692943,
+      "joint_hull_lower": -0.03159486016628876,
+      "joint_hull_upper": 0.020746887966805017
+    },
+    {
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 12,
+      "configuration_count": 20,
+      "primary_hull_lower": -0.08088235294117652,
+      "primary_hull_upper": 0.04583333333333328,
+      "joint_hull_lower": -0.03580038572806177,
+      "joint_hull_upper": 0.027083333333333404
+    },
+    {
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 18,
+      "configuration_count": 20,
+      "primary_hull_lower": -0.09642857142857142,
+      "primary_hull_upper": 0.05785123966942152,
+      "joint_hull_lower": -0.04110070257611248,
+      "joint_hull_upper": 0.0351239669421487
+    },
+    {
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 48,
+      "evaluation_hours": 24,
+      "configuration_count": 20,
+      "primary_hull_lower": -0.10178571428571437,
+      "primary_hull_upper": 0.07494096812278628,
+      "joint_hull_lower": -0.0390136179609864,
+      "joint_hull_upper": 0.051327868852459047
+    },
+    {
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 0,
+      "configuration_count": 20,
+      "primary_hull_lower": 0.0,
+      "primary_hull_upper": 0.0,
+      "joint_hull_lower": 0.0,
+      "joint_hull_upper": 0.0
+    },
+    {
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 6,
+      "configuration_count": 20,
+      "primary_hull_lower": -0.07723577235772361,
+      "primary_hull_upper": 0.03941908713692943,
+      "joint_hull_lower": -0.038460262153641955,
+      "joint_hull_upper": 0.022821576763485618
+    },
+    {
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 12,
+      "configuration_count": 20,
+      "primary_hull_lower": -0.08870967741935487,
+      "primary_hull_upper": 0.04583333333333328,
+      "joint_hull_lower": -0.04362771020624012,
+      "joint_hull_upper": 0.02916666666666673
+    },
+    {
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 18,
+      "configuration_count": 20,
+      "primary_hull_lower": -0.10465116279069764,
+      "primary_hull_upper": 0.05785123966942152,
+      "joint_hull_lower": -0.0493232939382387,
+      "joint_hull_upper": 0.03925619834710742
+    },
+    {
+      "earlier_selection_hours": 24,
+      "later_selection_hours": 60,
+      "evaluation_hours": 24,
+      "configuration_count": 20,
+      "primary_hull_lower": -0.11153100775193803,
+      "primary_hull_upper": 0.07463642770196677,
+      "joint_hull_lower": -0.04833762728499569,
+      "joint_hull_upper": 0.05496194379391095
+    },
+    {
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 0,
+      "configuration_count": 20,
+      "primary_hull_lower": 0.0,
+      "primary_hull_upper": 0.0,
+      "joint_hull_lower": 0.0,
+      "joint_hull_upper": 0.0
+    },
+    {
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 6,
+      "configuration_count": 20,
+      "primary_hull_lower": -0.07723577235772361,
+      "primary_hull_upper": 0.07037037037037042,
+      "joint_hull_lower": -0.010833428866215716,
+      "joint_hull_upper": 0.04104477611940299
+    },
+    {
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 12,
+      "configuration_count": 20,
+      "primary_hull_lower": -0.08870967741935487,
+      "primary_hull_upper": 0.08088235294117652,
+      "joint_hull_lower": -0.011170212765957449,
+      "joint_hull_upper": 0.05147058823529413
+    },
+    {
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 18,
+      "configuration_count": 20,
+      "primary_hull_lower": -0.10465116279069764,
+      "primary_hull_upper": 0.09642857142857142,
+      "joint_hull_lower": -0.011800464866797838,
+      "joint_hull_upper": 0.06428571428571422
+    },
+    {
+      "earlier_selection_hours": 48,
+      "later_selection_hours": 60,
+      "evaluation_hours": 24,
+      "configuration_count": 20,
+      "primary_hull_lower": -0.12043388544977973,
+      "primary_hull_upper": 0.11037946428571432,
+      "joint_hull_lower": -0.014548099654482505,
+      "joint_hull_upper": 0.07652162977867194
+    }
+  ],
+  "display_limit": "Hulls combine different recorded baselines and annotation assumptions. They are not a single identified set, sampling confidence interval, or population null test."
+}

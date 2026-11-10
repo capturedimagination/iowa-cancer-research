@@ -1,0 +1,284 @@
+{
+  "verified_at_utc": "2026-11-10T19:52:45.160134+00:00",
+  "scope": "Missing-branch finite-record bounds, joint refinement, independent arithmetic, source-dependent reproduction and public-package checks. No biological validation or external peer review.",
+  "public_export_files_checked": 440,
+  "public_export_manifest_hashes_checked": 438,
+  "verification_record_added_after_export": true,
+  "pre_record_publication_index_check": "PASS: 440 indexed paths; final index must be checked again after adding this record.",
+  "public_numerical_reproduction": {
+    "status": "PASS",
+    "empirical_sources_used": false,
+    "environment": {
+      "python": "3.12.14",
+      "platform": "macOS-26.6.2-arm64-arm-64bit",
+      "numpy": "2.3.5",
+      "scipy": "1.16.3"
+    },
+    "checks": [
+      {
+        "name": "verify_bounds",
+        "script": "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/verify_bounds.py",
+        "exit_code": 0,
+        "ignored_json_pointers": [
+          "/created_utc"
+        ],
+        "semantic_difference_count": 0,
+        "canonical_original_sha256": "42add742052224c0f160361952700e15ab9d3317403e3b7398899a899c39eb08",
+        "canonical_reproduced_sha256": "42add742052224c0f160361952700e15ab9d3317403e3b7398899a899c39eb08",
+        "passed": true
+      },
+      {
+        "name": "check_production_bounds",
+        "script": "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/check_production_bounds.py",
+        "exit_code": 0,
+        "ignored_json_pointers": [
+          "/checked_utc"
+        ],
+        "semantic_difference_count": 0,
+        "canonical_original_sha256": "b0ac0a50e8bc1c53011f295c594c7f2b9efc9ece3c6660499ed48faeef11039a",
+        "canonical_reproduced_sha256": "b0ac0a50e8bc1c53011f295c594c7f2b9efc9ece3c6660499ed48faeef11039a",
+        "passed": true
+      },
+      {
+        "name": "verify_lineage_missing_forest",
+        "script": "scripts/verify_lineage_missing_forest.py",
+        "exit_code": 0,
+        "ignored_json_pointers": [
+          "/generated_at_utc"
+        ],
+        "semantic_difference_count": 0,
+        "canonical_original_sha256": "2a7b207a6b94a1ed35fcd4cdbe96b699e2ae5c87ae297b76a39fd5dc955d6f22",
+        "canonical_reproduced_sha256": "2a7b207a6b94a1ed35fcd4cdbe96b699e2ae5c87ae297b76a39fd5dc955d6f22",
+        "passed": true
+      },
+      {
+        "name": "verify_lineage_joint_bounds",
+        "script": "scripts/verify_lineage_joint_bounds.py",
+        "exit_code": 0,
+        "ignored_json_pointers": [
+          "/generated_at_utc"
+        ],
+        "semantic_difference_count": 0,
+        "canonical_original_sha256": "4efcba9062bbafae9e87dd049d01b76ff24a05656a77df0a8a28926aad580de7",
+        "canonical_reproduced_sha256": "4efcba9062bbafae9e87dd049d01b76ff24a05656a77df0a8a28926aad580de7",
+        "passed": true
+      }
+    ],
+    "all_reproduction_artifacts_match_export": true,
+    "source_artifacts": [
+      {
+        "path": "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/check_production_bounds.py",
+        "sha256": "60ffb55cb71e895ec9258cae336e89bd5726caf882bd710e896ba3012e1271e6"
+      },
+      {
+        "path": "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/forest-verification.json",
+        "sha256": "42ff99e11735d753df81a440804cb2ba0247c8a4a75d95a6614a62d56b0cf8d4"
+      },
+      {
+        "path": "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/joint-refinement-plan.json",
+        "sha256": "531ac9e5c63a5ed000ca59d282038bee1d6ad66a192d54d4aeb8cf9a4811532b"
+      },
+      {
+        "path": "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/joint-verification.json",
+        "sha256": "b409ffe1cf84e9c2a184c47c36abfd945e379cf45d9c925b4c408f246451dd30"
+      },
+      {
+        "path": "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/production-check.json",
+        "sha256": "b0764b5b98cab2c00432388aaa27ae8adf49f4a316290216d04fbbbf3bc8d5b9"
+      },
+      {
+        "path": "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/protocol.json",
+        "sha256": "c46e452f3b17b96a8f98e6bc834540d830af9b4a1e3b39b8d3a2c1665f342771"
+      },
+      {
+        "path": "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/verification-freeze.json",
+        "sha256": "cc38a070bd019a7b3eb36c30519f21216b02be190f838e09acc95c95db1ccb13"
+      },
+      {
+        "path": "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/verification-protocol.json",
+        "sha256": "42070261483a96c52f1277b3608280903af01ea858b004ba2a32cefd92e02c1f"
+      },
+      {
+        "path": "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/verification-results.json",
+        "sha256": "a3de053ec21a99c2114ddacc8f6312c57cdbbcc9049cdbed65802cab02418722"
+      },
+      {
+        "path": "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/verify_bounds.py",
+        "sha256": "3812f791250c092df7356b996ac5cbed9448f16545225700b07f00d67fcbffa4"
+      },
+      {
+        "path": "scripts/bound_hct116_lineages.py",
+        "sha256": "31dcbbeb9ff04c0ab6eb49ea99f5e1d63c9525cc69d0f3c1e3652cc63821d17c"
+      },
+      {
+        "path": "scripts/lineage_joint_bounds.py",
+        "sha256": "f24fe1d3a99d2abfd3fdb453d74b87e2b28ad44017845cd3c8ac3b429984802d"
+      },
+      {
+        "path": "scripts/lineage_missing_bounds.py",
+        "sha256": "27bb3b07186b015a5d573d45ffe1da6515131ea0b3da09e677531c468eb4513e"
+      },
+      {
+        "path": "scripts/verify_lineage_joint_bounds.py",
+        "sha256": "bb4b1571c95731444d3870bad704a2c205cf93b2b5d23ea9010cde8617418a13"
+      },
+      {
+        "path": "scripts/verify_lineage_missing_forest.py",
+        "sha256": "9c4d02e1a8621e4299df644f4bc7d4de7b150c90a583352498961230e51cf05e"
+      }
+    ],
+    "limits": "Reproduction of public synthetic controls in the same declared scientific environment; not independent model validation or empirical dataset analysis."
+  },
+  "empirical_reproduction": {
+    "scope": "Isolated source-dependent reproduction; original workbook and private graph required. This is separate from public-only synthetic controls.",
+    "comparisons": [
+      {
+        "original": "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/results.json",
+        "reproduced": "tmp/primary-reproduced.json",
+        "exact_semantic_match": true,
+        "ignored_metadata": [
+          "created_utc"
+        ]
+      },
+      {
+        "original": "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/joint-results.json",
+        "reproduced": "tmp/joint-reproduced.json",
+        "exact_semantic_match": true,
+        "ignored_metadata": [
+          "created_utc",
+          "runtime_seconds"
+        ]
+      }
+    ],
+    "private_per_cell_exact_hash_match": true,
+    "private_per_cell_sha256": "73874aa71853f50ec65de682d44bca37e8ebdf42f3b8160d3eb625df79cf9a76",
+    "independent_primary_check": {
+      "tolerance": 1e-12,
+      "source_graph_sha256": "89257469c39355c2b145bfb8a13a88cec54156317b43f3ed171af3d87a5d9b4e",
+      "results_sha256": "a3919f4994d57c6d77ac43fbe249aa9b01ee332d1116d367f5a6c9d9e3481a9e",
+      "private_records_sha256": "73874aa71853f50ec65de682d44bca37e8ebdf42f3b8160d3eb625df79cf9a76",
+      "protocol_sha256": "c46e452f3b17b96a8f98e6bc834540d830af9b4a1e3b39b8d3a2c1665f342771",
+      "core_sha256": "27bb3b07186b015a5d573d45ffe1da6515131ea0b3da09e677531c468eb4513e",
+      "caller_sha256": "31dcbbeb9ff04c0ab6eb49ea99f5e1d63c9525cc69d0f3c1e3652cc63821d17c",
+      "review_check_sha256": "13c919067b5e9cbbb1e7048d9c76978ce476da2f2726de014bce715055e97eaf",
+      "expected_and_observed_counts": {
+        "baseline_sensitivity_combinations": 20,
+        "private_selection_groups": 60,
+        "unique_cell_time_mass_vectors": 39788,
+        "stored_cell_time_mass_vectors_including_horizon_repetition": 119364,
+        "ratio_cases": 300,
+        "contrast_cases": 300
+      },
+      "max_absolute_errors": {
+        "mass_conservation": 0.0,
+        "independent_exact_fraction_frontier_vs_saved_mass": 0.0,
+        "independent_rational_ratio_vs_saved_ratio": 0.0,
+        "independent_contrast_formula_vs_saved_contrast": 0.0
+      },
+      "checks": {
+        "all_hashes_and_freeze_order_match": true,
+        "complete_unique_fixed_grid": true,
+        "all_rosters_match_pinned_graph": true,
+        "same_roster_all_horizons_and_sensitivities": true,
+        "common_per_cell_mass_vectors_across_selection_horizons": true,
+        "family_status_matches_selection_time_mass": true,
+        "family_status_sets_nested_across_horizons": true,
+        "mass_components_nonnegative_and_conserved": true,
+        "survival_bounds_nonincreasing_in_elapsed_time": true,
+        "dead_and_unknown_mass_nondecreasing": true,
+        "whole_episode_mass_ratio_and_contrast_envelopes_contain_first_issue": true,
+        "offset1_survival_bounds_no_lower_than_offset0": true,
+        "time_zero_ratios_one_and_contrasts_zero": true,
+        "independent_frontier_and_rational_recalculations_match": true,
+        "joint_refinement_not_read_or_run": true
+      },
+      "contrast_classification_at_tolerance": {
+        "includes_zero": 300
+      },
+      "contrast_classification_exact_zero": {
+        "includes_zero": 300
+      },
+      "contrast_classification_by_evaluation_hours": {
+        "0": {
+          "includes_zero": 60
+        },
+        "6": {
+          "includes_zero": 60
+        },
+        "12": {
+          "includes_zero": 60
+        },
+        "18": {
+          "includes_zero": 60
+        },
+        "24": {
+          "includes_zero": 60
+        }
+      },
+      "zero_denominator_possible_ratio_cases": 0,
+      "undefined_ratio_cases": 0,
+      "time_zero_point_zero_contrasts": 60,
+      "scope": "Finite recorded-roster primary envelopes only; no population null inference, effect-size fit, window selection, or joint-refinement output."
+    },
+    "joint_independent_review_reproduction": {
+      "exact_semantic_match": true,
+      "ignored_metadata": [
+        "reviewed_at_utc"
+      ],
+      "script_sha256": "fbcdac53cc87840549869b1cfc360cf9c449aaf23915ea9e08da08795b612c82"
+    },
+    "used_public_inputs_match_export": true,
+    "used_public_input_paths_checked": [
+      "scripts/lineage_missing_bounds.py",
+      "scripts/bound_hct116_lineages.py",
+      "scripts/lineage_joint_bounds.py",
+      "scripts/refine_hct116_lineage_bounds.py",
+      "scripts/review_hct116_primary_bounds.py",
+      "scripts/review_hct116_joint_bounds.py",
+      "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/protocol.json",
+      "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/plan-freeze.json",
+      "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/joint-refinement-plan.json",
+      "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/joint-refinement-freeze.json",
+      "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/results.json",
+      "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/joint-results.json",
+      "research/treatment-discovery/lineage-audit-2026-11-10/hct116-structure/results.json"
+    ]
+  },
+  "public_library_rebuild": {
+    "integrity_check": "ok",
+    "datasets": 57,
+    "search_records": 1447,
+    "missing_branch_documents": 13,
+    "all_missing_branch_document_hashes_current": true,
+    "county_rows": 99,
+    "tri_forms": 60040,
+    "source_pdf_bodies": 0
+  },
+  "local_library_rebuild": {
+    "integrity_check": "ok",
+    "datasets": 57,
+    "search_records": 1484,
+    "missing_branch_documents": 13,
+    "all_missing_branch_document_hashes_current": true
+  },
+  "original_report_sha256_unchanged": "6019900da230ba69322aea6bf537fb879a1403b09cfe7acf0f8c71df27f9eeec",
+  "result_and_review_hashes": {
+    "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/results.json": "a3919f4994d57c6d77ac43fbe249aa9b01ee332d1116d367f5a6c9d9e3481a9e",
+    "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/joint-results.json": "615f048074d62addf4138e1a71304116075580bdcf86cda0c96e47ff8057d784",
+    "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/joint-empirical-review.json": "5abd5563b7b83d223ceba037295a78005e51c6cce9b03a6e18ffaabbf77fc167",
+    "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/empirical-review.json": "155fdd8b1abc75ad1b36366e7708f051b7802c2328693519cca308dff652071f",
+    "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/forest-verification.json": "42ff99e11735d753df81a440804cb2ba0247c8a4a75d95a6614a62d56b0cf8d4",
+    "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/joint-verification.json": "b409ffe1cf84e9c2a184c47c36abfd945e379cf45d9c925b4c408f246451dd30",
+    "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/display-summary.json": "ab024b1ed5e60851bfedf358c14546e0c496f71f09d6dec3623e6ba259b2e2df"
+  },
+  "figure_validation": {
+    "svg_sha256": "8468667051943df331007627fda98ac99c64ca2e48f4880b9bedc1ee4980f992",
+    "svg_parses": true,
+    "rendered_preview_visually_inspected": true,
+    "final_change": "Plot writer strips trailing line spaces; numerical data and visible rendering unchanged."
+  },
+  "publication_scope": "Authored reports, proofs, original code, aggregate empirical bounds, synthetic results and provenance. Source workbook, graph and per-cell extracts excluded.",
+  "scientific_status": "All 240 nonzero-time intervals narrowed; median relative narrowing 51.56508439473909%; all include zero. Outer finite-record ranges, not confidence intervals, population null tests or proof of an attainable zero completion. Substantial prior art; first-ever novelty and new cancer mechanism unestablished.",
+  "destination_status": "NCBS source-validation packet prepared; no investigator contact, collaboration agreement or submission.",
+  "goal_status": "active"
+}
