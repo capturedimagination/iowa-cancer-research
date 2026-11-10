@@ -1,0 +1,273 @@
+{
+  "version": 1,
+  "generated_at_utc": "2026-11-10T20:00:45.551355+00:00",
+  "search_date": "2026-11-10",
+  "status": "PLANNING_ONLY_BOUNDED_AUDIT",
+  "scientific_outcomes_generated": false,
+  "empirical_model_fit": false,
+  "empirical_input_read": false,
+  "external_contact": false,
+  "source_account_scraping": false,
+  "public_files_modified": false,
+  "purpose": "Audit prior art for prospective equal-lag sister-subtree survival covariance paired with family-selected random-tag horizon contrasts, and constrain interpretation before results.",
+  "decision": {
+    "general_sister_subtree_covariance_novel": false,
+    "close_prior_art": "Korsnes2023",
+    "exact_binary_event_match_confirmed": false,
+    "exact_combination_with_horizon_contrast_found": false,
+    "negative_search_is_novelty_evidence": false,
+    "novelty_claim": "None; exact combination not located in inspected scope, with unresolved definitions and bounded coverage.",
+    "Iyer_refutation_claim_permitted": false,
+    "defensible_objective": "Synthetic specificity and observation-model audit of stipulated alternatives."
+  },
+  "estimands": {
+    "sister_event": "A_j(s)=1[N_j(b+s)>0], living descendants of newborn daughter j at common elapsed lag s.",
+    "sister_covariance": "Cov(A_1(s),A_2(s) | qualifying division and relevant common context).",
+    "pair_eligibility": "Birth/past information plus predeclared administrative support; no future survival or completeness restriction.",
+    "horizon_statistic": "Q_T(t)=P(prospective random tag alive at t | N_founder(T)>0), compared at common absolute t.",
+    "not_equivalent": [
+      "cycle-length covariance",
+      "cumulative descendants ever born",
+      "fate restricted to eventual death or division",
+      "terminal surviving ancestry",
+      "future-family-selected sister cohort"
+    ]
+  },
+  "identifiability": {
+    "tier": "project analytic reasoning; no new numerical result",
+    "independent_renewal_null": "Conditional daughter-subtree independence implies zero sister covariance.",
+    "perfect_shared_type": "Conditional independence implies Var_w[h_Z(s)], with eligible-pair weights w.",
+    "permanent_environment_equivalence": "Identical conditional tree kernels K_z and mixing probabilities imply identical P(O)=sum_z pi_z K_z(O), hence all observable tree statistics are identical.",
+    "scope_limit": "This overlap blocks a universal discriminator between broad classes; it does not identify every partially transmitting type model with a permanent environment.",
+    "alternatives": [
+      "pooled calendar birth times",
+      "shared experimental context",
+      "maternal damage",
+      "correlated sister innovations",
+      "asymmetric daughters",
+      "future-survival filtering",
+      "future-completeness filtering",
+      "correlated tracking errors"
+    ],
+    "blind_spot": "Different types may have equal subtree-survival probability at chosen lags."
+  },
+  "evidence_tiers": {
+    "primary_documented": "Methods, equations or controls in inspected primary documents.",
+    "analytic_observation": "Conditional independence, total covariance and exact observational-equivalence arguments.",
+    "bounded_negative_search": "Exact match not located; no absence or priority claim.",
+    "planned_only": "No freeze, simulation or empirical execution in this pass."
+  },
+  "search": {
+    "additional_query_count": 12,
+    "queries": [
+      "\"sister\" \"subtree\" \"survival\" cell lineage covariance",
+      "\"daughter\" \"subtrees\" \"survival\" \"correlation\" branching",
+      "\"sister\" \"clonal survival\" correlation drug",
+      "\"Inheritable cell-states\" \"end fate\" random",
+      "\"cell\" \"sister lineages\" \"survival\" covariance",
+      "\"daughter subtrees\" \"extinction\" branching",
+      "\"sister\" \"clonal\" \"survival\" inheritance environment cancer lineage",
+      "\"Hidden heterogeneity and circadian-controlled cell fate\" correlations fates sisters",
+      "\"sister\" \"subtree\" \"covariance\" cell",
+      "\"sister clones\" \"survival\" correlation",
+      "\"lineage\" \"shared environment\" \"identifiability\"",
+      "\"Initial refinement of data from video-based single-cell tracking\""
+    ],
+    "method": "Web queries and direct primary document inspection; pinned local Iyer supplement used after current link failure.",
+    "stop_rule": "Bounded focused audit; no broad citation chase, account access or challenge bypass.",
+    "exclusions": [
+      "Dendritic morphology subtree asymmetry: not cell-family survival.",
+      "Biodiversity and sister-chromatid survival results: unrelated estimands.",
+      "Reviews, commercial summaries and indexes not used as primary evidence."
+    ],
+    "not_exhaustive": [
+      "all literature databases",
+      "all supplements and code",
+      "all patents and theses",
+      "unindexed or unpublished work"
+    ]
+  },
+  "primary_sources": [
+    {
+      "id": "Korsnes2023",
+      "title": "Initial refinement of data from video-based single-cell tracking",
+      "doi": "10.1002/cai2.88",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10686135/",
+      "current_access": "full primary HTML accessible",
+      "inspected_scope": "Sections 3.2, 3.4, Discussion, Figures 4 and 6 captions; no source code or data.",
+      "overlap": "Close paired-sister-subtree statistics; exact binary fixed-lag extinction covariance not located.",
+      "gap": "Figure 4 extant versus cumulative descendant-count semantics unresolved; Figure 6 concerns track length and future-death strata."
+    },
+    {
+      "id": "Iyer2025",
+      "title": "Inheritable cell-states shape drug-persister correlations and population dynamics in cancer cells",
+      "doi": "10.1371/journal.pcbi.1013446",
+      "url": "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1013446",
+      "supplement_url": "https://journals.plos.org/ploscompbiol/article/file?id=10.1371/journal.pcbi.1013446.s001&type=supplementary",
+      "current_access": "Publisher main text accessible; current supplementary URL failed in web tool; pinned local primary supplement used.",
+      "inspected_scope": "Main Methods/Results; S1 sections 1, 5, 8-13, including equations 7-13 and 30-36.",
+      "overlap": "Age-dependent comparison already present; see memo for equations and distinct tagged endpoint statistic.",
+      "gap": "No source-code reproduction or complete straddler-clock reconciliation."
+    },
+    {
+      "id": "Chakrabarti2018",
+      "title": "Hidden heterogeneity and circadian-controlled cell fate inferred from single cell lineages",
+      "doi": "10.1038/s41467-018-07788-5",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6299096/",
+      "current_access": "Main text accessible first; later find request challenged.",
+      "inspected_scope": "Fate-correlation Results, Figure 2 and Discussion.",
+      "overlap": "Individual fate correlation and explicit spatial/cell-cycle controls; not certified as the proposed subtree event.",
+      "gap": "No new supplement/code or data audit."
+    },
+    {
+      "id": "Belluccini2022",
+      "title": "Counting generations in birth and death processes with competing Erlang and exponential waiting times",
+      "doi": "10.1038/s41598-022-14202-0",
+      "url": "https://www.nature.com/articles/s41598-022-14202-0",
+      "author_preprint_url": "https://arxiv.org/abs/2112.00371",
+      "author_preprint_title": "A multi-stage model of cell proliferation and death: tracking cell divisions with Erlang distributions",
+      "current_access": "Publisher failed; primary author abstract accessible.",
+      "inspected_scope": "Current author abstract; earlier proposal records previously accessible publisher description.",
+      "overlap": "Erlang division plus exponential death already modeled.",
+      "gap": "No current full-text or code audit; preprint and publication versions not line-compared."
+    },
+    {
+      "id": "Genthon2023",
+      "title": "Cell lineage statistics with incomplete population trees",
+      "doi": "10.1103/PRXLife.1.013014",
+      "url": "https://arxiv.org/html/2305.05406v2",
+      "current_access": "Primary author manuscript accessible.",
+      "inspected_scope": "Sampling framework with prior project audit; targeted search.",
+      "overlap": "Forward/backward sampling and terminated lineages established.",
+      "gap": "No exhaustive supplement/code audit or exact paired-statistic match."
+    },
+    {
+      "id": "WeinrebKlein2020",
+      "title": "Lineage reconstruction from clonal correlations",
+      "doi": "10.1073/pnas.2000238117",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7382289/",
+      "current_access": "Primary full text accessible.",
+      "inspected_scope": "Branching assumptions, PGF moments, sister-choice assumptions, tree reconstruction.",
+      "overlap": "Clonal count covariance and its assumptions established; variables differ from fixed-lag sister-subtree binary survival.",
+      "gap": "Supplementary theorem proofs and source code not audited."
+    }
+  ],
+  "screened_access_gaps": [
+    {
+      "title": "Hidden long-range memories of growth and cycle speed correlate cell cycles in lineage trees",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7018508/",
+      "doi": "10.7554/eLife.51002",
+      "status": "Current PMC challenge; earlier proposal retains its separate review. No fresh detailed evidentiary claim here."
+    },
+    {
+      "title": "Maps of variability in cell lineage trees",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6388934/",
+      "doi": "10.1371/journal.pcbi.1006745",
+      "status": "Search discovery; primary PMC challenge. Full method not reviewed in this pass."
+    }
+  ],
+  "local_evidence": [
+    {
+      "role": "proposal",
+      "path": "tmp/hct116-missing-bounds/next-design-proposal.md",
+      "sha256": "80a907282a3a36714f78497236da250a17c10595081726b57f4bc82eca3cea53"
+    },
+    {
+      "role": "constant_rate_theory",
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/theory.md",
+      "sha256": "77d2d1bfaff964295f6f50ffeaf9b25633b3ba7317c477acb206a49e904efa84"
+    },
+    {
+      "role": "calendar_rate_proof",
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/horizon-invariance/proof.md",
+      "sha256": "2fe1f50fff448efb32d35d71fc63c8e43bf68b13c0aca2dca47fdf74839a8c8b"
+    },
+    {
+      "role": "cached_Iyer_primary_html",
+      "path": "tmp/discovery-novelty/lineage-audit/Iyer2025.html",
+      "sha256": "8f04eede88c75131c11670c68491c014481e2ba7ca73483306d99493d0a289ec"
+    },
+    {
+      "role": "cached_Iyer_supplement_pdf",
+      "path": "tmp/iyer-empirical-audit/Iyer2025-supplement.pdf",
+      "sha256": "cae587bca7e9de6de4bbdc9668dbf626ddc705b397dfa60ee5b0c16669acde2e"
+    },
+    {
+      "role": "cached_Iyer_supplement_text",
+      "path": "tmp/iyer-empirical-audit/Iyer2025-supplement.txt",
+      "sha256": "4cec4616955d8269723c20ed95328b797cccec94a6c9bf62c69388bff215c3be"
+    },
+    {
+      "role": "this_memo",
+      "path": "tmp/age-lineage-2026-11-10/prior-art.md",
+      "sha256": "8b7628f262f5ef9961c1a2c5520d05edbde4b87a16351f0293c6d2bf0e74198f"
+    }
+  ],
+  "open_gaps": [
+    "Korsnes Figure 4 count semantics and complete eligibility/censoring rules.",
+    "No fresh access to Iyer supplementary URL; pinned source substituted transparently.",
+    "No complete source-code or supplementary proof audit.",
+    "No complete assessment of differently named earlier applications."
+  ],
+  "next_step": "Parent may decide and freeze a bounded synthetic study; retain both positive and negative controls and state identifiability limitations.",
+  "early_time_addendum": {
+    "added_at_utc": "2026-11-10T20:05:30.381244+00:00",
+    "status": "SYMBOLIC_CANDIDATE_UNDER_SEPARATE_MATHEMATICAL_REVIEW_NO_NUMERICAL_OUTCOMES",
+    "candidate": "For iid newborn renewal division f_D(s)~c*s^(k-1), constant independent death mu and fixed positive T: 1-Q_T(t)~mu*c*t^(k+1)/(k*(k+1)).",
+    "Erlang_specialization": "mu*alpha^k*t^(k+1)/(k+1)!; alpha is stage rate, k the integer shape.",
+    "knowledge_before_future_freeze": "Parent symbolic derivation supplied before this search; no numerical evaluation by this audit.",
+    "queries": [
+      "\"branching\" \"conditioned on survival\" \"small time\" \"death\" age dependent",
+      "\"cell\" \"survivorship\" \"multistep\" \"death\" lineage",
+      "\"renewal\" \"tagged\" \"survival\" \"Erlang\" branching",
+      "\"cancer\" \"delayed killing\" \"multistep\" cell death model",
+      "\"branching\" \"lineage\" \"small-time\" survival death",
+      "\"cell death\" \"Erlang\" \"delay\" model",
+      "\"conditional\" \"tagged\" \"renewal\" \"family\" survival"
+    ],
+    "additional_query_count": 7,
+    "exact_conditional_law_located": false,
+    "absence_or_priority_established": false,
+    "closest_verified_relation": {
+      "source": "YatesFordMort2017",
+      "url": "https://arxiv.org/html/1705.09718v2",
+      "scope": "Section 3.3, Eq. 30 and surrounding multistage construction.",
+      "known": "Erlang-plus-exponential convolution has the same ordinary waiting-time leading CDF coefficient.",
+      "distinction": "Their added stage is part of a division timer, not selection of a potentially dead tag by family survival."
+    },
+    "other_known_model": {
+      "source": "Belluccini2022_author_preprint",
+      "url": "https://arxiv.org/abs/2112.00371",
+      "scope": "Accessible author abstract; competing Erlang division/exponential death."
+    },
+    "limited_access_leads": [
+      {
+        "title": "Extended transit compartment model to describe tumor delay using Coxian distribution",
+        "doi": "10.1038/s41598-022-13836-4",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9203540/",
+        "evidence": "Primary search-index excerpts on Erlang/Coxian delayed death; direct PMC/publisher/PDF requests challenged or failed. Not full-text audited."
+      },
+      {
+        "title": "The stochastic dynamics of early epidemics: probability of establishment, initial growth rate, and infection cluster size at first detection",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8596012/",
+        "author_preprint_url": "https://www.medrxiv.org/content/10.1101/2020.11.17.20233403v2.full",
+        "evidence": "Primary search-index excerpts on survival conditioning; direct PMC challenged and preprint 403. Not full-text audited."
+      }
+    ],
+    "assessment": "Potential useful first-event asymptotic corollary and observation-rule warning. Multistep power-law/convolution mathematics is established; no substantial-method, theorem-priority or biological-discovery claim.",
+    "boundaries": [
+      "Local asymptotic only; not full Erlang distribution or global horizon invariance.",
+      "Fixed positive T with positive family inclusion and t<=T.",
+      "One newborn founder and independent renewal daughters/death clocks; no atom at zero division.",
+      "Fate-independent forward tag, never replaced after death.",
+      "Mixed initial age/stage changes residual division law; disappearance of high order need not mean linear onset.",
+      "Pre-existing sister branches at observation origin define a different sampling model.",
+      "Precise regularity and remainder bounds await separate mathematical review."
+    ],
+    "no_Iyer_refutation": true,
+    "scientific_outcomes_generated": false,
+    "prior_ledger_sha256": "efaa92e2157b2b395c1280b947244d151cef66b234b944d493d584d70e8f4925",
+    "prior_memo_sha256": "6e836682457967b86758091f267465164a5d3f581de07d86b228d77134592602"
+  },
+  "total_search_query_count_including_addendum": 19
+}

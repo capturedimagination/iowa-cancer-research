@@ -25,6 +25,8 @@ Library extended **November 10, 2026** with verified malignant-cell expression d
 | Individual exposure histories, cohort data or occupational coding | [Cohort access](../research/cohort-data-access.md), [occupational data systems](../research/manufacturing-input-datasets.csv); access metadata do not imply individual records are held here |
 | Narrative orientation | [Original research report](../Iowa-Cancer-Research.md); the later industry and modeling work is in this library |
 
+For non-exponential cell cycles, founder age, transmitted timer types or sister-subtree covariance, start with the [cell-cycle specificity study](../research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/README.md). Its 72-model fixed grid distinguishes exact-model findings from two flagged simulation checks, 168 low-precision checks and unvalidated biological interpretation. Neither horizon contrasts nor pooled sister covariance universally identify inheritance.
+
 ## What is actually saved
 
 | Material | Coverage | Important boundary |

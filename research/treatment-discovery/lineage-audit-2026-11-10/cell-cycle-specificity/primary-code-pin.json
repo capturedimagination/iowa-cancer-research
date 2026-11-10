@@ -1,0 +1,15 @@
+{
+  "pinned_at_utc": "2026-11-10T20:15:19.969374+00:00",
+  "protocol_sha256": "e7fe08e71d614f27f7d312a6afa7cf64d8022cba2af908cc92c7965d7d6caeb5",
+  "code_sha256": {
+    "scripts/age_lineage_models.py": "2e7f53d6175b8da9215706e2eaee81758dc058265ff5d3c42583875d21987a59",
+    "scripts/run_age_lineage_models.py": "f85e94dce17d89b2b7ce3bee4ce6bae38d2efa2e837d26fa044a1971ea08a894",
+    "scripts/check_age_lineage_fixtures.py": "276f1f426c56b33c5642ced041280d14b017b26e7a8b569c7b0191b34bbbed29"
+  },
+  "status": "Primary code pinned after static review and before its analytic fixture and main-grid runs. Independent reference has completed separately without importing/reading production outputs.",
+  "pre_outcome_changes": [
+    "Failure paths preserve partial/base/strict outcomes and explicit nonfinite diagnostics.",
+    "Algebraic evaluation x=T-t*(1-v) avoids round-up beyond solved horizon."
+  ],
+  "primary_grid_run_started": false
+}

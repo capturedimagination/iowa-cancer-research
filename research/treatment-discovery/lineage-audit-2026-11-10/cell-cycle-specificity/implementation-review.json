@@ -1,0 +1,196 @@
+{
+  "schema_version": 1,
+  "reviewed_at_utc": "2026-11-10T20:13:31.708359+00:00",
+  "review_type": "independent_static_source_and_hand_algebra",
+  "status": "STATIC_REVIEW_PASS_NO_BLOCKING_FINDING",
+  "core_verdict": "NO_BLOCKING_MATHEMATICAL_FINDING",
+  "protocol_sha256": "e7fe08e71d614f27f7d312a6afa7cf64d8022cba2af908cc92c7965d7d6caeb5",
+  "core": {
+    "path": "scripts/age_lineage_models.py",
+    "sha256": "2e7f53d6175b8da9215706e2eaee81758dc058265ff5d3c42583875d21987a59"
+  },
+  "initial_driver": {
+    "path": "scripts/run_age_lineage_models.py",
+    "sha256": "bb481d3c2b8a75c00d94d2fd3d330cd816e074f852884eae162fd87856b74b1a"
+  },
+  "methods": [
+    "read_source",
+    "AST_syntax_parse_without_import",
+    "read_frozen_protocol",
+    "independent_hand_algebra",
+    "read_finite_epsilon_proof"
+  ],
+  "not_performed": [
+    "model_import_or_constructor",
+    "numerical_grid_execution",
+    "simulation_execution",
+    "empirical_input_access",
+    "production_source_or_protocol_edit",
+    "external_contact"
+  ],
+  "source_checks": [
+    {
+      "id": "family_survival",
+      "core_line": 39,
+      "status": "consistent",
+      "detail": "Independent daughter branching term alpha*(2g-g^2), stage transitions, and founder mixture."
+    },
+    {
+      "id": "positive_J",
+      "core_line": 56,
+      "status": "consistent",
+      "detail": "Discarded-sister partition gives (1-g)*Jbar + exp(-mu*(x-r))*g; ratio of mixed joint to mixed family probabilities."
+    },
+    {
+      "id": "scaled_positive_defect",
+      "core_line": 108,
+      "status": "consistent",
+      "detail": "Zero-based stage order k-j+1; terminal feedback t^k and source -expm1(-mu*t*v)/t follow by change of variables."
+    },
+    {
+      "id": "eligible_mother_weights",
+      "core_line": 84,
+      "status": "consistent",
+      "detail": "Residual Gamma probability before death/cutoff; eligible rather than initial type weights."
+    },
+    {
+      "id": "sister_covariance",
+      "core_line": 94,
+      "status": "consistent",
+      "detail": "Var_w(K*h); two-type identity rho^2*w0*w1*(h0-h1)^2; not a universal inheritance diagnostic."
+    },
+    {
+      "id": "deterministic_age",
+      "core_line": 155,
+      "status": "consistent",
+      "detail": "Exact finite recursion and first-generation formula; divisions conserve tag mass at boundary."
+    },
+    {
+      "id": "calendar_control",
+      "core_line": 191,
+      "status": "consistent",
+      "detail": "Calendar-specific h(b,T), correct first-division density, pooled variance versus birth-conditioned residual."
+    },
+    {
+      "id": "early_time_initialization",
+      "core_line": 139,
+      "status": "consistent",
+      "detail": "Newborn k+1 and uniform-stage order2 with correct selection denominators; zero-death ratio undefined."
+    },
+    {
+      "id": "finite_epsilon_envelope",
+      "status": "consistent_hand_algebra_only",
+      "detail": "First-sister lower/union upper bounds justify conservative grid exp(-3epsilon)..exp(6epsilon); no interval-arithmetic certification."
+    },
+    {
+      "id": "reporting_scope",
+      "status": "consistent",
+      "detail": "No clinical, first-ever, universal inheritance, or Iyer-refutation overclaim in the reviewed protocol/driver."
+    }
+  ],
+  "initial_findings": [
+    {
+      "id": "R1",
+      "blocking_before_full_execution": false,
+      "status": "resolved_before_full_execution",
+      "file": "scripts/run_age_lineage_models.py",
+      "initial_lines": [
+        153,
+        178
+      ],
+      "issue": "Failure snapshot omits failing standard/strict values and strict/convergence prefix; tuple assignment loses standard value if strict evaluation raises. Output parent is created only on success.",
+      "requested_fix": "Retain stage-aware current case and both prefixes; create output parent before work; preserve prior failure artifacts.",
+      "initially_blocking_before_full_execution": true
+    },
+    {
+      "id": "R2",
+      "blocking_before_full_execution": false,
+      "status": "resolved_before_full_execution",
+      "file": "scripts/run_age_lineage_models.py",
+      "initial_lines": [
+        157,
+        193
+      ],
+      "issue": "NaN can evade numerical-difference comparisons; final serialization failure lies outside preservation handler.",
+      "requested_fix": "Gate all numeric leaves for finiteness; preserve invalid paths and explicit invalid-value representations in serializable failure records; keep success strict JSON.",
+      "initially_blocking_before_full_execution": true
+    }
+  ],
+  "correction_reviews": [
+    {
+      "reviewed_at_utc": "2026-11-10T20:15:21.124974+00:00",
+      "method": "source_inspection_and_exact_prior_core_byte_reconstruction",
+      "core_sha256": "2e7f53d6175b8da9215706e2eaee81758dc058265ff5d3c42583875d21987a59",
+      "driver_sha256": "f85e94dce17d89b2b7ce3bee4ce6bae38d2efa2e837d26fa044a1971ea08a894",
+      "resolved": [
+        "R1",
+        "R2"
+      ],
+      "details": [
+        "Current partial standard/strict records and completed standard/strict/convergence prefixes retained.",
+        "All numeric leaves receive explicit finite-value checks; failure snapshots preserve nonfinite strings and paths.",
+        "Output parents created before execution; both success outputs serialize inside exception handler; prior failures preserved.",
+        "Only core expression change is x=T-t+t*v to x=T-t*(1-v), exact algebraic equivalence; reversing it recovers prior source hash."
+      ],
+      "scientific_grid_or_protocol_changed": false,
+      "runtime_failure_injection_by_reviewer": false
+    }
+  ],
+  "numerical_validation_status": "NOT_RUN_BY_THIS_REVIEW",
+  "scientific_grid_changed": false,
+  "limitations": [
+    "Static review cannot certify solver accuracy, stochastic implementation, actual runtime safeguards, or empirical ascertainment.",
+    "Independent numerical and complete-tree validation remain separate execution gates.",
+    "Permanent shared family environment and persistent inherited type can have identical observable tree distributions."
+  ],
+  "supporting_sources": [
+    {
+      "path": "tmp/age-lineage-2026-11-10/theory-proposal.md",
+      "sha256": "9deef56252e560e32f11094c0f178a88d4f24181a0dd4f2e9c4ba3eaa747c290"
+    },
+    {
+      "path": "tmp/age-lineage-2026-11-10/prior-art.md",
+      "sha256": "8b7628f262f5ef9961c1a2c5520d05edbde4b87a16351f0293c6d2bf0e74198f"
+    }
+  ],
+  "initial_core": {
+    "path": "scripts/age_lineage_models.py",
+    "sha256": "5d006d276896ed881f0db59c42a5a79defcc82342632b6fc60166f7f9c05ca05"
+  },
+  "driver": {
+    "path": "scripts/run_age_lineage_models.py",
+    "sha256": "f85e94dce17d89b2b7ce3bee4ce6bae38d2efa2e837d26fa044a1971ea08a894"
+  },
+  "monte_carlo_static_review": {
+    "status": "NO_BLOCKING_FINDING",
+    "path": "scripts/simulate_age_lineage_trees.py",
+    "sha256": "cbbdb12707fb55641bd2701a3be0c862f4f47d0b758bec7b829239cb6f084c46",
+    "initial_reviewed_sha256": "5158403e252279b3464370fddf934c3b7a294b823ca01d92ca8cf9a4338a2579",
+    "checkpoint_hardening_sha256": "eab90a47dc51010b9c29a382f1c673a7fa7e15e21cfae9e7a041e6157fc3be18",
+    "checks": [
+      "complete_breadth_first_generation",
+      "unrenormalized_chronological_weights",
+      "administrative_endpoint_births_and_event_ties",
+      "prospective_first_pair_eligibility_and_equal_lag",
+      "independent_daughter_types_and_stage_reset",
+      "founder_ratio_influence_MCSE",
+      "paired_contrast_influence_MCSE",
+      "eligible_pair_covariance_approximate_MCSE",
+      "birth_specific_calendar_residual",
+      "undefined_and_low_precision_preservation",
+      "resource_failure_and_checkpoint_guards",
+      "code_protocol_and_python_numpy_scipy_resume_pins"
+    ],
+    "provenance_suggestion_resolved": "SciPy version added to run/resume signature before first scientific execution.",
+    "author_fixture_report": {
+      "path": "tmp/age-lineage-2026-11-10/monte-carlo-fixtures-final.json",
+      "sha256": "cfd89914e59253e232d444ca5dc77ee57eb6530172e4003acf6a014212278a5f",
+      "reported_status": "pass",
+      "reported_count": 28,
+      "scientific_simulations_run": false,
+      "independently_executed_by_this_reviewer": false
+    },
+    "scientific_outcomes_read_or_executed": false
+  },
+  "review_completed_at_utc": "2026-11-10T20:15:21.125167+00:00"
+}

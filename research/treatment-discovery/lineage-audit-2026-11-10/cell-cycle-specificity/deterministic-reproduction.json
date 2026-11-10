@@ -1,0 +1,490 @@
+{
+  "created_utc": "2026-11-10T20:24:46.907795+00:00",
+  "status": "PASS",
+  "scope": "One isolated deterministic reproduction; no code, model, grid, seed, original output or tolerance change. No Monte Carlo rerun.",
+  "isolated_root": "tmp/age-lineage-2026-11-10/deterministic-reproduction-20261110T202341Z",
+  "python": "<project>/tmp/egfr-resistance-2026-11-10/venv/bin/python",
+  "orchestrator_path": "tmp/age-lineage-2026-11-10/deterministic-reproduction-20261110T202341Z/reproduce.py",
+  "orchestrator_sha256": "db84db759abdd265895f09c5e5430588f07adb28ebfbcbef7453feda67497868",
+  "copy_manifest_sha256": "a7790d19d248e0f18bd2ecb2d97e39797f2bb8bd588302facde8626782b76f87",
+  "copied_inputs": [
+    {
+      "path": "scripts/age_lineage_models.py",
+      "sha256": "2e7f53d6175b8da9215706e2eaee81758dc058265ff5d3c42583875d21987a59",
+      "bytes": 11706
+    },
+    {
+      "path": "scripts/run_age_lineage_models.py",
+      "sha256": "f85e94dce17d89b2b7ce3bee4ce6bae38d2efa2e837d26fa044a1971ea08a894",
+      "bytes": 12916
+    },
+    {
+      "path": "scripts/verify_age_lineage_models.py",
+      "sha256": "4c6ed695f526d8ec07df9a4dafe4e4572e1bef0529c7d70a61a19f6a666e8883",
+      "bytes": 22921
+    },
+    {
+      "path": "scripts/compare_age_lineage_references.py",
+      "sha256": "84606220d22bf264a5fca600569979f2c84f4ca2bf90da04687a87af5f3548ab",
+      "bytes": 16174
+    },
+    {
+      "path": "scripts/check_age_lineage_fixtures.py",
+      "sha256": "276f1f426c56b33c5642ced041280d14b017b26e7a8b569c7b0191b34bbbed29",
+      "bytes": 3645
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/protocol.json",
+      "sha256": "e7fe08e71d614f27f7d312a6afa7cf64d8022cba2af908cc92c7965d7d6caeb5",
+      "bytes": 32757
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/plan-freeze.json",
+      "sha256": "48dbf1dc110fa954cc765ead9c248de31885a59d6ed0a15d5ad0225c8dea9f41",
+      "bytes": 1030
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/results.json",
+      "sha256": "b02399e0f46b5f484dc8f1f7c9c9680e8d725898758db08e21f80ae7ca2a75f8",
+      "bytes": 1090964
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/strict-results.json",
+      "sha256": "3c145e400977760aba7892b0416fac9c56c0fd915cd93a53d99585dbe1609252",
+      "bytes": 1073382
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/independent-reference.json",
+      "sha256": "0e53f27c4be7a362cad7a2aa093c35c3beb24bf7fa0afbc5c53bb491f13b7ef8",
+      "bytes": 728387
+    }
+  ],
+  "commands": [
+    {
+      "label": "01-environment",
+      "argv": [
+        "<project>/tmp/egfr-resistance-2026-11-10/venv/bin/python",
+        "-c",
+        "import sys,platform,numpy,scipy,json; print(json.dumps({\"python\":sys.version,\"executable\":sys.executable,\"platform\":platform.platform(),\"numpy\":numpy.__version__,\"scipy\":scipy.__version__}))"
+      ],
+      "cwd": "<project>/tmp/age-lineage-2026-11-10/deterministic-reproduction-20261110T202341Z",
+      "started_utc": "2026-11-10T20:24:24.603589+00:00",
+      "finished_utc": "2026-11-10T20:24:24.679912+00:00",
+      "elapsed_seconds": 0.0762384160188958,
+      "exit_code": 0,
+      "log_path": "tmp/age-lineage-2026-11-10/deterministic-reproduction-20261110T202341Z/logs/01-environment.txt",
+      "log_sha256": "5f8b7a7bf134f5b2b48634e5dc4c80cc5cf638a7517e6b2272360f1306c4a640"
+    },
+    {
+      "label": "02-primary-cli-help",
+      "argv": [
+        "<project>/tmp/egfr-resistance-2026-11-10/venv/bin/python",
+        "scripts/run_age_lineage_models.py",
+        "--help"
+      ],
+      "cwd": "<project>/tmp/age-lineage-2026-11-10/deterministic-reproduction-20261110T202341Z",
+      "started_utc": "2026-11-10T20:24:24.680201+00:00",
+      "finished_utc": "2026-11-10T20:24:24.922523+00:00",
+      "elapsed_seconds": 0.24233629199443385,
+      "exit_code": 0,
+      "log_path": "tmp/age-lineage-2026-11-10/deterministic-reproduction-20261110T202341Z/logs/02-primary-cli-help.txt",
+      "log_sha256": "638db8c46dae6bc69aa15307d42ba7610e054ed5dbf4c89c3044dc2269480668"
+    },
+    {
+      "label": "03-reference-cli-help",
+      "argv": [
+        "<project>/tmp/egfr-resistance-2026-11-10/venv/bin/python",
+        "scripts/verify_age_lineage_models.py",
+        "--help"
+      ],
+      "cwd": "<project>/tmp/age-lineage-2026-11-10/deterministic-reproduction-20261110T202341Z",
+      "started_utc": "2026-11-10T20:24:24.922738+00:00",
+      "finished_utc": "2026-11-10T20:24:25.107574+00:00",
+      "elapsed_seconds": 0.18485050002345815,
+      "exit_code": 0,
+      "log_path": "tmp/age-lineage-2026-11-10/deterministic-reproduction-20261110T202341Z/logs/03-reference-cli-help.txt",
+      "log_sha256": "4957e4cd4383578a2018b08cbcd17852411c176e0719b658f4c987b92ea5d59d"
+    },
+    {
+      "label": "04-primary-fixtures",
+      "argv": [
+        "<project>/tmp/egfr-resistance-2026-11-10/venv/bin/python",
+        "scripts/check_age_lineage_fixtures.py"
+      ],
+      "cwd": "<project>/tmp/age-lineage-2026-11-10/deterministic-reproduction-20261110T202341Z",
+      "started_utc": "2026-11-10T20:24:25.107861+00:00",
+      "finished_utc": "2026-11-10T20:24:25.294552+00:00",
+      "elapsed_seconds": 0.18668620800599456,
+      "exit_code": 0,
+      "log_path": "tmp/age-lineage-2026-11-10/deterministic-reproduction-20261110T202341Z/logs/04-primary-fixtures.txt",
+      "log_sha256": "8cf9776957d266b5b6e54d47acdc0813d8bc46650c839efcd43f4519e330c0af"
+    },
+    {
+      "label": "05-reference-fixtures",
+      "argv": [
+        "<project>/tmp/egfr-resistance-2026-11-10/venv/bin/python",
+        "scripts/verify_age_lineage_models.py",
+        "--fixtures",
+        "--out",
+        "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/reproduced-reference-fixtures.json"
+      ],
+      "cwd": "<project>/tmp/age-lineage-2026-11-10/deterministic-reproduction-20261110T202341Z",
+      "started_utc": "2026-11-10T20:24:25.294799+00:00",
+      "finished_utc": "2026-11-10T20:24:25.482136+00:00",
+      "elapsed_seconds": 0.18735025002388284,
+      "exit_code": 0,
+      "log_path": "tmp/age-lineage-2026-11-10/deterministic-reproduction-20261110T202341Z/logs/05-reference-fixtures.txt",
+      "log_sha256": "c796cba14f9ae4b6487971d5361f1b71240108d238ec9674ea88f5a4551d2cc5"
+    },
+    {
+      "label": "06-primary-and-strict",
+      "argv": [
+        "<project>/tmp/egfr-resistance-2026-11-10/venv/bin/python",
+        "scripts/run_age_lineage_models.py",
+        "--out",
+        "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/reproduced-results.json",
+        "--strict-out",
+        "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/reproduced-strict-results.json"
+      ],
+      "cwd": "<project>/tmp/age-lineage-2026-11-10/deterministic-reproduction-20261110T202341Z",
+      "started_utc": "2026-11-10T20:24:25.482393+00:00",
+      "finished_utc": "2026-11-10T20:24:41.737374+00:00",
+      "elapsed_seconds": 16.255133749975357,
+      "exit_code": 0,
+      "log_path": "tmp/age-lineage-2026-11-10/deterministic-reproduction-20261110T202341Z/logs/06-primary-and-strict.txt",
+      "log_sha256": "bca59d9c168f784342694bbe967e4fa0b0c34b00c328d104770e91aefdda86cb"
+    },
+    {
+      "label": "07-independent-reference",
+      "argv": [
+        "<project>/tmp/egfr-resistance-2026-11-10/venv/bin/python",
+        "scripts/verify_age_lineage_models.py",
+        "--run",
+        "--out",
+        "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/reproduced-independent-reference.json"
+      ],
+      "cwd": "<project>/tmp/age-lineage-2026-11-10/deterministic-reproduction-20261110T202341Z",
+      "started_utc": "2026-11-10T20:24:41.737676+00:00",
+      "finished_utc": "2026-11-10T20:24:46.186931+00:00",
+      "elapsed_seconds": 4.449336541001685,
+      "exit_code": 0,
+      "log_path": "tmp/age-lineage-2026-11-10/deterministic-reproduction-20261110T202341Z/logs/07-independent-reference.txt",
+      "log_sha256": "8e04e2dc12f755540355ace501e305da04d5b9823a92555fb165968b7408b5d1"
+    },
+    {
+      "label": "08-pinned-reference-comparison",
+      "argv": [
+        "<project>/tmp/egfr-resistance-2026-11-10/venv/bin/python",
+        "scripts/compare_age_lineage_references.py"
+      ],
+      "cwd": "<project>/tmp/age-lineage-2026-11-10/deterministic-reproduction-20261110T202341Z",
+      "started_utc": "2026-11-10T20:24:46.187228+00:00",
+      "finished_utc": "2026-11-10T20:24:46.700513+00:00",
+      "elapsed_seconds": 0.5133195830276236,
+      "exit_code": 0,
+      "log_path": "tmp/age-lineage-2026-11-10/deterministic-reproduction-20261110T202341Z/logs/08-pinned-reference-comparison.txt",
+      "log_sha256": "115c4ab26a1b1a866361de12e56a7d66c41273e07ab0b68670817b2b75959423"
+    }
+  ],
+  "scientific_comparisons": [
+    {
+      "artifact": "primary_fixtures",
+      "original_path": "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/primary-fixtures.json",
+      "reproduced_path": "tmp/age-lineage-2026-11-10/deterministic-reproduction-20261110T202341Z/research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/primary-fixtures.json",
+      "original_file_sha256": "b9683168a4d07e47084dee1f1c698d345a629d59db614ecdc47bdd57afacabb5",
+      "reproduced_file_sha256": "8cf9776957d266b5b6e54d47acdc0813d8bc46650c839efcd43f4519e330c0af",
+      "excluded_root_fields": [
+        {
+          "root_field": "created_utc",
+          "reason": "Timestamp or elapsed runtime; no scientific value excluded."
+        }
+      ],
+      "original_scientific_payload_sha256": "79fd3a8f9a1b637b2109050da5c0bcdf1467b1a3af954ec10595790f5d210a2c",
+      "reproduced_scientific_payload_sha256": "79fd3a8f9a1b637b2109050da5c0bcdf1467b1a3af954ec10595790f5d210a2c",
+      "status": "EXACT_SCIENTIFIC_MATCH",
+      "numeric_leaves": 1,
+      "nonnumeric_leaves": 15,
+      "exact_numeric_mismatches": 0,
+      "maximum_absolute_numeric_difference": 0.0,
+      "maximum_relative_numeric_difference": 0.0,
+      "all_differences": []
+    },
+    {
+      "artifact": "reference_fixtures",
+      "original_path": "tmp/age-lineage-2026-11-10/reference-fixtures-v2.json",
+      "reproduced_path": "tmp/age-lineage-2026-11-10/deterministic-reproduction-20261110T202341Z/research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/reproduced-reference-fixtures.json",
+      "original_file_sha256": "bf6ca038b7143389485c0775d211ca4eb4a5dcf6e594a6cbd9f7cb863f27d482",
+      "reproduced_file_sha256": "c796cba14f9ae4b6487971d5361f1b71240108d238ec9674ea88f5a4551d2cc5",
+      "excluded_root_fields": [
+        {
+          "root_field": "created_utc",
+          "reason": "Timestamp or elapsed runtime; no scientific value excluded."
+        }
+      ],
+      "original_scientific_payload_sha256": "38089482789f6c61a1fdd44aeb0a2622f922df62335a709ae52bb808fdaf430a",
+      "reproduced_scientific_payload_sha256": "38089482789f6c61a1fdd44aeb0a2622f922df62335a709ae52bb808fdaf430a",
+      "status": "EXACT_SCIENTIFIC_MATCH",
+      "numeric_leaves": 1,
+      "nonnumeric_leaves": 11,
+      "exact_numeric_mismatches": 0,
+      "maximum_absolute_numeric_difference": 0.0,
+      "maximum_relative_numeric_difference": 0.0,
+      "all_differences": []
+    },
+    {
+      "artifact": "primary_results",
+      "original_path": "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/results.json",
+      "reproduced_path": "tmp/age-lineage-2026-11-10/deterministic-reproduction-20261110T202341Z/research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/reproduced-results.json",
+      "original_file_sha256": "b02399e0f46b5f484dc8f1f7c9c9680e8d725898758db08e21f80ae7ca2a75f8",
+      "reproduced_file_sha256": "7e40651bc655a7baa188e39317f8af03567cf733bb7a6c7c5d7cd60a311245e4",
+      "excluded_root_fields": [
+        {
+          "root_field": "created_utc",
+          "reason": "Timestamp or elapsed runtime; no scientific value excluded."
+        },
+        {
+          "root_field": "runtime_seconds",
+          "reason": "Timestamp or elapsed runtime; no scientific value excluded."
+        }
+      ],
+      "original_scientific_payload_sha256": "739d3ab99c36479cbf123610dc4f49a21b04c47af9154e2516aa5ce85de7d8f1",
+      "reproduced_scientific_payload_sha256": "739d3ab99c36479cbf123610dc4f49a21b04c47af9154e2516aa5ce85de7d8f1",
+      "status": "EXACT_SCIENTIFIC_MATCH",
+      "numeric_leaves": 22031,
+      "nonnumeric_leaves": 2066,
+      "exact_numeric_mismatches": 0,
+      "maximum_absolute_numeric_difference": 0.0,
+      "maximum_relative_numeric_difference": 0.0,
+      "all_differences": []
+    },
+    {
+      "artifact": "strict_results",
+      "original_path": "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/strict-results.json",
+      "reproduced_path": "tmp/age-lineage-2026-11-10/deterministic-reproduction-20261110T202341Z/research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/reproduced-strict-results.json",
+      "original_file_sha256": "3c145e400977760aba7892b0416fac9c56c0fd915cd93a53d99585dbe1609252",
+      "reproduced_file_sha256": "bc80a61ccd5e2b9088c28546f9c0ce7629c5ebaf768faabc453c13e16c085886",
+      "excluded_root_fields": [
+        {
+          "root_field": "created_utc",
+          "reason": "Timestamp or elapsed runtime; no scientific value excluded."
+        }
+      ],
+      "original_scientific_payload_sha256": "3bc4648085111e9f25aebb8f7638651cf317a876c8504d61029bcd290d386d9e",
+      "reproduced_scientific_payload_sha256": "3bc4648085111e9f25aebb8f7638651cf317a876c8504d61029bcd290d386d9e",
+      "status": "EXACT_SCIENTIFIC_MATCH",
+      "numeric_leaves": 21883,
+      "nonnumeric_leaves": 1845,
+      "exact_numeric_mismatches": 0,
+      "maximum_absolute_numeric_difference": 0.0,
+      "maximum_relative_numeric_difference": 0.0,
+      "all_differences": []
+    },
+    {
+      "artifact": "independent_reference",
+      "original_path": "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/independent-reference.json",
+      "reproduced_path": "tmp/age-lineage-2026-11-10/deterministic-reproduction-20261110T202341Z/research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/reproduced-independent-reference.json",
+      "original_file_sha256": "0e53f27c4be7a362cad7a2aa093c35c3beb24bf7fa0afbc5c53bb491f13b7ef8",
+      "reproduced_file_sha256": "db27d94dadc81c7bfadf933e77409484061a339178363656e066d62e40dcff4c",
+      "excluded_root_fields": [
+        {
+          "root_field": "generated_at_utc",
+          "reason": "Timestamp or elapsed runtime; no scientific value excluded."
+        },
+        {
+          "root_field": "runtime_seconds",
+          "reason": "Timestamp or elapsed runtime; no scientific value excluded."
+        }
+      ],
+      "original_scientific_payload_sha256": "773ab0ab8460c73659d0286059a2e37dcbca6909471f115782a399bd1ceb2d29",
+      "reproduced_scientific_payload_sha256": "773ab0ab8460c73659d0286059a2e37dcbca6909471f115782a399bd1ceb2d29",
+      "status": "EXACT_SCIENTIFIC_MATCH",
+      "numeric_leaves": 18876,
+      "nonnumeric_leaves": 699,
+      "exact_numeric_mismatches": 0,
+      "maximum_absolute_numeric_difference": 0.0,
+      "maximum_relative_numeric_difference": 0.0,
+      "all_differences": []
+    },
+    {
+      "artifact": "pinned_comparator",
+      "original_path": "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/independent-comparison.json",
+      "reproduced_path": "tmp/age-lineage-2026-11-10/deterministic-reproduction-20261110T202341Z/research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/independent-comparison.json",
+      "original_file_sha256": "483328c4c29ea1e80195fea17ade637fbc1b64f32297210f7c55e66a4c89d36e",
+      "reproduced_file_sha256": "914394ee9c6b6cf6fd7bc8275c5629c515ac46a8d242a1de132313f6393ae6ec",
+      "excluded_root_fields": [
+        {
+          "root_field": "created_utc",
+          "reason": "Timestamp or elapsed runtime; no scientific value excluded."
+        }
+      ],
+      "original_scientific_payload_sha256": "3e2530fe49a20804e7dc6661041637971964843f743dc2c3fcbe960d78607404",
+      "reproduced_scientific_payload_sha256": "3e2530fe49a20804e7dc6661041637971964843f743dc2c3fcbe960d78607404",
+      "status": "EXACT_SCIENTIFIC_MATCH",
+      "numeric_leaves": 80779,
+      "nonnumeric_leaves": 27469,
+      "exact_numeric_mismatches": 0,
+      "maximum_absolute_numeric_difference": 0.0,
+      "maximum_relative_numeric_difference": 0.0,
+      "all_differences": []
+    }
+  ],
+  "outputs": [
+    {
+      "path": "tmp/age-lineage-2026-11-10/deterministic-reproduction-20261110T202341Z/research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/primary-fixtures.json",
+      "sha256": "8cf9776957d266b5b6e54d47acdc0813d8bc46650c839efcd43f4519e330c0af",
+      "bytes": 833
+    },
+    {
+      "path": "tmp/age-lineage-2026-11-10/deterministic-reproduction-20261110T202341Z/research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/reproduced-reference-fixtures.json",
+      "sha256": "c796cba14f9ae4b6487971d5361f1b71240108d238ec9674ea88f5a4551d2cc5",
+      "bytes": 663
+    },
+    {
+      "path": "tmp/age-lineage-2026-11-10/deterministic-reproduction-20261110T202341Z/research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/reproduced-results.json",
+      "sha256": "7e40651bc655a7baa188e39317f8af03567cf733bb7a6c7c5d7cd60a311245e4",
+      "bytes": 1090963
+    },
+    {
+      "path": "tmp/age-lineage-2026-11-10/deterministic-reproduction-20261110T202341Z/research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/reproduced-strict-results.json",
+      "sha256": "bc80a61ccd5e2b9088c28546f9c0ce7629c5ebaf768faabc453c13e16c085886",
+      "bytes": 1073382
+    },
+    {
+      "path": "tmp/age-lineage-2026-11-10/deterministic-reproduction-20261110T202341Z/research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/reproduced-independent-reference.json",
+      "sha256": "db27d94dadc81c7bfadf933e77409484061a339178363656e066d62e40dcff4c",
+      "bytes": 728386
+    },
+    {
+      "path": "tmp/age-lineage-2026-11-10/deterministic-reproduction-20261110T202341Z/research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/independent-comparison.json",
+      "sha256": "914394ee9c6b6cf6fd7bc8275c5629c515ac46a8d242a1de132313f6393ae6ec",
+      "bytes": 4838901
+    }
+  ],
+  "original_preservation": [
+    {
+      "path": "scripts/age_lineage_models.py",
+      "sha256": "2e7f53d6175b8da9215706e2eaee81758dc058265ff5d3c42583875d21987a59",
+      "sha256_after": "2e7f53d6175b8da9215706e2eaee81758dc058265ff5d3c42583875d21987a59",
+      "unchanged": true
+    },
+    {
+      "path": "scripts/run_age_lineage_models.py",
+      "sha256": "f85e94dce17d89b2b7ce3bee4ce6bae38d2efa2e837d26fa044a1971ea08a894",
+      "sha256_after": "f85e94dce17d89b2b7ce3bee4ce6bae38d2efa2e837d26fa044a1971ea08a894",
+      "unchanged": true
+    },
+    {
+      "path": "scripts/verify_age_lineage_models.py",
+      "sha256": "4c6ed695f526d8ec07df9a4dafe4e4572e1bef0529c7d70a61a19f6a666e8883",
+      "sha256_after": "4c6ed695f526d8ec07df9a4dafe4e4572e1bef0529c7d70a61a19f6a666e8883",
+      "unchanged": true
+    },
+    {
+      "path": "scripts/compare_age_lineage_references.py",
+      "sha256": "84606220d22bf264a5fca600569979f2c84f4ca2bf90da04687a87af5f3548ab",
+      "sha256_after": "84606220d22bf264a5fca600569979f2c84f4ca2bf90da04687a87af5f3548ab",
+      "unchanged": true
+    },
+    {
+      "path": "scripts/check_age_lineage_fixtures.py",
+      "sha256": "276f1f426c56b33c5642ced041280d14b017b26e7a8b569c7b0191b34bbbed29",
+      "sha256_after": "276f1f426c56b33c5642ced041280d14b017b26e7a8b569c7b0191b34bbbed29",
+      "unchanged": true
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/protocol.json",
+      "sha256": "e7fe08e71d614f27f7d312a6afa7cf64d8022cba2af908cc92c7965d7d6caeb5",
+      "sha256_after": "e7fe08e71d614f27f7d312a6afa7cf64d8022cba2af908cc92c7965d7d6caeb5",
+      "unchanged": true
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/plan-freeze.json",
+      "sha256": "48dbf1dc110fa954cc765ead9c248de31885a59d6ed0a15d5ad0225c8dea9f41",
+      "sha256_after": "48dbf1dc110fa954cc765ead9c248de31885a59d6ed0a15d5ad0225c8dea9f41",
+      "unchanged": true
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/results.json",
+      "sha256": "b02399e0f46b5f484dc8f1f7c9c9680e8d725898758db08e21f80ae7ca2a75f8",
+      "sha256_after": "b02399e0f46b5f484dc8f1f7c9c9680e8d725898758db08e21f80ae7ca2a75f8",
+      "unchanged": true
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/strict-results.json",
+      "sha256": "3c145e400977760aba7892b0416fac9c56c0fd915cd93a53d99585dbe1609252",
+      "sha256_after": "3c145e400977760aba7892b0416fac9c56c0fd915cd93a53d99585dbe1609252",
+      "unchanged": true
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/independent-reference.json",
+      "sha256": "0e53f27c4be7a362cad7a2aa093c35c3beb24bf7fa0afbc5c53bb491f13b7ef8",
+      "sha256_after": "0e53f27c4be7a362cad7a2aa093c35c3beb24bf7fa0afbc5c53bb491f13b7ef8",
+      "unchanged": true
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/primary-fixtures.json",
+      "sha256": "b9683168a4d07e47084dee1f1c698d345a629d59db614ecdc47bdd57afacabb5",
+      "sha256_after": "b9683168a4d07e47084dee1f1c698d345a629d59db614ecdc47bdd57afacabb5",
+      "unchanged": true
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/independent-comparison.json",
+      "sha256": "483328c4c29ea1e80195fea17ade637fbc1b64f32297210f7c55e66a4c89d36e",
+      "sha256_after": "483328c4c29ea1e80195fea17ade637fbc1b64f32297210f7c55e66a4c89d36e",
+      "unchanged": true
+    },
+    {
+      "path": "tmp/age-lineage-2026-11-10/reference-fixtures-v2.json",
+      "sha256": "bf6ca038b7143389485c0775d211ca4eb4a5dcf6e594a6cbd9f7cb863f27d482",
+      "sha256_after": "bf6ca038b7143389485c0775d211ca4eb4a5dcf6e594a6cbd9f7cb863f27d482",
+      "unchanged": true
+    }
+  ],
+  "terminal_statuses": {
+    "primary": "PASS",
+    "primary_cases": 72,
+    "primary_contrasts": 864,
+    "primary_early_rows": 567,
+    "reference": "REFERENCE_GENERATED_WITHOUT_READING_PRODUCTION_OUTPUT",
+    "reference_counts": {
+      "cases": 72,
+      "contrasts": 864,
+      "pair_records": 216,
+      "early_records": 567
+    }
+  },
+  "exact_scientific_reproduction": true,
+  "comparison_contract": "The unmodified comparator hard-pins original input hashes. It was rerun against byte-identical copied originals to a new isolated comparison output. New primary/strict/reference outputs were independently exhaustively compared to those original scientific payloads; exact equality establishes the same cross-formulation comparison for reproduced values. No hash bypass or code patch was used.",
+  "exclusions": "Only explicitly listed root timestamps and elapsed runtime fields; no scientific number, code hash, protocol hash or model metadata omitted.",
+  "failure": null,
+  "limits": [
+    "Same machine and scientific Python environment, not cross-platform reproducibility.",
+    "Deterministic implementation replication does not establish biological validity or external empirical reproducibility."
+  ],
+  "publication_metadata_transformation": {
+    "status": "PATH_METADATA_ONLY",
+    "raw_report_path": "tmp/age-lineage-2026-11-10/deterministic-reproduction-20261110T202341Z/deterministic-reproduction-raw.json",
+    "raw_report_sha256": "47c16f8186384dd5c1d58ebf89d4765a1633a65e4b518e6a5becdb4e4b98bec3",
+    "replacement": "Absolute local project prefix replaced by <project> in path metadata only. Scientific values, recorded artifact hashes and all other fields are unchanged.",
+    "transformed_fields": [
+      "$.python",
+      "$.commands[0].argv[0]",
+      "$.commands[0].cwd",
+      "$.commands[1].argv[0]",
+      "$.commands[1].cwd",
+      "$.commands[2].argv[0]",
+      "$.commands[2].cwd",
+      "$.commands[3].argv[0]",
+      "$.commands[3].cwd",
+      "$.commands[4].argv[0]",
+      "$.commands[4].cwd",
+      "$.commands[5].argv[0]",
+      "$.commands[5].cwd",
+      "$.commands[6].argv[0]",
+      "$.commands[6].cwd",
+      "$.commands[7].argv[0]",
+      "$.commands[7].cwd"
+    ],
+    "reversibility_check": "Replacing <project> with the local project root exactly recovered the original JSON object before this explanatory field was added."
+  }
+}

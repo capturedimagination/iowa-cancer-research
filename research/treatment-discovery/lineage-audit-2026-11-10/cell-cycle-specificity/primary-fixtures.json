@@ -1,0 +1,21 @@
+{
+  "created_utc": "2026-11-10T20:15:20.206364+00:00",
+  "passed": true,
+  "checks": [
+    "one_stage_closed_form",
+    "positive_loss_complement",
+    "competing_clock_qualification",
+    "selected_maternal_weights",
+    "inherited_zero_death_blind_spot",
+    "deterministic_first_generation",
+    "no_division_undefined_pairs",
+    "invalid_horizon_rejected",
+    "nonfinite_outcome_rejected",
+    "invalid_numbers_preserved_explicitly"
+  ],
+  "check_count": 10,
+  "script_sha256": "276f1f426c56b33c5642ced041280d14b017b26e7a8b569c7b0191b34bbbed29",
+  "core_sha256": "2e7f53d6175b8da9215706e2eaee81758dc058265ff5d3c42583875d21987a59",
+  "driver_sha256": "f85e94dce17d89b2b7ce3bee4ce6bae38d2efa2e837d26fa044a1971ea08a894",
+  "scope": "Separate analytic and failure-path fixtures, not a main-grid result or biological validation."
+}

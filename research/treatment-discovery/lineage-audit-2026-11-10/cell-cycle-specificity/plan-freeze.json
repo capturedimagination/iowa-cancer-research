@@ -1,0 +1,13 @@
+{
+  "frozen_at_utc": "2026-11-10T20:09:03.733902+00:00",
+  "protocol_sha256": "e7fe08e71d614f27f7d312a6afa7cf64d8022cba2af908cc92c7965d7d6caeb5",
+  "draft_sha256": "bdbf92b96aeda55630264584437aed93553486467910fc63b4e134286373da72",
+  "scope": "Local pre-computation freeze, not external preregistration. Symbolic derivations, published source findings and analytic resource estimates already known; no new Q/contrast/covariance/early-time numerical grid or full-tree outcomes generated.",
+  "outcomes_generated": false,
+  "planning_inputs": {
+    "tmp/hct116-missing-bounds/next-design-proposal.md": "80a907282a3a36714f78497236da250a17c10595081726b57f4bc82eca3cea53",
+    "tmp/age-lineage-2026-11-10/simulation-proposal.md": "fab31bcad77df99b452a47f5d167775d9e16890b8ba0624706924f2538c02508",
+    "tmp/age-lineage-2026-11-10/prior-art.md": "8b7628f262f5ef9961c1a2c5520d05edbde4b87a16351f0293c6d2bf0e74198f",
+    "tmp/age-lineage-2026-11-10/prior-art.json": "62ee60fc1afd93f8c7c66300e522a0b83d7d28d8384556564db6bc3afb58609b"
+  }
+}

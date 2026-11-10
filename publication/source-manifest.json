@@ -10,7 +10,7 @@
     "Ephemeral tmp working files/environments are excluded from the inventory; durable source originals have their own dated paths and provenance."
   ],
   "counts": {
-    "included": 439,
+    "included": 487,
     "local_generated": 1,
     "linked_source_only": 87
   },
@@ -32,6 +32,7 @@
     "publication/sanitization-log.json",
     "publication/source-manifest.json",
     "publication/verification-2026-11-10.json",
+    "publication/verification-cell-cycle-2026-11-10.json",
     "publication/verification-discovery-2026-11-10.json",
     "publication/verification-lineage-2026-11-10.json",
     "publication/verification-missing-branches-2026-11-10.json",
@@ -208,6 +209,44 @@
     "research/treatment-discovery/lineage-audit-2026-11-10/README.md",
     "research/treatment-discovery/lineage-audit-2026-11-10/calendar-rate-independent-review.json",
     "research/treatment-discovery/lineage-audit-2026-11-10/calendar-rate-independent-review.md",
+    "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/README.md",
+    "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/deterministic-reproduction.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/deterministic-reproduction.md",
+    "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/display-summary.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/early-time-order.svg",
+    "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/implementation-review.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/implementation-review.md",
+    "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/independent-comparison.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/independent-comparison.md",
+    "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/independent-reference.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/interpretation-review.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/interpretation-review.md",
+    "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/monte-carlo-reproduction.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/monte-carlo-reproduction.md",
+    "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/monte-carlo/comparison-amendment-original.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/monte-carlo/comparison-amendment.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/monte-carlo/comparison-freeze-v1.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/monte-carlo/comparison-freeze-v2-before-note-clarification.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/monte-carlo/comparison-freeze.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/monte-carlo/comparison.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/monte-carlo/comparison.md",
+    "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/monte-carlo/results.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/monte-carlo/run-freeze-publication-note.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/monte-carlo/run-freeze.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/monte-carlo/sparse-contribution-diagnostic.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/monte-carlo/sparse-contribution-diagnostic.md",
+    "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/plan-freeze.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/primary-code-pin.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/primary-fixtures.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/prior-art.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/prior-art.md",
+    "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/protocol-draft.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/protocol.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/research-use.md",
+    "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/results.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/selection-specificity.svg",
+    "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/strict-results.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/theory.md",
     "research/treatment-discovery/lineage-audit-2026-11-10/encoding-checks.json",
     "research/treatment-discovery/lineage-audit-2026-11-10/full-tree-review-freeze.json",
     "research/treatment-discovery/lineage-audit-2026-11-10/full-tree-review-protocol.json",
@@ -345,6 +384,7 @@
     "research/us-state-mortality-2020-2024.csv",
     "research/winnebago-2000-personal-wood-dust.csv",
     "scripts/add_gap_ocr_sidecars.py",
+    "scripts/age_lineage_models.py",
     "scripts/analyze_industry_records.py",
     "scripts/audit_hct116_lineage_structure.py",
     "scripts/audit_maynard_malignant_membership.py",
@@ -358,6 +398,7 @@
     "scripts/build_knowledge_base.py",
     "scripts/build_report.py",
     "scripts/build_services_evidence.py",
+    "scripts/check_age_lineage_fixtures.py",
     "scripts/check_compilation.py",
     "scripts/check_egfr_curvature_design.py",
     "scripts/check_lineage_family_sampling.py",
@@ -366,12 +407,16 @@
     "scripts/check_oren_lineage_encoding.py",
     "scripts/check_publication.py",
     "scripts/check_signature_depth.py",
+    "scripts/compare_age_lineage_monte_carlo.py",
+    "scripts/compare_age_lineage_references.py",
+    "scripts/diagnose_age_lineage_contrasts.py",
     "scripts/extract_iowa_title_v_2024.py",
     "scripts/extract_maynard_seurat_object.py",
     "scripts/fetch_iowa_tri_history.py",
     "scripts/lineage_joint_bounds.py",
     "scripts/lineage_missing_bounds.py",
     "scripts/ocr_pdf_applevision.swift",
+    "scripts/plot_age_lineage_results.py",
     "scripts/plot_gse292469_signature.py",
     "scripts/plot_hct116_missing_bounds.py",
     "scripts/plot_lineage_family_sampling.py",
@@ -383,12 +428,15 @@
     "scripts/review_gse292469_signature.py",
     "scripts/review_hct116_joint_bounds.py",
     "scripts/review_hct116_primary_bounds.py",
+    "scripts/run_age_lineage_models.py",
     "scripts/run_gse292469_signature.py",
     "scripts/run_nsclc_benchmark.py",
+    "scripts/simulate_age_lineage_trees.py",
     "scripts/simulate_egfr_curvature_design.py",
     "scripts/simulate_egfr_state_dynamics.py",
     "scripts/simulate_lineage_family_sampling.py",
     "scripts/simulate_signature_depth.py",
+    "scripts/verify_age_lineage_models.py",
     "scripts/verify_lineage_joint_bounds.py",
     "scripts/verify_lineage_missing_forest.py",
     "sources/HF2635-Signed-2026.ocr.provenance.json",
@@ -478,8 +526,8 @@
     },
     {
       "path": "AGENTS.md",
-      "bytes": 2709,
-      "sha256": "d31b7a57c73f816bf7bd8ca1808a88c65e3f94a2c5fe7278a29011dbbed00a4c",
+      "bytes": 3195,
+      "sha256": "2172bf05fe756b5f146ca7d7d7673235cff4b5cb3a2dd328a2bd0ae6d15d5c9b",
       "publication_status": "included",
       "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
       "upstream_urls": []
@@ -510,16 +558,16 @@
     },
     {
       "path": "PUBLICATION.md",
-      "bytes": 10406,
-      "sha256": "a3fcd4058e5d4c9051d968e085502113023649862377de91768c109cd85c8cb3",
+      "bytes": 11059,
+      "sha256": "b3a16e2687bab7d88b0125be9f92f771239ab2048a284dfc8338a7dce3961fad",
       "publication_status": "included",
       "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
       "upstream_urls": []
     },
     {
       "path": "README.md",
-      "bytes": 6564,
-      "sha256": "1f1b4a45ac7195f2193bc8aa0106d8d39f363f5fcd8f570be959b4900127f5fa",
+      "bytes": 6958,
+      "sha256": "511f9bdbf6da85bcbe5fd0fb0f3055556f6f39fadd5f2db403768911734ebcd7",
       "publication_status": "included",
       "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
       "upstream_urls": [
@@ -537,8 +585,8 @@
     },
     {
       "path": "knowledge/INDEX.md",
-      "bytes": 15431,
-      "sha256": "25642f984affbd2b13e4385b07e05f72e5ec0ddc28bc2ea7fc4c95ee6df1a2e2",
+      "bytes": 15922,
+      "sha256": "167a9ad98eb4ff3eb43dc0c6c3cbe52d749452fd5d37444fde5317d684bbf09e",
       "publication_status": "included",
       "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
       "upstream_urls": []
@@ -546,7 +594,7 @@
     {
       "path": "knowledge/build-manifest.json",
       "bytes": 1870,
-      "sha256": "fe6015edad7ae41e701f7eba726b336d4b997c740c8fdbbabe24be5a3fdc330d",
+      "sha256": "bd185a291a12cff88263857d348d036c715745619a871067cc62d2240f13633a",
       "publication_status": "included",
       "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
       "upstream_urls": []
@@ -561,8 +609,8 @@
     },
     {
       "path": "knowledge/research.sqlite",
-      "bytes": 295227392,
-      "sha256": "2c70809e850d8f23ad5cb5b037b5cb4d643185dde4f84bfd39a958eab0686502",
+      "bytes": 295436288,
+      "sha256": "c6b0530d2944c8f9cb0a87f23fae88710ade1caff1d0afb47bdac30bc3d57e5d",
       "publication_status": "local_generated",
       "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
       "upstream_urls": []
@@ -587,6 +635,14 @@
       "path": "publication/verification-2026-11-10.json",
       "bytes": 2577,
       "sha256": "a9067c33a3a66729ebfc0df7240f831f6129d07f73150163b21e47dcbf6bcdf9",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "publication/verification-cell-cycle-2026-11-10.json",
+      "bytes": 17834,
+      "sha256": "251463fce1297908b4b66cdd4629378e731b2315ec9b7497514f65850d86fc4f",
       "publication_status": "included",
       "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
       "upstream_urls": []
@@ -1601,8 +1657,8 @@
     },
     {
       "path": "research/treatment-discovery/README.md",
-      "bytes": 10538,
-      "sha256": "5b6a5b54c74ad8c214c81b21dabb0c275c67fe1932d5fbb876ea3b30bcd3e68b",
+      "bytes": 11248,
+      "sha256": "35ef8682770a98fc0048c4c582a069d3fb29aaeb09aaf23b5724ad24a798025e",
       "publication_status": "included",
       "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
       "upstream_urls": []
@@ -2013,8 +2069,8 @@
     },
     {
       "path": "research/treatment-discovery/lineage-audit-2026-11-10/README.md",
-      "bytes": 12127,
-      "sha256": "9c9cdda27a8add2e27330625a47aaa31ef6b47d638321b7ef75c63468c67161b",
+      "bytes": 12774,
+      "sha256": "0e94207b2a830117c9f1195b0cfc6a7ed5b3ff7929eff378bb1b796f0e9b7638",
       "publication_status": "included",
       "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
       "upstream_urls": []
@@ -2031,6 +2087,310 @@
       "path": "research/treatment-discovery/lineage-audit-2026-11-10/calendar-rate-independent-review.md",
       "bytes": 5970,
       "sha256": "1818b681461770de15f96ea944862b3b76a3c09cc46153b0aa1710f21f9349eb",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/README.md",
+      "bytes": 12600,
+      "sha256": "793765159bec3e185819481409b7550350bb9814bf7de4ab750d8f1993829219",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/deterministic-reproduction.json",
+      "bytes": 25027,
+      "sha256": "55fc7845a41e7d6c74f17d70639628f68f798bebf6407b9e886257655d5ba1f5",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/deterministic-reproduction.md",
+      "bytes": 5183,
+      "sha256": "4a4bef5a6b0126d352d31b60e754cc273564615168ff2b344d06fdde9a541aec",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/display-summary.json",
+      "bytes": 62787,
+      "sha256": "08238c0c11ef24c2b7828c4254f9dbb478a1582a75d402881c2344bacbe191c9",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/early-time-order.svg",
+      "bytes": 148411,
+      "sha256": "e1c561724309ef94bdbe5a9b27716634d3ba7d0a84fc05bd606a5e3be60e4fc4",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/implementation-review.json",
+      "bytes": 8331,
+      "sha256": "18dabe513a552d1b964e7ab14edfd0d395112ced12f873c30da43ce1f213c383",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/implementation-review.md",
+      "bytes": 13995,
+      "sha256": "03d016b544180693190174e6025cdb37e593f5500278968252329fdc030901b7",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/independent-comparison.json",
+      "bytes": 4838901,
+      "sha256": "483328c4c29ea1e80195fea17ade637fbc1b64f32297210f7c55e66a4c89d36e",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/independent-comparison.md",
+      "bytes": 6016,
+      "sha256": "823d8dfe07544757276045f182b44a29c3261643cb75f18de1928df0090580bf",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/independent-reference.json",
+      "bytes": 728387,
+      "sha256": "0e53f27c4be7a362cad7a2aa093c35c3beb24bf7fa0afbc5c53bb491f13b7ef8",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/interpretation-review.json",
+      "bytes": 387756,
+      "sha256": "af7c06781d672bf66f8b26ce3e290ee466f7c2bd0fb61562ce6b1e31f0a0b999",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/interpretation-review.md",
+      "bytes": 11230,
+      "sha256": "953aa4ca6c82e2085ebbe788a54a6e73f769ee44e8a399ba69da123e35075d2a",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/monte-carlo/comparison-amendment-original.json",
+      "bytes": 1229,
+      "sha256": "ce0e6b8bc613cf2b6646222e1bc25b3ca7d31443ad34f77913521c4bebb81c99",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/monte-carlo/comparison-amendment.json",
+      "bytes": 1564,
+      "sha256": "2703400d07e17cb90444a763d3401adba1e225e23fc5db94e632d5e7732a576c",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/monte-carlo/comparison-freeze-v1.json",
+      "bytes": 1826,
+      "sha256": "54ad501e0fec4f9d190c85b808dc67a63934dea40def2a610e6af3eea76912a6",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/monte-carlo/comparison-freeze-v2-before-note-clarification.json",
+      "bytes": 2009,
+      "sha256": "885d63fd4602c9680f1a3c0b5ffbc0a6b5f2f2281c69f74c3e86ae7461834925",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/monte-carlo/comparison-freeze.json",
+      "bytes": 2009,
+      "sha256": "76c1c2edc9624f15d6c3612cdd4e459bf0b936d28090eb698c077b98d5e961bc",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/monte-carlo/comparison.json",
+      "bytes": 1867881,
+      "sha256": "25d9a053a25fd4c3caf06179fdc2759567769e18c6dc3b0938ad21692ee610af",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/monte-carlo/comparison.md",
+      "bytes": 2094,
+      "sha256": "b1962ce6acda4fac953b91555f425a8c523d13614c408a7980ed6ab2c4f62027",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/monte-carlo/results.json",
+      "bytes": 1502611,
+      "sha256": "3ab903e06c5a7ba80b0ca59b12cc6e9a56ad0fa62bbe6ca42f3492293ff21adb",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/monte-carlo/run-freeze-publication-note.json",
+      "bytes": 954,
+      "sha256": "4f84d254bcc2263550ed638ba6851eff6d1806dbf4ef4f6c7ae93c58db070659",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/monte-carlo/run-freeze.json",
+      "bytes": 906,
+      "sha256": "b03845421c577aff4f121db0b21063ba18ee82c0ec30d4df78b213c0ba691d98",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/monte-carlo/sparse-contribution-diagnostic.json",
+      "bytes": 1705496,
+      "sha256": "338eb66654e3c3b6729b9c3d54ab676e4af31d81dd696dadffb954e5f002a714",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/monte-carlo/sparse-contribution-diagnostic.md",
+      "bytes": 9427,
+      "sha256": "ea673d5144169b70bd97e3e9520638031280d6f2373e4941dfc7cbb1e4301078",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/monte-carlo-reproduction.json",
+      "bytes": 75901,
+      "sha256": "b08abf14c9fd79f1e91bb1c6a94999d84fe8401a76b964e8b009ac4d293915fb",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/monte-carlo-reproduction.md",
+      "bytes": 6862,
+      "sha256": "9b99bccf46e650dc29c6a3925419840b8268d3410458d6efa6c1c777a368f4db",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/plan-freeze.json",
+      "bytes": 1030,
+      "sha256": "48dbf1dc110fa954cc765ead9c248de31885a59d6ed0a15d5ad0225c8dea9f41",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/primary-code-pin.json",
+      "bytes": 939,
+      "sha256": "6e546dac532615e4e878c57bc4151cf7f6922a3fc21167e082800ba4126c8638",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/primary-fixtures.json",
+      "bytes": 833,
+      "sha256": "b9683168a4d07e47084dee1f1c698d345a629d59db614ecdc47bdd57afacabb5",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/prior-art.json",
+      "bytes": 15675,
+      "sha256": "62ee60fc1afd93f8c7c66300e522a0b83d7d28d8384556564db6bc3afb58609b",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/prior-art.md",
+      "bytes": 13851,
+      "sha256": "8b7628f262f5ef9961c1a2c5520d05edbde4b87a16351f0293c6d2bf0e74198f",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/protocol-draft.json",
+      "bytes": 31903,
+      "sha256": "bdbf92b96aeda55630264584437aed93553486467910fc63b4e134286373da72",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/protocol.json",
+      "bytes": 32757,
+      "sha256": "e7fe08e71d614f27f7d312a6afa7cf64d8022cba2af908cc92c7965d7d6caeb5",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/research-use.md",
+      "bytes": 5800,
+      "sha256": "8a988c1b9ab1d667d70f988a9268f3619b153099b2d3f9af540ff27436d0e776",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/results.json",
+      "bytes": 1090964,
+      "sha256": "b02399e0f46b5f484dc8f1f7c9c9680e8d725898758db08e21f80ae7ca2a75f8",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/selection-specificity.svg",
+      "bytes": 122910,
+      "sha256": "7c8f00c8060992318f73686f4566c08d4e3bf49d9f818f4be0f4033a09ba415e",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/strict-results.json",
+      "bytes": 1073382,
+      "sha256": "3c145e400977760aba7892b0416fac9c56c0fd915cd93a53d99585dbe1609252",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/theory.md",
+      "bytes": 15805,
+      "sha256": "921b6e37961604f27dd4d1715e948c54e5e06265ea5b91007e040759a25cdd09",
       "publication_status": "included",
       "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
       "upstream_urls": []
@@ -3530,6 +3890,14 @@
       "upstream_urls": []
     },
     {
+      "path": "scripts/age_lineage_models.py",
+      "bytes": 11706,
+      "sha256": "2e7f53d6175b8da9215706e2eaee81758dc058265ff5d3c42583875d21987a59",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
       "path": "scripts/analyze_industry_records.py",
       "bytes": 7224,
       "sha256": "add9a158f117ca9cf0bde5f2054fbe9a5c579cf76b3a7b8b0510ae03c4bee921",
@@ -3634,6 +4002,14 @@
       "upstream_urls": []
     },
     {
+      "path": "scripts/check_age_lineage_fixtures.py",
+      "bytes": 3645,
+      "sha256": "276f1f426c56b33c5642ced041280d14b017b26e7a8b569c7b0191b34bbbed29",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
       "path": "scripts/check_compilation.py",
       "bytes": 5675,
       "sha256": "c17db94b21fb5c01d8b9e74cc362cd1739e59c10cebc9519040b7d91dc04075b",
@@ -3698,6 +4074,30 @@
       "upstream_urls": []
     },
     {
+      "path": "scripts/compare_age_lineage_monte_carlo.py",
+      "bytes": 23564,
+      "sha256": "f5c45024bd3b6db4df5e3f0a67d4c8c4518f7979fbac6b766a7ba705f7bf046a",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "scripts/compare_age_lineage_references.py",
+      "bytes": 16174,
+      "sha256": "84606220d22bf264a5fca600569979f2c84f4ca2bf90da04687a87af5f3548ab",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "scripts/diagnose_age_lineage_contrasts.py",
+      "bytes": 13265,
+      "sha256": "3fae4f3543e3355013b24b8c0ba0d386cd5dec1f7e84fd79c7d70890dd47458a",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
       "path": "scripts/extract_iowa_title_v_2024.py",
       "bytes": 3441,
       "sha256": "f13fa022b05764443f6e5e0e56b337b039fad40dc3c5aa8c8fc4d3038350d4d2",
@@ -3741,6 +4141,14 @@
       "path": "scripts/ocr_pdf_applevision.swift",
       "bytes": 2313,
       "sha256": "5756a8b33867164afb60f2c5a87abb6ce1c2bd3d803cfadd99b4d867b2f23721",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "scripts/plot_age_lineage_results.py",
+      "bytes": 9666,
+      "sha256": "556cb549a956321c42307037dcfbd61a3affafcf9ea194153c1748945eaf7981",
       "publication_status": "included",
       "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
       "upstream_urls": []
@@ -3834,6 +4242,14 @@
       "upstream_urls": []
     },
     {
+      "path": "scripts/run_age_lineage_models.py",
+      "bytes": 12916,
+      "sha256": "f85e94dce17d89b2b7ce3bee4ce6bae38d2efa2e837d26fa044a1971ea08a894",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
       "path": "scripts/run_gse292469_signature.py",
       "bytes": 12671,
       "sha256": "b58214b26de28ed746abc7794e2e4b23d7c7e1eb2755f81fdca5c92388fde055",
@@ -3845,6 +4261,14 @@
       "path": "scripts/run_nsclc_benchmark.py",
       "bytes": 11067,
       "sha256": "debac42b7d8a2e9c99ec081d97216ed9287525c2ce56ecd217cc82d5597c4e79",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "scripts/simulate_age_lineage_trees.py",
+      "bytes": 33700,
+      "sha256": "cbbdb12707fb55641bd2701a3be0c862f4f47d0b758bec7b829239cb6f084c46",
       "publication_status": "included",
       "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
       "upstream_urls": []
@@ -3877,6 +4301,14 @@
       "path": "scripts/simulate_signature_depth.py",
       "bytes": 13659,
       "sha256": "82a484522f00ed072e85322e833d3a212cd901a2a59b45bf2e8089a5892a2ea6",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "scripts/verify_age_lineage_models.py",
+      "bytes": 22921,
+      "sha256": "4c6ed695f526d8ec07df9a4dafe4e4572e1bef0529c7d70a61a19f6a666e8883",
       "publication_status": "included",
       "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
       "upstream_urls": []

@@ -1,0 +1,301 @@
+{
+  "verified_at_utc": "2026-11-10T20:29:56.670251+00:00",
+  "scope": "Cell-cycle specificity synthetic models, independent deterministic verification, same-environment clean reproduction, retained simulation discrepancies, and public-package verification. No biological validation or external peer review.",
+  "pre_record_index": {
+    "indexed_paths": 488,
+    "included_blob_hashes_checked": 486,
+    "exact_manifest_file_set": true,
+    "all_included_blob_hashes_match": true
+  },
+  "verification_record_added_after_export": true,
+  "final_index_check_required_after_record": true,
+  "public_export_and_library": {
+    "library": {
+      "integrity": "ok",
+      "datasets": 57,
+      "search_index": 1458,
+      "county_cancer_summary": 99,
+      "tri_forms": 60040,
+      "cell_cycle_documents": 11,
+      "source_pdf_bodies": 0,
+      "all_study_document_hashes_current": true
+    },
+    "export": {
+      "files": 488,
+      "included_hashes_checked": 484,
+      "derived_library_metadata_regenerated": [
+        "knowledge/build-manifest.json",
+        "knowledge/pdf-text-extraction-log.json"
+      ],
+      "no_extra_public_files": true
+    },
+    "figures": {
+      "selection-specificity.svg": "7c8f00c8060992318f73686f4566c08d4e3bf49d9f818f4be0f4033a09ba415e",
+      "early-time-order.svg": "e1c561724309ef94bdbe5a9b27716634d3ba7d0a84fc05bd606a5e3be60e4fc4"
+    },
+    "report_pdf_sha256": "6019900da230ba69322aea6bf537fb879a1403b09cfe7acf0f8c71df27f9eeec"
+  },
+  "local_library": {
+    "integrity": "ok",
+    "datasets": 57,
+    "search_index": 1495,
+    "county_cancer_summary": 99,
+    "tri_forms": 60040,
+    "cell_cycle_documents": 11,
+    "source_pdf_bodies": 35,
+    "all_study_document_hashes_current": true
+  },
+  "reproduction_inputs_match_public_export": {
+    "scripts/age_lineage_models.py": "2e7f53d6175b8da9215706e2eaee81758dc058265ff5d3c42583875d21987a59",
+    "scripts/run_age_lineage_models.py": "f85e94dce17d89b2b7ce3bee4ce6bae38d2efa2e837d26fa044a1971ea08a894",
+    "scripts/verify_age_lineage_models.py": "4c6ed695f526d8ec07df9a4dafe4e4572e1bef0529c7d70a61a19f6a666e8883",
+    "scripts/compare_age_lineage_references.py": "84606220d22bf264a5fca600569979f2c84f4ca2bf90da04687a87af5f3548ab",
+    "scripts/check_age_lineage_fixtures.py": "276f1f426c56b33c5642ced041280d14b017b26e7a8b569c7b0191b34bbbed29",
+    "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/protocol.json": "e7fe08e71d614f27f7d312a6afa7cf64d8022cba2af908cc92c7965d7d6caeb5",
+    "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/plan-freeze.json": "48dbf1dc110fa954cc765ead9c248de31885a59d6ed0a15d5ad0225c8dea9f41",
+    "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/results.json": "b02399e0f46b5f484dc8f1f7c9c9680e8d725898758db08e21f80ae7ca2a75f8",
+    "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/strict-results.json": "3c145e400977760aba7892b0416fac9c56c0fd915cd93a53d99585dbe1609252",
+    "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/independent-reference.json": "0e53f27c4be7a362cad7a2aa093c35c3beb24bf7fa0afbc5c53bb491f13b7ef8",
+    "scripts/simulate_age_lineage_trees.py": "cbbdb12707fb55641bd2701a3be0c862f4f47d0b758bec7b829239cb6f084c46"
+  },
+  "deterministic_reproduction": {
+    "report_sha256": "55fc7845a41e7d6c74f17d70639628f68f798bebf6407b9e886257655d5ba1f5",
+    "exact_scientific_reproduction": true,
+    "scientific_comparisons": [
+      {
+        "artifact": "primary_fixtures",
+        "original_path": "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/primary-fixtures.json",
+        "reproduced_path": "tmp/age-lineage-2026-11-10/deterministic-reproduction-20261110T202341Z/research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/primary-fixtures.json",
+        "original_file_sha256": "b9683168a4d07e47084dee1f1c698d345a629d59db614ecdc47bdd57afacabb5",
+        "reproduced_file_sha256": "8cf9776957d266b5b6e54d47acdc0813d8bc46650c839efcd43f4519e330c0af",
+        "excluded_root_fields": [
+          {
+            "root_field": "created_utc",
+            "reason": "Timestamp or elapsed runtime; no scientific value excluded."
+          }
+        ],
+        "original_scientific_payload_sha256": "79fd3a8f9a1b637b2109050da5c0bcdf1467b1a3af954ec10595790f5d210a2c",
+        "reproduced_scientific_payload_sha256": "79fd3a8f9a1b637b2109050da5c0bcdf1467b1a3af954ec10595790f5d210a2c",
+        "status": "EXACT_SCIENTIFIC_MATCH",
+        "numeric_leaves": 1,
+        "nonnumeric_leaves": 15,
+        "exact_numeric_mismatches": 0,
+        "maximum_absolute_numeric_difference": 0.0,
+        "maximum_relative_numeric_difference": 0.0,
+        "all_differences": []
+      },
+      {
+        "artifact": "reference_fixtures",
+        "original_path": "tmp/age-lineage-2026-11-10/reference-fixtures-v2.json",
+        "reproduced_path": "tmp/age-lineage-2026-11-10/deterministic-reproduction-20261110T202341Z/research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/reproduced-reference-fixtures.json",
+        "original_file_sha256": "bf6ca038b7143389485c0775d211ca4eb4a5dcf6e594a6cbd9f7cb863f27d482",
+        "reproduced_file_sha256": "c796cba14f9ae4b6487971d5361f1b71240108d238ec9674ea88f5a4551d2cc5",
+        "excluded_root_fields": [
+          {
+            "root_field": "created_utc",
+            "reason": "Timestamp or elapsed runtime; no scientific value excluded."
+          }
+        ],
+        "original_scientific_payload_sha256": "38089482789f6c61a1fdd44aeb0a2622f922df62335a709ae52bb808fdaf430a",
+        "reproduced_scientific_payload_sha256": "38089482789f6c61a1fdd44aeb0a2622f922df62335a709ae52bb808fdaf430a",
+        "status": "EXACT_SCIENTIFIC_MATCH",
+        "numeric_leaves": 1,
+        "nonnumeric_leaves": 11,
+        "exact_numeric_mismatches": 0,
+        "maximum_absolute_numeric_difference": 0.0,
+        "maximum_relative_numeric_difference": 0.0,
+        "all_differences": []
+      },
+      {
+        "artifact": "primary_results",
+        "original_path": "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/results.json",
+        "reproduced_path": "tmp/age-lineage-2026-11-10/deterministic-reproduction-20261110T202341Z/research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/reproduced-results.json",
+        "original_file_sha256": "b02399e0f46b5f484dc8f1f7c9c9680e8d725898758db08e21f80ae7ca2a75f8",
+        "reproduced_file_sha256": "7e40651bc655a7baa188e39317f8af03567cf733bb7a6c7c5d7cd60a311245e4",
+        "excluded_root_fields": [
+          {
+            "root_field": "created_utc",
+            "reason": "Timestamp or elapsed runtime; no scientific value excluded."
+          },
+          {
+            "root_field": "runtime_seconds",
+            "reason": "Timestamp or elapsed runtime; no scientific value excluded."
+          }
+        ],
+        "original_scientific_payload_sha256": "739d3ab99c36479cbf123610dc4f49a21b04c47af9154e2516aa5ce85de7d8f1",
+        "reproduced_scientific_payload_sha256": "739d3ab99c36479cbf123610dc4f49a21b04c47af9154e2516aa5ce85de7d8f1",
+        "status": "EXACT_SCIENTIFIC_MATCH",
+        "numeric_leaves": 22031,
+        "nonnumeric_leaves": 2066,
+        "exact_numeric_mismatches": 0,
+        "maximum_absolute_numeric_difference": 0.0,
+        "maximum_relative_numeric_difference": 0.0,
+        "all_differences": []
+      },
+      {
+        "artifact": "strict_results",
+        "original_path": "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/strict-results.json",
+        "reproduced_path": "tmp/age-lineage-2026-11-10/deterministic-reproduction-20261110T202341Z/research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/reproduced-strict-results.json",
+        "original_file_sha256": "3c145e400977760aba7892b0416fac9c56c0fd915cd93a53d99585dbe1609252",
+        "reproduced_file_sha256": "bc80a61ccd5e2b9088c28546f9c0ce7629c5ebaf768faabc453c13e16c085886",
+        "excluded_root_fields": [
+          {
+            "root_field": "created_utc",
+            "reason": "Timestamp or elapsed runtime; no scientific value excluded."
+          }
+        ],
+        "original_scientific_payload_sha256": "3bc4648085111e9f25aebb8f7638651cf317a876c8504d61029bcd290d386d9e",
+        "reproduced_scientific_payload_sha256": "3bc4648085111e9f25aebb8f7638651cf317a876c8504d61029bcd290d386d9e",
+        "status": "EXACT_SCIENTIFIC_MATCH",
+        "numeric_leaves": 21883,
+        "nonnumeric_leaves": 1845,
+        "exact_numeric_mismatches": 0,
+        "maximum_absolute_numeric_difference": 0.0,
+        "maximum_relative_numeric_difference": 0.0,
+        "all_differences": []
+      },
+      {
+        "artifact": "independent_reference",
+        "original_path": "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/independent-reference.json",
+        "reproduced_path": "tmp/age-lineage-2026-11-10/deterministic-reproduction-20261110T202341Z/research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/reproduced-independent-reference.json",
+        "original_file_sha256": "0e53f27c4be7a362cad7a2aa093c35c3beb24bf7fa0afbc5c53bb491f13b7ef8",
+        "reproduced_file_sha256": "db27d94dadc81c7bfadf933e77409484061a339178363656e066d62e40dcff4c",
+        "excluded_root_fields": [
+          {
+            "root_field": "generated_at_utc",
+            "reason": "Timestamp or elapsed runtime; no scientific value excluded."
+          },
+          {
+            "root_field": "runtime_seconds",
+            "reason": "Timestamp or elapsed runtime; no scientific value excluded."
+          }
+        ],
+        "original_scientific_payload_sha256": "773ab0ab8460c73659d0286059a2e37dcbca6909471f115782a399bd1ceb2d29",
+        "reproduced_scientific_payload_sha256": "773ab0ab8460c73659d0286059a2e37dcbca6909471f115782a399bd1ceb2d29",
+        "status": "EXACT_SCIENTIFIC_MATCH",
+        "numeric_leaves": 18876,
+        "nonnumeric_leaves": 699,
+        "exact_numeric_mismatches": 0,
+        "maximum_absolute_numeric_difference": 0.0,
+        "maximum_relative_numeric_difference": 0.0,
+        "all_differences": []
+      },
+      {
+        "artifact": "pinned_comparator",
+        "original_path": "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/independent-comparison.json",
+        "reproduced_path": "tmp/age-lineage-2026-11-10/deterministic-reproduction-20261110T202341Z/research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/independent-comparison.json",
+        "original_file_sha256": "483328c4c29ea1e80195fea17ade637fbc1b64f32297210f7c55e66a4c89d36e",
+        "reproduced_file_sha256": "914394ee9c6b6cf6fd7bc8275c5629c515ac46a8d242a1de132313f6393ae6ec",
+        "excluded_root_fields": [
+          {
+            "root_field": "created_utc",
+            "reason": "Timestamp or elapsed runtime; no scientific value excluded."
+          }
+        ],
+        "original_scientific_payload_sha256": "3e2530fe49a20804e7dc6661041637971964843f743dc2c3fcbe960d78607404",
+        "reproduced_scientific_payload_sha256": "3e2530fe49a20804e7dc6661041637971964843f743dc2c3fcbe960d78607404",
+        "status": "EXACT_SCIENTIFIC_MATCH",
+        "numeric_leaves": 80779,
+        "nonnumeric_leaves": 27469,
+        "exact_numeric_mismatches": 0,
+        "maximum_absolute_numeric_difference": 0.0,
+        "maximum_relative_numeric_difference": 0.0,
+        "all_differences": []
+      }
+    ],
+    "terminal_statuses": {
+      "primary": "PASS",
+      "primary_cases": 72,
+      "primary_contrasts": 864,
+      "primary_early_rows": 567,
+      "reference": "REFERENCE_GENERATED_WITHOUT_READING_PRODUCTION_OUTPUT",
+      "reference_counts": {
+        "cases": 72,
+        "contrasts": 864,
+        "pair_records": 216,
+        "early_records": 567
+      }
+    }
+  },
+  "complete_tree_reproduction": {
+    "status": "EXACT_SCIENTIFIC_REPRODUCTION",
+    "original_results_or_checkpoints_used_as_run_input": false,
+    "prospective_founders": 720000,
+    "generated_cells": 48568750,
+    "comparison_counts": {
+      "ignored_fields_examined": 8931,
+      "ignored_changed_sha256": 5760,
+      "ignored_changed_created_utc": 3027,
+      "ignored_changed_runtime_seconds_this_invocation": 144,
+      "checkpoints": 2880,
+      "checkpoint_byte_hashes_different": 2880,
+      "arrays": 31680,
+      "array_elements": 27560400,
+      "array_payload_bytes_per_run": 149503200
+    },
+    "scientific_difference_count": 0,
+    "array_equality": "Exact dtype, shape and C-order raw bytes, including signed zeros and NaN payload bytes; no numerical tolerance or equal-NaN relaxation.",
+    "ignored_field_rules": "Only the listed exact field positions are removed. Checkpoint byte hashes may differ only after all decoded scientific arrays and all other metadata compare exactly; each declared byte hash is checked against its corresponding actual file. All other values, types, numeric bits, shapes, RNG state and resource counts must match.",
+    "all_checkpoint_scientific_ledger_sha256": {
+      "original": "af65f6439267bf65b3714a72a551a4bc1b3fec4f385ad452079e34638296bf55",
+      "reproduced": "af65f6439267bf65b3714a72a551a4bc1b3fec4f385ad452079e34638296bf55"
+    },
+    "comparison_terminal_exit_code": 0
+  },
+  "frozen_monte_carlo_diagnostics": {
+    "flag_count": 2,
+    "unresolved_quantity_count": 168,
+    "probability_counts": {
+      "family_survival": 222,
+      "pair_eligibility": 72,
+      "qualifying_mother_type0": 37
+    },
+    "quantity_counts": {
+      "Q": 1230,
+      "paired_horizon_contrast": 864,
+      "unconditional_U": 510,
+      "sister_covariance": 216,
+      "calendar_residual_mean": 9
+    },
+    "probability_status_counts": {
+      "no_probability_flag": 331
+    },
+    "quantity_status_counts": {
+      "structural_agreement": 507,
+      "no_six_se_flag": 2143,
+      "unresolved_low_precision": 168,
+      "flagged_six_se_mismatch": 2,
+      "expected_undefined": 9
+    },
+    "accounting_status_counts": {
+      "accounting_agreement": 144
+    }
+  },
+  "flags_retained": true,
+  "sparse_diagnostic_scope": "Post-results read-only all864 contrasts. Eight nonstructural rows have zero observed removed-stratum loss contributors, including both flags and six unflagged. No new draws or changed gates. Oracle variance derived and internally reviewed but not computed.",
+  "figure_validation": {
+    "both_svg_parse": true,
+    "both_rendered_previews_visually_inspected": true,
+    "descriptive_extrema_and_slice_labeled": true
+  },
+  "original_report_sha256_unchanged": "6019900da230ba69322aea6bf537fb879a1403b09cfe7acf0f8c71df27f9eeec",
+  "critical_artifact_hashes": {
+    "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/protocol.json": "e7fe08e71d614f27f7d312a6afa7cf64d8022cba2af908cc92c7965d7d6caeb5",
+    "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/plan-freeze.json": "48dbf1dc110fa954cc765ead9c248de31885a59d6ed0a15d5ad0225c8dea9f41",
+    "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/results.json": "b02399e0f46b5f484dc8f1f7c9c9680e8d725898758db08e21f80ae7ca2a75f8",
+    "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/strict-results.json": "3c145e400977760aba7892b0416fac9c56c0fd915cd93a53d99585dbe1609252",
+    "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/independent-reference.json": "0e53f27c4be7a362cad7a2aa093c35c3beb24bf7fa0afbc5c53bb491f13b7ef8",
+    "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/independent-comparison.json": "483328c4c29ea1e80195fea17ade637fbc1b64f32297210f7c55e66a4c89d36e",
+    "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/deterministic-reproduction.json": "55fc7845a41e7d6c74f17d70639628f68f798bebf6407b9e886257655d5ba1f5",
+    "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/monte-carlo-reproduction.json": "b08abf14c9fd79f1e91bb1c6a94999d84fe8401a76b964e8b009ac4d293915fb",
+    "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/monte-carlo/results.json": "3ab903e06c5a7ba80b0ca59b12cc6e9a56ad0fa62bbe6ca42f3492293ff21adb",
+    "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/monte-carlo/comparison.json": "25d9a053a25fd4c3caf06179fdc2759567769e18c6dc3b0938ad21692ee610af",
+    "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/monte-carlo/sparse-contribution-diagnostic.json": "338eb66654e3c3b6729b9c3d54ab676e4af31d81dd696dadffb954e5f002a714",
+    "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/interpretation-review.json": "af7c06781d672bf66f8b26ce3e290ee466f7c2bd0fb61562ce6b1e31f0a0b999",
+    "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/display-summary.json": "08238c0c11ef24c2b7828c4254f9dbb478a1582a75d402881c2344bacbe191c9"
+  },
+  "publication_scope": "Original reports, equations, code, aggregate hypothetical outcomes and provenance. Raw empirical source records remain excluded; synthetic per-founder checkpoints are reproducible from public seed/code.",
+  "scientific_status": "Independent timers can break horizon invariance with either sign. Shared calendar context can generate pooled sister covariance. Founder initialization changes early-time order. These hypothetical findings do not establish a cancer mechanism, cure, or first-ever novelty.",
+  "destination_status": "Public repository; proposed NCBS source review and conditional methods/reanalysis venue. No investigator contact, collaboration agreement or submission.",
+  "goal_status": "active"
+}

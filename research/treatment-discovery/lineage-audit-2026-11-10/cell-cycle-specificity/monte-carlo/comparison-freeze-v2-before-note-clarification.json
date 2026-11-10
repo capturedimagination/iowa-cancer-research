@@ -1,0 +1,40 @@
+{
+  "created_utc": "2026-11-10T20:21:01.164929+00:00",
+  "status": "frozen_before_comparison_evaluation",
+  "protocol_sha256": "e7fe08e71d614f27f7d312a6afa7cf64d8022cba2af908cc92c7965d7d6caeb5",
+  "primary_sha256": "b02399e0f46b5f484dc8f1f7c9c9680e8d725898758db08e21f80ae7ca2a75f8",
+  "strict_primary_sha256": "3c145e400977760aba7892b0416fac9c56c0fd915cd93a53d99585dbe1609252",
+  "monte_carlo_sha256": "3ab903e06c5a7ba80b0ca59b12cc6e9a56ad0fa62bbe6ca42f3492293ff21adb",
+  "comparator_sha256": "f5c45024bd3b6db4df5e3f0a67d4c8c4518f7979fbac6b766a7ba705f7bf046a",
+  "python_version": "3.12.14",
+  "scipy_version": "1.16.3",
+  "classification_amendment_sha256": "ce0e6b8bc613cf2b6646222e1bc25b3ca7d31443ad34f77913521c4bebb81c99",
+  "fixtures": {
+    "status": "pass",
+    "fixture_count": 17,
+    "fixtures": [
+      "exact two-sided binomial tail",
+      "p0 and p1 logical failures",
+      "p0 and p1 logical agreement",
+      "empty conditional type sample retained",
+      "invalid count and probability rejected",
+      "conditional mother-type denominator is eligible count",
+      "strict six-SE-plus-slack boundary",
+      "count99 cannot be called a precision pass",
+      "count100 enables frozen comparison",
+      "nontrivial zero-SE agreement stays unresolved",
+      "known exact identity can be checked at low count",
+      "no selected family is never zero-imputed",
+      "no-division sister estimand stays undefined",
+      "nonfinite numbers never pass",
+      "structural identities cannot mask nonfinite SE",
+      "structural estimate mismatch retained",
+      "deterministic first-division boundary is structural only through t=d"
+    ],
+    "scientific_comparisons_run": false,
+    "created_utc": "2026-11-10T20:21:01.163337+00:00",
+    "comparator_sha256": "f5c45024bd3b6db4df5e3f0a67d4c8c4518f7979fbac6b766a7ba705f7bf046a"
+  },
+  "planned_probability_gates": 331,
+  "rule": "All frozen probability and Monte Carlo diagnostics; no code/model imports, fitting or outcome-based changes."
+}

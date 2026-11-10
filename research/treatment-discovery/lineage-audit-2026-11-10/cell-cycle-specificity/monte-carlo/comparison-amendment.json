@@ -1,0 +1,15 @@
+{
+  "created_utc": "2026-11-10T20:21:00.862445+00:00",
+  "status": "pre_evaluation_classification_refinement",
+  "original_code_sha256": "d9f28eda2c9b0128c38c76745abcfc7f14d8893823cead023799dd9528b61191",
+  "revised_code_sha256": "f5c45024bd3b6db4df5e3f0a67d4c8c4518f7979fbac6b766a7ba705f7bf046a",
+  "original_pin_file": "comparison-freeze-v1.json",
+  "original_pin_sha256": "54ad501e0fec4f9d190c85b808dc67a63934dea40def2a610e6af3eea76912a6",
+  "reason": "Parent source review recognized the deterministic-age structural identity Q_T(t)=1 and its horizon contrasts=0 through t=division_age. The frozen protocol permits direct checks of known exact constants. Original simulation precision labels remain present.",
+  "boundary_fixture": "At t=d the identity applies; immediately after d it is not treated as a structural constant.",
+  "scientific_comparisons_evaluated_before_refinement": false,
+  "changed_simulation_or_primary_results": false,
+  "changed_probability_or_SE_thresholds": false,
+  "saved_reference_and_MC_aggregate_inputs_were_available": "Yes. Saved aggregate example records, including their numerical values and metadata, were inspected to implement schema joins. No cross-source diagnostic had been evaluated. This is not a claim of blinded data access; the classification follows the frozen first-event structure rather than observed comparison outcomes.",
+  "metadata_clarification": "Corrected the initial note wording about schema inspection before any comparison evaluation; original note retained as comparison-amendment-original.json."
+}

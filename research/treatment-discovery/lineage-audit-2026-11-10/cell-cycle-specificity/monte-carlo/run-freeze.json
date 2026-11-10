@@ -1,0 +1,18 @@
+{
+  "created_utc": "2026-11-10T20:15:13.214835+00:00",
+  "status": "frozen_before_scientific_run",
+  "script_sha256": "cbbdb12707fb55641bd2701a3be0c862f4f47d0b758bec7b829239cb6f084c46",
+  "protocol_sha256": "e7fe08e71d614f27f7d312a6afa7cf64d8022cba2af908cc92c7965d7d6caeb5",
+  "fixture_sha256": "cfd89914e59253e232d444ca5dc77ee57eb6530172e4003acf6a014212278a5f",
+  "fixtures_passed": 28,
+  "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+  "executable": "tmp/egfr-resistance-2026-11-10/venv/bin/python",
+  "numpy_version": "2.3.5",
+  "scipy_version": "1.16.3",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "cases": 72,
+  "founders_per_case": 10000,
+  "batch_size": 250,
+  "command": "tmp/egfr-resistance-2026-11-10/venv/bin/python -u scripts/simulate_age_lineage_trees.py --run",
+  "authorization": "Parent scientific code review completed before execution; no model/grid changes."
+}

@@ -1,0 +1,12 @@
+{
+  "created_utc": "2026-11-10T20:26:36.986801+00:00",
+  "operation": "public executable path metadata redaction only",
+  "original_freeze_sha256": "25635d78b881a497ef81fff7f21b37f46296b7e9025a9c88326a623e6d76be97",
+  "public_freeze_sha256": "b03845421c577aff4f121db0b21063ba18ee82c0ec30d4df78b213c0ba691d98",
+  "original_preserved_locally": "tmp/age-lineage-2026-11-10/monte-carlo-run-freeze-original.json",
+  "changed_json_pointer": "/executable",
+  "public_value": "tmp/egfr-resistance-2026-11-10/venv/bin/python",
+  "scientific_or_environment_version_fields_changed": false,
+  "frozen_code_protocol_seed_sample_counts_and_fixture_pins_changed": false,
+  "dependent_reference_search": "No references to the original freeze SHA or run-freeze.json were found inside the current cell-cycle-specificity files by rg before redaction. Original-vs-public SHA are both retained here; external references to the original remain historical pre-run evidence."
+}
