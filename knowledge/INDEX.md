@@ -1,6 +1,6 @@
 # Iowa cancer reference library
 
-Library extended **October 29, 2026** with treatment research and a public clinical benchmark. The Iowa surveillance/environmental compilation remains the **October 22, 2026** snapshot; individual sources retain their own dates. This folder is the starting point for future research, data work and model design. Rebuilding its index does not refresh the underlying sources.
+Library extended **November 10, 2026** with verified malignant-cell expression data and an independent lung-cancer signature comparison. The clinical benchmark remains the October 29 analysis; the Iowa surveillance/environmental compilation remains the **October 22, 2026** snapshot. Individual sources retain their own dates. This folder is the starting point for future research, data work and model design. Rebuilding its index does not refresh the underlying sources.
 
 ## Find evidence for a question
 
@@ -16,7 +16,7 @@ Library extended **October 29, 2026** with treatment research and a public clini
 | Facility inventories or modeled air risks | [Statewide industry data](../research/industries-statewide-data.md), original snapshots and the SQL tables below |
 | Screening, care, prevention, policy or disparities | [Prevention and care](../research/prevention-care.md) |
 | Choosing or fitting a statistical model | [Methods](../research/modeling-methods.md), [readiness checklist](../research/model-readiness-checklist.md), [dataset catalog](../research/data-source-catalog.md) |
-| Treatment discovery, response or resistance | [Lung cancer research program](../research/treatment-discovery/README.md), including the completed retrospective TMB benchmark and separate EGFR residual-state question |
+| Treatment discovery, response or resistance | [Latest molecular findings](../research/treatment-discovery/updates/2026-11-10/README.md), then [lung cancer research program](../research/treatment-discovery/README.md). Keep the clinical TMB benchmark and EGFR residual-state analysis separate. |
 | Individual exposure histories, cohort data or occupational coding | [Cohort access](../research/cohort-data-access.md), [occupational data systems](../research/manufacturing-input-datasets.csv); access metadata do not imply individual records are held here |
 | Narrative orientation | [Original research report](../Iowa-Cancer-Research.md); the later industry and modeling work is in this library |
 
@@ -31,7 +31,7 @@ Library extended **October 29, 2026** with treatment research and a public clini
 | Industry evidence | **93 records** in four sector families | Multiple records may refer to the same study, cohort or site; record count is not independent-study count. |
 | Historical workplace measurements | 19 selected values/summaries plus a complete 17-sample Winnebago table | Seven samples overlap between files; summary endpoints and means are not independent samples. |
 | AHS public materials | Blank coded enrollment instrument, collaboration policy and 46 cancer-summary rows through 2021 | Tables combine Iowa and North Carolina; follow-up/sample subsets overlap. No participant records or Iowa-only denominator. |
-| Treatment research extension | Public 240-person NSCLC cohort with an audited retrospective benchmark; versioned preclinical metadata and an EGFR single-cell-data preflight | Separate non-Iowa data, endpoints, licensing and patient/model units. No causal treatment effect, target validation or cure result. |
+| Treatment research extension | Public 240-person NSCLC clinical benchmark; versioned preclinical metadata; verified original 3,754-malignant-cell object; independent 457,724-nucleus cohort and fixed 26-untreated/9-residual-patient expression comparison | Molecular originals remain local with public provenance. Direction reverses by small kit stratum, with major stage/site/batch imbalance. Separate non-Iowa data, endpoints and patient/model units. No causal treatment effect, target validation or cure result. |
 | Source corpus | Memos, references, dataset metadata, archived PDFs and raw federal/regulatory files | Access and extraction limits remain visible; not every cited web page is archived in full. |
 
 The verified catalog records access requirements and whether data are actually saved locally. A catalog entry is not proof that its observations are available locally.

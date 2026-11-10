@@ -1,0 +1,428 @@
+{
+  "checked_date": "2026-11-10",
+  "repository_commit": "de138c79bcfc2fa3a28c8a039a28ab560da78099",
+  "scope": "Deterministic join of existing author malignant labels and sample counts; no clustering, expression scoring or efficacy analysis",
+  "sources": [
+    {
+      "file_name": "S01_metacells.csv",
+      "bytes": 11084633,
+      "sha256": "b4f3f169516001e89bc8b3d8052e207331ff662ca6d236e1c2cf68eccffdf2a6",
+      "url": "https://drive.google.com/uc?export=download&id=12g84ooMTsWV58JWbp2ql8TMfgS4ct8as"
+    },
+    {
+      "file_name": "neo-osi_metadata.csv",
+      "bytes": 3374,
+      "sha256": "0517f6e845384b45f4521d8235dfd7b6b60da30a31bfd961797f5f2275155a76",
+      "url": "https://drive.google.com/uc?export=download&id=1iw89l70ufpuvWbfuMkbHYOEhvBYCFcX1"
+    },
+    {
+      "file_name": "inferCNV_annotation.csv",
+      "bytes": 280568,
+      "sha256": "f2b0cad6786932cb32e2a6f5336de04c98f683d8b7d1c2d180b85b4bc46949b5",
+      "url": "https://raw.githubusercontent.com/czbiohub-sf/scell_lung_adenocarcinoma/de138c79bcfc2fa3a28c8a039a28ab560da78099/data_out/NI03/results/inferCNV_annotation.csv",
+      "repository_path": "data_out/NI03/results/inferCNV_annotation.csv"
+    },
+    {
+      "file_name": "Table_of_ALL_cell_types_by_sample.csv",
+      "bytes": 3955,
+      "sha256": "d1823a81fd131f1650c1faf5eed601165819cf6e24f6a23451d621e0fcd39abc",
+      "url": "https://raw.githubusercontent.com/czbiohub-sf/scell_lung_adenocarcinoma/de138c79bcfc2fa3a28c8a039a28ab560da78099/data_out/IM06/Table_of_ALL_cell_types_by_sample.csv",
+      "repository_path": "data_out/IM06/Table_of_ALL_cell_types_by_sample.csv"
+    }
+  ],
+  "checks": {
+    "source_hashes": "pass",
+    "unique_keys": "pass",
+    "annotation_metadata_join": "all_rows_matched",
+    "per_sample_malignant_counts_vs_author_table": "all_49_match",
+    "tumor_labels_restricted_to_epithelial_clusters": true
+  },
+  "annotation_counts": {
+    "all_rows": 6181,
+    "epithelial_rows": 5581,
+    "control_rows": 600,
+    "tumor_rows": 3754,
+    "tumor_main": 3671,
+    "tumor_neo": 83,
+    "tumor_samples": 44
+  },
+  "cohort_reconciliation": {
+    "main_input_samples": 51,
+    "neo_input_samples": 5,
+    "combined_input_samples": 56,
+    "final_samples": 49,
+    "final_main_samples": 44,
+    "final_neo_samples": 5,
+    "final_cells": 23261,
+    "final_literal_patient_ids": [
+      "AZ003",
+      "AZ005",
+      "AZ008",
+      "AZ008_NAT",
+      "TH067",
+      "TH103",
+      "TH146",
+      "TH153",
+      "TH155",
+      "TH156",
+      "TH157",
+      "TH158",
+      "TH169",
+      "TH171",
+      "TH179",
+      "TH179_NAT",
+      "TH185",
+      "TH205",
+      "TH210",
+      "TH217",
+      "TH218",
+      "TH220",
+      "TH222",
+      "TH223",
+      "TH225",
+      "TH226",
+      "TH227",
+      "TH231",
+      "TH236",
+      "TH238",
+      "TH238_NAT",
+      "TH248",
+      "TH266"
+    ],
+    "final_literal_patient_id_count": 33,
+    "NAT_alias_crosswalk": {
+      "TH179_NAT": "TH179",
+      "TH238_NAT": "TH238",
+      "AZ008_NAT": "AZ008"
+    },
+    "patient_count_after_explicit_NAT_alias_crosswalk": 30,
+    "crosswalk_basis": "Identifier suffixes and matched source resection/sample metadata; donor alias interpretation, not a new biological assignment. Preserve source IDs.",
+    "excluded_main_samples": [
+      {
+        "sample_name": "LT_S12",
+        "patient_id": "TH172",
+        "input_cell_rows": 93,
+        "reason": "Absent from final saved sample table; specific upstream exclusion step not assigned by this audit"
+      },
+      {
+        "sample_name": "LT_S17",
+        "patient_id": "TH174",
+        "input_cell_rows": 30,
+        "reason": "Absent from final saved sample table; specific upstream exclusion step not assigned by this audit"
+      },
+      {
+        "sample_name": "LT_S22",
+        "patient_id": "TH158",
+        "input_cell_rows": 67,
+        "reason": "Absent from final saved sample table; specific upstream exclusion step not assigned by this audit"
+      },
+      {
+        "sample_name": "LT_S24",
+        "patient_id": "TH187",
+        "input_cell_rows": 54,
+        "reason": "Absent from final saved sample table; specific upstream exclusion step not assigned by this audit"
+      },
+      {
+        "sample_name": "LT_S35",
+        "patient_id": "TH208",
+        "input_cell_rows": 2,
+        "reason": "Absent from final saved sample table; specific upstream exclusion step not assigned by this audit"
+      },
+      {
+        "sample_name": "LT_S38",
+        "patient_id": "TH210",
+        "input_cell_rows": 8,
+        "reason": "Absent from final saved sample table; specific upstream exclusion step not assigned by this audit"
+      },
+      {
+        "sample_name": "LT_S46",
+        "patient_id": "TH205",
+        "input_cell_rows": 388,
+        "reason": "Absent from final saved sample table; specific upstream exclusion step not assigned by this audit"
+      }
+    ]
+  },
+  "main_osimertinib_candidate_sample_counts": [
+    {
+      "sample_name": "LT_S14",
+      "patient_id": "TH153",
+      "histolgy": "Adenocarcinoma",
+      "driver_gene": "EGFR",
+      "driver_mutation": "del19",
+      "analysis": "grouped_pd",
+      "biopsy_site": "Liver",
+      "treatment": "osimertinib",
+      "in_final_author_count_table": true,
+      "malignant_cells": 0
+    },
+    {
+      "sample_name": "LT_S22",
+      "patient_id": "TH158",
+      "histolgy": "Adenocarcinoma",
+      "driver_gene": "EGFR",
+      "driver_mutation": "del19",
+      "analysis": "grouped_pr",
+      "biopsy_site": "Lung",
+      "treatment": "osimertinib",
+      "in_final_author_count_table": false,
+      "malignant_cells": 0
+    },
+    {
+      "sample_name": "LT_S34",
+      "patient_id": "TH205",
+      "histolgy": "Adenocarcinoma",
+      "driver_gene": "EGFR",
+      "driver_mutation": "L858R",
+      "analysis": "naive",
+      "biopsy_site": "Pleura",
+      "treatment": "osimertinib",
+      "in_final_author_count_table": true,
+      "malignant_cells": 24
+    },
+    {
+      "sample_name": "LT_S42",
+      "patient_id": "TH158",
+      "histolgy": "Adenocarcinoma",
+      "driver_gene": "EGFR",
+      "driver_mutation": "del19",
+      "analysis": "grouped_pr",
+      "biopsy_site": "Lung",
+      "treatment": "osimertinib",
+      "in_final_author_count_table": true,
+      "malignant_cells": 4
+    },
+    {
+      "sample_name": "LT_S43",
+      "patient_id": "TH217",
+      "histolgy": "Adenocarcinoma",
+      "driver_gene": "EGFR",
+      "driver_mutation": "del19",
+      "analysis": "naive",
+      "biopsy_site": "LN",
+      "treatment": "osimertinib",
+      "in_final_author_count_table": true,
+      "malignant_cells": 5
+    },
+    {
+      "sample_name": "LT_S45",
+      "patient_id": "TH218",
+      "histolgy": "Adenocarcinoma",
+      "driver_gene": "EGFR",
+      "driver_mutation": "L858R",
+      "analysis": "naive",
+      "biopsy_site": "Adrenal",
+      "treatment": "osimertinib",
+      "in_final_author_count_table": true,
+      "malignant_cells": 1
+    },
+    {
+      "sample_name": "LT_S46",
+      "patient_id": "TH205",
+      "histolgy": "Adenocarcinoma",
+      "driver_gene": "EGFR",
+      "driver_mutation": "L858R",
+      "analysis": "grouped_pr",
+      "biopsy_site": "Lung",
+      "treatment": "osimertinib",
+      "in_final_author_count_table": false,
+      "malignant_cells": 0
+    },
+    {
+      "sample_name": "LT_S52",
+      "patient_id": "TH226",
+      "histolgy": "Adenocarcinoma",
+      "driver_gene": "EGFR",
+      "driver_mutation": "del19",
+      "analysis": "naive",
+      "biopsy_site": "Lung",
+      "treatment": "osimertinib",
+      "in_final_author_count_table": true,
+      "malignant_cells": 15
+    },
+    {
+      "sample_name": "LT_S55",
+      "patient_id": "TH218",
+      "histolgy": "Adenocarcinoma",
+      "driver_gene": "EGFR",
+      "driver_mutation": "L858R",
+      "analysis": "grouped_pr",
+      "biopsy_site": "Adrenal",
+      "treatment": "osimertinib",
+      "in_final_author_count_table": true,
+      "malignant_cells": 17
+    },
+    {
+      "sample_name": "LT_S57",
+      "patient_id": "TH226",
+      "histolgy": "Adenocarcinoma",
+      "driver_gene": "EGFR",
+      "driver_mutation": "del19",
+      "analysis": "grouped_pr",
+      "biopsy_site": "Lung",
+      "treatment": "osimertinib",
+      "in_final_author_count_table": true,
+      "malignant_cells": 194
+    },
+    {
+      "sample_name": "LT_S69",
+      "patient_id": "TH248",
+      "histolgy": "Adenocarcinoma",
+      "driver_gene": "EGFR",
+      "driver_mutation": "del19",
+      "analysis": "naive",
+      "biopsy_site": "LN",
+      "treatment": "osimertinib",
+      "in_final_author_count_table": true,
+      "malignant_cells": 303
+    },
+    {
+      "sample_name": "LT_S71",
+      "patient_id": "TH236",
+      "histolgy": "Adenocarcinoma",
+      "driver_gene": "EGFR",
+      "driver_mutation": "del19",
+      "analysis": "grouped_pr",
+      "biopsy_site": "Lung",
+      "treatment": "osimertinib",
+      "in_final_author_count_table": true,
+      "malignant_cells": 107
+    },
+    {
+      "sample_name": "LT_S74",
+      "patient_id": "TH248",
+      "histolgy": "Adenocarcinoma",
+      "driver_gene": "EGFR",
+      "driver_mutation": "del19",
+      "analysis": "naive",
+      "biopsy_site": "Lung",
+      "treatment": "osimertinib",
+      "in_final_author_count_table": true,
+      "malignant_cells": 72
+    },
+    {
+      "sample_name": "LT_S82",
+      "patient_id": "TH226",
+      "histolgy": "Adenocarcinoma",
+      "driver_gene": "EGFR",
+      "driver_mutation": "del19",
+      "analysis": "grouped_pd",
+      "biopsy_site": "Lung",
+      "treatment": "osimertinib",
+      "in_final_author_count_table": true,
+      "malignant_cells": 13
+    }
+  ],
+  "main_osimertinib_pairs": [
+    {
+      "patient_id": "TH205",
+      "naive_samples": [
+        {
+          "sample_name": "LT_S34",
+          "patient_id": "TH205",
+          "histolgy": "Adenocarcinoma",
+          "driver_gene": "EGFR",
+          "driver_mutation": "L858R",
+          "analysis": "naive",
+          "biopsy_site": "Pleura",
+          "treatment": "osimertinib",
+          "in_final_author_count_table": true,
+          "malignant_cells": 24
+        }
+      ],
+      "residual_samples": [
+        {
+          "sample_name": "LT_S46",
+          "patient_id": "TH205",
+          "histolgy": "Adenocarcinoma",
+          "driver_gene": "EGFR",
+          "driver_mutation": "L858R",
+          "analysis": "grouped_pr",
+          "biopsy_site": "Lung",
+          "treatment": "osimertinib",
+          "in_final_author_count_table": false,
+          "malignant_cells": 0
+        }
+      ],
+      "both_states_at_least_one_malignant_cell": false,
+      "both_states_at_least_ten_malignant_cells_sensitivity": false
+    },
+    {
+      "patient_id": "TH218",
+      "naive_samples": [
+        {
+          "sample_name": "LT_S45",
+          "patient_id": "TH218",
+          "histolgy": "Adenocarcinoma",
+          "driver_gene": "EGFR",
+          "driver_mutation": "L858R",
+          "analysis": "naive",
+          "biopsy_site": "Adrenal",
+          "treatment": "osimertinib",
+          "in_final_author_count_table": true,
+          "malignant_cells": 1
+        }
+      ],
+      "residual_samples": [
+        {
+          "sample_name": "LT_S55",
+          "patient_id": "TH218",
+          "histolgy": "Adenocarcinoma",
+          "driver_gene": "EGFR",
+          "driver_mutation": "L858R",
+          "analysis": "grouped_pr",
+          "biopsy_site": "Adrenal",
+          "treatment": "osimertinib",
+          "in_final_author_count_table": true,
+          "malignant_cells": 17
+        }
+      ],
+      "both_states_at_least_one_malignant_cell": true,
+      "both_states_at_least_ten_malignant_cells_sensitivity": false
+    },
+    {
+      "patient_id": "TH226",
+      "naive_samples": [
+        {
+          "sample_name": "LT_S52",
+          "patient_id": "TH226",
+          "histolgy": "Adenocarcinoma",
+          "driver_gene": "EGFR",
+          "driver_mutation": "del19",
+          "analysis": "naive",
+          "biopsy_site": "Lung",
+          "treatment": "osimertinib",
+          "in_final_author_count_table": true,
+          "malignant_cells": 15
+        }
+      ],
+      "residual_samples": [
+        {
+          "sample_name": "LT_S57",
+          "patient_id": "TH226",
+          "histolgy": "Adenocarcinoma",
+          "driver_gene": "EGFR",
+          "driver_mutation": "del19",
+          "analysis": "grouped_pr",
+          "biopsy_site": "Lung",
+          "treatment": "osimertinib",
+          "in_final_author_count_table": true,
+          "malignant_cells": 194
+        }
+      ],
+      "both_states_at_least_one_malignant_cell": true,
+      "both_states_at_least_ten_malignant_cells_sensitivity": true
+    }
+  ],
+  "pair_summary": {
+    "metadata_candidate_pairs": 3,
+    "pairs_with_any_malignant_cells_in_both_states": 2,
+    "pairs_with_at_least_ten_malignant_cells_per_state_sensitivity": 1
+  },
+  "limitations": [
+    "The >=10 malignant-cell threshold is an audit sensitivity, not the author's whole-sample >10-cell QC rule or a validated power threshold.",
+    "The published malignant labels are accepted for reproduction; inferCNV and clustering are not independently re-estimated.",
+    "The neo-osimertinib subset contributes to the same published discovery dataset and is not independent validation.",
+    "A single cell at baseline does not support a robust population-level paired expression estimate; cells are not independent patient replicates.",
+    "Zero malignant cells in this saved object is a data-availability statement, not evidence of no tumor in a patient."
+  ]
+}

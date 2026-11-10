@@ -1,0 +1,1729 @@
+[
+  {
+    "sample_id": "LX1512",
+    "state": "PD",
+    "histology": "LUAD",
+    "tissue": "Lung",
+    "procedure": "Biopsy",
+    "stage": "IV",
+    "genotype": "E746_A750del",
+    "kit_series_implied": "v4",
+    "kit_conflict": true,
+    "malignant_nuclei": 370,
+    "primary_eligible": false,
+    "exclusion_reasons": [
+      "state_not_primary"
+    ],
+    "score_mean": 0.1870676471692163,
+    "score_equal_core_mean": 0.18706764716921637,
+    "cores": {
+      "LX1512": {
+        "n": 370,
+        "score_mean": 0.18706764716921637
+      }
+    },
+    "canonical_variant": true
+  },
+  {
+    "sample_id": "LX1846",
+    "state": "MRD",
+    "histology": "LUAD",
+    "tissue": "Lung",
+    "procedure": "Lobectomy",
+    "stage": "IIIA",
+    "genotype": "E746_P753delinsVS",
+    "kit_series_implied": "v4",
+    "kit_conflict": true,
+    "malignant_nuclei": 2129,
+    "primary_eligible": true,
+    "exclusion_reasons": [],
+    "score_mean": 0.7065844545348494,
+    "score_equal_core_mean": 0.7065844545348494,
+    "cores": {
+      "LX1846": {
+        "n": 2129,
+        "score_mean": 0.7065844545348494
+      }
+    },
+    "canonical_variant": false
+  },
+  {
+    "sample_id": "LX1910",
+    "state": "MRD",
+    "histology": "LUAD",
+    "tissue": "Lymph Node",
+    "procedure": "Lobectomy",
+    "stage": "IIA",
+    "genotype": "E746_A750del",
+    "kit_series_implied": "v4",
+    "kit_conflict": true,
+    "malignant_nuclei": 0,
+    "primary_eligible": false,
+    "exclusion_reasons": [
+      "fewer_than_20_malignant_nuclei"
+    ],
+    "score_mean": null,
+    "score_equal_core_mean": null,
+    "cores": {},
+    "canonical_variant": true
+  },
+  {
+    "sample_id": "LX1925",
+    "state": "TN",
+    "histology": "LUAD",
+    "tissue": "Lymph Node",
+    "procedure": "Biopsy",
+    "stage": "IV",
+    "genotype": "E746_A750del; Amplification",
+    "kit_series_implied": "v4",
+    "kit_conflict": true,
+    "malignant_nuclei": 2545,
+    "primary_eligible": true,
+    "exclusion_reasons": [],
+    "score_mean": 0.07339853109427848,
+    "score_equal_core_mean": 0.07339853109427848,
+    "cores": {
+      "LX1925": {
+        "n": 2545,
+        "score_mean": 0.07339853109427848
+      }
+    },
+    "canonical_variant": true
+  },
+  {
+    "sample_id": "LX1940",
+    "state": "MRD",
+    "histology": "LUAD",
+    "tissue": "Lung",
+    "procedure": "Resection",
+    "stage": "IIIA",
+    "genotype": "S768I, L747_T751del",
+    "kit_series_implied": "v4",
+    "kit_conflict": true,
+    "malignant_nuclei": 0,
+    "primary_eligible": false,
+    "exclusion_reasons": [
+      "fewer_than_20_malignant_nuclei"
+    ],
+    "score_mean": null,
+    "score_equal_core_mean": null,
+    "cores": {},
+    "canonical_variant": false
+  },
+  {
+    "sample_id": "LX1966",
+    "state": "MRD",
+    "histology": "LUAD",
+    "tissue": "Lung",
+    "procedure": "Resection",
+    "stage": "IV",
+    "genotype": "E746_T751delinsVP; C797S",
+    "kit_series_implied": "v4",
+    "kit_conflict": true,
+    "malignant_nuclei": 4838,
+    "primary_eligible": true,
+    "exclusion_reasons": [],
+    "score_mean": 0.5354634424102005,
+    "score_equal_core_mean": 0.5354634424102006,
+    "cores": {
+      "LX1966": {
+        "n": 4838,
+        "score_mean": 0.5354634424102006
+      }
+    },
+    "canonical_variant": false
+  },
+  {
+    "sample_id": "LX2000",
+    "state": "MRD",
+    "histology": "LUAD",
+    "tissue": "Lung",
+    "procedure": "Resection",
+    "stage": "IV",
+    "genotype": "L858R",
+    "kit_series_implied": "v4",
+    "kit_conflict": true,
+    "malignant_nuclei": 640,
+    "primary_eligible": true,
+    "exclusion_reasons": [],
+    "score_mean": 0.26954974109852936,
+    "score_equal_core_mean": 0.2695497410985293,
+    "cores": {
+      "LX2000": {
+        "n": 640,
+        "score_mean": 0.2695497410985293
+      }
+    },
+    "canonical_variant": true
+  },
+  {
+    "sample_id": "LX2010",
+    "state": "MRD",
+    "histology": "LUAD",
+    "tissue": "Lung",
+    "procedure": "Resection",
+    "stage": "IV",
+    "genotype": "L858R",
+    "kit_series_implied": "v4",
+    "kit_conflict": true,
+    "malignant_nuclei": 1982,
+    "primary_eligible": true,
+    "exclusion_reasons": [],
+    "score_mean": 0.7997302846628913,
+    "score_equal_core_mean": 0.7997302846628913,
+    "cores": {
+      "LX2010": {
+        "n": 1982,
+        "score_mean": 0.7997302846628913
+      }
+    },
+    "canonical_variant": true
+  },
+  {
+    "sample_id": "LX2015",
+    "state": "TN",
+    "histology": "LUAD",
+    "tissue": "Lung",
+    "procedure": "Resection",
+    "stage": "IA",
+    "genotype": "L858R",
+    "kit_series_implied": "v4",
+    "kit_conflict": true,
+    "malignant_nuclei": 9958,
+    "primary_eligible": true,
+    "exclusion_reasons": [],
+    "score_mean": 0.4482493043458685,
+    "score_equal_core_mean": 0.4482493043458685,
+    "cores": {
+      "LX2015": {
+        "n": 9958,
+        "score_mean": 0.4482493043458685
+      }
+    },
+    "canonical_variant": true
+  },
+  {
+    "sample_id": "LX2019",
+    "state": "MRD",
+    "histology": "SCLC",
+    "tissue": "Lung",
+    "procedure": "Resection",
+    "stage": "IIIA",
+    "genotype": "E746_A750del",
+    "kit_series_implied": "v4",
+    "kit_conflict": true,
+    "malignant_nuclei": 500,
+    "primary_eligible": false,
+    "exclusion_reasons": [
+      "histology_not_LUAD"
+    ],
+    "score_mean": 0.643094073719012,
+    "score_equal_core_mean": 0.6430940737190121,
+    "cores": {
+      "LX2019": {
+        "n": 500,
+        "score_mean": 0.6430940737190121
+      }
+    },
+    "canonical_variant": true
+  },
+  {
+    "sample_id": "LX2023",
+    "state": "MRD",
+    "histology": "LUAD",
+    "tissue": "Lung",
+    "procedure": "Resection",
+    "stage": "IV",
+    "genotype": "L747_E749del",
+    "kit_series_implied": "v4",
+    "kit_conflict": true,
+    "malignant_nuclei": 2388,
+    "primary_eligible": true,
+    "exclusion_reasons": [],
+    "score_mean": 0.8028189696740909,
+    "score_equal_core_mean": 0.802818969674091,
+    "cores": {
+      "LX2023": {
+        "n": 2388,
+        "score_mean": 0.802818969674091
+      }
+    },
+    "canonical_variant": false
+  },
+  {
+    "sample_id": "MRD1",
+    "state": "MRD",
+    "histology": "LUAD",
+    "tissue": "Locoregional",
+    "procedure": "Biopsy",
+    "stage": "IV",
+    "genotype": "E746_A750del",
+    "kit_series_implied": "v3.1",
+    "kit_conflict": false,
+    "malignant_nuclei": 255,
+    "primary_eligible": true,
+    "exclusion_reasons": [],
+    "score_mean": 0.6926205333933575,
+    "score_equal_core_mean": 0.6926205333933576,
+    "cores": {
+      "MRD1": {
+        "n": 255,
+        "score_mean": 0.6926205333933576
+      }
+    },
+    "canonical_variant": true
+  },
+  {
+    "sample_id": "MRD2",
+    "state": "MRD",
+    "histology": "LUAD",
+    "tissue": "Lung",
+    "procedure": "Resection",
+    "stage": "IV",
+    "genotype": "L858R; Amplification",
+    "kit_series_implied": "mixed",
+    "kit_conflict": true,
+    "malignant_nuclei": 2761,
+    "primary_eligible": true,
+    "exclusion_reasons": [],
+    "score_mean": 0.8730719032523735,
+    "score_equal_core_mean": 0.934065758158634,
+    "cores": {
+      "MRD2_core1": {
+        "n": 183,
+        "score_mean": 1.0043805946497342
+      },
+      "MRD2_core2": {
+        "n": 2578,
+        "score_mean": 0.8637509216675338
+      }
+    },
+    "canonical_variant": true
+  },
+  {
+    "sample_id": "MRD3",
+    "state": "MRD",
+    "histology": "LUAD",
+    "tissue": "Bone/Soft Tissue",
+    "procedure": "Biopsy",
+    "stage": "IV",
+    "genotype": "E746_A750del",
+    "kit_series_implied": "v3.1",
+    "kit_conflict": false,
+    "malignant_nuclei": 0,
+    "primary_eligible": false,
+    "exclusion_reasons": [
+      "fewer_than_20_malignant_nuclei"
+    ],
+    "score_mean": null,
+    "score_equal_core_mean": null,
+    "cores": {},
+    "canonical_variant": true
+  },
+  {
+    "sample_id": "MRD4",
+    "state": "MRD",
+    "histology": "LUAD",
+    "tissue": "Pleura",
+    "procedure": "Biopsy",
+    "stage": "IV",
+    "genotype": "E746_A750del; Amplification",
+    "kit_series_implied": "v3.1",
+    "kit_conflict": false,
+    "malignant_nuclei": 0,
+    "primary_eligible": false,
+    "exclusion_reasons": [
+      "fewer_than_20_malignant_nuclei"
+    ],
+    "score_mean": null,
+    "score_equal_core_mean": null,
+    "cores": {},
+    "canonical_variant": true
+  },
+  {
+    "sample_id": "MRD5",
+    "state": "MRD",
+    "histology": "LUAD",
+    "tissue": "Liver",
+    "procedure": "Biopsy",
+    "stage": "IV",
+    "genotype": "E746_A750del; Amplification",
+    "kit_series_implied": "v3.1",
+    "kit_conflict": false,
+    "malignant_nuclei": 181,
+    "primary_eligible": true,
+    "exclusion_reasons": [],
+    "score_mean": 0.2190453450627763,
+    "score_equal_core_mean": 0.2190453450627763,
+    "cores": {
+      "MRD5": {
+        "n": 181,
+        "score_mean": 0.2190453450627763
+      }
+    },
+    "canonical_variant": true
+  },
+  {
+    "sample_id": "MRD6",
+    "state": "MRD",
+    "histology": "LUAD",
+    "tissue": "Lung",
+    "procedure": "Biopsy",
+    "stage": "IV",
+    "genotype": "L858R",
+    "kit_series_implied": "v3.1",
+    "kit_conflict": false,
+    "malignant_nuclei": 91,
+    "primary_eligible": true,
+    "exclusion_reasons": [],
+    "score_mean": 0.4134514547876616,
+    "score_equal_core_mean": 0.41345145478766177,
+    "cores": {
+      "MRD6": {
+        "n": 91,
+        "score_mean": 0.41345145478766177
+      }
+    },
+    "canonical_variant": true
+  },
+  {
+    "sample_id": "PD1",
+    "state": "PD",
+    "histology": "LUAD",
+    "tissue": "Brain",
+    "procedure": "Resection",
+    "stage": "IV",
+    "genotype": "E746_A750del; Amplification",
+    "kit_series_implied": "v3.1",
+    "kit_conflict": false,
+    "malignant_nuclei": 976,
+    "primary_eligible": false,
+    "exclusion_reasons": [
+      "state_not_primary"
+    ],
+    "score_mean": 0.045301803578874596,
+    "score_equal_core_mean": 0.045301803578874596,
+    "cores": {
+      "PD1": {
+        "n": 976,
+        "score_mean": 0.045301803578874596
+      }
+    },
+    "canonical_variant": true
+  },
+  {
+    "sample_id": "PD10",
+    "state": "PD",
+    "histology": "LUAD",
+    "tissue": "Lung",
+    "procedure": "Biopsy",
+    "stage": "IV",
+    "genotype": "L858R; Amplification",
+    "kit_series_implied": "v3.1",
+    "kit_conflict": false,
+    "malignant_nuclei": 1082,
+    "primary_eligible": false,
+    "exclusion_reasons": [
+      "state_not_primary"
+    ],
+    "score_mean": 0.3497173841773873,
+    "score_equal_core_mean": 0.3497173841773873,
+    "cores": {
+      "PD10": {
+        "n": 1082,
+        "score_mean": 0.3497173841773873
+      }
+    },
+    "canonical_variant": true
+  },
+  {
+    "sample_id": "PD11",
+    "state": "PD",
+    "histology": "LUAD",
+    "tissue": "Lung",
+    "procedure": "Biopsy",
+    "stage": "IV",
+    "genotype": "L747_T751del",
+    "kit_series_implied": "v3.1",
+    "kit_conflict": false,
+    "malignant_nuclei": 1638,
+    "primary_eligible": false,
+    "exclusion_reasons": [
+      "state_not_primary"
+    ],
+    "score_mean": 0.47801102409048307,
+    "score_equal_core_mean": 0.47801102409048307,
+    "cores": {
+      "PD11": {
+        "n": 1638,
+        "score_mean": 0.47801102409048307
+      }
+    },
+    "canonical_variant": false
+  },
+  {
+    "sample_id": "PD12",
+    "state": "PD",
+    "histology": "LUAD",
+    "tissue": "Lung",
+    "procedure": "Biopsy",
+    "stage": "IV",
+    "genotype": "E746_A750del; Amplification",
+    "kit_series_implied": "v3.1",
+    "kit_conflict": false,
+    "malignant_nuclei": 846,
+    "primary_eligible": false,
+    "exclusion_reasons": [
+      "state_not_primary"
+    ],
+    "score_mean": 0.2605172876988428,
+    "score_equal_core_mean": 0.2605172876988428,
+    "cores": {
+      "PD12": {
+        "n": 846,
+        "score_mean": 0.2605172876988428
+      }
+    },
+    "canonical_variant": true
+  },
+  {
+    "sample_id": "PD13",
+    "state": "PD",
+    "histology": "LUAD",
+    "tissue": "Lung",
+    "procedure": "Biopsy",
+    "stage": "IV",
+    "genotype": "L858R",
+    "kit_series_implied": "v3.1",
+    "kit_conflict": false,
+    "malignant_nuclei": 1070,
+    "primary_eligible": false,
+    "exclusion_reasons": [
+      "state_not_primary"
+    ],
+    "score_mean": 0.4046100662468199,
+    "score_equal_core_mean": 0.4046100662468199,
+    "cores": {
+      "PD13": {
+        "n": 1070,
+        "score_mean": 0.4046100662468199
+      }
+    },
+    "canonical_variant": true
+  },
+  {
+    "sample_id": "PD14",
+    "state": "PD",
+    "histology": "Poorly diff.",
+    "tissue": "Brain",
+    "procedure": "Biopsy",
+    "stage": "IV",
+    "genotype": "L858R",
+    "kit_series_implied": "v3.1",
+    "kit_conflict": false,
+    "malignant_nuclei": 2727,
+    "primary_eligible": false,
+    "exclusion_reasons": [
+      "state_not_primary",
+      "histology_not_LUAD"
+    ],
+    "score_mean": 0.10109394614852599,
+    "score_equal_core_mean": 0.10109394614852599,
+    "cores": {
+      "PD14": {
+        "n": 2727,
+        "score_mean": 0.10109394614852599
+      }
+    },
+    "canonical_variant": true
+  },
+  {
+    "sample_id": "PD15",
+    "state": "PD",
+    "histology": "LUSC",
+    "tissue": "Lung",
+    "procedure": "Lobectomy",
+    "stage": "IV",
+    "genotype": "T751_I759delinsN; Amplification",
+    "kit_series_implied": "v3.1",
+    "kit_conflict": false,
+    "malignant_nuclei": 0,
+    "primary_eligible": false,
+    "exclusion_reasons": [
+      "state_not_primary",
+      "histology_not_LUAD",
+      "fewer_than_20_malignant_nuclei"
+    ],
+    "score_mean": null,
+    "score_equal_core_mean": null,
+    "cores": {},
+    "canonical_variant": false
+  },
+  {
+    "sample_id": "PD16",
+    "state": "PD",
+    "histology": "LUAD",
+    "tissue": "Lung",
+    "procedure": "Biopsy",
+    "stage": "IV",
+    "genotype": "L747_A750delinsP",
+    "kit_series_implied": "v3.1",
+    "kit_conflict": false,
+    "malignant_nuclei": 3535,
+    "primary_eligible": false,
+    "exclusion_reasons": [
+      "state_not_primary"
+    ],
+    "score_mean": 0.3884397388529074,
+    "score_equal_core_mean": 0.3884397388529074,
+    "cores": {
+      "PD16": {
+        "n": 3535,
+        "score_mean": 0.3884397388529074
+      }
+    },
+    "canonical_variant": false
+  },
+  {
+    "sample_id": "PD17",
+    "state": "PD",
+    "histology": "LUAD",
+    "tissue": "Lymph Node",
+    "procedure": "Biopsy",
+    "stage": "IV",
+    "genotype": "T751_I759delinsN",
+    "kit_series_implied": "v3.1",
+    "kit_conflict": false,
+    "malignant_nuclei": 163,
+    "primary_eligible": false,
+    "exclusion_reasons": [
+      "state_not_primary"
+    ],
+    "score_mean": 0.41880933576971335,
+    "score_equal_core_mean": 0.41880933576971335,
+    "cores": {
+      "PD17": {
+        "n": 163,
+        "score_mean": 0.41880933576971335
+      }
+    },
+    "canonical_variant": false
+  },
+  {
+    "sample_id": "PD18",
+    "state": "PD",
+    "histology": "LUAD",
+    "tissue": "Lymph Node",
+    "procedure": "Biopsy",
+    "stage": "IV",
+    "genotype": "E746_A750del",
+    "kit_series_implied": "v3.1",
+    "kit_conflict": false,
+    "malignant_nuclei": 1307,
+    "primary_eligible": false,
+    "exclusion_reasons": [
+      "state_not_primary"
+    ],
+    "score_mean": 0.4996445963280895,
+    "score_equal_core_mean": 0.4996445963280895,
+    "cores": {
+      "PD18": {
+        "n": 1307,
+        "score_mean": 0.4996445963280895
+      }
+    },
+    "canonical_variant": true
+  },
+  {
+    "sample_id": "PD19",
+    "state": "PD",
+    "histology": "LUAD",
+    "tissue": "Lung",
+    "procedure": "Biopsy",
+    "stage": "IV",
+    "genotype": "L858R",
+    "kit_series_implied": "v3.1",
+    "kit_conflict": false,
+    "malignant_nuclei": 0,
+    "primary_eligible": false,
+    "exclusion_reasons": [
+      "state_not_primary",
+      "fewer_than_20_malignant_nuclei"
+    ],
+    "score_mean": null,
+    "score_equal_core_mean": null,
+    "cores": {},
+    "canonical_variant": true
+  },
+  {
+    "sample_id": "PD2",
+    "state": "PD",
+    "histology": "LUAD",
+    "tissue": "Lung",
+    "procedure": "Biopsy",
+    "stage": "IV",
+    "genotype": "S768I, L858R, T790M; Amplification",
+    "kit_series_implied": "v3.1",
+    "kit_conflict": false,
+    "malignant_nuclei": 3038,
+    "primary_eligible": false,
+    "exclusion_reasons": [
+      "state_not_primary"
+    ],
+    "score_mean": 0.37187574453717065,
+    "score_equal_core_mean": 0.37187574453717076,
+    "cores": {
+      "PD2": {
+        "n": 3038,
+        "score_mean": 0.37187574453717076
+      }
+    },
+    "canonical_variant": true
+  },
+  {
+    "sample_id": "PD20",
+    "state": "PD",
+    "histology": "LUAD",
+    "tissue": "Lung",
+    "procedure": "Biopsy",
+    "stage": "IV",
+    "genotype": "L858R",
+    "kit_series_implied": "v3.1",
+    "kit_conflict": false,
+    "malignant_nuclei": 27,
+    "primary_eligible": false,
+    "exclusion_reasons": [
+      "state_not_primary"
+    ],
+    "score_mean": 0.4264706496725974,
+    "score_equal_core_mean": 0.4264706496725974,
+    "cores": {
+      "PD20": {
+        "n": 27,
+        "score_mean": 0.4264706496725974
+      }
+    },
+    "canonical_variant": true
+  },
+  {
+    "sample_id": "PD21",
+    "state": "PD",
+    "histology": "LUAD",
+    "tissue": "Liver",
+    "procedure": "Biopsy",
+    "stage": "IV",
+    "genotype": "L747_S752del",
+    "kit_series_implied": "v3.1",
+    "kit_conflict": false,
+    "malignant_nuclei": 4160,
+    "primary_eligible": false,
+    "exclusion_reasons": [
+      "state_not_primary"
+    ],
+    "score_mean": 0.2085832087232007,
+    "score_equal_core_mean": 0.2085832087232007,
+    "cores": {
+      "PD21": {
+        "n": 4160,
+        "score_mean": 0.2085832087232007
+      }
+    },
+    "canonical_variant": false
+  },
+  {
+    "sample_id": "PD22",
+    "state": "PD",
+    "histology": "LUAD",
+    "tissue": "Liver",
+    "procedure": "Biopsy",
+    "stage": "IV",
+    "genotype": "L858R; Amplification",
+    "kit_series_implied": "v3.1",
+    "kit_conflict": false,
+    "malignant_nuclei": 92,
+    "primary_eligible": false,
+    "exclusion_reasons": [
+      "state_not_primary"
+    ],
+    "score_mean": 0.17260156620940628,
+    "score_equal_core_mean": 0.17260156620940625,
+    "cores": {
+      "PD22": {
+        "n": 92,
+        "score_mean": 0.17260156620940625
+      }
+    },
+    "canonical_variant": true
+  },
+  {
+    "sample_id": "PD23",
+    "state": "PD",
+    "histology": "SCLC",
+    "tissue": "Liver",
+    "procedure": "Biopsy",
+    "stage": "IV",
+    "genotype": "E746_A750del",
+    "kit_series_implied": "v3.1",
+    "kit_conflict": false,
+    "malignant_nuclei": 1351,
+    "primary_eligible": false,
+    "exclusion_reasons": [
+      "state_not_primary",
+      "histology_not_LUAD"
+    ],
+    "score_mean": 0.15003257600314948,
+    "score_equal_core_mean": 0.15003257600314948,
+    "cores": {
+      "PD23": {
+        "n": 1351,
+        "score_mean": 0.15003257600314948
+      }
+    },
+    "canonical_variant": true
+  },
+  {
+    "sample_id": "PD24",
+    "state": "PD",
+    "histology": "LUSC",
+    "tissue": "Bone/Soft Tissue",
+    "procedure": "Resection",
+    "stage": "IV",
+    "genotype": "L858R",
+    "kit_series_implied": "v3.1",
+    "kit_conflict": false,
+    "malignant_nuclei": 2747,
+    "primary_eligible": false,
+    "exclusion_reasons": [
+      "state_not_primary",
+      "histology_not_LUAD"
+    ],
+    "score_mean": 0.054587417394890786,
+    "score_equal_core_mean": 0.05458741739489077,
+    "cores": {
+      "PD24": {
+        "n": 2747,
+        "score_mean": 0.05458741739489077
+      }
+    },
+    "canonical_variant": true
+  },
+  {
+    "sample_id": "PD25",
+    "state": "PD",
+    "histology": "LUSC",
+    "tissue": "Bone/Soft Tissue",
+    "procedure": "Biopsy",
+    "stage": "IV",
+    "genotype": "L858R",
+    "kit_series_implied": "v3.1",
+    "kit_conflict": false,
+    "malignant_nuclei": 2450,
+    "primary_eligible": false,
+    "exclusion_reasons": [
+      "state_not_primary",
+      "histology_not_LUAD"
+    ],
+    "score_mean": 0.0722608736769157,
+    "score_equal_core_mean": 0.07226087367691568,
+    "cores": {
+      "PD25": {
+        "n": 2450,
+        "score_mean": 0.07226087367691568
+      }
+    },
+    "canonical_variant": true
+  },
+  {
+    "sample_id": "PD26",
+    "state": "PD",
+    "histology": "LUAD",
+    "tissue": "Brain",
+    "procedure": "Resection",
+    "stage": "IV",
+    "genotype": "L858R; C797S",
+    "kit_series_implied": "v3.1",
+    "kit_conflict": false,
+    "malignant_nuclei": 5907,
+    "primary_eligible": false,
+    "exclusion_reasons": [
+      "state_not_primary"
+    ],
+    "score_mean": 0.06603976831748462,
+    "score_equal_core_mean": 0.0660397683174846,
+    "cores": {
+      "PD26": {
+        "n": 5907,
+        "score_mean": 0.0660397683174846
+      }
+    },
+    "canonical_variant": true
+  },
+  {
+    "sample_id": "PD27",
+    "state": "PD",
+    "histology": "LUAD",
+    "tissue": "Lung",
+    "procedure": "Biopsy",
+    "stage": "IV",
+    "genotype": "L861Q; Amplification",
+    "kit_series_implied": "v3.1",
+    "kit_conflict": false,
+    "malignant_nuclei": 445,
+    "primary_eligible": false,
+    "exclusion_reasons": [
+      "state_not_primary"
+    ],
+    "score_mean": 0.34283463270122727,
+    "score_equal_core_mean": 0.34283463270122727,
+    "cores": {
+      "PD27": {
+        "n": 445,
+        "score_mean": 0.34283463270122727
+      }
+    },
+    "canonical_variant": false
+  },
+  {
+    "sample_id": "PD28",
+    "state": "PD",
+    "histology": "LUAD",
+    "tissue": "Bone/Soft Tissue",
+    "procedure": "Biopsy",
+    "stage": "IV",
+    "genotype": "E746_A750del",
+    "kit_series_implied": "v3.1",
+    "kit_conflict": false,
+    "malignant_nuclei": 669,
+    "primary_eligible": false,
+    "exclusion_reasons": [
+      "state_not_primary"
+    ],
+    "score_mean": 0.03582057659779997,
+    "score_equal_core_mean": 0.035820576597799976,
+    "cores": {
+      "PD28": {
+        "n": 669,
+        "score_mean": 0.035820576597799976
+      }
+    },
+    "canonical_variant": true
+  },
+  {
+    "sample_id": "PD29",
+    "state": "PD",
+    "histology": "LUAD",
+    "tissue": "Liver",
+    "procedure": "Biopsy",
+    "stage": "IV",
+    "genotype": "L858R",
+    "kit_series_implied": "v3.1",
+    "kit_conflict": false,
+    "malignant_nuclei": 933,
+    "primary_eligible": false,
+    "exclusion_reasons": [
+      "state_not_primary"
+    ],
+    "score_mean": 0.07336220949257867,
+    "score_equal_core_mean": 0.07336220949257868,
+    "cores": {
+      "PD29": {
+        "n": 933,
+        "score_mean": 0.07336220949257868
+      }
+    },
+    "canonical_variant": true
+  },
+  {
+    "sample_id": "PD3",
+    "state": "PD",
+    "histology": "LUAD",
+    "tissue": "Lung",
+    "procedure": "Biopsy",
+    "stage": "IV",
+    "genotype": "E746_A750del, T790M; Amplification",
+    "kit_series_implied": "v3.1",
+    "kit_conflict": false,
+    "malignant_nuclei": 181,
+    "primary_eligible": false,
+    "exclusion_reasons": [
+      "state_not_primary"
+    ],
+    "score_mean": 0.2652025175826495,
+    "score_equal_core_mean": 0.2652025175826495,
+    "cores": {
+      "PD3": {
+        "n": 181,
+        "score_mean": 0.2652025175826495
+      }
+    },
+    "canonical_variant": true
+  },
+  {
+    "sample_id": "PD30",
+    "state": "PD",
+    "histology": "LUAD",
+    "tissue": "Pleura",
+    "procedure": "Effusion Drainage",
+    "stage": "IV",
+    "genotype": "L858R, V834L",
+    "kit_series_implied": "v3.1",
+    "kit_conflict": false,
+    "malignant_nuclei": 465,
+    "primary_eligible": false,
+    "exclusion_reasons": [
+      "state_not_primary"
+    ],
+    "score_mean": 0.753477876766954,
+    "score_equal_core_mean": 0.753477876766954,
+    "cores": {
+      "PD30": {
+        "n": 465,
+        "score_mean": 0.753477876766954
+      }
+    },
+    "canonical_variant": true
+  },
+  {
+    "sample_id": "PD4",
+    "state": "PD",
+    "histology": "LUAD",
+    "tissue": "Bone/Soft Tissue",
+    "procedure": "Resection",
+    "stage": "IV",
+    "genotype": "E746_A750del",
+    "kit_series_implied": "v3.1",
+    "kit_conflict": false,
+    "malignant_nuclei": 76,
+    "primary_eligible": false,
+    "exclusion_reasons": [
+      "state_not_primary"
+    ],
+    "score_mean": 0.054724437978631406,
+    "score_equal_core_mean": 0.05472443797863139,
+    "cores": {
+      "PD4": {
+        "n": 76,
+        "score_mean": 0.05472443797863139
+      }
+    },
+    "canonical_variant": true
+  },
+  {
+    "sample_id": "PD5",
+    "state": "PD",
+    "histology": "LUAD",
+    "tissue": "Bone/Soft Tissue",
+    "procedure": "Laminectomy",
+    "stage": "IV",
+    "genotype": "E746_T751delinsI; Amplification",
+    "kit_series_implied": "v3.1",
+    "kit_conflict": false,
+    "malignant_nuclei": 2187,
+    "primary_eligible": false,
+    "exclusion_reasons": [
+      "state_not_primary"
+    ],
+    "score_mean": 0.31141273045434614,
+    "score_equal_core_mean": 0.31141273045434614,
+    "cores": {
+      "PD5": {
+        "n": 2187,
+        "score_mean": 0.31141273045434614
+      }
+    },
+    "canonical_variant": false
+  },
+  {
+    "sample_id": "PD6",
+    "state": "PD",
+    "histology": "SCLC",
+    "tissue": "Bone/Soft Tissue",
+    "procedure": "Biopsy",
+    "stage": "IV",
+    "genotype": "L747_A750delinsP",
+    "kit_series_implied": "v3.1",
+    "kit_conflict": false,
+    "malignant_nuclei": 2270,
+    "primary_eligible": false,
+    "exclusion_reasons": [
+      "state_not_primary",
+      "histology_not_LUAD"
+    ],
+    "score_mean": 0.0675107530538577,
+    "score_equal_core_mean": 0.0675107530538577,
+    "cores": {
+      "PD6": {
+        "n": 2270,
+        "score_mean": 0.0675107530538577
+      }
+    },
+    "canonical_variant": false
+  },
+  {
+    "sample_id": "PD7",
+    "state": "PD",
+    "histology": "LUAD",
+    "tissue": "Liver",
+    "procedure": "Biopsy",
+    "stage": "IV",
+    "genotype": "I740_K745dup; Amplification",
+    "kit_series_implied": "v3.1",
+    "kit_conflict": false,
+    "malignant_nuclei": 948,
+    "primary_eligible": false,
+    "exclusion_reasons": [
+      "state_not_primary"
+    ],
+    "score_mean": 0.4053559002645625,
+    "score_equal_core_mean": 0.4053559002645625,
+    "cores": {
+      "PD7": {
+        "n": 948,
+        "score_mean": 0.4053559002645625
+      }
+    },
+    "canonical_variant": false
+  },
+  {
+    "sample_id": "PD8",
+    "state": "PD",
+    "histology": "LUAD",
+    "tissue": "Locoregional",
+    "procedure": "Biopsy",
+    "stage": "IV",
+    "genotype": "E746_A750del",
+    "kit_series_implied": "v3.1",
+    "kit_conflict": false,
+    "malignant_nuclei": 1849,
+    "primary_eligible": false,
+    "exclusion_reasons": [
+      "state_not_primary"
+    ],
+    "score_mean": 0.5879511134297879,
+    "score_equal_core_mean": 0.5879511134297879,
+    "cores": {
+      "PD8": {
+        "n": 1849,
+        "score_mean": 0.5879511134297879
+      }
+    },
+    "canonical_variant": true
+  },
+  {
+    "sample_id": "PD9",
+    "state": "PD",
+    "histology": "LUAD",
+    "tissue": "Lung",
+    "procedure": "Biopsy",
+    "stage": "IV",
+    "genotype": "E746_A750del",
+    "kit_series_implied": "v3.1",
+    "kit_conflict": false,
+    "malignant_nuclei": 1020,
+    "primary_eligible": false,
+    "exclusion_reasons": [
+      "state_not_primary"
+    ],
+    "score_mean": 0.21551867389194448,
+    "score_equal_core_mean": 0.21551867389194448,
+    "cores": {
+      "PD9": {
+        "n": 1020,
+        "score_mean": 0.21551867389194448
+      }
+    },
+    "canonical_variant": true
+  },
+  {
+    "sample_id": "TN1",
+    "state": "TN",
+    "histology": "LUAD",
+    "tissue": "Lung",
+    "procedure": "Lobectomy",
+    "stage": "IV",
+    "genotype": "E746_A750delinsNP, T790M",
+    "kit_series_implied": "v3.1",
+    "kit_conflict": false,
+    "malignant_nuclei": 0,
+    "primary_eligible": false,
+    "exclusion_reasons": [
+      "fewer_than_20_malignant_nuclei"
+    ],
+    "score_mean": null,
+    "score_equal_core_mean": null,
+    "cores": {},
+    "canonical_variant": false
+  },
+  {
+    "sample_id": "TN10",
+    "state": "TN",
+    "histology": "LUAD",
+    "tissue": "Lung",
+    "procedure": "Fresh Frozen",
+    "stage": "IA1",
+    "genotype": "E746_A750delinsAP",
+    "kit_series_implied": "v3.1",
+    "kit_conflict": false,
+    "malignant_nuclei": 10380,
+    "primary_eligible": true,
+    "exclusion_reasons": [],
+    "score_mean": 1.1290379863694384,
+    "score_equal_core_mean": 1.1290379863694384,
+    "cores": {
+      "TN10": {
+        "n": 10380,
+        "score_mean": 1.1290379863694384
+      }
+    },
+    "canonical_variant": false
+  },
+  {
+    "sample_id": "TN11",
+    "state": "TN",
+    "histology": "LUAD",
+    "tissue": "Lung",
+    "procedure": "Fresh Frozen",
+    "stage": "IA3",
+    "genotype": "S768_V769insMDS",
+    "kit_series_implied": "v3.1",
+    "kit_conflict": false,
+    "malignant_nuclei": 7341,
+    "primary_eligible": true,
+    "exclusion_reasons": [],
+    "score_mean": 1.0418962176418627,
+    "score_equal_core_mean": 1.0418962176418627,
+    "cores": {
+      "TN11": {
+        "n": 7341,
+        "score_mean": 1.0418962176418627
+      }
+    },
+    "canonical_variant": false
+  },
+  {
+    "sample_id": "TN12",
+    "state": "TN",
+    "histology": "LUAD",
+    "tissue": "Lung",
+    "procedure": "Fresh Frozen",
+    "stage": "IA2",
+    "genotype": "L858R",
+    "kit_series_implied": "v3.1",
+    "kit_conflict": false,
+    "malignant_nuclei": 223,
+    "primary_eligible": true,
+    "exclusion_reasons": [],
+    "score_mean": 0.748472678751171,
+    "score_equal_core_mean": 0.7484726787511711,
+    "cores": {
+      "TN12": {
+        "n": 223,
+        "score_mean": 0.7484726787511711
+      }
+    },
+    "canonical_variant": true
+  },
+  {
+    "sample_id": "TN13",
+    "state": "TN",
+    "histology": "LUAD",
+    "tissue": "Lung",
+    "procedure": "Fresh Frozen",
+    "stage": "IA2",
+    "genotype": "L861Q",
+    "kit_series_implied": "v3.1",
+    "kit_conflict": false,
+    "malignant_nuclei": 2407,
+    "primary_eligible": true,
+    "exclusion_reasons": [],
+    "score_mean": 1.1142653111821408,
+    "score_equal_core_mean": 1.1142653111821408,
+    "cores": {
+      "TN13": {
+        "n": 2407,
+        "score_mean": 1.1142653111821408
+      }
+    },
+    "canonical_variant": false
+  },
+  {
+    "sample_id": "TN14",
+    "state": "TN",
+    "histology": "LUAD",
+    "tissue": "Lung",
+    "procedure": "Resection",
+    "stage": "IB",
+    "genotype": "G719A, S768I",
+    "kit_series_implied": "v3.1",
+    "kit_conflict": false,
+    "malignant_nuclei": 5760,
+    "primary_eligible": true,
+    "exclusion_reasons": [],
+    "score_mean": 0.8154913499313403,
+    "score_equal_core_mean": 0.8154913499313403,
+    "cores": {
+      "TN14": {
+        "n": 5760,
+        "score_mean": 0.8154913499313403
+      }
+    },
+    "canonical_variant": false
+  },
+  {
+    "sample_id": "TN15",
+    "state": "TN",
+    "histology": "LUAD",
+    "tissue": "Lung",
+    "procedure": "Fresh Frozen",
+    "stage": "IIA",
+    "genotype": "G719A, R776H",
+    "kit_series_implied": "v3.1",
+    "kit_conflict": false,
+    "malignant_nuclei": 1730,
+    "primary_eligible": true,
+    "exclusion_reasons": [],
+    "score_mean": 0.9892323440214045,
+    "score_equal_core_mean": 0.9892323440214045,
+    "cores": {
+      "TN15": {
+        "n": 1730,
+        "score_mean": 0.9892323440214045
+      }
+    },
+    "canonical_variant": false
+  },
+  {
+    "sample_id": "TN16",
+    "state": "TN",
+    "histology": "LUAD",
+    "tissue": "Lung",
+    "procedure": "Lobectomy",
+    "stage": "IIA",
+    "genotype": "exon 19 del",
+    "kit_series_implied": "v3.1",
+    "kit_conflict": false,
+    "malignant_nuclei": 0,
+    "primary_eligible": false,
+    "exclusion_reasons": [
+      "fewer_than_20_malignant_nuclei"
+    ],
+    "score_mean": null,
+    "score_equal_core_mean": null,
+    "cores": {},
+    "canonical_variant": false
+  },
+  {
+    "sample_id": "TN17",
+    "state": "TN",
+    "histology": "LUAD",
+    "tissue": "Lung",
+    "procedure": "Fresh Frozen",
+    "stage": "IIA",
+    "genotype": "L858R, T790M",
+    "kit_series_implied": "v3.1",
+    "kit_conflict": false,
+    "malignant_nuclei": 7968,
+    "primary_eligible": true,
+    "exclusion_reasons": [],
+    "score_mean": 1.045747471659405,
+    "score_equal_core_mean": 1.0457474716594048,
+    "cores": {
+      "TN17": {
+        "n": 7968,
+        "score_mean": 1.0457474716594048
+      }
+    },
+    "canonical_variant": true
+  },
+  {
+    "sample_id": "TN18",
+    "state": "TN",
+    "histology": "LUAD",
+    "tissue": "Lung",
+    "procedure": "Fresh Frozen",
+    "stage": "IA2",
+    "genotype": "E746_A750del",
+    "kit_series_implied": "v3.1",
+    "kit_conflict": false,
+    "malignant_nuclei": 487,
+    "primary_eligible": true,
+    "exclusion_reasons": [],
+    "score_mean": 0.9001471786159945,
+    "score_equal_core_mean": 0.9001471786159945,
+    "cores": {
+      "TN18": {
+        "n": 487,
+        "score_mean": 0.9001471786159945
+      }
+    },
+    "canonical_variant": true
+  },
+  {
+    "sample_id": "TN19",
+    "state": "TN",
+    "histology": "LUAD",
+    "tissue": "Lung",
+    "procedure": "Fresh Frozen",
+    "stage": "IB",
+    "genotype": "L858R",
+    "kit_series_implied": "v3.1",
+    "kit_conflict": false,
+    "malignant_nuclei": 483,
+    "primary_eligible": true,
+    "exclusion_reasons": [],
+    "score_mean": 0.7275418696066113,
+    "score_equal_core_mean": 0.7275418696066114,
+    "cores": {
+      "TN19": {
+        "n": 483,
+        "score_mean": 0.7275418696066114
+      }
+    },
+    "canonical_variant": true
+  },
+  {
+    "sample_id": "TN2",
+    "state": "TN",
+    "histology": "LUAD",
+    "tissue": "Lung",
+    "procedure": "Fresh Frozen",
+    "stage": "IA2",
+    "genotype": "E746_T751delinsI",
+    "kit_series_implied": "v3.1",
+    "kit_conflict": false,
+    "malignant_nuclei": 2906,
+    "primary_eligible": true,
+    "exclusion_reasons": [],
+    "score_mean": 1.370580548610231,
+    "score_equal_core_mean": 1.370580548610231,
+    "cores": {
+      "TN2": {
+        "n": 2906,
+        "score_mean": 1.370580548610231
+      }
+    },
+    "canonical_variant": false
+  },
+  {
+    "sample_id": "TN20",
+    "state": "TN",
+    "histology": "LUAD",
+    "tissue": "Lung",
+    "procedure": "Fresh Frozen",
+    "stage": "IA1",
+    "genotype": "L747_T751del",
+    "kit_series_implied": "v3.1",
+    "kit_conflict": false,
+    "malignant_nuclei": 1422,
+    "primary_eligible": true,
+    "exclusion_reasons": [],
+    "score_mean": 0.8538236597546274,
+    "score_equal_core_mean": 0.8538236597546274,
+    "cores": {
+      "TN20": {
+        "n": 1422,
+        "score_mean": 0.8538236597546274
+      }
+    },
+    "canonical_variant": false
+  },
+  {
+    "sample_id": "TN21",
+    "state": "TN",
+    "histology": "LUAD",
+    "tissue": "Lung",
+    "procedure": "Resection",
+    "stage": "IA3",
+    "genotype": "L858R",
+    "kit_series_implied": "v3.1",
+    "kit_conflict": false,
+    "malignant_nuclei": 2829,
+    "primary_eligible": true,
+    "exclusion_reasons": [],
+    "score_mean": 0.6884712818541244,
+    "score_equal_core_mean": 0.6884712818541244,
+    "cores": {
+      "TN21": {
+        "n": 2829,
+        "score_mean": 0.6884712818541244
+      }
+    },
+    "canonical_variant": true
+  },
+  {
+    "sample_id": "TN22",
+    "state": "TN",
+    "histology": "LUAD",
+    "tissue": "Lung",
+    "procedure": "Resection",
+    "stage": "IIA",
+    "genotype": "E746_A750del; Amplification",
+    "kit_series_implied": "v3.1",
+    "kit_conflict": false,
+    "malignant_nuclei": 7508,
+    "primary_eligible": true,
+    "exclusion_reasons": [],
+    "score_mean": 1.24474234100261,
+    "score_equal_core_mean": 1.2447423410026097,
+    "cores": {
+      "TN22": {
+        "n": 7508,
+        "score_mean": 1.2447423410026097
+      }
+    },
+    "canonical_variant": true
+  },
+  {
+    "sample_id": "TN23",
+    "state": "TN",
+    "histology": "LUAD",
+    "tissue": "Lung",
+    "procedure": "Resection",
+    "stage": "IB",
+    "genotype": "L858R",
+    "kit_series_implied": "v3.1",
+    "kit_conflict": false,
+    "malignant_nuclei": 3059,
+    "primary_eligible": true,
+    "exclusion_reasons": [],
+    "score_mean": 0.8120685125219205,
+    "score_equal_core_mean": 0.8120685125219205,
+    "cores": {
+      "TN23": {
+        "n": 3059,
+        "score_mean": 0.8120685125219205
+      }
+    },
+    "canonical_variant": true
+  },
+  {
+    "sample_id": "TN24",
+    "state": "TN",
+    "histology": "LUAD",
+    "tissue": "Lung",
+    "procedure": "Resection",
+    "stage": "IA3",
+    "genotype": "L858R",
+    "kit_series_implied": "v3.1",
+    "kit_conflict": false,
+    "malignant_nuclei": 1025,
+    "primary_eligible": true,
+    "exclusion_reasons": [],
+    "score_mean": 0.7816923377715209,
+    "score_equal_core_mean": 0.7816923377715209,
+    "cores": {
+      "TN24": {
+        "n": 1025,
+        "score_mean": 0.7816923377715209
+      }
+    },
+    "canonical_variant": true
+  },
+  {
+    "sample_id": "TN25",
+    "state": "TN",
+    "histology": "LUAD",
+    "tissue": "Lung",
+    "procedure": "Fresh Frozen",
+    "stage": "IA1",
+    "genotype": "L858R",
+    "kit_series_implied": "v3.1",
+    "kit_conflict": false,
+    "malignant_nuclei": 5749,
+    "primary_eligible": true,
+    "exclusion_reasons": [],
+    "score_mean": 0.9435180685276356,
+    "score_equal_core_mean": 0.9435180685276356,
+    "cores": {
+      "TN25": {
+        "n": 5749,
+        "score_mean": 0.9435180685276356
+      }
+    },
+    "canonical_variant": true
+  },
+  {
+    "sample_id": "TN26",
+    "state": "TN",
+    "histology": "LUAD",
+    "tissue": "Lung",
+    "procedure": "Resection",
+    "stage": "IIB",
+    "genotype": "L861Q",
+    "kit_series_implied": "v3.1",
+    "kit_conflict": false,
+    "malignant_nuclei": 3932,
+    "primary_eligible": true,
+    "exclusion_reasons": [],
+    "score_mean": 0.43707687705195974,
+    "score_equal_core_mean": 0.43707687705195974,
+    "cores": {
+      "TN26": {
+        "n": 3932,
+        "score_mean": 0.43707687705195974
+      }
+    },
+    "canonical_variant": false
+  },
+  {
+    "sample_id": "TN3",
+    "state": "TN",
+    "histology": "LUAD",
+    "tissue": "Lung",
+    "procedure": "Fresh Frozen",
+    "stage": "IIIA",
+    "genotype": "L861Q, G719A",
+    "kit_series_implied": "v3.1",
+    "kit_conflict": false,
+    "malignant_nuclei": 5741,
+    "primary_eligible": true,
+    "exclusion_reasons": [],
+    "score_mean": 0.7173012998360916,
+    "score_equal_core_mean": 0.7173012998360914,
+    "cores": {
+      "TN3": {
+        "n": 5741,
+        "score_mean": 0.7173012998360914
+      }
+    },
+    "canonical_variant": false
+  },
+  {
+    "sample_id": "TN4",
+    "state": "TN",
+    "histology": "LUAD",
+    "tissue": "Lung",
+    "procedure": "Fresh Frozen",
+    "stage": "IA2",
+    "genotype": "L747_T751del",
+    "kit_series_implied": "v3.1",
+    "kit_conflict": false,
+    "malignant_nuclei": 82,
+    "primary_eligible": true,
+    "exclusion_reasons": [],
+    "score_mean": 0.8733954727964267,
+    "score_equal_core_mean": 0.8733954727964267,
+    "cores": {
+      "TN4": {
+        "n": 82,
+        "score_mean": 0.8733954727964267
+      }
+    },
+    "canonical_variant": false
+  },
+  {
+    "sample_id": "TN5",
+    "state": "TN",
+    "histology": "LUAD",
+    "tissue": "Lung",
+    "procedure": "Fresh Frozen",
+    "stage": "IIB",
+    "genotype": "G719C, L833V",
+    "kit_series_implied": "v3.1",
+    "kit_conflict": false,
+    "malignant_nuclei": 7862,
+    "primary_eligible": true,
+    "exclusion_reasons": [],
+    "score_mean": 0.8423350384320524,
+    "score_equal_core_mean": 0.8423350384320524,
+    "cores": {
+      "TN5": {
+        "n": 7862,
+        "score_mean": 0.8423350384320524
+      }
+    },
+    "canonical_variant": false
+  },
+  {
+    "sample_id": "TN6",
+    "state": "TN",
+    "histology": "LUAD",
+    "tissue": "Lung",
+    "procedure": "Fresh Frozen",
+    "stage": "IA1",
+    "genotype": "E746_S752delinsV",
+    "kit_series_implied": "v3.1",
+    "kit_conflict": false,
+    "malignant_nuclei": 4260,
+    "primary_eligible": true,
+    "exclusion_reasons": [],
+    "score_mean": 1.4260333655906872,
+    "score_equal_core_mean": 1.4260333655906874,
+    "cores": {
+      "TN6": {
+        "n": 4260,
+        "score_mean": 1.4260333655906874
+      }
+    },
+    "canonical_variant": false
+  },
+  {
+    "sample_id": "TN7",
+    "state": "TN",
+    "histology": "LUAD",
+    "tissue": "Lung",
+    "procedure": "Fresh Frozen",
+    "stage": "IA2",
+    "genotype": "E746_A750del",
+    "kit_series_implied": "v3.1",
+    "kit_conflict": false,
+    "malignant_nuclei": 1217,
+    "primary_eligible": true,
+    "exclusion_reasons": [],
+    "score_mean": 0.5114813663610088,
+    "score_equal_core_mean": 0.5114813663610087,
+    "cores": {
+      "TN7": {
+        "n": 1217,
+        "score_mean": 0.5114813663610087
+      }
+    },
+    "canonical_variant": true
+  },
+  {
+    "sample_id": "TN8",
+    "state": "TN",
+    "histology": "LUAD",
+    "tissue": "Lung",
+    "procedure": "Fresh Frozen",
+    "stage": "IA2",
+    "genotype": "L858R",
+    "kit_series_implied": "v3.1",
+    "kit_conflict": false,
+    "malignant_nuclei": 2179,
+    "primary_eligible": true,
+    "exclusion_reasons": [],
+    "score_mean": 0.9313962002225674,
+    "score_equal_core_mean": 0.9313962002225674,
+    "cores": {
+      "TN8": {
+        "n": 2179,
+        "score_mean": 0.9313962002225674
+      }
+    },
+    "canonical_variant": true
+  },
+  {
+    "sample_id": "TN9",
+    "state": "TN",
+    "histology": "LUAD",
+    "tissue": "Lung",
+    "procedure": "Fresh Frozen",
+    "stage": "IB",
+    "genotype": "L747_P753delinsS",
+    "kit_series_implied": "v3.1",
+    "kit_conflict": false,
+    "malignant_nuclei": 6765,
+    "primary_eligible": true,
+    "exclusion_reasons": [],
+    "score_mean": 0.7211076369202856,
+    "score_equal_core_mean": 0.7211076369202856,
+    "cores": {
+      "TN9": {
+        "n": 6765,
+        "score_mean": 0.7211076369202856
+      }
+    },
+    "canonical_variant": false
+  }
+]

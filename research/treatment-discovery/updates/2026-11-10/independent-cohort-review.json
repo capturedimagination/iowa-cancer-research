@@ -1,0 +1,758 @@
+{
+  "review_date": "2026-11-10",
+  "question": "Independent clinical validation of Maynard alveolar-regenerative expression during EGFR/osimertinib residual disease",
+  "review_type": "targeted primary-source feasibility search, not systematic review",
+  "outcome": "GSE292469 suitable for explicitly confounded cross-sectional descriptive association; no verified independent paired TN/MRD cohort located",
+  "search_terms": [
+    "single cell osimertinib residual disease EGFR lung cancer patients GEO",
+    "site.ncbi.nlm.nih.gov/geo osimertinib single cell patient",
+    "Complementary modes of resistance EGFR data availability"
+  ],
+  "source_files": [
+    {
+      "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE292469&targ=self&form=text&view=full",
+      "retrieved_date": "2026-11-10",
+      "local_raw_file": "tmp/independent-cohorts-2026-11-10/GSE292469-series.txt",
+      "bytes": 6706,
+      "sha256": "5a777bf9541d9e21d91ae03106adc703409bf2f3e8ce6e442fdefece5f6441fd",
+      "redistribution": "not included in this authored review"
+    },
+    {
+      "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE292469&targ=gsm&form=text&view=full",
+      "retrieved_date": "2026-11-10",
+      "local_raw_file": "tmp/independent-cohorts-2026-11-10/GSE292469-samples.txt",
+      "bytes": 296198,
+      "sha256": "b51d6e9652b8976302911d0ed56a1dc596a83e9e40eca04fc847ad1f9705d83a",
+      "redistribution": "not included in this authored review"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE292nnn/GSE292469/suppl/GSE292469_cell_metadata.tsv.gz",
+      "retrieved_date": "2026-11-10",
+      "local_raw_file": "tmp/independent-cohorts-2026-11-10/GSE292469_cell_metadata.tsv.gz",
+      "bytes": 18852668,
+      "sha256": "9b16b89922bade9d1334ebaeb002763dcca9fd2652a3e9616befb98f04777012",
+      "redistribution": "not included in this authored review"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE292nnn/GSE292469/suppl/GSE292469_existing_gsm_metadata_update.tsv.gz",
+      "retrieved_date": "2026-11-10",
+      "local_raw_file": "tmp/independent-cohorts-2026-11-10/GSE292469_existing_gsm_metadata_update.tsv.gz",
+      "bytes": 1406,
+      "sha256": "2b353feb7aa1b87cdf7b8d15aeb679120b7cd752d8d7e04eee769bc2fd0a078c",
+      "redistribution": "not included in this authored review"
+    },
+    {
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE292nnn/GSE292469/suppl/",
+      "retrieved_date": "2026-11-10",
+      "local_raw_file": "tmp/independent-cohorts-2026-11-10/GSE292469-suppl-index.html",
+      "bytes": 876,
+      "sha256": "1815cc5edae09a82f78fb6e0fca6d65ebcc734ff7f6ed9a4f6402134d8ddded3",
+      "redistribution": "not included in this authored review"
+    },
+    {
+      "url": "https://www.ncbi.nlm.nih.gov/geo/info/disclaimer.html",
+      "retrieved_date": "2026-11-10",
+      "local_raw_file": "tmp/independent-cohorts-2026-11-10/GEO-disclaimer.html",
+      "bytes": 21312,
+      "sha256": "fdb9f0113a8b1e2bcc324feee9d7888ab9fb3a3b34c3c2e7fb8c5ea0e49c9ea0",
+      "redistribution": "not included in this authored review"
+    },
+    {
+      "url": "https://www.ncbi.nlm.nih.gov/home/about/policies/",
+      "retrieved_date": "2026-11-10",
+      "local_raw_file": "tmp/independent-cohorts-2026-11-10/NCBI-policies.html",
+      "bytes": 38974,
+      "sha256": "c99a36bb9daa8c6d14dc505a11a860a8a9cca7a5c94bf5c3961542decf563dad",
+      "redistribution": "not included in this authored review"
+    },
+    {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12248098/fullTextXML",
+      "retrieved_date": "2026-11-10",
+      "local_raw_file": "tmp/independent-cohorts-2026-11-10/PMC12248098.xml",
+      "bytes": 148323,
+      "sha256": "526dc4d32ea58a5d0da9e8c7dfa6aaa7179406ae5ca5ae051959762cf13df930",
+      "redistribution": "not included in this authored review"
+    }
+  ],
+  "candidates": [
+    {
+      "id": "GSE292469",
+      "priority": 1,
+      "role": "independent cross-sectional clinical association; not paired treatment-effect validation",
+      "source_urls": [
+        "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE292469",
+        "https://github.com/shahcompbio/egfr_nucseq/tree/c4211458564c92b32c1276badaed2e6731ad1a68"
+      ],
+      "population": "EGFR-mutant lung adenocarcinoma source cohort with some transformed sampled histologies",
+      "reported_patients": 73,
+      "specimens": 73,
+      "libraries": 74,
+      "reported_states": {
+        "TN": 28,
+        "MRD": 14,
+        "PD": 31
+      },
+      "states_definition": {
+        "TN": "before osimertinib exposure",
+        "MRD": "on osimertinib after maximal shrinkage, before progression per Series",
+        "PD": "radiographic progression on osimertinib"
+      },
+      "paired": false,
+      "independence": "New MSK primary cohort, separate source study from Maynard; not a Maynard/atlas reanalysis. No participant identity linkage attempted.",
+      "public_since": "2026-11-01",
+      "processed_expression_url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE292nnn/GSE292469/suppl/GSE292469_counts.h5",
+      "expression_bytes_head": 12553420880,
+      "expression_access_test": "anonymous HTTP200 HEAD, byte ranges advertised; not acquired by this review",
+      "processed_metadata": "downloaded and audited",
+      "malignant_annotation": "is_tumor_cell TRUE in delivered cell metadata; cell_type Tumor Cell agrees by aggregate count",
+      "raw_vs_processed": "GEO matrix raw UMI counts; author figure defaults use SoupX-corrected RNAsoup assay in unretrieved Seurat bundle",
+      "constraints": [
+        "No within-patient TN/MRD pairs",
+        "Large stage/site/procedure and legacy/new-library imbalance",
+        "GEO Series library kit and individual GSM extraction paragraphs conflict",
+        "One MRD specimen is SCLC histology",
+        "Two MRD specimens have 847 and 1070 days on osimertinib; latter also C797S",
+        "Sample-level clinical key spellings change in added GSMs",
+        "Preprint2025 62-person counts must not be used as 2026release counts"
+      ],
+      "access": "GEO public molecular-data policies; no record-specific use restriction observed; no raw participant redistribution inferred from open access"
+    },
+    {
+      "id": "GSE302284",
+      "priority": 2,
+      "role": "small external post-treatment observation only",
+      "source_urls": [
+        "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE302284",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC12374242/"
+      ],
+      "patient_scrna_count_from_paper": 1,
+      "human_tissue_samples": 2,
+      "total_geo_samples": 6,
+      "preclinical_samples": 4,
+      "paired": false,
+      "expression": "Public H5 files; series tar listed35.5MB",
+      "malignant_annotation": "Paper uses cytokeratin signature; machine-readable cell-label file not verified",
+      "constraints": [
+        "Two post-treatment sites are one patient, not independent patients",
+        "No same-patient pretreatment expression comparator",
+        "Other series samples are PC9/DFCI282 experimental models",
+        "Paper also reuses Maynard data; that reuse is not independent validation",
+        "Preclinical cure wording does not establish human cure"
+      ],
+      "acquisition": "metadata-only review; no matrix downloaded"
+    },
+    {
+      "id": "GSE243562",
+      "priority": null,
+      "role": "preclinical contextual validation only",
+      "source_urls": [
+        "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE243562",
+        "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM7790998"
+      ],
+      "patient_cohort": false,
+      "pdx_models": 2,
+      "samples": 4,
+      "states": [
+        "untreated",
+        "residual after osimertinib"
+      ],
+      "expression": "Public MTX/TSV, series tar listed197.9MB",
+      "constraints": [
+        "YU-003 and YU-006 PDXs in mice, not four patient biopsies",
+        "Human-only alignment separates mouse reads; model source donor remains biological grouping"
+      ],
+      "acquisition": "source record review only"
+    },
+    {
+      "id": "GSE243564",
+      "priority": null,
+      "role": "bulk PDX context only",
+      "source_urls": [
+        "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE243564"
+      ],
+      "patient_cohort": false,
+      "assay": "bulk RNA-seq",
+      "expression": "YU-003/YU-006/YU-030 RPKM CSV files listed",
+      "constraints": [
+        "No single-cell malignant-state validation",
+        "Related PDX models overlap GSE243562, not independent donor replication"
+      ],
+      "acquisition": "source record review only"
+    },
+    {
+      "id": "GSE253742",
+      "priority": null,
+      "role": "clinical bulk orthogonal context, not single-cell validation",
+      "source_urls": [
+        "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE253742",
+        "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM8027258",
+        "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM8027262"
+      ],
+      "assay": "bulk RNA-seq",
+      "samples": 8,
+      "states": {
+        "pre": 4,
+        "post": 4
+      },
+      "pairing": "Tissue labels1-4 repeat before/after, but donor pairing, genotype and post-treatment state require article/clinical verification",
+      "expression": "Public FPKManno.txt.gz listed797.1KB",
+      "constraints": [
+        "No malignant-cell labels",
+        "Bulk changes may reflect tumor/stroma composition",
+        "Post-treatment label alone does not prove residual state"
+      ],
+      "acquisition": "source record review only"
+    },
+    {
+      "id": "GSE259387",
+      "priority": null,
+      "role": "spatial transformation context",
+      "source_urls": [
+        "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE259387"
+      ],
+      "patients": 10,
+      "regions_of_interest": 59,
+      "assay": "GeoMx region-level spatial transcriptomics",
+      "expression": "Public processed XLSX listed17.9MB plus PKC",
+      "constraints": [
+        "59regions are not59patients",
+        "Transformation-focused NSCLC/SCLC comparison, not isolated osimertinib residual-state test",
+        "Not single-cell whole-transcriptome matrix"
+      ],
+      "acquisition": "source record review only"
+    },
+    {
+      "id": "GSE275199",
+      "priority": null,
+      "role": "preclinical persister biology",
+      "source_urls": [
+        "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE275199"
+      ],
+      "assay": "cell-hashed scRNA-seq",
+      "models": [
+        "PC9",
+        "NCI-H358"
+      ],
+      "perturbations": [
+        "osimertinib",
+        "sotorasib"
+      ],
+      "constraints": [
+        "Public matrix described as cell-line experiment, not independent patient cohort",
+        "Patient raw data pointed to controlled dbGaP phs004458.v1.p1; no request/download attempted"
+      ],
+      "acquisition": "source record review only"
+    },
+    {
+      "id": "Maynard-2020-main-and-neo-osi",
+      "priority": null,
+      "role": "discovery/reproduction, not external validation",
+      "source_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC7484178/",
+        "https://github.com/czbiohub-sf/scell_lung_adenocarcinoma"
+      ],
+      "constraints": [
+        "Existing source cohort used to develop hypothesis/signature",
+        "Separate neo-osi file cannot be declared independent without explicit provenance reconciliation"
+      ],
+      "acquisition": "existing workspace metadata audit retained"
+    }
+  ],
+  "metadata_audit": {
+    "unique_cell_ids": 457724,
+    "duplicate_cell_ids": 0,
+    "sample_ids": 73,
+    "core_ids": 74,
+    "all_singlets": true,
+    "total_tumor_nuclei": 166112,
+    "tumor_nuclei_by_state": {
+      "TN": 105818,
+      "MRD": 15765,
+      "PD": 44529
+    },
+    "thresholds_malignant_nuclei": {
+      "1": {
+        "all_histologies": {
+          "TN": {
+            "n": 26,
+            "site": {
+              "Lung": 25,
+              "Lymph Node": 1
+            },
+            "procedure": {
+              "Fresh Frozen": 18,
+              "Resection": 7,
+              "Biopsy": 1
+            },
+            "stage": {
+              "IA2": 7,
+              "IIA": 3,
+              "IB": 4,
+              "IA1": 4,
+              "IA3": 3,
+              "IIB": 2,
+              "IIIA": 1,
+              "IV": 1,
+              "IA": 1
+            },
+            "kit_series_implied": {
+              "v3.1": 24,
+              "v4": 2
+            }
+          },
+          "MRD": {
+            "n": 10,
+            "site": {
+              "Lung": 8,
+              "Liver": 1,
+              "Locoregional": 1
+            },
+            "procedure": {
+              "Biopsy": 3,
+              "Resection": 6,
+              "Lobectomy": 1
+            },
+            "stage": {
+              "IV": 8,
+              "IIIA": 2
+            },
+            "kit_series_implied": {
+              "v3.1": 3,
+              "mixed": 1,
+              "v4": 6
+            }
+          },
+          "PD": {
+            "n": 29,
+            "site": {
+              "Locoregional": 1,
+              "Lung": 11,
+              "Bone/Soft Tissue": 6,
+              "Liver": 5,
+              "Lymph Node": 2,
+              "Brain": 3,
+              "Pleura": 1
+            },
+            "procedure": {
+              "Biopsy": 23,
+              "Resection": 4,
+              "Laminectomy": 1,
+              "Effusion Drainage": 1
+            },
+            "stage": {
+              "IV": 29
+            },
+            "kit_series_implied": {
+              "v3.1": 28,
+              "v4": 1
+            }
+          }
+        },
+        "LUAD_only": {
+          "TN": {
+            "n": 26,
+            "site": {
+              "Lung": 25,
+              "Lymph Node": 1
+            },
+            "procedure": {
+              "Fresh Frozen": 18,
+              "Resection": 7,
+              "Biopsy": 1
+            },
+            "stage": {
+              "IA2": 7,
+              "IIA": 3,
+              "IB": 4,
+              "IA1": 4,
+              "IA3": 3,
+              "IIB": 2,
+              "IIIA": 1,
+              "IV": 1,
+              "IA": 1
+            },
+            "kit_series_implied": {
+              "v3.1": 24,
+              "v4": 2
+            }
+          },
+          "MRD": {
+            "n": 9,
+            "site": {
+              "Lung": 7,
+              "Liver": 1,
+              "Locoregional": 1
+            },
+            "procedure": {
+              "Biopsy": 3,
+              "Resection": 5,
+              "Lobectomy": 1
+            },
+            "stage": {
+              "IV": 8,
+              "IIIA": 1
+            },
+            "kit_series_implied": {
+              "v3.1": 3,
+              "mixed": 1,
+              "v4": 5
+            }
+          },
+          "PD": {
+            "n": 24,
+            "site": {
+              "Locoregional": 1,
+              "Lung": 11,
+              "Bone/Soft Tissue": 3,
+              "Liver": 4,
+              "Lymph Node": 2,
+              "Brain": 2,
+              "Pleura": 1
+            },
+            "procedure": {
+              "Biopsy": 19,
+              "Resection": 3,
+              "Laminectomy": 1,
+              "Effusion Drainage": 1
+            },
+            "stage": {
+              "IV": 24
+            },
+            "kit_series_implied": {
+              "v3.1": 23,
+              "v4": 1
+            }
+          }
+        }
+      },
+      "20": {
+        "all_histologies": {
+          "TN": {
+            "n": 26,
+            "site": {
+              "Lung": 25,
+              "Lymph Node": 1
+            },
+            "procedure": {
+              "Fresh Frozen": 18,
+              "Resection": 7,
+              "Biopsy": 1
+            },
+            "stage": {
+              "IA2": 7,
+              "IIA": 3,
+              "IB": 4,
+              "IA1": 4,
+              "IA3": 3,
+              "IIB": 2,
+              "IIIA": 1,
+              "IV": 1,
+              "IA": 1
+            },
+            "kit_series_implied": {
+              "v3.1": 24,
+              "v4": 2
+            }
+          },
+          "MRD": {
+            "n": 10,
+            "site": {
+              "Lung": 8,
+              "Liver": 1,
+              "Locoregional": 1
+            },
+            "procedure": {
+              "Biopsy": 3,
+              "Resection": 6,
+              "Lobectomy": 1
+            },
+            "stage": {
+              "IV": 8,
+              "IIIA": 2
+            },
+            "kit_series_implied": {
+              "v3.1": 3,
+              "mixed": 1,
+              "v4": 6
+            }
+          },
+          "PD": {
+            "n": 29,
+            "site": {
+              "Locoregional": 1,
+              "Lung": 11,
+              "Bone/Soft Tissue": 6,
+              "Liver": 5,
+              "Lymph Node": 2,
+              "Brain": 3,
+              "Pleura": 1
+            },
+            "procedure": {
+              "Biopsy": 23,
+              "Resection": 4,
+              "Laminectomy": 1,
+              "Effusion Drainage": 1
+            },
+            "stage": {
+              "IV": 29
+            },
+            "kit_series_implied": {
+              "v3.1": 28,
+              "v4": 1
+            }
+          }
+        },
+        "LUAD_only": {
+          "TN": {
+            "n": 26,
+            "site": {
+              "Lung": 25,
+              "Lymph Node": 1
+            },
+            "procedure": {
+              "Fresh Frozen": 18,
+              "Resection": 7,
+              "Biopsy": 1
+            },
+            "stage": {
+              "IA2": 7,
+              "IIA": 3,
+              "IB": 4,
+              "IA1": 4,
+              "IA3": 3,
+              "IIB": 2,
+              "IIIA": 1,
+              "IV": 1,
+              "IA": 1
+            },
+            "kit_series_implied": {
+              "v3.1": 24,
+              "v4": 2
+            }
+          },
+          "MRD": {
+            "n": 9,
+            "site": {
+              "Lung": 7,
+              "Liver": 1,
+              "Locoregional": 1
+            },
+            "procedure": {
+              "Biopsy": 3,
+              "Resection": 5,
+              "Lobectomy": 1
+            },
+            "stage": {
+              "IV": 8,
+              "IIIA": 1
+            },
+            "kit_series_implied": {
+              "v3.1": 3,
+              "mixed": 1,
+              "v4": 5
+            }
+          },
+          "PD": {
+            "n": 24,
+            "site": {
+              "Locoregional": 1,
+              "Lung": 11,
+              "Bone/Soft Tissue": 3,
+              "Liver": 4,
+              "Lymph Node": 2,
+              "Brain": 2,
+              "Pleura": 1
+            },
+            "procedure": {
+              "Biopsy": 19,
+              "Resection": 3,
+              "Laminectomy": 1,
+              "Effusion Drainage": 1
+            },
+            "stage": {
+              "IV": 24
+            },
+            "kit_series_implied": {
+              "v3.1": 23,
+              "v4": 1
+            }
+          }
+        }
+      },
+      "100": {
+        "all_histologies": {
+          "TN": {
+            "n": 25,
+            "site": {
+              "Lung": 24,
+              "Lymph Node": 1
+            },
+            "procedure": {
+              "Fresh Frozen": 17,
+              "Resection": 7,
+              "Biopsy": 1
+            },
+            "stage": {
+              "IA2": 6,
+              "IIA": 3,
+              "IB": 4,
+              "IA1": 4,
+              "IA3": 3,
+              "IIB": 2,
+              "IIIA": 1,
+              "IV": 1,
+              "IA": 1
+            },
+            "kit_series_implied": {
+              "v3.1": 23,
+              "v4": 2
+            }
+          },
+          "MRD": {
+            "n": 9,
+            "site": {
+              "Lung": 7,
+              "Liver": 1,
+              "Locoregional": 1
+            },
+            "procedure": {
+              "Resection": 6,
+              "Biopsy": 2,
+              "Lobectomy": 1
+            },
+            "stage": {
+              "IV": 7,
+              "IIIA": 2
+            },
+            "kit_series_implied": {
+              "mixed": 1,
+              "v3.1": 2,
+              "v4": 6
+            }
+          },
+          "PD": {
+            "n": 26,
+            "site": {
+              "Locoregional": 1,
+              "Bone/Soft Tissue": 5,
+              "Liver": 4,
+              "Lymph Node": 2,
+              "Lung": 10,
+              "Brain": 3,
+              "Pleura": 1
+            },
+            "procedure": {
+              "Biopsy": 21,
+              "Resection": 3,
+              "Laminectomy": 1,
+              "Effusion Drainage": 1
+            },
+            "stage": {
+              "IV": 26
+            },
+            "kit_series_implied": {
+              "v3.1": 25,
+              "v4": 1
+            }
+          }
+        },
+        "LUAD_only": {
+          "TN": {
+            "n": 25,
+            "site": {
+              "Lung": 24,
+              "Lymph Node": 1
+            },
+            "procedure": {
+              "Fresh Frozen": 17,
+              "Resection": 7,
+              "Biopsy": 1
+            },
+            "stage": {
+              "IA2": 6,
+              "IIA": 3,
+              "IB": 4,
+              "IA1": 4,
+              "IA3": 3,
+              "IIB": 2,
+              "IIIA": 1,
+              "IV": 1,
+              "IA": 1
+            },
+            "kit_series_implied": {
+              "v3.1": 23,
+              "v4": 2
+            }
+          },
+          "MRD": {
+            "n": 8,
+            "site": {
+              "Lung": 6,
+              "Liver": 1,
+              "Locoregional": 1
+            },
+            "procedure": {
+              "Resection": 5,
+              "Biopsy": 2,
+              "Lobectomy": 1
+            },
+            "stage": {
+              "IV": 7,
+              "IIIA": 1
+            },
+            "kit_series_implied": {
+              "mixed": 1,
+              "v3.1": 2,
+              "v4": 5
+            }
+          },
+          "PD": {
+            "n": 21,
+            "site": {
+              "Locoregional": 1,
+              "Bone/Soft Tissue": 2,
+              "Liver": 3,
+              "Lymph Node": 2,
+              "Lung": 10,
+              "Brain": 2,
+              "Pleura": 1
+            },
+            "procedure": {
+              "Biopsy": 17,
+              "Resection": 2,
+              "Laminectomy": 1,
+              "Effusion Drainage": 1
+            },
+            "stage": {
+              "IV": 21
+            },
+            "kit_series_implied": {
+              "v3.1": 20,
+              "v4": 1
+            }
+          }
+        }
+      }
+    },
+    "zero_tumor_sample_ids": [
+      "TN1",
+      "TN16",
+      "MRD3",
+      "MRD4",
+      "PD15",
+      "PD19",
+      "LX1910",
+      "LX1940"
+    ],
+    "clinical_fields": "Genotype, tissue, procedure, histology, stage and cumulative days on osimertinib exist; actual prior treatment histories and comprehensive event timeline not in cell metadata."
+  },
+  "next_analysis_requirements": [
+    "Freeze gene list and score before expression inspection",
+    "Match matrix barcodes and genes to metadata; fail on duplicate/unmapped IDs",
+    "One patient/sample unit with MRD2 cores combined",
+    "Primary LUAD-only and separately reported transformed stratum",
+    "Publish threshold/site/batch sensitivities as descriptive checks",
+    "Do not infer a treatment-caused expression change or clinical benefit",
+    "Preserve original source files locally with hashes, publish own code/results/provenance and source links"
+  ]
+}

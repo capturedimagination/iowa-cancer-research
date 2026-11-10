@@ -1,0 +1,141 @@
+{
+  "review_date": "2026-11-10",
+  "review_type": "independent implementation; no main scoring functions imported or called",
+  "review_code_sha256": "751dc410f15a70b3e330a286e7dd7afa0017f5c4a82dd0ff0a00b8e93a90273e",
+  "results_sha256": "7916c3f8f48915ec50078f21e8f485f958e6e352383fbc035b07310bad402832",
+  "sample_scores_sha256": "1f2a742f8dc07c53ebd34f44e3387d4a0f033b0814fa45d6b7298b2be144dcf2",
+  "raw_input_sha256": {
+    "GSE292469_counts.h5": "60c6aab4dd2b2baa5b5deb163aca7aff1bfc180bb24c6c3f5aa02c445bf7872e",
+    "GSE292469_cell_metadata.tsv.gz": "9b16b89922bade9d1334ebaeb002763dcca9fd2652a3e9616befb98f04777012"
+  },
+  "raw_direct_sample_checks": {
+    "TN4": {
+      "malignant_nuclei": 82,
+      "score_mean": 0.8733954727964267,
+      "score_equal_core_mean": 0.8733954727964267,
+      "cores": {
+        "TN4": {
+          "n": 82,
+          "score_mean": 0.8733954727964267
+        }
+      }
+    },
+    "MRD6": {
+      "malignant_nuclei": 91,
+      "score_mean": 0.41345145478766177,
+      "score_equal_core_mean": 0.41345145478766177,
+      "cores": {
+        "MRD6": {
+          "n": 91,
+          "score_mean": 0.41345145478766177
+        }
+      }
+    },
+    "MRD2": {
+      "malignant_nuclei": 2761,
+      "score_mean": 0.8730719032523735,
+      "score_equal_core_mean": 0.934065758158634,
+      "cores": {
+        "MRD2_core1": {
+          "n": 183,
+          "score_mean": 1.0043805946497342
+        },
+        "MRD2_core2": {
+          "n": 2578,
+          "score_mean": 0.8637509216675338
+        }
+      }
+    }
+  },
+  "raw_nuclei_checked": 2934,
+  "all_sample_malignant_counts": "match",
+  "comparisons": {
+    "primary": {
+      "n_MRD": 9,
+      "n_TN": 26,
+      "wins": 51,
+      "ties": 0,
+      "pairs": 234,
+      "auc": 0.21794871794871795,
+      "mean_difference": -0.26314443975839474,
+      "status": "arithmetic_and_membership_match"
+    },
+    "at_least_100_malignant_nuclei": {
+      "n_MRD": 8,
+      "n_TN": 25,
+      "wins": 50,
+      "ties": 0,
+      "pairs": 200,
+      "auc": 0.25,
+      "mean_difference": -0.24024376684593984,
+      "status": "arithmetic_and_membership_match"
+    },
+    "lung_site": {
+      "n_MRD": 7,
+      "n_TN": 25,
+      "wins": 38,
+      "ties": 0,
+      "pairs": 175,
+      "auc": 0.21714285714285714,
+      "mean_difference": -0.25593705014364554,
+      "status": "arithmetic_and_membership_match"
+    },
+    "canonical_E746_A750del_or_L858R": {
+      "n_MRD": 6,
+      "n_TN": 13,
+      "wins": 22,
+      "ties": 0,
+      "pairs": 78,
+      "auc": 0.28205128205128205,
+      "mean_difference": -0.2136469544187133,
+      "status": "arithmetic_and_membership_match"
+    },
+    "series_implied_kit_v3.1": {
+      "n_MRD": 3,
+      "n_TN": 24,
+      "wins": 3,
+      "ties": 0,
+      "pairs": 72,
+      "auc": 0.041666666666666664,
+      "mean_difference": -0.46107990621178135,
+      "status": "arithmetic_and_membership_match"
+    },
+    "series_implied_kit_v4": {
+      "n_MRD": 5,
+      "n_TN": 2,
+      "wins": 9,
+      "ties": 0,
+      "pairs": 10,
+      "auc": 0.9,
+      "mean_difference": 0.3620054607560388,
+      "status": "arithmetic_and_membership_match"
+    },
+    "equal_core_weighting": {
+      "n_MRD": 9,
+      "n_TN": 26,
+      "wins": 54,
+      "ties": 0,
+      "pairs": 234,
+      "auc": 0.23076923076923078,
+      "mean_difference": -0.2563673447688103,
+      "status": "arithmetic_and_membership_match"
+    }
+  },
+  "independent_primary_bootstrap": {
+    "mean_difference_95pct": [
+      -0.4528338152404544,
+      -0.08216085666809074
+    ],
+    "auc_95pct": [
+      0.07692307692307693,
+      0.3888888888888889
+    ]
+  },
+  "absolute_tolerance": 1e-12,
+  "status": "pass",
+  "limits": [
+    "Raw expression was independently recalculated for three preselected specimens, not all nuclei.",
+    "All reported sensitivity membership, point estimates and the primary bootstrap were independently checked.",
+    "This is arithmetic and design review, not external peer review or validation of causal or clinical efficacy claims."
+  ]
+}

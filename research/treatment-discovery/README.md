@@ -2,6 +2,8 @@
 
 Started October 29, 2026. The first research direction is **durable response and treatment resistance in non-small-cell lung cancer**. The immediate work combines a reproducibility benchmark with a separate, testable question about residual malignant cells. No treatment candidate or cancer cure has been discovered or validated by this project.
 
+**November 10 update:** the exact published 17-gene alveolar signature and malignant expression object are verified. An independent public cohort supports a completed descriptive comparison of 26 untreated and 9 residual-disease patients. The pooled residual score is lower, but the small newer-kit subset reverses direction; strong stage/site/batch confounding leaves the biological interpretation unresolved. [Findings and reproducible analysis](updates/2026-11-10/README.md).
+
 ## Why start here
 
 Lung cancer has substantial Iowa burden, and usable public clinical records and experimental-model metadata are available. The archived Iowa surveillance table reports an average 1,477 lung/bronchus deaths per year during 2020–2024, compared with 556 colorectal and 484 pancreatic deaths in the same window. These are rounded historical averages across all stages/histologies, not NSCLC-only counts or 2026 deaths. They motivate prioritization, not a claim that one disease is scientifically easiest to cure. [Saved surveillance comparison](../iowa-cancer-types-comparison.csv), [original NCI mortality query](https://statecancerprofiles.cancer.gov/deathrates/index.php?stateFIPS=00&areatype=state&cancer=047&race=00&sex=0&age=001&type=death&year=0&output=1).
@@ -24,9 +26,9 @@ The original clinical tables are a separate, pinned public ODbL dataset under `d
 
 The [Maynard study](https://pmc.ncbi.nlm.nih.gov/articles/PMC7484178/) supplies an existing biological hypothesis and source/code pointers. Reproducing its signature in the same discovery data would test the pipeline. Independent eligible patients are needed to test whether the state is reproducible beyond that source. EGFR-targeted therapy and checkpoint immunotherapy are separate research tracks; the clinical TMB benchmark does not test this mechanism.
 
-The next analysis requires verified processed expression data, the published gene set, malignant-cell annotation, patient/sample identity, EGFR variant, actual drug exposure and biopsy timing/state. Patient and sample counts govern the evidence; thousands of cells cannot substitute for independent patients. Cross-sectional state differences alone do not demonstrate causal drug tolerance. [Therapeutic rationale and prerequisites](therapeutic-questions.md).
+The completed molecular analysis verifies processed expression, the published gene set, malignant-cell annotations and patient/sample joins. Patient and sample counts govern the evidence; thousands of cells cannot substitute for independent patients. The independent cohort is cross-sectional and cannot demonstrate causal drug tolerance. [Fixed plan](updates/2026-11-10/analysis-plan.md), [full results and sensitivities](results/gse292469-alveolar-2026-11-10/RESULTS.md).
 
-The [public-data preflight](egfr-mechanism-feasibility.md) retrieved full main metadata and a 17-gene **AT2 differentiation** vector from author code. Metadata filters identify 14 candidate samples from 8 patients with common EGFR variants, adenocarcinoma and osimertinib labels, including 3 paired patients, before malignant-cell/expression QC. One pair changes biopsy site. The vector's equivalence to the paper's exact regenerative signature remains unverified, so it is not a frozen substitute. These inputs are not yet a completed mechanism dataset or an independent validation cohort.
+The [October preflight](egfr-mechanism-feasibility.md) identified three candidate main-cohort pairs before malignant-cell QC. The [November audit](updates/2026-11-10/malignant-membership-review.md) reduces this to two pairs with any cancer cells and only one with at least 10 per state. The [supplement cross-check](updates/2026-11-10/signature-verification.md) confirms that all 17 author-code genes match the paper's alveolar signature. Original-cohort scoring would still be reproduction, not independent validation.
 
 If the state reproduces, the next question is whether perturbing a specified dependency reduces persistence in relevant treated models. That would require direct perturbation evidence and orthogonal validation, then suitable normal-tissue, exposure and toxicity work before clinical evaluation. This project has not run those experiments.
 
@@ -35,7 +37,7 @@ If the state reproduces, the next question is whether perturbing a specified dep
 | Component | Present evidence | Next requirement |
 |---|---|---|
 | Clinical association benchmark | Pinned 240-person public cohort; reproducible calculation and independent audit | Timing-resolved, independent pretreatment cohort with harmonized treatment and outcome definitions |
-| EGFR residual-state hypothesis | Original paper, author code and full main metadata; candidate patient/sample pairs audited | Matching expression and malignant-cell QC; exact paper signature/scoring rule; independent compatible cohort |
+| EGFR residual-state hypothesis | Exact signature, original malignant expression/QC, and independent patient-level descriptive comparison completed | Independent paired or suitably balanced data; resolve assay/ambient-RNA and stage/site/batch differences before biological inference |
 | Basal dependency and drug-response resources | Versioned DepMap/PRISM/Sanger metadata, documented GDSC file access, model/alias audit | Permitted response/omics matrices, drug-specific nonmissing overlap and assay QC; treated-state experiments for persistence |
 | Clinical translation | Published trial evidence provides context | Mechanistic intervention, normal-tissue and exposure evidence, then appropriate prospective patient studies |
 

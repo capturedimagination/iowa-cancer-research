@@ -1,0 +1,60 @@
+{
+  "verified_at_utc": "2026-11-10T18:12:39.313384+00:00",
+  "scope": "November10 molecular research update; computation and publication verification, not biological or clinical validation",
+  "public_export_files_checked": 306,
+  "verification_record_added_after_export": true,
+  "synthetic_tests": {
+    "passed": 5,
+    "failed": 0,
+    "cases": [
+      "AUC orientation and ties",
+      "exact canonical variant tokens",
+      "reordered metadata end-to-end score",
+      "mismatched QC blocks result release",
+      "missing target gene blocks result release"
+    ],
+    "command": "python -m unittest discover -s tests -p test_gse292469_signature.py -v"
+  },
+  "public_library_rebuild": {
+    "integrity_check": "ok",
+    "tri_forms": 60040,
+    "tri_years": 38,
+    "county_rows": 99,
+    "industry_evidence_records": 93,
+    "datasets": 52,
+    "search_records": 1404,
+    "source_pdf_bodies": 0,
+    "form_a_with_nonnull_quantities": 0,
+    "command": "python scripts/build_knowledge_base.py"
+  },
+  "full_local_library_rebuild": {
+    "integrity_check": "ok",
+    "datasets": 52,
+    "search_records": 1441,
+    "latest_kit_search_returns_new_results": true
+  },
+  "expression_qc": {
+    "nuclei": 457724,
+    "sample_ids": 73,
+    "features": 33514,
+    "malignant_nuclei": 166112,
+    "count_mismatches": 0,
+    "feature_count_mismatches": 0,
+    "exact_cell_join": true
+  },
+  "independent_review": {
+    "status": "pass",
+    "direct_raw_nuclei_checked": 2934,
+    "sample_counts_checked": 73,
+    "comparison_memberships_and_point_estimates_checked": 7,
+    "primary_bootstrap_reproduced": true,
+    "path": "research/treatment-discovery/results/gse292469-alveolar-2026-11-10/independent-review.json",
+    "sha256": "5d3e306b0987155c09fc02f2cd1aa3f4e0861d830cf75f335174b0efb6188370"
+  },
+  "frozen_scoring_code_sha256": "b58214b26de28ed746abc7794e2e4b23d7c7e1eb2755f81fdca5c92388fde055",
+  "published_included_source_manifest_hashes_checked": 305,
+  "original_report_sha256_unchanged": "6019900da230ba69322aea6bf537fb879a1403b09cfe7acf0f8c71df27f9eeec",
+  "publication_policy": "Original research, code, derived specimen scores and provenance only; large molecular originals and raw cell/clinical source mirrors remain local.",
+  "interpretation": "Pooled residual score lower; smallv4 stratum reverses direction. State/stage/site/kit imbalance and assay differences remain; no treatment mechanism or efficacy established.",
+  "figure_validation": "Rendered preview inspected; SVG XML valid; generated trailing whitespace normalized without changing geometry"
+}

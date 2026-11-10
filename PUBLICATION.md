@@ -1,6 +1,6 @@
 # Public research snapshot
 
-Prepared November 3, 2026 for the public `capturedimagination/iowa-cancer-research` repository. The evidence retains its original observation periods, retrieval dates and limitations. Publication does not mean the research has been peer reviewed or that a treatment or cure has been established.
+First prepared November 3, 2026 for the public `capturedimagination/iowa-cancer-research` repository; extended November 10 with molecular data audits and an independent expression comparison. The evidence retains its original observation periods, retrieval dates and limitations. Publication does not mean the research has been peer reviewed or that a treatment or cure has been established.
 
 ## What is published
 
@@ -40,7 +40,13 @@ The rebuild uses the published tabular inputs and available research text; it do
 
 ## Sources available by link
 
-The Maynard metadata audit and preclinical model-overlap findings are published, but some upstream originals are not redistributed. Their adjacent manifests identify the original files and hashes. To rerun the Maynard audit, obtain `S01_metacells.csv` from the source listed in its manifest, subject to the source's terms, and place it at the documented path. The audit rejects a changed hash. The expression matrix and exact paper-signature mapping remain separate unmet requirements; published metadata counts are candidates before malignant-cell and assay QC.
+The Maynard metadata audit and preclinical model-overlap findings are published, but some upstream originals are not redistributed. Their adjacent manifests identify the original files and hashes. To rerun the Maynard audit, obtain `S01_metacells.csv` from the source listed in its manifest, subject to the source's terms, and place it at the documented path. The audit rejects a changed hash. The [November 10 extension](research/treatment-discovery/updates/2026-11-10/README.md) resolves exact signature identity and the processed malignant expression/QC; the original metadata candidate counts must be reduced using its malignant-cell audit.
+
+## Reproduce the molecular comparison
+
+The [GSE292469 result report](research/treatment-discovery/results/gse292469-alveolar-2026-11-10/RESULTS.md) supplies complete commands, a fixed plan and an acquisition manifest. Use Python 3.12 with `requirements-treatment.txt`. Raw GEO H5/cell metadata, full source clinical metadata, the author Seurat object and extracted cell matrices remain local; their identifiers, sizes and hashes are public. Original derived patient scores, all sensitivity findings, the figure, validation evidence and code are included. The raw H5 alone is 12,553,420,880 bytes.
+
+The overall residual-disease signature score is lower, while the small newer-kit subgroup reverses direction. Major stage/site/kit differences and source kit contradictions prevent a causal treatment interpretation. This result is separate from the checkpoint-immunotherapy clinical benchmark above. The [independent computational review](research/treatment-discovery/results/gse292469-alveolar-2026-11-10/independent-review.md) verifies raw-data arithmetic and bootstrap calculations; it is not external scientific peer review.
 
 The preclinical overlap JSON is a dated audit result. Its metadata sources and identifiers are documented; a standalone complete overlap-reproduction script was not saved. Do not present that artifact as a fully automated pipeline. The TRI historical download script refreshes remote data and is not an exact historical restoration tool; for a pinned reproduction use the included originals and their manifest hashes.
 

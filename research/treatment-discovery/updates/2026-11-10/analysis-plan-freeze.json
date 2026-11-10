@@ -1,0 +1,8 @@
+{
+  "frozen_at_utc": "2026-11-10T17:58:44.065132+00:00",
+  "plan_path": "research/treatment-discovery/updates/2026-11-10/analysis-plan.md",
+  "plan_sha256": "824ebb79d1c53934e6642ebc6f2cd88c1a674d3e0a785466f745c118352c830e",
+  "expression_scores_inspected": false,
+  "metadata_review_preceded_plan": true,
+  "status": "fixed before expression-score calculation; no external registration"
+}

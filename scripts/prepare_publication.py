@@ -5,6 +5,7 @@ This is an explicit snapshot selection, not a claim that upstream rights changed
 """
 from pathlib import Path
 from collections import defaultdict, Counter
+from datetime import datetime, timezone
 from urllib.parse import urlsplit, urlunsplit
 import hashlib
 import json
@@ -14,6 +15,7 @@ ROOT=Path(__file__).resolve().parents[1]
 OUT=ROOT/"publication/source-manifest.json"
 MAYNARD="research/treatment-discovery/sources/maynard-2026-10-29/"
 PRECLINICAL="research/treatment-discovery/sources/preclinical/2026-10-29/"
+EGFR_SOURCE="research/treatment-discovery/sources/egfr-resistance-2026-11-10/"
 MAYNARD_KEEP={"manifest.json","repository-tree.json","derived-published-AT2-signature.json",
     "egfr-main-metadata-audit.json","egfr-main-sample-audit.csv"}
 
@@ -23,6 +25,8 @@ def policy(name):
         return "local_generated","Private working/archive directory; not publication input"
     if name.startswith("tmp/") or p.suffix in (".sqlite",".pyc",".png"):
         return "local_generated","Rebuildable database, bytecode or rendering cache"
+    if name.startswith(EGFR_SOURCE):
+        return "linked_source_only","Public research originals retained for local reanalysis; publish original findings and source provenance, not raw participant-level or publisher/author source mirrors"
     if name.startswith(MAYNARD):
         if name[len(MAYNARD):] in MAYNARD_KEEP:
             return "included","Authored factual audit/derived gene list or public source path/hash inventory; upstream attribution retained"
@@ -78,30 +82,42 @@ def record_paths(obj,parent):
     elif isinstance(obj,list):
         for value in obj:record_paths(value,parent)
 
-all_paths=[p for p in ROOT.rglob("*") if p.is_file() and not any(x in p.relative_to(ROOT).parts for x in (".git",".publication",".venv","__pycache__"))]
+all_paths=[p for p in ROOT.rglob("*") if p.is_file() and p.relative_to(ROOT).parts[0] != "tmp" and not any(x in p.relative_to(ROOT).parts for x in (".git",".publication",".venv","__pycache__"))]
 for path in all_paths:
     if path.suffix==".json" and path!=OUT:
         try:record_paths(json.loads(path.read_text()),path.parent.relative_to(ROOT))
         except (ValueError,UnicodeDecodeError):pass
 
 rows=[]
+def file_sha256(path):
+    h=hashlib.sha256()
+    with path.open("rb") as f:
+        for block in iter(lambda:f.read(8*1024*1024),b""):h.update(block)
+    return h.hexdigest()
+
 for path in sorted(all_paths):
     name=path.relative_to(ROOT).as_posix()
     if name in ("publication/source-manifest.json","publication/included-files.txt"):continue
     status,basis=policy(name)
-    rows.append({"path":name,"bytes":path.stat().st_size,"sha256":hashlib.sha256(path.read_bytes()).hexdigest(),
+    rows.append({"path":name,"bytes":path.stat().st_size,"sha256":file_sha256(path),
         "publication_status":status,"rights_or_scope_basis":basis,"upstream_urls":sorted(u for u in urls[name] if u)})
 OUT.parent.mkdir(exist_ok=True)
 included=[r["path"] for r in rows if r["publication_status"]=="included"]+["publication/source-manifest.json","publication/included-files.txt"]
-OUT.write_text(json.dumps({"publication_date":"2026-11-03","scope":"All original project findings/reports/analyses/code plus redistributable source data; linked-source-only archives remain local",
+manifest={"initial_publication_date":"2026-11-03","publication_date":datetime.now(timezone.utc).date().isoformat(),"scope":"All original project findings/reports/analyses/code plus redistributable source data; linked-source-only archives remain local",
     "notes":["Original source acquisition dates and data periods remain in the original provenance files.",
              "A path in this inventory does not mean its source body is redistributed; read publication_status.",
              "Hashes identify the local/public snapshot where present, not a promise that a mutable upstream URL still returns identical bytes.",
-             "The generated search database is excluded and can be rebuilt from the published subset; its hash/search counts differ from the full local archive."],
-    "counts":dict(Counter(r["publication_status"] for r in rows)),"expected_public_files":sorted(included),"files":rows},indent=2)+"\n")
+             "The generated search database is excluded and can be rebuilt from the published subset; its hash/search counts differ from the full local archive.",
+             "Ephemeral tmp working files/environments are excluded from the inventory; durable source originals have their own dated paths and provenance."],
+    "counts":dict(Counter(r["publication_status"] for r in rows)),"expected_public_files":sorted(included),"files":rows}
 (OUT.parent/"included-files.txt").write_text("\n".join(sorted(included))+"\n")
-ignore=["# Private archives and rebuildable outputs", ".publication/", ".venv/", "__pycache__/", "*.pyc", "*.sqlite", "*.sqlite-*", "tmp/", "*.png", ".DS_Store", ".env", ".env.*", "*.pem", "*.key", "id_ed25519", "id_rsa", "# Source mirrors without publication clearance"]
+ignore=["# Private archives and rebuildable outputs", ".publication/", ".venv/", "__pycache__/", "*.pyc", "*.sqlite", "*.sqlite-*", "tmp/", "*.png", ".DS_Store", ".env", ".env.*", "*.pem", "*.key", "id_ed25519", "id_rsa", "/"+EGFR_SOURCE, "# Source mirrors without publication clearance"]
 ignore.extend("/"+r["path"] for r in rows if r["publication_status"]=="linked_source_only")
 (ROOT/".gitignore").write_text("\n".join(ignore)+"\n")
+# The ignore file is itself published: record its generated bytes, not the
+# previous snapshot's bytes. The manifest/list intentionally do not self-hash.
+ignore_row=next(r for r in rows if r["path"]==".gitignore")
+ignore_row.update(bytes=(ROOT/".gitignore").stat().st_size,sha256=file_sha256(ROOT/".gitignore"))
+OUT.write_text(json.dumps(manifest,indent=2)+"\n")
 print(json.dumps({"included":len(included),"inventory_counts":dict(Counter(r["publication_status"] for r in rows)),
     "included_bytes":sum(r["bytes"] for r in rows if r["publication_status"]=="included")},indent=2))

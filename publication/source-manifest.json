@@ -1,16 +1,18 @@
 {
-  "publication_date": "2026-11-03",
+  "initial_publication_date": "2026-11-03",
+  "publication_date": "2026-11-10",
   "scope": "All original project findings/reports/analyses/code plus redistributable source data; linked-source-only archives remain local",
   "notes": [
     "Original source acquisition dates and data periods remain in the original provenance files.",
     "A path in this inventory does not mean its source body is redistributed; read publication_status.",
     "Hashes identify the local/public snapshot where present, not a promise that a mutable upstream URL still returns identical bytes.",
-    "The generated search database is excluded and can be rebuilt from the published subset; its hash/search counts differ from the full local archive."
+    "The generated search database is excluded and can be rebuilt from the published subset; its hash/search counts differ from the full local archive.",
+    "Ephemeral tmp working files/environments are excluded from the inventory; durable source originals have their own dated paths and provenance."
   ],
   "counts": {
-    "included": 279,
-    "local_generated": 50,
-    "linked_source_only": 71
+    "included": 305,
+    "local_generated": 1,
+    "linked_source_only": 79
   },
   "expected_public_files": [
     ".gitattributes",
@@ -29,7 +31,9 @@
     "publication/included-files.txt",
     "publication/sanitization-log.json",
     "publication/source-manifest.json",
+    "publication/verification-2026-11-10.json",
     "publication/verification.json",
+    "requirements-treatment.txt",
     "requirements.txt",
     "research/additional-source-links.csv",
     "research/cancer-specific-summary.json",
@@ -172,6 +176,12 @@
     "research/treatment-discovery/preclinical-data-sources.json",
     "research/treatment-discovery/preclinical-data.md",
     "research/treatment-discovery/preclinical-metadata-audit.json",
+    "research/treatment-discovery/results/gse292469-alveolar-2026-11-10/RESULTS.md",
+    "research/treatment-discovery/results/gse292469-alveolar-2026-11-10/independent-review.json",
+    "research/treatment-discovery/results/gse292469-alveolar-2026-11-10/independent-review.md",
+    "research/treatment-discovery/results/gse292469-alveolar-2026-11-10/patient-signature-scores.svg",
+    "research/treatment-discovery/results/gse292469-alveolar-2026-11-10/results.json",
+    "research/treatment-discovery/results/gse292469-alveolar-2026-11-10/sample-scores.json",
     "research/treatment-discovery/results/nsclc-tmb-dcb-2026-10-29/RESULTS.md",
     "research/treatment-discovery/results/nsclc-tmb-dcb-2026-10-29/bootstrap_auc.npy",
     "research/treatment-discovery/results/nsclc-tmb-dcb-2026-10-29/cohort-flow.jsonl",
@@ -211,25 +221,42 @@
     "research/treatment-discovery/sources/preclinical/2026-10-29/figshare-9393293-v4/secondary-screen-replicate-collapsed-treatment-info.csv",
     "research/treatment-discovery/sources/preclinical/2026-10-29/gdsc2-workbook-availability.json",
     "research/treatment-discovery/therapeutic-questions.md",
+    "research/treatment-discovery/updates/2026-11-10/README.md",
+    "research/treatment-discovery/updates/2026-11-10/acquisition-manifest.json",
+    "research/treatment-discovery/updates/2026-11-10/analysis-plan-freeze.json",
+    "research/treatment-discovery/updates/2026-11-10/analysis-plan.md",
+    "research/treatment-discovery/updates/2026-11-10/independent-cohort-review.json",
+    "research/treatment-discovery/updates/2026-11-10/independent-cohort-review.md",
+    "research/treatment-discovery/updates/2026-11-10/malignant-membership-audit.json",
+    "research/treatment-discovery/updates/2026-11-10/malignant-membership-review.md",
+    "research/treatment-discovery/updates/2026-11-10/seurat-object-audit.json",
+    "research/treatment-discovery/updates/2026-11-10/signature-verification.json",
+    "research/treatment-discovery/updates/2026-11-10/signature-verification.md",
     "research/us-state-incidence-2019-2023.csv",
     "research/us-state-mortality-2020-2024.csv",
     "research/winnebago-2000-personal-wood-dust.csv",
     "scripts/add_gap_ocr_sidecars.py",
     "scripts/analyze_industry_records.py",
+    "scripts/audit_maynard_malignant_membership.py",
     "scripts/audit_maynard_metadata.py",
     "scripts/build_data_source_catalog.py",
     "scripts/build_food_industry_evidence.py",
+    "scripts/build_gse292469_sample_metadata.py",
     "scripts/build_knowledge_base.py",
     "scripts/build_report.py",
     "scripts/build_services_evidence.py",
     "scripts/check_compilation.py",
     "scripts/check_publication.py",
     "scripts/extract_iowa_title_v_2024.py",
+    "scripts/extract_maynard_seurat_object.py",
     "scripts/fetch_iowa_tri_history.py",
     "scripts/ocr_pdf_applevision.swift",
+    "scripts/plot_gse292469_signature.py",
     "scripts/prepare_compilation.py",
     "scripts/prepare_publication.py",
     "scripts/query_research.py",
+    "scripts/review_gse292469_signature.py",
+    "scripts/run_gse292469_signature.py",
     "scripts/run_nsclc_benchmark.py",
     "sources/HF2635-Signed-2026.ocr.provenance.json",
     "sources/cohort-access/ahs-public-cancer-summary-through-2021.csv",
@@ -293,7 +320,8 @@
     "sources/industries/tri-history/tri-2021-iowa-original.csv",
     "sources/industries/tri-history/tri-2022-iowa-original.csv",
     "sources/industries/tri-history/tri-2023-iowa-original.csv",
-    "sources/industries/tri-history/tri-2024-iowa-original.csv"
+    "sources/industries/tri-history/tri-2024-iowa-original.csv",
+    "tests/test_gse292469_signature.py"
   ],
   "files": [
     {
@@ -306,8 +334,8 @@
     },
     {
       "path": ".gitignore",
-      "bytes": 5385,
-      "sha256": "5a7936afd2024de8a4a2ecfcbe288803a15d8f80a8d57ad2dd872b04d113ba5b",
+      "bytes": 6239,
+      "sha256": "13207a2dccf9e52025216b251778a0dc9dc8b0a2685d69355e2f2e9927d6580d",
       "publication_status": "included",
       "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
       "upstream_urls": [
@@ -348,16 +376,16 @@
     },
     {
       "path": "PUBLICATION.md",
-      "bytes": 6286,
-      "sha256": "873744a480b4e6defc0bc964592e2c7f609dc4e1ae25043cbf5de8dd3ec29bcc",
+      "bytes": 7592,
+      "sha256": "48b3934c95cb7b16a5a339da5c7c13bbeeb44ceddfc72d4640d1c55a7de68cd1",
       "publication_status": "included",
       "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
       "upstream_urls": []
     },
     {
       "path": "README.md",
-      "bytes": 5302,
-      "sha256": "16439260b695d3004ac49cfe7e319e131dd8954684fe31825605109df5f5ed32",
+      "bytes": 5620,
+      "sha256": "318f3b327c862c9cd0a3b3e0849b0533b767fdde7038e8505dc72a1dd349578a",
       "publication_status": "included",
       "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
       "upstream_urls": [
@@ -366,16 +394,16 @@
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
-      "bytes": 11814,
-      "sha256": "649efa8814b985a26b5d1db04666a659f8a3e43f8058ad897217e056fea93111",
+      "bytes": 12754,
+      "sha256": "2d0e589891b06dde6b985075a58a1c95a8e51ce26205a7b4fc8e9ada57fb0626",
       "publication_status": "included",
       "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
       "upstream_urls": []
     },
     {
       "path": "knowledge/INDEX.md",
-      "bytes": 12446,
-      "sha256": "40bd99388bd9924eae80e89c701117147a00fa866f8e861141afcd5aeab60c29",
+      "bytes": 12827,
+      "sha256": "7771d929b162003cab8cc354948a17411843e012b0e82c9cfafb87ceb91b5995",
       "publication_status": "included",
       "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
       "upstream_urls": []
@@ -383,7 +411,7 @@
     {
       "path": "knowledge/build-manifest.json",
       "bytes": 1870,
-      "sha256": "c7cf63db9ea4e6f4a1dba81d1c3a14555c7b406fa14abc18ceccffcb2dae5d5c",
+      "sha256": "632bde1ccc2766798a80d3fea054ea3fe7b720b6aa7b4d9f538239a4908f98a7",
       "publication_status": "included",
       "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
       "upstream_urls": []
@@ -398,8 +426,8 @@
     },
     {
       "path": "knowledge/research.sqlite",
-      "bytes": 293842944,
-      "sha256": "e839281285162794fc732a29010dff32c9afd4631b110a44939c442db5cd21a2",
+      "bytes": 293998592,
+      "sha256": "40e2eff55b19c71e47e5f37639508d531f573dd361f2d5f505bdcca1f2a95629",
       "publication_status": "local_generated",
       "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
       "upstream_urls": []
@@ -421,9 +449,25 @@
       "upstream_urls": []
     },
     {
+      "path": "publication/verification-2026-11-10.json",
+      "bytes": 2577,
+      "sha256": "a9067c33a3a66729ebfc0df7240f831f6129d07f73150163b21e47dcbf6bcdf9",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
       "path": "publication/verification.json",
       "bytes": 1257,
       "sha256": "633e0690c2b4f0e1df9f1cc4108b24855ef5638b272ae2b1c8aa454059be82e6",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "requirements-treatment.txt",
+      "bytes": 167,
+      "sha256": "f9a179dd86cb917d82e00f099177ba199d4fef7414160d4b26ce17db4ab2b7f6",
       "publication_status": "included",
       "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
       "upstream_urls": []
@@ -1390,16 +1434,16 @@
     },
     {
       "path": "research/treatment-discovery/AGENTS.md",
-      "bytes": 1823,
-      "sha256": "4814c5f3a532bb73ea0479471440ad4c964e8b3a299c47f870e6948cadc769a4",
+      "bytes": 2474,
+      "sha256": "cfadd25b8f9d784f8fa77fa18cd5d8e26bc04628d4939ce812ec44009e33e3cf",
       "publication_status": "included",
       "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
       "upstream_urls": []
     },
     {
       "path": "research/treatment-discovery/README.md",
-      "bytes": 8247,
-      "sha256": "84b820fd331ad1f785d321886c2e2089a8ab7083fdc4b38ff769c3ddcc662130",
+      "bytes": 8717,
+      "sha256": "6911c575ffc8891b4d0c42c833bbe893d156f36f4838759e941f91fc92466760",
       "publication_status": "included",
       "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
       "upstream_urls": []
@@ -1552,8 +1596,8 @@
     },
     {
       "path": "research/treatment-discovery/data-access-catalog.json",
-      "bytes": 11054,
-      "sha256": "ea321791f883a1910bf586ec7f5113f00a498ae8f81b1910d8d2f27b8eb0495f",
+      "bytes": 13307,
+      "sha256": "e45771086132c4bfa0c04ec807f385e287b982075861a0144c201e0428feb0aa",
       "publication_status": "included",
       "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
       "upstream_urls": []
@@ -1568,8 +1612,8 @@
     },
     {
       "path": "research/treatment-discovery/egfr-mechanism-feasibility.md",
-      "bytes": 6263,
-      "sha256": "5f38d6972b06ee8604039d06cbe22bba4125e9e04b0a39c4931fc620e9556f6b",
+      "bytes": 6304,
+      "sha256": "aae7f3175b6b3d0b05cdf1275cb0bc1c2f6de7a1e7e91a00023634563188eda4",
       "publication_status": "included",
       "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
       "upstream_urls": []
@@ -1594,6 +1638,54 @@
       "path": "research/treatment-discovery/preclinical-metadata-audit.json",
       "bytes": 14721,
       "sha256": "4f46f9b0edd60d7a997bf0148e6b7421bded89479154b067bf50603bcc8c4e01",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/results/gse292469-alveolar-2026-11-10/RESULTS.md",
+      "bytes": 9263,
+      "sha256": "fd029cf77d0f60616aa1dc0f3d2fb54bbfd958d2df6857b305dda932ae8c33ff",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/results/gse292469-alveolar-2026-11-10/independent-review.json",
+      "bytes": 4032,
+      "sha256": "5d3e306b0987155c09fc02f2cd1aa3f4e0861d830cf75f335174b0efb6188370",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/results/gse292469-alveolar-2026-11-10/independent-review.md",
+      "bytes": 4464,
+      "sha256": "7010976e92560457123a83718b92b9b1d68ce951c57296772c020b4e289774e6",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/results/gse292469-alveolar-2026-11-10/patient-signature-scores.svg",
+      "bytes": 20937,
+      "sha256": "5422d04035bf1a6637ccf921c1e391ed545deb45819a3982835d0819c57be38e",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/results/gse292469-alveolar-2026-11-10/results.json",
+      "bytes": 14275,
+      "sha256": "7916c3f8f48915ec50078f21e8f485f958e6e352383fbc035b07310bad402832",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/results/gse292469-alveolar-2026-11-10/sample-scores.json",
+      "bytes": 41429,
+      "sha256": "1f2a742f8dc07c53ebd34f44e3387d4a0f033b0814fa45d6b7298b2be144dcf2",
       "publication_status": "included",
       "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
       "upstream_urls": []
@@ -1644,6 +1736,80 @@
       "sha256": "dfb408d8542e6a0fac4f07650ae05ce369ca5a698445b6d087c6073fac0dd244",
       "publication_status": "included",
       "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/sources/egfr-resistance-2026-11-10/GSE292469-samples.txt",
+      "bytes": 296198,
+      "sha256": "b51d6e9652b8976302911d0ed56a1dc596a83e9e40eca04fc847ad1f9705d83a",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Public research originals retained for local reanalysis; publish original findings and source provenance, not raw participant-level or publisher/author source mirrors",
+      "upstream_urls": [
+        "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE292469&targ=gsm&form=text&view=full"
+      ]
+    },
+    {
+      "path": "research/treatment-discovery/sources/egfr-resistance-2026-11-10/GSE292469-series.txt",
+      "bytes": 6706,
+      "sha256": "5a777bf9541d9e21d91ae03106adc703409bf2f3e8ce6e442fdefece5f6441fd",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Public research originals retained for local reanalysis; publish original findings and source provenance, not raw participant-level or publisher/author source mirrors",
+      "upstream_urls": [
+        "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE292469&targ=self&form=text&view=full"
+      ]
+    },
+    {
+      "path": "research/treatment-discovery/sources/egfr-resistance-2026-11-10/GSE292469_cell_metadata.tsv.gz",
+      "bytes": 18852668,
+      "sha256": "9b16b89922bade9d1334ebaeb002763dcca9fd2652a3e9616befb98f04777012",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Public research originals retained for local reanalysis; publish original findings and source provenance, not raw participant-level or publisher/author source mirrors",
+      "upstream_urls": [
+        "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE292nnn/GSE292469/suppl/GSE292469_cell_metadata.tsv.gz"
+      ]
+    },
+    {
+      "path": "research/treatment-discovery/sources/egfr-resistance-2026-11-10/GSE292469_counts.h5",
+      "bytes": 12553420880,
+      "sha256": "60c6aab4dd2b2baa5b5deb163aca7aff1bfc180bb24c6c3f5aa02c445bf7872e",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Public research originals retained for local reanalysis; publish original findings and source provenance, not raw participant-level or publisher/author source mirrors",
+      "upstream_urls": [
+        "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE292nnn/GSE292469/suppl/GSE292469_counts.h5"
+      ]
+    },
+    {
+      "path": "research/treatment-discovery/sources/egfr-resistance-2026-11-10/NI04_tumor_seurat_object.RData",
+      "bytes": 568368135,
+      "sha256": "5458c714d2fbcd587dec6ed75e17ae5ae14573ae3b9c238b99f3dec9d27100e5",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Public research originals retained for local reanalysis; publish original findings and source provenance, not raw participant-level or publisher/author source mirrors",
+      "upstream_urls": [
+        "https://drive.google.com/uc?export=download&id=11pWeBoGxjhE7VDHl9eaErB8_7seCPJ8V"
+      ]
+    },
+    {
+      "path": "research/treatment-discovery/sources/egfr-resistance-2026-11-10/maynard/data_out/IM06/Table_of_ALL_cell_types_by_sample.csv",
+      "bytes": 3955,
+      "sha256": "d1823a81fd131f1650c1faf5eed601165819cf6e24f6a23451d621e0fcd39abc",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Public research originals retained for local reanalysis; publish original findings and source provenance, not raw participant-level or publisher/author source mirrors",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/sources/egfr-resistance-2026-11-10/maynard/data_out/NI03/results/inferCNV_annotation.csv",
+      "bytes": 280568,
+      "sha256": "f2b0cad6786932cb32e2a6f5336de04c98f683d8b7d1c2d180b85b4bc46949b5",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Public research originals retained for local reanalysis; publish original findings and source provenance, not raw participant-level or publisher/author source mirrors",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/sources/egfr-resistance-2026-11-10/sample-metadata-derived.json",
+      "bytes": 85971,
+      "sha256": "d9732c068bfc69925de8929e1486a73059efeaac27de42fb388961894523726e",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Public research originals retained for local reanalysis; publish original findings and source provenance, not raw participant-level or publisher/author source mirrors",
       "upstream_urls": []
     },
     {
@@ -2171,6 +2337,94 @@
       "upstream_urls": []
     },
     {
+      "path": "research/treatment-discovery/updates/2026-11-10/README.md",
+      "bytes": 1252,
+      "sha256": "781f904410755e5b340b74fdbbcbfcfc27edce9cbe0d74a4f07b0bf1d11acdcf",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/updates/2026-11-10/acquisition-manifest.json",
+      "bytes": 4289,
+      "sha256": "8d54de53ba955ae80bbc5273451b4c2af5cbb5d7501396dd20ad1782ce213947",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/updates/2026-11-10/analysis-plan-freeze.json",
+      "bytes": 390,
+      "sha256": "dccb2083d0d1dfbc0cbe89389b18ef9656f9213583df9b4066acefdcd4bc710b",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/updates/2026-11-10/analysis-plan.md",
+      "bytes": 6820,
+      "sha256": "824ebb79d1c53934e6642ebc6f2cd88c1a674d3e0a785466f745c118352c830e",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/updates/2026-11-10/independent-cohort-review.json",
+      "bytes": 23609,
+      "sha256": "c84d297fdb29548f3722458e22aa6f081d85e5abc837c01228e813eef71a9727",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/updates/2026-11-10/independent-cohort-review.md",
+      "bytes": 7739,
+      "sha256": "de39660f5ee657c3e86983b446e4d2769c1070f5140b51e2765e125a9472b878",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/updates/2026-11-10/malignant-membership-audit.json",
+      "bytes": 13586,
+      "sha256": "08c7f23c0dc784d4c44a6a5a7eb9c949cfd24edbeb5252f3573ce957bee052d3",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/updates/2026-11-10/malignant-membership-review.md",
+      "bytes": 5927,
+      "sha256": "04bba3d60805827d786b83852243c37ac05d27382610b3a5637015f418c9bb06",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/updates/2026-11-10/seurat-object-audit.json",
+      "bytes": 3047,
+      "sha256": "23d18befc812aa62320f2748ec528e2958cadca9a5fa92ef4e69c4e3027bf62f",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/updates/2026-11-10/signature-verification.json",
+      "bytes": 10209,
+      "sha256": "9a7a65b75f844146888e96e90ddc9f767c01648b695d0085941f849587a57707",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/updates/2026-11-10/signature-verification.md",
+      "bytes": 5269,
+      "sha256": "30b180a6fc60f5a14d794316898e686edd858c3b09ed71e25b9dac70795e9d7d",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
       "path": "research/us-state-incidence-2019-2023.csv",
       "bytes": 4243,
       "sha256": "997ea5206ba451dd2ec75c8499ec042be4f36abd77e55bbfce1c2b02d41d3348",
@@ -2211,6 +2465,14 @@
       "upstream_urls": []
     },
     {
+      "path": "scripts/audit_maynard_malignant_membership.py",
+      "bytes": 11950,
+      "sha256": "52a32f7c1188c113ce33e1bced6df378a9d15ab909583d8a73f5dadbac0f8017",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
       "path": "scripts/audit_maynard_metadata.py",
       "bytes": 6863,
       "sha256": "b974461f3fe2179b66789b8c3b7f443e149d9c3e2c36739b1663050eaa92f134",
@@ -2235,9 +2497,17 @@
       "upstream_urls": []
     },
     {
+      "path": "scripts/build_gse292469_sample_metadata.py",
+      "bytes": 11942,
+      "sha256": "2ec2fff4977015c4b5a5a4cdf7dcfcbc6fc353f4f3b65033e245a5ae7a22a444",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
       "path": "scripts/build_knowledge_base.py",
-      "bytes": 27033,
-      "sha256": "6b93a4e97a8b7fafe57698b41c6ea0ecf60df9bcd635d0b440bc7370db87caf9",
+      "bytes": 27410,
+      "sha256": "74a9f318f3b70eb3348551e691b819774c811e53f42ae54b501612e7e3ecb6d0",
       "publication_status": "included",
       "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
       "upstream_urls": []
@@ -2283,6 +2553,14 @@
       "upstream_urls": []
     },
     {
+      "path": "scripts/extract_maynard_seurat_object.py",
+      "bytes": 10167,
+      "sha256": "3702c099383bae6d313ff9d3434fb2c7044d3c248670625081c77e6ba1621553",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
       "path": "scripts/fetch_iowa_tri_history.py",
       "bytes": 2043,
       "sha256": "21a6253987358e2cdb9faca4731971668a1e00dd749d5fb0d18861df84a07dc3",
@@ -2299,6 +2577,14 @@
       "upstream_urls": []
     },
     {
+      "path": "scripts/plot_gse292469_signature.py",
+      "bytes": 3445,
+      "sha256": "7a75c645961660318f17917d07e8dee7bab80ec5e05e341789ceb100726df794",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
       "path": "scripts/prepare_compilation.py",
       "bytes": 15146,
       "sha256": "d84d049379c0a26970ea5640530322f2b94bee2a2b04831a45f77a10d991d9d9",
@@ -2308,8 +2594,8 @@
     },
     {
       "path": "scripts/prepare_publication.py",
-      "bytes": 6994,
-      "sha256": "722a9710781e50fbe66378c37f23116a46342c2c56e74830a6212efc0db7cb11",
+      "bytes": 8124,
+      "sha256": "0019ffaecb21c14237cfdda82456d5e7329804cc803d0f2362701f0a0750cfcd",
       "publication_status": "included",
       "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
       "upstream_urls": []
@@ -2318,6 +2604,22 @@
       "path": "scripts/query_research.py",
       "bytes": 1578,
       "sha256": "45185e834e1cd42f95f9c1b99ba5c38c91f4860555e72ba7c2a6e6d130575f56",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "scripts/review_gse292469_signature.py",
+      "bytes": 13385,
+      "sha256": "751dc410f15a70b3e330a286e7dd7afa0017f5c4a82dd0ff0a00b8e93a90273e",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "scripts/run_gse292469_signature.py",
+      "bytes": 12671,
+      "sha256": "b58214b26de28ed746abc7794e2e4b23d7c7e1eb2755f81fdca5c92388fde055",
       "publication_status": "included",
       "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
       "upstream_urls": []
@@ -3373,395 +3675,11 @@
       ]
     },
     {
-      "path": "tmp/pdfs/annual-2026-test.pdf",
-      "bytes": 919,
-      "sha256": "e1bf7ba193a5a1ccb7785371b9a9e8ece893907bcf2d81a119a9b6c6563dbe3a",
-      "publication_status": "local_generated",
-      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
-      "upstream_urls": []
-    },
-    {
-      "path": "tmp/pdfs/contact-1.png",
-      "bytes": 472783,
-      "sha256": "2971cd45fc96b667bb8f233ba0502aff1f1bb220b48674a301067b593e7438c7",
-      "publication_status": "local_generated",
-      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
-      "upstream_urls": []
-    },
-    {
-      "path": "tmp/pdfs/contact-2.png",
-      "bytes": 487309,
-      "sha256": "8be8934e7829bb9a13a1dd2109877f837c8af7fce7fbab3275ef0560856883bf",
-      "publication_status": "local_generated",
-      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
-      "upstream_urls": []
-    },
-    {
-      "path": "tmp/pdfs/contact-3.png",
-      "bytes": 518286,
-      "sha256": "da811075a66f8a671661735399690f6210ea02f983683005ade7e2906db092d1",
-      "publication_status": "local_generated",
-      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
-      "upstream_urls": []
-    },
-    {
-      "path": "tmp/pdfs/contact-4.png",
-      "bytes": 44802,
-      "sha256": "39802dcaa743ea183e36d2c8f134cff30506a4bb9fa3adb8b802248606e64228",
-      "publication_status": "local_generated",
-      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
-      "upstream_urls": []
-    },
-    {
-      "path": "tmp/pdfs/drivers-www.pdf",
-      "bytes": 919,
-      "sha256": "d85e2e128f06995baec5fabb10f3025fe5131d738079490710cbcb1f8ad1bde0",
-      "publication_status": "local_generated",
-      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
-      "upstream_urls": []
-    },
-    {
-      "path": "tmp/pdfs/final-contact-1.png",
-      "bytes": 458732,
-      "sha256": "f0f0032e023b6ef6cc314a553c9ed2d627b0817c4cd09aae776c443886db87ab",
-      "publication_status": "local_generated",
-      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
-      "upstream_urls": []
-    },
-    {
-      "path": "tmp/pdfs/final-contact-2.png",
-      "bytes": 471507,
-      "sha256": "97b5c6398aff13175ce82afba457cf1baf9497cd7c3a80ecbb4b8d66f2cb3946",
-      "publication_status": "local_generated",
-      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
-      "upstream_urls": []
-    },
-    {
-      "path": "tmp/pdfs/final-contact-3.png",
-      "bytes": 503895,
-      "sha256": "38bfbe9265188fb87fa16d9707db9439c80a7dea4f822bbd5cc87ed3c28ba726",
-      "publication_status": "local_generated",
-      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
-      "upstream_urls": []
-    },
-    {
-      "path": "tmp/pdfs/final-contact-4.png",
-      "bytes": 45708,
-      "sha256": "664d4c51a51455502f39e81b2601d357012103487a34d2a011f4789e59f36a7b",
-      "publication_status": "local_generated",
-      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
-      "upstream_urls": []
-    },
-    {
-      "path": "tmp/pdfs/final-page-01.png",
-      "bytes": 184367,
-      "sha256": "13fb758bf2e135d17192bf55889195cb30d3a1543916eff44917ede84370deff",
-      "publication_status": "local_generated",
-      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
-      "upstream_urls": []
-    },
-    {
-      "path": "tmp/pdfs/final-page-02.png",
-      "bytes": 164700,
-      "sha256": "6043e143b654f7e46eeaad63ee782567205b04a9b9b45de9a6de3601118b0af7",
-      "publication_status": "local_generated",
-      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
-      "upstream_urls": []
-    },
-    {
-      "path": "tmp/pdfs/final-page-03.png",
-      "bytes": 143210,
-      "sha256": "050f78dcbbf6253f6329d46f8e23382203c513b8dc88b508366edf15b9a6a976",
-      "publication_status": "local_generated",
-      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
-      "upstream_urls": []
-    },
-    {
-      "path": "tmp/pdfs/final-page-04.png",
-      "bytes": 173732,
-      "sha256": "94899aa749cdd1dad6b0d4f3d13c0193617a4ca81843a12f17f8f2da71a07bc2",
-      "publication_status": "local_generated",
-      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
-      "upstream_urls": []
-    },
-    {
-      "path": "tmp/pdfs/final-page-05.png",
-      "bytes": 146321,
-      "sha256": "18c7143c77c52718089eacdfb5e6ce254fa557e147ea5829f88fa74a22aed7a0",
-      "publication_status": "local_generated",
-      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
-      "upstream_urls": []
-    },
-    {
-      "path": "tmp/pdfs/final-page-06.png",
-      "bytes": 175826,
-      "sha256": "093bf836506f7726d7af2512e100e9da2457c62e7a09258885894768c4bb3bf8",
-      "publication_status": "local_generated",
-      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
-      "upstream_urls": []
-    },
-    {
-      "path": "tmp/pdfs/final-page-07.png",
-      "bytes": 157451,
-      "sha256": "76764337c7361a1ccbfd2ece0aa2936befb8cb6897e84c04c6259a7fdfcb32c7",
-      "publication_status": "local_generated",
-      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
-      "upstream_urls": []
-    },
-    {
-      "path": "tmp/pdfs/final-page-08.png",
-      "bytes": 156272,
-      "sha256": "a347803169156cf5c49993813ac376dce975495ada527045f00a47b9036438a0",
-      "publication_status": "local_generated",
-      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
-      "upstream_urls": []
-    },
-    {
-      "path": "tmp/pdfs/final-page-09.png",
-      "bytes": 173742,
-      "sha256": "dc5c25acbe7aeb98e9ab30cc5026d99b8be017c70b5e77b288f3b0c2bfdb7db9",
-      "publication_status": "local_generated",
-      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
-      "upstream_urls": []
-    },
-    {
-      "path": "tmp/pdfs/final-page-10.png",
-      "bytes": 197253,
-      "sha256": "281c1f1f906bb092feee71226f65a7271194ada54874a5cedebb55b42bb733c1",
-      "publication_status": "local_generated",
-      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
-      "upstream_urls": []
-    },
-    {
-      "path": "tmp/pdfs/final-page-11.png",
-      "bytes": 177372,
-      "sha256": "5ce0783175ad42272cf07483cdbe6c305828a04fcd5fa8275afdad9541304b77",
-      "publication_status": "local_generated",
-      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
-      "upstream_urls": []
-    },
-    {
-      "path": "tmp/pdfs/final-page-12.png",
-      "bytes": 169764,
-      "sha256": "32abd354fca98434c2687e336efb7d81f6ff48c18140267bc05f61975418b0cd",
-      "publication_status": "local_generated",
-      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
-      "upstream_urls": []
-    },
-    {
-      "path": "tmp/pdfs/final-page-13.png",
-      "bytes": 175624,
-      "sha256": "962682558ebbcda572e02b6dab9389c8e586411ed230c74fd9e342521b69cd8e",
-      "publication_status": "local_generated",
-      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
-      "upstream_urls": []
-    },
-    {
-      "path": "tmp/pdfs/final-page-14.png",
-      "bytes": 187248,
-      "sha256": "6f0f5e636ad2c4ba31a8b2120dac3a0ba3b20dc8ec89e5df55123444223452d1",
-      "publication_status": "local_generated",
-      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
-      "upstream_urls": []
-    },
-    {
-      "path": "tmp/pdfs/final-page-15.png",
-      "bytes": 178336,
-      "sha256": "a560cb3d1ae566d3feeed3e3f18396a2f8fa9ebee3a06d62e9a1828c4d1c35d9",
-      "publication_status": "local_generated",
-      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
-      "upstream_urls": []
-    },
-    {
-      "path": "tmp/pdfs/final-page-16.png",
-      "bytes": 193535,
-      "sha256": "35664a0296be501d46132ebc5724086251709475ebeaf54edc78c5d62315ccd7",
-      "publication_status": "local_generated",
-      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
-      "upstream_urls": []
-    },
-    {
-      "path": "tmp/pdfs/final-page-17.png",
-      "bytes": 230557,
-      "sha256": "edbdba0a19b3d706281b877114826235d19fbbe20e0a236babf77042b3a6e7aa",
-      "publication_status": "local_generated",
-      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
-      "upstream_urls": []
-    },
-    {
-      "path": "tmp/pdfs/final-page-18.png",
-      "bytes": 240433,
-      "sha256": "0bb15338386df5c7cd8a1e14ee90b7c6706665aea4b2e5dff5abd0c5eff64421",
-      "publication_status": "local_generated",
-      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
-      "upstream_urls": []
-    },
-    {
-      "path": "tmp/pdfs/final-page-19.png",
-      "bytes": 106438,
-      "sha256": "75b85763bf7477e2a0dff2a2cc5ac23950a500fe066ee85cfb920f92fff29db2",
-      "publication_status": "local_generated",
-      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
-      "upstream_urls": []
-    },
-    {
-      "path": "tmp/pdfs/key-drivers-access-error.html",
-      "bytes": 919,
-      "sha256": "df2d2072bec2ffa9737c7ad4c36b6d572cb36487b0671be28f2700e79a08c34b",
-      "publication_status": "local_generated",
-      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
-      "upstream_urls": []
-    },
-    {
-      "path": "tmp/pdfs/page-01.png",
-      "bytes": 184367,
-      "sha256": "13fb758bf2e135d17192bf55889195cb30d3a1543916eff44917ede84370deff",
-      "publication_status": "local_generated",
-      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
-      "upstream_urls": []
-    },
-    {
-      "path": "tmp/pdfs/page-02.png",
-      "bytes": 164700,
-      "sha256": "6043e143b654f7e46eeaad63ee782567205b04a9b9b45de9a6de3601118b0af7",
-      "publication_status": "local_generated",
-      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
-      "upstream_urls": []
-    },
-    {
-      "path": "tmp/pdfs/page-03.png",
-      "bytes": 143210,
-      "sha256": "050f78dcbbf6253f6329d46f8e23382203c513b8dc88b508366edf15b9a6a976",
-      "publication_status": "local_generated",
-      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
-      "upstream_urls": []
-    },
-    {
-      "path": "tmp/pdfs/page-04.png",
-      "bytes": 173732,
-      "sha256": "94899aa749cdd1dad6b0d4f3d13c0193617a4ca81843a12f17f8f2da71a07bc2",
-      "publication_status": "local_generated",
-      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
-      "upstream_urls": []
-    },
-    {
-      "path": "tmp/pdfs/page-05.png",
-      "bytes": 146321,
-      "sha256": "18c7143c77c52718089eacdfb5e6ce254fa557e147ea5829f88fa74a22aed7a0",
-      "publication_status": "local_generated",
-      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
-      "upstream_urls": []
-    },
-    {
-      "path": "tmp/pdfs/page-06.png",
-      "bytes": 175826,
-      "sha256": "093bf836506f7726d7af2512e100e9da2457c62e7a09258885894768c4bb3bf8",
-      "publication_status": "local_generated",
-      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
-      "upstream_urls": []
-    },
-    {
-      "path": "tmp/pdfs/page-07.png",
-      "bytes": 157451,
-      "sha256": "76764337c7361a1ccbfd2ece0aa2936befb8cb6897e84c04c6259a7fdfcb32c7",
-      "publication_status": "local_generated",
-      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
-      "upstream_urls": []
-    },
-    {
-      "path": "tmp/pdfs/page-08.png",
-      "bytes": 156272,
-      "sha256": "a347803169156cf5c49993813ac376dce975495ada527045f00a47b9036438a0",
-      "publication_status": "local_generated",
-      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
-      "upstream_urls": []
-    },
-    {
-      "path": "tmp/pdfs/page-09.png",
-      "bytes": 173742,
-      "sha256": "dc5c25acbe7aeb98e9ab30cc5026d99b8be017c70b5e77b288f3b0c2bfdb7db9",
-      "publication_status": "local_generated",
-      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
-      "upstream_urls": []
-    },
-    {
-      "path": "tmp/pdfs/page-10.png",
-      "bytes": 197253,
-      "sha256": "281c1f1f906bb092feee71226f65a7271194ada54874a5cedebb55b42bb733c1",
-      "publication_status": "local_generated",
-      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
-      "upstream_urls": []
-    },
-    {
-      "path": "tmp/pdfs/page-11.png",
-      "bytes": 177372,
-      "sha256": "5ce0783175ad42272cf07483cdbe6c305828a04fcd5fa8275afdad9541304b77",
-      "publication_status": "local_generated",
-      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
-      "upstream_urls": []
-    },
-    {
-      "path": "tmp/pdfs/page-12.png",
-      "bytes": 169557,
-      "sha256": "8777aee0736e3e3f831b1f2d7a6b6dd9a0ff50df261dcb16b8fe5a768b88aef0",
-      "publication_status": "local_generated",
-      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
-      "upstream_urls": []
-    },
-    {
-      "path": "tmp/pdfs/page-13.png",
-      "bytes": 175624,
-      "sha256": "962682558ebbcda572e02b6dab9389c8e586411ed230c74fd9e342521b69cd8e",
-      "publication_status": "local_generated",
-      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
-      "upstream_urls": []
-    },
-    {
-      "path": "tmp/pdfs/page-14.png",
-      "bytes": 187248,
-      "sha256": "6f0f5e636ad2c4ba31a8b2120dac3a0ba3b20dc8ec89e5df55123444223452d1",
-      "publication_status": "local_generated",
-      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
-      "upstream_urls": []
-    },
-    {
-      "path": "tmp/pdfs/page-15.png",
-      "bytes": 178336,
-      "sha256": "a560cb3d1ae566d3feeed3e3f18396a2f8fa9ebee3a06d62e9a1828c4d1c35d9",
-      "publication_status": "local_generated",
-      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
-      "upstream_urls": []
-    },
-    {
-      "path": "tmp/pdfs/page-16.png",
-      "bytes": 193535,
-      "sha256": "35664a0296be501d46132ebc5724086251709475ebeaf54edc78c5d62315ccd7",
-      "publication_status": "local_generated",
-      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
-      "upstream_urls": []
-    },
-    {
-      "path": "tmp/pdfs/page-17.png",
-      "bytes": 229900,
-      "sha256": "4b8fca86f5902f7a7b5c78d0bb6deb0b3f35a4679651ea839a68d59529c899ce",
-      "publication_status": "local_generated",
-      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
-      "upstream_urls": []
-    },
-    {
-      "path": "tmp/pdfs/page-18.png",
-      "bytes": 240433,
-      "sha256": "0bb15338386df5c7cd8a1e14ee90b7c6706665aea4b2e5dff5abd0c5eff64421",
-      "publication_status": "local_generated",
-      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
-      "upstream_urls": []
-    },
-    {
-      "path": "tmp/pdfs/page-19.png",
-      "bytes": 100585,
-      "sha256": "8ba74922377ca110ee803f45fce52cadfd2915fd8ad507ff55497ea3b9d2c4ed",
-      "publication_status": "local_generated",
-      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
+      "path": "tests/test_gse292469_signature.py",
+      "bytes": 5336,
+      "sha256": "096cc41244bcb7c5641a17c9006e82fbe72b2febae2b03a92695799b69294a0a",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
       "upstream_urls": []
     }
   ]

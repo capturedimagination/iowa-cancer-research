@@ -1,10 +1,11 @@
 # Iowa cancer research
 
-Public research snapshot prepared November 3, 2026. [Publication scope and reproduction](PUBLICATION.md) explains source availability, dependencies and licensing. All original findings and analyses are included; cached originals with unclear redistribution rights are represented by their citations and provenance.
+Public repository established November 3, 2026; treatment research extended November 10. [Publication scope and reproduction](PUBLICATION.md) explains source availability, dependencies and licensing. All original findings and analyses are included; cached originals with unclear redistribution rights are represented by their citations and provenance.
 
 Core compilation October 22, 2026. Treatment research added October 29, 2026. **Start with the [reference-library guide](knowledge/INDEX.md)** for future questions, data work and model design. The original report is a dated narrative overview; later research extends beyond it.
 
-- [Lung cancer treatment research](research/treatment-discovery/README.md): completed retrospective clinical benchmark, molecular data feasibility and a defined resistance question
+- [Latest lung-cancer research](research/treatment-discovery/updates/2026-11-10/README.md): verified molecular signature, original-cohort audit and an independent expression comparison. The overall and sequencing-kit-specific directions differ; strong confounding leaves the biological interpretation unresolved.
+- [Lung cancer treatment program](research/treatment-discovery/README.md): clinical benchmark, molecular studies and remaining research requirements
 
 - [Searchable research database and usage](knowledge/INDEX.md#search-and-retrieve)
 - [Dataset catalog and access status](research/data-source-catalog.md)

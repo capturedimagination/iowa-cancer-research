@@ -1,0 +1,619 @@
+{
+  "analysis_date_utc": "2026-11-10T18:06:00.835150+00:00",
+  "source_accession": "GSE292469",
+  "plan_sha256": "824ebb79d1c53934e6642ebc6f2cd88c1a674d3e0a785466f745c118352c830e",
+  "input_sha256": {
+    "GSE292469_counts.h5": "60c6aab4dd2b2baa5b5deb163aca7aff1bfc180bb24c6c3f5aa02c445bf7872e",
+    "GSE292469_cell_metadata.tsv.gz": "9b16b89922bade9d1334ebaeb002763dcca9fd2652a3e9616befb98f04777012",
+    "sample-metadata-derived.json": "d9732c068bfc69925de8929e1486a73059efeaac27de42fb388961894523726e"
+  },
+  "code_sha256": "b58214b26de28ed746abc7794e2e4b23d7c7e1eb2755f81fdca5c92388fde055",
+  "genes": [
+    "SFTPC",
+    "SFTPB",
+    "SFTPD",
+    "PGC",
+    "CLDN18",
+    "AQP4",
+    "SCGB3A1",
+    "ABCA3",
+    "GATA6",
+    "NKX2-1",
+    "SFTA3",
+    "IGFBP2",
+    "HOPX",
+    "NAPSA",
+    "FOXA2",
+    "AGER",
+    "LAMP1"
+  ],
+  "target_features": [
+    {
+      "symbol": "SFTPC",
+      "feature_id": "SFTPC",
+      "row": 14637
+    },
+    {
+      "symbol": "SFTPB",
+      "feature_id": "SFTPB",
+      "row": 3984
+    },
+    {
+      "symbol": "SFTPD",
+      "feature_id": "SFTPD",
+      "row": 19542
+    },
+    {
+      "symbol": "PGC",
+      "feature_id": "PGC",
+      "row": 10842
+    },
+    {
+      "symbol": "CLDN18",
+      "feature_id": "CLDN18",
+      "row": 6567
+    },
+    {
+      "symbol": "AQP4",
+      "feature_id": "AQP4",
+      "row": 28727
+    },
+    {
+      "symbol": "SCGB3A1",
+      "feature_id": "SCGB3A1",
+      "row": 10137
+    },
+    {
+      "symbol": "ABCA3",
+      "feature_id": "ABCA3",
+      "row": 25207
+    },
+    {
+      "symbol": "GATA6",
+      "feature_id": "GATA6",
+      "row": 28680
+    },
+    {
+      "symbol": "NKX2-1",
+      "feature_id": "NKX2-1",
+      "row": 22946
+    },
+    {
+      "symbol": "SFTA3",
+      "feature_id": "SFTA3",
+      "row": 22945
+    },
+    {
+      "symbol": "IGFBP2",
+      "feature_id": "IGFBP2",
+      "row": 5094
+    },
+    {
+      "symbol": "HOPX",
+      "feature_id": "HOPX",
+      "row": 7594
+    },
+    {
+      "symbol": "NAPSA",
+      "feature_id": "NAPSA",
+      "row": 31641
+    },
+    {
+      "symbol": "FOXA2",
+      "feature_id": "FOXA2",
+      "row": 29400
+    },
+    {
+      "symbol": "AGER",
+      "feature_id": "AGER",
+      "row": 10674
+    },
+    {
+      "symbol": "LAMP1",
+      "feature_id": "LAMP1",
+      "row": 22504
+    }
+  ],
+  "qc": {
+    "nuclei": 457724,
+    "sample_ids": 73,
+    "features": 33514,
+    "malignant_nuclei": 166112,
+    "count_mismatches": 0,
+    "feature_count_mismatches": 0,
+    "exact_cell_join": true
+  },
+  "comparisons": {
+    "primary": {
+      "n_MRD": 9,
+      "n_TN": 26,
+      "sample_ids": [
+        "LX1846",
+        "LX1925",
+        "LX1966",
+        "LX2000",
+        "LX2010",
+        "LX2015",
+        "LX2023",
+        "MRD1",
+        "MRD2",
+        "MRD5",
+        "MRD6",
+        "TN10",
+        "TN11",
+        "TN12",
+        "TN13",
+        "TN14",
+        "TN15",
+        "TN17",
+        "TN18",
+        "TN19",
+        "TN2",
+        "TN20",
+        "TN21",
+        "TN22",
+        "TN23",
+        "TN24",
+        "TN25",
+        "TN26",
+        "TN3",
+        "TN4",
+        "TN5",
+        "TN6",
+        "TN7",
+        "TN8",
+        "TN9"
+      ],
+      "status": "descriptive_only",
+      "mean_MRD": 0.5902595698751923,
+      "mean_TN": 0.8534040096335871,
+      "median_MRD": 0.6926205333933575,
+      "median_TN": 0.8480793490933398,
+      "mean_difference_MRD_minus_TN": -0.26314443975839474,
+      "median_difference_MRD_minus_TN": -0.15545881569998232,
+      "auc_MRD_above_TN": 0.21794871794871795,
+      "cliffs_delta": -0.5641025641025641,
+      "bootstrap_mean_difference_95pct": [
+        -0.4528338152404543,
+        -0.08216085666809053
+      ],
+      "bootstrap_auc_95pct": [
+        0.07692307692307693,
+        0.3888888888888889
+      ],
+      "bootstrap": {
+        "unit": "patient/specimen",
+        "resamples": 10000,
+        "stratified_by": "state",
+        "seed": 20261110,
+        "interval": "conditional percentile; unmeasured confounding not included"
+      }
+    },
+    "at_least_100_malignant_nuclei": {
+      "n_MRD": 8,
+      "n_TN": 25,
+      "sample_ids": [
+        "LX1846",
+        "LX1925",
+        "LX1966",
+        "LX2000",
+        "LX2010",
+        "LX2015",
+        "LX2023",
+        "MRD1",
+        "MRD2",
+        "MRD5",
+        "TN10",
+        "TN11",
+        "TN12",
+        "TN13",
+        "TN14",
+        "TN15",
+        "TN17",
+        "TN18",
+        "TN19",
+        "TN2",
+        "TN20",
+        "TN21",
+        "TN22",
+        "TN23",
+        "TN24",
+        "TN25",
+        "TN26",
+        "TN3",
+        "TN5",
+        "TN6",
+        "TN7",
+        "TN8",
+        "TN9"
+      ],
+      "status": "descriptive_only",
+      "mean_MRD": 0.6123605842611336,
+      "mean_TN": 0.8526043511070737,
+      "median_MRD": 0.6996024939641035,
+      "median_TN": 0.8423350384320524,
+      "mean_difference_MRD_minus_TN": -0.24024376684594007,
+      "median_difference_MRD_minus_TN": -0.14273254446794892,
+      "auc_MRD_above_TN": 0.25,
+      "cliffs_delta": -0.5,
+      "bootstrap_mean_difference_95pct": [
+        -0.44128057339986687,
+        -0.04897293020829462
+      ],
+      "bootstrap_auc_95pct": [
+        0.095,
+        0.435
+      ],
+      "bootstrap": {
+        "unit": "patient/specimen",
+        "resamples": 10000,
+        "stratified_by": "state",
+        "seed": 20261110,
+        "interval": "conditional percentile; unmeasured confounding not included"
+      }
+    },
+    "lung_site": {
+      "n_MRD": 7,
+      "n_TN": 25,
+      "sample_ids": [
+        "LX1846",
+        "LX1966",
+        "LX2000",
+        "LX2010",
+        "LX2015",
+        "LX2023",
+        "MRD2",
+        "MRD6",
+        "TN10",
+        "TN11",
+        "TN12",
+        "TN13",
+        "TN14",
+        "TN15",
+        "TN17",
+        "TN18",
+        "TN19",
+        "TN2",
+        "TN20",
+        "TN21",
+        "TN22",
+        "TN23",
+        "TN24",
+        "TN25",
+        "TN26",
+        "TN3",
+        "TN4",
+        "TN5",
+        "TN6",
+        "TN7",
+        "TN8",
+        "TN9"
+      ],
+      "status": "descriptive_only",
+      "mean_MRD": 0.6286671786315139,
+      "mean_TN": 0.8846042287751595,
+      "median_MRD": 0.7065844545348494,
+      "median_TN": 0.8538236597546274,
+      "mean_difference_MRD_minus_TN": -0.25593705014364565,
+      "median_difference_MRD_minus_TN": -0.14723920521977796,
+      "auc_MRD_above_TN": 0.21714285714285714,
+      "cliffs_delta": -0.5657142857142857,
+      "bootstrap_mean_difference_95pct": [
+        -0.43841463092780864,
+        -0.07975839016746564
+      ],
+      "bootstrap_auc_95pct": [
+        0.06857142857142857,
+        0.4057142857142857
+      ],
+      "bootstrap": {
+        "unit": "patient/specimen",
+        "resamples": 10000,
+        "stratified_by": "state",
+        "seed": 20261110,
+        "interval": "conditional percentile; unmeasured confounding not included"
+      }
+    },
+    "canonical_E746_A750del_or_L858R": {
+      "n_MRD": 6,
+      "n_TN": 13,
+      "sample_ids": [
+        "LX1925",
+        "LX2000",
+        "LX2010",
+        "LX2015",
+        "MRD1",
+        "MRD2",
+        "MRD5",
+        "MRD6",
+        "TN12",
+        "TN17",
+        "TN18",
+        "TN19",
+        "TN21",
+        "TN22",
+        "TN23",
+        "TN24",
+        "TN25",
+        "TN7",
+        "TN8"
+      ],
+      "status": "descriptive_only",
+      "mean_MRD": 0.544578210376265,
+      "mean_TN": 0.7582251647949781,
+      "median_MRD": 0.5530359940905095,
+      "median_TN": 0.7816923377715209,
+      "mean_difference_MRD_minus_TN": -0.21364695441871318,
+      "median_difference_MRD_minus_TN": -0.2286563436810114,
+      "auc_MRD_above_TN": 0.28205128205128205,
+      "cliffs_delta": -0.4358974358974359,
+      "bootstrap_mean_difference_95pct": [
+        -0.4682040774392076,
+        0.04526685845927686
+      ],
+      "bootstrap_auc_95pct": [
+        0.0641025641025641,
+        0.5512820512820513
+      ],
+      "bootstrap": {
+        "unit": "patient/specimen",
+        "resamples": 10000,
+        "stratified_by": "state",
+        "seed": 20261110,
+        "interval": "conditional percentile; unmeasured confounding not included"
+      }
+    },
+    "series_implied_kit_v3.1": {
+      "n_MRD": 3,
+      "n_TN": 24,
+      "sample_ids": [
+        "MRD1",
+        "MRD5",
+        "MRD6",
+        "TN10",
+        "TN11",
+        "TN12",
+        "TN13",
+        "TN14",
+        "TN15",
+        "TN17",
+        "TN18",
+        "TN19",
+        "TN2",
+        "TN20",
+        "TN21",
+        "TN22",
+        "TN23",
+        "TN24",
+        "TN25",
+        "TN26",
+        "TN3",
+        "TN4",
+        "TN5",
+        "TN6",
+        "TN7",
+        "TN8",
+        "TN9"
+      ],
+      "status": "descriptive_only",
+      "mean_MRD": 0.4417057777479318,
+      "mean_TN": 0.9027856839597131,
+      "median_MRD": 0.4134514547876616,
+      "median_TN": 0.863609566275527,
+      "mean_difference_MRD_minus_TN": -0.46107990621178135,
+      "median_difference_MRD_minus_TN": -0.4501581114878654,
+      "auc_MRD_above_TN": 0.041666666666666664,
+      "cliffs_delta": -0.9166666666666666,
+      "bootstrap_mean_difference_95pct": [
+        -0.6899395165372031,
+        -0.21563321224880488
+      ],
+      "bootstrap_auc_95pct": [
+        0.0,
+        0.16666666666666666
+      ],
+      "bootstrap": {
+        "unit": "patient/specimen",
+        "resamples": 10000,
+        "stratified_by": "state",
+        "seed": 20261110,
+        "interval": "conditional percentile; unmeasured confounding not included"
+      }
+    },
+    "series_implied_kit_v4": {
+      "n_MRD": 5,
+      "n_TN": 2,
+      "sample_ids": [
+        "LX1846",
+        "LX1925",
+        "LX1966",
+        "LX2000",
+        "LX2010",
+        "LX2015",
+        "LX2023"
+      ],
+      "status": "descriptive_only",
+      "mean_MRD": 0.6228293784761123,
+      "mean_TN": 0.2608239177200735,
+      "median_MRD": 0.7065844545348494,
+      "median_TN": 0.2608239177200735,
+      "mean_difference_MRD_minus_TN": 0.3620054607560388,
+      "median_difference_MRD_minus_TN": 0.4457605368147759,
+      "auc_MRD_above_TN": 0.9,
+      "cliffs_delta": 0.8,
+      "bootstrap_mean_difference_95pct": [
+        0.04929706238952303,
+        0.6567024300991859
+      ],
+      "bootstrap_auc_95pct": [
+        0.6,
+        1.0
+      ],
+      "bootstrap": {
+        "unit": "patient/specimen",
+        "resamples": 10000,
+        "stratified_by": "state",
+        "seed": 20261110,
+        "interval": "conditional percentile; unmeasured confounding not included"
+      }
+    },
+    "equal_core_weighting": {
+      "n_MRD": 9,
+      "n_TN": 26,
+      "sample_ids": [
+        "LX1846",
+        "LX1925",
+        "LX1966",
+        "LX2000",
+        "LX2010",
+        "LX2015",
+        "LX2023",
+        "MRD1",
+        "MRD2",
+        "MRD5",
+        "MRD6",
+        "TN10",
+        "TN11",
+        "TN12",
+        "TN13",
+        "TN14",
+        "TN15",
+        "TN17",
+        "TN18",
+        "TN19",
+        "TN2",
+        "TN20",
+        "TN21",
+        "TN22",
+        "TN23",
+        "TN24",
+        "TN25",
+        "TN26",
+        "TN3",
+        "TN4",
+        "TN5",
+        "TN6",
+        "TN7",
+        "TN8",
+        "TN9"
+      ],
+      "status": "descriptive_only",
+      "mean_MRD": 0.5970366648647769,
+      "mean_TN": 0.8534040096335871,
+      "median_MRD": 0.6926205333933576,
+      "median_TN": 0.8480793490933398,
+      "mean_difference_MRD_minus_TN": -0.2563673447688102,
+      "median_difference_MRD_minus_TN": -0.1554588156999822,
+      "auc_MRD_above_TN": 0.23076923076923078,
+      "cliffs_delta": -0.5384615384615384,
+      "bootstrap_mean_difference_95pct": [
+        -0.44911716937638585,
+        -0.06868441799603929
+      ],
+      "bootstrap_auc_95pct": [
+        0.07692307692307693,
+        0.41452991452991456
+      ],
+      "bootstrap": {
+        "unit": "patient/specimen",
+        "resamples": 10000,
+        "stratified_by": "state",
+        "seed": 20261110,
+        "interval": "conditional percentile; unmeasured confounding not included"
+      }
+    }
+  },
+  "primary_confounder_crosstabs": {
+    "tissue": {
+      "TN": {
+        "Lymph Node": 1,
+        "Lung": 25
+      },
+      "MRD": {
+        "Lung": 7,
+        "Locoregional": 1,
+        "Liver": 1
+      }
+    },
+    "procedure": {
+      "TN": {
+        "Biopsy": 1,
+        "Resection": 7,
+        "Fresh Frozen": 18
+      },
+      "MRD": {
+        "Lobectomy": 1,
+        "Resection": 5,
+        "Biopsy": 3
+      }
+    },
+    "stage": {
+      "TN": {
+        "IV": 1,
+        "IA": 1,
+        "IA1": 4,
+        "IA3": 3,
+        "IA2": 7,
+        "IB": 4,
+        "IIA": 3,
+        "IIB": 2,
+        "IIIA": 1
+      },
+      "MRD": {
+        "IIIA": 1,
+        "IV": 8
+      }
+    },
+    "kit_series_implied": {
+      "TN": {
+        "v4": 2,
+        "v3.1": 24
+      },
+      "MRD": {
+        "v4": 5,
+        "v3.1": 3,
+        "mixed": 1
+      }
+    },
+    "genotype": {
+      "TN": {
+        "E746_A750del; Amplification": 2,
+        "L858R": 8,
+        "E746_A750delinsAP": 1,
+        "S768_V769insMDS": 1,
+        "L861Q": 2,
+        "G719A, S768I": 1,
+        "G719A, R776H": 1,
+        "L858R, T790M": 1,
+        "E746_A750del": 2,
+        "E746_T751delinsI": 1,
+        "L747_T751del": 2,
+        "L861Q, G719A": 1,
+        "G719C, L833V": 1,
+        "E746_S752delinsV": 1,
+        "L747_P753delinsS": 1
+      },
+      "MRD": {
+        "E746_P753delinsVS": 1,
+        "E746_T751delinsVP; C797S": 1,
+        "L858R": 3,
+        "L747_E749del": 1,
+        "E746_A750del": 1,
+        "L858R; Amplification": 1,
+        "E746_A750del; Amplification": 1
+      }
+    }
+  },
+  "limitations": [
+    "Unmatched patients; state, stage, site, sampling procedure and library kit are confounded.",
+    "Series/GSM library-kit descriptions conflict; kit sensitivity is conditional on series annotation.",
+    "Raw UMI normalization differs from SoupX-corrected expression in the cohort authors' plotting pipeline.",
+    "This is a descriptive molecular-state comparison, not a treatment effect or clinical prediction.",
+    "No cell-level inferential replication, trained model, optimized threshold or cure claim."
+  ],
+  "environment": {
+    "numpy": "2.3.5",
+    "pandas": "2.3.3",
+    "h5py": "3.15.1"
+  }
+}

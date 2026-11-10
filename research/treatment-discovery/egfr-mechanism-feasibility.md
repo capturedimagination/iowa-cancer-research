@@ -1,6 +1,6 @@
 # EGFR mechanism question: public-data feasibility
 
-Checked **October 29, 2026**. **The main metadata is now available and audited.** The mechanism analysis still requires matching expression/QC annotations, verification of the exact paper target signature, and an independent eligible cohort. No signature score or model was calculated. [Findings, source URLs and hashes](egfr-mechanism-feasibility.json)
+Historical preflight checked **October 29, 2026**. **Superseded for current readiness by the [November 10 update](updates/2026-11-10/README.md):** exact signature and malignant expression/QC are now verified, and an independent descriptive comparison is complete. The original findings below preserve what was known on October 29. [Dated source URLs and hashes](egfr-mechanism-feasibility.json)
 
 ## Metadata acquisition and reproducibility
 

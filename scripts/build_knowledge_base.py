@@ -21,13 +21,17 @@ DEST = ROOT / "knowledge"
 DEST.mkdir(exist_ok=True)
 TEMP = DEST / "research.building.sqlite"
 FINAL = DEST / "research.sqlite"
-SNAPSHOT = "2026-10-29"
+SNAPSHOT = "2026-11-10"
 
 def dump(obj):
     return json.dumps(obj, ensure_ascii=False, sort_keys=True)
 
 def sha(path):
-    return hashlib.sha256(path.read_bytes()).hexdigest()
+    h = hashlib.sha256()
+    with path.open("rb") as f:
+        for block in iter(lambda: f.read(8 * 1024 * 1024), b""):
+            h.update(block)
+    return h.hexdigest()
 
 def relative(path):
     return path.relative_to(ROOT).as_posix()
@@ -345,12 +349,14 @@ for directory in (ROOT/"sources",ROOT/"research/sources",ROOT/"research/treatmen
               ".gz":"Archived compressed source; inspect manifest and source terms",
               ".jsonl":"Analysis inclusion/provenance records; not original observations",
               ".npy":"Saved derived statistical array; consult analysis protocol",
+              ".h5":"Archived molecular matrix; source hash/size inventory only, not loaded as model observations",
+              ".RData":"Archived author expression object; source inventory only, no R code executed",
               ".Rmd":"Archived author analysis code; inspect version and dependencies before executing",
               ".R":"Archived author analysis code; inspect version and dependencies before executing"}.get(path.suffix)
         if role: register(path,role)
 
 db.executemany("INSERT INTO metadata VALUES(?,?)",[("schema_version","1"),("source_cutoff",SNAPSHOT),
-    ("core_iowa_snapshot","2026-10-22"),("treatment_research_extension","2026-10-29"),
+    ("core_iowa_snapshot","2026-10-22"),("clinical_benchmark_date","2026-10-29"),("treatment_research_extension","2026-11-10"),
     ("built_utc",datetime.now(timezone.utc).isoformat()),("purpose","Source-linked research and analysis library; see dated per-analysis methods/results"),
     ("refresh_policy","Saved snapshot only; rebuild does not refresh live sources"),
     ("source_row_definition","CSV source_row is the 1-based logical CSV record including header, not physical line if embedded newlines occur")])

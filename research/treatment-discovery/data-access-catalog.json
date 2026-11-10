@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "catalog_date": "2026-10-29",
+  "catalog_date": "2026-11-10",
   "purpose": "Treatment-research data feasibility; local status is not evidence of efficacy or permission for unrelated restricted data",
   "resources": [
     {
@@ -177,14 +177,14 @@
     {
       "resource_id": "TD-DATA-08",
       "name": "Maynard targeted-therapy lung adenocarcinoma single-cell study",
-      "verified_date": "2026-10-29",
+      "verified_date": "2026-11-10",
       "source_urls": [
         "https://pmc.ncbi.nlm.nih.gov/articles/PMC7484178/",
         "https://github.com/czbiohub/scell_lung_adenocarcinoma",
         "https://www.ncbi.nlm.nih.gov/bioproject/PRJNA591860"
       ],
       "record_grain": "Biopsy/sample within patient, then cells; source paper 49 biopsies from 30 patients across drivers/therapies",
-      "units": "Raw counts or processed expression depend on retrieved artifact; regenerative signature scoring must be frozen",
+      "units": "Raw integer RNA counts and natural-log1p counts-per-10000 expression in the audited processed malignant-cell object; exact17-gene signature and scoring rule verified.",
       "join_keys": [
         "patient",
         "sample",
@@ -194,15 +194,46 @@
         "biopsy state/timing",
         "cell malignant annotation"
       ],
-      "local_status": "author_code_and_full_main_metadata_downloaded_expression_not_downloaded",
+      "local_status": "processed_malignant_expression_and_metadata_audited; exact17gene_signature_verified",
       "local_paths": [
         "research/treatment-discovery/egfr-mechanism-feasibility.md",
         "research/treatment-discovery/egfr-mechanism-feasibility.json",
         "research/treatment-discovery/sources/maynard-2026-10-29/manifest.json",
-        "research/treatment-discovery/sources/maynard-2026-10-29/egfr-main-metadata-audit.json"
+        "research/treatment-discovery/sources/maynard-2026-10-29/egfr-main-metadata-audit.json",
+        "research/treatment-discovery/updates/2026-11-10/signature-verification.json",
+        "research/treatment-discovery/updates/2026-11-10/malignant-membership-audit.json",
+        "research/treatment-discovery/updates/2026-11-10/seurat-object-audit.json",
+        "research/treatment-discovery/sources/egfr-resistance-2026-11-10/NI04_tumor_seurat_object.RData"
       ],
-      "access": "Public author repository pinned at de138c79bcfc2fa3a28c8a039a28ab560da78099; small code/metadata files and full 11,084,633-byte main metadata acquired with hashes. Matching 1,547,287,536-byte expression matrix identified but not acquired; independent eligible cohort not verified.",
-      "limitations": "Main metadata includes 27,489 cells, 51 samples and 33 patients before analytic QC, not the final paper cohort. Metadata-defined osimertinib common-EGFR-variant/adenocarcinoma subset has 14 samples/8 patients and 3 naive-to-grouped_pr patient pairs before malignant-cell/assay QC; one pair changes site. Code AT2 differentiation vector has 17 genes but its equivalence to the paper regenerative signature is unverified. Cells are not independent patients. No causal persistence dependency or patient efficacy from expression alone."
+      "access": "Public author repository pinned at de138c79bcfc2fa3a28c8a039a28ab560da78099; source metadata, code pointers and the author-linked568368135-byte NI04 malignant Seurat object acquired and hash-audited. Local reanalysis only; raw source object/code redistribution not cleared. Independent GSE292469 cohort is separately documented as TD-DATA-09.",
+      "limitations": "Discovery cohort, not independent validation. Main common-EGFR/osimertinib candidate pairs shrink from 3 metadata pairs to 2 with any malignant cells and 1 with at least 10 each. Source metadata require cell-ID realignment to expression; source object checks pass. Exact historical Seurat patch remains unpinned. Raw author object/code not mirrored publicly."
+    },
+    {
+      "resource_id": "TD-DATA-09",
+      "name": "GSE292469 independent EGFR-mutant lung cancer single-nucleus cohort, November 2026 release",
+      "verified_date": "2026-11-10",
+      "source_urls": [
+        "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE292469",
+        "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE292nnn/GSE292469/suppl/"
+      ],
+      "record_grain": "457,724 QC nuclei in 74 core libraries from 73 unmatched patients/specimens; MRD2 has two cores",
+      "units": "Raw integer UMI counts; deposited tumor flag and source treatment-state/clinical annotations",
+      "join_keys": [
+        "cell_id/barcode",
+        "sample_id",
+        "core_id",
+        "source GSM",
+        "gene symbol and source feature ID (both symbols in this H5)"
+      ],
+      "local_status": "full_expression_and_metadata_audited; fixed_descriptive_comparison_completed",
+      "local_paths": [
+        "research/treatment-discovery/updates/2026-11-10/acquisition-manifest.json",
+        "research/treatment-discovery/updates/2026-11-10/independent-cohort-review.json",
+        "research/treatment-discovery/sources/egfr-resistance-2026-11-10/GSE292469_counts.h5",
+        "research/treatment-discovery/results/gse292469-alveolar-2026-11-10/results.json"
+      ],
+      "access": "Public on 2026-11-01. GEO/NCBI provider permits open reanalysis subject to third-party rights; no record-specific use condition found. Raw originals remain local; publish original aggregate analysis/code with attribution. No controlled data acquired.",
+      "limitations": "Non-Iowa, unmatched patients; source histology includes transformed SCLC. LUAD and at least 20 tumor cells leaves 26 TN/9 MRD/24 PD. Major stage/site/procedure/kit imbalance; Series/GSM kit contradiction. Raw UMI differs from author SoupX assay. Descriptive state comparison cannot isolate treatment-induced change or establish target efficacy."
     }
   ]
 }

@@ -1,0 +1,213 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-11-10",
+  "scope": "Published Maynard alveolar signature identity and operational scoring audit; no expression analysis",
+  "status": "exact_published_gene_set_verified",
+  "signature": {
+    "paper": "Maynard et al., Cell 2020, doi:10.1016/j.cell.2020.07.017",
+    "name": "Maynard 17-gene alveolar signature",
+    "supplement": "Table S2",
+    "sheet": "3. Cancer Cell Signature Genes",
+    "source_header": "Avelolar Signature ",
+    "range": "A2:A18",
+    "genes_supplement_order": [
+      "LAMP1",
+      "AGER",
+      "FOXA2",
+      "NAPSA",
+      "HOPX",
+      "IGFBP2",
+      "SFTA3",
+      "NKX2-1",
+      "GATA6",
+      "ABCA3",
+      "SCGB3A1",
+      "AQP4",
+      "CLDN18",
+      "PGC",
+      "SFTPD",
+      "SFTPB",
+      "SFTPC"
+    ],
+    "genes_author_code_order": [
+      "SFTPC",
+      "SFTPB",
+      "SFTPD",
+      "PGC",
+      "CLDN18",
+      "AQP4",
+      "SCGB3A1",
+      "ABCA3",
+      "GATA6",
+      "NKX2-1",
+      "SFTA3",
+      "IGFBP2",
+      "HOPX",
+      "NAPSA",
+      "FOXA2",
+      "AGER",
+      "LAMP1"
+    ],
+    "set_equal": true,
+    "order_relationship": "supplement order is reverse of code order; arithmetic mean is order invariant",
+    "code_commit": "de138c79bcfc2fa3a28c8a039a28ab560da78099",
+    "code_variable": "AT2_genes",
+    "terminology": "Author code labels AT2 differentiation, but exact supplement list is the published combined AT1/AT2 alveolar signature. Biological regeneration is the paper interpretation, not a new validated causal result."
+  },
+  "scoring": {
+    "source_scripts": [
+      "NI04_Cancer_cells_DEgenes.Rmd",
+      "NI08_Gene_expression_plotting.Rmd",
+      "NI16_cancercell_EGFR_ALK.Rmd",
+      "NI17_cancercell_PDsigs.Rmd"
+    ],
+    "input": "malignant-cell RNA assay counts after ERCC removal and author cell/QC selection",
+    "normalization": "Seurat NormalizeData default LogNormalize, scale.factor 10000; natural log1p",
+    "cell_score_formula": "mean over all 17 genes of ln(1 + 10000 * count_gene_cell / sum_nonERCC_gene_counts_cell)",
+    "fetch_data_slot": "data",
+    "scaled_values_used_for_cell_score": false,
+    "control_gene_subtraction": false,
+    "source_na_rm": true,
+    "proposed_missing_gene_policy": "Require all 17 genes and finite values; fail if any unavailable rather than silently using a shorter signature. This explicit guard is a new protocol choice, not an author missing-gene rule.",
+    "sample_aggregation": "NI17 computes arithmetic mean of cell scores within sample for PD heatmap. Patient-level paired contrasts are a new reanalysis specification.",
+    "version_evidence": "Paper states Seurat v3; inspected official v3.0.0 and v3.1.0 FetchData sources both default to slot=data. Exact author patch/session lockfile was not found in inspected notebooks.",
+    "source_default_assay": "RNA; code creates single RNA assay and inspected chain does not change active assay",
+    "interpretation_limit": "Exact historic executable environment and expression reconstruction remain distinct from resolving gene identities and formula."
+  },
+  "qc_source_findings": {
+    "paper_final_cells": 23261,
+    "paper_epithelial_cells": 5581,
+    "paper_malignant_cells": 3754,
+    "paper_samples": 49,
+    "paper_patients": 30,
+    "code_cell_thresholds": {
+      "nCount_RNA": ">50000",
+      "nFeature_RNA": ">500"
+    },
+    "code_sample_threshold": ">10 cells",
+    "paper_methods_threshold_wording": "fewer than 500 genes and 50000 reads excluded; samples with less than 10 total cells filtered. Code strict greater-than rules differ at equality.",
+    "doublets_removed_reported": 218,
+    "malignancy": "NI03 imports inferCNV_annotation.csv and NI04 subsets inferCNV_annotation==tumor.",
+    "neo_osi": "03_Merge_in_NeoOsi merges main filtered and neo-osi filtered objects before 03.1; neo-osi is part of the original analysis, not an independent validation cohort.",
+    "driver_subset_exclusion": "NI16 EGFR/ALK comparison explicitly removes sample LT_S41. Full signature scoring NI08 is a separate all-malignant-cell analysis."
+  },
+  "remaining_limits": [
+    "Exact historical Seurat patch and complete executable object provenance not pinned in inspected sources.",
+    "Signature was partly assembled from the source state comparisons plus known markers; within-source enrichment is reproduction, not independent validation.",
+    "No causal target, clinical efficacy, or cure claim follows from signature identity or expression association."
+  ],
+  "acquisition": {
+    "table_s2_transport": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7484178/supplementaryFiles",
+    "method": "Table S2 recovered as complete ZIP entry from streamed supplementary archive and validated using entry byte length and CRC32; workbook opens successfully.",
+    "raw_archive_retention": "local ignored tmp folder only; stable upstream URLs and SHA256 recorded here",
+    "archive_status": "Partial transport only: 45-second and 240-second requests timed out; later longer retry returned HTTP 500. Table S2 entry itself is complete and CRC validated. Complete archive integrity was not claimed.",
+    "table_s1_retrieved": false
+  },
+  "sources": [
+    {
+      "id": "table_s2",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/7851114/bin/mmc2.xlsx",
+      "retrieved_at": "2026-11-10",
+      "bytes": 16400,
+      "sha256": "3d8f7283df9d25f4b05a95dee1e42eb7a1e1102309f5bab221734aeb3106f141",
+      "raw_source_publication": "not_mirrored"
+    },
+    {
+      "id": "paper_xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7484178/fullTextXML",
+      "retrieved_at": "2026-11-10",
+      "bytes": 371498,
+      "sha256": "c9c713c9aecf184dcccc466df46e8f4fda000dbabe1701f412861e4fcf970850",
+      "raw_source_publication": "not_mirrored"
+    },
+    {
+      "id": "02_Create_Seurat_object.Rmd",
+      "url": "https://github.com/czbiohub-sf/scell_lung_adenocarcinoma/blob/de138c79bcfc2fa3a28c8a039a28ab560da78099/scripts/02_Create_Seurat_object.Rmd",
+      "retrieved_at": "2026-11-10",
+      "bytes": 2078,
+      "sha256": "44bb08287cbc846b49f652659d55aff31b9304b7fe36ee990162bde79967c32a",
+      "raw_source_publication": "not_mirrored"
+    },
+    {
+      "id": "03.1_Subset_and_general_annotations.Rmd",
+      "url": "https://github.com/czbiohub-sf/scell_lung_adenocarcinoma/blob/de138c79bcfc2fa3a28c8a039a28ab560da78099/scripts/03.1_Subset_and_general_annotations.Rmd",
+      "retrieved_at": "2026-11-10",
+      "bytes": 10263,
+      "sha256": "59b21eb72fd5ef59b14421d85b075d98daa0b362e11fdcb5dfc34e15a8c09892",
+      "raw_source_publication": "not_mirrored"
+    },
+    {
+      "id": "03_Merge_in_NeoOsi.Rmd",
+      "url": "https://github.com/czbiohub-sf/scell_lung_adenocarcinoma/blob/de138c79bcfc2fa3a28c8a039a28ab560da78099/scripts/03_Merge_in_NeoOsi.Rmd",
+      "retrieved_at": "2026-11-10",
+      "bytes": 1026,
+      "sha256": "ee6a608e18d1ac6bb9d4fbe0d29f7c0a3642118edacc6485af12cc4e7cd757ab",
+      "raw_source_publication": "not_mirrored"
+    },
+    {
+      "id": "NI03_inferCNV.Rmd",
+      "url": "https://github.com/czbiohub-sf/scell_lung_adenocarcinoma/blob/de138c79bcfc2fa3a28c8a039a28ab560da78099/scripts/NI03_inferCNV.Rmd",
+      "retrieved_at": "2026-11-10",
+      "bytes": 4142,
+      "sha256": "57a15f21e7fdb05de97f7a1dc5237284ab137702a5d3fa29e296100af3509fc9",
+      "raw_source_publication": "not_mirrored"
+    },
+    {
+      "id": "NI04_Cancer_cells_DEgenes.Rmd",
+      "url": "https://github.com/czbiohub-sf/scell_lung_adenocarcinoma/blob/de138c79bcfc2fa3a28c8a039a28ab560da78099/scripts/NI04_Cancer_cells_DEgenes.Rmd",
+      "retrieved_at": "2026-11-10",
+      "bytes": 20916,
+      "sha256": "39a8fceca4145cb15c03886e94871464386345555fa75fc7be023b16d33ce318",
+      "raw_source_publication": "not_mirrored"
+    },
+    {
+      "id": "NI08_Gene_expression_plotting.Rmd",
+      "url": "https://github.com/czbiohub-sf/scell_lung_adenocarcinoma/blob/de138c79bcfc2fa3a28c8a039a28ab560da78099/scripts/NI08_Gene_expression_plotting.Rmd",
+      "retrieved_at": "2026-11-10",
+      "bytes": 18705,
+      "sha256": "6e5b0b9ea7e01542b1da0f7e61a1f126c0d458a69650c4590775a1349f617976",
+      "raw_source_publication": "not_mirrored"
+    },
+    {
+      "id": "NI16_cancercell_EGFR_ALK.Rmd",
+      "url": "https://github.com/czbiohub-sf/scell_lung_adenocarcinoma/blob/de138c79bcfc2fa3a28c8a039a28ab560da78099/scripts/NI16_cancercell_EGFR_ALK.Rmd",
+      "retrieved_at": "2026-11-10",
+      "bytes": 18414,
+      "sha256": "dc074e6c3a03c2460d4cbb00ce0f9fdd7d2caa451d730cdd1e5efc01f0823739",
+      "raw_source_publication": "not_mirrored"
+    },
+    {
+      "id": "NI17_cancercell_PDsigs.Rmd",
+      "url": "https://github.com/czbiohub-sf/scell_lung_adenocarcinoma/blob/de138c79bcfc2fa3a28c8a039a28ab560da78099/scripts/NI17_cancercell_PDsigs.Rmd",
+      "retrieved_at": "2026-11-10",
+      "bytes": 8762,
+      "sha256": "fa7c8a75a1c07fac94e61185cad2917f29d18c6b27f6675b713c8ceb4d99213e",
+      "raw_source_publication": "not_mirrored"
+    },
+    {
+      "id": "seurat-3.0-objects.R",
+      "url": "https://github.com/satijalab/seurat/blob/v3.0.0/R/objects.R",
+      "retrieved_at": "2026-11-10",
+      "bytes": 182628,
+      "sha256": "d4d312c55a8b7fea560c26727d344b60bdd128e9a9ad0556dd15c3bb5c065814",
+      "raw_source_publication": "not_mirrored"
+    },
+    {
+      "id": "seurat-3.1-objects.R",
+      "url": "https://github.com/satijalab/seurat/blob/v3.1.0/R/objects.R",
+      "retrieved_at": "2026-11-10",
+      "bytes": 212666,
+      "sha256": "75cd316518d301cf27187317d80e6315cf62e334fbf5281aaa33cb330afaffe4",
+      "raw_source_publication": "not_mirrored"
+    },
+    {
+      "id": "seurat-3.1-preprocessing.R",
+      "url": "https://github.com/satijalab/seurat/blob/v3.1.0/R/preprocessing.R",
+      "retrieved_at": "2026-11-10",
+      "bytes": 101295,
+      "sha256": "6d73ff5c07eceb86917067fe8edd799670ffb56bdc0207c2fd0105cf0872a772",
+      "raw_source_publication": "not_mirrored"
+    }
+  ],
+  "followup": "Matching processed malignant expression and cell/sample joins verified in adjacent seurat-object-audit.json; independent expression results are documented in results/gse292469-alveolar-2026-11-10."
+}

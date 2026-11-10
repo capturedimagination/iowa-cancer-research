@@ -1,0 +1,132 @@
+{
+  "acquired_at_utc": "2026-11-10T18:04:45.791464+00:00",
+  "files": [
+    {
+      "filename": "GSE292469_counts.h5",
+      "local_path": "research/treatment-discovery/sources/egfr-resistance-2026-11-10/GSE292469_counts.h5",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE292nnn/GSE292469/suppl/GSE292469_counts.h5",
+      "bytes": 12553420880,
+      "sha256": "60c6aab4dd2b2baa5b5deb163aca7aff1bfc180bb24c6c3f5aa02c445bf7872e",
+      "publication_status": "linked_source_only"
+    },
+    {
+      "filename": "GSE292469_cell_metadata.tsv.gz",
+      "local_path": "research/treatment-discovery/sources/egfr-resistance-2026-11-10/GSE292469_cell_metadata.tsv.gz",
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE292nnn/GSE292469/suppl/GSE292469_cell_metadata.tsv.gz",
+      "bytes": 18852668,
+      "sha256": "9b16b89922bade9d1334ebaeb002763dcca9fd2652a3e9616befb98f04777012",
+      "publication_status": "linked_source_only"
+    },
+    {
+      "filename": "GSE292469-series.txt",
+      "local_path": "research/treatment-discovery/sources/egfr-resistance-2026-11-10/GSE292469-series.txt",
+      "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE292469&targ=self&form=text&view=full",
+      "bytes": 6706,
+      "sha256": "5a777bf9541d9e21d91ae03106adc703409bf2f3e8ce6e442fdefece5f6441fd",
+      "publication_status": "linked_source_only"
+    },
+    {
+      "filename": "GSE292469-samples.txt",
+      "local_path": "research/treatment-discovery/sources/egfr-resistance-2026-11-10/GSE292469-samples.txt",
+      "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE292469&targ=gsm&form=text&view=full",
+      "bytes": 296198,
+      "sha256": "b51d6e9652b8976302911d0ed56a1dc596a83e9e40eca04fc847ad1f9705d83a",
+      "publication_status": "linked_source_only"
+    },
+    {
+      "filename": "sample-metadata-derived.json",
+      "local_path": "research/treatment-discovery/sources/egfr-resistance-2026-11-10/sample-metadata-derived.json",
+      "url": null,
+      "bytes": 85971,
+      "sha256": "d9732c068bfc69925de8929e1486a73059efeaac27de42fb388961894523726e",
+      "publication_status": "local_derived_participant_metadata"
+    },
+    {
+      "filename": "NI04_tumor_seurat_object.RData",
+      "local_path": "research/treatment-discovery/sources/egfr-resistance-2026-11-10/NI04_tumor_seurat_object.RData",
+      "url": "https://drive.google.com/uc?export=download&id=11pWeBoGxjhE7VDHl9eaErB8_7seCPJ8V",
+      "bytes": 568368135,
+      "sha256": "5458c714d2fbcd587dec6ed75e17ae5ae14573ae3b9c238b99f3dec9d27100e5",
+      "publication_status": "linked_source_only"
+    }
+  ],
+  "h5_schema": {
+    "matrix/barcodes": {
+      "shape": [
+        457724
+      ],
+      "dtype": "object",
+      "chunks": null
+    },
+    "matrix/data": {
+      "shape": [
+        1036671583
+      ],
+      "dtype": "uint32",
+      "chunks": [
+        1024
+      ]
+    },
+    "matrix/features/_all_tag_keys": {
+      "shape": [
+        0
+      ],
+      "dtype": "object",
+      "chunks": null
+    },
+    "matrix/features/feature_type": {
+      "shape": [
+        33514
+      ],
+      "dtype": "object",
+      "chunks": null
+    },
+    "matrix/features/id": {
+      "shape": [
+        33514
+      ],
+      "dtype": "object",
+      "chunks": null
+    },
+    "matrix/features/name": {
+      "shape": [
+        33514
+      ],
+      "dtype": "object",
+      "chunks": null
+    },
+    "matrix/indices": {
+      "shape": [
+        1036671583
+      ],
+      "dtype": "int64",
+      "chunks": [
+        1024
+      ]
+    },
+    "matrix/indptr": {
+      "shape": [
+        457725
+      ],
+      "dtype": "int64",
+      "chunks": [
+        1024
+      ]
+    },
+    "matrix/shape": {
+      "shape": [
+        2
+      ],
+      "dtype": "int32",
+      "chunks": [
+        1024
+      ]
+    }
+  },
+  "rights": "Open GEO reanalysis with provider no-use-restriction policy and third-party rights caveat; author object publicly shared for local research; raw originals/participant metadata not mirrored in public GitHub. Original derived aggregate findings and code are published.",
+  "policy_sources": [
+    "https://www.ncbi.nlm.nih.gov/geo/info/disclaimer.html",
+    "https://www.ncbi.nlm.nih.gov/home/about/policies/"
+  ],
+  "metadata_builder": "scripts/build_gse292469_sample_metadata.py"
+}
