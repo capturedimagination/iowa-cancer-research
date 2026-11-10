@@ -12,6 +12,8 @@ The [cell-cycle specificity extension](research/treatment-discovery/lineage-audi
 
 ## What is published
 
+The [combined age/context/calibration extension](research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/README.md) publishes the frozen 20-model design, full deterministic results, independent comparison, tree/calibration simulations, failures and recovery records, figures and source code. Synthetic checkpoints are regenerated from public code and seeds. A separate [experimental-data opportunity audit](research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/README.md) publishes source hashes, schema, structural findings and the unchanged-workbook parser; the linked source workbooks, source PDF and README originals remain local. No empirical model or new cancer mechanism has been validated.
+
 All original project reports, research memos, source ledgers, evidence tables, derived factual data, methods, protocols, audit findings, benchmark results and analysis code are included. The authored 19-page report PDF is included. Federal NCI/EPA tabular downloads, the specifically licensed DepMap/PRISM metadata archives and the public ODbL clinical snapshot are included with attribution.
 
 Cached publisher/state/agency source PDFs, OCR, copied web pages, unlicensed author code/data and the mixed-rights full-text SQLite database remain in the original local workspace. Their original links, identifiers, hashes and the project's findings remain available. Read [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for the source-specific scope. No project findings were withheld because a cached original was not mirrored.

@@ -1,0 +1,202 @@
+{
+  "date": "2026-11-10",
+  "created_utc": "2026-11-10T20:41:42.456222+00:00",
+  "status": "ACQUIRED_CANDIDATE_WITH_UNRESOLVED_ELIGIBILITY_AND_OBSERVATION_GATES",
+  "scope": {
+    "deep_audits": 3,
+    "model_outcomes_computed": false,
+    "q_or_covariance_calculated": false,
+    "participant_level_data_acquired": false,
+    "external_contact": false,
+    "public_files_changed": false,
+    "raw_originals_published": false,
+    "authorized_structural_checks": [
+      "row and identifier counts",
+      "fate-field completeness",
+      "parent-child timing joins",
+      "source anomalies",
+      "source schema and rights"
+    ]
+  },
+  "search": {
+    "method": "Web primary-paper/repository search followed by actual-source and metadata inspection",
+    "bounded_not_exhaustive": true,
+    "date": "2026-11-10",
+    "queries": [
+      "cancer cell lineage time lapse dataset division death lineage trees Zenodo drug survival",
+      "Kuchen Schmitt Loewer 2020 cell cycle lineage neuroblastoma data availability dataset",
+      "cancer time lapse lineage tracking dataset apoptosis parent daughter data repository",
+      "\"Kuchen\" \"cell cycle\" \"data\" \"lineage\" eLife 2020",
+      "\"Memory of stochastic single-cell apoptotic signaling\" data code lineage",
+      "\"lineage-resolved lifetime\" MDA-MB-468 data availability",
+      "\"cancer\" \"lineage\" \"death\" \"zenodo\" time lapse dataset cell trees",
+      "\"ALFI\" \"02540\" \"Zenodo\"",
+      "\"Kuchen\" \"51002\" \"zip\" source data",
+      "\"Lineage-resolved lifetime\" data code Korsnes 2026 repository",
+      "\"ALFI\" \"Figshare\" dataset",
+      "\"ALFI\" \"Cell cycle phenotype\" \"data\" \"doi.org\"",
+      "\"51002\" \"fig1-data2\""
+    ],
+    "deep_audits": [
+      "Kuchen2020",
+      "Korsnes2026",
+      "ALFI2023"
+    ],
+    "earlier_Oren_and_Chakrabarti_gaps_not_counted_as_new_findings": true
+  },
+  "evidence_tiers": {
+    "A": "Actual downloaded bytes and all-row structural inspection",
+    "B": "Primary paper/author README statement, not proof of export completeness",
+    "C": "Proposed research use conditional on stated assumptions",
+    "U": "Unresolved identity, observation, eligibility or access gate"
+  },
+  "candidates": [
+    {
+      "id": "Kuchen2020",
+      "doi": "10.7554/eLife.51002",
+      "article_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7018508/",
+      "status": "A_ACQUIRED_STRUCTURAL_CANDIDATE_NOT_ANALYSIS_READY",
+      "data_files": [
+        "kuchen-control.xlsx",
+        "kuchen-perturbation.xlsx"
+      ],
+      "metadata_file": "kuchen-overview.pdf",
+      "source_field_dictionary": "data-opportunity-sources/kuchen-schema.json",
+      "structural_evidence": "data-opportunity-sources/kuchen-structural-verification.json",
+      "independent_reparse_matches_first_inspection": true,
+      "pair_rows": 4678,
+      "recorded_children": 9356,
+      "sheet_count": 7,
+      "sheet_names": [
+        "rep1",
+        "rep2",
+        "rep3",
+        "-myc1",
+        "-myc2",
+        "rap1",
+        "rap2"
+      ],
+      "independent_biological_experiment_count": null,
+      "original_founder_denominator_certified": false,
+      "prospective_birth_cohort_certified": false,
+      "recorded_generation_minimum": 2,
+      "source_anomaly_count": 5,
+      "anomaly_locations": "data-opportunity-sources/kuchen-anomaly-locators.json",
+      "rapamycin_metadata_mapping": "UNRESOLVED_OVERVIEW_VERSUS_WORKBOOK_DURATION_AND_GENERATION_CONFLICT",
+      "eligible_next_action": "Freeze source dictionary and graph/unknown-handling rules before outcome calculations; validate newborn cohort selection separately from founder denominator.",
+      "blocking_gates": [
+        "Export inclusion versus early-leaving/deep-tree selection",
+        "Loss field administrative versus migration meaning",
+        "Four negative loss durations",
+        "One division without descendant pair",
+        "Rapamycin sheet dose/overview mapping",
+        "Biological versus technical replicate allocation"
+      ],
+      "prior_art_scope": "Birth-time/spatial/censoring and cycle-inheritance analyses are already in original paper. Proposed future held-out sister-subtree prediction is not a first-ever claim."
+    },
+    {
+      "id": "Korsnes2026",
+      "doi": "10.3389/fcell.2026.1911886",
+      "article_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13624361/",
+      "status": "B_RELEVANT_PROSPECTIVE_DESIGN_FULL_DATA_REQUEST_ONLY",
+      "full_tree_files_acquired": false,
+      "prospective_denominator_stated_in_paper": 4000,
+      "experiments_stated_in_paper": 21,
+      "underlying_data_access": "Corresponding author upon reasonable request with restrictions",
+      "linked_repository": "https://data.mendeley.com/datasets/pt66xkf6p3/2",
+      "linked_repository_description": "Smoothed distribution animations",
+      "file_list_fully_verified": false,
+      "public_metadata_API_status": 403,
+      "eligible_next_action": "No acquisition possible within no-contact scope; do not use future-selected healthy-pedigree subset as original cohort."
+    },
+    {
+      "id": "ALFI2023",
+      "doi": "10.1038/s41597-023-02540-1",
+      "article_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10551030/",
+      "status": "B_OPEN_SCHEMA_FAILS_COMBINED_PROSPECTIVE_TREE_AND_DEATH_REQUIREMENTS",
+      "repository_doi": "10.6084/m9.figshare.23798451.v1",
+      "metadata_acquired": true,
+      "readme_acquired": true,
+      "full_archive_acquired": false,
+      "actual_CSV_rows_inspected": false,
+      "archive_name": "ALFIdatasetFinal.zip",
+      "archive_bytes": 8423073056,
+      "archive_url": "https://ndownloader.figshare.com/files/41740227",
+      "archive_md5_from_API": "fe3326323c10b1748302e962eae26150",
+      "gates": [
+        "Task2 omits interphase/parent IDs; MI task1 parent-linked cohort does not supply death-rich observations",
+        "Independent experiment IDs not established",
+        "Author README filename inconsistency",
+        "CC0 API versus CC-BY README license discrepancy retained"
+      ],
+      "eligible_next_action": "Useful imaging-annotation resource, not selected for current lineage-survival cohort."
+    }
+  ],
+  "proposed_biology_question": {
+    "status": "C_UNFITTED_CONDITIONAL_PROPOSAL",
+    "question": "For an eligible recorded-newborn cohort, does a cell-age and calendar/context baseline predict held-out sister-subtree fate as well as a model carrying mother history?",
+    "estimand_restriction": "Retained newborn-pair population only until future-independent inclusion and observation are certified; no original-founder Q inference by default.",
+    "selection_rule": "Birth/past information plus fixed administrative support only; never require future family survival, completed cycles or complete trees.",
+    "alternative_explanations": [
+      "Shared stable family environment",
+      "Birth/calendar context",
+      "Migration/loss and tracking errors",
+      "Pretreatment selection",
+      "Different biological/technical replicate structure"
+    ],
+    "possible_negative_outcomes": [
+      "Independent baseline predicts adequately",
+      "Observation bounds too wide",
+      "Death information too sparse",
+      "Apparent dependence explained by measured context"
+    ],
+    "clinical_or_priority_claim": false
+  },
+  "provenance": {
+    "download_ledger": "data-opportunity-sources/downloads.json",
+    "license_record": "data-opportunity-sources/license-record.json",
+    "audit_script": "data-opportunity-sources/audit_kuchen_structure.py",
+    "audit_command": "python3 tmp/age-calendar-2026-11-10/data-opportunity-sources/audit_kuchen_structure.py",
+    "audit_exit_code": 0,
+    "exactly_matched_first_inspection_fields": [
+      "file",
+      "sheet",
+      "pair_rows",
+      "unique_child_count",
+      "lineage_ID_count",
+      "division_field_count",
+      "death_field_count",
+      "loss_field_count",
+      "minimum_generation",
+      "maximum_generation",
+      "maximum_parent_child_time_residual",
+      "maximum_birth_plus_duration"
+    ]
+  },
+  "artifact_sha256": {
+    "alfi-figshare-metadata.json": "42d52d9d453d481b9896a82c50b022a0bdf2c70b8d944aab0e8162c3af1370ab",
+    "alfi-readme.pdf": "c106e1af67bc58d5e71a990b680710197ff4505c5a9f305ba4a57a65a125b233",
+    "alfi-readme.txt": "43fe912c35a28375788c596e9d0f2d64b72b01c5a523801386e4d5322bdb549f",
+    "audit_kuchen_structure.py": "c9616d74f1d0fee0e54b3ef80875cadd7b33504d4c9fec8b8b14379c274e317f",
+    "downloads.json": "8946ac1f9e5cdd49e7a0fa9380334815382763424ad7f7be0d5efe737625bf82",
+    "korsnes-animation-download.json": "138278407dd7493054bb8e69e00997889a7052c49960b3f928bec57a71f4cf32",
+    "kuchen-anomaly-locators.json": "ab57d2e013a0c0dfc43cae68a9f27d6f8e4faf1252b04069cba6442c10935a20",
+    "kuchen-control.xlsx": "8ecdd5c66a466b71b5ee4790c79c2b9ce38fd1ec6daf59f88347d67e4fa1b86e",
+    "kuchen-overview.pdf": "6642b200997dd3212897c65e8bcf0b8e0ec6b87c91f0acf87e6817ff48f9bb7b",
+    "kuchen-perturbation.xlsx": "0065797f9d1cb12dc695bf9baa516f68afea1d6c6077b75c2a9830389806a6f3",
+    "kuchen-schema.json": "c0b676bd16c3a1eeac12dadf061498e7f7830fdfeded69f6d7d042396768f3db",
+    "kuchen-structural-audit.json": "ef487ac682e7a55529dade7ee176c343b2162e9eaa8c924841932f921a746a03",
+    "kuchen-structural-verification.json": "effb9cbd149a28fa3526894ba56776f2289d5c33d9c378e7dd27f3d22117cd12",
+    "license-record.json": "879ccd38e341d9811e27982b77b4916b51fdb77068ff4e9d3b710da0a947742f"
+  },
+  "memo_sha256": "3cbcc88dd5f94fc42658e9caf17fb5e46c21f51e51f17c9d918b53591e7c46e5",
+  "publication_copy": {
+    "note": "Original fields describe the initial ignored-storage audit. This public copy adds durable source and authored-artifact locations without changing first findings.",
+    "source_archive": "research/treatment-discovery/sources/lineage-2026-11-10/alternative-lineage-2026-11-10/",
+    "authored_audit_directory": "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/",
+    "portable_parser": "scripts/audit_kuchen_structure.py",
+    "first_structural_parse": "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/structural-verification-initial.json",
+    "portable_structural_parse": "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/structural-verification.json",
+    "portable_records_exactly_match_first_parse": true
+  }
+}

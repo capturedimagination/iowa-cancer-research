@@ -1,0 +1,25 @@
+{
+  "status": "PINNED_BEFORE_REPRODUCTION_OUTCOMES",
+  "created_utc": "2026-11-10T20:57:13.249718+00:00",
+  "code_path": "scripts/check_age_calendar_reproduction.py",
+  "code_sha256": "0abcf45932067a15d9bc4c2c0fe2232af5684ba92a0decc712f3f6548d5a0f6e",
+  "fixtures": {
+    "status": "PASS",
+    "count": 5,
+    "code_sha256": "0abcf45932067a15d9bc4c2c0fe2232af5684ba92a0decc712f3f6548d5a0f6e",
+    "fixtures": [
+      "only documented metadata differences normalized",
+      "changed numerical moment rejected",
+      "changed RNG state rejected",
+      "matching missing-event NaN preserved",
+      "no numerical equality tolerance"
+    ],
+    "reproduction_comparison_run": false
+  },
+  "python_version": "3.12.14",
+  "numpy_version": "2.3.5",
+  "scipy_version": "1.16.3",
+  "tree_code_sha256": "b7cbfb48c223a0772f96eb06b6f65a0ed2a55fcb92db139116ab94737679599c",
+  "calibration_code_sha256": "b996075a2080f4a308e055d3aedc2f55d2ae2ceef038ab9a8068c2bcdb634cda",
+  "scope": "Fixed exact same-seed reproductions, no new statistical replicas; first results retained."
+}

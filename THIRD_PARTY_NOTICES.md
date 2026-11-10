@@ -65,6 +65,8 @@ The following source copies are outside the public publication scope. Their omis
 
 The above boundaries do not grant reuse rights to the excluded originals. Consult the original source for its applicable terms.
 
+The November 10 [alternative lineage-source audit](research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/README.md) adds Kuchen et al., *Hidden long-range memories of growth and cycle speed correlate cell cycles in lineage trees* ([eLife 2020, doi:10.7554/eLife.51002](https://doi.org/10.7554/eLife.51002)). Credit the source authors. The article states CC BY 4.0; its two source workbooks and experiment-overview PDF remain linked originals, with unchanged hashes in the acquisition ledger. Public schema, structural counts, anomaly locators and independent parsing code are project-authored findings. The acquired ALFI author README and Figshare metadata are also linked originals; their conflicting CC BY/CC0 statements are retained without inferring a resolution. No ALFI image archive or request-only Korsnes lineage records were acquired or republished.
+
 ## Official license text copies
 
 The following full texts were downloaded unchanged from their official maintainers on November 3, 2026:

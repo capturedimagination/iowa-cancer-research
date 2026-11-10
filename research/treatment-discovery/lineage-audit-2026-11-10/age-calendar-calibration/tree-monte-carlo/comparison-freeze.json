@@ -1,0 +1,35 @@
+{
+  "created_utc": "2026-11-10T20:54:17.926760+00:00",
+  "status": "PINNED_BEFORE_RECONSTRUCTION_OR_COMPARISON",
+  "code_path": "scripts/compare_age_calendar_trees.py",
+  "code_sha256": "71743d5fca69ed0ea103b3af2009f214c6c2d29f8a51959cbe38c5a0273446a0",
+  "protocol_sha256": "53d76bf43d0b1f47355d57d95ec6d7f43fce67541aed7631510a3cbff0b42919",
+  "python_version": "3.12.14",
+  "numpy_version": "2.3.5",
+  "scipy_version": "1.16.3",
+  "fixtures": {
+    "status": "PASS",
+    "count": 15,
+    "fixtures": [
+      "zero conditional denominator retained",
+      "exact zero-probability boundary",
+      "exact one-probability boundary",
+      "two-sided binomial exact tail fixture",
+      "undefined selected Q is not assigned zero",
+      "empty removed cohort retains prospective denominator",
+      "conditional Bernstein uses actual count without count cutoff",
+      "known structural constant",
+      "structural disagreement remains flagged",
+      "numerically zero reference alone is not structural",
+      "duplicate reference join rejected",
+      "material reference probability violation rejected",
+      "tiny roundoff adjustment explicitly retained",
+      "frozen full-grid diagnostic counts",
+      "first comparison output is immutable"
+    ],
+    "code_sha256": "71743d5fca69ed0ea103b3af2009f214c6c2d29f8a51959cbe38c5a0273446a0",
+    "comparison_run": false
+  },
+  "authorization": "Awaiting reviewer signoff before evaluation",
+  "planning_knowledge": "Primary input schema and deterministic verification PASS known; tree completion counts known; original calibration final packaging failure known; no new comparison or recovered gate outcomes inspected."
+}

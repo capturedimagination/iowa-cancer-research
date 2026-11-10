@@ -1,0 +1,431 @@
+{
+  "status": "DRAFT_NOT_AUTHORIZATION_TO_RUN",
+  "scope": "Hypothetical common-clock branching and calibration measurement study. No patient/cancer-cell fit or novelty claim.",
+  "previous_goal_turn": "Progress: commit c7d952f3f1bdf87cd02c8f7f018ac38b9c398ce4 was published with a clean working tree and verified anonymous access. The old two flags and 168 unresolved checks remain unchanged.",
+  "model": "All stage-transition/division and death hazards multiply r(b)=1+a*sin(2*pi*b/P), r>0. Operational clock R(b)=b+a*P/(2*pi)*(1-cos(2*pi*b/P)). This is a restricted time-change model, not division-only modulation or a drug schedule.",
+  "cases": [
+    {
+      "case_id": "A01",
+      "base_label": "hom_exp_newborn",
+      "k": 1,
+      "means": [
+        1.0
+      ],
+      "rho": 0.0,
+      "initialization": "newborn",
+      "mu": 1.0,
+      "clock_id": "constant",
+      "amplitude": 0.0,
+      "period": 2.0
+    },
+    {
+      "case_id": "A02",
+      "base_label": "hom_exp_newborn",
+      "k": 1,
+      "means": [
+        1.0
+      ],
+      "rho": 0.0,
+      "initialization": "newborn",
+      "mu": 1.0,
+      "clock_id": "period2",
+      "amplitude": 0.75,
+      "period": 2.0
+    },
+    {
+      "case_id": "A03",
+      "base_label": "hom_exp_newborn",
+      "k": 1,
+      "means": [
+        1.0
+      ],
+      "rho": 0.0,
+      "initialization": "newborn",
+      "mu": 1.0,
+      "clock_id": "period4",
+      "amplitude": 0.75,
+      "period": 4.0
+    },
+    {
+      "case_id": "A04",
+      "base_label": "hom_erlang_newborn",
+      "k": 4,
+      "means": [
+        1.0
+      ],
+      "rho": 0.0,
+      "initialization": "newborn",
+      "mu": 1.0,
+      "clock_id": "constant",
+      "amplitude": 0.0,
+      "period": 2.0
+    },
+    {
+      "case_id": "A05",
+      "base_label": "hom_erlang_newborn",
+      "k": 4,
+      "means": [
+        1.0
+      ],
+      "rho": 0.0,
+      "initialization": "newborn",
+      "mu": 1.0,
+      "clock_id": "period2",
+      "amplitude": 0.75,
+      "period": 2.0
+    },
+    {
+      "case_id": "A06",
+      "base_label": "hom_erlang_newborn",
+      "k": 4,
+      "means": [
+        1.0
+      ],
+      "rho": 0.0,
+      "initialization": "newborn",
+      "mu": 1.0,
+      "clock_id": "period4",
+      "amplitude": 0.75,
+      "period": 4.0
+    },
+    {
+      "case_id": "A07",
+      "base_label": "hom_erlang_uniform",
+      "k": 4,
+      "means": [
+        1.0
+      ],
+      "rho": 0.0,
+      "initialization": "uniform_stage",
+      "mu": 1.0,
+      "clock_id": "constant",
+      "amplitude": 0.0,
+      "period": 2.0
+    },
+    {
+      "case_id": "A08",
+      "base_label": "hom_erlang_uniform",
+      "k": 4,
+      "means": [
+        1.0
+      ],
+      "rho": 0.0,
+      "initialization": "uniform_stage",
+      "mu": 1.0,
+      "clock_id": "period2",
+      "amplitude": 0.75,
+      "period": 2.0
+    },
+    {
+      "case_id": "A09",
+      "base_label": "hom_erlang_uniform",
+      "k": 4,
+      "means": [
+        1.0
+      ],
+      "rho": 0.0,
+      "initialization": "uniform_stage",
+      "mu": 1.0,
+      "clock_id": "period4",
+      "amplitude": 0.75,
+      "period": 4.0
+    },
+    {
+      "case_id": "A10",
+      "base_label": "redrawn_mixture",
+      "k": 4,
+      "means": [
+        0.5,
+        1.5
+      ],
+      "rho": 0.0,
+      "initialization": "newborn",
+      "mu": 1.0,
+      "clock_id": "constant",
+      "amplitude": 0.0,
+      "period": 2.0
+    },
+    {
+      "case_id": "A11",
+      "base_label": "redrawn_mixture",
+      "k": 4,
+      "means": [
+        0.5,
+        1.5
+      ],
+      "rho": 0.0,
+      "initialization": "newborn",
+      "mu": 1.0,
+      "clock_id": "period2",
+      "amplitude": 0.75,
+      "period": 2.0
+    },
+    {
+      "case_id": "A12",
+      "base_label": "redrawn_mixture",
+      "k": 4,
+      "means": [
+        0.5,
+        1.5
+      ],
+      "rho": 0.0,
+      "initialization": "newborn",
+      "mu": 1.0,
+      "clock_id": "period4",
+      "amplitude": 0.75,
+      "period": 4.0
+    },
+    {
+      "case_id": "A13",
+      "base_label": "partial_type",
+      "k": 4,
+      "means": [
+        0.5,
+        1.5
+      ],
+      "rho": 0.5,
+      "initialization": "newborn",
+      "mu": 1.0,
+      "clock_id": "constant",
+      "amplitude": 0.0,
+      "period": 2.0
+    },
+    {
+      "case_id": "A14",
+      "base_label": "partial_type",
+      "k": 4,
+      "means": [
+        0.5,
+        1.5
+      ],
+      "rho": 0.5,
+      "initialization": "newborn",
+      "mu": 1.0,
+      "clock_id": "period2",
+      "amplitude": 0.75,
+      "period": 2.0
+    },
+    {
+      "case_id": "A15",
+      "base_label": "partial_type",
+      "k": 4,
+      "means": [
+        0.5,
+        1.5
+      ],
+      "rho": 0.5,
+      "initialization": "newborn",
+      "mu": 1.0,
+      "clock_id": "period4",
+      "amplitude": 0.75,
+      "period": 4.0
+    },
+    {
+      "case_id": "A16",
+      "base_label": "persistent_type",
+      "k": 4,
+      "means": [
+        0.5,
+        1.5
+      ],
+      "rho": 1.0,
+      "initialization": "newborn",
+      "mu": 1.0,
+      "clock_id": "constant",
+      "amplitude": 0.0,
+      "period": 2.0
+    },
+    {
+      "case_id": "A17",
+      "base_label": "persistent_type",
+      "k": 4,
+      "means": [
+        0.5,
+        1.5
+      ],
+      "rho": 1.0,
+      "initialization": "newborn",
+      "mu": 1.0,
+      "clock_id": "period2",
+      "amplitude": 0.75,
+      "period": 2.0
+    },
+    {
+      "case_id": "A18",
+      "base_label": "persistent_type",
+      "k": 4,
+      "means": [
+        0.5,
+        1.5
+      ],
+      "rho": 1.0,
+      "initialization": "newborn",
+      "mu": 1.0,
+      "clock_id": "period4",
+      "amplitude": 0.75,
+      "period": 4.0
+    },
+    {
+      "case_id": "A19",
+      "base_label": "hom_erlang_newborn_zero_death",
+      "k": 4,
+      "means": [
+        1.0
+      ],
+      "rho": 0.0,
+      "initialization": "newborn",
+      "mu": 0.0,
+      "clock_id": "period4",
+      "amplitude": 0.75,
+      "period": 4.0
+    },
+    {
+      "case_id": "A20",
+      "base_label": "persistent_type_zero_death",
+      "k": 4,
+      "means": [
+        0.5,
+        1.5
+      ],
+      "rho": 1.0,
+      "initialization": "newborn",
+      "mu": 0.0,
+      "clock_id": "period4",
+      "amplitude": 0.75,
+      "period": 4.0
+    }
+  ],
+  "times": {
+    "selection_horizons": [
+      2.0,
+      3.0,
+      4.0
+    ],
+    "evaluation_times": [
+      0.5,
+      1.0,
+      1.5,
+      2.0
+    ],
+    "contrast_pairs": [
+      [
+        2.0,
+        3.0
+      ],
+      [
+        2.0,
+        4.0
+      ],
+      [
+        3.0,
+        4.0
+      ]
+    ],
+    "pair_birth_cutoff": 2.0,
+    "pair_lags": [
+      0.5,
+      1.0,
+      2.0
+    ],
+    "birth_bin_widths": [
+      2.0,
+      1.0,
+      0.5,
+      0.25
+    ]
+  },
+  "pair_cohort": "The first founder division before death by physical time 2 supplies a prospective pair. Both newborn daughters are observed at the same elapsed physical lag, without future selection. Daughter types are conditionally independent with K=rho I+(1-rho)/number_of_types. Calibration singles come from independent eligible mothers with the same birth-bin and type distribution; one random daughter per mother.",
+  "bin_targets": [
+    "eligibility_probability",
+    "daughter_survival_p",
+    "joint_survival_j",
+    "covariance_c=j-p*p",
+    "mean_exact_birth_covariance",
+    "within_bin_birth_probability_variance",
+    "no_transmission_Lipschitz_bound_if_applicable"
+  ],
+  "calibration": {
+    "m": [
+      5,
+      20,
+      100
+    ],
+    "n": [
+      100,
+      1000
+    ],
+    "methods": [
+      "oracle_bin_mean",
+      "shared_fitted_mean",
+      "shared_fitted_mean_corrected",
+      "unbiased_target_sample_covariance"
+    ],
+    "random_unit": "One whole experiment: an independent Binomial(m,p) calibration sample is reused across n iid target pairs. Unbiasedness averages over training and target samples, not conditional on one realized training fit.",
+    "analytic": "All 20 cases x 3 lags x 15 bins x 3 calibration sizes x 2 target sizes = 5,400 settings. Primary residual moments use finite binomial sums; the independent verifier uses closed moment formulas. All four methods are retained.",
+    "monte_carlo_bins": [
+      [
+        0.0,
+        2.0
+      ],
+      [
+        0.0,
+        1.0
+      ]
+    ],
+    "monte_carlo_experiments_per_setting": 50000,
+    "monte_carlo_batch_size": 5000,
+    "monte_carlo_settings": 720,
+    "seed_entropy": 2026111014,
+    "seed_spawn": "PCG64 SeedSequence([entropy,case_index,lag_index,bin_index,m_index,n_index]); zero-based indices in protocol order. In each fixed batch draw calibration binomial values first, then four-category target multinomial counts in order 00,01,10,11.",
+    "validation": "Each method mean and mean squared deviation about its analytic mean are checked with nonasymptotic Bernstein bounds. The latter has variance upper bound B^2*Var(score). All 5,760 checks share family alpha 0.001 by Bonferroni; numerical slack 1e-8. Exact-zero-variance controls are checked as structural constants. No Gaussian tail claim.",
+    "score_ranges": {
+      "oracle_bin_mean": [
+        -0.25,
+        1.0
+      ],
+      "shared_fitted_mean": [
+        -0.25,
+        1.0
+      ],
+      "shared_fitted_mean_corrected": "[-m/(4*(m-1)),1]",
+      "unbiased_target_sample_covariance": "[-n/(4*(n-1)),n/(4*(n-1))]"
+    },
+    "moments_scope": "The calibration and pair distributions are fixed within an experiment. Shared random movie/well effects, calibration distribution shift and general fitted-regression error are not simulated. Coarse bins retain context mixing."
+  },
+  "tree_simulation": {
+    "roots_per_case": 10000,
+    "batch_size": 250,
+    "seed_entropy": 2026111013,
+    "seed_spawn": "PCG64 SeedSequence([entropy,case_index]); zero-based case indices. Generation and within-batch draw order must be fixed in code and pinned before any run.",
+    "cases": 20,
+    "total_roots": 200000,
+    "max_born_cells_per_case": 50000000,
+    "max_frontier_cells": 5000000,
+    "boundary": "Alive on [birth,event); division at a query replaces the mother with daughters. Synthetic exact division/death ties choose death. Every daughter is newborn stage 1. Latest physical query 4 equals operational time 4.",
+    "validation": "60 family-inclusion, 300 birth-bin eligibility, 10 eligible maternal-type and 2,700 conditional pair-binary checks: 3,070 two-sided exact-binomial diagnostics at 0.001/3070. Also 340 conditional Q means, 140 unconditional U means and 240 unconditional positive removed-stratum loss means: 720 Bernstein diagnostics with variance upper bound mean*(1-mean), family alpha 0.001/720, and numerical slack 1e-8. No Gaussian paired-influence gate. Zero selected counts stay undefined; pair counts below 2 have undefined covariance.",
+    "removed_stratum_loss": "(1-U(t))*(F_early-F_late), averaged over all prospective founders; its reference mean is h_early*(1-Q_early)-h_late*(1-Q_late).",
+    "q_conditioning": "Given the number selected at horizon T, their U(t) values are iid from the selected law and bounded in [0,1]. The concentration check conditions on that count. Its simultaneous validity does not require independent overlapping horizons.",
+    "pair_covariance_reporting": "Report unbiased within-bin sample covariance, but validate its underlying marginal and joint binary probabilities with the specified exact-binomial gates. No unplanned covariance significance test."
+  },
+  "numeric": {
+    "primary_rtol": 1e-10,
+    "primary_atol": 1e-12,
+    "strict_rtol": 1e-12,
+    "strict_atol": 1e-14,
+    "quadrature_orders": [
+      64,
+      96
+    ],
+    "absolute_gate": 1e-08,
+    "calibration_moment_gate": 1e-10,
+    "reference": "Independent extinction/forward equations or closed forms and a distinct quadrature implementation. The pinned old core may be reused by production; the independent verifier cannot import the new production module. Direct physical-time backward-ODE fixtures separately check the clock transformation."
+  },
+  "limits": [
+    "The common-clock time change is restrictive; it does not cover separately modulated division and death hazards.",
+    "Corrected shared calibration has a fixed-m variance floor; ordinary sample covariance is the simpler explicit benchmark.",
+    "Coarse-bin covariance retains context mixing and does not identify inheritance.",
+    "Even exact-birth inherited covariance can be observationally equivalent to a shared latent family environment.",
+    "There is no clinical time or dose mapping, external contact, or modification of previous outputs."
+  ],
+  "numerical_roundoff": "Retain raw numerical values. Any projection to a probability domain for sampling must be recorded and at most 1e-8; a larger excursion fails. Use exact structural values for zero-death controls. Checks retain numerical slack instead of claiming interval-arithmetic certainty."
+}

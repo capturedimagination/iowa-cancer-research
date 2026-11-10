@@ -1,0 +1,193 @@
+{
+  "created_utc": "2026-11-10T20:39:01.975841+00:00",
+  "checked_date": "2026-11-10",
+  "status": "bounded_planning_audit_no_scientific_outcomes",
+  "query_count": 14,
+  "queries": [
+    "Shah Peters2020 hardness conditional independence generalised covariance residual regression error",
+    "Korsnes2023 covariance sister subtree survival environmental",
+    "Kuchen2020 hidden memory cell lineage environmental cycle",
+    "Iyer2025 1013446 age dependence inheritance drug lineage",
+    "Candes Fan Janson Lv model-X conditional randomization2018 primary",
+    "conditional randomization finite-sample exact known conditional distribution primary",
+    "Hoeffding1948 U-statistics unbiased functional Project Euclid",
+    "NCBS Shaon Chakrabarti laboratory fate persister",
+    "Hoeffding1948 exact paper DOI",
+    "unbiased p-squared binomial factorial estimator",
+    "Hoeffding1963 bounded random variables primary",
+    "double debiased machine learning nuisance product crossfitting2018",
+    "Bennett1962 independent sums primary DOI",
+    "Hoeffding1948 original journal issue293-325"
+  ],
+  "sources": [
+    {
+      "id": "gcm",
+      "authors": "Shah and Peters",
+      "publication": "2020",
+      "title": "The hardness of conditional independence testing and the generalised covariance measure",
+      "doi": "10.1214/19-AOS1857",
+      "url": "https://arxiv.org/html/1804.07203",
+      "inspected_scope": "Author manuscript section3, Eq2/Eq5, Theorem6 and auxiliary training discussion inspected; publication metadata verified on official author page.",
+      "claim_boundary": "Direct residual-product and product-of-nuisance-error prior art; not an automatic finite-sample certificate for this design.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "dml",
+      "authors": "Chernozhukov et al.",
+      "publication": "2018",
+      "title": "Double/debiased machine learning for treatment and structural parameters",
+      "doi": "10.1111/ectj.12097",
+      "url": "https://doi.org/10.1111/ectj.12097",
+      "inspected_scope": "Primary publisher summary and bibliographic metadata inspected.",
+      "claim_boundary": "Orthogonal scores plus cross-fitting have estimation-rate assumptions; cross-fitting alone does not guarantee zero shared-fit finite-sample bias.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "wgcm",
+      "authors": "Scheidegger, Hoerrmann and Buehlmann",
+      "publication": "2022 author version2",
+      "title": "The Weighted Generalised Covariance Measure",
+      "doi": null,
+      "url": "https://arxiv.org/abs/2111.04361v2",
+      "inspected_scope": "Author abstract/version history inspected.",
+      "claim_boundary": "Weighted residual measures extend power; no claim a single unweighted average detects every conditional alternative.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "crt",
+      "authors": "Candes, Fan, Janson and Lv",
+      "publication": "2018",
+      "title": "Panning for Gold: Model-X Knockoffs for High Dimensional Controlled Variable Selection",
+      "doi": "10.1111/rssb.12265",
+      "url": "https://academic.oup.com/jrsssb/article/80/3/551/7048447",
+      "inspected_scope": "Primary publisher page and conditional-randomization description inspected.",
+      "claim_boundary": "Known conditional-law randomization is established.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "cpt",
+      "authors": "Berrett, Wang, Barber and Samworth",
+      "publication": "2020",
+      "title": "The conditional permutation test for independence while controlling for confounders",
+      "doi": null,
+      "url": "https://arxiv.org/abs/1807.05405",
+      "inspected_scope": "Author manuscript sections2 and5 inspected; publisher page later redirected to inaccessible endpoint.",
+      "claim_boundary": "Distinguishes known from approximated conditional laws and studies robustness.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "ustat",
+      "authors": "Hoeffding",
+      "publication": "1948",
+      "title": "A Class of Statistics with Asymptotically Normal Distribution",
+      "doi": "10.1214/aoms/1177730196",
+      "url": "https://doi.org/10.1214/aoms/1177730196",
+      "inspected_scope": "Publisher DOI resolved; original journal/archive contents verified; full text not retrieved.",
+      "claim_boundary": "Generic classical U-statistic prior art only; exact Bernoulli correction supplied by independent algebra, not attributed to a verified example in this paper.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "bennett",
+      "authors": "Bennett",
+      "publication": "1962",
+      "title": "Probability Inequalities for the Sum of Independent Random Variables",
+      "doi": "10.1080/01621459.1962.10482149",
+      "url": "https://doi.org/10.1080/01621459.1962.10482149",
+      "inspected_scope": "Primary publisher abstract and bibliographic record inspected.",
+      "claim_boundary": "Classical variance-and-range concentration; proposed exact formula separately reviewed.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "hoeffding",
+      "authors": "Hoeffding",
+      "publication": "1963",
+      "title": "Probability Inequalities for Sums of Bounded Random Variables",
+      "doi": "10.1080/01621459.1963.10500830",
+      "url": "https://doi.org/10.1080/01621459.1963.10500830",
+      "inspected_scope": "Primary publisher abstract and bibliographic record inspected.",
+      "claim_boundary": "Classical finite-sample bounds; no novelty claim.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "practical_ci",
+      "authors": "He, Pogodin, Li, Deka, Gretton and Sutherland",
+      "publication": "2025",
+      "title": "On the Hardness of Conditional Independence Testing In Practice",
+      "doi": null,
+      "url": "https://arxiv.org/abs/2512.14000",
+      "inspected_scope": "Author abstract/history inspected; author page reports NeurIPS2025 publication.",
+      "claim_boundary": "Current practical nuisance-estimation concern; no full implementation audit.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "embedding",
+      "authors": "Thams and Lundborg",
+      "publication": "2026-10-08",
+      "title": "Embedding-Bias in Conditional Independence Testing",
+      "doi": null,
+      "url": "https://arxiv.org/abs/2610.11584",
+      "inspected_scope": "Author abstract/history only; preprint.",
+      "claim_boundary": "Context compression can discard conditional-mean information; related to binning, not exact assay equivalence.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "korsnes",
+      "authors": "Korsnes and Korsnes",
+      "publication": "2023",
+      "title": "Initial refinement of data from video-based single-cell tracking",
+      "doi": "10.1002/cai2.88",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10686135/",
+      "inspected_scope": "Current primary abstract read; later fetch/find/XML requests challenged or failed. Earlier project audit supplies detailed paired-subtree scope, labeled as such.",
+      "claim_boundary": "Close paired-subtree prior art; extant-versus-cumulative count semantics unresolved.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "kuchen",
+      "authors": "Kuchen, Becker, Claudino and Hoefer",
+      "publication": "2020",
+      "title": "Hidden long-range memories of growth and cycle speed correlate cell cycles in lineage trees",
+      "doi": "10.7554/eLife.51002",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7018508/",
+      "inspected_scope": "Primary main text and circadian alternative discussion inspected.",
+      "claim_boundary": "Existing lineage inheritance and shared-context modeling; cycle lengths differ from subtree survival.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "iyer",
+      "authors": "Iyer, Alva, Granada and Chakrabarti",
+      "publication": "2025-09-19",
+      "title": "Inheritable cell-states shape drug-persister correlations and population dynamics in cancer cells",
+      "doi": "10.1371/journal.pcbi.1013446",
+      "url": "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1013446",
+      "inspected_scope": "Current main text and publication metadata refreshed; earlier project Methods/supplement audit retained, not repeated.",
+      "claim_boundary": "Already age-structured competing-fate alternatives; proposed controls do not refute this work.",
+      "accessed": "2026-11-10"
+    },
+    {
+      "id": "ncbs",
+      "authors": "NCBS",
+      "publication": "current page checked2026-11-10",
+      "title": "Shaon Chakrabarti research",
+      "doi": null,
+      "url": "https://www.ncbs.res.in/node/80022",
+      "inspected_scope": "Official institutional research page inspected.",
+      "claim_boundary": "Concrete prospective scientific-validation destination; no contact or collaboration arranged.",
+      "accessed": "2026-11-10"
+    }
+  ],
+  "conclusion": "Direct and close prior art exists for residual products, nuisance-error products, sister-subtree summaries, binomial unbiased products and concentration. Time change is standard. No first-ever method, mechanism or cure claim.",
+  "new_math_status": "Elementary shared-fit/calibration identities are independently derived planning algebra, not new numerical results or a novelty claim.",
+  "application": "Prospective birth/context-aware lineage assay calibration and scientific-validation packet; independent training/target movies and explicit missingness; no retrospective source gates bypassed.",
+  "external_contact": false,
+  "source_limitations": [
+    "Some PMC and publisher follow-up requests failed or challenged; no bypass attempted.",
+    "Hoeffding1948 full text not retrieved; exact Bernoulli correction is direct algebra.",
+    "Recent2026 embedding preprint only abstract inspected.",
+    "No exhaustive citation, patent, thesis, code or unpublished-work search.",
+    "Arxiv HTML rendering date is not treated as article publication date."
+  ],
+  "local_evidence": {
+    "earlier_prior_art": "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/prior-art.md",
+    "earlier_prior_art_sha256": "8b7628f262f5ef9961c1a2c5520d05edbde4b87a16351f0293c6d2bf0e74198f"
+  }
+}

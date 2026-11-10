@@ -1,0 +1,88 @@
+{
+  "status": "EXACT_SCIENTIFIC_EQUALITY",
+  "validation_version": 2,
+  "created_utc": "2026-11-10T20:59:59.986315+00:00",
+  "code_sha256": "a371a81d9d1f1a92877ca4fc44bdd91d91d84c74096f9e70504e28a533198f28",
+  "input_hashes": {
+    "tree_first": "444647a5c7a15cd96a4278308c0e43ac5b725c1701d0cf0492f2bd0da74da8d1",
+    "tree_second": "5e2cd036ab10de44173f017c553dae8aa2d6d7abf9ddae1cc052175a09678cd5",
+    "calibration_first": "b0ed5d00f310a247054badc60d8449229342b6a81b415a933f57478d13151aba",
+    "calibration_second": "79c4edcf01314e280afc22141c8d634250c3441821b4709eff7c4b6d207ec1f3"
+  },
+  "tree": {
+    "status": "EXACT_SCIENTIFIC_EQUALITY",
+    "cases": 20,
+    "founders": 200000,
+    "batches": 800,
+    "generated_cells": 5163538,
+    "arrays_compared": 10400,
+    "aggregate_exclusions": [
+      "batch_files",
+      "created_utc",
+      "runtime_seconds_this_invocation"
+    ],
+    "exact_array_shapes_and_dtypes": true,
+    "pinned_batch_code_hashes_verified": true,
+    "batch_metadata_exclusions": [
+      "created_utc"
+    ],
+    "top_level_exclusions": [
+      "created_utc",
+      "cases (compared individually)"
+    ]
+  },
+  "calibration": {
+    "status": "EXACT_SCIENTIFIC_EQUALITY",
+    "settings": 720,
+    "batches": 7200,
+    "whole_experiments": 36000000,
+    "method_records": 2880,
+    "all_5760_checks_identical": true,
+    "aggregate_exclusions": [
+      "batch_files",
+      "code_sha256",
+      "created_utc",
+      "method_names"
+    ],
+    "batch_exclusions": [
+      "created_utc",
+      "code_sha256"
+    ],
+    "top_level_exclusions": [
+      "code_sha256",
+      "created_utc",
+      "first_process_exit_code",
+      "new_random_draws",
+      "recovery_code_sha256",
+      "report_status",
+      "scope",
+      "settings"
+    ],
+    "top_level_common_fields_compared": [
+      "batch_paths_relative_to",
+      "batch_size",
+      "check_status_counts",
+      "completed_checks",
+      "completed_settings",
+      "experiments_per_setting",
+      "family_alpha",
+      "incomplete_settings",
+      "independent_gate_sha256",
+      "independent_gate_validation",
+      "methods",
+      "numerical_slack",
+      "numpy_version",
+      "planned_checks",
+      "planned_settings",
+      "protocol_sha256",
+      "python_version",
+      "reference_sha256",
+      "scipy_version",
+      "seed_entropy"
+    ],
+    "pinned_batch_and_setting_code_hashes_verified": true,
+    "metadata_normalization": "method_names renamed back to methods only at run/batch metadata level; per-setting methods dictionary compared unchanged",
+    "first_failure": "Original first-run final packaging exit 1 retained; first comparison source is no-RNG recovered report."
+  },
+  "scope": "Same-seed exact reproducibility, not an independent statistical replicate or replacement of first outcomes."
+}

@@ -1,0 +1,30 @@
+{
+  "status": "PINNED_BEFORE_FIXTURES_AND_SCIENTIFIC_GRID",
+  "created_utc": "2026-11-10T20:43:00.473516+00:00",
+  "script": "scripts/verify_age_calendar_calibration.py",
+  "code_sha256": "b8b404480cb4586fddf2d45d22a572ab001e7f0ad76c4fa309a29df8b1a7f626",
+  "protocol": "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/protocol.json",
+  "protocol_sha256": "53d76bf43d0b1f47355d57d95ec6d7f43fce67541aed7631510a3cbff0b42919",
+  "theory_sha256": "81ed3527f55327728152a5306393ca9160cb5e780b77e79daf1b3edb18f7d99f",
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.16.3"
+  },
+  "numerical_settings": {
+    "rtol": 2e-13,
+    "atol": 2e-15,
+    "quadrature_epsabs": 2e-13,
+    "quadrature_epsrel": 2e-12,
+    "quadrature": "adaptive scipy quad_vec Gauss-Kronrod 21"
+  },
+  "primary_outputs_read": false,
+  "routes": [
+    "extinction/forward-spine ODEs",
+    "adaptive birth-bin quadrature",
+    "closed calibration moments",
+    "direct physical backward H/J fixtures",
+    "exact rational small count enumeration fixtures"
+  ],
+  "elapsed_seconds": 0.0003629590501077473
+}

@@ -10,9 +10,9 @@
     "Ephemeral tmp working files/environments are excluded from the inventory; durable source originals have their own dated paths and provenance."
   ],
   "counts": {
-    "included": 487,
-    "local_generated": 1,
-    "linked_source_only": 87
+    "included": 569,
+    "local_generated": 3,
+    "linked_source_only": 92
   },
   "expected_public_files": [
     ".gitattributes",
@@ -32,6 +32,7 @@
     "publication/sanitization-log.json",
     "publication/source-manifest.json",
     "publication/verification-2026-11-10.json",
+    "publication/verification-age-calendar-2026-11-10.json",
     "publication/verification-cell-cycle-2026-11-10.json",
     "publication/verification-discovery-2026-11-10.json",
     "publication/verification-lineage-2026-11-10.json",
@@ -207,6 +208,63 @@
     "research/treatment-discovery/egfr-mechanism-feasibility.json",
     "research/treatment-discovery/egfr-mechanism-feasibility.md",
     "research/treatment-discovery/lineage-audit-2026-11-10/README.md",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/README.md",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/age-context-grid.svg",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/aggregation-history.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/calibration-monte-carlo/clean-v2-freeze.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/calibration-monte-carlo/clean-v2-results.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/calibration-monte-carlo/recovery-freeze.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/calibration-monte-carlo/recovery-ledger.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/calibration-monte-carlo/results.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/calibration-monte-carlo/run-freeze.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/calibration-variance.svg",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/comparison-code-pin.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/comparison-fixtures.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/deterministic-interpretation-checks.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/deterministic-interpretation.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/deterministic-interpretation.md",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/deterministic-reproduction.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/deterministic-reproduction.md",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/figure-provenance.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/implementation-review.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/implementation-review.md",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/independent-comparison.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/independent-comparison.md",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/independent-reference.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/interpretation-review.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/monte-carlo-implementation-review.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/monte-carlo-implementation-review.md",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/monte-carlo-implementation.md",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/monte-carlo-recovery-review.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/monte-carlo-recovery-review.md",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/monte-carlo-reproduction-freeze.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/monte-carlo-reproduction-supplement-freeze.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/monte-carlo-reproduction-supplement.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/monte-carlo-reproduction.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/monte-carlo-reproduction.md",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/plan-freeze.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/primary-code-pin.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/primary-fixtures-final.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/primary-fixtures-pinned.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/primary-fixtures.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/prior-art.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/prior-art.md",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/protocol-draft.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/protocol.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/reference-code-pin.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/reference-fixtures.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/research-destination.md",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/results.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/strict-results.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/theory.md",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/tree-monte-carlo/clean-reproduction-results.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/tree-monte-carlo/comparison-freeze-v2.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/tree-monte-carlo/comparison-freeze.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/tree-monte-carlo/comparison.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/tree-monte-carlo/comparison.md",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/tree-monte-carlo/results.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/tree-monte-carlo/run-freeze.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/verification-proposal.md",
     "research/treatment-discovery/lineage-audit-2026-11-10/calendar-rate-independent-review.json",
     "research/treatment-discovery/lineage-audit-2026-11-10/calendar-rate-independent-review.md",
     "research/treatment-discovery/lineage-audit-2026-11-10/cell-cycle-specificity/README.md",
@@ -267,6 +325,16 @@
     "research/treatment-discovery/lineage-audit-2026-11-10/horizon-invariance/protocol.json",
     "research/treatment-discovery/lineage-audit-2026-11-10/horizon-invariance/results.json",
     "research/treatment-discovery/lineage-audit-2026-11-10/identity-check-results.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/README.md",
+    "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/acquisition.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-plan-draft.md",
+    "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/kuchen-anomaly-locators.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/kuchen-schema.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/kuchen-structural-audit.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/license-record.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/opportunity-ledger.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/structural-verification-initial.json",
+    "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/structural-verification.json",
     "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/README.md",
     "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/bounds-review.json",
     "research/treatment-discovery/lineage-audit-2026-11-10/missing-branch-bounds/bounds-review.md",
@@ -384,9 +452,11 @@
     "research/us-state-mortality-2020-2024.csv",
     "research/winnebago-2000-personal-wood-dust.csv",
     "scripts/add_gap_ocr_sidecars.py",
+    "scripts/age_calendar_calibration.py",
     "scripts/age_lineage_models.py",
     "scripts/analyze_industry_records.py",
     "scripts/audit_hct116_lineage_structure.py",
+    "scripts/audit_kuchen_structure.py",
     "scripts/audit_maynard_malignant_membership.py",
     "scripts/audit_maynard_metadata.py",
     "scripts/audit_oren_lineage_workbook.py",
@@ -398,6 +468,9 @@
     "scripts/build_knowledge_base.py",
     "scripts/build_report.py",
     "scripts/build_services_evidence.py",
+    "scripts/check_age_calendar_aggregation.py",
+    "scripts/check_age_calendar_reproduction.py",
+    "scripts/check_age_calendar_reproduction_v1.py",
     "scripts/check_age_lineage_fixtures.py",
     "scripts/check_compilation.py",
     "scripts/check_egfr_curvature_design.py",
@@ -407,15 +480,19 @@
     "scripts/check_oren_lineage_encoding.py",
     "scripts/check_publication.py",
     "scripts/check_signature_depth.py",
+    "scripts/compare_age_calendar_references.py",
+    "scripts/compare_age_calendar_trees.py",
     "scripts/compare_age_lineage_monte_carlo.py",
     "scripts/compare_age_lineage_references.py",
     "scripts/diagnose_age_lineage_contrasts.py",
     "scripts/extract_iowa_title_v_2024.py",
     "scripts/extract_maynard_seurat_object.py",
     "scripts/fetch_iowa_tri_history.py",
+    "scripts/interpret_age_calendar_grid.py",
     "scripts/lineage_joint_bounds.py",
     "scripts/lineage_missing_bounds.py",
     "scripts/ocr_pdf_applevision.swift",
+    "scripts/plot_age_calendar_calibration.py",
     "scripts/plot_age_lineage_results.py",
     "scripts/plot_gse292469_signature.py",
     "scripts/plot_hct116_missing_bounds.py",
@@ -424,6 +501,7 @@
     "scripts/prepare_compilation.py",
     "scripts/prepare_publication.py",
     "scripts/query_research.py",
+    "scripts/recover_shared_calibration_report.py",
     "scripts/refine_hct116_lineage_bounds.py",
     "scripts/review_gse292469_signature.py",
     "scripts/review_hct116_joint_bounds.py",
@@ -431,11 +509,15 @@
     "scripts/run_age_lineage_models.py",
     "scripts/run_gse292469_signature.py",
     "scripts/run_nsclc_benchmark.py",
+    "scripts/simulate_age_calendar_trees.py",
     "scripts/simulate_age_lineage_trees.py",
     "scripts/simulate_egfr_curvature_design.py",
     "scripts/simulate_egfr_state_dynamics.py",
     "scripts/simulate_lineage_family_sampling.py",
+    "scripts/simulate_shared_calibration.py",
+    "scripts/simulate_shared_calibration_v1.py",
     "scripts/simulate_signature_depth.py",
+    "scripts/verify_age_calendar_calibration.py",
     "scripts/verify_age_lineage_models.py",
     "scripts/verify_lineage_joint_bounds.py",
     "scripts/verify_lineage_missing_forest.py",
@@ -516,8 +598,8 @@
     },
     {
       "path": ".gitignore",
-      "bytes": 6993,
-      "sha256": "94fe5afc4001cccb9a3ff504fac0337b2175676bc29fab19a1ae5b2884a67a4e",
+      "bytes": 7542,
+      "sha256": "4ce60f6d4724b7c521f98f11c671b033e1957ba600656008cbfa3d70fef90b66",
       "publication_status": "included",
       "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
       "upstream_urls": [
@@ -526,8 +608,8 @@
     },
     {
       "path": "AGENTS.md",
-      "bytes": 3195,
-      "sha256": "2172bf05fe756b5f146ca7d7d7673235cff4b5cb3a2dd328a2bd0ae6d15d5c9b",
+      "bytes": 4072,
+      "sha256": "23b9f8656d2945c1d607d2932ea9882a954b9a174066a40df76ba595dff94a72",
       "publication_status": "included",
       "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
       "upstream_urls": []
@@ -558,16 +640,16 @@
     },
     {
       "path": "PUBLICATION.md",
-      "bytes": 11059,
-      "sha256": "b3a16e2687bab7d88b0125be9f92f771239ab2048a284dfc8338a7dce3961fad",
+      "bytes": 11801,
+      "sha256": "124d62a272709ef9b64a7ef82c5dfb0c0cdd1de0ef5d47321c996b5c735848ac",
       "publication_status": "included",
       "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
       "upstream_urls": []
     },
     {
       "path": "README.md",
-      "bytes": 6958,
-      "sha256": "511f9bdbf6da85bcbe5fd0fb0f3055556f6f39fadd5f2db403768911734ebcd7",
+      "bytes": 7627,
+      "sha256": "4640e183221f35eadbb09876180b90fdaf7060b06c5e313ff0f653aba1f9c521",
       "publication_status": "included",
       "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
       "upstream_urls": [
@@ -577,16 +659,16 @@
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
-      "bytes": 14246,
-      "sha256": "8ba84e15a0a5c7a41dafcbfc7e6073a6f1a42888c50cfddb5a50f424a33e0072",
+      "bytes": 15127,
+      "sha256": "6db126ee4170150e54fbcfed55d3250191e712728fa21e184dde5778c0120b4e",
       "publication_status": "included",
       "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
       "upstream_urls": []
     },
     {
       "path": "knowledge/INDEX.md",
-      "bytes": 15922,
-      "sha256": "167a9ad98eb4ff3eb43dc0c6c3cbe52d749452fd5d37444fde5317d684bbf09e",
+      "bytes": 16612,
+      "sha256": "e9d84b9a83fbdac2cdbcb0699a2c4c55604c8b641c1c589b511a23ddd60ab965",
       "publication_status": "included",
       "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
       "upstream_urls": []
@@ -594,7 +676,7 @@
     {
       "path": "knowledge/build-manifest.json",
       "bytes": 1870,
-      "sha256": "bd185a291a12cff88263857d348d036c715745619a871067cc62d2240f13633a",
+      "sha256": "bf189927260672236541d1ac25e245767652f3e69dea2167c8659139e1193a91",
       "publication_status": "included",
       "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
       "upstream_urls": []
@@ -609,8 +691,8 @@
     },
     {
       "path": "knowledge/research.sqlite",
-      "bytes": 295436288,
-      "sha256": "c6b0530d2944c8f9cb0a87f23fae88710ade1caff1d0afb47bdac30bc3d57e5d",
+      "bytes": 295878656,
+      "sha256": "1c7ea2ceb99c8ebde80dd2c6100e7e8b6e39e9a3b01246f587fd899e88c558d7",
       "publication_status": "local_generated",
       "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
       "upstream_urls": []
@@ -635,6 +717,14 @@
       "path": "publication/verification-2026-11-10.json",
       "bytes": 2577,
       "sha256": "a9067c33a3a66729ebfc0df7240f831f6129d07f73150163b21e47dcbf6bcdf9",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "publication/verification-age-calendar-2026-11-10.json",
+      "bytes": 8780,
+      "sha256": "2ea878b9ed61e341d3f37313911559b53f9c8dc9ea9a86d99d6d4f5743d63975",
       "publication_status": "included",
       "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
       "upstream_urls": []
@@ -1657,8 +1747,8 @@
     },
     {
       "path": "research/treatment-discovery/README.md",
-      "bytes": 11248,
-      "sha256": "35ef8682770a98fc0048c4c582a069d3fb29aaeb09aaf23b5724ad24a798025e",
+      "bytes": 11838,
+      "sha256": "79ac016983e9b9ddeceee98298cea1ba2f66401d00f0ce8f895970469ef1e296",
       "publication_status": "included",
       "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
       "upstream_urls": []
@@ -1811,8 +1901,8 @@
     },
     {
       "path": "research/treatment-discovery/data-access-catalog.json",
-      "bytes": 23088,
-      "sha256": "1f8cf3d0cbe49844f31dfaad7832d2ce482f0f0e6aec8e14bbc47824f76f05a8",
+      "bytes": 28512,
+      "sha256": "d5422c15b2298b16d368dedc3182b729e02780eb02b034de545b4636bb4f5baf",
       "publication_status": "included",
       "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
       "upstream_urls": []
@@ -2069,8 +2159,480 @@
     },
     {
       "path": "research/treatment-discovery/lineage-audit-2026-11-10/README.md",
-      "bytes": 12774,
-      "sha256": "0e94207b2a830117c9f1195b0cfc6a7ed5b3ff7929eff378bb1b796f0e9b7638",
+      "bytes": 13229,
+      "sha256": "00b064f678f8900b7ded053465094b4c911085466dab858c02a4f5ac5a2a17d3",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/README.md",
+      "bytes": 13836,
+      "sha256": "e984c8875bddb975e0d6dabdf1184fb0f9be8c9d11ed8ac0459af65488c62468",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/age-context-grid.png",
+      "bytes": 184606,
+      "sha256": "85194c995c5b084a410250ca40086bb86f6e3d846fa902e65738f2fe1b053cc2",
+      "publication_status": "local_generated",
+      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/age-context-grid.svg",
+      "bytes": 177177,
+      "sha256": "869f9dd3ec6104bb2fa588bb9a79f89cd659878bd2b0cd1ca6a9841a0599f7f1",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/aggregation-history.json",
+      "bytes": 2585,
+      "sha256": "f6329e590b6341646bf70c6fb258de5ccaec69752bfe60eb7cd7640384c0c0b1",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/calibration-monte-carlo/clean-v2-freeze.json",
+      "bytes": 2877,
+      "sha256": "2a773853d76330da31f7ee77a55aff0bf1222c0834b13ca0568de54c33957000",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/calibration-monte-carlo/clean-v2-results.json",
+      "bytes": 7418091,
+      "sha256": "79c4edcf01314e280afc22141c8d634250c3441821b4709eff7c4b6d207ec1f3",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/calibration-monte-carlo/recovery-freeze.json",
+      "bytes": 1419,
+      "sha256": "50f677aa39645ce39409d13cbc0e8bb170508ab177ad604b72c2df4a3febd47c",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/calibration-monte-carlo/recovery-ledger.json",
+      "bytes": 1361219,
+      "sha256": "9cc3a266e239f085e6e2c396594c0da38426aa8dd3843238e75908a21ed43d4f",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/calibration-monte-carlo/results.json",
+      "bytes": 7293020,
+      "sha256": "b0ed5d00f310a247054badc60d8449229342b6a81b415a933f57478d13151aba",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/calibration-monte-carlo/run-freeze.json",
+      "bytes": 2442,
+      "sha256": "832182159bdb82fdc564b81abdd965c0d708eab4a66e26ba9030f520a8c814e8",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/calibration-variance.png",
+      "bytes": 299507,
+      "sha256": "5e315b529101d2af889b00dc5dd488e3570b6651b1509077cc4e43afc1b08c5b",
+      "publication_status": "local_generated",
+      "rights_or_scope_basis": "Rebuildable database, bytecode or rendering cache",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/calibration-variance.svg",
+      "bytes": 96948,
+      "sha256": "7f8d2e30d525fd782b760b37bd73ea593e40a2ac53822261110b36292aac01b5",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/comparison-code-pin.json",
+      "bytes": 2398,
+      "sha256": "38dcef98905ec7204928d2541ba0aaab1c16ac6eaf64144ebf594b26a07a7c1c",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/comparison-fixtures.json",
+      "bytes": 2805,
+      "sha256": "8f3e3127ca3e529a35c7fbb243e0934b89b686d8ee71d387d745a1cf04590a58",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/deterministic-interpretation-checks.json",
+      "bytes": 13465,
+      "sha256": "40ecdb1ac376c9b8f965b163b013c46623519d6f94ac903cb802759692fe6651",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/deterministic-interpretation.json",
+      "bytes": 242665,
+      "sha256": "e5b4d4408b4efc9b3bda2798c867d95d6008029a2f422e5406ba34d7678c92bc",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/deterministic-interpretation.md",
+      "bytes": 10331,
+      "sha256": "fb80100fae7b820e65c9a0644792c5651b90419db5a05c8177f74ff6dd63ded3",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/deterministic-reproduction.json",
+      "bytes": 11416,
+      "sha256": "4deda6a4d58a84d207d1dfcd2f38dc34f7fed45002317c310a78ee39e31db377",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/deterministic-reproduction.md",
+      "bytes": 3895,
+      "sha256": "4238ea5a7540dc556bbb799bd0661ffc6e789768d7ffcf52cc4d5ca7b70f46ce",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/figure-provenance.json",
+      "bytes": 12110,
+      "sha256": "fe8dcdff0fda19b60600955ae8a3a6cfd8fa948466f0bab2311fea0c12d8e63a",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/implementation-review.json",
+      "bytes": 6097,
+      "sha256": "ae79d912f24d781b70a758498847256b837f3796f41f86b7a4d1bbb6d4196970",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/implementation-review.md",
+      "bytes": 7695,
+      "sha256": "84fe1fedfb3a648a0aa7c6ed310535972ce26d7b9087cd576310146b5c38865c",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/independent-comparison.json",
+      "bytes": 655211,
+      "sha256": "c9c2664a769c19d4932f2014e66434808fb92105119bd68d066508539d115879",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/independent-comparison.md",
+      "bytes": 5496,
+      "sha256": "b9f8bd181e01df17aea8624f6f9a6c449b145157a6e894eb73d4b619b679b682",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/independent-reference.json",
+      "bytes": 6573859,
+      "sha256": "4660e68638657dd109254a9afd5996b3d579a65cf158603929a6ca785603f1bd",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/interpretation-review.json",
+      "bytes": 3966,
+      "sha256": "49471aaaa478d6fe46124b0f0720de6920d8e22b2f0b7bdfebcc8165856b1a14",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/monte-carlo-implementation-review.json",
+      "bytes": 4457,
+      "sha256": "be2e6bd4f12c971d58827b540dcd4fe87f495c8b6ef8613f176b70e63603e228",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/monte-carlo-implementation-review.md",
+      "bytes": 6379,
+      "sha256": "60f93e1461c6cbee7d05f6c9a005c3db0ead348e578100c91f23459c0cf4ec24",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/monte-carlo-implementation.md",
+      "bytes": 4866,
+      "sha256": "67a9d40ea08e02aee15385a45090eab20a55ff014ec60eee0f1eda2ca85dbbbd",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/monte-carlo-recovery-review.json",
+      "bytes": 10549,
+      "sha256": "f88171acb3243f9e2505978f6ac34e0b790ca1e21f6d2adfb6d308fec909ba0f",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/monte-carlo-recovery-review.md",
+      "bytes": 5453,
+      "sha256": "52fdec73a33a0911eb7589e8145302bbdeafcfd4b739892a04dd863002d3facc",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/monte-carlo-reproduction-freeze.json",
+      "bytes": 1066,
+      "sha256": "624db38ef7425590ba8fca63fefbf2af77f326f2424ec77e8cbeff3f43ed231e",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/monte-carlo-reproduction-supplement-freeze.json",
+      "bytes": 1561,
+      "sha256": "08677ed0a1376f93101833687d83c5285d446859cc10d4fde051aa8cd460771e",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/monte-carlo-reproduction-supplement.json",
+      "bytes": 2806,
+      "sha256": "1160eff8daccd23be1c4327761643888fd9f5d03556184726c81d126297ec0fa",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/monte-carlo-reproduction.json",
+      "bytes": 1834,
+      "sha256": "bf4a3a070eaa6a812ea395cd16e91536fd200c8b5442eb192c8ce6026212b3d9",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/monte-carlo-reproduction.md",
+      "bytes": 7009,
+      "sha256": "98be2525432f3c264f1bba76f6c2c434d53a69f21927481598d1d858fcc8541b",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/plan-freeze.json",
+      "bytes": 832,
+      "sha256": "045882953075e0b8dca47208957ea523d2e384939d8ebec28c09d3ec915fac5a",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/primary-code-pin.json",
+      "bytes": 2213,
+      "sha256": "96904bbc19a9a0e0a06d47e1dbbacaca78d3b105bac6dfabaacdaf865f0c6874",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/primary-fixtures-final.json",
+      "bytes": 1422,
+      "sha256": "f4c4b73a2657d2bcc41e2da8ec812542c5b9192ca6a54eac786f673415e210ff",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/primary-fixtures-pinned.json",
+      "bytes": 1422,
+      "sha256": "3757924438119f8c8065ca99a0adf51b9a21e88b960a45136eadeb3df36adf2e",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/primary-fixtures.json",
+      "bytes": 1216,
+      "sha256": "c14022f04bd022805a7e95c13ebc7d34e2aa1d1668288c3976387e17aeeae995",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/prior-art.json",
+      "bytes": 10240,
+      "sha256": "c25cad86235d4da86c87e22a78f048c4371f3126c3af54cd2d9405a79828bc65",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/prior-art.md",
+      "bytes": 9929,
+      "sha256": "cfa272d130d30182febf81c134e24ad715327d92d0529901bafee06f8baae190",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/protocol-draft.json",
+      "bytes": 12905,
+      "sha256": "3a3be15cb55e0d9bcc148646846cb1ea24ca5fc1ae3c645384cd182f7b269a47",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/protocol.json",
+      "bytes": 15286,
+      "sha256": "53d76bf43d0b1f47355d57d95ec6d7f43fce67541aed7631510a3cbff0b42919",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/reference-code-pin.json",
+      "bytes": 1133,
+      "sha256": "92e80d13e846fc7cf08824e1bdcca6932aac3a8a918537349b84a7c3324508ae",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/reference-fixtures.json",
+      "bytes": 2507,
+      "sha256": "f906977c27ee07779eb09899da2ad5df573031ff997d7916bc8876e37482c3fa",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/research-destination.md",
+      "bytes": 10260,
+      "sha256": "15e8bc7d012a0078b1e602696b20fe8da09b6b81fb3d03e3daa484caf9396033",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/results.json",
+      "bytes": 6691119,
+      "sha256": "4948c049860cbd686ed82fa036dba1bb4f383c525046c8e2154a585a9d36b67d",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/strict-results.json",
+      "bytes": 6689985,
+      "sha256": "d060f646c1cac1fa2e7763035bd88c520f62f862d37047dd4fe06e43a72fe110",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/theory.md",
+      "bytes": 22020,
+      "sha256": "81ed3527f55327728152a5306393ca9160cb5e780b77e79daf1b3edb18f7d99f",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/tree-monte-carlo/clean-reproduction-results.json",
+      "bytes": 839177,
+      "sha256": "5e2cd036ab10de44173f017c553dae8aa2d6d7abf9ddae1cc052175a09678cd5",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/tree-monte-carlo/comparison-freeze-v2.json",
+      "bytes": 1956,
+      "sha256": "6f9b66e70c880a9d3a8c7a9e147cd9bb0880dbf82c73bbd7d17f6ea17eadaa9d",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/tree-monte-carlo/comparison-freeze.json",
+      "bytes": 1674,
+      "sha256": "4a750ebeb5ca19fb59f34ed29d06527eb78032d00478ad508c099fe421cdecfc",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/tree-monte-carlo/comparison.json",
+      "bytes": 2220252,
+      "sha256": "120bc768c4528be410889723c8c08f0699c0153a39ee73330471c80371a0a66d",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/tree-monte-carlo/comparison.md",
+      "bytes": 1349,
+      "sha256": "82b97399400445f7f760b210c627ff84fb680a61a5b66f6eb9a1fb130ccd92e1",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/tree-monte-carlo/results.json",
+      "bytes": 839179,
+      "sha256": "444647a5c7a15cd96a4278308c0e43ac5b725c1701d0cf0492f2bd0da74da8d1",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/tree-monte-carlo/run-freeze.json",
+      "bytes": 2737,
+      "sha256": "40641255eefb7ffcaca894ff99f4c2bedc92e200678095e1f3bd2af9fa91db6e",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/verification-proposal.md",
+      "bytes": 12985,
+      "sha256": "c6fb39d5194d9f769565ac3c0dfe15214af70d5208675f31e8b8b3f6586067a9",
       "publication_status": "included",
       "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
       "upstream_urls": []
@@ -2551,6 +3113,86 @@
       "path": "research/treatment-discovery/lineage-audit-2026-11-10/identity-check-results.json",
       "bytes": 90156,
       "sha256": "706df82dcd172f993f9ac225bb89fbeecff983758e4bde4de60e77430a319e56",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/README.md",
+      "bytes": 11231,
+      "sha256": "d6b9c0b08ca9b56cbb731cb7e50557395dc17c0f84960eb1955810f8bf1bb351",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/acquisition.json",
+      "bytes": 3484,
+      "sha256": "0a4f7cf4b87ecf993b9a718025c282821db2f88b7a27e6172aac89a586099288",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-plan-draft.md",
+      "bytes": 19166,
+      "sha256": "8349cbd05c25705131bd7989376cc30b132f4bcf775c3ad2fd9fe2ae507cee0a",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/kuchen-anomaly-locators.json",
+      "bytes": 1476,
+      "sha256": "ab57d2e013a0c0dfc43cae68a9f27d6f8e4faf1252b04069cba6442c10935a20",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/kuchen-schema.json",
+      "bytes": 6644,
+      "sha256": "c0b676bd16c3a1eeac12dadf061498e7f7830fdfeded69f6d7d042396768f3db",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/kuchen-structural-audit.json",
+      "bytes": 5437,
+      "sha256": "ef487ac682e7a55529dade7ee176c343b2162e9eaa8c924841932f921a746a03",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/license-record.json",
+      "bytes": 1864,
+      "sha256": "879ccd38e341d9811e27982b77b4916b51fdb77068ff4e9d3b710da0a947742f",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/opportunity-ledger.json",
+      "bytes": 10377,
+      "sha256": "8705a8b12a70b8c54d1b07d829f12df60e09915d25f8b8e08a4abaf2d8838e8c",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/structural-verification-initial.json",
+      "bytes": 5148,
+      "sha256": "effb9cbd149a28fa3526894ba56776f2289d5c33d9c378e7dd27f3d22117cd12",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/structural-verification.json",
+      "bytes": 5371,
+      "sha256": "45069a32b6193faedb229f943c8e044e2624ba70c67437b9957b1abbdcce3414",
       "publication_status": "included",
       "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
       "upstream_urls": []
@@ -3230,6 +3872,56 @@
       "upstream_urls": []
     },
     {
+      "path": "research/treatment-discovery/sources/lineage-2026-11-10/alternative-lineage-2026-11-10/alfi-figshare-metadata.json",
+      "bytes": 9690,
+      "sha256": "42d52d9d453d481b9896a82c50b022a0bdf2c70b8d944aab0e8162c3af1370ab",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Public research originals retained for local reanalysis; publish original findings and source provenance, not raw participant-level or publisher/author source mirrors",
+      "upstream_urls": [
+        "https://api.figshare.com/v2/articles/23798451"
+      ]
+    },
+    {
+      "path": "research/treatment-discovery/sources/lineage-2026-11-10/alternative-lineage-2026-11-10/alfi-readme.pdf",
+      "bytes": 28844,
+      "sha256": "c106e1af67bc58d5e71a990b680710197ff4505c5a9f305ba4a57a65a125b233",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Public research originals retained for local reanalysis; publish original findings and source provenance, not raw participant-level or publisher/author source mirrors",
+      "upstream_urls": [
+        "https://iris.cnr.it/retrieve/c56f0242-819e-4b07-89d4-292bb6721e8a/ALFI_dataset_Readme_2024.pdf"
+      ]
+    },
+    {
+      "path": "research/treatment-discovery/sources/lineage-2026-11-10/alternative-lineage-2026-11-10/kuchen-control.xlsx",
+      "bytes": 319349,
+      "sha256": "8ecdd5c66a466b71b5ee4790c79c2b9ce38fd1ec6daf59f88347d67e4fa1b86e",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Public research originals retained for local reanalysis; publish original findings and source provenance, not raw participant-level or publisher/author source mirrors",
+      "upstream_urls": [
+        "https://cdn.elifesciences.org/articles/51002/elife-51002-fig1-data2-v2.xlsx"
+      ]
+    },
+    {
+      "path": "research/treatment-discovery/sources/lineage-2026-11-10/alternative-lineage-2026-11-10/kuchen-overview.pdf",
+      "bytes": 23112,
+      "sha256": "6642b200997dd3212897c65e8bcf0b8e0ec6b87c91f0acf87e6817ff48f9bb7b",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Public research originals retained for local reanalysis; publish original findings and source provenance, not raw participant-level or publisher/author source mirrors",
+      "upstream_urls": [
+        "https://cdn.elifesciences.org/articles/51002/elife-51002-fig1-data1-v2.pdf"
+      ]
+    },
+    {
+      "path": "research/treatment-discovery/sources/lineage-2026-11-10/alternative-lineage-2026-11-10/kuchen-perturbation.xlsx",
+      "bytes": 195788,
+      "sha256": "0065797f9d1cb12dc695bf9baa516f68afea1d6c6077b75c2a9830389806a6f3",
+      "publication_status": "linked_source_only",
+      "rights_or_scope_basis": "Public research originals retained for local reanalysis; publish original findings and source provenance, not raw participant-level or publisher/author source mirrors",
+      "upstream_urls": [
+        "https://cdn.elifesciences.org/articles/51002/elife-51002-fig4-data1-v2.xlsx"
+      ]
+    },
+    {
       "path": "research/treatment-discovery/sources/lineage-2026-11-10/oren-figure1-matrices.npz",
       "bytes": 66594,
       "sha256": "802d397448e9d86c4895fcae2be43fa64c0dc8745e514cac7a1245337e4693a6",
@@ -3890,6 +4582,14 @@
       "upstream_urls": []
     },
     {
+      "path": "scripts/age_calendar_calibration.py",
+      "bytes": 20571,
+      "sha256": "6f5d8279ca762bbd0ac6b4614806edd898bdbcf5c46b7ea7ec1a475a4b88a261",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
       "path": "scripts/age_lineage_models.py",
       "bytes": 11706,
       "sha256": "2e7f53d6175b8da9215706e2eaee81758dc058265ff5d3c42583875d21987a59",
@@ -3909,6 +4609,14 @@
       "path": "scripts/audit_hct116_lineage_structure.py",
       "bytes": 25355,
       "sha256": "af4d949dae48361278e12a7b5df4fbe7a7ed779963be90627b729de752688e1c",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "scripts/audit_kuchen_structure.py",
+      "bytes": 6816,
+      "sha256": "22a9b6d1b504a6483d529f3e175ce179f5ab245823fb925f9f6ce5a73fb28c67",
       "publication_status": "included",
       "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
       "upstream_urls": []
@@ -4002,6 +4710,30 @@
       "upstream_urls": []
     },
     {
+      "path": "scripts/check_age_calendar_aggregation.py",
+      "bytes": 6000,
+      "sha256": "01284586c19629e467afa3baf3f59d15d851d2c2bd277604c1c16ee5bf8e07c1",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "scripts/check_age_calendar_reproduction.py",
+      "bytes": 12619,
+      "sha256": "a371a81d9d1f1a92877ca4fc44bdd91d91d84c74096f9e70504e28a533198f28",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "scripts/check_age_calendar_reproduction_v1.py",
+      "bytes": 9643,
+      "sha256": "0abcf45932067a15d9bc4c2c0fe2232af5684ba92a0decc712f3f6548d5a0f6e",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
       "path": "scripts/check_age_lineage_fixtures.py",
       "bytes": 3645,
       "sha256": "276f1f426c56b33c5642ced041280d14b017b26e7a8b569c7b0191b34bbbed29",
@@ -4074,6 +4806,22 @@
       "upstream_urls": []
     },
     {
+      "path": "scripts/compare_age_calendar_references.py",
+      "bytes": 20852,
+      "sha256": "07a866817af1696ddd96989769af00a2e46ff2433fd2e1bfb25251531962e1c1",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "scripts/compare_age_calendar_trees.py",
+      "bytes": 19300,
+      "sha256": "247cbf335d7bedde9ec17770a691112ea000a5b41206415d270b123d53ca93e1",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
       "path": "scripts/compare_age_lineage_monte_carlo.py",
       "bytes": 23564,
       "sha256": "f5c45024bd3b6db4df5e3f0a67d4c8c4518f7979fbac6b766a7ba705f7bf046a",
@@ -4122,6 +4870,14 @@
       "upstream_urls": []
     },
     {
+      "path": "scripts/interpret_age_calendar_grid.py",
+      "bytes": 12838,
+      "sha256": "7d66d69628027f5010d8c4b90dc48a0c497dc8712a7fd86bf42dcc7cb79767aa",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
       "path": "scripts/lineage_joint_bounds.py",
       "bytes": 11559,
       "sha256": "f24fe1d3a99d2abfd3fdb453d74b87e2b28ad44017845cd3c8ac3b429984802d",
@@ -4141,6 +4897,14 @@
       "path": "scripts/ocr_pdf_applevision.swift",
       "bytes": 2313,
       "sha256": "5756a8b33867164afb60f2c5a87abb6ce1c2bd3d803cfadd99b4d867b2f23721",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "scripts/plot_age_calendar_calibration.py",
+      "bytes": 8515,
+      "sha256": "afb5308e388864d2c61dfeeab87481c81bf0d978bdf06a1b1dde68e2ff54bff8",
       "publication_status": "included",
       "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
       "upstream_urls": []
@@ -4210,6 +4974,14 @@
       "upstream_urls": []
     },
     {
+      "path": "scripts/recover_shared_calibration_report.py",
+      "bytes": 15312,
+      "sha256": "cf7393603841948b4dc5df06de85eda2a4695da2b5da46b39cce2179e2302495",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
       "path": "scripts/refine_hct116_lineage_bounds.py",
       "bytes": 6217,
       "sha256": "406bffebfa80872b0ae0b2cbc9778db0cf5b04f52f879237a93721e8ebc464c8",
@@ -4266,6 +5038,14 @@
       "upstream_urls": []
     },
     {
+      "path": "scripts/simulate_age_calendar_trees.py",
+      "bytes": 33195,
+      "sha256": "b7cbfb48c223a0772f96eb06b6f65a0ed2a55fcb92db139116ab94737679599c",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
       "path": "scripts/simulate_age_lineage_trees.py",
       "bytes": 33700,
       "sha256": "cbbdb12707fb55641bd2701a3be0c862f4f47d0b758bec7b829239cb6f084c46",
@@ -4298,9 +5078,33 @@
       "upstream_urls": []
     },
     {
+      "path": "scripts/simulate_shared_calibration.py",
+      "bytes": 23912,
+      "sha256": "b996075a2080f4a308e055d3aedc2f55d2ae2ceef038ab9a8068c2bcdb634cda",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "scripts/simulate_shared_calibration_v1.py",
+      "bytes": 23907,
+      "sha256": "e32fa093559cba285e31c0cddd07779f54bccf1f2e740727d2ae0bc611bdaeb2",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
       "path": "scripts/simulate_signature_depth.py",
       "bytes": 13659,
       "sha256": "82a484522f00ed072e85322e833d3a212cd901a2a59b45bf2e8089a5892a2ea6",
+      "publication_status": "included",
+      "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
+      "upstream_urls": []
+    },
+    {
+      "path": "scripts/verify_age_calendar_calibration.py",
+      "bytes": 23390,
+      "sha256": "b8b404480cb4586fddf2d45d22a572ab001e7f0ad76c4fa309a29df8b1a7f626",
       "publication_status": "included",
       "rights_or_scope_basis": "Original project findings, code, reports or factual derived data; source-specific rights remain applicable",
       "upstream_urls": []

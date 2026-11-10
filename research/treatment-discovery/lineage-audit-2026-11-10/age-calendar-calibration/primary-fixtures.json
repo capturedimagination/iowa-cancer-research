@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "count": 20,
+  "checks": [
+    "finite_four_category_covariance_p0.2_c0.04_n2",
+    "finite_four_category_covariance_p0.2_c0.04_n3",
+    "finite_four_category_covariance_p0.2_c0.04_n5",
+    "finite_four_category_covariance_p0.4_c-0.05_n2",
+    "finite_four_category_covariance_p0.4_c-0.05_n3",
+    "finite_four_category_covariance_p0.4_c-0.05_n5",
+    "finite_four_category_covariance_p0.73_c0.08_n2",
+    "finite_four_category_covariance_p0.73_c0.08_n3",
+    "finite_four_category_covariance_p0.73_c0.08_n5",
+    "finite_four_category_covariance_p0.0_c0.0_n2",
+    "finite_four_category_covariance_p0.0_c0.0_n3",
+    "finite_four_category_covariance_p0.0_c0.0_n5",
+    "finite_four_category_covariance_p1.0_c0.0_n2",
+    "finite_four_category_covariance_p1.0_c0.0_n3",
+    "finite_four_category_covariance_p1.0_c0.0_n5",
+    "undefined_m1_n5_rejected",
+    "undefined_m5_n1_rejected",
+    "clock_support_a0.0_P2.0",
+    "clock_support_a0.75_P2.0",
+    "clock_support_a0.75_P4.0"
+  ],
+  "scientific_grid_run": false,
+  "code_sha256": "91133d69f3b5a4d9c5c63404cf61e91552cd451e447fe91238f9b8b05a14fb74",
+  "protocol_sha256": "53d76bf43d0b1f47355d57d95ec6d7f43fce67541aed7631510a3cbff0b42919"
+}

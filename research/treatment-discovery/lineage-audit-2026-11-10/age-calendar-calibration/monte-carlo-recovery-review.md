@@ -1,0 +1,27 @@
+# Follow-up review of Monte Carlo reporting and comparison
+
+Reviewed 2026-11-10. **The no-draw recovery and final tree comparator are cleared within their stated numerical scope.** This is a follow-up, not a replacement for the preserved [initial static review](monte-carlo-implementation-review.md). That review missed a real packaging defect: the run signature's `methods` list replaced each setting's estimator dictionary, and the final summary failed with exit code 1 after all simulation batches had completed.
+
+## Recovery and preserved evidence
+
+The separate recovery script imports neither a random-number library nor the simulator. Static review preceded recovery execution. It checks the original protocol and simulator hashes, the fixed setting/seed roster, batch hashes against first aggregate manifests, disjoint batch coverage, saved RNG-state continuity, and moment consistency. It reconstructs the missing method dictionaries using the original saved centered moments and operation order. Two review changes were completed before execution: retain the original algebraic score ranges rather than tolerated-roundoff reference ranges, and reject colliding/existing output paths before work.
+
+The [recovery ledger](calibration-monte-carlo/recovery-ledger.json) records 720 settings, 7,200 batches and 36 million whole experiments, with zero new random draws. This reviewer independently recounted all 5,760 recovered method checks: 5,184 not flagged and 576 structural agreements. The recovered output hash matches the ledger. The recovery implementation and its recorded ledger, rather than a second reviewer rehash of all 7,200 checkpoints, establish the full batch-integrity check here. Saved moments are sufficient for these original mean and mean-squared-deviation diagnostics; they do not retain every individual experiment draw.
+
+The archived first simulator remains unchanged. A direct byte comparison confirms the current runner differs only by renaming run-signature metadata `methods` to `method_names`. No formula, random draw, seed, loop, count or threshold changed. Its separate [clean-run freeze](calibration-monte-carlo/clean-v2-freeze.json) preserves the original failure and first recovered result. The completed clean runs and equality checks are recorded in the separate [reproduction report](monte-carlo-reproduction.md). Recovering original batches now requires explicitly pointing `--original-simulator` at `scripts/simulate_shared_calibration_v1.py`.
+
+## Final tree-comparison review
+
+Source-only clearance of the final comparator preceded reading comparison outcomes. Its frozen roster contains 3,070 exact-binomial and 720 bounded-mean Bernstein diagnostics. Conditional Q uses the actual selected-founder count; removed-stratum loss uses every prospective founder, including zeros. Zero denominators remain undefined. Pair covariance and horizon contrasts remain descriptive alongside the declared component checks; no new Gaussian adequacy rule or contrast threshold was added.
+
+The final guards join family/bin/pair/Q/contrast denominators, verify defined flags, recover descriptive covariance from binary counts and contrasts from Q estimates, and preserve first outputs. Each diagnostic family uses alpha 0.001, so their combined union bound is 0.002, conditional on model probabilities and the declared numerical approximation. Numerical-reference slack is not certified interval arithmetic. The recorded final fixture sets contain nine recovery and fifteen comparator checks; their counts and hashes are pinned in the accompanying [review JSON](monte-carlo-recovery-review.json).
+
+## Completed reproduction and subsequent coverage checks
+
+The first authorized reproduction checker completed before this review's additional coverage findings arrived. Its source and successful report are preserved. That checker compared the stored arrays, moments and RNG states but did not compare all calibration top-level metadata or require matching array dtypes. The supplementary checker was separately pinned **after the first comparison** and reviewed before its own evaluation. It adds normalized top-level metadata comparison with explicit exclusions, binding of excluded setting/batch code hashes, and exact shape/dtype checks.
+
+The [supplementary result](monte-carlo-reproduction-supplement.json) confirms equality of 10,400 stored tree arrays across 800 batches and all calibration moments/RNG states across 7,200 batches, including 2,880 method records and all 5,760 checks. No simulation was rerun for this supplement. These are exact comparisons of stored quantities, not of every latent cell event or individual calibration draw. Same-seed reproducibility is not an independent stochastic replicate. The completed tree comparison separately retains 3,070 not-flagged binomial diagnostics and 576 not-flagged plus 144 structural bounded-mean diagnostics, with no flags or undefined checks.
+
+## Scientific reporting
+
+The main README retains the restricted proportional-clock model, exact-context versus coarse-bin distinction, training-averaged calibration correction, unfavorable ordinary-covariance benchmark, source-selection gaps and known prior art. No material scientific-claim issue was found in this reading. The earlier study's approximate flags remain unresolved by this new study. No stochastic draws, empirical modeling, contact or submission were performed by this reviewer during the follow-up.

@@ -1,0 +1,189 @@
+{
+  "status": "PASS",
+  "created_utc": "2026-11-10T20:55:41.571463+00:00",
+  "scope": "One fresh deterministic reproduction in an isolated ignored copy; no stochastic reruns.",
+  "orchestrator_sha256": "a64f51e1a41d4d83d7f0de1a082c2f1a84c48f708965930b671fe24e02db7e12",
+  "python": "<project>/tmp/egfr-resistance-2026-11-10/venv/bin/python",
+  "isolated_root": "<project>/tmp/age-calendar-2026-11-10/reproduction/checkout",
+  "copied_inputs": {
+    "scripts/age_calendar_calibration.py": "6f5d8279ca762bbd0ac6b4614806edd898bdbcf5c46b7ea7ec1a475a4b88a261",
+    "scripts/age_lineage_models.py": "2e7f53d6175b8da9215706e2eaee81758dc058265ff5d3c42583875d21987a59",
+    "scripts/verify_age_calendar_calibration.py": "b8b404480cb4586fddf2d45d22a572ab001e7f0ad76c4fa309a29df8b1a7f626",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/protocol.json": "53d76bf43d0b1f47355d57d95ec6d7f43fce67541aed7631510a3cbff0b42919",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/theory.md": "81ed3527f55327728152a5306393ca9160cb5e780b77e79daf1b3edb18f7d99f"
+  },
+  "original_hashes_before": {
+    "scripts/age_calendar_calibration.py": "6f5d8279ca762bbd0ac6b4614806edd898bdbcf5c46b7ea7ec1a475a4b88a261",
+    "scripts/age_lineage_models.py": "2e7f53d6175b8da9215706e2eaee81758dc058265ff5d3c42583875d21987a59",
+    "scripts/verify_age_calendar_calibration.py": "b8b404480cb4586fddf2d45d22a572ab001e7f0ad76c4fa309a29df8b1a7f626",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/protocol.json": "53d76bf43d0b1f47355d57d95ec6d7f43fce67541aed7631510a3cbff0b42919",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/theory.md": "81ed3527f55327728152a5306393ca9160cb5e780b77e79daf1b3edb18f7d99f",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/results.json": "4948c049860cbd686ed82fa036dba1bb4f383c525046c8e2154a585a9d36b67d",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/strict-results.json": "d060f646c1cac1fa2e7763035bd88c520f62f862d37047dd4fe06e43a72fe110",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/independent-reference.json": "4660e68638657dd109254a9afd5996b3d579a65cf158603929a6ca785603f1bd",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/reference-fixtures.json": "f906977c27ee07779eb09899da2ad5df573031ff997d7916bc8876e37482c3fa",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/primary-code-pin.json": "96904bbc19a9a0e0a06d47e1dbbacaca78d3b105bac6dfabaacdaf865f0c6874",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/independent-comparison.json": "c9c2664a769c19d4932f2014e66434808fb92105119bd68d066508539d115879"
+  },
+  "commands": [
+    {
+      "argv": [
+        "<project>/tmp/egfr-resistance-2026-11-10/venv/bin/python",
+        "scripts/age_calendar_calibration.py",
+        "--fixture-report",
+        "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/primary-fixtures.json"
+      ],
+      "cwd": "<project>/tmp/age-calendar-2026-11-10/reproduction/checkout",
+      "exit_code": 0,
+      "elapsed_seconds": 0.4433039999566972,
+      "log": "<project>/tmp/age-calendar-2026-11-10/reproduction/command-1.log",
+      "log_sha256": "2850992d03cb58ccd43e590492def0b003a5bf784e67b54e7cf27c7884757235"
+    },
+    {
+      "argv": [
+        "<project>/tmp/egfr-resistance-2026-11-10/venv/bin/python",
+        "scripts/verify_age_calendar_calibration.py",
+        "--pin",
+        "--out",
+        "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/reference-code-pin.json"
+      ],
+      "cwd": "<project>/tmp/age-calendar-2026-11-10/reproduction/checkout",
+      "exit_code": 0,
+      "elapsed_seconds": 0.18296720902435482,
+      "log": "<project>/tmp/age-calendar-2026-11-10/reproduction/command-2.log",
+      "log_sha256": "dca9bbf2beb67de0c77e4f507f29d52ffe80fe61c81f8af62dec4f5763a32d2e"
+    },
+    {
+      "argv": [
+        "<project>/tmp/egfr-resistance-2026-11-10/venv/bin/python",
+        "scripts/verify_age_calendar_calibration.py",
+        "--fixtures",
+        "--out",
+        "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/reference-fixtures.json"
+      ],
+      "cwd": "<project>/tmp/age-calendar-2026-11-10/reproduction/checkout",
+      "exit_code": 0,
+      "elapsed_seconds": 0.3068196250242181,
+      "log": "<project>/tmp/age-calendar-2026-11-10/reproduction/command-3.log",
+      "log_sha256": "71b8be22ac91945a253afec55f4b444d3b42e7dfc26098e0f455c38a71ae91d3"
+    },
+    {
+      "argv": [
+        "<project>/tmp/egfr-resistance-2026-11-10/venv/bin/python",
+        "scripts/age_calendar_calibration.py",
+        "--run",
+        "--out",
+        "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/results.json",
+        "--strict-out",
+        "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/strict-results.json"
+      ],
+      "cwd": "<project>/tmp/age-calendar-2026-11-10/reproduction/checkout",
+      "exit_code": 0,
+      "elapsed_seconds": 7.3893325829994865,
+      "log": "<project>/tmp/age-calendar-2026-11-10/reproduction/command-4.log",
+      "log_sha256": "7ad782556b676ae77a7027463aebc2eded9053bd69f87ceed68fa6f271519778"
+    },
+    {
+      "argv": [
+        "<project>/tmp/egfr-resistance-2026-11-10/venv/bin/python",
+        "scripts/verify_age_calendar_calibration.py",
+        "--run",
+        "--out",
+        "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/independent-reference.json"
+      ],
+      "cwd": "<project>/tmp/age-calendar-2026-11-10/reproduction/checkout",
+      "exit_code": 0,
+      "elapsed_seconds": 2.242333374975715,
+      "log": "<project>/tmp/age-calendar-2026-11-10/reproduction/command-5.log",
+      "log_sha256": "16b09e039a6acec65a8bf82ae3d5a24957d3e5d7e5608bb94afe586866026bc0"
+    }
+  ],
+  "comparisons": [
+    {
+      "file": "results.json",
+      "status": "EXACT_MATCH",
+      "numeric_leaves_compared": 117672,
+      "all_scalar_leaves_compared": 124784,
+      "first_output_sha256": "4948c049860cbd686ed82fa036dba1bb4f383c525046c8e2154a585a9d36b67d",
+      "reproduction_output_sha256": "4d769ce80c5c0e8341399bdb16f40907c5dfeec31feb9955f43fc1ea572aa7ef",
+      "reproduction_output": "<project>/tmp/age-calendar-2026-11-10/reproduction/checkout/research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/results.json"
+    },
+    {
+      "file": "strict-results.json",
+      "status": "EXACT_MATCH",
+      "numeric_leaves_compared": 117631,
+      "all_scalar_leaves_compared": 124677,
+      "first_output_sha256": "d060f646c1cac1fa2e7763035bd88c520f62f862d37047dd4fe06e43a72fe110",
+      "reproduction_output_sha256": "b5b13eb667c35f1f25d69bae49d6fb1da223c3e33446116446236cb0e11ed152",
+      "reproduction_output": "<project>/tmp/age-calendar-2026-11-10/reproduction/checkout/research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/strict-results.json"
+    },
+    {
+      "file": "independent-reference.json",
+      "status": "EXACT_MATCH",
+      "numeric_leaves_compared": 114636,
+      "all_scalar_leaves_compared": 121668,
+      "first_output_sha256": "4660e68638657dd109254a9afd5996b3d579a65cf158603929a6ca785603f1bd",
+      "reproduction_output_sha256": "e69e32fb60ec3d757bd7e6059358ead74f4b5a0e53d6ff1043e5333eb12d8675",
+      "reproduction_output": "<project>/tmp/age-calendar-2026-11-10/reproduction/checkout/research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/independent-reference.json"
+    },
+    {
+      "file": "reference-fixtures.json",
+      "status": "EXACT_MATCH",
+      "numeric_leaves_compared": 31,
+      "all_scalar_leaves_compared": 57,
+      "first_output_sha256": "f906977c27ee07779eb09899da2ad5df573031ff997d7916bc8876e37482c3fa",
+      "reproduction_output_sha256": "c3b216c04e617114f40fbd8347230b859a8ddbe23927e52a520a8024a27c66f4",
+      "reproduction_output": "<project>/tmp/age-calendar-2026-11-10/reproduction/checkout/research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/reference-fixtures.json"
+    },
+    {
+      "file": "primary-fixtures.json",
+      "status": "EXACT_MATCH",
+      "source": "original primary-code-pin.json fixtures object",
+      "numeric_leaves_compared": 1,
+      "all_scalar_leaves_compared": 30,
+      "reproduction_output_sha256": "3757924438119f8c8065ca99a0adf51b9a21e88b960a45136eadeb3df36adf2e"
+    }
+  ],
+  "metadata_exclusions": {
+    "results.json": [
+      "created_utc",
+      "runtime_seconds"
+    ],
+    "strict-results.json": [
+      "created_utc"
+    ],
+    "independent-reference.json": [
+      "created_utc",
+      "elapsed_seconds"
+    ],
+    "reference-fixtures.json": [
+      "created_utc",
+      "elapsed_seconds"
+    ]
+  },
+  "absolute_local_account_paths_in_public_metadata": false,
+  "original_hashes_after": {
+    "scripts/age_calendar_calibration.py": "6f5d8279ca762bbd0ac6b4614806edd898bdbcf5c46b7ea7ec1a475a4b88a261",
+    "scripts/age_lineage_models.py": "2e7f53d6175b8da9215706e2eaee81758dc058265ff5d3c42583875d21987a59",
+    "scripts/verify_age_calendar_calibration.py": "b8b404480cb4586fddf2d45d22a572ab001e7f0ad76c4fa309a29df8b1a7f626",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/protocol.json": "53d76bf43d0b1f47355d57d95ec6d7f43fce67541aed7631510a3cbff0b42919",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/theory.md": "81ed3527f55327728152a5306393ca9160cb5e780b77e79daf1b3edb18f7d99f",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/results.json": "4948c049860cbd686ed82fa036dba1bb4f383c525046c8e2154a585a9d36b67d",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/strict-results.json": "d060f646c1cac1fa2e7763035bd88c520f62f862d37047dd4fe06e43a72fe110",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/independent-reference.json": "4660e68638657dd109254a9afd5996b3d579a65cf158603929a6ca785603f1bd",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/reference-fixtures.json": "f906977c27ee07779eb09899da2ad5df573031ff997d7916bc8876e37482c3fa",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/primary-code-pin.json": "96904bbc19a9a0e0a06d47e1dbbacaca78d3b105bac6dfabaacdaf865f0c6874",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/independent-comparison.json": "c9c2664a769c19d4932f2014e66434808fb92105119bd68d066508539d115879"
+  },
+  "originals_unchanged": true,
+  "copied_inputs_unchanged": true,
+  "total_numeric_leaves_exactly_reproduced": 349971,
+  "cases_per_calculation": 20,
+  "calibration_settings_per_calculation": 5400,
+  "reproduction_environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.16.3"
+  },
+  "validation_meaning": "Every scientific value in primary, strict and reference payloads exactly reproduced, including their case arrays. Existing complete-field agreement therefore also holds for these identical values; the hard-pinned original comparator was not repointed or edited."
+}

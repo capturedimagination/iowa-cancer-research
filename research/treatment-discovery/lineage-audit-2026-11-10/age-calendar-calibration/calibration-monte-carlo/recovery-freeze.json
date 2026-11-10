@@ -1,0 +1,30 @@
+{
+  "created_utc": "2026-11-10T20:54:17.925910+00:00",
+  "status": "PINNED_BEFORE_RECONSTRUCTION_OR_COMPARISON",
+  "code_path": "scripts/recover_shared_calibration_report.py",
+  "code_sha256": "cf7393603841948b4dc5df06de85eda2a4695da2b5da46b39cce2179e2302495",
+  "protocol_sha256": "53d76bf43d0b1f47355d57d95ec6d7f43fce67541aed7631510a3cbff0b42919",
+  "python_version": "3.12.14",
+  "numpy_version": "2.3.5",
+  "scipy_version": "1.16.3",
+  "fixtures": {
+    "status": "PASS",
+    "count": 9,
+    "fixtures": [
+      "unchanged Bernstein formula",
+      "constant structural control",
+      "structural failure retained",
+      "method dictionaries survive independent reconstruction",
+      "ten batches cover exactly fifty thousand experiments",
+      "threshold uses original algebraic range despite tolerated reference roundoff",
+      "incomplete count rejected",
+      "metadata collision fixture keeps original untouched",
+      "immutable first output"
+    ],
+    "code_sha256": "cf7393603841948b4dc5df06de85eda2a4695da2b5da46b39cce2179e2302495",
+    "new_random_draws": 0,
+    "scientific_recovery_run": false
+  },
+  "authorization": "Awaiting reviewer signoff before evaluation",
+  "planning_knowledge": "Primary input schema and deterministic verification PASS known; tree completion counts known; original calibration final packaging failure known; no new comparison or recovered gate outcomes inspected."
+}

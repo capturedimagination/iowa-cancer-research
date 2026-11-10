@@ -1,0 +1,85 @@
+{
+  "status": "PASS",
+  "created_utc": "2026-11-10T20:43:08.062131+00:00",
+  "script": "scripts/verify_age_calendar_calibration.py",
+  "code_sha256": "b8b404480cb4586fddf2d45d22a572ab001e7f0ad76c4fa309a29df8b1a7f626",
+  "protocol": "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/protocol.json",
+  "protocol_sha256": "53d76bf43d0b1f47355d57d95ec6d7f43fce67541aed7631510a3cbff0b42919",
+  "theory_sha256": "81ed3527f55327728152a5306393ca9160cb5e780b77e79daf1b3edb18f7d99f",
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.16.3"
+  },
+  "numerical_settings": {
+    "rtol": 2e-13,
+    "atol": 2e-15,
+    "quadrature_epsabs": 2e-13,
+    "quadrature_epsrel": 2e-12,
+    "quadrature": "adaptive scipy quad_vec Gauss-Kronrod 21"
+  },
+  "primary_outputs_read": false,
+  "routes": [
+    "extinction/forward-spine ODEs",
+    "adaptive birth-bin quadrature",
+    "closed calibration moments",
+    "direct physical backward H/J fixtures",
+    "exact rational small count enumeration fixtures"
+  ],
+  "fixtures": [
+    {
+      "fixture": "direct_physical_backward",
+      "index": 0,
+      "configuration": {
+        "k": 3,
+        "means": [
+          0.7,
+          1.4
+        ],
+        "rho": 0.35,
+        "mu": 0.65,
+        "initialization": "uniform_stage",
+        "amplitude": 0.41,
+        "period": 2.7
+      },
+      "family_error": 1.1102230246251565e-16,
+      "Q_error": 9.992007221626409e-16,
+      "all_state_survival_error": 1.7430501486614958e-14,
+      "clock_quadrature_error": 8.881784197001252e-16,
+      "status": "PASS"
+    },
+    {
+      "fixture": "direct_physical_backward",
+      "index": 1,
+      "configuration": {
+        "k": 2,
+        "means": [
+          0.85
+        ],
+        "rho": 0.0,
+        "mu": 0.4,
+        "initialization": "newborn",
+        "amplitude": 0.33,
+        "period": 1.7
+      },
+      "family_error": 2.255973186038318e-13,
+      "Q_error": 3.0953017926549364e-13,
+      "all_state_survival_error": 2.255973186038318e-13,
+      "clock_quadrature_error": 2.220446049250313e-16,
+      "status": "PASS"
+    },
+    {
+      "fixture": "off_grid_exponential_closed_form",
+      "maximum_error": 6.816769371198461e-14,
+      "status": "PASS"
+    },
+    {
+      "fixture": "exact_rational_count_enumeration",
+      "settings_completed": 54,
+      "mean_variance_identities": 432,
+      "paired_covariance_identities": 54,
+      "status": "PASS"
+    }
+  ],
+  "elapsed_seconds": 0.11495912499958649
+}

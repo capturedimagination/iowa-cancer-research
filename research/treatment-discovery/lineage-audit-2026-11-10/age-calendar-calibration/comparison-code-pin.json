@@ -1,0 +1,39 @@
+{
+  "created_utc": "2026-11-10T20:47:18.730421+00:00",
+  "script": "scripts/compare_age_calendar_references.py",
+  "code_sha256": "07a866817af1696ddd96989769af00a2e46ff2433fd2e1bfb25251531962e1c1",
+  "status": "PINNED_BEFORE_COMPARISON",
+  "ignored_fields": {
+    "primary_and_strict": [
+      "Q[].complement_error",
+      "pairs[].joint_reconstruction_error",
+      "controls[] (production self-checks, not independent targets)",
+      "top-level execution metadata and primary/strict convergence diagnostics"
+    ],
+    "reference": [
+      "bins[].adaptive_quadrature_error_estimate",
+      "pairs[].adaptive_quadrature_error_estimate",
+      "partition_eligibility_errors (reference self-check)",
+      "top-level execution metadata"
+    ],
+    "reason": "These are explicitly named numerical diagnostics, not omitted scientific estimands. Every numeric leaf is still checked finite."
+  },
+  "tolerances": {
+    "probabilities_and_contrasts": 1e-08,
+    "calibration_mean_variance": 1e-10,
+    "declared_ranges": "exact equality",
+    "keys_configurations_and_schemas": "exact equality"
+  },
+  "review_status": "post-results, comparator pinned before evaluating numerical differences",
+  "interpretation": "Numerical agreement is not empirical validation, theorem priority, or statistical coverage.",
+  "input_hashes": {
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/protocol.json": "53d76bf43d0b1f47355d57d95ec6d7f43fce67541aed7631510a3cbff0b42919",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/results.json": "4948c049860cbd686ed82fa036dba1bb4f383c525046c8e2154a585a9d36b67d",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/strict-results.json": "d060f646c1cac1fa2e7763035bd88c520f62f862d37047dd4fe06e43a72fe110",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/independent-reference.json": "4660e68638657dd109254a9afd5996b3d579a65cf158603929a6ca785603f1bd",
+    "scripts/age_calendar_calibration.py": "6f5d8279ca762bbd0ac6b4614806edd898bdbcf5c46b7ea7ec1a475a4b88a261",
+    "scripts/verify_age_calendar_calibration.py": "b8b404480cb4586fddf2d45d22a572ab001e7f0ad76c4fa309a29df8b1a7f626",
+    "scripts/age_lineage_models.py": "2e7f53d6175b8da9215706e2eaee81758dc058265ff5d3c42583875d21987a59"
+  },
+  "elapsed_seconds": 0.008731291978619993
+}

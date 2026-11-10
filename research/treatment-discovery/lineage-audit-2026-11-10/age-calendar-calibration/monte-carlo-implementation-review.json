@@ -1,0 +1,68 @@
+{
+  "status": "STATIC_MATHEMATICAL_PASS_AFTER_PRE_RUN_BOUNDARY_AND_GATE_FIXES",
+  "created_utc": "2026-11-10T20:49:25.774588+00:00",
+  "reviewer": "novelty_audit",
+  "scope": "Source and hand-algebra review; fixture reports inspected but not rerun; no scientific-grid execution or output inspection",
+  "hashes": {
+    "scripts/simulate_age_calendar_trees.py": "b7cbfb48c223a0772f96eb06b6f65a0ed2a55fcb92db139116ab94737679599c",
+    "scripts/simulate_shared_calibration.py": "e32fa093559cba285e31c0cddd07779f54bccf1f2e740727d2ae0bc611bdaeb2",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/protocol.json": "53d76bf43d0b1f47355d57d95ec6d7f43fce67541aed7631510a3cbff0b42919",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/theory.md": "81ed3527f55327728152a5306393ca9160cb5e780b77e79daf1b3edb18f7d99f",
+    "tmp/age-calendar-2026-11-10/tree-fixtures-v1.json": "d5dbe5a2293420ac78c0aabece08256c5d2f513dd463e1baa23bfc186b958303",
+    "tmp/age-calendar-2026-11-10/tree-fixtures-v2.json": "0b0db18557087ec31ebb7fed18a8b784ae7c846d200b39ac08bf50f9ee2ed544",
+    "tmp/age-calendar-2026-11-10/calibration-fixtures-v1.json": "a59f47395e8c920f95505a9271c63d87616e9db3f6a836423c5f3bebe29ea3f5",
+    "tmp/age-calendar-2026-11-10/calibration-fixtures-v2.json": "af4e24ecf4f23df6ab4f02edd86411d6e7aef831fa4212089cf0ee2b40c40b3e"
+  },
+  "initial_tree_code_sha256": "4dcf6071195b02d6ba7c68bf283c0ff41bdab3e44d56ddadfb4828c1d2ca43e2",
+  "reviewed_tree_code_sha256": "b7cbfb48c223a0772f96eb06b6f65a0ed2a55fcb92db139116ab94737679599c",
+  "initial_calibration_code_sha256": "5d5287b755f253252c9cb476ff9bc1ab51ae6eae28b56ff816adf83a97c106b2",
+  "reviewed_calibration_code_sha256": "e32fa093559cba285e31c0cddd07779f54bccf1f2e740727d2ae0bc611bdaeb2",
+  "protocol_sha256": "53d76bf43d0b1f47355d57d95ec6d7f43fce67541aed7631510a3cbff0b42919",
+  "fixture_counts_inspected": {
+    "tree_initial": 29,
+    "tree_corrected": 30,
+    "calibration_initial": 20,
+    "calibration_hardened": 27
+  },
+  "new_scientific_outcomes_computed": false,
+  "new_scientific_results_read": false,
+  "core_or_protocol_edits_by_reviewer": false,
+  "blocking_findings_remaining": [],
+  "resolved_pre_run": [
+    {
+      "finding": "Nonlinear inverse rounded exact dyadic birth below the true boundary, shifting equal-lag death classification",
+      "counterexample": "b=.5,s=.5,period4,daughter death at R(1)",
+      "resolution": "Exact midpoint equality now collapses inverse bracket; deterministic fixture verifies daughters excluded at their death query."
+    },
+    {
+      "finding": "Calibration runner accepted any nonempty independent-verification JSON",
+      "resolution": "Known report schema must show PASS,20cases,no failures,full field count,frozen protocol hash and supplied primary reference byte hash before draws."
+    }
+  ],
+  "passed_contracts": [
+    "Initial residual Erlang stage timers and independent death clocks",
+    "Common clock applies to both hazards",
+    "Conditionally independent daughter K draws with fixed RNG order",
+    "First-founder division eligibility before death without future success selection",
+    "Physical lag queried via R(b+s)",
+    "Original operational-time bin boundaries",
+    "No imputation of missing first births",
+    "Chronological2^-generation mass and subtree side propagation",
+    "Undefined denominators explicit",
+    "Four-category score formulas and both discordant orientations",
+    "One shared calibration fit per independent whole experiment",
+    "720 protocol seed tuples and5000-experiment batching",
+    "5760 Bonferroni two-sided Bernstein diagnostics",
+    "Squared-deviation variance bound L^2 Var(Y)",
+    "Exclusive file creation and provenance/environment resume checks",
+    "Independent evidence schema/protocol/reference-byte-hash gate"
+  ],
+  "operational_conditions": [
+    "Static gate review does not certify the later supplied numerical verification outcome.",
+    "Numerical projection/slack does not certify integration-error coverage.",
+    "Inspect complete/incomplete counts; process0 alone does not establish completion.",
+    "Completed checkpoints survive interruption; custom KeyboardInterrupt diagnostic is not guaranteed.",
+    "Review/redact local account paths if unexpected raw failure tracebacks enter public aggregate."
+  ],
+  "review_markdown_sha256": "60f93e1461c6cbee7d05f6c9a005c3db0ead348e578100c91f23459c0cf4ec24"
+}

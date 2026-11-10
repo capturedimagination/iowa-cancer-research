@@ -1,0 +1,55 @@
+{
+  "scope": "Schema/timing consistency only; original records unchanged",
+  "issues": [
+    {
+      "file": "kuchen-control.xlsx",
+      "sheet": "rep2",
+      "cell": "G548",
+      "id": "1019095",
+      "field": "loss",
+      "original_numeric_text": "-96.533333333333303",
+      "birth_original_numeric_text": "122",
+      "issue": "negative_duration"
+    },
+    {
+      "file": "kuchen-control.xlsx",
+      "sheet": "rep2",
+      "cell": "G647",
+      "id": "1021029",
+      "field": "loss",
+      "original_numeric_text": "-13.0666666666667",
+      "birth_original_numeric_text": "51.3333333333333",
+      "issue": "negative_duration"
+    },
+    {
+      "file": "kuchen-control.xlsx",
+      "sheet": "rep3",
+      "cell": "E170",
+      "id": "1018054",
+      "field": "division",
+      "original_numeric_text": "17.2",
+      "birth_original_numeric_text": "90.9",
+      "issue": "division_no_successor_pair_row"
+    },
+    {
+      "file": "kuchen-perturbation.xlsx",
+      "sheet": "-myc1",
+      "cell": "D423",
+      "id": "201202",
+      "field": "loss",
+      "original_numeric_text": "-16.3333333333333",
+      "birth_original_numeric_text": "58.5",
+      "issue": "negative_duration"
+    },
+    {
+      "file": "kuchen-perturbation.xlsx",
+      "sheet": "-myc2",
+      "cell": "G218",
+      "id": "10120143",
+      "field": "loss",
+      "original_numeric_text": "-32.4",
+      "birth_original_numeric_text": "95.6",
+      "issue": "negative_duration"
+    }
+  ]
+}

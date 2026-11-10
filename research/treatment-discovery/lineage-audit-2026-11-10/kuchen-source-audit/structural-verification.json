@@ -1,0 +1,183 @@
+{
+  "status": "STRUCTURAL_ONLY_NOT_ANALYSIS_READY",
+  "scope": "No Q, covariance, survival/hazard estimate, association, or model fit.",
+  "script_sha256": "22a9b6d1b504a6483d529f3e175ce179f5ab245823fb925f9f6ce5a73fb28c67",
+  "input_sha256": {
+    "kuchen-control.xlsx": "8ecdd5c66a466b71b5ee4790c79c2b9ce38fd1ec6daf59f88347d67e4fa1b86e",
+    "kuchen-perturbation.xlsx": "0065797f9d1cb12dc695bf9baa516f68afea1d6c6077b75c2a9830389806a6f3",
+    "kuchen-schema.json": "c0b676bd16c3a1eeac12dadf061498e7f7830fdfeded69f6d7d042396768f3db"
+  },
+  "records": [
+    {
+      "file": "kuchen-control.xlsx",
+      "sheet": "rep1",
+      "pair_rows": 923,
+      "unique_children": 1846,
+      "lineage_id_count": 16,
+      "duplicate_mother_rows": 0,
+      "field_counts": {
+        "finite_fate_fields_1": 1846,
+        "death": 31,
+        "division": 907,
+        "loss": 908
+      },
+      "issues": [],
+      "largest_parent_time_residual_hours": 6.963318810448982e-13,
+      "generation_min": 2,
+      "generation_max": 10,
+      "largest_recorded_birth_plus_duration": 140.50000000000034
+    },
+    {
+      "file": "kuchen-control.xlsx",
+      "sheet": "rep2",
+      "pair_rows": 808,
+      "unique_children": 1616,
+      "lineage_id_count": 17,
+      "duplicate_mother_rows": 0,
+      "field_counts": {
+        "finite_fate_fields_1": 1616,
+        "division": 791,
+        "loss": 761,
+        "death": 64
+      },
+      "issues": [
+        {
+          "kind": "negative_duration",
+          "cell": "G548",
+          "id": "1019095",
+          "field": "loss",
+          "source_value": "-96.533333333333303"
+        },
+        {
+          "kind": "negative_duration",
+          "cell": "G647",
+          "id": "1021029",
+          "field": "loss",
+          "source_value": "-13.0666666666667"
+        }
+      ],
+      "largest_parent_time_residual_hours": 7.176481631177012e-13,
+      "generation_min": 2,
+      "generation_max": 11,
+      "largest_recorded_birth_plus_duration": 141.466666666667
+    },
+    {
+      "file": "kuchen-control.xlsx",
+      "sheet": "rep3",
+      "pair_rows": 871,
+      "unique_children": 1742,
+      "lineage_id_count": 35,
+      "duplicate_mother_rows": 0,
+      "field_counts": {
+        "finite_fate_fields_1": 1742,
+        "division": 837,
+        "loss": 831,
+        "death": 74
+      },
+      "issues": [
+        {
+          "kind": "division_without_successor_pair",
+          "id": "1018054"
+        }
+      ],
+      "largest_parent_time_residual_hours": 1.0658141036401503e-14,
+      "generation_min": 2,
+      "generation_max": 9,
+      "largest_recorded_birth_plus_duration": 120.30000000000001
+    },
+    {
+      "file": "kuchen-perturbation.xlsx",
+      "sheet": "-myc1",
+      "pair_rows": 492,
+      "unique_children": 984,
+      "lineage_id_count": 40,
+      "duplicate_mother_rows": 0,
+      "field_counts": {
+        "finite_fate_fields_1": 984,
+        "division": 452,
+        "loss": 521,
+        "death": 11
+      },
+      "issues": [
+        {
+          "kind": "negative_duration",
+          "cell": "D423",
+          "id": "201202",
+          "field": "loss",
+          "source_value": "-16.3333333333333"
+        }
+      ],
+      "largest_parent_time_residual_hours": 6.963318810448982e-13,
+      "generation_min": 2,
+      "generation_max": 9,
+      "largest_recorded_birth_plus_duration": 166.666666666667
+    },
+    {
+      "file": "kuchen-perturbation.xlsx",
+      "sheet": "-myc2",
+      "pair_rows": 600,
+      "unique_children": 1200,
+      "lineage_id_count": 28,
+      "duplicate_mother_rows": 0,
+      "field_counts": {
+        "finite_fate_fields_1": 1200,
+        "division": 572,
+        "loss": 622,
+        "death": 6
+      },
+      "issues": [
+        {
+          "kind": "negative_duration",
+          "cell": "G218",
+          "id": "10120143",
+          "field": "loss",
+          "source_value": "-32.4"
+        }
+      ],
+      "largest_parent_time_residual_hours": 7.105427357601002e-13,
+      "generation_min": 2,
+      "generation_max": 8,
+      "largest_recorded_birth_plus_duration": 141.466666666667
+    },
+    {
+      "file": "kuchen-perturbation.xlsx",
+      "sheet": "rap1",
+      "pair_rows": 482,
+      "unique_children": 964,
+      "lineage_id_count": 19,
+      "duplicate_mother_rows": 0,
+      "field_counts": {
+        "finite_fate_fields_1": 964,
+        "division": 463,
+        "loss": 498,
+        "death": 3
+      },
+      "issues": [],
+      "largest_parent_time_residual_hours": 1.0658141036401503e-14,
+      "generation_min": 2,
+      "generation_max": 7,
+      "largest_recorded_birth_plus_duration": 115.0
+    },
+    {
+      "file": "kuchen-perturbation.xlsx",
+      "sheet": "rap2",
+      "pair_rows": 502,
+      "unique_children": 1004,
+      "lineage_id_count": 16,
+      "duplicate_mother_rows": 0,
+      "field_counts": {
+        "finite_fate_fields_1": 1004,
+        "division": 486,
+        "loss": 517,
+        "death": 1
+      },
+      "issues": [],
+      "largest_parent_time_residual_hours": 1.0658141036401503e-14,
+      "generation_min": 2,
+      "generation_max": 8,
+      "largest_recorded_birth_plus_duration": 117.0
+    }
+  ],
+  "source_preservation": "Read-only ZIP/XML parsing; source hashes are verified before and after.",
+  "parser_origin": "Portable version of the initial independently written structural parser; identical inspection logic."
+}

@@ -1,0 +1,53 @@
+{
+  "status": "PASS",
+  "created_utc": "2026-11-10T20:57:03.279988+00:00",
+  "scope": "Deterministic claims in main README, full-grid interpretation and figure data/labels. Monte Carlo totals and external source claims are outside this review.",
+  "reviewed_hashes": {
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/README.md": "e29c33e6781694471a2809b9d53d152a04e2f07e6ed3aaa322cba25b1a0127f1",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/deterministic-interpretation.md": "fb80100fae7b820e65c9a0644792c5651b90419db5a05c8177f74ff6dd63ded3",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/deterministic-interpretation.json": "e5b4d4408b4efc9b3bda2798c867d95d6008029a2f422e5406ba34d7678c92bc",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/figure-provenance.json": "66f8e2ddb4920622769907026d862d534930cb7d6e47e25adff7657e309b4c63",
+    "scripts/plot_age_calendar_calibration.py": "243502cc23cfe20e6e9649294548dda5c3b60be9efba0a1f17b84b354605e08f",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/age-context-grid.svg": "ceb570fd064a71a24e2302987623f5caf8b8d6ca9bb0e1739e25e115f77befc4",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/age-context-grid.png": "85194c995c5b084a410250ca40086bb86f6e3d846fa902e65738f2fe1b053cc2",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/calibration-variance.svg": "bb237aa87ac682a5243ed751adbb3b088f0f98cc2f6128b195b60298a03f1242",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/calibration-variance.png": "5e315b529101d2af889b00dc5dd488e3570b6651b1509077cc4e43afc1b08c5b"
+  },
+  "scientific_checks": {
+    "all_240_contrasts_displayed": true,
+    "contrast_sign": "Q_later-Q_earlier at common t",
+    "all_60_pooled_and_conditional_pair_profiles_displayed": true,
+    "common_covariance_color_scale": true,
+    "six_variance_ratio_summaries_match_independent_aggregation_exactly": true,
+    "settings_per_m_n": {
+      "positive_variance": 810,
+      "zero_variance": 90
+    },
+    "total_calibration_settings": 5400,
+    "undefined_zero_variance_ratios": 540,
+    "context_ratio_profiles": 38,
+    "undefined_near_zero_context_profiles": 22,
+    "plot_zero_tolerance": 1e-12,
+    "interpretation_zero_tolerance": 1e-08,
+    "both_tolerances_select_identical_38_context_profiles": true,
+    "all_context_ratio_sequences_match_aggregation_exactly": true,
+    "main_README_deterministic_numbers_match_aggregation": true
+  },
+  "visual_checks": [
+    "Both PNGs inspected; SVG output hashes and plotting data verified.",
+    "Labels, legends, captions and color scales readable with no observed clipping or overlap.",
+    "Updated title says Calibration uncertainty. Caption explicitly retains 38 of 60 context profiles and 22 undefined ratios.",
+    "Error bars are identified as full-grid ranges, not confidence intervals.",
+    "Caption states calibration adds m observations and comparison is not cost-matched."
+  ],
+  "interpretation_checks": [
+    "All models are hypothetical and both clocks share the multiplier.",
+    "Sign separation is not called a universal inheritance classifier; earlier negative independent-mixture contrasts are acknowledged.",
+    "Constant-clock transmitted-type birth-composition variation is acknowledged.",
+    "Fine bins are not exact conditioning; hidden family environments remain alternatives.",
+    "Calibration correction averages over training and test samples and is not presented as a general regression correction.",
+    "No mechanism, clinical efficacy, novelty or empirical validation is claimed."
+  ],
+  "findings": [],
+  "note": "Review applies to the explicitly hashed versions. Subsequent navigation-only edits need not change scientific findings but change the document hash."
+}

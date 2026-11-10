@@ -1,0 +1,483 @@
+{
+  "status": "PASS",
+  "scope": "Descriptive extraction verification, not a new scientific test.",
+  "script_sha256": "01284586c19629e467afa3baf3f59d15d851d2c2bd277604c1c16ee5bf8e07c1",
+  "aggregation_sha256": "e5b4d4408b4efc9b3bda2798c867d95d6008029a2f422e5406ba34d7678c92bc",
+  "source_hashes": {
+    "results.json": "4948c049860cbd686ed82fa036dba1bb4f383c525046c8e2154a585a9d36b67d",
+    "strict-results.json": "d060f646c1cac1fa2e7763035bd88c520f62f862d37047dd4fe06e43a72fe110",
+    "independent-reference.json": "4660e68638657dd109254a9afd5996b3d579a65cf158603929a6ca785603f1bd"
+  },
+  "source_summaries": {
+    "results.json": {
+      "cases": 20,
+      "contrast_sign_counts": {
+        "within_numeric_tolerance": 60,
+        "positive": 108,
+        "negative": 72
+      },
+      "contrast_span": {
+        "n": 240,
+        "minimum": -0.049626821500011964,
+        "median": 0.0,
+        "maximum": 0.04243740767633086
+      },
+      "context_reduction": {
+        "n": 38,
+        "minimum": 0.8097492165666433,
+        "median": 0.9224907946454578,
+        "maximum": 0.9708231274607337
+      },
+      "corrected_variance_ratio": {
+        "n": 4860,
+        "minimum": 1.028061286523132,
+        "median": 3.7554849682916993,
+        "maximum": 101.57485230533419
+      },
+      "naive_bias": {
+        "n": 4860,
+        "minimum": 0.0013358393954413053,
+        "median": 0.0117582423776857,
+        "maximum": 0.05000000000000004
+      },
+      "floor_fraction": {
+        "n": 4860,
+        "minimum": 0.017767504567319417,
+        "median": 0.5688754510881935,
+        "maximum": 0.9861932938856024
+      },
+      "variance_ordering": {
+        "greater_by_tolerance": 4860
+      },
+      "zero_death_settings": 540,
+      "nested_ordering_failures": [],
+      "aliases": [
+        {
+          "case_id": "A02",
+          "lag": 2.0,
+          "absolute_covariance": 1.2234501592376012e-33
+        },
+        {
+          "case_id": "A05",
+          "lag": 2.0,
+          "absolute_covariance": 1.4305672010429862e-33
+        },
+        {
+          "case_id": "A08",
+          "lag": 2.0,
+          "absolute_covariance": 4.5183381988205065e-33
+        },
+        {
+          "case_id": "A11",
+          "lag": 2.0,
+          "absolute_covariance": 8.523855272734436e-33
+        }
+      ]
+    },
+    "strict-results.json": {
+      "cases": 20,
+      "contrast_sign_counts": {
+        "within_numeric_tolerance": 60,
+        "positive": 108,
+        "negative": 72
+      },
+      "contrast_span": {
+        "n": 240,
+        "minimum": -0.04962682145614006,
+        "median": 8.004708007547379e-14,
+        "maximum": 0.04243740767651216
+      },
+      "context_reduction": {
+        "n": 38,
+        "minimum": 0.8097492166573398,
+        "median": 0.9224907946526459,
+        "maximum": 0.9708231274607338
+      },
+      "corrected_variance_ratio": {
+        "n": 4860,
+        "minimum": 1.0280612865232368,
+        "median": 3.755484968307541,
+        "maximum": 101.57485230532842
+      },
+      "naive_bias": {
+        "n": 4860,
+        "minimum": 0.0013358393954466287,
+        "median": 0.011758242377479817,
+        "maximum": 0.05000000000000002
+      },
+      "floor_fraction": {
+        "n": 4860,
+        "minimum": 0.017767504567433555,
+        "median": 0.5688754510881566,
+        "maximum": 0.9861932938856022
+      },
+      "variance_ordering": {
+        "greater_by_tolerance": 4860
+      },
+      "zero_death_settings": 540,
+      "nested_ordering_failures": [],
+      "aliases": [
+        {
+          "case_id": "A02",
+          "lag": 2.0,
+          "absolute_covariance": 1.4304849268965963e-33
+        },
+        {
+          "case_id": "A05",
+          "lag": 2.0,
+          "absolute_covariance": 1.9921708879630747e-33
+        },
+        {
+          "case_id": "A08",
+          "lag": 2.0,
+          "absolute_covariance": 5.878358559838345e-33
+        },
+        {
+          "case_id": "A11",
+          "lag": 2.0,
+          "absolute_covariance": 2.9245196581800612e-33
+        }
+      ]
+    },
+    "independent-reference.json": {
+      "cases": 20,
+      "contrast_sign_counts": {
+        "within_numeric_tolerance": 60,
+        "positive": 108,
+        "negative": 72
+      },
+      "contrast_span": {
+        "n": 240,
+        "minimum": -0.049626821455830195,
+        "median": 1.0821898932533713e-13,
+        "maximum": 0.042437407676422345
+      },
+      "context_reduction": {
+        "n": 38,
+        "minimum": 0.8097492166574212,
+        "median": 0.9224907946526628,
+        "maximum": 0.9708231274618963
+      },
+      "corrected_variance_ratio": {
+        "n": 4860,
+        "minimum": 1.0280612865232368,
+        "median": 3.7554849683075293,
+        "maximum": 101.57485230532849
+      },
+      "naive_bias": {
+        "n": 4860,
+        "minimum": 0.0013358393954468987,
+        "median": 0.011758242377480015,
+        "maximum": 0.05
+      },
+      "floor_fraction": {
+        "n": 4860,
+        "minimum": 0.01776750456743346,
+        "median": 0.5688754510881571,
+        "maximum": 0.9861932938856016
+      },
+      "variance_ordering": {
+        "greater_by_tolerance": 4860
+      },
+      "zero_death_settings": 540,
+      "nested_ordering_failures": [],
+      "aliases": [
+        {
+          "case_id": "A02",
+          "lag": 2.0,
+          "absolute_covariance": 5.551115123125783e-17
+        },
+        {
+          "case_id": "A05",
+          "lag": 2.0,
+          "absolute_covariance": 1.3877787807814457e-17
+        },
+        {
+          "case_id": "A08",
+          "lag": 2.0,
+          "absolute_covariance": 2.7755575615628914e-17
+        },
+        {
+          "case_id": "A11",
+          "lag": 2.0,
+          "absolute_covariance": 1.3877787807814457e-17
+        }
+      ]
+    }
+  },
+  "aggregate_extrema_counts_and_medians_exactly_reproduced": true,
+  "all_240_sign_classifications_identical_across_calculations": true,
+  "all_4860_variance_orderings_identical_across_calculations": true,
+  "summary_differences": [
+    {
+      "input": "results.json",
+      "metric": "contrast_span",
+      "statistic": "minimum",
+      "difference_from_primary": 0.0
+    },
+    {
+      "input": "results.json",
+      "metric": "contrast_span",
+      "statistic": "median",
+      "difference_from_primary": 0.0
+    },
+    {
+      "input": "results.json",
+      "metric": "contrast_span",
+      "statistic": "maximum",
+      "difference_from_primary": 0.0
+    },
+    {
+      "input": "results.json",
+      "metric": "context_reduction",
+      "statistic": "minimum",
+      "difference_from_primary": 0.0
+    },
+    {
+      "input": "results.json",
+      "metric": "context_reduction",
+      "statistic": "median",
+      "difference_from_primary": 0.0
+    },
+    {
+      "input": "results.json",
+      "metric": "context_reduction",
+      "statistic": "maximum",
+      "difference_from_primary": 0.0
+    },
+    {
+      "input": "results.json",
+      "metric": "corrected_variance_ratio",
+      "statistic": "minimum",
+      "difference_from_primary": 0.0
+    },
+    {
+      "input": "results.json",
+      "metric": "corrected_variance_ratio",
+      "statistic": "median",
+      "difference_from_primary": 0.0
+    },
+    {
+      "input": "results.json",
+      "metric": "corrected_variance_ratio",
+      "statistic": "maximum",
+      "difference_from_primary": 0.0
+    },
+    {
+      "input": "results.json",
+      "metric": "naive_bias",
+      "statistic": "minimum",
+      "difference_from_primary": 0.0
+    },
+    {
+      "input": "results.json",
+      "metric": "naive_bias",
+      "statistic": "median",
+      "difference_from_primary": 0.0
+    },
+    {
+      "input": "results.json",
+      "metric": "naive_bias",
+      "statistic": "maximum",
+      "difference_from_primary": 0.0
+    },
+    {
+      "input": "results.json",
+      "metric": "floor_fraction",
+      "statistic": "minimum",
+      "difference_from_primary": 0.0
+    },
+    {
+      "input": "results.json",
+      "metric": "floor_fraction",
+      "statistic": "median",
+      "difference_from_primary": 0.0
+    },
+    {
+      "input": "results.json",
+      "metric": "floor_fraction",
+      "statistic": "maximum",
+      "difference_from_primary": 0.0
+    },
+    {
+      "input": "strict-results.json",
+      "metric": "contrast_span",
+      "statistic": "minimum",
+      "difference_from_primary": 4.3871906107995073e-11
+    },
+    {
+      "input": "strict-results.json",
+      "metric": "contrast_span",
+      "statistic": "median",
+      "difference_from_primary": 8.004708007547379e-14
+    },
+    {
+      "input": "strict-results.json",
+      "metric": "contrast_span",
+      "statistic": "maximum",
+      "difference_from_primary": 1.8129941992128806e-13
+    },
+    {
+      "input": "strict-results.json",
+      "metric": "context_reduction",
+      "statistic": "minimum",
+      "difference_from_primary": 9.069645034998075e-11
+    },
+    {
+      "input": "strict-results.json",
+      "metric": "context_reduction",
+      "statistic": "median",
+      "difference_from_primary": 7.188138972935576e-12
+    },
+    {
+      "input": "strict-results.json",
+      "metric": "context_reduction",
+      "statistic": "maximum",
+      "difference_from_primary": 1.1102230246251565e-16
+    },
+    {
+      "input": "strict-results.json",
+      "metric": "corrected_variance_ratio",
+      "statistic": "minimum",
+      "difference_from_primary": 1.0480505352461478e-13
+    },
+    {
+      "input": "strict-results.json",
+      "metric": "corrected_variance_ratio",
+      "statistic": "median",
+      "difference_from_primary": 1.5841550293771434e-11
+    },
+    {
+      "input": "strict-results.json",
+      "metric": "corrected_variance_ratio",
+      "statistic": "maximum",
+      "difference_from_primary": -5.7696070143720135e-12
+    },
+    {
+      "input": "strict-results.json",
+      "metric": "naive_bias",
+      "statistic": "minimum",
+      "difference_from_primary": 5.323432666903827e-15
+    },
+    {
+      "input": "strict-results.json",
+      "metric": "naive_bias",
+      "statistic": "median",
+      "difference_from_primary": -2.0588392102283137e-13
+    },
+    {
+      "input": "strict-results.json",
+      "metric": "naive_bias",
+      "statistic": "maximum",
+      "difference_from_primary": -2.0816681711721685e-17
+    },
+    {
+      "input": "strict-results.json",
+      "metric": "floor_fraction",
+      "statistic": "minimum",
+      "difference_from_primary": 1.1413786582537e-13
+    },
+    {
+      "input": "strict-results.json",
+      "metric": "floor_fraction",
+      "statistic": "median",
+      "difference_from_primary": -3.68594044175552e-14
+    },
+    {
+      "input": "strict-results.json",
+      "metric": "floor_fraction",
+      "statistic": "maximum",
+      "difference_from_primary": -2.220446049250313e-16
+    },
+    {
+      "input": "independent-reference.json",
+      "metric": "contrast_span",
+      "statistic": "minimum",
+      "difference_from_primary": 4.4181769354167955e-11
+    },
+    {
+      "input": "independent-reference.json",
+      "metric": "contrast_span",
+      "statistic": "median",
+      "difference_from_primary": 1.0821898932533713e-13
+    },
+    {
+      "input": "independent-reference.json",
+      "metric": "contrast_span",
+      "statistic": "maximum",
+      "difference_from_primary": 9.14823772291129e-14
+    },
+    {
+      "input": "independent-reference.json",
+      "metric": "context_reduction",
+      "statistic": "minimum",
+      "difference_from_primary": 9.077782969768577e-11
+    },
+    {
+      "input": "independent-reference.json",
+      "metric": "context_reduction",
+      "statistic": "median",
+      "difference_from_primary": 7.205014362909878e-12
+    },
+    {
+      "input": "independent-reference.json",
+      "metric": "context_reduction",
+      "statistic": "maximum",
+      "difference_from_primary": 1.1625145290850014e-12
+    },
+    {
+      "input": "independent-reference.json",
+      "metric": "corrected_variance_ratio",
+      "statistic": "minimum",
+      "difference_from_primary": 1.0480505352461478e-13
+    },
+    {
+      "input": "independent-reference.json",
+      "metric": "corrected_variance_ratio",
+      "statistic": "median",
+      "difference_from_primary": 1.5830003974315332e-11
+    },
+    {
+      "input": "independent-reference.json",
+      "metric": "corrected_variance_ratio",
+      "statistic": "maximum",
+      "difference_from_primary": -5.6985527407960035e-12
+    },
+    {
+      "input": "independent-reference.json",
+      "metric": "naive_bias",
+      "statistic": "minimum",
+      "difference_from_primary": 5.593399007852717e-15
+    },
+    {
+      "input": "independent-reference.json",
+      "metric": "naive_bias",
+      "statistic": "median",
+      "difference_from_primary": -2.0568616254657002e-13
+    },
+    {
+      "input": "independent-reference.json",
+      "metric": "naive_bias",
+      "statistic": "maximum",
+      "difference_from_primary": -3.469446951953614e-17
+    },
+    {
+      "input": "independent-reference.json",
+      "metric": "floor_fraction",
+      "statistic": "minimum",
+      "difference_from_primary": 1.1404419075766725e-13
+    },
+    {
+      "input": "independent-reference.json",
+      "metric": "floor_fraction",
+      "statistic": "median",
+      "difference_from_primary": -3.6415315207705135e-14
+    },
+    {
+      "input": "independent-reference.json",
+      "metric": "floor_fraction",
+      "statistic": "maximum",
+      "difference_from_primary": -7.771561172376096e-16
+    }
+  ]
+}

@@ -29,6 +29,8 @@ For non-exponential cell cycles, founder age, transmitted timer types or sister-
 
 ## What is actually saved
 
+The [combined age/context/calibration study](../research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/README.md) adds 20 models, 200,000 simulated families and a finite-sample calibration audit. Reusing one estimated baseline creates shared uncertainty; finer birth bins retain within-bin context variation. The [Kuchen source audit](../research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/README.md) records an acquired experimental candidate with 4,678 sister-pair rows, explicit anomalies and unresolved sampling rules. Catalog entries distinguish this acquisition from request-only Korsnes data and ALFI metadata without its full archive.
+
 | Material | Coverage | Important boundary |
 |---|---|---|
 | Cancer surveillance | All 99 Iowa counties, state comparisons, selected sites and demographic groups | Incidence 2019–2023 and mortality 2020–2024 are different windows. Rounded average annual counts are not exact period counts. |

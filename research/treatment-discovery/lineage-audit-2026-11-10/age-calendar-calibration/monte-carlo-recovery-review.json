@@ -1,0 +1,156 @@
+{
+  "status": "STATIC_REVIEW_CLEAR_WITH_EXPLICIT_PREVIOUS_REVIEW_MISS",
+  "created_utc": "2026-11-10T20:58:05.007991+00:00",
+  "review_scope": "No-RNG recovery, pre-evaluation tree-comparator source review, v2 metadata-only correction, and post-recovery aggregate accounting. No stochastic draws or empirical outcomes produced by this reviewer.",
+  "input_hashes": {
+    "scripts/simulate_shared_calibration_v1.py": "e32fa093559cba285e31c0cddd07779f54bccf1f2e740727d2ae0bc611bdaeb2",
+    "scripts/simulate_shared_calibration.py": "b996075a2080f4a308e055d3aedc2f55d2ae2ceef038ab9a8068c2bcdb634cda",
+    "scripts/recover_shared_calibration_report.py": "cf7393603841948b4dc5df06de85eda2a4695da2b5da46b39cce2179e2302495",
+    "scripts/compare_age_calendar_trees.py": "247cbf335d7bedde9ec17770a691112ea000a5b41206415d270b123d53ca93e1",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/protocol.json": "53d76bf43d0b1f47355d57d95ec6d7f43fce67541aed7631510a3cbff0b42919",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/monte-carlo-implementation-review.md": "60f93e1461c6cbee7d05f6c9a005c3db0ead348e578100c91f23459c0cf4ec24",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/monte-carlo-implementation-review.json": "be2e6bd4f12c971d58827b540dcd4fe87f495c8b6ef8613f176b70e63603e228",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/calibration-monte-carlo/recovery-freeze.json": "50f677aa39645ce39409d13cbc0e8bb170508ab177ad604b72c2df4a3febd47c",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/calibration-monte-carlo/recovery-ledger.json": "9cc3a266e239f085e6e2c396594c0da38426aa8dd3843238e75908a21ed43d4f",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/calibration-monte-carlo/results.json": "b0ed5d00f310a247054badc60d8449229342b6a81b415a933f57478d13151aba",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/calibration-monte-carlo/clean-v2-freeze.json": "2a773853d76330da31f7ee77a55aff0bf1222c0834b13ca0568de54c33957000",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/tree-monte-carlo/comparison-freeze-v2.json": "6f9b66e70c880a9d3a8c7a9e147cd9bb0880dbf82c73bbd7d17f6ea17eadaa9d",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/README.md": "c56303cd721fde96cd8e27909633c2a0eb874427388ee42211fecc8349381238",
+    "tmp/age-calendar-2026-11-10/recovery-fixtures-v3.json": "47babc0e2a6b3cab9db38958508d7ef261b37303bf06ff09ba22be66738f1eb3",
+    "tmp/age-calendar-2026-11-10/tree-comparison-fixtures-v2.json": "eb109b773539afaca0f5120e072d98d5a5c97c387a81b2e4d35d4be4ced70882",
+    "scripts/check_age_calendar_reproduction_v1.py": "0abcf45932067a15d9bc4c2c0fe2232af5684ba92a0decc712f3f6548d5a0f6e",
+    "scripts/check_age_calendar_reproduction.py": "a371a81d9d1f1a92877ca4fc44bdd91d91d84c74096f9e70504e28a533198f28",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/monte-carlo-reproduction.json": "bf4a3a070eaa6a812ea395cd16e91536fd200c8b5442eb192c8ce6026212b3d9",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/monte-carlo-reproduction-supplement.json": "1160eff8daccd23be1c4327761643888fd9f5d03556184726c81d126297ec0fa",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/monte-carlo-reproduction-supplement-freeze.json": "08677ed0a1376f93101833687d83c5285d446859cc10d4fde051aa8cd460771e",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/monte-carlo-reproduction.md": "029390ecb225d05e0fa841f0cb56316de28845cb54af4ef826d52297a6ac84b5",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/tree-monte-carlo/comparison.json": "120bc768c4528be410889723c8c08f0699c0153a39ee73330471c80371a0a66d"
+  },
+  "previous_review_miss": {
+    "original_exit_code": 1,
+    "defect": "Run-signature methods list overwrote each setting methods dictionary; final report summary then raised AttributeError.",
+    "original_review_files_unchanged": true,
+    "initial_review_did_not_catch_defect": true
+  },
+  "recovery_review": {
+    "cleared_before_recovery_execution": true,
+    "code_hash": "cf7393603841948b4dc5df06de85eda2a4695da2b5da46b39cce2179e2302495",
+    "imports_rng_or_original_simulator": false,
+    "checks": [
+      "Original protocol and simulator hashes",
+      "720 ordered setting designs and seed tuples",
+      "7200 batch hashes against original aggregate manifests",
+      "Coverage of 10 disjoint 5000-experiment batches per setting",
+      "Recorded PCG64 state continuity",
+      "Unchanged sufficient moments and original operation ordering",
+      "Original algebraic ranges, 5760 checks, alpha 0.001 and slack 1e-8",
+      "Only corrupted methods field reconstructed; other original setting fields preserved",
+      "Distinct fresh output and ledger paths"
+    ],
+    "pre_execution_fixes": [
+      "Use original formula-derived score ranges, not tolerated-roundoff saved reference ranges",
+      "Reject colliding or existing output and ledger paths before reconstruction"
+    ],
+    "recorded_fixture_count": 9,
+    "observed_ledger_summary": {
+      "status": "RECOVERED_WITHOUT_REDRAWS",
+      "settings": 720,
+      "batches": 7200,
+      "whole_experiments": 36000000,
+      "new_random_draws": 0,
+      "original_fields_except_methods_compared": 23760,
+      "maximum_saved_raw_centered_moment_identity_error": 1.4210854715202004e-14,
+      "source_aggregates_and_batches_unchanged": true
+    },
+    "reviewer_independently_recounted_recovered_checks": {
+      "not_flagged": 5184,
+      "structural_agreement": 576
+    },
+    "reviewer_did_not_independently_rehash_all_7200_source_batches": true,
+    "interpretation": "Saved batch moments support the original mean/MSD checks; they are not a store of every individual simulated experiment."
+  },
+  "tree_comparator_review": {
+    "source_only_clearance_before_reading_comparison_outcomes": true,
+    "code_hash": "247cbf335d7bedde9ec17770a691112ea000a5b41206415d270b123d53ca93e1",
+    "recorded_fixture_count": 15,
+    "exact_binomial_diagnostics": 3070,
+    "bounded_mean_diagnostics": 720,
+    "alpha_per_diagnostic_family": 0.001,
+    "combined_two_family_union_bound": 0.002,
+    "conditional_Q_denominator": "Actual number of family-selected prospective roots; retained undefined when zero",
+    "removed_loss_denominator": "All 10000 prospective roots per case, including zero contributions",
+    "checks": [
+      "20 fixed cases and 800 first-run checkpoint hashes",
+      "Family/bin denominators equal 10000",
+      "Pair denominators equal birth-bin counts",
+      "Q and contrast counts match family counts",
+      "Defined flags agree with denominators",
+      "Covariance derived from counts and contrasts from Q estimates",
+      "Fresh distinct JSON and Markdown paths"
+    ],
+    "no_new_gate_for": [
+      "Sister covariance",
+      "Horizon contrast"
+    ],
+    "limitations": [
+      "Multiplicity guarantees conditional on declared model probabilities and numerical approximation",
+      "Reference slack is not interval-certified numerical error",
+      "Not a biological-validation test; previous-study flags unchanged"
+    ],
+    "observed_final_status_counts": {
+      "exact_binomial": {
+        "not_flagged": 3070
+      },
+      "bounded_mean": {
+        "not_flagged": 576,
+        "structural_agreement": 144
+      }
+    }
+  },
+  "clean_v2_review": {
+    "code_hash": "b996075a2080f4a308e055d3aedc2f55d2ae2ceef038ab9a8068c2bcdb634cda",
+    "exact_single_metadata_key_replacement_verified": true,
+    "change": "methods -> method_names in run signature",
+    "draw_formula_seed_loop_count_threshold_changes": false,
+    "original_v1_code_and_first_results_preserved": true,
+    "clean_run_observed_complete_in_separate_reports": true
+  },
+  "readme_review": {
+    "material_scientific_claim_issues": [],
+    "numerical_summary_validation_by_other_reviewers_not_repeated": true,
+    "scope_checks": [
+      "Proportional common calendar clock only",
+      "Known birth context distinct from coarse bins and hidden family environment",
+      "Unbiased calibration correction only averaged over training and target samples",
+      "Ordinary sample covariance unfavorable benchmark retained",
+      "No first-ever, clinical, or empirical validation claim",
+      "Source selection/loss/anomaly/replicate gaps and prior analyses retained",
+      "Historical packaging failure and static-review miss explicit"
+    ]
+  },
+  "blockers": [],
+  "updated_utc": "2026-11-10T21:01:00.260602+00:00",
+  "reproduction_followup": {
+    "timeline": "First authorized exact-value checker completed before these coverage findings arrived. Initial source/report preserved. Additional guards separately pinned after first comparison and reviewed before same-output supplementary validation.",
+    "first_report_preserved_sha256": "bf4a3a070eaa6a812ea395cd16e91536fd200c8b5442eb192c8ce6026212b3d9",
+    "first_checker_sha256": "0abcf45932067a15d9bc4c2c0fe2232af5684ba92a0decc712f3f6548d5a0f6e",
+    "supplement_checker_sha256": "a371a81d9d1f1a92877ca4fc44bdd91d91d84c74096f9e70504e28a533198f28",
+    "supplement_report_sha256": "1160eff8daccd23be1c4327761643888fd9f5d03556184726c81d126297ec0fa",
+    "source_review_clearance_preceded_supplement_evaluation": true,
+    "additional_guards": [
+      "Normalized calibration top-level scientific/provenance comparison with explicit exclusions and recovery-value binding",
+      "Exact array shapes and dtypes in addition to exact numerical values including matching NaNs",
+      "Pinned setting/batch code hashes before ignoring intended code-version metadata differences"
+    ],
+    "observed_supplement_status": "EXACT_SCIENTIFIC_EQUALITY",
+    "stored_tree_arrays_compared": 10400,
+    "tree_batches": 800,
+    "calibration_batches": 7200,
+    "calibration_method_records": 2880,
+    "all_5760_checks_identical": true,
+    "new_simulation_runs_for_supplement": 0,
+    "new_random_draws_for_supplement": 0,
+    "reviewer_scope": "Source review and saved report validation, not a separate third execution of the payload checker.",
+    "interpretation": "Same-seed reproducibility is not an independent stochastic replicate. Equality concerns stored founder arrays, batch moments and RNG states; not every latent event record."
+  }
+}

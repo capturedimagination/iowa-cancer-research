@@ -1,0 +1,164 @@
+{
+  "created_utc": "2026-11-10T21:04:24.031832+00:00",
+  "status": "PUBLICATION_INPUTS_VERIFIED",
+  "public_repository": "https://github.com/capturedimagination/iowa-cancer-research",
+  "publication_scope": "All authored findings and synthetic results; original publisher source workbooks/PDFs/README and synthetic checkpoints remain linked or reproducible local inputs.",
+  "local_library": {
+    "library": {
+      "integrity": "ok",
+      "datasets": 60,
+      "search_index": 1514,
+      "county_cancer_summary": 99,
+      "tri_forms": 60040,
+      "age_calendar_and_source_audit_documents": 16,
+      "source_pdf_bodies": 35,
+      "all_study_document_hashes_current": true
+    },
+    "figures": {
+      "age-context-grid.svg": "869f9dd3ec6104bb2fa588bb9a79f89cd659878bd2b0cd1ca6a9841a0599f7f1",
+      "calibration-variance.svg": "7f8d2e30d525fd782b760b37bd73ea593e40a2ac53822261110b36292aac01b5"
+    },
+    "report_pdf_sha256": "6019900da230ba69322aea6bf537fb879a1403b09cfe7acf0f8c71df27f9eeec"
+  },
+  "public_export": {
+    "library": {
+      "integrity": "ok",
+      "datasets": 60,
+      "search_index": 1477,
+      "county_cancer_summary": 99,
+      "tri_forms": 60040,
+      "age_calendar_and_source_audit_documents": 16,
+      "source_pdf_bodies": 0,
+      "all_study_document_hashes_current": true
+    },
+    "export": {
+      "files": 570,
+      "included_hashes_checked": 566,
+      "derived_library_metadata_regenerated": [
+        "knowledge/build-manifest.json",
+        "knowledge/pdf-text-extraction-log.json"
+      ],
+      "no_extra_public_files": true
+    },
+    "figures": {
+      "age-context-grid.svg": "869f9dd3ec6104bb2fa588bb9a79f89cd659878bd2b0cd1ca6a9841a0599f7f1",
+      "calibration-variance.svg": "7f8d2e30d525fd782b760b37bd73ea593e40a2ac53822261110b36292aac01b5"
+    },
+    "report_pdf_sha256": "6019900da230ba69322aea6bf537fb879a1403b09cfe7acf0f8c71df27f9eeec"
+  },
+  "public_fixture_checks": {
+    "status": "PASS",
+    "public_export_fixtures": [
+      {
+        "script": "scripts/age_calendar_calibration.py",
+        "exit_code": 0,
+        "log_sha256": "2850992d03cb58ccd43e590492def0b003a5bf784e67b54e7cf27c7884757235"
+      },
+      {
+        "script": "scripts/simulate_age_calendar_trees.py",
+        "exit_code": 0,
+        "log_sha256": "4a5573a47cbed1671757d0b58faeaa8a870f41a754e7d636e9f8ed5c4d5c8970"
+      },
+      {
+        "script": "scripts/simulate_shared_calibration.py",
+        "exit_code": 0,
+        "log_sha256": "fb59e473cb46887888822f6399568c4a5feb0c8364926d17286b69948bd663e1"
+      },
+      {
+        "script": "scripts/recover_shared_calibration_report.py",
+        "exit_code": 0,
+        "log_sha256": "47babc0e2a6b3cab9db38958508d7ef261b37303bf06ff09ba22be66738f1eb3"
+      },
+      {
+        "script": "scripts/compare_age_calendar_trees.py",
+        "exit_code": 0,
+        "log_sha256": "eb109b773539afaca0f5120e072d98d5a5c97c387a81b2e4d35d4be4ced70882"
+      },
+      {
+        "script": "scripts/check_age_calendar_reproduction.py",
+        "exit_code": 0,
+        "log_sha256": "4ab8135ce1468e297341616463aaf0a706fbc926104ff4a9c89111cd1b3e0d6e"
+      },
+      {
+        "script": "scripts/compare_age_calendar_references.py",
+        "exit_code": 0,
+        "log_sha256": "876f5712f2e6ceae6e439dd55eebd57ddfc307bcd5798d82f5c724d0e06ad1c7"
+      }
+    ],
+    "scientific_environment": "Python3.12.14 NumPy2.3.5 SciPy1.16.3; existing pinned venv outside export",
+    "private_source_inputs_required": false
+  },
+  "preverification_index": {
+    "status": "PASS",
+    "indexed_files": 570,
+    "manifest_hashes_checked": 568,
+    "all_staged_blobs_match_working_files": true,
+    "expected_file_set_exact": true,
+    "no_unstaged_or_untracked_public_files": true,
+    "manifest_sha256": "1a27cac320afb1a9c3075db1043cd20e6fcf7d44b83c0d7fc8dee4a3f498cd17"
+  },
+  "public_export_note": "570-file exact indexed export verified before this record was added; final manifest/index is regenerated to add this verification record.",
+  "publication_scanner": {
+    "exit_code": 0,
+    "indexed_paths_checked": 570,
+    "untracked_files_scanned": false
+  },
+  "git_whitespace_check_exit_code": 0,
+  "scientific_validation": {
+    "deterministic_numeric_comparisons": 192290,
+    "deterministic_reproduction_exact_numeric_leaves": 349971,
+    "tree_founders": 200000,
+    "generated_cells": 5163538,
+    "tree_binomial_diagnostics": 3070,
+    "tree_bounded_mean_diagnostics": 720,
+    "tree_flags": 0,
+    "tree_undefined_checks": 0,
+    "calibration_whole_experiments": 36000000,
+    "calibration_settings": 720,
+    "calibration_diagnostics": 5760,
+    "calibration_flags": 0,
+    "first_calibration_process_exit_code": 1,
+    "calibration_report_recovered_without_new_draws": true,
+    "same_seed_reproduction_is_not_independent_replication": true,
+    "earlier_study_two_approximate_flags_and_168_low_count_checks": "Unchanged; not cleared by this study"
+  },
+  "figure_verification": {
+    "both_svg_xml_valid": true,
+    "both_png_previews_visually_inspected": true,
+    "post_review_change": "Trailing whitespace removed from Matplotlib SVG serialization; token streams and rendered PNG bytes exactly unchanged. Figure code and ledger hashes updated.",
+    "numeric_results_unchanged": true
+  },
+  "source_audit": {
+    "sheets": 7,
+    "sister_pair_rows": 4678,
+    "child_records": 9356,
+    "negative_loss_duration_fields": 4,
+    "missing_descendant_pair_records": 1,
+    "empirical_model_fitted": false,
+    "graph_plan_status": "Planning draft only; no graph-based outcome calculation"
+  },
+  "artifact_sha256": {
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/protocol.json": "53d76bf43d0b1f47355d57d95ec6d7f43fce67541aed7631510a3cbff0b42919",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/results.json": "4948c049860cbd686ed82fa036dba1bb4f383c525046c8e2154a585a9d36b67d",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/strict-results.json": "d060f646c1cac1fa2e7763035bd88c520f62f862d37047dd4fe06e43a72fe110",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/independent-reference.json": "4660e68638657dd109254a9afd5996b3d579a65cf158603929a6ca785603f1bd",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/independent-comparison.json": "c9c2664a769c19d4932f2014e66434808fb92105119bd68d066508539d115879",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/deterministic-reproduction.json": "4deda6a4d58a84d207d1dfcd2f38dc34f7fed45002317c310a78ee39e31db377",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/tree-monte-carlo/results.json": "444647a5c7a15cd96a4278308c0e43ac5b725c1701d0cf0492f2bd0da74da8d1",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/tree-monte-carlo/comparison.json": "120bc768c4528be410889723c8c08f0699c0153a39ee73330471c80371a0a66d",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/calibration-monte-carlo/results.json": "b0ed5d00f310a247054badc60d8449229342b6a81b415a933f57478d13151aba",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/calibration-monte-carlo/recovery-ledger.json": "9cc3a266e239f085e6e2c396594c0da38426aa8dd3843238e75908a21ed43d4f",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/monte-carlo-reproduction.json": "bf4a3a070eaa6a812ea395cd16e91536fd200c8b5442eb192c8ce6026212b3d9",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/monte-carlo-reproduction-supplement.json": "1160eff8daccd23be1c4327761643888fd9f5d03556184726c81d126297ec0fa",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/figure-provenance.json": "fe8dcdff0fda19b60600955ae8a3a6cfd8fa948466f0bab2311fea0c12d8e63a",
+    "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/acquisition.json": "0a4f7cf4b87ecf993b9a718025c282821db2f88b7a27e6172aac89a586099288",
+    "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/structural-verification.json": "45069a32b6193faedb229f943c8e044e2624ba70c67437b9957b1abbdcce3414",
+    "research/treatment-discovery/lineage-audit-2026-11-10/kuchen-source-audit/graph-plan-draft.md": "8349cbd05c25705131bd7989376cc30b132f4bcf775c3ad2fd9fe2ae507cee0a"
+  },
+  "limits": [
+    "No cancer mechanism, treatment efficacy or first-ever novelty established.",
+    "Numerical references are not interval-certified.",
+    "No investigators contacted; no manuscript submitted.",
+    "Exact-public-export and index checks do not establish scientific validity."
+  ]
+}

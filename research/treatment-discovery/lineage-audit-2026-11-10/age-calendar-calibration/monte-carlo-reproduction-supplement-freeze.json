@@ -1,0 +1,34 @@
+{
+  "status": "PINNED_POST_FIRST_COMPARISON_BEFORE_SUPPLEMENTARY_VALIDATION",
+  "created_utc": "2026-11-10T20:59:32.699309+00:00",
+  "code_sha256": "a371a81d9d1f1a92877ca4fc44bdd91d91d84c74096f9e70504e28a533198f28",
+  "fixtures": {
+    "status": "PASS",
+    "count": 9,
+    "code_sha256": "a371a81d9d1f1a92877ca4fc44bdd91d91d84c74096f9e70504e28a533198f28",
+    "fixtures": [
+      "only documented metadata differences normalized",
+      "changed numerical moment rejected",
+      "changed RNG state rejected",
+      "matching missing-event NaN preserved",
+      "no numerical equality tolerance",
+      "changed dtype rejected",
+      "changed shape rejected",
+      "top metadata normalization explicit",
+      "top protocol mismatch rejected"
+    ],
+    "reproduction_comparison_run": false
+  },
+  "first_checker_path": "scripts/check_age_calendar_reproduction_v1.py",
+  "first_checker_sha256": "0abcf45932067a15d9bc4c2c0fe2232af5684ba92a0decc712f3f6548d5a0f6e",
+  "first_report_sha256": "bf4a3a070eaa6a812ea395cd16e91536fd200c8b5442eb192c8ce6026212b3d9",
+  "changes": [
+    "Compare top-level calibration scientific/provenance fields with explicit exclusions and metadata-key normalization",
+    "Require exact tree array shapes and dtypes as well as values",
+    "Bind each setting/batch excluded code hash to the expected pinned version"
+  ],
+  "new_simulation_runs": 0,
+  "new_random_draws": 0,
+  "python_version": "3.12.14",
+  "scope": "Additional coverage on the same saved first/reproduced outputs; initial checker and successful report preserved."
+}

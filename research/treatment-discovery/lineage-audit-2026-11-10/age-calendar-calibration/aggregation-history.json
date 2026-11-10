@@ -1,0 +1,52 @@
+{
+  "status": "PASS",
+  "created_utc": "2026-11-10T20:54:54.112270+00:00",
+  "scope": "Post-results promotion and check-helper bookkeeping correction; scientific outputs unchanged.",
+  "promotion_checks": [
+    {
+      "file": "deterministic-interpretation.json",
+      "initial_local_sha256": "54924e0f3bf89cba164d9a10f3c25008769e926881bf6aa237b6b312bc4419b9",
+      "published_sha256": "e5b4d4408b4efc9b3bda2798c867d95d6008029a2f422e5406ba34d7678c92bc",
+      "excluded_metadata_fields": [
+        "created_utc",
+        "script_sha256"
+      ],
+      "scientific_content_exactly_unchanged": true
+    },
+    {
+      "file": "deterministic-interpretation-checks.json",
+      "initial_local_sha256": "9d1370931798c9d14983a7bb4c0a47c8691c2f36c02623ed30af70cb2e8919e3",
+      "published_sha256": "40ecdb1ac376c9b8f965b163b013c46623519d6f94ac903cb802759692fe6651",
+      "excluded_metadata_fields": [
+        "script_sha256",
+        "aggregation_sha256"
+      ],
+      "scientific_content_exactly_unchanged": true
+    }
+  ],
+  "initial_script_hashes": {
+    "interpret_deterministic_grid.py": "289c99098c35c2293f41febf831f43274dd705017391e14b2e77bbcf51d264fe",
+    "check_deterministic_aggregation.initial.py": "015a8201b117c53d2fdcac4d7d3457cea11c1c5ff83d099aac697ca972c969c6",
+    "check_deterministic_aggregation.py": "773e6179bd8cbb3885c458d07ac6d3c4ad12efa18d8e0611eb2280b101010817"
+  },
+  "public_script_hashes": {
+    "interpret_age_calendar_grid.py": "7d66d69628027f5010d8c4b90dc48a0c497dc8712a7fd86bf42dcc7cb79767aa",
+    "check_age_calendar_aggregation.py": "01284586c19629e467afa3baf3f59d15d851d2c2bd277604c1c16ee5bf8e07c1"
+  },
+  "initial_markdown_sha256": "5bd96f3aab3ce143695c21410c008ede44db76a3e2ba3b7c546797653ca6fc10",
+  "public_markdown_sha256": "fb80100fae7b820e65c9a0644792c5651b90419db5a05c8177f74ff6dd63ded3",
+  "check_helper_first_attempt": {
+    "terminal_status": "FAILED",
+    "exception": "KeyError: 'sign_map'",
+    "cause": "The helper removed the first source sign map from an object before using that object as the reference for the second source.",
+    "correction": "Copy the expected sign map before removing large maps from the report.",
+    "scientific_source_or_aggregation_changed": false,
+    "report_written_before_error": false,
+    "initial_helper_preserved_locally": true
+  },
+  "retained_first_local_artifacts": [
+    "tmp/age-calendar-2026-11-10/deterministic-interpretation.json",
+    "tmp/age-calendar-2026-11-10/deterministic-interpretation-checks.json",
+    "tmp/age-calendar-2026-11-10/check_deterministic_aggregation.initial.py"
+  ]
+}

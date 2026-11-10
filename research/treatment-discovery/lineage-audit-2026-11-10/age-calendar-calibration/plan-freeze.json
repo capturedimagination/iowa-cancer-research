@@ -1,0 +1,11 @@
+{
+  "frozen_at_utc": "2026-11-10T20:39:34.267414+00:00",
+  "protocol_sha256": "53d76bf43d0b1f47355d57d95ec6d7f43fce67541aed7631510a3cbff0b42919",
+  "theory_sha256": "81ed3527f55327728152a5306393ca9160cb5e780b77e79daf1b3edb18f7d99f",
+  "draft_sha256": "3a3be15cb55e0d9bcc148646846cb1ea24ca5fc1ae3c645384cd182f7b269a47",
+  "verification_proposal_sha256": "c6fb39d5194d9f769565ac3c0dfe15214af70d5208675f31e8b8b3f6586067a9",
+  "outcomes_generated": false,
+  "scope": "Earlier stationary-model results, analytic derivations, literature and dataset schema/quality audits were known. No new 20-case Q, context-bin, calibration-moment or stochastic outcome was generated before this local freeze. This is not external preregistration.",
+  "previous_published_commit": "c7d952f3f1bdf87cd02c8f7f018ac38b9c398ce4",
+  "goal_status": "active"
+}

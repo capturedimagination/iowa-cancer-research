@@ -1,0 +1,99 @@
+{
+  "status": "STATIC_REVIEW_PASS_NO_BLOCKING_FINDING",
+  "reviewed_utc": "2026-11-10T20:44:43.751537+00:00",
+  "method": "Independent source inspection and hand algebra; no new scientific-grid execution or outcome inspection",
+  "reviewer": "novelty_audit",
+  "scope": [
+    "common-clock model",
+    "first-division eligibility",
+    "maternal and birth-bin weighting",
+    "p/j/c decomposition",
+    "finite calibration estimator means and variances",
+    "frozen protocol roster",
+    "partial failure and no-overwrite handling",
+    "scope and reporting claims"
+  ],
+  "hashes": {
+    "scripts/age_calendar_calibration.py": "6f5d8279ca762bbd0ac6b4614806edd898bdbcf5c46b7ea7ec1a475a4b88a261",
+    "scripts/age_lineage_models.py": "2e7f53d6175b8da9215706e2eaee81758dc058265ff5d3c42583875d21987a59",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/protocol.json": "53d76bf43d0b1f47355d57d95ec6d7f43fce67541aed7631510a3cbff0b42919",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/theory.md": "81ed3527f55327728152a5306393ca9160cb5e780b77e79daf1b3edb18f7d99f",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/plan-freeze.json": "045882953075e0b8dca47208957ea523d2e384939d8ebec28c09d3ec915fac5a",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/primary-fixtures.json": "c14022f04bd022805a7e95c13ebc7d34e2aa1d1668288c3976387e17aeeae995",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/primary-fixtures-final.json": "f4c4b73a2657d2bcc41e2da8ec812542c5b9192ca6a54eac786f673415e210ff",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/primary-fixtures-pinned.json": "3757924438119f8c8065ca99a0adf51b9a21e88b960a45136eadeb3df36adf2e",
+    "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/primary-code-pin.json": "96904bbc19a9a0e0a06d47e1dbbacaca78d3b105bac6dfabaacdaf865f0c6874"
+  },
+  "initial_code_sha256": "91133d69f3b5a4d9c5c63404cf61e91552cd451e447fe91238f9b8b05a14fb74",
+  "interim_hardened_code_sha256": "a75d3e9acf0eeb1642d6e8f223d67c09d749047570b1812e3404c78109ddb801",
+  "final_reviewed_code_sha256": "6f5d8279ca762bbd0ac6b4614806edd898bdbcf5c46b7ea7ec1a475a4b88a261",
+  "protocol_sha256": "53d76bf43d0b1f47355d57d95ec6d7f43fce67541aed7631510a3cbff0b42919",
+  "fixture_reports_inspected": [
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/primary-fixtures.json",
+      "count": 20,
+      "status": "PASS_REPORTED_BY_ROOT_NOT_RERUN_BY_REVIEWER"
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/primary-fixtures-final.json",
+      "count": 25,
+      "status": "PASS_REPORTED_BY_ROOT_NOT_RERUN_BY_REVIEWER",
+      "note": "Precedes diagnostic-text-only adjustment; final candidate fixture evidence maintained separately."
+    },
+    {
+      "path": "research/treatment-discovery/lineage-audit-2026-11-10/age-calendar-calibration/primary-fixtures-pinned.json",
+      "count": 25,
+      "status": "PASS_REPORTED_BY_ROOT_NOT_RERUN_BY_REVIEWER",
+      "code_sha256": "6f5d8279ca762bbd0ac6b4614806edd898bdbcf5c46b7ea7ec1a475a4b88a261"
+    }
+  ],
+  "new_grid_run_by_reviewer": false,
+  "new_grid_outcomes_read": false,
+  "model_or_protocol_edited_by_reviewer": false,
+  "blocking_findings": [],
+  "resolved_before_production_outcomes": [
+    {
+      "id": "R1",
+      "finding": "Same resolved primary/strict output path would fail late",
+      "resolution": "Explicit early path inequality guard inspected"
+    },
+    {
+      "id": "R2",
+      "finding": "Complement and finite p/j checks did not explicitly protect every probability reference",
+      "resolution": "Finite/domain guards inspected for H,Q,positive loss,U,total/bin eligibility,removed-stratum loss; nonfinite category guard added"
+    },
+    {
+      "id": "R3",
+      "finding": "Early validation could discard failing probability value before row append",
+      "resolution": "Rejected value and p/j/category representations retained in diagnostic messages"
+    }
+  ],
+  "mathematical_verdicts": {
+    "common_clock": "PASS_WITH_PROPORTIONAL_DEATH_AND_DIVISION_RESTRICTION",
+    "qualifying_density": "PASS_INITIAL_MASS_RESIDUAL_ERLANG_DEATH_SURVIVAL_AND_JACOBIAN_ALL_PRESENT",
+    "eligibility_integral": "PASS_INCOMPLETE_GAMMA_WITH_CORRECT_INITIAL_STAGE_MIXTURE",
+    "sister_joint": "PASS_CONDITIONAL_INDEPENDENCE_G_SQUARED_AND_ACTUAL_BIRTH_WEIGHTS",
+    "covariance_decomposition": "PASS_TOTAL_COVARIANCE_WITH_CONTEXT_RETAINED",
+    "partition_bound": "PASS_NO_TRANSMISSION_ONLY_AND_NESTED_WEIGHTED_CONTEXT_REMAINDER",
+    "finite_calibration": "PASS_SHARED_BINOMIAL_CALIBRATION_TOTAL_VARIANCE",
+    "unbiased_sample_covariance": "PASS_FINITE_N_FORMULA",
+    "partial_failure": "PASS_COMPLETED_AND_CURRENT_PRIMARY_STRICT_RECORDS_RETAINED",
+    "no_overwrite": "PASS_EXCLUSIVE_CREATE_WITH_PARTIAL_PAIRED_WRITE_LIMITATION"
+  },
+  "hand_algebra_checks": {
+    "independent_fair_daughter_sample_covariance_variance": "1/[16(n-1)]",
+    "independent_fair_daughter_corrected_shared_calibration_variance": "(1+2/m)/(16n)+1/[8m(m-1)]",
+    "new_model_probabilities_used": false
+  },
+  "limits": [
+    "Static review is not numerical verification or peer review.",
+    "Run without Python optimization because scientific gates use assertions.",
+    "Primary/strict files are separately exclusively created, not an atomic two-file transaction.",
+    "Oracle bin mean is not exact-birth conditioning.",
+    "Unbiased correction averages over calibration and target draws; a fixed realized fit can remain biased.",
+    "Common-clock model does not cover division-only modulation.",
+    "No empirical, clinical or theorem-priority claim."
+  ],
+  "review_markdown_sha256": "84fe1fedfb3a648a0aa7c6ed310535972ce26d7b9087cd576310146b5c38865c",
+  "timing": "Review findings communicated before launch; report finalized after root launch notification without reading scientific results."
+}

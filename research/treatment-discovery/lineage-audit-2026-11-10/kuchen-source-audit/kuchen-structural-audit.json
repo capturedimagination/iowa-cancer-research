@@ -1,0 +1,175 @@
+{
+  "status": "STRUCTURAL_AND_FIELD_AUDIT_ONLY",
+  "scope": "No Q, covariance, hazard, outcome association or biological model fit. Counts describe exported fields; loss is not recoded as death or certified administrative censoring.",
+  "records": [
+    {
+      "file": "kuchen-control.xlsx",
+      "sheet": "rep1",
+      "pair_rows": 923,
+      "unique_recorded_children": 1846,
+      "lineage_ids": 16,
+      "duplicate_recorded_child_ids": 0,
+      "duplicate_mother_pair_rows": 0,
+      "fate_field_counts": {
+        "exactly_one_fate": 1846,
+        "death": 31,
+        "division": 907,
+        "loss": 908
+      },
+      "structural_checks": {
+        "unrecorded_parent_generation_2": 32
+      },
+      "maximum_parent_child_time_residual": 6.963318810448982e-13,
+      "negative_duration_records": 0,
+      "maximum_birth_plus_finite_duration": 140.50000000000034,
+      "generation_min": 2,
+      "generation_max": 10,
+      "sibling_birth_coordinates_provided": true
+    },
+    {
+      "file": "kuchen-control.xlsx",
+      "sheet": "rep2",
+      "pair_rows": 808,
+      "unique_recorded_children": 1616,
+      "lineage_ids": 17,
+      "duplicate_recorded_child_ids": 0,
+      "duplicate_mother_pair_rows": 0,
+      "fate_field_counts": {
+        "exactly_one_fate": 1616,
+        "division": 791,
+        "loss": 761,
+        "death": 64
+      },
+      "structural_checks": {
+        "unrecorded_parent_generation_2": 34
+      },
+      "maximum_parent_child_time_residual": 7.176481631177012e-13,
+      "negative_duration_records": 2,
+      "maximum_birth_plus_finite_duration": 141.466666666667,
+      "generation_min": 2,
+      "generation_max": 11,
+      "sibling_birth_coordinates_provided": true
+    },
+    {
+      "file": "kuchen-control.xlsx",
+      "sheet": "rep3",
+      "pair_rows": 871,
+      "unique_recorded_children": 1742,
+      "lineage_ids": 35,
+      "duplicate_recorded_child_ids": 0,
+      "duplicate_mother_pair_rows": 0,
+      "fate_field_counts": {
+        "exactly_one_fate": 1742,
+        "division": 837,
+        "loss": 831,
+        "death": 74
+      },
+      "structural_checks": {
+        "unrecorded_parent_generation_2": 70,
+        "division_no_successor_pair_row": 1
+      },
+      "maximum_parent_child_time_residual": 1.0658141036401503e-14,
+      "negative_duration_records": 0,
+      "maximum_birth_plus_finite_duration": 120.30000000000001,
+      "generation_min": 2,
+      "generation_max": 9,
+      "sibling_birth_coordinates_provided": true
+    },
+    {
+      "file": "kuchen-perturbation.xlsx",
+      "sheet": "-myc1",
+      "pair_rows": 492,
+      "unique_recorded_children": 984,
+      "lineage_ids": 40,
+      "duplicate_recorded_child_ids": 0,
+      "duplicate_mother_pair_rows": 0,
+      "fate_field_counts": {
+        "exactly_one_fate": 984,
+        "division": 452,
+        "loss": 521,
+        "death": 11
+      },
+      "structural_checks": {
+        "unrecorded_parent_generation_2": 80
+      },
+      "maximum_parent_child_time_residual": 6.963318810448982e-13,
+      "negative_duration_records": 1,
+      "maximum_birth_plus_finite_duration": 166.666666666667,
+      "generation_min": 2,
+      "generation_max": 9,
+      "sibling_birth_coordinates_provided": false
+    },
+    {
+      "file": "kuchen-perturbation.xlsx",
+      "sheet": "-myc2",
+      "pair_rows": 600,
+      "unique_recorded_children": 1200,
+      "lineage_ids": 28,
+      "duplicate_recorded_child_ids": 0,
+      "duplicate_mother_pair_rows": 0,
+      "fate_field_counts": {
+        "exactly_one_fate": 1200,
+        "division": 572,
+        "loss": 622,
+        "death": 6
+      },
+      "structural_checks": {
+        "unrecorded_parent_generation_2": 56
+      },
+      "maximum_parent_child_time_residual": 7.105427357601002e-13,
+      "negative_duration_records": 1,
+      "maximum_birth_plus_finite_duration": 141.466666666667,
+      "generation_min": 2,
+      "generation_max": 8,
+      "sibling_birth_coordinates_provided": false
+    },
+    {
+      "file": "kuchen-perturbation.xlsx",
+      "sheet": "rap1",
+      "pair_rows": 482,
+      "unique_recorded_children": 964,
+      "lineage_ids": 19,
+      "duplicate_recorded_child_ids": 0,
+      "duplicate_mother_pair_rows": 0,
+      "fate_field_counts": {
+        "exactly_one_fate": 964,
+        "division": 463,
+        "loss": 498,
+        "death": 3
+      },
+      "structural_checks": {
+        "unrecorded_parent_generation_2": 38
+      },
+      "maximum_parent_child_time_residual": 1.0658141036401503e-14,
+      "negative_duration_records": 0,
+      "maximum_birth_plus_finite_duration": 115.0,
+      "generation_min": 2,
+      "generation_max": 7,
+      "sibling_birth_coordinates_provided": false
+    },
+    {
+      "file": "kuchen-perturbation.xlsx",
+      "sheet": "rap2",
+      "pair_rows": 502,
+      "unique_recorded_children": 1004,
+      "lineage_ids": 16,
+      "duplicate_recorded_child_ids": 0,
+      "duplicate_mother_pair_rows": 0,
+      "fate_field_counts": {
+        "exactly_one_fate": 1004,
+        "division": 486,
+        "loss": 517,
+        "death": 1
+      },
+      "structural_checks": {
+        "unrecorded_parent_generation_2": 32
+      },
+      "maximum_parent_child_time_residual": 1.0658141036401503e-14,
+      "negative_duration_records": 0,
+      "maximum_birth_plus_finite_duration": 117.0,
+      "generation_min": 2,
+      "generation_max": 8,
+      "sibling_birth_coordinates_provided": false
+    }
+  ]
+}

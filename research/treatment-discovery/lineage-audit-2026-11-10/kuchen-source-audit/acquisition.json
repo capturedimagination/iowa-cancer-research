@@ -1,0 +1,65 @@
+{
+  "scope": "Exact original bytes retained locally; public findings and source pointers do not redistribute source bodies.",
+  "files": [
+    {
+      "name": "kuchen-control.xlsx",
+      "url": "https://cdn.elifesciences.org/articles/51002/elife-51002-fig1-data2-v2.xlsx",
+      "retrieved_utc": "2026-11-10T20:33:31.149531+00:00",
+      "status": 200,
+      "final_url": "https://cdn.elifesciences.org/articles/51002/elife-51002-fig1-data2-v2.xlsx",
+      "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "bytes": 319349,
+      "sha256": "8ecdd5c66a466b71b5ee4790c79c2b9ce38fd1ec6daf59f88347d67e4fa1b86e",
+      "local_path": "research/treatment-discovery/sources/lineage-2026-11-10/alternative-lineage-2026-11-10/kuchen-control.xlsx",
+      "publication_status": "linked_source_only"
+    },
+    {
+      "name": "kuchen-perturbation.xlsx",
+      "url": "https://cdn.elifesciences.org/articles/51002/elife-51002-fig4-data1-v2.xlsx",
+      "retrieved_utc": "2026-11-10T20:33:31.149772+00:00",
+      "status": 200,
+      "final_url": "https://cdn.elifesciences.org/articles/51002/elife-51002-fig4-data1-v2.xlsx",
+      "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "bytes": 195788,
+      "sha256": "0065797f9d1cb12dc695bf9baa516f68afea1d6c6077b75c2a9830389806a6f3",
+      "local_path": "research/treatment-discovery/sources/lineage-2026-11-10/alternative-lineage-2026-11-10/kuchen-perturbation.xlsx",
+      "publication_status": "linked_source_only"
+    },
+    {
+      "name": "kuchen-overview.pdf",
+      "url": "https://cdn.elifesciences.org/articles/51002/elife-51002-fig1-data1-v2.pdf",
+      "retrieved_utc": "2026-11-10T20:33:31.149854+00:00",
+      "status": 200,
+      "final_url": "https://cdn.elifesciences.org/articles/51002/elife-51002-fig1-data1-v2.pdf",
+      "content_type": "application/pdf",
+      "bytes": 23112,
+      "sha256": "6642b200997dd3212897c65e8bcf0b8e0ec6b87c91f0acf87e6817ff48f9bb7b",
+      "local_path": "research/treatment-discovery/sources/lineage-2026-11-10/alternative-lineage-2026-11-10/kuchen-overview.pdf",
+      "publication_status": "linked_source_only"
+    },
+    {
+      "name": "alfi-figshare-metadata.json",
+      "url": "https://api.figshare.com/v2/articles/23798451",
+      "retrieved_utc": "2026-11-10T20:33:31.149904+00:00",
+      "status": 200,
+      "final_url": "https://api.figshare.com/v2/articles/23798451",
+      "content_type": "application/json",
+      "bytes": 9690,
+      "sha256": "42d52d9d453d481b9896a82c50b022a0bdf2c70b8d944aab0e8162c3af1370ab",
+      "local_path": "research/treatment-discovery/sources/lineage-2026-11-10/alternative-lineage-2026-11-10/alfi-figshare-metadata.json",
+      "publication_status": "linked_source_only"
+    },
+    {
+      "name": "alfi-readme.pdf",
+      "url": "https://iris.cnr.it/retrieve/c56f0242-819e-4b07-89d4-292bb6721e8a/ALFI_dataset_Readme_2024.pdf",
+      "retrieved_utc": "2026-11-10T20:33:31.149943+00:00",
+      "status": 200,
+      "final_url": "https://iris.cnr.it/retrieve/c56f0242-819e-4b07-89d4-292bb6721e8a/ALFI_dataset_Readme_2024.pdf",
+      "content_type": "application/pdf;charset=UTF-8",
+      "bytes": 28844,
+      "sha256": "c106e1af67bc58d5e71a990b680710197ff4505c5a9f305ba4a57a65a125b233",
+      "local_path": "research/treatment-discovery/sources/lineage-2026-11-10/alternative-lineage-2026-11-10/alfi-readme.pdf",
+      "publication_status": "linked_source_only"
+    }
+  ]
+}
